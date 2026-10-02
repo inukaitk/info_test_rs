@@ -66,6 +66,15 @@
 | 一覧は `site.yaml` の `page_size`（現在50件）まで表示し、超える場合は件数を示す | ページ送りは記事が増えてから検討する |
 | PC の起動手順は `npm ci` → `npm run dev`（http://localhost:5173/）。公開時と同じ形の確認は `npm run build` → `npm run preview`（http://localhost:4173/） | PCでは Python なしで画面を見られる（画面用JSONはコミット済み） |
 
+## 技術の決定（1ファイル版、2026-10-02）
+
+| 決定 | 理由 |
+|---|---|
+| 画面とデータを1つにまとめた `viewer/info_viewer.html` を作り、コミットする（`cd web; npm run build:standalone`） | 社用PCではソフトの無断インストールが社内規定違反になるため、ブラウザだけで見られる形が必要。部署レビューで配布もしやすい |
+| データは `<script type="application/json">` に埋め込み、`<` `>` `&` 等をエスケープする。画面のプログラムは埋め込みデータがあればそれを使い、なければ `public/data/` から取得する | ダブルクリック（file://）では JSON を fetch できないため。エスケープで `</script>` による抜け出しを防ぐ |
+| 1ファイル版の CSP は `default-src 'none'`、スクリプトとスタイルは中身のハッシュで許可、`connect-src 'none'` | インラインで埋め込みつつ、それ以外のスクリプト実行と外部通信を禁止する |
+| 埋め込むのは画面用JSON（meta と articles）だけ。古くなっていないかを `tests/test_viewer.py` で確認する | 公開用変換の allowlist を通ったものだけを配布物に入れる。作り直し忘れを検出する |
+
 ## 未確定事項
 
 | 項目 | 決める時期 | 現状 |
