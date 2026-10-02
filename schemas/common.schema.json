@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://info-test-rs.local/schemas/common.schema.json",
+  "title": "共通定義",
+  "$defs": {
+    "slug_id": {
+      "description": "設定で使う識別子（英小文字・数字・_・-）",
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9_-]{0,63}$"
+    },
+    "article_id": {
+      "description": "正規化URLのSHA-256先頭16桁から決定的に作るID（a_ + 16桁の16進数）",
+      "type": "string",
+      "pattern": "^a_[0-9a-f]{16}$"
+    },
+    "timestamp": {
+      "description": "タイムゾーン付きのISO 8601日時（例 2026-10-01T09:00:00+09:00）",
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(\\.\\d+)?(Z|[+-]\\d{2}:\\d{2})$"
+    },
+    "date": {
+      "description": "日付（YYYY-MM-DD）",
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "partial_date": {
+      "description": "精度に応じた日付（YYYY、YYYY-MM、YYYY-MM-DD、またはタイムゾーン付き日時）",
+      "type": "string",
+      "pattern": "^\\d{4}(-\\d{2}(-\\d{2}(T\\d{2}:\\d{2}(:\\d{2}(\\.\\d+)?)?(Z|[+-]\\d{2}:\\d{2}))?)?)?$"
+    },
+    "http_url": {
+      "description": "http(s)のURL",
+      "type": "string",
+      "pattern": "^https?://[^\\s/$.?#][^\\s]*$",
+      "maxLength": 2048
+    },
+    "https_url": {
+      "description": "httpsのURL",
+      "type": "string",
+      "pattern": "^https://[^\\s/$.?#][^\\s]*$",
+      "maxLength": 2048
+    },
+    "sha256": {
+      "type": "string",
+      "pattern": "^sha256:[0-9a-f]{64}$"
+    },
+    "hostname": {
+      "description": "ホスト名（ポート・パスなし）",
+      "type": "string",
+      "pattern": "^(?=.{1,253}$)([a-z0-9]([a-z0-9-]{0,61}[a-z0-9])?)(\\.[a-z0-9]([a-z0-9-]{0,61}[a-z0-9])?)+$"
+    },
+    "nonempty_text": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://info-test-rs.local/schemas/records/source_state.schema.json",
+  "title": "source_state 情報源ごとの取得状態（失敗した情報源の成功地点は進めない）",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["source_id", "last_success_at", "last_attempt_at", "last_attempt_status", "explored_range", "retry_queue", "consecutive_failures"],
+  "properties": {
+    "source_id": { "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/slug_id" },
+    "last_success_at": { "oneOf": [ { "type": "null" }, { "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/timestamp" } ], "description": "最終探索成功時刻（成功地点）" },
+    "last_attempt_at": { "oneOf": [ { "type": "null" }, { "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/timestamp" } ] },
+    "last_attempt_status": { "enum": [null, "success", "failed", "skipped", "unsupported"] },
+    "explored_range": {
+      "description": "探索できた一覧の範囲",
+      "oneOf": [
+        { "type": "null" },
+        {
+          "type": "object", "additionalProperties": false, "required": ["oldest", "newest", "pages"],
+          "properties": {
+            "oldest": { "oneOf": [ { "type": "null" }, { "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/partial_date" } ] },
+            "newest": { "oneOf": [ { "type": "null" }, { "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/partial_date" } ] },
+            "pages": { "type": "integer", "minimum": 0 }
+          }
+        }
+      ]
+    },
+    "retry_queue": {
+      "type": "array",
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["url", "stage", "reason", "first_failed_at", "attempts"],
+        "properties": {
+          "url": { "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/http_url" },
+          "article_id": { "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/article_id" },
+          "stage": { "enum": ["fetch", "extract", "summarize"] },
+          "reason": { "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/nonempty_text" },
+          "first_failed_at": { "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/timestamp" },
+          "attempts": { "type": "integer", "minimum": 1 }
+        }
+      }
+    },
+    "consecutive_failures": { "type": "integer", "minimum": 0 }
+  }
+}

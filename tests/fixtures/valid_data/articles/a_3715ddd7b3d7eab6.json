@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_3715ddd7b3d7eab6",
+    "source_id": "demo-kodomo-rss",
+    "canonical_url": "https://kodomo.example.org/news/2026/0901-kenshin.html",
+    "title": "【架空】乳幼児健診の実施要領を改正しました",
+    "published_at": "2026-09-01",
+    "updated_at": "2026-09-15",
+    "date_basis": {
+      "published": { "method": "rss_pubdate", "evidence": "<pubDate>Tue, 01 Sep 2026 10:00:00 +0900</pubDate>" },
+      "updated": { "method": "html_text", "evidence": "最終更新日：2026年9月15日" }
+    },
+    "date_precision": { "published": "day", "updated": "day" },
+    "first_seen_at": "2026-09-02T08:00:00+09:00",
+    "last_seen_at": "2026-09-16T08:00:00+09:00",
+    "latest_version": 2,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "article_id": "a_3715ddd7b3d7eab6", "version": 1, "content_hash": "sha256:3bfc269594ef649228e9a74bab00f042efc91d5acc6fbee31a382e80d42388fe",
+      "fetched_at": "2026-09-02T08:00:05+09:00", "content_type": "html", "text_length": 1200,
+      "extraction_status": "ok", "extraction_error": null, "change_type": "new"
+    },
+    {
+      "article_id": "a_3715ddd7b3d7eab6", "version": 2, "content_hash": "sha256:fb04dcb6970e4c3d1873de51fd5a50d7bb46b3383113602665c350ec40b5f990",
+      "fetched_at": "2026-09-16T08:00:05+09:00", "content_type": "html", "text_length": 1350,
+      "extraction_status": "ok", "extraction_error": null, "change_type": "content_changed"
+    }
+  ]
+}

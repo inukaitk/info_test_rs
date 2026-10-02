@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://info-test-rs.local/schemas/config/tags.schema.json",
+  "title": "config/tags.yaml 登録タグ",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["tags"],
+  "properties": {
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "name", "description", "enabled"],
+        "properties": {
+          "id": { "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/slug_id" },
+          "name": { "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/nonempty_text" },
+          "description": { "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/nonempty_text" },
+          "keywords": { "type": "array", "uniqueItems": true, "items": { "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/nonempty_text" } },
+          "enabled": { "type": "boolean", "description": "falseで廃止。過去の記事に付いた記録は残す" }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://info-test-rs.local/schemas/files/run_file.schema.json",
+  "title": "data/runs/<run_id>.json 実行履歴",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "run"],
+  "properties": {
+    "schema_version": { "const": 1 },
+    "run": { "$ref": "https://info-test-rs.local/schemas/records/run.schema.json" }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "run": {
+    "run_id": "run_20260915T230000Z",
+    "started_at": "2026-09-16T08:00:00+09:00",
+    "finished_at": "2026-09-16T08:06:00+09:00",
+    "status": "partial",
+    "trigger": "manual_cli",
+    "kind": "collect_and_summarize",
+    "period": { "start": "2026-09-01", "end": "2026-09-16" },
+    "sources": [
+      { "source_id": "demo-kodomo-rss", "status": "success", "candidates": 5, "new": 0, "changed": 1, "unchanged": 4,
+        "date_unknown": 0, "fetch_failed": 0, "warnings": [], "error": null },
+      { "source_id": "demo-boshi-html", "status": "failed", "candidates": 1, "new": 1, "changed": 0, "unchanged": 0,
+        "date_unknown": 1, "fetch_failed": 0, "warnings": ["一覧2ページ目の取得に失敗"], "error": "一覧2ページ目がタイムアウト" }
+    ],
+    "totals": { "new": 1, "changed": 1, "unchanged": 4, "date_unknown": 1, "fetch_failed": 0, "summarized": 1, "summarize_failed": 0 },
+    "failures": [
+      { "source_id": "demo-boshi-html", "url": "https://boshi.example.net/info/index.html?page=2", "stage": "list", "reason": "タイムアウト（30秒）" }
+    ],
+    "api_usage": { "requests": 1, "input_tokens": 1500, "output_tokens": 300, "estimated_cost_usd": 0.004 }
+  }
+}

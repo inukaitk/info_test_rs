@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "sources": {
+    "demo-kodomo-rss": {
+      "source_id": "demo-kodomo-rss",
+      "last_success_at": "2026-09-16T08:00:30+09:00",
+      "last_attempt_at": "2026-09-16T08:00:00+09:00",
+      "last_attempt_status": "success",
+      "explored_range": { "oldest": "2026-08-01", "newest": "2026-09-15", "pages": 1 },
+      "retry_queue": [],
+      "consecutive_failures": 0
+    },
+    "demo-boshi-html": {
+      "source_id": "demo-boshi-html",
+      "last_success_at": null,
+      "last_attempt_at": "2026-09-16T08:01:00+09:00",
+      "last_attempt_status": "failed",
+      "explored_range": { "oldest": null, "newest": null, "pages": 1 },
+      "retry_queue": [
+        { "url": "https://boshi.example.net/info/index.html?page=2", "stage": "fetch", "reason": "タイムアウト",
+          "first_failed_at": "2026-09-16T08:01:30+09:00", "attempts": 1 }
+      ],
+      "consecutive_failures": 1
+    }
+  }
+}

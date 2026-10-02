@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://info-test-rs.local/schemas/records/article_version.schema.json",
+  "title": "article_version 記事の版（意味のある本文変更ごとに追加。過去の版は消さない）",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["article_id", "version", "content_hash", "fetched_at", "content_type", "extraction_status", "extraction_error", "change_type"],
+  "properties": {
+    "article_id": { "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/article_id" },
+    "version": { "type": "integer", "minimum": 1 },
+    "content_hash": { "oneOf": [ { "type": "null" }, { "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/sha256" } ], "description": "抽出本文（ナビ・フッター除く）のhash。本文未取得ならnull" },
+    "fetched_at": { "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/timestamp" },
+    "content_type": { "enum": ["html", "pdf", "rss_only", "none"] },
+    "text_length": { "type": ["integer", "null"], "minimum": 0 },
+    "extraction_status": { "enum": ["ok", "failed", "unsupported", "not_fetched"], "description": "本文未取得を成功として扱わない" },
+    "extraction_error": { "type": ["string", "null"] },
+    "change_type": { "enum": ["new", "content_changed"] }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "extraction_status": { "const": "ok" } } },
+      "then": { "properties": { "content_hash": { "type": "string" }, "extraction_error": { "type": "null" }, "content_type": { "enum": ["html", "pdf", "rss_only"] } } },
+      "else": { "properties": { "content_hash": { "type": "null" } } }
+    },
+    {
+      "if": { "properties": { "extraction_status": { "enum": ["failed", "unsupported"] } } },
+      "then": { "properties": { "extraction_error": { "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/nonempty_text" } } }
+    },
+    {
+      "if": { "properties": { "version": { "const": 1 } } },
+      "then": { "properties": { "change_type": { "const": "new" } } },
+      "else": { "properties": { "change_type": { "const": "content_changed" } } }
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://info-test-rs.local/schemas/config/tag_overrides.schema.json",
+  "title": "config/tag_overrides.yaml 記事ごとのタグ修正（人が編集し、AI再処理では書き換えない）",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["overrides"],
+  "properties": {
+    "overrides": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["article_id", "updated"],
+        "anyOf": [
+          { "required": ["add"], "properties": { "add": { "minItems": 1 } } },
+          { "required": ["remove"], "properties": { "remove": { "minItems": 1 } } }
+        ],
+        "properties": {
+          "article_id": { "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/article_id" },
+          "add": { "type": "array", "uniqueItems": true, "items": { "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/slug_id" } },
+          "remove": { "type": "array", "uniqueItems": true, "items": { "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/slug_id" } },
+          "updated": { "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/date" },
+          "reason": { "type": "string", "description": "任意。公開される前提で書く" }
+        }
+      }
+    }
+  }
+}

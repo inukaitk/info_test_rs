@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://info-test-rs.local/schemas/files/tag_candidates_file.schema.json",
+  "title": "data/tag_candidates.json 新規タグ候補",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "candidates"],
+  "properties": {
+    "schema_version": { "const": 1 },
+    "candidates": { "type": "array", "items": { "$ref": "https://info-test-rs.local/schemas/records/tag_candidate.schema.json" } }
+  }
+}

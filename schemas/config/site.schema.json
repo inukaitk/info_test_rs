@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://info-test-rs.local/schemas/config/site.schema.json",
+  "title": "config/site.yaml 画面の設定",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["site_name", "correction_request_url", "release_mode", "page_size"],
+  "properties": {
+    "site_name": { "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/nonempty_text" },
+    "correction_request_url": {
+      "description": "修正依頼フォーム（Microsoft Forms等）のURL。未設定はnull",
+      "oneOf": [ { "type": "null" }, { "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/https_url" } ]
+    },
+    "release_mode": { "enum": ["demo", "real"], "description": "demo=架空データのみ表示、real=実データ" },
+    "page_size": { "type": "integer", "minimum": 10, "maximum": 500 }
+  }
+}

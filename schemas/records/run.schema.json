@@ -1,0 +1,87 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://info-test-rs.local/schemas/records/run.schema.json",
+  "title": "run 実行履歴（1回の収集・要約の実行）",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["run_id", "started_at", "finished_at", "status", "trigger", "kind", "period", "sources", "totals", "failures", "api_usage"],
+  "properties": {
+    "run_id": { "type": "string", "pattern": "^run_\\d{8}T\\d{6}Z$" },
+    "started_at": { "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/timestamp" },
+    "finished_at": { "oneOf": [ { "type": "null" }, { "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/timestamp" } ] },
+    "status": { "enum": ["running", "success", "partial", "failed"], "description": "partial=一部の情報源・記事が失敗" },
+    "trigger": { "enum": ["manual_cli", "github_actions"] },
+    "kind": { "enum": ["collect", "summarize", "collect_and_summarize"] },
+    "period": {
+      "description": "--start/--end（日本時間、両端を含む）。週次の自動判定ならnull",
+      "oneOf": [
+        { "type": "null" },
+        {
+          "type": "object", "additionalProperties": false, "required": ["start", "end"],
+          "properties": { "start": { "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/date" }, "end": { "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/date" } }
+        }
+      ]
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["source_id", "status", "candidates", "new", "changed", "unchanged", "date_unknown", "fetch_failed", "warnings", "error"],
+        "properties": {
+          "source_id": { "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/slug_id" },
+          "status": { "enum": ["success", "failed", "skipped", "unsupported"] },
+          "candidates": { "type": "integer", "minimum": 0 },
+          "new": { "type": "integer", "minimum": 0 },
+          "changed": { "type": "integer", "minimum": 0 },
+          "unchanged": { "type": "integer", "minimum": 0 },
+          "date_unknown": { "type": "integer", "minimum": 0 },
+          "fetch_failed": { "type": "integer", "minimum": 0 },
+          "warnings": { "type": "array", "items": { "type": "string" }, "description": "抽出0件・急減など" },
+          "error": { "type": ["string", "null"] }
+        },
+        "if": { "properties": { "status": { "const": "failed" } } },
+        "then": { "properties": { "error": { "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/nonempty_text" } } }
+      }
+    },
+    "totals": {
+      "type": "object", "additionalProperties": false,
+      "required": ["new", "changed", "unchanged", "date_unknown", "fetch_failed", "summarized", "summarize_failed"],
+      "properties": {
+        "new": { "type": "integer", "minimum": 0 },
+        "changed": { "type": "integer", "minimum": 0 },
+        "unchanged": { "type": "integer", "minimum": 0 },
+        "date_unknown": { "type": "integer", "minimum": 0 },
+        "fetch_failed": { "type": "integer", "minimum": 0 },
+        "summarized": { "type": "integer", "minimum": 0 },
+        "summarize_failed": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "failures": {
+      "type": "array",
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["stage", "reason"],
+        "properties": {
+          "source_id": { "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/slug_id" },
+          "article_id": { "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/article_id" },
+          "url": { "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/http_url" },
+          "stage": { "enum": ["config", "list", "fetch", "extract", "summarize"] },
+          "reason": { "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/nonempty_text" }
+        }
+      }
+    },
+    "api_usage": {
+      "type": "object", "additionalProperties": false,
+      "required": ["requests", "input_tokens", "output_tokens", "estimated_cost_usd"],
+      "properties": {
+        "requests": { "type": "integer", "minimum": 0 },
+        "input_tokens": { "type": "integer", "minimum": 0 },
+        "output_tokens": { "type": "integer", "minimum": 0 },
+        "estimated_cost_usd": { "type": ["number", "null"], "minimum": 0 }
+      }
+    }
+  },
+  "if": { "properties": { "status": { "const": "running" } } },
+  "then": { "properties": { "finished_at": { "type": "null" } } },
+  "else": { "properties": { "finished_at": { "type": "string" } } }
+}

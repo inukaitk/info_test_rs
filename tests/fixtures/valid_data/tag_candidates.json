@@ -1,0 +1,6 @@
+{
+  "schema_version": 1,
+  "candidates": [
+    { "name": "健康診査", "reason": "健診に関する記事が複数あるため", "article_id": "a_3715ddd7b3d7eab6", "first_seen_at": "2026-09-16T08:05:00+09:00" }
+  ]
+}

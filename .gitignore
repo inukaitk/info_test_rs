@@ -1,0 +1,28 @@
+# 秘密値（APIキー等）。リポジトリは将来publicになるため絶対にコミットしない
+.env
+.env.*
+!.env.example
+
+# 原文本文・一時PDF・API生応答の置き場（Git・公開物の対象外）
+.cache/
+
+# ログ
+*.log
+logs/
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Node.js / Vite
+node_modules/
+dist/
+web/dist/
+
+# OS・エディタ
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
