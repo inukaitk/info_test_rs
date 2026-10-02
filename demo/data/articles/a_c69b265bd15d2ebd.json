@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_c69b265bd15d2ebd",
+    "source_id": "demo-kodomo-rss",
+    "canonical_url": "https://kodomo.example.org/news/2026/0924-dx.html",
+    "title": "【架空】母子保健情報のデジタル化に関する工程表を公表しました",
+    "published_at": "2026-09-24",
+    "updated_at": null,
+    "date_basis": {
+      "published": {
+        "method": "rss_pubdate",
+        "evidence": "<pubDate>Thu, 24 Sep 2026 10:00:00 +0900</pubDate>"
+      },
+      "updated": null
+    },
+    "date_precision": {
+      "published": "day",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-09-28T08:00:00+09:00",
+    "last_seen_at": "2026-09-28T08:00:00+09:00",
+    "latest_version": 1,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "article_id": "a_c69b265bd15d2ebd",
+      "version": 1,
+      "content_hash": "sha256:05ea30e477cce9e6eb721a04f633f450a8b7a4b5e3a311274f2fa36588f8de6e",
+      "fetched_at": "2026-09-28T08:00:30+09:00",
+      "content_type": "html",
+      "text_length": 950,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "new"
+    }
+  ]
+}

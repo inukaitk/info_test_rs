@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "article_id": "a_3e57408d91e36c75",
+  "summaries": [
+    {
+      "article_id": "a_3e57408d91e36c75",
+      "article_version": 1,
+      "analysis_status": "skipped_no_api_key",
+      "error": "APIキーが設定されていないため未実行",
+      "summary": null,
+      "key_points": null,
+      "targets": null,
+      "dates": null,
+      "ai_tags": null,
+      "uncertainties": null,
+      "provider": null,
+      "model": "demo-model",
+      "prompt_version": "demo-p1",
+      "tags_version": "sha256:7b614744358480442160090c47146cbcfdea9882948f9f9bad77222d6917da4e",
+      "usage": {
+        "input_tokens": null,
+        "output_tokens": null,
+        "retries": 0,
+        "estimated_cost_usd": null
+      },
+      "processed_at": "2026-09-21T08:10:00+09:00"
+    }
+  ]
+}

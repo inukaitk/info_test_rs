@@ -1,0 +1,206 @@
+{
+  "schema_version": 1,
+  "last_run_at": "2026-09-28T08:12:00+09:00",
+  "last_run_status": "partial",
+  "last_full_success_at": "2026-09-07T08:12:00+09:00",
+  "counts": {
+    "articles": 20,
+    "date_unknown": 2,
+    "content_missing": 3,
+    "unsummarized": 7,
+    "summary_outdated": 0
+  },
+  "sources": [
+    {
+      "id": "demo-kodomo-rss",
+      "name": "架空こども政策庁（デモ）",
+      "method": "rss",
+      "entry_url": "https://kodomo.example.org/news/rss.xml",
+      "enabled": true,
+      "last_success_at": "2026-09-28T08:01:00+09:00",
+      "last_attempt_at": "2026-09-28T08:00:00+09:00",
+      "last_attempt_status": "success",
+      "consecutive_failures": 0,
+      "explored_range": {
+        "oldest": "2026-08-20",
+        "newest": "2026-09-25",
+        "pages": 1
+      },
+      "retry_count": 0,
+      "last_run": {
+        "status": "success",
+        "error": null,
+        "warnings": [],
+        "new": 2,
+        "changed": 0,
+        "unchanged": 10,
+        "date_unknown": 0,
+        "fetch_failed": 0
+      },
+      "articles": 8,
+      "date_unknown": 0
+    },
+    {
+      "id": "demo-boshi-html",
+      "name": "架空母子保健研究機構（デモ）",
+      "method": "html",
+      "entry_url": "https://boshi.example.net/info/index.html",
+      "enabled": true,
+      "last_success_at": "2026-09-28T08:03:00+09:00",
+      "last_attempt_at": "2026-09-28T08:00:00+09:00",
+      "last_attempt_status": "success",
+      "consecutive_failures": 0,
+      "explored_range": {
+        "oldest": "2026-07-01",
+        "newest": "2026-09-22",
+        "pages": 3
+      },
+      "retry_count": 0,
+      "last_run": {
+        "status": "success",
+        "error": null,
+        "warnings": [],
+        "new": 1,
+        "changed": 1,
+        "unchanged": 8,
+        "date_unknown": 0,
+        "fetch_failed": 0
+      },
+      "articles": 5,
+      "date_unknown": 2
+    },
+    {
+      "id": "demo-jichitai-html",
+      "name": "架空自治体標準化推進室（デモ）",
+      "method": "html",
+      "entry_url": "https://hyojunka.example.com/topics/",
+      "enabled": true,
+      "last_success_at": "2026-09-14T08:05:00+09:00",
+      "last_attempt_at": "2026-09-28T08:00:00+09:00",
+      "last_attempt_status": "failed",
+      "consecutive_failures": 2,
+      "explored_range": {
+        "oldest": "2026-08-01",
+        "newest": "2026-09-12",
+        "pages": 2
+      },
+      "retry_count": 1,
+      "last_run": {
+        "status": "failed",
+        "error": "一覧ページがタイムアウト（30秒）",
+        "warnings": [],
+        "new": 0,
+        "changed": 0,
+        "unchanged": 0,
+        "date_unknown": 0,
+        "fetch_failed": 0
+      },
+      "articles": 3,
+      "date_unknown": 0
+    },
+    {
+      "id": "demo-tokei-rss",
+      "name": "架空統計調査センター（デモ）",
+      "method": "rss",
+      "entry_url": "https://tokei.example.org/release/feed.xml",
+      "enabled": true,
+      "last_success_at": "2026-09-28T08:06:00+09:00",
+      "last_attempt_at": "2026-09-28T08:00:00+09:00",
+      "last_attempt_status": "success",
+      "consecutive_failures": 0,
+      "explored_range": {
+        "oldest": "2026-06-01",
+        "newest": "2026-09-26",
+        "pages": 1
+      },
+      "retry_count": 1,
+      "last_run": {
+        "status": "success",
+        "error": null,
+        "warnings": [
+          "新着が前回より大きく減少（架空の警告例）"
+        ],
+        "new": 1,
+        "changed": 0,
+        "unchanged": 8,
+        "date_unknown": 0,
+        "fetch_failed": 0
+      },
+      "articles": 4,
+      "date_unknown": 0
+    }
+  ],
+  "runs": [
+    {
+      "run_id": "run_20260927T230000Z",
+      "started_at": "2026-09-28T08:00:00+09:00",
+      "finished_at": "2026-09-28T08:12:00+09:00",
+      "status": "partial",
+      "kind": "collect_and_summarize",
+      "period": null,
+      "totals": {
+        "new": 4,
+        "changed": 1,
+        "unchanged": 26,
+        "date_unknown": 0,
+        "fetch_failed": 0,
+        "summarized": 3,
+        "summarize_failed": 1
+      }
+    },
+    {
+      "run_id": "run_20260920T230000Z",
+      "started_at": "2026-09-21T08:00:00+09:00",
+      "finished_at": "2026-09-21T08:12:00+09:00",
+      "status": "partial",
+      "kind": "collect_and_summarize",
+      "period": null,
+      "totals": {
+        "new": 4,
+        "changed": 1,
+        "unchanged": 25,
+        "date_unknown": 0,
+        "fetch_failed": 0,
+        "summarized": 3,
+        "summarize_failed": 2
+      }
+    },
+    {
+      "run_id": "run_20260913T230000Z",
+      "started_at": "2026-09-14T08:00:00+09:00",
+      "finished_at": "2026-09-14T08:12:00+09:00",
+      "status": "partial",
+      "kind": "collect_and_summarize",
+      "period": null,
+      "totals": {
+        "new": 7,
+        "changed": 0,
+        "unchanged": 30,
+        "date_unknown": 2,
+        "fetch_failed": 2,
+        "summarized": 5,
+        "summarize_failed": 0
+      }
+    },
+    {
+      "run_id": "run_20260906T230000Z",
+      "started_at": "2026-09-07T08:00:00+09:00",
+      "finished_at": "2026-09-07T08:12:00+09:00",
+      "status": "success",
+      "kind": "collect_and_summarize",
+      "period": {
+        "start": "2026-08-24",
+        "end": "2026-09-07"
+      },
+      "totals": {
+        "new": 5,
+        "changed": 0,
+        "unchanged": 30,
+        "date_unknown": 0,
+        "fetch_failed": 0,
+        "summarized": 5,
+        "summarize_failed": 0
+      }
+    }
+  ]
+}

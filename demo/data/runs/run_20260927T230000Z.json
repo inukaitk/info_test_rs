@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "run": {
+    "run_id": "run_20260927T230000Z",
+    "started_at": "2026-09-28T08:00:00+09:00",
+    "finished_at": "2026-09-28T08:12:00+09:00",
+    "status": "partial",
+    "trigger": "manual_cli",
+    "kind": "collect_and_summarize",
+    "period": null,
+    "sources": [
+      {
+        "source_id": "demo-kodomo-rss",
+        "status": "success",
+        "candidates": 12,
+        "new": 2,
+        "changed": 0,
+        "unchanged": 10,
+        "date_unknown": 0,
+        "fetch_failed": 0,
+        "warnings": [],
+        "error": null
+      },
+      {
+        "source_id": "demo-boshi-html",
+        "status": "success",
+        "candidates": 10,
+        "new": 1,
+        "changed": 1,
+        "unchanged": 8,
+        "date_unknown": 0,
+        "fetch_failed": 0,
+        "warnings": [],
+        "error": null
+      },
+      {
+        "source_id": "demo-jichitai-html",
+        "status": "failed",
+        "candidates": 0,
+        "new": 0,
+        "changed": 0,
+        "unchanged": 0,
+        "date_unknown": 0,
+        "fetch_failed": 0,
+        "warnings": [],
+        "error": "一覧ページがタイムアウト（30秒）"
+      },
+      {
+        "source_id": "demo-tokei-rss",
+        "status": "success",
+        "candidates": 9,
+        "new": 1,
+        "changed": 0,
+        "unchanged": 8,
+        "date_unknown": 0,
+        "fetch_failed": 0,
+        "warnings": [
+          "新着が前回より大きく減少（架空の警告例）"
+        ],
+        "error": null
+      }
+    ],
+    "totals": {
+      "new": 4,
+      "changed": 1,
+      "unchanged": 26,
+      "date_unknown": 0,
+      "fetch_failed": 0,
+      "summarized": 3,
+      "summarize_failed": 1
+    },
+    "failures": [
+      {
+        "source_id": "demo-jichitai-html",
+        "url": "https://hyojunka.example.com/topics/",
+        "stage": "list",
+        "reason": "タイムアウト（30秒）"
+      }
+    ],
+    "api_usage": {
+      "requests": 4,
+      "input_tokens": 7200,
+      "output_tokens": 1280,
+      "estimated_cost_usd": 0.02
+    }
+  }
+}

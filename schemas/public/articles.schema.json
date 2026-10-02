@@ -1,0 +1,460 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://info-test-rs.local/schemas/public/articles.schema.json",
+  "title": "articles.json 記事一覧と詳細",
+  "description": "画面用JSONのallowlist。ここにない項目は出力できない（additionalProperties: false）",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "articles"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "articles": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "source_id",
+          "source_name",
+          "title",
+          "url",
+          "published",
+          "updated",
+          "first_seen_at",
+          "last_seen_at",
+          "status",
+          "content_status",
+          "content_error",
+          "latest_version",
+          "versions",
+          "summary",
+          "tags",
+          "removed_tags",
+          "tag_override_reason"
+        ],
+        "properties": {
+          "id": {
+            "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/article_id"
+          },
+          "source_id": {
+            "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/slug_id"
+          },
+          "source_name": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "url": {
+            "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/http_url"
+          },
+          "published": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "value",
+              "precision",
+              "basis"
+            ],
+            "properties": {
+              "value": {
+                "oneOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/partial_date"
+                  }
+                ]
+              },
+              "precision": {
+                "enum": [
+                  "datetime",
+                  "day",
+                  "month",
+                  "year",
+                  "unknown"
+                ]
+              },
+              "basis": {
+                "oneOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "method",
+                      "evidence"
+                    ],
+                    "properties": {
+                      "method": {
+                        "type": "string"
+                      },
+                      "evidence": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "updated": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "value",
+              "precision",
+              "basis"
+            ],
+            "properties": {
+              "value": {
+                "oneOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/partial_date"
+                  }
+                ]
+              },
+              "precision": {
+                "enum": [
+                  "datetime",
+                  "day",
+                  "month",
+                  "year",
+                  "unknown"
+                ]
+              },
+              "basis": {
+                "oneOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "method",
+                      "evidence"
+                    ],
+                    "properties": {
+                      "method": {
+                        "type": "string"
+                      },
+                      "evidence": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "first_seen_at": {
+            "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/timestamp"
+          },
+          "last_seen_at": {
+            "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/timestamp"
+          },
+          "status": {
+            "enum": [
+              "active",
+              "missing_from_listing",
+              "manual",
+              "unsupported"
+            ]
+          },
+          "content_status": {
+            "enum": [
+              "ok",
+              "failed",
+              "unsupported",
+              "not_fetched"
+            ]
+          },
+          "content_error": {
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "type": "string"
+              }
+            ]
+          },
+          "latest_version": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "versions": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "version",
+                "fetched_at",
+                "change_type",
+                "extraction_status"
+              ],
+              "properties": {
+                "version": {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                "fetched_at": {
+                  "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/timestamp"
+                },
+                "change_type": {
+                  "enum": [
+                    "new",
+                    "content_changed"
+                  ]
+                },
+                "extraction_status": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "summary": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "status",
+              "error",
+              "version",
+              "outdated",
+              "text",
+              "key_points",
+              "targets",
+              "dates",
+              "uncertainties",
+              "model",
+              "processed_at"
+            ],
+            "properties": {
+              "status": {
+                "enum": [
+                  "success",
+                  "pending",
+                  "skipped_no_api_key",
+                  "skipped_no_content",
+                  "failed_api_error",
+                  "failed_invalid_output",
+                  "failed_limit_exceeded",
+                  "not_processed"
+                ]
+              },
+              "error": {
+                "oneOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string"
+                  }
+                ]
+              },
+              "version": {
+                "oneOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "integer",
+                    "minimum": 1
+                  }
+                ]
+              },
+              "outdated": {
+                "type": "boolean"
+              },
+              "text": {
+                "oneOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string",
+                    "maxLength": 300
+                  }
+                ]
+              },
+              "key_points": {
+                "oneOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  }
+                ]
+              },
+              "targets": {
+                "oneOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  }
+                ]
+              },
+              "dates": {
+                "oneOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "label",
+                        "value",
+                        "evidence"
+                      ],
+                      "properties": {
+                        "label": {
+                          "type": "string"
+                        },
+                        "value": {
+                          "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/partial_date"
+                        },
+                        "evidence": {
+                          "type": "string",
+                          "maxLength": 200
+                        }
+                      }
+                    }
+                  }
+                ]
+              },
+              "uncertainties": {
+                "oneOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  }
+                ]
+              },
+              "model": {
+                "oneOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string"
+                  }
+                ]
+              },
+              "processed_at": {
+                "oneOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/timestamp"
+                  }
+                ]
+              }
+            }
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "id",
+                "name",
+                "origin",
+                "reason",
+                "retired"
+              ],
+              "properties": {
+                "id": {
+                  "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/slug_id"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "origin": {
+                  "enum": [
+                    "ai",
+                    "human"
+                  ]
+                },
+                "reason": {
+                  "oneOf": [
+                    {
+                      "type": "null"
+                    },
+                    {
+                      "type": "string"
+                    }
+                  ]
+                },
+                "retired": {
+                  "type": "boolean"
+                }
+              }
+            }
+          },
+          "removed_tags": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "id",
+                "name"
+              ],
+              "properties": {
+                "id": {
+                  "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/slug_id"
+                },
+                "name": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "tag_override_reason": {
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "type": "string"
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

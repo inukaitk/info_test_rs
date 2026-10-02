@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "article_id": "a_7bde7ee0e438b9a7",
+  "summaries": [
+    {
+      "article_id": "a_7bde7ee0e438b9a7",
+      "article_version": 1,
+      "analysis_status": "failed_api_error",
+      "error": "HTTP 529（APIが混雑）。再試行対象に登録",
+      "summary": null,
+      "key_points": null,
+      "targets": null,
+      "dates": null,
+      "ai_tags": null,
+      "uncertainties": null,
+      "provider": "demo",
+      "model": "demo-model",
+      "prompt_version": "demo-p1",
+      "tags_version": "sha256:7b614744358480442160090c47146cbcfdea9882948f9f9bad77222d6917da4e",
+      "usage": {
+        "input_tokens": null,
+        "output_tokens": null,
+        "retries": 2,
+        "estimated_cost_usd": null
+      },
+      "processed_at": "2026-09-21T08:10:00+09:00"
+    }
+  ]
+}

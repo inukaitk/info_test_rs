@@ -2,7 +2,7 @@
 
 中央官庁・公的機関の公開情報を収集し、短い概要と登録済みタグを付けて、最新一覧とテーマ別Wikiで閲覧するための個人開発の検証版です。
 
-> 現在は **段階0-a**（設定とデータの形式を決め、検証する仕組み）まで進んでいます。画面はまだありません。
+> 現在は **段階0-b**（架空データと、画面用JSONを作る公開用変換）まで進んでいます。画面はまだありません。
 > 現在の設定・データはすべて **架空** です。
 
 ## フォルダ構成
@@ -16,7 +16,10 @@
 | `config/` | 人が変更する設定（情報源、タグ、タグ修正、画面設定） |
 | `data/` | 自動処理が作るデータ（記事、版、要約、実行履歴、取得状態、タグ候補） |
 | `schemas/` | 設定とデータの形式（JSON Schema） |
-| `collector/` | Pythonの処理（現在はスキーマ検証のみ） |
+| `collector/` | Pythonの処理（スキーマ検証、公開用変換） |
+| `demo/` | 架空のデモデータ（`demo/data/`）と、その情報源・タグ修正（`demo/config/`） |
+| `web/public/data/` | 画面用JSON（公開用変換の出力。画面はこれだけを読む） |
+| `scripts/` | 架空データの作成、コミット前の安全確認 |
 | `tests/` | テスト（`tests/fixtures/` は架空のテスト用データ） |
 
 ## 設定ファイル（config/）
@@ -76,9 +79,51 @@ python -m venv .venv                                # 作業用環境を作る�
 
 ### 成功時の表示
 
-- テスト：最後に `112 passed` のように表示され、`failed` がなければ成功です（件数は今後増えます）。
+- テスト：最後に `167 passed` のように表示され、`failed` がなければ成功です（件数は今後増えます）。
 - 検証：`OK: 設定とデータはスキーマ検証を通過しました` と表示されれば成功です。
   問題があると `NG: 1 件の問題があります` に続けて、ファイル名と問題の箇所が表示されます。
+
+## 画面用JSONを作る（公開用変換）
+
+`config/` と `data/`（または `demo/`）から、画面に出してよい項目だけを取り出して `web/public/data/` に3つのファイルを作ります。
+
+| ファイル | 内容 |
+|---|---|
+| `meta.json` | サイト名、修正依頼リンク、release_mode、タグ一覧、情報源一覧 |
+| `articles.json` | 記事の一覧と詳細（日付と根拠、概要、論点、タグとその由来、AI処理状態、版の履歴） |
+| `status.json` | 取得状況（最終実行、最終全情報源成功、情報源ごとの成否、日付不明・未要約の件数、実行履歴） |
+
+```bash
+.venv/bin/python -m collector.export                # config/site.yaml の release_mode に従う（今は demo）
+.venv/bin/python -m collector.export --mode demo    # 架空データ（demo/）から作る
+.venv/bin/python -m collector.export --mode real    # 実データ（data/）から作る
+```
+
+成功すると `OK: demo モードで記事 20 件の画面用JSONを …/web/public/data に出力しました` と表示されます。
+入力データに問題があるときや、出力に秘密値らしい文字列が含まれるときは `NG:` と理由が表示され、ファイルは書き換えられません。
+
+画面用JSONに **含めないもの**：原文全文、AI APIの生応答、AIのタグ候補（`data/tag_candidates.json`）、`.cache/` の中身、APIキー等の秘密値。
+タグは「AIタグ ＋ 追加 － 除外」（追加・除外は `config/tag_overrides.yaml`）で計算し、AIが付けたものか人が追加したものかを区別して出力します。
+
+架空データを作り直すとき（内容を変えたいときだけ）：
+
+```bash
+.venv/bin/python scripts/make_demo_data.py          # demo/data と demo/config/tag_overrides.yaml を作り直す
+.venv/bin/python -m collector.validate --demo       # 架空データを検証する
+.venv/bin/python -m collector.export --mode demo    # 画面用JSONを作り直す
+```
+
+## コミット前の安全確認
+
+`.env`（秘密値）、`.cache/`（原文・生応答）、`node_modules/`、ログ、APIキーらしい文字列がコミット対象に入っていないかを確認します。テスト（`pytest`）でも同じ確認をしています。
+
+```bash
+.venv/bin/python scripts/check_repo_safety.py           # Gitで管理されている全ファイルを確認
+.venv/bin/python scripts/check_repo_safety.py --staged  # git add 済みのファイルだけを確認
+git config core.hooksPath .githooks                     # コミットのたびに自動で確認する（cloneごとに一度だけ）
+```
+
+成功すると `OK: .env・.cache/・秘密値はコミット対象に含まれていません` と表示されます。問題があるとコミットが止まり、該当するファイルが表示されます。
 
 ## 公開に関する注意
 

@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_6b7e84ea250ff79c",
+    "source_id": "demo-boshi-html",
+    "canonical_url": "https://boshi.example.net/info/20260902.html",
+    "title": "【架空】母子健康手帳の様式改定に関する研究報告",
+    "published_at": "2026-09-02",
+    "updated_at": null,
+    "date_basis": {
+      "published": {
+        "method": "html_text",
+        "evidence": "掲載日：2026年9月2日"
+      },
+      "updated": null
+    },
+    "date_precision": {
+      "published": "day",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-09-07T08:00:00+09:00",
+    "last_seen_at": "2026-09-07T08:00:00+09:00",
+    "latest_version": 1,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "article_id": "a_6b7e84ea250ff79c",
+      "version": 1,
+      "content_hash": "sha256:c94a7951cf7346a6b5dc55c9b1e7749b9ea8f103d1e5d5227ae3437684b57af8",
+      "fetched_at": "2026-09-07T08:00:30+09:00",
+      "content_type": "html",
+      "text_length": 950,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "new"
+    }
+  ]
+}

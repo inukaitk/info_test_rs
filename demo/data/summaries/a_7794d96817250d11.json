@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "article_id": "a_7794d96817250d11",
+  "summaries": [
+    {
+      "article_id": "a_7794d96817250d11",
+      "article_version": 1,
+      "analysis_status": "success",
+      "error": null,
+      "summary": "【架空】子育てに関する意識調査の結果が公表された。相談先の認知度が課題とされた。",
+      "key_points": [
+        "相談先の認知度",
+        "利用したい支援"
+      ],
+      "targets": [
+        "一般"
+      ],
+      "dates": [],
+      "ai_tags": [
+        {
+          "tag_id": "survey-statistics",
+          "reason": "調査結果の公表のため"
+        },
+        {
+          "tag_id": "childcare-support",
+          "reason": "子育て支援に関する内容のため"
+        }
+      ],
+      "uncertainties": [],
+      "provider": "demo",
+      "model": "demo-model",
+      "prompt_version": "demo-p1",
+      "tags_version": "sha256:7b614744358480442160090c47146cbcfdea9882948f9f9bad77222d6917da4e",
+      "usage": {
+        "input_tokens": 1800,
+        "output_tokens": 320,
+        "retries": 0,
+        "estimated_cost_usd": 0.005
+      },
+      "processed_at": "2026-09-28T08:10:00+09:00"
+    }
+  ]
+}

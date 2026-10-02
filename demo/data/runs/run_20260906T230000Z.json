@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "run": {
+    "run_id": "run_20260906T230000Z",
+    "started_at": "2026-09-07T08:00:00+09:00",
+    "finished_at": "2026-09-07T08:12:00+09:00",
+    "status": "success",
+    "trigger": "manual_cli",
+    "kind": "collect_and_summarize",
+    "period": {
+      "start": "2026-08-24",
+      "end": "2026-09-07"
+    },
+    "sources": [
+      {
+        "source_id": "demo-kodomo-rss",
+        "status": "success",
+        "candidates": 12,
+        "new": 2,
+        "changed": 0,
+        "unchanged": 10,
+        "date_unknown": 0,
+        "fetch_failed": 0,
+        "warnings": [],
+        "error": null
+      },
+      {
+        "source_id": "demo-boshi-html",
+        "status": "success",
+        "candidates": 8,
+        "new": 1,
+        "changed": 0,
+        "unchanged": 7,
+        "date_unknown": 0,
+        "fetch_failed": 0,
+        "warnings": [],
+        "error": null
+      },
+      {
+        "source_id": "demo-jichitai-html",
+        "status": "success",
+        "candidates": 6,
+        "new": 1,
+        "changed": 0,
+        "unchanged": 5,
+        "date_unknown": 0,
+        "fetch_failed": 0,
+        "warnings": [],
+        "error": null
+      },
+      {
+        "source_id": "demo-tokei-rss",
+        "status": "success",
+        "candidates": 9,
+        "new": 1,
+        "changed": 0,
+        "unchanged": 8,
+        "date_unknown": 0,
+        "fetch_failed": 0,
+        "warnings": [],
+        "error": null
+      }
+    ],
+    "totals": {
+      "new": 5,
+      "changed": 0,
+      "unchanged": 30,
+      "date_unknown": 0,
+      "fetch_failed": 0,
+      "summarized": 5,
+      "summarize_failed": 0
+    },
+    "failures": [],
+    "api_usage": {
+      "requests": 5,
+      "input_tokens": 9000,
+      "output_tokens": 1600,
+      "estimated_cost_usd": 0.025
+    }
+  }
+}

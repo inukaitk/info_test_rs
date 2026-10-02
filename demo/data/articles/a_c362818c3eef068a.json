@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_c362818c3eef068a",
+    "source_id": "demo-kodomo-rss",
+    "canonical_url": "https://kodomo.example.org/news/2026/0925-ikkatsu.html",
+    "title": "【架空】こども政策に関する一括法案の概要",
+    "published_at": "2026-09-25",
+    "updated_at": null,
+    "date_basis": {
+      "published": {
+        "method": "rss_pubdate",
+        "evidence": "<pubDate>Fri, 25 Sep 2026 18:00:00 +0900</pubDate>"
+      },
+      "updated": null
+    },
+    "date_precision": {
+      "published": "day",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-09-28T08:00:00+09:00",
+    "last_seen_at": "2026-09-28T08:00:00+09:00",
+    "latest_version": 1,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "article_id": "a_c362818c3eef068a",
+      "version": 1,
+      "content_hash": "sha256:a64672dff4045fb9b5ee68efc5018c0f65c4ae9804211f09d7eeff6b1ed8c5f7",
+      "fetched_at": "2026-09-28T08:00:30+09:00",
+      "content_type": "html",
+      "text_length": 950,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "new"
+    }
+  ]
+}

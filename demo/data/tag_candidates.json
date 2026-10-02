@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "candidates": [
+    {
+      "name": "【架空候補】産後ケア",
+      "reason": "産後ケアに関する記事が複数あるため",
+      "article_id": "a_22ad7f5d9b9f550a",
+      "first_seen_at": "2026-09-21T08:10:00+09:00"
+    },
+    {
+      "name": "【架空候補】事故予防",
+      "reason": "既存タグに該当がないため",
+      "article_id": "a_97b37a4b990ba661",
+      "first_seen_at": "2026-09-28T08:10:00+09:00"
+    }
+  ]
+}

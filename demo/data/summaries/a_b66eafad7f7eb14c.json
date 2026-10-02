@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "article_id": "a_b66eafad7f7eb14c",
+  "summaries": [
+    {
+      "article_id": "a_b66eafad7f7eb14c",
+      "article_version": 1,
+      "analysis_status": "success",
+      "error": null,
+      "summary": "【架空】母子保健システムの標準仕様書第2版が公表された。帳票要件と連携項目が更新された。",
+      "key_points": [
+        "帳票要件の更新",
+        "データ連携項目の追加"
+      ],
+      "targets": [
+        "市区町村",
+        "システム事業者"
+      ],
+      "dates": [
+        {
+          "label": "適合期限",
+          "value": "2028-03-31",
+          "evidence": "令和10年3月31日までに標準仕様に適合"
+        }
+      ],
+      "ai_tags": [
+        {
+          "tag_id": "municipal-dx-standardization",
+          "reason": "システム標準化に関する内容のため"
+        },
+        {
+          "tag_id": "maternal-child-health",
+          "reason": "母子保健システムが対象のため"
+        },
+        {
+          "tag_id": "system-revision",
+          "reason": "仕様の改定のため"
+        }
+      ],
+      "uncertainties": [],
+      "provider": "demo",
+      "model": "demo-model",
+      "prompt_version": "demo-p1",
+      "tags_version": "sha256:7b614744358480442160090c47146cbcfdea9882948f9f9bad77222d6917da4e",
+      "usage": {
+        "input_tokens": 1800,
+        "output_tokens": 320,
+        "retries": 0,
+        "estimated_cost_usd": 0.005
+      },
+      "processed_at": "2026-09-07T08:10:00+09:00"
+    }
+  ]
+}

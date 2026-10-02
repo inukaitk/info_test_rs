@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_c61122ed18b586e6",
+    "source_id": "demo-kodomo-rss",
+    "canonical_url": "https://kodomo.example.org/news/2026/0908-jimurenraku.html",
+    "title": "【架空】妊婦健康診査の費用助成に関する事務連絡",
+    "published_at": "2026-09-08",
+    "updated_at": null,
+    "date_basis": {
+      "published": {
+        "method": "rss_pubdate",
+        "evidence": "<pubDate>Tue, 08 Sep 2026 09:30:00 +0900</pubDate>"
+      },
+      "updated": null
+    },
+    "date_precision": {
+      "published": "day",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-09-14T08:00:00+09:00",
+    "last_seen_at": "2026-09-14T08:00:00+09:00",
+    "latest_version": 1,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "article_id": "a_c61122ed18b586e6",
+      "version": 1,
+      "content_hash": "sha256:d1d1cd137db91f764a84155ed58700f2fd6a3b9a2ba7ee625328e8c8020fc1cd",
+      "fetched_at": "2026-09-14T08:00:30+09:00",
+      "content_type": "html",
+      "text_length": 950,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "new"
+    }
+  ]
+}

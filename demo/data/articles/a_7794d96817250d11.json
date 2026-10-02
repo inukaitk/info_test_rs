@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_7794d96817250d11",
+    "source_id": "demo-tokei-rss",
+    "canonical_url": "https://tokei.example.org/release/2026/0926-kosodate-ishiki.html",
+    "title": "【架空】子育てに関する意識調査の結果",
+    "published_at": "2026",
+    "updated_at": null,
+    "date_basis": {
+      "published": {
+        "method": "rss_pubdate",
+        "evidence": "<dc:date>2026</dc:date>"
+      },
+      "updated": null
+    },
+    "date_precision": {
+      "published": "year",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-09-28T08:00:00+09:00",
+    "last_seen_at": "2026-09-28T08:00:00+09:00",
+    "latest_version": 1,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "article_id": "a_7794d96817250d11",
+      "version": 1,
+      "content_hash": "sha256:6223b41128fac05ea94ce1ec39035664fcf7e030b6ebf5ab288c433f9f6e9d2b",
+      "fetched_at": "2026-09-28T08:00:30+09:00",
+      "content_type": "html",
+      "text_length": 950,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "new"
+    }
+  ]
+}

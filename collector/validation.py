@@ -146,12 +146,18 @@ def _duplicates(values: list) -> list:
 # ---------------------------------------------------------------- config/
 
 
-def validate_config(config_dir: Path, report: Report | None = None) -> tuple[Config | None, Report]:
+def validate_config(
+    config_dir: Path, report: Report | None = None, overlay_dir: Path | None = None
+) -> tuple[Config | None, Report]:
+    """config_dir の設定を検証する。overlay_dir に同名ファイルがあればそちらを使う（demo/config 用）。"""
     report = report or Report()
     loaded: dict[str, Any] = {}
     for filename, schema_name in CONFIG_FILES.items():
         path = config_dir / filename
         where = f"config/{filename}"
+        if overlay_dir is not None and (overlay_dir / filename).exists():
+            path = overlay_dir / filename
+            where = f"{overlay_dir.parent.name}/{overlay_dir.name}/{filename}"
         if not path.exists():
             report.add(where, ["ファイルがありません"])
             continue
@@ -342,8 +348,8 @@ def _check_tag_candidates(data_dir: Path, latest_versions: dict[str, int], repor
     report.add("data/tag_candidates.json", problems)
 
 
-def validate_all(config_dir: Path, data_dir: Path) -> Report:
-    config, report = validate_config(config_dir)
+def validate_all(config_dir: Path, data_dir: Path, overlay_dir: Path | None = None) -> Report:
+    config, report = validate_config(config_dir, overlay_dir=overlay_dir)
     if config is not None:
         validate_data(data_dir, config, report)
     return report

@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_97b37a4b990ba661",
+    "source_id": "demo-boshi-html",
+    "canonical_url": "https://boshi.example.net/info/20260922.html",
+    "title": "【架空】こどもの事故予防に関する啓発資料",
+    "published_at": "2026-09",
+    "updated_at": null,
+    "date_basis": {
+      "published": {
+        "method": "listing_text",
+        "evidence": "2026年9月"
+      },
+      "updated": null
+    },
+    "date_precision": {
+      "published": "month",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-09-28T08:00:00+09:00",
+    "last_seen_at": "2026-09-28T08:00:00+09:00",
+    "latest_version": 1,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "article_id": "a_97b37a4b990ba661",
+      "version": 1,
+      "content_hash": "sha256:cd1594cc29ae56a4b65b2203040a81324069e84cc74501948c9cd5ece1e14296",
+      "fetched_at": "2026-09-28T08:00:30+09:00",
+      "content_type": "html",
+      "text_length": 950,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "new"
+    }
+  ]
+}

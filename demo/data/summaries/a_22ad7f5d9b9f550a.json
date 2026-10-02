@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "article_id": "a_22ad7f5d9b9f550a",
+  "summaries": [
+    {
+      "article_id": "a_22ad7f5d9b9f550a",
+      "article_version": 1,
+      "analysis_status": "success",
+      "error": null,
+      "summary": "【架空】産後ケア事業のQ&Aが更新され、利用者負担の軽減に関する回答が追加された。",
+      "key_points": [
+        "利用者負担の軽減",
+        "委託先の要件"
+      ],
+      "targets": [
+        "市区町村"
+      ],
+      "dates": [],
+      "ai_tags": [
+        {
+          "tag_id": "maternal-child-health",
+          "reason": "産後ケアに関する内容のため"
+        },
+        {
+          "tag_id": "survey-statistics",
+          "reason": "利用状況の数値が含まれるため"
+        }
+      ],
+      "uncertainties": [],
+      "provider": "demo",
+      "model": "demo-model",
+      "prompt_version": "demo-p1",
+      "tags_version": "sha256:7b614744358480442160090c47146cbcfdea9882948f9f9bad77222d6917da4e",
+      "usage": {
+        "input_tokens": 1800,
+        "output_tokens": 320,
+        "retries": 0,
+        "estimated_cost_usd": 0.005
+      },
+      "processed_at": "2026-09-21T08:10:00+09:00"
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://info-test-rs.local/schemas/public/meta.schema.json",
+  "title": "meta.json サイト情報・タグ・情報源",
+  "description": "画面用JSONのallowlist。ここにない項目は出力できない（additionalProperties: false）",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "generated_at",
+    "release_mode",
+    "is_demo",
+    "site_name",
+    "correction_request_url",
+    "page_size",
+    "tags",
+    "sources"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "generated_at": {
+      "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/timestamp"
+    },
+    "release_mode": {
+      "enum": [
+        "demo",
+        "real"
+      ]
+    },
+    "is_demo": {
+      "type": "boolean"
+    },
+    "site_name": {
+      "type": "string"
+    },
+    "correction_request_url": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/https_url"
+        }
+      ]
+    },
+    "page_size": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "name",
+          "description",
+          "retired"
+        ],
+        "properties": {
+          "id": {
+            "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/slug_id"
+          },
+          "name": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "retired": {
+            "type": "boolean"
+          }
+        }
+      }
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "name"
+        ],
+        "properties": {
+          "id": {
+            "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/slug_id"
+          },
+          "name": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

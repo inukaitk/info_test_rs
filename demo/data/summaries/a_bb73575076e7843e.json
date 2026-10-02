@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "article_id": "a_bb73575076e7843e",
+  "summaries": [
+    {
+      "article_id": "a_bb73575076e7843e",
+      "article_version": 1,
+      "analysis_status": "success",
+      "error": null,
+      "summary": "【架空】保育所の環境改善を対象とする交付金の公募が開始された。申請締切は10月30日。",
+      "key_points": [
+        "対象経費は設備整備",
+        "補助率は2分の1"
+      ],
+      "targets": [
+        "都道府県",
+        "市区町村",
+        "保育所設置者"
+      ],
+      "dates": [
+        {
+          "label": "申請締切",
+          "value": "2026-10-30",
+          "evidence": "令和8年10月30日（金）必着"
+        }
+      ],
+      "ai_tags": [
+        {
+          "tag_id": "subsidy-grant",
+          "reason": "交付金の公募のため"
+        },
+        {
+          "tag_id": "childcare-support",
+          "reason": "保育に関する支援のため"
+        }
+      ],
+      "uncertainties": [],
+      "provider": "demo",
+      "model": "demo-model",
+      "prompt_version": "demo-p1",
+      "tags_version": "sha256:7b614744358480442160090c47146cbcfdea9882948f9f9bad77222d6917da4e",
+      "usage": {
+        "input_tokens": 1800,
+        "output_tokens": 320,
+        "retries": 0,
+        "estimated_cost_usd": 0.005
+      },
+      "processed_at": "2026-09-07T08:10:00+09:00"
+    }
+  ]
+}

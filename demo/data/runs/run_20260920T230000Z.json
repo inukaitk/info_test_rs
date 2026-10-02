@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "run": {
+    "run_id": "run_20260920T230000Z",
+    "started_at": "2026-09-21T08:00:00+09:00",
+    "finished_at": "2026-09-21T08:12:00+09:00",
+    "status": "partial",
+    "trigger": "manual_cli",
+    "kind": "collect_and_summarize",
+    "period": null,
+    "sources": [
+      {
+        "source_id": "demo-kodomo-rss",
+        "status": "success",
+        "candidates": 12,
+        "new": 2,
+        "changed": 1,
+        "unchanged": 9,
+        "date_unknown": 0,
+        "fetch_failed": 0,
+        "warnings": [],
+        "error": null
+      },
+      {
+        "source_id": "demo-boshi-html",
+        "status": "success",
+        "candidates": 9,
+        "new": 1,
+        "changed": 0,
+        "unchanged": 8,
+        "date_unknown": 0,
+        "fetch_failed": 0,
+        "warnings": [],
+        "error": null
+      },
+      {
+        "source_id": "demo-jichitai-html",
+        "status": "failed",
+        "candidates": 0,
+        "new": 0,
+        "changed": 0,
+        "unchanged": 0,
+        "date_unknown": 0,
+        "fetch_failed": 0,
+        "warnings": [],
+        "error": "一覧ページがタイムアウト（30秒）"
+      },
+      {
+        "source_id": "demo-tokei-rss",
+        "status": "success",
+        "candidates": 9,
+        "new": 1,
+        "changed": 0,
+        "unchanged": 8,
+        "date_unknown": 0,
+        "fetch_failed": 0,
+        "warnings": [],
+        "error": null
+      }
+    ],
+    "totals": {
+      "new": 4,
+      "changed": 1,
+      "unchanged": 25,
+      "date_unknown": 0,
+      "fetch_failed": 0,
+      "summarized": 3,
+      "summarize_failed": 2
+    },
+    "failures": [
+      {
+        "source_id": "demo-jichitai-html",
+        "url": "https://hyojunka.example.com/topics/",
+        "stage": "list",
+        "reason": "タイムアウト（30秒）"
+      },
+      {
+        "article_id": "a_7bde7ee0e438b9a7",
+        "stage": "summarize",
+        "reason": "HTTP 529（APIが混雑）"
+      }
+    ],
+    "api_usage": {
+      "requests": 5,
+      "input_tokens": 9000,
+      "output_tokens": 1600,
+      "estimated_cost_usd": 0.02
+    }
+  }
+}

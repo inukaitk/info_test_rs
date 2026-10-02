@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "article_id": "a_97b37a4b990ba661",
+  "summaries": [
+    {
+      "article_id": "a_97b37a4b990ba661",
+      "article_version": 1,
+      "analysis_status": "success",
+      "error": null,
+      "summary": "【架空】家庭内でのこどもの事故を防ぐための啓発資料が公開された。",
+      "key_points": [
+        "誤飲・転落の予防",
+        "年齢別の注意点"
+      ],
+      "targets": [
+        "保護者",
+        "保育施設"
+      ],
+      "dates": [],
+      "ai_tags": [],
+      "uncertainties": [],
+      "provider": "demo",
+      "model": "demo-model",
+      "prompt_version": "demo-p1",
+      "tags_version": "sha256:7b614744358480442160090c47146cbcfdea9882948f9f9bad77222d6917da4e",
+      "usage": {
+        "input_tokens": 1800,
+        "output_tokens": 320,
+        "retries": 0,
+        "estimated_cost_usd": 0.005
+      },
+      "processed_at": "2026-09-28T08:10:00+09:00"
+    }
+  ]
+}
