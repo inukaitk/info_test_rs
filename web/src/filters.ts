@@ -1,0 +1,97 @@
+// 一覧の絞り込みと文字検索（画面用JSONに対してブラウザ内で行う）。
+import type { Article } from "./types";
+
+export interface Filters {
+  q: string;
+  tag: string;
+  source: string;
+  from: string; // YYYY-MM-DD（日本時間、両端を含む）
+  to: string;
+}
+
+export const EMPTY_FILTERS: Filters = { q: "", tag: "", source: "", from: "", to: "" };
+
+const KEYS = ["q", "tag", "source", "from", "to"] as const;
+const DATE_RE = /^\d{4}-\d{2}-\d{2}$/;
+
+export function parseFilters(params: URLSearchParams): Filters {
+  const f = { ...EMPTY_FILTERS };
+  for (const key of KEYS) f[key] = (params.get(key) ?? "").slice(0, 200);
+  if (!DATE_RE.test(f.from)) f.from = "";
+  if (!DATE_RE.test(f.to)) f.to = "";
+  return f;
+}
+
+export function filtersToQuery(f: Filters): string {
+  const params = new URLSearchParams();
+  for (const key of KEYS) if (f[key]) params.set(key, f[key]);
+  const s = params.toString();
+  return s ? `?${s}` : "";
+}
+
+/** 全角・半角や大文字・小文字の違いを無視して比較するための正規化。 */
+export function normalize(text: string): string {
+  return text.normalize("NFKC").toLowerCase();
+}
+
+function searchableText(a: Article): string {
+  return normalize(
+    [
+      a.title,
+      a.source_name,
+      a.summary.text ?? "",
+      ...(a.summary.key_points ?? []),
+      ...(a.summary.targets ?? []),
+      ...a.tags.map((t) => t.name),
+    ].join("\n"),
+  );
+}
+
+/** 精度に応じた日付の範囲（例 2026-09 → 2026-09-01〜2026-09-30）。日付不明は null。 */
+export function dateRange(value: string | null): [string, string] | null {
+  if (!value) return null;
+  const m = /^(\d{4})(?:-(\d{2}))?(?:-(\d{2}))?/.exec(value);
+  if (!m) return null;
+  const [, y, mo, d] = m;
+  if (d) return [`${y}-${mo}-${d}`, `${y}-${mo}-${d}`];
+  if (mo) {
+    const last = new Date(Date.UTC(Number(y), Number(mo), 0)).getUTCDate();
+    return [`${y}-${mo}-01`, `${y}-${mo}-${String(last).padStart(2, "0")}`];
+  }
+  return [`${y}-01-01`, `${y}-12-31`];
+}
+
+export function hasPeriod(f: Filters): boolean {
+  return Boolean(f.from || f.to);
+}
+
+/** 期間との重なりで判定する。日付不明の記事は期間指定時には含めない（推定で混ぜない）。 */
+export function inPeriod(a: Article, f: Filters): boolean {
+  if (!hasPeriod(f)) return true;
+  const range = dateRange(a.published.value);
+  if (!range) return false;
+  const [start, end] = range;
+  if (f.from && end < f.from) return false;
+  if (f.to && start > f.to) return false;
+  return true;
+}
+
+export function applyFilters(articles: Article[], f: Filters): Article[] {
+  const terms = normalize(f.q).split(/\s+/).filter(Boolean);
+  return articles.filter((a) => {
+    if (f.tag && !a.tags.some((t) => t.id === f.tag)) return false;
+    if (f.source && a.source_id !== f.source) return false;
+    if (!inPeriod(a, f)) return false;
+    if (terms.length) {
+      const text = searchableText(a);
+      if (!terms.every((t) => text.includes(t))) return false;
+    }
+    return true;
+  });
+}
+
+/** 期間指定によって除外された日付不明の記事数（画面で別枠として知らせる）。 */
+export function countDateUnknownExcluded(articles: Article[], f: Filters): number {
+  if (!hasPeriod(f)) return 0;
+  return applyFilters(articles, { ...f, from: "", to: "" }).filter((a) => a.published.value === null).length;
+}
