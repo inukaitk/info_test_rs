@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_8e2a26b4d84f3a56",
+    "source_id": "demo-boshi-html",
+    "canonical_url": "https://files.boshi.example.net/report-2026.pdf",
+    "title": "【架空】母子保健に関する調査報告書",
+    "published_at": null,
+    "updated_at": null,
+    "date_basis": { "published": null, "updated": null },
+    "date_precision": { "published": "unknown", "updated": "unknown" },
+    "first_seen_at": "2026-09-16T08:01:00+09:00",
+    "last_seen_at": "2026-09-16T08:01:00+09:00",
+    "latest_version": 1,
+    "status": "unsupported"
+  },
+  "versions": [
+    {
+      "article_id": "a_8e2a26b4d84f3a56", "version": 1, "content_hash": null,
+      "fetched_at": "2026-09-16T08:01:10+09:00", "content_type": "pdf", "text_length": null,
+      "extraction_status": "unsupported", "extraction_error": "画像PDFのためテキストを抽出できない", "change_type": "new"
+    }
+  ]
+}

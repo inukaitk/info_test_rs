@@ -1,0 +1,44 @@
+# 登録タグ。分野・制度・文書種別などの一般的な分類に限る（SPEC 3章）。
+# 自社の関心や判断が読み取れるタグ（特定製品への影響、営業機会、要対応など）は作らない。
+# 廃止するときは削除せず enabled: false にする。
+tags:
+  - id: maternal-child-health
+    name: 母子保健
+    description: 妊産婦・乳幼児の健康診査、保健指導、母子健康手帳など母子保健に関する情報。
+    keywords: [母子保健, 妊産婦, 乳幼児健診, 母子健康手帳]
+    enabled: true
+  - id: childcare-support
+    name: 子育て支援
+    description: 保育、子育て世帯への支援事業、相談体制など子育て支援に関する情報。
+    keywords: [子育て支援, 保育, 児童手当, 子育て世帯]
+    enabled: true
+  - id: system-revision
+    name: 制度改正
+    description: 法令・制度・基準の新設や改正、施行に関する情報。
+    keywords: [改正, 施行, 法律, 政令, 省令, 告示]
+    enabled: true
+  - id: subsidy-grant
+    name: 補助金・交付金
+    description: 補助金、交付金、委託事業の公募・交付要綱・実施要領に関する情報。
+    keywords: [補助金, 交付金, 公募, 交付要綱]
+    enabled: true
+  - id: notice-admin-communication
+    name: 通知・事務連絡
+    description: 国から自治体等へ発出される通知・事務連絡。
+    keywords: [通知, 事務連絡]
+    enabled: true
+  - id: municipal-dx-standardization
+    name: 自治体DX・標準化
+    description: 自治体システムの標準化、デジタル化、データ連携に関する情報。
+    keywords: [標準化, 自治体DX, ガバメントクラウド, デジタル化]
+    enabled: true
+  - id: survey-statistics
+    name: 調査・統計
+    description: 公的な調査結果、統計データの公表に関する情報。
+    keywords: [調査, 統計, 結果公表]
+    enabled: true
+  - id: council-committee
+    name: 審議会・検討会
+    description: 審議会・検討会・部会の開催案内、資料、議事録、報告書に関する情報。
+    keywords: [審議会, 検討会, 部会, 議事録, 報告書]
+    enabled: true

@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://info-test-rs.local/schemas/files/article_file.schema.json",
+  "title": "data/articles/<article_id>.json 記事と全版",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "article", "versions"],
+  "properties": {
+    "schema_version": { "const": 1 },
+    "article": { "$ref": "https://info-test-rs.local/schemas/records/article.schema.json" },
+    "versions": { "type": "array", "minItems": 1, "items": { "$ref": "https://info-test-rs.local/schemas/records/article_version.schema.json" } }
+  }
+}

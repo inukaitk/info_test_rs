@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://info-test-rs.local/schemas/files/state_file.schema.json",
+  "title": "data/state.json 情報源ごとの取得状態",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "sources"],
+  "properties": {
+    "schema_version": { "const": 1 },
+    "sources": {
+      "type": "object",
+      "propertyNames": { "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/slug_id" },
+      "additionalProperties": { "$ref": "https://info-test-rs.local/schemas/records/source_state.schema.json" }
+    }
+  }
+}

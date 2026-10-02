@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://info-test-rs.local/schemas/records/article.schema.json",
+  "title": "article 記事（URL単位。日付・内容・AIモデルが変わってもIDは変えない）",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["article_id", "source_id", "canonical_url", "title", "published_at", "updated_at", "date_basis", "date_precision", "first_seen_at", "last_seen_at", "latest_version", "status"],
+  "properties": {
+    "article_id": { "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/article_id" },
+    "source_id": { "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/slug_id" },
+    "canonical_url": { "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/http_url", "description": "正規化URL（フラグメントと既知の追跡パラメーターを除いたもの）" },
+    "title": { "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/nonempty_text" },
+    "published_at": { "oneOf": [ { "type": "null" }, { "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/partial_date" } ], "description": "公開日。不明ならnull（推定で埋めない）" },
+    "updated_at": { "oneOf": [ { "type": "null" }, { "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/partial_date" } ], "description": "原文に明示された更新日。なければnull" },
+    "date_basis": {
+      "type": "object", "additionalProperties": false, "required": ["published", "updated"],
+      "properties": {
+        "published": { "oneOf": [ { "type": "null" }, { "$ref": "#/$defs/basis" } ] },
+        "updated": { "oneOf": [ { "type": "null" }, { "$ref": "#/$defs/basis" } ] }
+      }
+    },
+    "date_precision": {
+      "type": "object", "additionalProperties": false, "required": ["published", "updated"],
+      "properties": {
+        "published": { "$ref": "#/$defs/precision" },
+        "updated": { "$ref": "#/$defs/precision" }
+      }
+    },
+    "first_seen_at": { "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/timestamp", "description": "発見日時。公開日の代わりには使わない" },
+    "last_seen_at": { "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/timestamp" },
+    "latest_version": { "type": "integer", "minimum": 1 },
+    "status": { "enum": ["active", "missing_from_listing", "manual", "unsupported"], "description": "manual=タイトルとURLの手動登録、unsupported=画像PDF・動的ページ等" }
+  },
+  "allOf": [
+    { "$ref": "#/$defs/date_consistency_published" },
+    { "$ref": "#/$defs/date_consistency_updated" }
+  ],
+  "$defs": {
+    "precision": { "enum": ["datetime", "day", "month", "year", "unknown"] },
+    "basis": {
+      "type": "object", "additionalProperties": false, "required": ["method", "evidence"],
+      "properties": {
+        "method": {
+          "enum": ["rss_pubdate", "rss_updated", "html_meta", "html_text", "pdf_metadata", "pdf_text", "listing_text", "url_pattern", "manual"],
+          "description": "HTTPのLast-Modifiedだけで日付を確定しないため、選択肢に含めない"
+        },
+        "evidence": { "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/nonempty_text", "description": "根拠となった原文の短い引用や要素" }
+      }
+    },
+    "date_consistency_published": {
+      "if": { "properties": { "published_at": { "type": "null" } } },
+      "then": { "properties": { "date_basis": { "properties": { "published": { "type": "null" } } }, "date_precision": { "properties": { "published": { "const": "unknown" } } } } },
+      "else": { "properties": { "date_basis": { "properties": { "published": { "type": "object" } } }, "date_precision": { "properties": { "published": { "not": { "const": "unknown" } } } } } }
+    },
+    "date_consistency_updated": {
+      "if": { "properties": { "updated_at": { "type": "null" } } },
+      "then": { "properties": { "date_basis": { "properties": { "updated": { "type": "null" } } }, "date_precision": { "properties": { "updated": { "const": "unknown" } } } } },
+      "else": { "properties": { "date_basis": { "properties": { "updated": { "type": "object" } } }, "date_precision": { "properties": { "updated": { "not": { "const": "unknown" } } } } } }
+    }
+  }
+}

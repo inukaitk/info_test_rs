@@ -1,0 +1,9 @@
+# 記事ごとのタグ修正。画面のタグ = AIタグ + add - remove。
+# AIの再処理ではこのファイルを書き換えない。reason は公開される前提で書く。
+# 記入例（実記事の取得後に article_id を確認して書く）:
+#   - article_id: a_0123456789abcdef
+#     add: [system-revision]
+#     remove: [survey-statistics]
+#     updated: 2026-10-01
+#     reason: 本文が制度改正の通知のため
+overrides: []

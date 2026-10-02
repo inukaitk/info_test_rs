@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "article_id": "a_3715ddd7b3d7eab6",
+  "summaries": [
+    {
+      "article_id": "a_3715ddd7b3d7eab6", "article_version": 1,
+      "analysis_status": "failed_api_error", "error": "HTTP 529 overloaded",
+      "summary": null, "key_points": null, "targets": null, "dates": null, "ai_tags": null, "uncertainties": null,
+      "provider": "demo", "model": "demo-model", "prompt_version": "p1", "tags_version": "sha256:978c2f8941354cf552831bb8b5b648bb3748e83f5d0a69e3301569af01e1de93",
+      "usage": { "input_tokens": null, "output_tokens": null, "retries": 2, "estimated_cost_usd": null },
+      "processed_at": "2026-09-02T08:05:00+09:00"
+    },
+    {
+      "article_id": "a_3715ddd7b3d7eab6", "article_version": 2,
+      "analysis_status": "success", "error": null,
+      "summary": "【架空】乳幼児健診の実施要領が改正され、令和9年4月から問診項目が追加される。",
+      "key_points": ["問診項目の追加", "実施時期の明確化"],
+      "targets": ["市区町村"],
+      "dates": [ { "label": "施行日", "value": "2027-04-01", "evidence": "令和9年4月1日から施行する" } ],
+      "ai_tags": [
+        { "tag_id": "maternal-child-health", "reason": "乳幼児健診に関する内容のため" },
+        { "tag_id": "system-revision", "reason": "実施要領の改正のため" }
+      ],
+      "uncertainties": [],
+      "provider": "demo", "model": "demo-model", "prompt_version": "p1", "tags_version": "sha256:978c2f8941354cf552831bb8b5b648bb3748e83f5d0a69e3301569af01e1de93",
+      "usage": { "input_tokens": 1500, "output_tokens": 300, "retries": 0, "estimated_cost_usd": 0.004 },
+      "processed_at": "2026-09-16T08:05:00+09:00"
+    }
+  ]
+}

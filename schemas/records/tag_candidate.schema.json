@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://info-test-rs.local/schemas/records/tag_candidate.schema.json",
+  "title": "tag_candidate AIが提案した新規タグ候補（記録のみ。tags.yamlへ自動追加しない。画面に出さない）",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["name", "reason", "article_id", "first_seen_at"],
+  "properties": {
+    "name": { "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/nonempty_text" },
+    "reason": { "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/nonempty_text" },
+    "article_id": { "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/article_id", "description": "提案元の記事" },
+    "first_seen_at": { "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/timestamp" }
+  }
+}
