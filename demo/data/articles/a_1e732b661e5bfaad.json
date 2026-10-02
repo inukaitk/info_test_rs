@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_1e732b661e5bfaad",
+    "source_id": "demo-boshi-html",
+    "canonical_url": "https://boshi.example.net/info/20260911.html",
+    "title": "【架空】研修会「妊産婦のメンタルヘルス支援」開催のお知らせ",
+    "published_at": null,
+    "updated_at": null,
+    "date_basis": {
+      "published": null,
+      "updated": null
+    },
+    "date_precision": {
+      "published": "unknown",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-09-14T08:00:00+09:00",
+    "last_seen_at": "2026-09-14T08:00:00+09:00",
+    "latest_version": 1,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "article_id": "a_1e732b661e5bfaad",
+      "version": 1,
+      "content_hash": "sha256:9b6619b01158f9a5c2a55fc10ac8c3fea452f91baa3a834b2b880d5128c2644c",
+      "fetched_at": "2026-09-14T08:00:30+09:00",
+      "content_type": "html",
+      "text_length": 950,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "new"
+    }
+  ]
+}

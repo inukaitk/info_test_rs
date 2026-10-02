@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "article_id": "a_c69b265bd15d2ebd",
+  "summaries": [
+    {
+      "article_id": "a_c69b265bd15d2ebd",
+      "article_version": 1,
+      "analysis_status": "success",
+      "error": null,
+      "summary": "【架空】母子保健情報のデジタル化に向けた工程表が公表された。令和10年度までの段階的な移行を示す。",
+      "key_points": [
+        "電子版母子健康手帳の普及",
+        "自治体システムとの連携"
+      ],
+      "targets": [
+        "市区町村",
+        "医療機関"
+      ],
+      "dates": [
+        {
+          "label": "移行完了目標",
+          "value": "2028",
+          "evidence": "令和10年度末までに移行を完了する"
+        }
+      ],
+      "ai_tags": [
+        {
+          "tag_id": "municipal-dx-standardization",
+          "reason": "自治体のデジタル化に関する内容のため"
+        },
+        {
+          "tag_id": "maternal-child-health",
+          "reason": "母子保健情報が対象のため"
+        }
+      ],
+      "uncertainties": [],
+      "provider": "demo",
+      "model": "demo-model",
+      "prompt_version": "demo-p1",
+      "tags_version": "sha256:7b614744358480442160090c47146cbcfdea9882948f9f9bad77222d6917da4e",
+      "usage": {
+        "input_tokens": 1800,
+        "output_tokens": 320,
+        "retries": 0,
+        "estimated_cost_usd": 0.005
+      },
+      "processed_at": "2026-09-28T08:10:00+09:00"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+# 架空データ用のタグ修正（demo/data の記事に対応）。scripts/make_demo_data.py が生成する。
+overrides:
+  - article_id: a_22ad7f5d9b9f550a
+    add: [notice-admin-communication]
+    remove: [survey-statistics]
+    updated: 2026-09-29
+    reason: Q&Aは事務連絡として扱い、数値は付随的な情報のため（架空の修正例）
+  - article_id: a_97b37a4b990ba661
+    add: [childcare-support]
+    updated: 2026-09-29
+    reason: AIが該当タグなしとしたため追加（架空の修正例）
+  - article_id: a_b66eafad7f7eb14c
+    remove: [system-revision]
+    updated: 2026-09-29
+    reason: 法令改正ではないため（架空の修正例）

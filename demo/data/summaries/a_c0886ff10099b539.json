@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "article_id": "a_c0886ff10099b539",
+  "summaries": [
+    {
+      "article_id": "a_c0886ff10099b539",
+      "article_version": 1,
+      "analysis_status": "success",
+      "error": null,
+      "summary": "【架空】令和7年の出生に関する速報値が公表された。",
+      "key_points": [
+        "出生数の推移",
+        "都道府県別の集計"
+      ],
+      "targets": [
+        "一般"
+      ],
+      "dates": [],
+      "ai_tags": [
+        {
+          "tag_id": "survey-statistics",
+          "reason": "統計の公表のため"
+        }
+      ],
+      "uncertainties": [],
+      "provider": "demo",
+      "model": "demo-model",
+      "prompt_version": "demo-p1",
+      "tags_version": "sha256:7b614744358480442160090c47146cbcfdea9882948f9f9bad77222d6917da4e",
+      "usage": {
+        "input_tokens": 1800,
+        "output_tokens": 320,
+        "retries": 0,
+        "estimated_cost_usd": 0.005
+      },
+      "processed_at": "2026-09-07T08:10:00+09:00"
+    }
+  ]
+}

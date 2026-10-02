@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_1ca37bd05bc970e9",
+    "source_id": "demo-tokei-rss",
+    "canonical_url": "https://tokei.example.org/release/2026/0912-hoiku-chosa.html",
+    "title": "【架空】保育所等の利用状況調査の結果",
+    "published_at": "2026-09-12",
+    "updated_at": null,
+    "date_basis": {
+      "published": {
+        "method": "rss_pubdate",
+        "evidence": "<pubDate>Sat, 12 Sep 2026 10:00:00 +0900</pubDate>"
+      },
+      "updated": null
+    },
+    "date_precision": {
+      "published": "day",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-09-14T08:00:00+09:00",
+    "last_seen_at": "2026-09-14T08:00:00+09:00",
+    "latest_version": 1,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "article_id": "a_1ca37bd05bc970e9",
+      "version": 1,
+      "content_hash": "sha256:e5c795be2bab5d7d260ad0f51ff2b10c4b48fc2ec93ace164b464d8f17fac8b8",
+      "fetched_at": "2026-09-14T08:00:30+09:00",
+      "content_type": "html",
+      "text_length": 950,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "new"
+    }
+  ]
+}

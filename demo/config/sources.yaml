@@ -1,0 +1,38 @@
+# 架空データ用の情報源（demo/data の記事に対応）。実在の機関名・URLは使わない。
+# release_mode: demo のときは config/sources.yaml の代わりにこのファイルを使う。
+sources:
+  - id: demo-kodomo-rss
+    name: 架空こども政策庁（デモ）
+    entry_url: https://kodomo.example.org/news/rss.xml
+    method: rss
+    allowed_hosts: [kodomo.example.org]
+    timezone: Asia/Tokyo
+    limits: {max_items: 30, max_bytes: 5242880, wait_seconds: 3, timeout_seconds: 30}
+    enabled: true
+  - id: demo-boshi-html
+    name: 架空母子保健研究機構（デモ）
+    entry_url: https://boshi.example.net/info/index.html
+    method: html
+    allowed_hosts: [boshi.example.net, files.boshi.example.net]
+    pagination: {max_pages: 3}
+    timezone: Asia/Tokyo
+    limits: {max_items: 20, max_bytes: 10485760, wait_seconds: 5, timeout_seconds: 30}
+    enabled: true
+    notes: 架空。画像PDFは未対応として記録する例を含む。
+  - id: demo-jichitai-html
+    name: 架空自治体標準化推進室（デモ）
+    entry_url: https://hyojunka.example.com/topics/
+    method: html
+    allowed_hosts: [hyojunka.example.com]
+    timezone: Asia/Tokyo
+    limits: {max_items: 20, max_bytes: 5242880, wait_seconds: 5, timeout_seconds: 30}
+    enabled: true
+    notes: 架空。直近2回の取得が失敗している例。
+  - id: demo-tokei-rss
+    name: 架空統計調査センター（デモ）
+    entry_url: https://tokei.example.org/release/feed.xml
+    method: rss
+    allowed_hosts: [tokei.example.org]
+    timezone: Asia/Tokyo
+    limits: {max_items: 30, max_bytes: 5242880, wait_seconds: 3, timeout_seconds: 30}
+    enabled: true

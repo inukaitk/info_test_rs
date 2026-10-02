@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "article_id": "a_6b7e84ea250ff79c",
+  "summaries": [
+    {
+      "article_id": "a_6b7e84ea250ff79c",
+      "article_version": 1,
+      "analysis_status": "success",
+      "error": null,
+      "summary": "【架空】母子健康手帳の様式改定に向けた研究報告が公開された。記入欄の簡素化が提案されている。",
+      "key_points": [
+        "記入欄の簡素化",
+        "多言語版の拡充"
+      ],
+      "targets": [
+        "研究者",
+        "自治体の母子保健担当"
+      ],
+      "dates": [],
+      "ai_tags": [
+        {
+          "tag_id": "maternal-child-health",
+          "reason": "母子健康手帳に関する内容のため"
+        }
+      ],
+      "uncertainties": [
+        "改定時期は示されていない"
+      ],
+      "provider": "demo",
+      "model": "demo-model",
+      "prompt_version": "demo-p1",
+      "tags_version": "sha256:7b614744358480442160090c47146cbcfdea9882948f9f9bad77222d6917da4e",
+      "usage": {
+        "input_tokens": 1800,
+        "output_tokens": 320,
+        "retries": 0,
+        "estimated_cost_usd": 0.005
+      },
+      "processed_at": "2026-09-07T08:10:00+09:00"
+    }
+  ]
+}

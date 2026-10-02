@@ -1,0 +1,381 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://info-test-rs.local/schemas/public/status.schema.json",
+  "title": "status.json 取得状況",
+  "description": "画面用JSONのallowlist。ここにない項目は出力できない（additionalProperties: false）",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "last_run_at",
+    "last_run_status",
+    "last_full_success_at",
+    "counts",
+    "sources",
+    "runs"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "last_run_at": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/timestamp"
+        }
+      ]
+    },
+    "last_run_status": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "string"
+        }
+      ]
+    },
+    "last_full_success_at": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/timestamp"
+        }
+      ]
+    },
+    "counts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "articles",
+        "date_unknown",
+        "content_missing",
+        "unsummarized",
+        "summary_outdated"
+      ],
+      "properties": {
+        "articles": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "date_unknown": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "content_missing": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "unsummarized": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "summary_outdated": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "name",
+          "method",
+          "entry_url",
+          "enabled",
+          "last_success_at",
+          "last_attempt_at",
+          "last_attempt_status",
+          "consecutive_failures",
+          "explored_range",
+          "retry_count",
+          "last_run",
+          "articles",
+          "date_unknown"
+        ],
+        "properties": {
+          "id": {
+            "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/slug_id"
+          },
+          "name": {
+            "type": "string"
+          },
+          "method": {
+            "type": "string"
+          },
+          "entry_url": {
+            "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/http_url"
+          },
+          "enabled": {
+            "type": "boolean"
+          },
+          "last_success_at": {
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/timestamp"
+              }
+            ]
+          },
+          "last_attempt_at": {
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/timestamp"
+              }
+            ]
+          },
+          "last_attempt_status": {
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "type": "string"
+              }
+            ]
+          },
+          "consecutive_failures": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "explored_range": {
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "oldest",
+                  "newest",
+                  "pages"
+                ],
+                "properties": {
+                  "oldest": {
+                    "oneOf": [
+                      {
+                        "type": "null"
+                      },
+                      {
+                        "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/partial_date"
+                      }
+                    ]
+                  },
+                  "newest": {
+                    "oneOf": [
+                      {
+                        "type": "null"
+                      },
+                      {
+                        "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/partial_date"
+                      }
+                    ]
+                  },
+                  "pages": {
+                    "type": "integer",
+                    "minimum": 0
+                  }
+                }
+              }
+            ]
+          },
+          "retry_count": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "last_run": {
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "status",
+                  "error",
+                  "warnings",
+                  "new",
+                  "changed",
+                  "unchanged",
+                  "date_unknown",
+                  "fetch_failed"
+                ],
+                "properties": {
+                  "status": {
+                    "type": "string"
+                  },
+                  "error": {
+                    "oneOf": [
+                      {
+                        "type": "null"
+                      },
+                      {
+                        "type": "string"
+                      }
+                    ]
+                  },
+                  "warnings": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "new": {
+                    "type": "integer",
+                    "minimum": 0
+                  },
+                  "changed": {
+                    "type": "integer",
+                    "minimum": 0
+                  },
+                  "unchanged": {
+                    "type": "integer",
+                    "minimum": 0
+                  },
+                  "date_unknown": {
+                    "type": "integer",
+                    "minimum": 0
+                  },
+                  "fetch_failed": {
+                    "type": "integer",
+                    "minimum": 0
+                  }
+                }
+              }
+            ]
+          },
+          "articles": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "date_unknown": {
+            "type": "integer",
+            "minimum": 0
+          }
+        }
+      }
+    },
+    "runs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "run_id",
+          "started_at",
+          "finished_at",
+          "status",
+          "kind",
+          "period",
+          "totals"
+        ],
+        "properties": {
+          "run_id": {
+            "type": "string"
+          },
+          "started_at": {
+            "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/timestamp"
+          },
+          "finished_at": {
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/timestamp"
+              }
+            ]
+          },
+          "status": {
+            "type": "string"
+          },
+          "kind": {
+            "type": "string"
+          },
+          "period": {
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "start",
+                  "end"
+                ],
+                "properties": {
+                  "start": {
+                    "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/date"
+                  },
+                  "end": {
+                    "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/date"
+                  }
+                }
+              }
+            ]
+          },
+          "totals": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "new",
+              "changed",
+              "unchanged",
+              "date_unknown",
+              "fetch_failed",
+              "summarized",
+              "summarize_failed"
+            ],
+            "properties": {
+              "new": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "changed": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "unchanged": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "date_unknown": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "fetch_failed": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "summarized": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "summarize_failed": {
+                "type": "integer",
+                "minimum": 0
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

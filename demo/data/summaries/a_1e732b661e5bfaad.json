@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "article_id": "a_1e732b661e5bfaad",
+  "summaries": [
+    {
+      "article_id": "a_1e732b661e5bfaad",
+      "article_version": 1,
+      "analysis_status": "success",
+      "error": null,
+      "summary": "【架空】妊産婦のメンタルヘルス支援に関する研修会の開催案内。対象は保健師等。",
+      "key_points": [
+        "オンライン開催",
+        "事前申込制"
+      ],
+      "targets": [
+        "保健師",
+        "助産師"
+      ],
+      "dates": [],
+      "ai_tags": [
+        {
+          "tag_id": "maternal-child-health",
+          "reason": "妊産婦支援に関する内容のため"
+        }
+      ],
+      "uncertainties": [
+        "掲載日・開催日が本文で確認できない"
+      ],
+      "provider": "demo",
+      "model": "demo-model",
+      "prompt_version": "demo-p1",
+      "tags_version": "sha256:7b614744358480442160090c47146cbcfdea9882948f9f9bad77222d6917da4e",
+      "usage": {
+        "input_tokens": 1800,
+        "output_tokens": 320,
+        "retries": 0,
+        "estimated_cost_usd": 0.005
+      },
+      "processed_at": "2026-09-14T08:10:00+09:00"
+    }
+  ]
+}

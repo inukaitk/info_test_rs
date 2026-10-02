@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "article_id": "a_c362818c3eef068a",
+  "summaries": [
+    {
+      "article_id": "a_c362818c3eef068a",
+      "article_version": 1,
+      "analysis_status": "failed_invalid_output",
+      "error": "出力JSONの検証に失敗（登録外のタグid）",
+      "summary": null,
+      "key_points": null,
+      "targets": null,
+      "dates": null,
+      "ai_tags": null,
+      "uncertainties": null,
+      "provider": "demo",
+      "model": "demo-model",
+      "prompt_version": "demo-p1",
+      "tags_version": "sha256:7b614744358480442160090c47146cbcfdea9882948f9f9bad77222d6917da4e",
+      "usage": {
+        "input_tokens": null,
+        "output_tokens": null,
+        "retries": 0,
+        "estimated_cost_usd": null
+      },
+      "processed_at": "2026-09-28T08:10:00+09:00"
+    }
+  ]
+}

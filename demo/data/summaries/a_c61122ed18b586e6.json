@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "article_id": "a_c61122ed18b586e6",
+  "summaries": [
+    {
+      "article_id": "a_c61122ed18b586e6",
+      "article_version": 1,
+      "analysis_status": "success",
+      "error": null,
+      "summary": "【架空】妊婦健康診査の費用助成について、対象となる検査項目の解釈を示す事務連絡が発出された。",
+      "key_points": [
+        "検査項目の解釈",
+        "問い合わせ先の変更"
+      ],
+      "targets": [
+        "都道府県",
+        "市区町村"
+      ],
+      "dates": [],
+      "ai_tags": [
+        {
+          "tag_id": "notice-admin-communication",
+          "reason": "事務連絡のため"
+        },
+        {
+          "tag_id": "maternal-child-health",
+          "reason": "妊婦健診に関する内容のため"
+        }
+      ],
+      "uncertainties": [
+        "適用開始日は本文で確認できなかった"
+      ],
+      "provider": "demo",
+      "model": "demo-model",
+      "prompt_version": "demo-p1",
+      "tags_version": "sha256:7b614744358480442160090c47146cbcfdea9882948f9f9bad77222d6917da4e",
+      "usage": {
+        "input_tokens": 1800,
+        "output_tokens": 320,
+        "retries": 0,
+        "estimated_cost_usd": 0.005
+      },
+      "processed_at": "2026-09-14T08:10:00+09:00"
+    }
+  ]
+}

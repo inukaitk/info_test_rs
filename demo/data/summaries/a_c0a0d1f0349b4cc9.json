@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "article_id": "a_c0a0d1f0349b4cc9",
+  "summaries": [
+    {
+      "article_id": "a_c0a0d1f0349b4cc9",
+      "article_version": 1,
+      "analysis_status": "success",
+      "error": null,
+      "summary": "【架空】第5回こども健やか検討会の資料が掲載された。産後ケアの提供体制が議題となった。",
+      "key_points": [
+        "産後ケアの提供体制",
+        "次回は報告書案を議論"
+      ],
+      "targets": [
+        "検討会委員"
+      ],
+      "dates": [
+        {
+          "label": "開催日",
+          "value": "2026-09-09",
+          "evidence": "令和8年9月9日（水）10時から"
+        }
+      ],
+      "ai_tags": [
+        {
+          "tag_id": "council-committee",
+          "reason": "検討会の資料のため"
+        },
+        {
+          "tag_id": "maternal-child-health",
+          "reason": "産後ケアが議題のため"
+        }
+      ],
+      "uncertainties": [],
+      "provider": "demo",
+      "model": "demo-model",
+      "prompt_version": "demo-p1",
+      "tags_version": "sha256:7b614744358480442160090c47146cbcfdea9882948f9f9bad77222d6917da4e",
+      "usage": {
+        "input_tokens": 1800,
+        "output_tokens": 320,
+        "retries": 0,
+        "estimated_cost_usd": 0.005
+      },
+      "processed_at": "2026-09-14T08:10:00+09:00"
+    }
+  ]
+}

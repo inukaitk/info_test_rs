@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-02T15:12:30+09:00",
+  "release_mode": "demo",
+  "is_demo": true,
+  "site_name": "外部環境情報（検証版）",
+  "correction_request_url": null,
+  "page_size": 50,
+  "tags": [
+    {
+      "id": "maternal-child-health",
+      "name": "母子保健",
+      "description": "妊産婦・乳幼児の健康診査、保健指導、母子健康手帳など母子保健に関する情報。",
+      "retired": false
+    },
+    {
+      "id": "childcare-support",
+      "name": "子育て支援",
+      "description": "保育、子育て世帯への支援事業、相談体制など子育て支援に関する情報。",
+      "retired": false
+    },
+    {
+      "id": "system-revision",
+      "name": "制度改正",
+      "description": "法令・制度・基準の新設や改正、施行に関する情報。",
+      "retired": false
+    },
+    {
+      "id": "subsidy-grant",
+      "name": "補助金・交付金",
+      "description": "補助金、交付金、委託事業の公募・交付要綱・実施要領に関する情報。",
+      "retired": false
+    },
+    {
+      "id": "notice-admin-communication",
+      "name": "通知・事務連絡",
+      "description": "国から自治体等へ発出される通知・事務連絡。",
+      "retired": false
+    },
+    {
+      "id": "municipal-dx-standardization",
+      "name": "自治体DX・標準化",
+      "description": "自治体システムの標準化、デジタル化、データ連携に関する情報。",
+      "retired": false
+    },
+    {
+      "id": "survey-statistics",
+      "name": "調査・統計",
+      "description": "公的な調査結果、統計データの公表に関する情報。",
+      "retired": false
+    },
+    {
+      "id": "council-committee",
+      "name": "審議会・検討会",
+      "description": "審議会・検討会・部会の開催案内、資料、議事録、報告書に関する情報。",
+      "retired": false
+    }
+  ],
+  "sources": [
+    {
+      "id": "demo-kodomo-rss",
+      "name": "架空こども政策庁（デモ）"
+    },
+    {
+      "id": "demo-boshi-html",
+      "name": "架空母子保健研究機構（デモ）"
+    },
+    {
+      "id": "demo-jichitai-html",
+      "name": "架空自治体標準化推進室（デモ）"
+    },
+    {
+      "id": "demo-tokei-rss",
+      "name": "架空統計調査センター（デモ）"
+    }
+  ]
+}

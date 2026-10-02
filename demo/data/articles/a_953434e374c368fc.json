@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_953434e374c368fc",
+    "source_id": "demo-jichitai-html",
+    "canonical_url": "https://hyojunka.example.com/topics/2026/0911.html",
+    "title": "【架空】標準化移行に関する説明会の資料",
+    "published_at": "2026-09-11",
+    "updated_at": null,
+    "date_basis": {
+      "published": {
+        "method": "html_meta",
+        "evidence": "<meta name=\"date\" content=\"2026-09-11\">"
+      },
+      "updated": null
+    },
+    "date_precision": {
+      "published": "day",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-09-14T08:00:00+09:00",
+    "last_seen_at": "2026-09-14T08:00:00+09:00",
+    "latest_version": 1,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "article_id": "a_953434e374c368fc",
+      "version": 1,
+      "content_hash": null,
+      "fetched_at": "2026-09-14T08:00:30+09:00",
+      "content_type": "none",
+      "text_length": null,
+      "extraction_status": "failed",
+      "extraction_error": "HTTP 404（本文ページが見つからない）",
+      "change_type": "new"
+    }
+  ]
+}
