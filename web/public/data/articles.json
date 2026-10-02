@@ -2,17 +2,17 @@
   "schema_version": 1,
   "articles": [
     {
-      "id": "a_c362818c3eef068a",
-      "source_id": "demo-kodomo-rss",
-      "source_name": "架空こども政策庁（デモ）",
-      "title": "【架空】こども政策に関する一括法案の概要",
-      "url": "https://kodomo.example.org/news/2026/0925-ikkatsu.html",
+      "id": "a_57ce70991ce444ef",
+      "source_id": "cfa-news",
+      "source_name": "こども家庭庁（新着・更新）",
+      "title": "中司大臣記者会見（令和8年10月2日）",
+      "url": "https://www.cfa.go.jp/speech/9a360866",
       "published": {
-        "value": "2026-09-25",
+        "value": "2026-10-02",
         "precision": "day",
         "basis": {
-          "method": "rss_pubdate",
-          "evidence": "<pubDate>Fri, 25 Sep 2026 18:00:00 +0900</pubDate>"
+          "method": "listing_text",
+          "evidence": "<time datetime=\"2026-10-02\">2026年10月2日</time>"
         }
       },
       "updated": {
@@ -20,8 +20,8 @@
         "precision": "unknown",
         "basis": null
       },
-      "first_seen_at": "2026-09-28T08:00:00+09:00",
-      "last_seen_at": "2026-09-28T08:00:00+09:00",
+      "first_seen_at": "2026-10-02T17:07:01+09:00",
+      "last_seen_at": "2026-10-02T17:10:28+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -29,441 +29,9 @@
       "versions": [
         {
           "version": 1,
-          "fetched_at": "2026-09-28T08:00:30+09:00",
+          "fetched_at": "2026-10-02T17:07:01+09:00",
           "change_type": "new",
           "extraction_status": "ok"
-        }
-      ],
-      "summary": {
-        "status": "failed_invalid_output",
-        "error": "出力JSONの検証に失敗（登録外のタグid）",
-        "version": 1,
-        "outdated": false,
-        "text": null,
-        "key_points": null,
-        "targets": null,
-        "dates": null,
-        "uncertainties": null,
-        "model": "demo-model",
-        "processed_at": "2026-09-28T08:10:00+09:00"
-      },
-      "tags": [],
-      "removed_tags": [],
-      "tag_override_reason": null
-    },
-    {
-      "id": "a_c69b265bd15d2ebd",
-      "source_id": "demo-kodomo-rss",
-      "source_name": "架空こども政策庁（デモ）",
-      "title": "【架空】母子保健情報のデジタル化に関する工程表を公表しました",
-      "url": "https://kodomo.example.org/news/2026/0924-dx.html",
-      "published": {
-        "value": "2026-09-24",
-        "precision": "day",
-        "basis": {
-          "method": "rss_pubdate",
-          "evidence": "<pubDate>Thu, 24 Sep 2026 10:00:00 +0900</pubDate>"
-        }
-      },
-      "updated": {
-        "value": null,
-        "precision": "unknown",
-        "basis": null
-      },
-      "first_seen_at": "2026-09-28T08:00:00+09:00",
-      "last_seen_at": "2026-09-28T08:00:00+09:00",
-      "status": "active",
-      "content_status": "ok",
-      "content_error": null,
-      "latest_version": 1,
-      "versions": [
-        {
-          "version": 1,
-          "fetched_at": "2026-09-28T08:00:30+09:00",
-          "change_type": "new",
-          "extraction_status": "ok"
-        }
-      ],
-      "summary": {
-        "status": "success",
-        "error": null,
-        "version": 1,
-        "outdated": false,
-        "text": "【架空】母子保健情報のデジタル化に向けた工程表が公表された。令和10年度までの段階的な移行を示す。",
-        "key_points": [
-          "電子版母子健康手帳の普及",
-          "自治体システムとの連携"
-        ],
-        "targets": [
-          "市区町村",
-          "医療機関"
-        ],
-        "dates": [
-          {
-            "label": "移行完了目標",
-            "value": "2028",
-            "evidence": "令和10年度末までに移行を完了する"
-          }
-        ],
-        "uncertainties": [],
-        "model": "demo-model",
-        "processed_at": "2026-09-28T08:10:00+09:00"
-      },
-      "tags": [
-        {
-          "id": "municipal-dx-standardization",
-          "name": "自治体DX・標準化",
-          "origin": "ai",
-          "reason": "自治体のデジタル化に関する内容のため",
-          "retired": false
-        },
-        {
-          "id": "maternal-child-health",
-          "name": "母子保健",
-          "origin": "ai",
-          "reason": "母子保健情報が対象のため",
-          "retired": false
-        }
-      ],
-      "removed_tags": [],
-      "tag_override_reason": null
-    },
-    {
-      "id": "a_7bde7ee0e438b9a7",
-      "source_id": "demo-tokei-rss",
-      "source_name": "架空統計調査センター（デモ）",
-      "title": "【架空】乳幼児健診の実施状況（年報）",
-      "url": "https://tokei.example.org/release/2026/0919-kenshin-jisshi.html",
-      "published": {
-        "value": "2026-09-19",
-        "precision": "day",
-        "basis": {
-          "method": "rss_pubdate",
-          "evidence": "<pubDate>Sat, 19 Sep 2026 10:00:00 +0900</pubDate>"
-        }
-      },
-      "updated": {
-        "value": null,
-        "precision": "unknown",
-        "basis": null
-      },
-      "first_seen_at": "2026-09-21T08:00:00+09:00",
-      "last_seen_at": "2026-09-21T08:00:00+09:00",
-      "status": "active",
-      "content_status": "ok",
-      "content_error": null,
-      "latest_version": 1,
-      "versions": [
-        {
-          "version": 1,
-          "fetched_at": "2026-09-21T08:00:30+09:00",
-          "change_type": "new",
-          "extraction_status": "ok"
-        }
-      ],
-      "summary": {
-        "status": "failed_api_error",
-        "error": "HTTP 529（APIが混雑）。再試行対象に登録",
-        "version": 1,
-        "outdated": false,
-        "text": null,
-        "key_points": null,
-        "targets": null,
-        "dates": null,
-        "uncertainties": null,
-        "model": "demo-model",
-        "processed_at": "2026-09-21T08:10:00+09:00"
-      },
-      "tags": [],
-      "removed_tags": [],
-      "tag_override_reason": null
-    },
-    {
-      "id": "a_22ad7f5d9b9f550a",
-      "source_id": "demo-kodomo-rss",
-      "source_name": "架空こども政策庁（デモ）",
-      "title": "【架空】産後ケア事業に関するQ&Aを更新しました",
-      "url": "https://kodomo.example.org/news/2026/0917-qa.html",
-      "published": {
-        "value": "2026-09-17",
-        "precision": "day",
-        "basis": {
-          "method": "rss_pubdate",
-          "evidence": "<pubDate>Thu, 17 Sep 2026 15:00:00 +0900</pubDate>"
-        }
-      },
-      "updated": {
-        "value": null,
-        "precision": "unknown",
-        "basis": null
-      },
-      "first_seen_at": "2026-09-21T08:00:00+09:00",
-      "last_seen_at": "2026-09-21T08:00:00+09:00",
-      "status": "active",
-      "content_status": "ok",
-      "content_error": null,
-      "latest_version": 1,
-      "versions": [
-        {
-          "version": 1,
-          "fetched_at": "2026-09-21T08:00:30+09:00",
-          "change_type": "new",
-          "extraction_status": "ok"
-        }
-      ],
-      "summary": {
-        "status": "success",
-        "error": null,
-        "version": 1,
-        "outdated": false,
-        "text": "【架空】産後ケア事業のQ&Aが更新され、利用者負担の軽減に関する回答が追加された。",
-        "key_points": [
-          "利用者負担の軽減",
-          "委託先の要件"
-        ],
-        "targets": [
-          "市区町村"
-        ],
-        "dates": [],
-        "uncertainties": [],
-        "model": "demo-model",
-        "processed_at": "2026-09-21T08:10:00+09:00"
-      },
-      "tags": [
-        {
-          "id": "maternal-child-health",
-          "name": "母子保健",
-          "origin": "ai",
-          "reason": "産後ケアに関する内容のため",
-          "retired": false
-        },
-        {
-          "id": "notice-admin-communication",
-          "name": "通知・事務連絡",
-          "origin": "human",
-          "reason": null,
-          "retired": false
-        }
-      ],
-      "removed_tags": [
-        {
-          "id": "survey-statistics",
-          "name": "調査・統計"
-        }
-      ],
-      "tag_override_reason": "Q&Aは事務連絡として扱い、数値は付随的な情報のため（架空の修正例）"
-    },
-    {
-      "id": "a_62ed6a9c5f53d999",
-      "source_id": "demo-boshi-html",
-      "source_name": "架空母子保健研究機構（デモ）",
-      "title": "【架空】低出生体重児の支援に関する手引き（改訂版）",
-      "url": "https://boshi.example.net/info/20260916.html",
-      "published": {
-        "value": "2026-09-16",
-        "precision": "day",
-        "basis": {
-          "method": "html_text",
-          "evidence": "掲載日：2026年9月16日"
-        }
-      },
-      "updated": {
-        "value": "2026-09-25",
-        "precision": "day",
-        "basis": {
-          "method": "html_text",
-          "evidence": "改訂：2026年9月25日"
-        }
-      },
-      "first_seen_at": "2026-09-21T08:00:00+09:00",
-      "last_seen_at": "2026-09-28T08:00:00+09:00",
-      "status": "active",
-      "content_status": "ok",
-      "content_error": null,
-      "latest_version": 2,
-      "versions": [
-        {
-          "version": 1,
-          "fetched_at": "2026-09-21T08:00:30+09:00",
-          "change_type": "new",
-          "extraction_status": "ok"
-        },
-        {
-          "version": 2,
-          "fetched_at": "2026-09-28T08:00:30+09:00",
-          "change_type": "content_changed",
-          "extraction_status": "ok"
-        }
-      ],
-      "summary": {
-        "status": "pending",
-        "error": null,
-        "version": 2,
-        "outdated": false,
-        "text": null,
-        "key_points": null,
-        "targets": null,
-        "dates": null,
-        "uncertainties": null,
-        "model": "demo-model",
-        "processed_at": "2026-09-28T08:10:00+09:00"
-      },
-      "tags": [],
-      "removed_tags": [],
-      "tag_override_reason": null
-    },
-    {
-      "id": "a_3e57408d91e36c75",
-      "source_id": "demo-kodomo-rss",
-      "source_name": "架空こども政策庁（デモ）",
-      "title": "【架空】子育て世帯応援手当の支給要件を見直します",
-      "url": "https://kodomo.example.org/news/2026/0915-teate.html",
-      "published": {
-        "value": "2026-09-15",
-        "precision": "day",
-        "basis": {
-          "method": "rss_pubdate",
-          "evidence": "<pubDate>Tue, 15 Sep 2026 11:00:00 +0900</pubDate>"
-        }
-      },
-      "updated": {
-        "value": null,
-        "precision": "unknown",
-        "basis": null
-      },
-      "first_seen_at": "2026-09-21T08:00:00+09:00",
-      "last_seen_at": "2026-09-21T08:00:00+09:00",
-      "status": "active",
-      "content_status": "ok",
-      "content_error": null,
-      "latest_version": 1,
-      "versions": [
-        {
-          "version": 1,
-          "fetched_at": "2026-09-21T08:00:30+09:00",
-          "change_type": "new",
-          "extraction_status": "ok"
-        }
-      ],
-      "summary": {
-        "status": "skipped_no_api_key",
-        "error": "APIキーが設定されていないため未実行",
-        "version": 1,
-        "outdated": false,
-        "text": null,
-        "key_points": null,
-        "targets": null,
-        "dates": null,
-        "uncertainties": null,
-        "model": "demo-model",
-        "processed_at": "2026-09-21T08:10:00+09:00"
-      },
-      "tags": [],
-      "removed_tags": [],
-      "tag_override_reason": null
-    },
-    {
-      "id": "a_1ca37bd05bc970e9",
-      "source_id": "demo-tokei-rss",
-      "source_name": "架空統計調査センター（デモ）",
-      "title": "【架空】保育所等の利用状況調査の結果",
-      "url": "https://tokei.example.org/release/2026/0912-hoiku-chosa.html",
-      "published": {
-        "value": "2026-09-12",
-        "precision": "day",
-        "basis": {
-          "method": "rss_pubdate",
-          "evidence": "<pubDate>Sat, 12 Sep 2026 10:00:00 +0900</pubDate>"
-        }
-      },
-      "updated": {
-        "value": null,
-        "precision": "unknown",
-        "basis": null
-      },
-      "first_seen_at": "2026-09-14T08:00:00+09:00",
-      "last_seen_at": "2026-09-14T08:00:00+09:00",
-      "status": "active",
-      "content_status": "ok",
-      "content_error": null,
-      "latest_version": 1,
-      "versions": [
-        {
-          "version": 1,
-          "fetched_at": "2026-09-14T08:00:30+09:00",
-          "change_type": "new",
-          "extraction_status": "ok"
-        }
-      ],
-      "summary": {
-        "status": "success",
-        "error": null,
-        "version": 1,
-        "outdated": false,
-        "text": "【架空】保育所等の利用状況に関する調査結果が公表された。待機児童数は前年から減少した。",
-        "key_points": [
-          "利用率の上昇",
-          "待機児童数の減少"
-        ],
-        "targets": [
-          "一般",
-          "自治体"
-        ],
-        "dates": [],
-        "uncertainties": [],
-        "model": "demo-model",
-        "processed_at": "2026-09-14T08:10:00+09:00"
-      },
-      "tags": [
-        {
-          "id": "survey-statistics",
-          "name": "調査・統計",
-          "origin": "ai",
-          "reason": "調査結果の公表のため",
-          "retired": false
-        },
-        {
-          "id": "childcare-support",
-          "name": "子育て支援",
-          "origin": "ai",
-          "reason": "保育の利用状況のため",
-          "retired": false
-        }
-      ],
-      "removed_tags": [],
-      "tag_override_reason": null
-    },
-    {
-      "id": "a_d7f143bc83e1a0e5",
-      "source_id": "demo-jichitai-html",
-      "source_name": "架空自治体標準化推進室（デモ）",
-      "title": "【架空】標準化に関するよくある質問（更新）",
-      "url": "https://hyojunka.example.com/topics/2026/0912-faq.html",
-      "published": {
-        "value": "2026-09-12",
-        "precision": "day",
-        "basis": {
-          "method": "html_meta",
-          "evidence": "<meta name=\"date\" content=\"2026-09-12\">"
-        }
-      },
-      "updated": {
-        "value": null,
-        "precision": "unknown",
-        "basis": null
-      },
-      "first_seen_at": "2026-09-14T08:00:00+09:00",
-      "last_seen_at": "2026-09-14T08:00:00+09:00",
-      "status": "active",
-      "content_status": "failed",
-      "content_error": "タイムアウト（30秒）",
-      "latest_version": 1,
-      "versions": [
-        {
-          "version": 1,
-          "fetched_at": "2026-09-14T08:00:30+09:00",
-          "change_type": "new",
-          "extraction_status": "failed"
         }
       ],
       "summary": {
@@ -484,17 +52,17 @@
       "tag_override_reason": null
     },
     {
-      "id": "a_953434e374c368fc",
-      "source_id": "demo-jichitai-html",
-      "source_name": "架空自治体標準化推進室（デモ）",
-      "title": "【架空】標準化移行に関する説明会の資料",
-      "url": "https://hyojunka.example.com/topics/2026/0911.html",
+      "id": "a_46f43ba38af6a333",
+      "source_id": "cfa-news",
+      "source_name": "こども家庭庁（新着・更新）",
+      "title": "令和8年健やか親子21内閣府特命担当大臣表彰の受賞者発表について",
+      "url": "https://www.cfa.go.jp/press/ad6f3159-43eb-48b2-a6c3-40dc43f521e9",
       "published": {
-        "value": "2026-09-11",
+        "value": "2026-09-30",
         "precision": "day",
         "basis": {
-          "method": "html_meta",
-          "evidence": "<meta name=\"date\" content=\"2026-09-11\">"
+          "method": "html_text",
+          "evidence": "公開日:令和8年9月30日"
         }
       },
       "updated": {
@@ -502,573 +70,49 @@
         "precision": "unknown",
         "basis": null
       },
-      "first_seen_at": "2026-09-14T08:00:00+09:00",
-      "last_seen_at": "2026-09-14T08:00:00+09:00",
+      "first_seen_at": "2026-10-02T17:07:01+09:00",
+      "last_seen_at": "2026-10-02T17:10:28+09:00",
       "status": "active",
-      "content_status": "failed",
-      "content_error": "HTTP 404（本文ページが見つからない）",
+      "content_status": "ok",
+      "content_error": null,
       "latest_version": 1,
       "versions": [
         {
           "version": 1,
-          "fetched_at": "2026-09-14T08:00:30+09:00",
+          "fetched_at": "2026-10-02T17:07:01+09:00",
           "change_type": "new",
-          "extraction_status": "failed"
+          "extraction_status": "ok"
         }
       ],
       "summary": {
-        "status": "skipped_no_content",
-        "error": "本文を取得できないため要約しない",
-        "version": 1,
+        "status": "not_processed",
+        "error": null,
+        "version": null,
         "outdated": false,
         "text": null,
         "key_points": null,
         "targets": null,
         "dates": null,
         "uncertainties": null,
-        "model": "demo-model",
-        "processed_at": "2026-09-14T08:10:00+09:00"
+        "model": null,
+        "processed_at": null
       },
       "tags": [],
       "removed_tags": [],
       "tag_override_reason": null
     },
     {
-      "id": "a_c0a0d1f0349b4cc9",
-      "source_id": "demo-kodomo-rss",
-      "source_name": "架空こども政策庁（デモ）",
-      "title": "【架空】第5回こども健やか検討会の資料を掲載しました",
-      "url": "https://kodomo.example.org/news/2026/0910-shingikai.html",
+      "id": "a_a1d6e87b4dca573e",
+      "source_id": "cfa-news",
+      "source_name": "こども家庭庁（新着・更新）",
+      "title": "障害児支援部会（第21回）",
+      "url": "https://www.cfa.go.jp/councils/shingikai/shougaiji_shien/c1010d3b",
       "published": {
-        "value": "2026-09-10",
+        "value": "2026-09-30",
         "precision": "day",
-        "basis": {
-          "method": "rss_pubdate",
-          "evidence": "<pubDate>Thu, 10 Sep 2026 17:00:00 +0900</pubDate>"
-        }
-      },
-      "updated": {
-        "value": null,
-        "precision": "unknown",
-        "basis": null
-      },
-      "first_seen_at": "2026-09-14T08:00:00+09:00",
-      "last_seen_at": "2026-09-14T08:00:00+09:00",
-      "status": "active",
-      "content_status": "ok",
-      "content_error": null,
-      "latest_version": 1,
-      "versions": [
-        {
-          "version": 1,
-          "fetched_at": "2026-09-14T08:00:30+09:00",
-          "change_type": "new",
-          "extraction_status": "ok"
-        }
-      ],
-      "summary": {
-        "status": "success",
-        "error": null,
-        "version": 1,
-        "outdated": false,
-        "text": "【架空】第5回こども健やか検討会の資料が掲載された。産後ケアの提供体制が議題となった。",
-        "key_points": [
-          "産後ケアの提供体制",
-          "次回は報告書案を議論"
-        ],
-        "targets": [
-          "検討会委員"
-        ],
-        "dates": [
-          {
-            "label": "開催日",
-            "value": "2026-09-09",
-            "evidence": "令和8年9月9日（水）10時から"
-          }
-        ],
-        "uncertainties": [],
-        "model": "demo-model",
-        "processed_at": "2026-09-14T08:10:00+09:00"
-      },
-      "tags": [
-        {
-          "id": "council-committee",
-          "name": "審議会・検討会",
-          "origin": "ai",
-          "reason": "検討会の資料のため",
-          "retired": false
-        },
-        {
-          "id": "maternal-child-health",
-          "name": "母子保健",
-          "origin": "ai",
-          "reason": "産後ケアが議題のため",
-          "retired": false
-        }
-      ],
-      "removed_tags": [],
-      "tag_override_reason": null
-    },
-    {
-      "id": "a_c61122ed18b586e6",
-      "source_id": "demo-kodomo-rss",
-      "source_name": "架空こども政策庁（デモ）",
-      "title": "【架空】妊婦健康診査の費用助成に関する事務連絡",
-      "url": "https://kodomo.example.org/news/2026/0908-jimurenraku.html",
-      "published": {
-        "value": "2026-09-08",
-        "precision": "day",
-        "basis": {
-          "method": "rss_pubdate",
-          "evidence": "<pubDate>Tue, 08 Sep 2026 09:30:00 +0900</pubDate>"
-        }
-      },
-      "updated": {
-        "value": null,
-        "precision": "unknown",
-        "basis": null
-      },
-      "first_seen_at": "2026-09-14T08:00:00+09:00",
-      "last_seen_at": "2026-09-14T08:00:00+09:00",
-      "status": "active",
-      "content_status": "ok",
-      "content_error": null,
-      "latest_version": 1,
-      "versions": [
-        {
-          "version": 1,
-          "fetched_at": "2026-09-14T08:00:30+09:00",
-          "change_type": "new",
-          "extraction_status": "ok"
-        }
-      ],
-      "summary": {
-        "status": "success",
-        "error": null,
-        "version": 1,
-        "outdated": false,
-        "text": "【架空】妊婦健康診査の費用助成について、対象となる検査項目の解釈を示す事務連絡が発出された。",
-        "key_points": [
-          "検査項目の解釈",
-          "問い合わせ先の変更"
-        ],
-        "targets": [
-          "都道府県",
-          "市区町村"
-        ],
-        "dates": [],
-        "uncertainties": [
-          "適用開始日は本文で確認できなかった"
-        ],
-        "model": "demo-model",
-        "processed_at": "2026-09-14T08:10:00+09:00"
-      },
-      "tags": [
-        {
-          "id": "notice-admin-communication",
-          "name": "通知・事務連絡",
-          "origin": "ai",
-          "reason": "事務連絡のため",
-          "retired": false
-        },
-        {
-          "id": "maternal-child-health",
-          "name": "母子保健",
-          "origin": "ai",
-          "reason": "妊婦健診に関する内容のため",
-          "retired": false
-        }
-      ],
-      "removed_tags": [],
-      "tag_override_reason": null
-    },
-    {
-      "id": "a_c0886ff10099b539",
-      "source_id": "demo-tokei-rss",
-      "source_name": "架空統計調査センター（デモ）",
-      "title": "【架空】令和7年 出生に関する統計（速報）",
-      "url": "https://tokei.example.org/release/2026/0905-shussho.html",
-      "published": {
-        "value": "2026-09-05",
-        "precision": "day",
-        "basis": {
-          "method": "rss_pubdate",
-          "evidence": "<pubDate>Sat, 05 Sep 2026 10:00:00 +0900</pubDate>"
-        }
-      },
-      "updated": {
-        "value": null,
-        "precision": "unknown",
-        "basis": null
-      },
-      "first_seen_at": "2026-09-07T08:00:00+09:00",
-      "last_seen_at": "2026-09-07T08:00:00+09:00",
-      "status": "active",
-      "content_status": "ok",
-      "content_error": null,
-      "latest_version": 1,
-      "versions": [
-        {
-          "version": 1,
-          "fetched_at": "2026-09-07T08:00:30+09:00",
-          "change_type": "new",
-          "extraction_status": "ok"
-        }
-      ],
-      "summary": {
-        "status": "success",
-        "error": null,
-        "version": 1,
-        "outdated": false,
-        "text": "【架空】令和7年の出生に関する速報値が公表された。",
-        "key_points": [
-          "出生数の推移",
-          "都道府県別の集計"
-        ],
-        "targets": [
-          "一般"
-        ],
-        "dates": [],
-        "uncertainties": [],
-        "model": "demo-model",
-        "processed_at": "2026-09-07T08:10:00+09:00"
-      },
-      "tags": [
-        {
-          "id": "survey-statistics",
-          "name": "調査・統計",
-          "origin": "ai",
-          "reason": "統計の公表のため",
-          "retired": false
-        }
-      ],
-      "removed_tags": [],
-      "tag_override_reason": null
-    },
-    {
-      "id": "a_b66eafad7f7eb14c",
-      "source_id": "demo-jichitai-html",
-      "source_name": "架空自治体標準化推進室（デモ）",
-      "title": "【架空】母子保健システムの標準仕様書（第2版）を公表",
-      "url": "https://hyojunka.example.com/topics/2026/0904.html",
-      "published": {
-        "value": "2026-09-04",
-        "precision": "day",
-        "basis": {
-          "method": "html_meta",
-          "evidence": "<meta name=\"date\" content=\"2026-09-04\">"
-        }
-      },
-      "updated": {
-        "value": null,
-        "precision": "unknown",
-        "basis": null
-      },
-      "first_seen_at": "2026-09-07T08:00:00+09:00",
-      "last_seen_at": "2026-09-07T08:00:00+09:00",
-      "status": "active",
-      "content_status": "ok",
-      "content_error": null,
-      "latest_version": 1,
-      "versions": [
-        {
-          "version": 1,
-          "fetched_at": "2026-09-07T08:00:30+09:00",
-          "change_type": "new",
-          "extraction_status": "ok"
-        }
-      ],
-      "summary": {
-        "status": "success",
-        "error": null,
-        "version": 1,
-        "outdated": false,
-        "text": "【架空】母子保健システムの標準仕様書第2版が公表された。帳票要件と連携項目が更新された。",
-        "key_points": [
-          "帳票要件の更新",
-          "データ連携項目の追加"
-        ],
-        "targets": [
-          "市区町村",
-          "システム事業者"
-        ],
-        "dates": [
-          {
-            "label": "適合期限",
-            "value": "2028-03-31",
-            "evidence": "令和10年3月31日までに標準仕様に適合"
-          }
-        ],
-        "uncertainties": [],
-        "model": "demo-model",
-        "processed_at": "2026-09-07T08:10:00+09:00"
-      },
-      "tags": [
-        {
-          "id": "municipal-dx-standardization",
-          "name": "自治体DX・標準化",
-          "origin": "ai",
-          "reason": "システム標準化に関する内容のため",
-          "retired": false
-        },
-        {
-          "id": "maternal-child-health",
-          "name": "母子保健",
-          "origin": "ai",
-          "reason": "母子保健システムが対象のため",
-          "retired": false
-        }
-      ],
-      "removed_tags": [
-        {
-          "id": "system-revision",
-          "name": "制度改正"
-        }
-      ],
-      "tag_override_reason": "法令改正ではないため（架空の修正例）"
-    },
-    {
-      "id": "a_bb73575076e7843e",
-      "source_id": "demo-kodomo-rss",
-      "source_name": "架空こども政策庁（デモ）",
-      "title": "【架空】保育環境改善交付金の公募を開始します",
-      "url": "https://kodomo.example.org/news/2026/0903-hoiku-kofukin.html",
-      "published": {
-        "value": "2026-09-03",
-        "precision": "day",
-        "basis": {
-          "method": "rss_pubdate",
-          "evidence": "<pubDate>Thu, 03 Sep 2026 14:00:00 +0900</pubDate>"
-        }
-      },
-      "updated": {
-        "value": null,
-        "precision": "unknown",
-        "basis": null
-      },
-      "first_seen_at": "2026-09-07T08:00:00+09:00",
-      "last_seen_at": "2026-09-07T08:00:00+09:00",
-      "status": "active",
-      "content_status": "ok",
-      "content_error": null,
-      "latest_version": 1,
-      "versions": [
-        {
-          "version": 1,
-          "fetched_at": "2026-09-07T08:00:30+09:00",
-          "change_type": "new",
-          "extraction_status": "ok"
-        }
-      ],
-      "summary": {
-        "status": "success",
-        "error": null,
-        "version": 1,
-        "outdated": false,
-        "text": "【架空】保育所の環境改善を対象とする交付金の公募が開始された。申請締切は10月30日。",
-        "key_points": [
-          "対象経費は設備整備",
-          "補助率は2分の1"
-        ],
-        "targets": [
-          "都道府県",
-          "市区町村",
-          "保育所設置者"
-        ],
-        "dates": [
-          {
-            "label": "申請締切",
-            "value": "2026-10-30",
-            "evidence": "令和8年10月30日（金）必着"
-          }
-        ],
-        "uncertainties": [],
-        "model": "demo-model",
-        "processed_at": "2026-09-07T08:10:00+09:00"
-      },
-      "tags": [
-        {
-          "id": "subsidy-grant",
-          "name": "補助金・交付金",
-          "origin": "ai",
-          "reason": "交付金の公募のため",
-          "retired": false
-        },
-        {
-          "id": "childcare-support",
-          "name": "子育て支援",
-          "origin": "ai",
-          "reason": "保育に関する支援のため",
-          "retired": false
-        }
-      ],
-      "removed_tags": [],
-      "tag_override_reason": null
-    },
-    {
-      "id": "a_6b7e84ea250ff79c",
-      "source_id": "demo-boshi-html",
-      "source_name": "架空母子保健研究機構（デモ）",
-      "title": "【架空】母子健康手帳の様式改定に関する研究報告",
-      "url": "https://boshi.example.net/info/20260902.html",
-      "published": {
-        "value": "2026-09-02",
-        "precision": "day",
-        "basis": {
-          "method": "html_text",
-          "evidence": "掲載日：2026年9月2日"
-        }
-      },
-      "updated": {
-        "value": null,
-        "precision": "unknown",
-        "basis": null
-      },
-      "first_seen_at": "2026-09-07T08:00:00+09:00",
-      "last_seen_at": "2026-09-07T08:00:00+09:00",
-      "status": "active",
-      "content_status": "ok",
-      "content_error": null,
-      "latest_version": 1,
-      "versions": [
-        {
-          "version": 1,
-          "fetched_at": "2026-09-07T08:00:30+09:00",
-          "change_type": "new",
-          "extraction_status": "ok"
-        }
-      ],
-      "summary": {
-        "status": "success",
-        "error": null,
-        "version": 1,
-        "outdated": false,
-        "text": "【架空】母子健康手帳の様式改定に向けた研究報告が公開された。記入欄の簡素化が提案されている。",
-        "key_points": [
-          "記入欄の簡素化",
-          "多言語版の拡充"
-        ],
-        "targets": [
-          "研究者",
-          "自治体の母子保健担当"
-        ],
-        "dates": [],
-        "uncertainties": [
-          "改定時期は示されていない"
-        ],
-        "model": "demo-model",
-        "processed_at": "2026-09-07T08:10:00+09:00"
-      },
-      "tags": [
-        {
-          "id": "maternal-child-health",
-          "name": "母子保健",
-          "origin": "ai",
-          "reason": "母子健康手帳に関する内容のため",
-          "retired": false
-        }
-      ],
-      "removed_tags": [],
-      "tag_override_reason": null
-    },
-    {
-      "id": "a_3715ddd7b3d7eab6",
-      "source_id": "demo-kodomo-rss",
-      "source_name": "架空こども政策庁（デモ）",
-      "title": "【架空】乳幼児健康診査の実施要領を改正しました",
-      "url": "https://kodomo.example.org/news/2026/0901-kenshin.html",
-      "published": {
-        "value": "2026-09-01",
-        "precision": "day",
-        "basis": {
-          "method": "rss_pubdate",
-          "evidence": "<pubDate>Tue, 01 Sep 2026 10:00:00 +0900</pubDate>"
-        }
-      },
-      "updated": {
-        "value": "2026-09-18",
-        "precision": "day",
-        "basis": {
-          "method": "html_text",
-          "evidence": "最終更新日：2026年9月18日"
-        }
-      },
-      "first_seen_at": "2026-09-07T08:00:00+09:00",
-      "last_seen_at": "2026-09-21T08:00:00+09:00",
-      "status": "active",
-      "content_status": "ok",
-      "content_error": null,
-      "latest_version": 2,
-      "versions": [
-        {
-          "version": 1,
-          "fetched_at": "2026-09-07T08:00:30+09:00",
-          "change_type": "new",
-          "extraction_status": "ok"
-        },
-        {
-          "version": 2,
-          "fetched_at": "2026-09-21T08:00:30+09:00",
-          "change_type": "content_changed",
-          "extraction_status": "ok"
-        }
-      ],
-      "summary": {
-        "status": "success",
-        "error": null,
-        "version": 2,
-        "outdated": false,
-        "text": "【架空】乳幼児健康診査の実施要領が改正され、令和9年4月から問診項目が追加される。9月18日に記録様式の例が追加された。",
-        "key_points": [
-          "問診項目の追加",
-          "記録様式の変更",
-          "様式例の追加"
-        ],
-        "targets": [
-          "市区町村"
-        ],
-        "dates": [
-          {
-            "label": "施行日",
-            "value": "2027-04-01",
-            "evidence": "令和9年4月1日から適用する"
-          }
-        ],
-        "uncertainties": [],
-        "model": "demo-model",
-        "processed_at": "2026-09-21T08:10:00+09:00"
-      },
-      "tags": [
-        {
-          "id": "maternal-child-health",
-          "name": "母子保健",
-          "origin": "ai",
-          "reason": "乳幼児健診に関する内容のため",
-          "retired": false
-        },
-        {
-          "id": "system-revision",
-          "name": "制度改正",
-          "origin": "ai",
-          "reason": "実施要領の改正のため",
-          "retired": false
-        }
-      ],
-      "removed_tags": [],
-      "tag_override_reason": null
-    },
-    {
-      "id": "a_97b37a4b990ba661",
-      "source_id": "demo-boshi-html",
-      "source_name": "架空母子保健研究機構（デモ）",
-      "title": "【架空】こどもの事故予防に関する啓発資料",
-      "url": "https://boshi.example.net/info/20260922.html",
-      "published": {
-        "value": "2026-09",
-        "precision": "month",
         "basis": {
           "method": "listing_text",
-          "evidence": "2026年9月"
+          "evidence": "<time datetime=\"2026-09-30\">2026年9月30日</time>"
         }
       },
       "updated": {
@@ -1076,8 +120,8 @@
         "precision": "unknown",
         "basis": null
       },
-      "first_seen_at": "2026-09-28T08:00:00+09:00",
-      "last_seen_at": "2026-09-28T08:00:00+09:00",
+      "first_seen_at": "2026-10-02T17:07:01+09:00",
+      "last_seen_at": "2026-10-02T17:10:28+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -1085,217 +129,123 @@
       "versions": [
         {
           "version": 1,
-          "fetched_at": "2026-09-28T08:00:30+09:00",
+          "fetched_at": "2026-10-02T17:07:01+09:00",
           "change_type": "new",
           "extraction_status": "ok"
         }
       ],
       "summary": {
-        "status": "success",
+        "status": "not_processed",
         "error": null,
-        "version": 1,
-        "outdated": false,
-        "text": "【架空】家庭内でのこどもの事故を防ぐための啓発資料が公開された。",
-        "key_points": [
-          "誤飲・転落の予防",
-          "年齢別の注意点"
-        ],
-        "targets": [
-          "保護者",
-          "保育施設"
-        ],
-        "dates": [],
-        "uncertainties": [],
-        "model": "demo-model",
-        "processed_at": "2026-09-28T08:10:00+09:00"
-      },
-      "tags": [
-        {
-          "id": "childcare-support",
-          "name": "子育て支援",
-          "origin": "human",
-          "reason": null,
-          "retired": false
-        }
-      ],
-      "removed_tags": [],
-      "tag_override_reason": "AIが該当タグなしとしたため追加（架空の修正例）"
-    },
-    {
-      "id": "a_7794d96817250d11",
-      "source_id": "demo-tokei-rss",
-      "source_name": "架空統計調査センター（デモ）",
-      "title": "【架空】子育てに関する意識調査の結果",
-      "url": "https://tokei.example.org/release/2026/0926-kosodate-ishiki.html",
-      "published": {
-        "value": "2026",
-        "precision": "year",
-        "basis": {
-          "method": "rss_pubdate",
-          "evidence": "<dc:date>2026</dc:date>"
-        }
-      },
-      "updated": {
-        "value": null,
-        "precision": "unknown",
-        "basis": null
-      },
-      "first_seen_at": "2026-09-28T08:00:00+09:00",
-      "last_seen_at": "2026-09-28T08:00:00+09:00",
-      "status": "active",
-      "content_status": "ok",
-      "content_error": null,
-      "latest_version": 1,
-      "versions": [
-        {
-          "version": 1,
-          "fetched_at": "2026-09-28T08:00:30+09:00",
-          "change_type": "new",
-          "extraction_status": "ok"
-        }
-      ],
-      "summary": {
-        "status": "success",
-        "error": null,
-        "version": 1,
-        "outdated": false,
-        "text": "【架空】子育てに関する意識調査の結果が公表された。相談先の認知度が課題とされた。",
-        "key_points": [
-          "相談先の認知度",
-          "利用したい支援"
-        ],
-        "targets": [
-          "一般"
-        ],
-        "dates": [],
-        "uncertainties": [],
-        "model": "demo-model",
-        "processed_at": "2026-09-28T08:10:00+09:00"
-      },
-      "tags": [
-        {
-          "id": "survey-statistics",
-          "name": "調査・統計",
-          "origin": "ai",
-          "reason": "調査結果の公表のため",
-          "retired": false
-        },
-        {
-          "id": "childcare-support",
-          "name": "子育て支援",
-          "origin": "ai",
-          "reason": "子育て支援に関する内容のため",
-          "retired": false
-        }
-      ],
-      "removed_tags": [],
-      "tag_override_reason": null
-    },
-    {
-      "id": "a_1e732b661e5bfaad",
-      "source_id": "demo-boshi-html",
-      "source_name": "架空母子保健研究機構（デモ）",
-      "title": "【架空】研修会「妊産婦のメンタルヘルス支援」開催のお知らせ",
-      "url": "https://boshi.example.net/info/20260911.html",
-      "published": {
-        "value": null,
-        "precision": "unknown",
-        "basis": null
-      },
-      "updated": {
-        "value": null,
-        "precision": "unknown",
-        "basis": null
-      },
-      "first_seen_at": "2026-09-14T08:00:00+09:00",
-      "last_seen_at": "2026-09-14T08:00:00+09:00",
-      "status": "active",
-      "content_status": "ok",
-      "content_error": null,
-      "latest_version": 1,
-      "versions": [
-        {
-          "version": 1,
-          "fetched_at": "2026-09-14T08:00:30+09:00",
-          "change_type": "new",
-          "extraction_status": "ok"
-        }
-      ],
-      "summary": {
-        "status": "success",
-        "error": null,
-        "version": 1,
-        "outdated": false,
-        "text": "【架空】妊産婦のメンタルヘルス支援に関する研修会の開催案内。対象は保健師等。",
-        "key_points": [
-          "オンライン開催",
-          "事前申込制"
-        ],
-        "targets": [
-          "保健師",
-          "助産師"
-        ],
-        "dates": [],
-        "uncertainties": [
-          "掲載日・開催日が本文で確認できない"
-        ],
-        "model": "demo-model",
-        "processed_at": "2026-09-14T08:10:00+09:00"
-      },
-      "tags": [
-        {
-          "id": "maternal-child-health",
-          "name": "母子保健",
-          "origin": "ai",
-          "reason": "妊産婦支援に関する内容のため",
-          "retired": false
-        }
-      ],
-      "removed_tags": [],
-      "tag_override_reason": null
-    },
-    {
-      "id": "a_8e2a26b4d84f3a56",
-      "source_id": "demo-boshi-html",
-      "source_name": "架空母子保健研究機構（デモ）",
-      "title": "【架空】乳幼児の発育に関する調査報告書（PDF）",
-      "url": "https://files.boshi.example.net/report-2026.pdf",
-      "published": {
-        "value": null,
-        "precision": "unknown",
-        "basis": null
-      },
-      "updated": {
-        "value": null,
-        "precision": "unknown",
-        "basis": null
-      },
-      "first_seen_at": "2026-09-14T08:00:00+09:00",
-      "last_seen_at": "2026-09-14T08:00:00+09:00",
-      "status": "unsupported",
-      "content_status": "unsupported",
-      "content_error": "画像PDFのためテキストを抽出できない（OCRは対象外）",
-      "latest_version": 1,
-      "versions": [
-        {
-          "version": 1,
-          "fetched_at": "2026-09-14T08:00:30+09:00",
-          "change_type": "new",
-          "extraction_status": "unsupported"
-        }
-      ],
-      "summary": {
-        "status": "skipped_no_content",
-        "error": "本文を取得できないため要約しない",
-        "version": 1,
+        "version": null,
         "outdated": false,
         "text": null,
         "key_points": null,
         "targets": null,
         "dates": null,
         "uncertainties": null,
-        "model": "demo-model",
-        "processed_at": "2026-09-14T08:10:00+09:00"
+        "model": null,
+        "processed_at": null
+      },
+      "tags": [],
+      "removed_tags": [],
+      "tag_override_reason": null
+    },
+    {
+      "id": "a_c940b0c5e054384f",
+      "source_id": "cfa-news",
+      "source_name": "こども家庭庁（新着・更新）",
+      "title": "旧優生保護法問題の全面解決に向けた協議（第3回）　（令和8年9月30日開催）",
+      "url": "https://www.cfa.go.jp/councils/kyuyusei-zemmeikaiketsu/0899e4c0",
+      "published": {
+        "value": "2026-09-30",
+        "precision": "day",
+        "basis": {
+          "method": "listing_text",
+          "evidence": "<time datetime=\"2026-09-30\">2026年9月30日</time>"
+        }
+      },
+      "updated": {
+        "value": null,
+        "precision": "unknown",
+        "basis": null
+      },
+      "first_seen_at": "2026-10-02T17:07:01+09:00",
+      "last_seen_at": "2026-10-02T17:10:28+09:00",
+      "status": "active",
+      "content_status": "ok",
+      "content_error": null,
+      "latest_version": 1,
+      "versions": [
+        {
+          "version": 1,
+          "fetched_at": "2026-10-02T17:07:01+09:00",
+          "change_type": "new",
+          "extraction_status": "ok"
+        }
+      ],
+      "summary": {
+        "status": "not_processed",
+        "error": null,
+        "version": null,
+        "outdated": false,
+        "text": null,
+        "key_points": null,
+        "targets": null,
+        "dates": null,
+        "uncertainties": null,
+        "model": null,
+        "processed_at": null
+      },
+      "tags": [],
+      "removed_tags": [],
+      "tag_override_reason": null
+    },
+    {
+      "id": "a_cf60bedab57fd625",
+      "source_id": "cfa-news",
+      "source_name": "こども家庭庁（新着・更新）",
+      "title": "第16回ヒト受精胚等を用いる生殖補助医療研究等に関する専門委員会の開催について",
+      "url": "https://www.cfa.go.jp/press/ab4c3ae4-ba86-4d5a-8ba7-c3f7ea42908c",
+      "published": {
+        "value": "2026-09-30",
+        "precision": "day",
+        "basis": {
+          "method": "html_text",
+          "evidence": "公開日:令和8年9月30日"
+        }
+      },
+      "updated": {
+        "value": null,
+        "precision": "unknown",
+        "basis": null
+      },
+      "first_seen_at": "2026-10-02T17:07:01+09:00",
+      "last_seen_at": "2026-10-02T17:10:28+09:00",
+      "status": "active",
+      "content_status": "ok",
+      "content_error": null,
+      "latest_version": 1,
+      "versions": [
+        {
+          "version": 1,
+          "fetched_at": "2026-10-02T17:07:01+09:00",
+          "change_type": "new",
+          "extraction_status": "ok"
+        }
+      ],
+      "summary": {
+        "status": "not_processed",
+        "error": null,
+        "version": null,
+        "outdated": false,
+        "text": null,
+        "key_points": null,
+        "targets": null,
+        "dates": null,
+        "uncertainties": null,
+        "model": null,
+        "processed_at": null
       },
       "tags": [],
       "removed_tags": [],

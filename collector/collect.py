@@ -48,6 +48,7 @@ class Options:
     source_ids: list[str] | None = None
     cache_dir: Path | None = None
     trigger: str = "manual_cli"
+    max_items: int | None = None  # 1つの情報源から本文を取得する件数の上限（設定より小さくするときだけ使う）
 
 
 @dataclass
@@ -214,15 +215,16 @@ def process_source(source: dict, store: Store, fetcher: Fetcher, options: Option
         if retry_queue[url]["stage"] in ("fetch", "extract") and url not in unique:
             unique[url] = Candidate(url=url, title=None)
 
-    explored: list[ParsedDate] = []
+    # 探索できた範囲は、一覧で見えたすべての候補の日付から求める（本文を取得したかどうかによらない）
+    explored: list[ParsedDate] = [c.listing_date[0] for c in candidates if c.listing_date]
     processed = 0
+    max_items = min(limits["max_items"], options.max_items) if options.max_items else limits["max_items"]
     for cand in unique.values():
         if cand.listing_date:
-            explored.append(cand.listing_date[0])
             if in_period(cand.listing_date[0], start, end) is False and cand.url not in retry_queue:
                 continue  # 一覧の日付で期間外と分かるものは取得しない
-        if processed >= limits["max_items"]:
-            result["warnings"].append(f"取得上限（{limits['max_items']}件）に達したため、残りは次回に回します")
+        if processed >= max_items:
+            result["warnings"].append(f"取得上限（{max_items}件）に達したため、残りは次回に回します")
             break
         processed += 1
         try:
@@ -453,6 +455,35 @@ def collect(config: Config, data_dir: Path, fetcher: Fetcher, options: Options,
     return run
 
 
+# ---------------------------------------------------------------- 試し読み（情報源を追加するときの確認用）
+
+
+def dry_run(config: Config, fetcher: Fetcher, source_ids: list[str] | None, limit: int = 10) -> int:
+    """一覧ページだけを読み、抽出規則で取れる候補を表示する。記事本文の取得・保存はしない。"""
+    sources = [s for s in config.sources["sources"] if (s["id"] in source_ids if source_ids else s["enabled"])]
+    if not sources:
+        print("NG: 対象の情報源がありません（--source で id を指定するか、enabled: true にしてください）", file=sys.stderr)
+        return 1
+    ok = True
+    for source in sources:
+        if source["method"] == "manual":
+            print(f"- {source['id']}: 手動登録のため一覧はありません")
+            continue
+        source = {**source, "pagination": {**source.get("pagination", {}), "max_pages": 1}}
+        candidates, pages, error, rejected = list_candidates(source, fetcher)
+        print(f"- {source['id']}（{source['name']}）：候補 {len(candidates)}件" + (f"　NG：{error}" if error else ""))
+        if error:
+            ok = False
+        for c in candidates[:limit]:
+            when = f"{c.listing_date[0].value}" if c.listing_date else "日付不明"
+            print(f"    {when:<26} {(c.title or '')[:40]}\n      {c.url}")
+        if len(candidates) > limit:
+            print(f"    …ほか {len(candidates) - limit}件")
+        if not candidates and not error:
+            print("    警告：候補が0件です。link_rules（css_selector・item_selector・include）を見直してください")
+    return 0 if ok else 1
+
+
 # ---------------------------------------------------------------- CLI
 
 
@@ -474,6 +505,9 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--fixtures", type=Path, help="テスト用：URLとファイルの対応表（実際のWebにはアクセスしない）")
     parser.add_argument("--allow-network", action="store_true", help="実際のWebへアクセスする（採用した情報源のみ）")
     parser.add_argument("--cache", type=Path, default=REPO_ROOT / ".cache", help="原文本文の保存先（Git管理外）")
+    parser.add_argument("--max-items", type=int, help="情報源ごとに本文を取得する件数の上限（試しに少数だけ取得するとき）")
+    parser.add_argument("--dry-run", action="store_true",
+                        help="一覧ページだけを読んで候補（題名・日付・URL）を表示する。記事本文は取得せず、何も保存しない")
     args = parser.parse_args(argv)
 
     if (args.start is None) != (args.end is None):
@@ -494,7 +528,10 @@ def main(argv: list[str] | None = None) -> int:
         fetcher: Fetcher = FixtureFetcher.from_manifest(args.fixtures)
     else:
         fetcher = HttpFetcher(wait_seconds=max(s["limits"]["wait_seconds"] for s in config.sources["sources"]))
-    options = Options(now=datetime.now(JST), start=args.start, end=args.end, source_ids=args.sources, cache_dir=args.cache)
+    if args.dry_run:
+        return dry_run(config, fetcher, args.sources)
+    options = Options(now=datetime.now(JST), start=args.start, end=args.end, source_ids=args.sources,
+                      cache_dir=args.cache, max_items=args.max_items)
     try:
         run = collect(config, args.data, fetcher, options, config_dir=config_dir, overlay_dir=args.config_dir)
     except (ValueError, RuntimeError) as e:

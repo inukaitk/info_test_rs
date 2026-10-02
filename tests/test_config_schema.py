@@ -17,13 +17,20 @@ def test_repository_config_is_valid():
     assert config is not None
 
 
-def test_example_sources_are_fictional():
-    """設定例の情報源は予約済みの例示用ドメインだけを使う。"""
-    sources = read_yaml(REPO_ROOT / "config" / "sources.yaml")["sources"]
+def test_demo_sources_are_fictional():
+    """架空データ用の情報源は予約済みの例示用ドメインだけを使う。"""
+    sources = read_yaml(REPO_ROOT / "demo" / "config" / "sources.yaml")["sources"]
     for s in sources:
         for host in s["allowed_hosts"]:
             assert host.split(".")[-2:] in (["example", "org"], ["example", "net"], ["example", "com"]), host
         assert "架空" in s["name"]
+
+
+def test_real_sources_are_official_and_documented():
+    """実データの情報源は公的機関（go.jp）で、制約のメモがある。"""
+    for s in read_yaml(REPO_ROOT / "config" / "sources.yaml")["sources"]:
+        assert all(h.endswith(".go.jp") for h in s["allowed_hosts"]), s["id"]
+        assert s.get("notes"), s["id"]
 
 
 def test_tags_follow_spec_examples():
@@ -34,9 +41,10 @@ def test_tags_follow_spec_examples():
     }
 
 
-def test_site_starts_in_demo_mode_without_correction_url():
+def test_site_shows_real_data_without_correction_url_yet():
+    # 段階2-b で実データ表示に切り替えた。修正依頼リンクは未定
     site = read_yaml(REPO_ROOT / "config" / "site.yaml")
-    assert site["release_mode"] == "demo"
+    assert site["release_mode"] == "real"
     assert site["correction_request_url"] is None
 
 

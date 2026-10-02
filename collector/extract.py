@@ -140,7 +140,35 @@ def _soup(body: bytes) -> BeautifulSoup:
     return BeautifulSoup(body, "html.parser")
 
 
+def _date_in(element, date_selector: str | None) -> tuple[ParsedDate, str, str] | None:
+    """要素の中から一覧の日付を探す。優先順：date_selector で指定した要素 ＞ <time datetime> ＞ class に date を含む要素。
+    タイトル中の日付（例「記者会見（令和8年10月2日）」）を掲載日と取り違えないよう、文中の日付は最後の手段にする。"""
+    candidates = []
+    if date_selector:
+        candidates += element.select(date_selector)
+    candidates += element.find_all("time")
+    candidates += element.select("[class*=date], [class*=Date]")
+    for el in candidates:
+        if el.name == "time" and el.get("datetime"):
+            parsed = parse_any(el["datetime"])
+            if parsed:
+                return parsed, "listing_text", f'<time datetime="{el["datetime"]}">{el.get_text(strip=True)}</time>'[:200]
+        found = find_japanese_date(el.get_text(" ", strip=True))
+        if found:
+            return found[0], "listing_text", found[1]
+    return None
+
+
 def parse_html_listing(body: bytes, base_url: str, link_rules: dict, next_selector: str | None = None) -> Listing:
+    """一覧ページから候補を列挙する。
+
+    link_rules の項目（すべて任意）:
+      css_selector   一覧の範囲（例 "main .news-list"）
+      item_selector  1件分の要素（例 "a.card__box"、"div.historical_line"）。指定するとその中からリンク・題名・日付を探す
+      title_selector 1件の中の題名の要素（例 ".card__title"）
+      date_selector  1件の中の日付の要素（例 ".card__date time"、".h_date"）
+      include / exclude  URL の正規表現
+    """
     soup = _soup(body)
     scope = soup.select_one(link_rules["css_selector"]) if link_rules.get("css_selector") else soup.body or soup
     listing = Listing([])
@@ -148,8 +176,21 @@ def parse_html_listing(body: bytes, base_url: str, link_rules: dict, next_select
         return listing
     include = [re.compile(p) for p in link_rules.get("include", [])]
     exclude = [re.compile(p) for p in link_rules.get("exclude", [])]
+    item_selector = link_rules.get("item_selector")
+    title_selector = link_rules.get("title_selector")
+    date_selector = link_rules.get("date_selector")
+
+    if item_selector:
+        pairs = []
+        for item in scope.select(item_selector):
+            a = item if item.name == "a" and item.get("href") else item.find("a", href=True)
+            if a is not None:
+                pairs.append((a, item))
+    else:
+        pairs = [(a, None) for a in scope.find_all("a", href=True)]
+
     seen: set[str] = set()
-    for a in scope.find_all("a", href=True):
+    for a, item in pairs:
         href = a["href"].strip()
         try:
             url = normalize_url(href, base_url)
@@ -163,14 +204,19 @@ def parse_html_listing(body: bytes, base_url: str, link_rules: dict, next_select
         if url in seen:
             continue
         seen.add(url)
-        # リンクを含む行（li・tr・dt/dd など）の文字から日付を探す
-        container = a.find_parent(["li", "tr", "dd", "dt", "p", "div"]) or a.parent
-        row_text = container.get_text(" ", strip=True) if container else ""
-        found = find_japanese_date(row_text)
-        listing.candidates.append(
-            Candidate(url=url, title=a.get_text(" ", strip=True) or None,
-                      listing_date=(found[0], "listing_text", found[1]) if found else None)
-        )
+        if item is not None:
+            title_el = item.select_one(title_selector) if title_selector else None
+            title = (title_el or a).get_text(" ", strip=True) or None
+            found = _date_in(item, date_selector)
+        else:
+            title = a.get_text(" ", strip=True) or None
+            # リンクを含む行（li・tr・dt/dd など）から日付を探す。日付用の要素があればそれを優先する
+            container = a.find_parent(["li", "tr", "dd", "dt", "p", "div"]) or a.parent
+            found = _date_in(container, date_selector) if container is not None else None
+            if found is None and container is not None:
+                text_found = find_japanese_date(container.get_text(" ", strip=True))
+                found = (text_found[0], "listing_text", text_found[1]) if text_found else None
+        listing.candidates.append(Candidate(url=url, title=title, listing_date=found))
     if next_selector:
         nxt = soup.select_one(next_selector)
         if nxt is not None and nxt.get("href"):

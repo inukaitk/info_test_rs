@@ -14,8 +14,12 @@ ARTICLE = "a_3715ddd7b3d7eab6"
 UNKNOWN_DATE_ARTICLE = "a_8e2a26b4d84f3a56"
 
 
+DEMO_CONFIG = REPO_ROOT / "demo" / "config"
+
+
 def errors_for(data_dir):
-    return validate_all(REPO_ROOT / "config", data_dir).errors
+    # テスト用データの情報源（demo-…）は架空データ用の設定にある
+    return validate_all(REPO_ROOT / "config", data_dir, overlay_dir=DEMO_CONFIG).errors
 
 
 def test_repository_data_is_valid():
@@ -330,10 +334,13 @@ def test_broken_json_is_reported(data_dir):
     assert any("JSONとして読めません" in e for e in errors_for(data_dir))
 
 
-def test_cli_exit_codes(data_dir, capsys):
+def test_cli_exit_codes(data_dir, config_dir, capsys):
+    import shutil
+
     from collector.validate import main
 
-    assert main(["--config", str(REPO_ROOT / "config"), "--data", str(data_dir)]) == 0
+    shutil.copyfile(DEMO_CONFIG / "sources.yaml", config_dir / "sources.yaml")
+    assert main(["--config", str(config_dir), "--data", str(data_dir)]) == 0
     (data_dir / "state.json").write_text("{}", encoding="utf-8")
-    assert main(["--config", str(REPO_ROOT / "config"), "--data", str(data_dir)]) == 1
+    assert main(["--config", str(config_dir), "--data", str(data_dir)]) == 1
     assert "NG" in capsys.readouterr().err

@@ -558,3 +558,58 @@ def test_cli_rejects_bad_period(capsys):
         col.main(["--fixtures", str(WEB / "manifest.yaml"), "--start", "2026-09-30", "--end", "2026-09-01"])
     with pytest.raises(SystemExit):
         col.main(["--fixtures", str(WEB / "manifest.yaml"), "--start", "2026-09-01"])
+
+
+# ---------------------------------------------------------------- 一覧の1件ごとの読み取り（段階2-b）
+
+CARD_RULES = {
+    "css_selector": "main",
+    "item_selector": "a.card__box",
+    "title_selector": ".card__title",
+    "date_selector": ".card__date time",
+    "exclude": [r"^https://cards\.example\.org/news"],
+}
+
+
+def test_card_listing_uses_item_title_and_date():
+    listing = parse_html_listing((WEB / "cards.html").read_bytes(), "https://cards.example.org/news", CARD_RULES,
+                                 "a.pagination__button[aria-label*='次']")
+    assert [(c.url, c.title, c.listing_date[0].value) for c in listing.candidates] == [
+        ("https://cards.example.org/speech/aaa111", "【架空】大臣記者会見（令和8年9月28日）を掲載しました", "2026-10-02"),
+        ("https://cards.example.org/press/bbb222", "【架空】表彰の受賞者を発表しました", "2026-09-30"),
+    ]
+    assert listing.candidates[0].listing_date[2].startswith('<time datetime="2026-10-02">')
+    assert listing.next_url == "https://cards.example.org/news?page=1"
+
+
+def test_time_element_is_preferred_over_date_in_title_without_selector():
+    """date_selector がなくても <time> を優先し、題名中の日付（9月28日）を掲載日にしない。"""
+    rules = {k: v for k, v in CARD_RULES.items() if k != "date_selector"}
+    listing = parse_html_listing((WEB / "cards.html").read_bytes(), "https://cards.example.org/news", rules)
+    assert listing.candidates[0].listing_date[0].value == "2026-10-02"
+
+
+def test_max_items_option_limits_fetches(config, fetcher, tmp_path):
+    options = col.Options(now=datetime(2026, 10, 2, 8, 0, tzinfo=JST), start=SEPT[0], end=SEPT[1],
+                          source_ids=["fx-news-rss"], max_items=2)
+    r = col.collect(config, tmp_path / "data", fetcher, options, config_dir=CONFIG_DIR, overlay_dir=OVERLAY)
+    res = result_of(r, "fx-news-rss")
+    assert res["new"] == 2
+    assert any("取得上限（2件）" in w for w in res["warnings"])
+
+
+def test_dry_run_reads_only_listing(capsys):
+    fetcher = FixtureFetcher.from_manifest(WEB / "manifest.yaml")
+    code = col.main(["--fixtures", str(WEB / "manifest.yaml"), "--config-dir", str(OVERLAY), "--dry-run",
+                     "--source", "fx-list-html"])
+    out = capsys.readouterr().out
+    assert code == 0
+    assert "候補 4件" in out and "2026-09-05" in out and "日付不明" in out
+
+
+def test_explored_range_covers_all_listed_candidates(config, fetcher, tmp_path):
+    options = col.Options(now=datetime(2026, 10, 2, 8, 0, tzinfo=JST), start=SEPT[0], end=SEPT[1],
+                          source_ids=["fx-news-rss"], max_items=1)
+    col.collect(config, tmp_path / "data", fetcher, options, config_dir=CONFIG_DIR, overlay_dir=OVERLAY)
+    explored = read_json(tmp_path / "data" / "state.json")["sources"]["fx-news-rss"]["explored_range"]
+    assert explored["oldest"] == "2026-08-31" and explored["newest"] == "2026-10-01"

@@ -3,7 +3,7 @@ site_name: 外部環境情報（検証版）
 # 修正依頼フォーム（Microsoft Forms等）のURL。未定のため null（画面では「未設定」と表示）
 correction_request_url: null
 # demo = 架空データのみ表示（全画面に「架空データ」と表示）、real = 実データ
-release_mode: demo
+release_mode: real
 page_size: 50
 # 最新一覧に出す期間（日数）。取得日（見つけた日）で数え、最終収集日を含めて何日分か
 latest_days: 7

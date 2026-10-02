@@ -287,7 +287,10 @@ def test_cli(tmp_path, capsys):
     assert "記事 20 件" in capsys.readouterr().out
 
 
-def test_real_mode_with_empty_data(tmp_path):
-    outputs = ex.export("real", tmp_path, GENERATED_AT)
+def test_real_mode_with_empty_data(tmp_path, monkeypatch):
+    empty = tmp_path / "empty"
+    empty.mkdir()
+    monkeypatch.setattr(ex, "paths_for_mode", lambda mode: (empty, None))
+    outputs = ex.export("real", tmp_path / "out", GENERATED_AT)
     assert outputs["articles.json"]["articles"] == []
     assert outputs["meta.json"]["is_demo"] is False

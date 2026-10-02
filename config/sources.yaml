@@ -1,61 +1,67 @@
-# 情報源の設定。現在はすべて架空（段階2-bで採用した実在の情報源に置き換える）。
-# URLは予約済みの例示用ドメイン（example.org等）を使い、実在の機関名・URLは使わない。
+# 情報源の設定（実データ）。架空のデモ用は demo/config/sources.yaml にある。
+#
+# 情報源を追加・有効にするには：
+#   1. 下の候補（enabled: false）を enabled: true にする、または新しい項目を足す（docs/SOURCES.md に調査結果）
+#   2. 環境のネットワークアクセスで、allowed_hosts のドメインへの接続を許可する
+#   3. 試し読みで一覧が正しく取れるか確認する（本文は取得せず、何も保存しない）
+#        .venv/bin/python -m collector.collect --allow-network --dry-run --source <id>
+#   4. 少数だけ取得してみる： --allow-network --source <id> --max-items 5
+# Claude Code に「② の厚生労働省を有効にして」のように頼めば、1〜4 を行う。
 sources:
-  - id: demo-kodomo-rss
-    name: 架空こども政策庁（デモ）
-    entry_url: https://kodomo.example.org/news/rss.xml
-    method: rss
-    allowed_hosts:
-      - kodomo.example.org
-    link_rules:
-      include:
-        - "^https://kodomo\\.example\\.org/news/"
-    timezone: Asia/Tokyo
-    limits:
-      max_items: 30
-      max_bytes: 5242880
-      wait_seconds: 3
-      timeout_seconds: 30
-    enabled: true
-    notes: 架空の情報源。RSSから新着を取得する例。
-
-  - id: demo-boshi-html
-    name: 架空母子保健研究機構（デモ）
-    entry_url: https://boshi.example.net/info/index.html
+  # ① 採用（2026-10-02）
+  - id: cfa-news
+    name: こども家庭庁（新着・更新）
+    entry_url: https://www.cfa.go.jp/news
     method: html
-    allowed_hosts:
-      - boshi.example.net
-      - files.boshi.example.net
+    allowed_hosts: [www.cfa.go.jp]
     link_rules:
-      css_selector: "main .news-list"
+      css_selector: "main"
+      item_selector: "a.card__box"     # 1件分のカード
+      title_selector: ".card__title"   # カードの中の題名（種別「会見」等や日付を題名に含めない）
+      date_selector: ".card__date time"  # 掲載日（題名中の日付と取り違えない）
       include:
-        - "^https://boshi\\.example\\.net/info/\\d{8}\\.html$"
-        - "^https://files\\.boshi\\.example\\.net/.+\\.pdf$"
+        - "^https://www\\.cfa\\.go\\.jp/"
       exclude:
-        - "/info/archive/"
+        - "^https://www\\.cfa\\.go\\.jp/news"         # 種別ごとの一覧・ページ送り
+        - "^https://www\\.cfa\\.go\\.jp/procurement/"  # 調達情報（入札の総合ページ）
     pagination:
-      next_selector: "a.next"
+      next_selector: "a.pagination__button[aria-label*='次']"
       max_pages: 3
     timezone: Asia/Tokyo
-    limits:
-      max_items: 20
-      max_bytes: 10485760
-      wait_seconds: 5
-      timeout_seconds: 30
+    limits: {max_items: 30, max_bytes: 5242880, wait_seconds: 5, timeout_seconds: 30}
     enabled: true
-    notes: 架空の情報源。HTML一覧ページと掲載PDFを取得する例。
+    notes: >-
+      HTML一覧（RSSなし）。1ページ約10件。記事ページの「公開日：」を公開日の根拠にする。
+      記事の多くは本文がPDF（報道発表資料・会議資料）で、HTMLページには概要とPDFへのリンクだけがある（PDFは未取得）。
+      利用条件：公共データ利用規約（PDL1.0）。
 
-  - id: demo-manual
-    name: 架空自治体標準化推進室（デモ）
-    entry_url: https://hyojunka.example.com/
-    method: manual
-    allowed_hosts:
-      - hyojunka.example.com
+  # ② 候補（未採用）：有効にするには enabled: true
+  - id: mhlw-news
+    name: 厚生労働省（新着情報）
+    entry_url: https://www.mhlw.go.jp/stf/news.rdf
+    method: rss
+    allowed_hosts: [www.mhlw.go.jp]
     timezone: Asia/Tokyo
-    limits:
-      max_items: 10
-      max_bytes: 1048576
-      wait_seconds: 5
-      timeout_seconds: 30
+    limits: {max_items: 30, max_bytes: 5242880, wait_seconds: 5, timeout_seconds: 30}
     enabled: false
-    notes: 架空の情報源。自動取得できない場合にタイトルとURLを手動登録する例。
+    notes: >-
+      RSS 1.0（直近数日分の約120件）。省全体の新着のため、母子保健と関係のない記事が多い。
+      利用条件：公共データ利用規約（PDL1.0）。
+
+  # ③ 候補（要判断）：利用規約で無断転載・複製が禁止されているため、採用前に広報へ確認する
+  - id: ncchd-news
+    name: 国立成育医療研究センター（新着情報）
+    entry_url: https://www.ncchd.go.jp/news/
+    method: html
+    allowed_hosts: [www.ncchd.go.jp]
+    link_rules:
+      item_selector: "div.historical_line"
+      date_selector: ".h_date"
+      include:
+        - "^https://www\\.ncchd\\.go\\.jp/news/"
+    timezone: Asia/Tokyo
+    limits: {max_items: 30, max_bytes: 5242880, wait_seconds: 5, timeout_seconds: 30}
+    enabled: false
+    notes: >-
+      HTML一覧（RSSなし）。1ページに過去分約300件。
+      利用条件：著作権で保護、無断転載・複製は禁止（引用は出所明示）。採用前に確認が必要。

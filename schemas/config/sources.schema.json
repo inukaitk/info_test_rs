@@ -4,58 +4,165 @@
   "title": "config/sources.yaml 情報源の設定",
   "type": "object",
   "additionalProperties": false,
-  "required": ["sources"],
+  "required": [
+    "sources"
+  ],
   "properties": {
     "sources": {
       "type": "array",
-      "items": { "$ref": "#/$defs/source" }
+      "items": {
+        "$ref": "#/$defs/source"
+      }
     }
   },
   "$defs": {
     "source": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["id", "name", "entry_url", "method", "allowed_hosts", "timezone", "limits", "enabled"],
+      "required": [
+        "id",
+        "name",
+        "entry_url",
+        "method",
+        "allowed_hosts",
+        "timezone",
+        "limits",
+        "enabled"
+      ],
       "properties": {
-        "id": { "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/slug_id" },
-        "name": { "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/nonempty_text", "description": "機関名（正式名称）" },
-        "entry_url": { "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/http_url", "description": "入口URL（RSSまたは一覧ページ）" },
-        "method": { "enum": ["rss", "html", "manual"], "description": "取得方式" },
+        "id": {
+          "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/slug_id"
+        },
+        "name": {
+          "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/nonempty_text",
+          "description": "機関名（正式名称）"
+        },
+        "entry_url": {
+          "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/http_url",
+          "description": "入口URL（RSSまたは一覧ページ）"
+        },
+        "method": {
+          "enum": [
+            "rss",
+            "html",
+            "manual"
+          ],
+          "description": "取得方式"
+        },
         "allowed_hosts": {
-          "type": "array", "minItems": 1, "uniqueItems": true,
-          "items": { "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/hostname" },
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/hostname"
+          },
           "description": "記事・PDFの取得を許可するホスト。入口URLのホストを含める"
         },
         "link_rules": {
-          "type": "object", "additionalProperties": false,
+          "type": "object",
+          "additionalProperties": false,
           "description": "一覧から記事リンクを選ぶ規則（正規表現）",
           "properties": {
-            "include": { "type": "array", "items": { "type": "string", "minLength": 1 } },
-            "exclude": { "type": "array", "items": { "type": "string", "minLength": 1 } },
-            "css_selector": { "type": "string", "minLength": 1, "description": "html方式でリンクを探す範囲" }
+            "include": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "exclude": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "css_selector": {
+              "type": "string",
+              "minLength": 1,
+              "description": "html方式でリンクを探す範囲"
+            },
+            "item_selector": {
+              "type": "string",
+              "minLength": 1,
+              "description": "1件分の要素のCSSセレクター"
+            },
+            "title_selector": {
+              "type": "string",
+              "minLength": 1,
+              "description": "1件の中の題名の要素"
+            },
+            "date_selector": {
+              "type": "string",
+              "minLength": 1,
+              "description": "1件の中の日付の要素"
+            }
           }
         },
         "pagination": {
-          "type": "object", "additionalProperties": false,
+          "type": "object",
+          "additionalProperties": false,
           "properties": {
-            "next_selector": { "type": "string", "minLength": 1 },
-            "max_pages": { "type": "integer", "minimum": 1, "maximum": 50 }
+            "next_selector": {
+              "type": "string",
+              "minLength": 1
+            },
+            "max_pages": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 50
+            }
           },
-          "required": ["max_pages"]
+          "required": [
+            "max_pages"
+          ]
         },
-        "timezone": { "const": "Asia/Tokyo", "description": "MVPでは日本時間のみ" },
+        "timezone": {
+          "const": "Asia/Tokyo",
+          "description": "MVPでは日本時間のみ"
+        },
         "limits": {
-          "type": "object", "additionalProperties": false,
-          "required": ["max_items", "max_bytes", "wait_seconds", "timeout_seconds"],
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "max_items",
+            "max_bytes",
+            "wait_seconds",
+            "timeout_seconds"
+          ],
           "properties": {
-            "max_items": { "type": "integer", "minimum": 1, "maximum": 500, "description": "1回の取得件数の上限" },
-            "max_bytes": { "type": "integer", "minimum": 1024, "maximum": 52428800, "description": "1ファイルの最大サイズ" },
-            "wait_seconds": { "type": "number", "minimum": 1, "maximum": 60, "description": "リクエスト間の待機秒数" },
-            "timeout_seconds": { "type": "number", "minimum": 1, "maximum": 120 }
+            "max_items": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 500,
+              "description": "1回の取得件数の上限"
+            },
+            "max_bytes": {
+              "type": "integer",
+              "minimum": 1024,
+              "maximum": 52428800,
+              "description": "1ファイルの最大サイズ"
+            },
+            "wait_seconds": {
+              "type": "number",
+              "minimum": 1,
+              "maximum": 60,
+              "description": "リクエスト間の待機秒数"
+            },
+            "timeout_seconds": {
+              "type": "number",
+              "minimum": 1,
+              "maximum": 120
+            }
           }
         },
-        "enabled": { "type": "boolean" },
-        "notes": { "type": "string", "description": "制約などのメモ（公開される前提で書く）" }
+        "enabled": {
+          "type": "boolean"
+        },
+        "notes": {
+          "type": "string",
+          "description": "制約などのメモ（公開される前提で書く）"
+        }
       }
     }
   }
