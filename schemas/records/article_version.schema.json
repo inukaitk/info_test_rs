@@ -4,32 +4,218 @@
   "title": "article_version 記事の版（意味のある本文変更ごとに追加。過去の版は消さない）",
   "type": "object",
   "additionalProperties": false,
-  "required": ["article_id", "version", "content_hash", "fetched_at", "content_type", "extraction_status", "extraction_error", "change_type"],
+  "required": [
+    "article_id",
+    "version",
+    "content_hash",
+    "fetched_at",
+    "content_type",
+    "extraction_status",
+    "extraction_error",
+    "change_type"
+  ],
   "properties": {
-    "article_id": { "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/article_id" },
-    "version": { "type": "integer", "minimum": 1 },
-    "content_hash": { "oneOf": [ { "type": "null" }, { "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/sha256" } ], "description": "抽出本文（ナビ・フッター除く）のhash。本文未取得ならnull" },
-    "fetched_at": { "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/timestamp" },
-    "content_type": { "enum": ["html", "pdf", "rss_only", "none"] },
-    "text_length": { "type": ["integer", "null"], "minimum": 0 },
-    "extraction_status": { "enum": ["ok", "failed", "unsupported", "not_fetched"], "description": "本文未取得を成功として扱わない" },
-    "extraction_error": { "type": ["string", "null"] },
-    "change_type": { "enum": ["new", "content_changed"] }
+    "article_id": {
+      "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/article_id"
+    },
+    "version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "content_hash": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/sha256"
+        }
+      ],
+      "description": "抽出本文（ナビ・フッター除く）のhash。本文未取得ならnull"
+    },
+    "fetched_at": {
+      "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/timestamp"
+    },
+    "content_type": {
+      "enum": [
+        "html",
+        "pdf",
+        "rss_only",
+        "none"
+      ]
+    },
+    "text_length": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "extraction_status": {
+      "enum": [
+        "ok",
+        "failed",
+        "unsupported",
+        "not_fetched"
+      ],
+      "description": "本文未取得を成功として扱わない"
+    },
+    "extraction_error": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "change_type": {
+      "enum": [
+        "new",
+        "content_changed",
+        "extraction_changed"
+      ],
+      "description": "extraction_changed は原文ではなく抽出方法（添付PDFを読むようにした等）が変わったための版"
+    },
+    "extraction_profile": {
+      "type": "string",
+      "minLength": 1,
+      "description": "抽出方法（例 html、html+pdf(3files,30pages)）。省略は html"
+    },
+    "attachments": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "url",
+          "title",
+          "status",
+          "error"
+        ],
+        "properties": {
+          "url": {
+            "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/http_url"
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "status": {
+            "enum": [
+              "ok",
+              "failed",
+              "unsupported",
+              "skipped"
+            ],
+            "description": "skipped は件数の上限・許可ホスト外で取得しなかったもの"
+          },
+          "error": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "text_length": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "minimum": 0
+          },
+          "pages": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "minimum": 0
+          },
+          "pages_read": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "minimum": 0
+          }
+        }
+      }
+    }
   },
   "allOf": [
     {
-      "if": { "properties": { "extraction_status": { "const": "ok" } } },
-      "then": { "properties": { "content_hash": { "type": "string" }, "extraction_error": { "type": "null" }, "content_type": { "enum": ["html", "pdf", "rss_only"] } } },
-      "else": { "properties": { "content_hash": { "type": "null" } } }
+      "if": {
+        "properties": {
+          "extraction_status": {
+            "const": "ok"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "content_hash": {
+            "type": "string"
+          },
+          "extraction_error": {
+            "type": "null"
+          },
+          "content_type": {
+            "enum": [
+              "html",
+              "pdf",
+              "rss_only"
+            ]
+          }
+        }
+      },
+      "else": {
+        "properties": {
+          "content_hash": {
+            "type": "null"
+          }
+        }
+      }
     },
     {
-      "if": { "properties": { "extraction_status": { "enum": ["failed", "unsupported"] } } },
-      "then": { "properties": { "extraction_error": { "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/nonempty_text" } } }
+      "if": {
+        "properties": {
+          "extraction_status": {
+            "enum": [
+              "failed",
+              "unsupported"
+            ]
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "extraction_error": {
+            "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/nonempty_text"
+          }
+        }
+      }
     },
     {
-      "if": { "properties": { "version": { "const": 1 } } },
-      "then": { "properties": { "change_type": { "const": "new" } } },
-      "else": { "properties": { "change_type": { "const": "content_changed" } } }
+      "if": {
+        "properties": {
+          "version": {
+            "const": 1
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "change_type": {
+            "const": "new"
+          }
+        }
+      },
+      "else": {
+        "properties": {
+          "change_type": {
+            "enum": [
+              "content_changed",
+              "extraction_changed"
+            ]
+          }
+        }
+      }
     }
   ]
 }

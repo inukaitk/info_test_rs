@@ -57,6 +57,9 @@ class Extracted:
     updated: DateFound | None = None
     status: str = "ok"  # ok / unsupported
     error: str | None = None
+    pdf_links: list[tuple[str, str]] = field(default_factory=list)  # 本文中の PDF へのリンク（URL, リンク文字）
+    page_count: int | None = None  # PDF の総ページ数
+    pages_read: int | None = None  # 実際に読んだページ数（上限で打ち切った場合は総ページ数より少ない）
 
     @property
     def content_hash(self) -> str | None:
@@ -258,7 +261,24 @@ def _labeled_date(text: str, labels: tuple[str, ...], method: str) -> DateFound 
     return None
 
 
-def extract_html(body: bytes) -> Extracted:
+def _pdf_links(main, base_url: str | None) -> list[tuple[str, str]]:
+    links: list[tuple[str, str]] = []
+    seen: set[str] = set()
+    for a in main.find_all("a", href=True):
+        href = a["href"].strip()
+        if ".pdf" not in href.lower().split("?")[0].split("#")[0][-8:]:
+            continue
+        try:
+            url = normalize_url(href, base_url) if base_url else href
+        except UrlRejected:
+            continue
+        if url not in seen:
+            seen.add(url)
+            links.append((url, a.get_text(" ", strip=True) or url.rsplit("/", 1)[-1]))
+    return links
+
+
+def extract_html(body: bytes, base_url: str | None = None) -> Extracted:
     soup = _soup(body)
     title_tag = soup.find("h1") or soup.find("title")
     title = title_tag.get_text(" ", strip=True) if title_tag else None
@@ -272,6 +292,7 @@ def extract_html(body: bytes) -> Extracted:
             tag.decompose()
     main = soup.find("main") or soup.find("article") or soup.find(attrs={"role": "main"}) or soup.find(id="main") or soup.body or soup
     text = normalize_text(main.get_text("\n"))
+    pdf_links = _pdf_links(main, base_url)
 
     if published is None:
         published = _labeled_date(text, PUBLISHED_LABELS, "html_text")
@@ -280,26 +301,30 @@ def extract_html(body: bytes) -> Extracted:
     if updated is None:
         updated = labeled_updated
     if not text:
-        return Extracted(title, "", "html", published, updated, status="unsupported", error="本文を抽出できない（動的ページの可能性）")
-    return Extracted(title, text, "html", published, updated)
+        return Extracted(title, "", "html", published, updated, status="unsupported", error="本文を抽出できない（動的ページの可能性）",
+                         pdf_links=pdf_links)
+    return Extracted(title, text, "html", published, updated, pdf_links=pdf_links)
 
 
 # ---------------------------------------------------------------- PDF
 
 
-def extract_pdf(body: bytes) -> Extracted:
+def extract_pdf(body: bytes, max_pages: int | None = None) -> Extracted:
     from pypdf import PdfReader
     from pypdf.errors import PdfReadError
 
     try:
         reader = PdfReader(io.BytesIO(body))
-        text = normalize_text("\n".join((page.extract_text() or "") for page in reader.pages))
+        total = len(reader.pages)
+        pages = reader.pages[:max_pages] if max_pages else reader.pages
+        text = normalize_text("\n".join((page.extract_text() or "") for page in pages))
         meta = reader.metadata or {}
     except (PdfReadError, ValueError, KeyError) as e:
         return Extracted(None, "", "pdf", status="unsupported", error=f"PDFを読めない（{type(e).__name__}）")
     title = (meta.get("/Title") or "").strip() or None
     if not text.strip():
-        return Extracted(title, "", "pdf", status="unsupported", error="画像PDFのためテキストを抽出できない（OCRは対象外）")
+        return Extracted(title, "", "pdf", status="unsupported", error="画像PDFのためテキストを抽出できない（OCRは対象外）",
+                         page_count=total, pages_read=len(pages))
     published = _labeled_date(text, PUBLISHED_LABELS, "pdf_text")
     updated = _labeled_date(text, UPDATED_LABELS, "pdf_text")
     if published is None:
@@ -313,10 +338,10 @@ def extract_pdf(body: bytes) -> Extracted:
     if title is None:
         first = text.splitlines()[0] if text else ""
         title = _short(first, 80) or None
-    return Extracted(title, text, "pdf", published, updated)
+    return Extracted(title, text, "pdf", published, updated, page_count=total, pages_read=len(pages))
 
 
 def extract_document(body: bytes, content_type: str, url: str) -> Extracted:
     if "pdf" in content_type.lower() or url.lower().endswith(".pdf") or body[:5] == b"%PDF-":
         return extract_pdf(body)
-    return extract_html(body)
+    return extract_html(body, url)

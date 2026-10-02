@@ -36,7 +36,8 @@
           "summary",
           "tags",
           "removed_tags",
-          "tag_override_reason"
+          "tag_override_reason",
+          "attachments"
         ],
         "properties": {
           "id": {
@@ -218,7 +219,8 @@
                 "change_type": {
                   "enum": [
                     "new",
-                    "content_changed"
+                    "content_changed",
+                    "extraction_changed"
                   ]
                 },
                 "extraction_status": {
@@ -452,6 +454,57 @@
                 "type": "string"
               }
             ]
+          },
+          "attachments": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "title",
+                "url",
+                "status",
+                "note",
+                "pages"
+              ],
+              "properties": {
+                "title": {
+                  "type": "string"
+                },
+                "url": {
+                  "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/http_url"
+                },
+                "status": {
+                  "enum": [
+                    "ok",
+                    "failed",
+                    "unsupported",
+                    "skipped"
+                  ]
+                },
+                "note": {
+                  "oneOf": [
+                    {
+                      "type": "null"
+                    },
+                    {
+                      "type": "string"
+                    }
+                  ]
+                },
+                "pages": {
+                  "oneOf": [
+                    {
+                      "type": "null"
+                    },
+                    {
+                      "type": "integer",
+                      "minimum": 0
+                    }
+                  ]
+                }
+              }
+            }
           }
         }
       }

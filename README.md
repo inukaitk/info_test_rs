@@ -190,7 +190,7 @@ python -m venv .venv                                # 作業用環境を作る�
 
 ### 成功時の表示
 
-- テスト：最後に `271 passed` のように表示され、`failed` がなければ成功です（件数は今後増えます）。
+- テスト：最後に `280 passed` のように表示され、`failed` がなければ成功です（件数は今後増えます）。
 - 検証：`OK: 設定とデータはスキーマ検証を通過しました` と表示されれば成功です。
   問題があると `NG: 1 件の問題があります` に続けて、ファイル名と問題の箇所が表示されます。
 
@@ -268,6 +268,10 @@ python -m venv .venv                                # 作業用環境を作る�
 cd web && npm run build:standalone                                                   # 1ファイル版を作り直す
 ```
 
+### 添付PDFも読む
+
+情報源の設定に `attachments: {pdf: true, ...}` があると、記事ページからリンクされた PDF（報道発表資料・会議資料など）も読み、本文に加えます（1記事3件・1件10MB・30ページまで。座席図などは除外）。読めたかどうかは画面の記事詳細の「添付資料」に表示されます。PDFの本文は `.cache/` にだけ保存し、画面には出しません。画像として作られたPDFは読めません。
+
 ### 情報源を追加する
 
 `config/sources.yaml` に候補（厚生労働省・国立成育医療研究センター）が `enabled: false` で入っています。Claude Code に「厚生労働省を有効にして」のように頼めば、有効化・試し読み・少数取得まで行います。新しいサイトを足すときも「〇〇のページを情報源に追加して」と頼めます。詳しくは `docs/SOURCES.md`。
@@ -288,7 +292,7 @@ cd web && npm run build:standalone                                              
 ```bash
 cd web
 npm ci              # 部品を入れる
-npm test            # 画面のテスト（絞り込み、XSS対策、架空データ表示など）。「Tests  52 passed」なら成功
+npm test            # 画面のテスト（絞り込み、XSS対策、架空データ表示など）。「Tests  54 passed」なら成功
 npm run typecheck   # 型の確認。何も表示されなければ成功
 npm run build       # 型の確認と公開用ファイルの作成
 npm run build:standalone   # 1ファイル版 viewer/info_viewer.html を作り直す

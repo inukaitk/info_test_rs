@@ -27,12 +27,15 @@ sources:
     pagination:
       next_selector: "a.pagination__button[aria-label*='次']"
       max_pages: 3
+    # 記事ページからリンクされた PDF も読む（1記事3件・1件10MB・30ページまで。座席図などは読まない）
+    attachments: {pdf: true, max_files: 3, max_bytes: 10485760, max_pages: 30, exclude_titles: ["座席", "席次"]}
     timezone: Asia/Tokyo
     limits: {max_items: 30, max_bytes: 5242880, wait_seconds: 5, timeout_seconds: 30}
     enabled: true
     notes: >-
       HTML一覧（RSSなし）。1ページ約10件。記事ページの「公開日：」を公開日の根拠にする。
-      記事の多くは本文がPDF（報道発表資料・会議資料）で、HTMLページには概要とPDFへのリンクだけがある（PDFは未取得）。
+      記事の多くは本文がPDF（報道発表資料・会議資料）で、HTMLページには概要とPDFへのリンクだけがある。
+      そのため本文中のPDFも読む（attachments）。画像PDFは読めない。
       利用条件：公共データ利用規約（PDL1.0）。
 
   # ② 候補（未採用）：有効にするには enabled: true
@@ -41,6 +44,7 @@ sources:
     entry_url: https://www.mhlw.go.jp/stf/news.rdf
     method: rss
     allowed_hosts: [www.mhlw.go.jp]
+    attachments: {pdf: true, max_files: 3, max_bytes: 10485760, max_pages: 30}
     timezone: Asia/Tokyo
     limits: {max_items: 30, max_bytes: 5242880, wait_seconds: 5, timeout_seconds: 30}
     enabled: false
@@ -59,6 +63,7 @@ sources:
       date_selector: ".h_date"
       include:
         - "^https://www\\.ncchd\\.go\\.jp/news/"
+    attachments: {pdf: true, max_files: 3, max_bytes: 10485760, max_pages: 30}
     timezone: Asia/Tokyo
     limits: {max_items: 30, max_bytes: 5242880, wait_seconds: 5, timeout_seconds: 30}
     enabled: false

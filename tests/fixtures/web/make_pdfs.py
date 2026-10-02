@@ -33,3 +33,8 @@ if __name__ == "__main__":
         "This document is entirely fictional.",
     ]))
     (here / "scan.pdf").write_bytes(pdf([], with_text=False))
+    (here / "report2.pdf").write_bytes(pdf([
+        "Fictional survey report on child health (test fixture)",
+        "Published: 2026/09/15",
+        "Revised table 2 was added.",
+    ]))

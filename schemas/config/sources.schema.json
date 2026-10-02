@@ -162,6 +162,46 @@
         "notes": {
           "type": "string",
           "description": "制約などのメモ（公開される前提で書く）"
+        },
+        "attachments": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "pdf"
+          ],
+          "description": "記事ページからリンクされた添付PDFも読む設定",
+          "properties": {
+            "pdf": {
+              "type": "boolean",
+              "description": "true で本文中のPDFリンクを取得して本文に加える"
+            },
+            "max_files": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 10,
+              "description": "1記事あたりのPDFの上限（既定3）"
+            },
+            "max_bytes": {
+              "type": "integer",
+              "minimum": 1024,
+              "maximum": 52428800,
+              "description": "1ファイルの上限（既定10MB）"
+            },
+            "max_pages": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 200,
+              "description": "1ファイルで読むページ数の上限（既定30）"
+            },
+            "exclude_titles": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              },
+              "description": "読まない資料のリンク文字（正規表現）。例 座席図"
+            }
+          }
         }
       }
     }

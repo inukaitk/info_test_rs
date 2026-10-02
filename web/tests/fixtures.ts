@@ -24,6 +24,7 @@ export function article(overrides: Partial<Article> = {}): Article {
     tags: [{ id: "maternal-child-health", name: "母子保健", origin: "ai", reason: "健診のため", retired: false }],
     removed_tags: [],
     tag_override_reason: null,
+    attachments: [],
     ...overrides,
   };
 }

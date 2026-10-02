@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "last_run_at": "2026-10-02T17:11:08+09:00",
+  "last_run_at": "2026-10-02T17:28:53+09:00",
   "last_run_status": "success",
-  "last_full_success_at": "2026-10-02T17:11:08+09:00",
+  "last_full_success_at": "2026-10-02T17:28:53+09:00",
   "counts": {
     "articles": 5,
     "date_unknown": 0,
@@ -17,8 +17,8 @@
       "method": "html",
       "entry_url": "https://www.cfa.go.jp/news",
       "enabled": true,
-      "last_success_at": "2026-10-02T17:10:28+09:00",
-      "last_attempt_at": "2026-10-02T17:10:28+09:00",
+      "last_success_at": "2026-10-02T17:27:33+09:00",
+      "last_attempt_at": "2026-10-02T17:27:33+09:00",
       "last_attempt_status": "success",
       "consecutive_failures": 0,
       "explored_range": {
@@ -31,7 +31,8 @@
         "status": "success",
         "error": null,
         "warnings": [
-          "取得上限（5件）に達したため、残りは次回に回します"
+          "取得上限（5件）に達したため、残りは次回に回します",
+          "抽出方法の変更（添付PDFを読む等）により 1件に版を追加しました（原文の変更ではありません）"
         ],
         "new": 0,
         "changed": 0,
@@ -76,6 +77,76 @@
     }
   ],
   "runs": [
+    {
+      "run_id": "run_20261002T082733Z",
+      "started_at": "2026-10-02T17:27:33+09:00",
+      "finished_at": "2026-10-02T17:28:53+09:00",
+      "status": "success",
+      "kind": "collect",
+      "period": {
+        "start": "2026-09-25",
+        "end": "2026-10-02"
+      },
+      "totals": {
+        "new": 0,
+        "changed": 0,
+        "unchanged": 5,
+        "date_unknown": 0,
+        "fetch_failed": 0,
+        "summarized": 0,
+        "summarize_failed": 0
+      },
+      "sources": [
+        {
+          "source_id": "cfa-news",
+          "status": "success",
+          "new": 0,
+          "changed": 0,
+          "date_unknown": 0,
+          "fetch_failed": 0,
+          "error": null,
+          "warnings": [
+            "取得上限（5件）に達したため、残りは次回に回します",
+            "抽出方法の変更（添付PDFを読む等）により 1件に版を追加しました（原文の変更ではありません）"
+          ]
+        }
+      ]
+    },
+    {
+      "run_id": "run_20261002T082526Z",
+      "started_at": "2026-10-02T17:25:26+09:00",
+      "finished_at": "2026-10-02T17:26:47+09:00",
+      "status": "success",
+      "kind": "collect",
+      "period": {
+        "start": "2026-09-25",
+        "end": "2026-10-02"
+      },
+      "totals": {
+        "new": 0,
+        "changed": 0,
+        "unchanged": 5,
+        "date_unknown": 0,
+        "fetch_failed": 0,
+        "summarized": 0,
+        "summarize_failed": 0
+      },
+      "sources": [
+        {
+          "source_id": "cfa-news",
+          "status": "success",
+          "new": 0,
+          "changed": 0,
+          "date_unknown": 0,
+          "fetch_failed": 0,
+          "error": null,
+          "warnings": [
+            "取得上限（5件）に達したため、残りは次回に回します",
+            "抽出方法の変更（添付PDFを読む等）により 4件に版を追加しました（原文の変更ではありません）"
+          ]
+        }
+      ]
+    },
     {
       "run_id": "run_20261002T081028Z",
       "started_at": "2026-10-02T17:10:28+09:00",

@@ -21,7 +21,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-02T17:07:01+09:00",
-      "last_seen_at": "2026-10-02T17:10:28+09:00",
+      "last_seen_at": "2026-10-02T17:27:33+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -34,6 +34,7 @@
           "extraction_status": "ok"
         }
       ],
+      "attachments": [],
       "summary": {
         "status": "not_processed",
         "error": null,
@@ -71,17 +72,32 @@
         "basis": null
       },
       "first_seen_at": "2026-10-02T17:07:01+09:00",
-      "last_seen_at": "2026-10-02T17:10:28+09:00",
+      "last_seen_at": "2026-10-02T17:27:33+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
-      "latest_version": 1,
+      "latest_version": 2,
       "versions": [
         {
           "version": 1,
           "fetched_at": "2026-10-02T17:07:01+09:00",
           "change_type": "new",
           "extraction_status": "ok"
+        },
+        {
+          "version": 2,
+          "fetched_at": "2026-10-02T17:25:26+09:00",
+          "change_type": "extraction_changed",
+          "extraction_status": "ok"
+        }
+      ],
+      "attachments": [
+        {
+          "title": "令和8年健やか親子21内閣府特命担当大臣表彰の受賞者発表について（PDF／735KB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/ad6f3159-43eb-48b2-a6c3-40dc43f521e9/b288c002/20260930_press_ad6f3159-43eb-48b2-a6c3-40dc43f521e9_01.pdf",
+          "status": "ok",
+          "note": null,
+          "pages": 4
         }
       ],
       "summary": {
@@ -121,17 +137,46 @@
         "basis": null
       },
       "first_seen_at": "2026-10-02T17:07:01+09:00",
-      "last_seen_at": "2026-10-02T17:10:28+09:00",
+      "last_seen_at": "2026-10-02T17:27:33+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
-      "latest_version": 1,
+      "latest_version": 2,
       "versions": [
         {
           "version": 1,
           "fetched_at": "2026-10-02T17:07:01+09:00",
           "change_type": "new",
           "extraction_status": "ok"
+        },
+        {
+          "version": 2,
+          "fetched_at": "2026-10-02T17:25:26+09:00",
+          "change_type": "extraction_changed",
+          "extraction_status": "ok"
+        }
+      ],
+      "attachments": [
+        {
+          "title": "資料1-1　医療的ケア児及びその家族に対する支援に関する法律の改正等について（PDF／927KB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/c1010d3b-5d21-4a10-9450-1cae46796118/c4901d46/20260817_councils_shingikai_shougaiji_shien_c1010d3b_01.pdf",
+          "status": "ok",
+          "note": null,
+          "pages": 5
+        },
+        {
+          "title": "資料1-2　医療的ケア児及びその家族に対する支援に関する法律の改正を踏まえた基本指針の改正について（本文）（PDF／289KB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/c1010d3b-5d21-4a10-9450-1cae46796118/54b28203/20260817_councils_shingikai_shougaiji_shien_c1010d3b_02.pdf",
+          "status": "ok",
+          "note": null,
+          "pages": 13
+        },
+        {
+          "title": "議事概要（PDF／1.28MB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/c1010d3b-5d21-4a10-9450-1cae46796118/07b09e68/20260925_councils_shingikai_shougaiji_shien_c1010d3b_03.pdf",
+          "status": "ok",
+          "note": null,
+          "pages": 22
         }
       ],
       "summary": {
@@ -171,17 +216,73 @@
         "basis": null
       },
       "first_seen_at": "2026-10-02T17:07:01+09:00",
-      "last_seen_at": "2026-10-02T17:10:28+09:00",
+      "last_seen_at": "2026-10-02T17:27:33+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
-      "latest_version": 1,
+      "latest_version": 3,
       "versions": [
         {
           "version": 1,
           "fetched_at": "2026-10-02T17:07:01+09:00",
           "change_type": "new",
           "extraction_status": "ok"
+        },
+        {
+          "version": 2,
+          "fetched_at": "2026-10-02T17:25:26+09:00",
+          "change_type": "extraction_changed",
+          "extraction_status": "ok"
+        },
+        {
+          "version": 3,
+          "fetched_at": "2026-10-02T17:27:33+09:00",
+          "change_type": "extraction_changed",
+          "extraction_status": "ok"
+        }
+      ],
+      "attachments": [
+        {
+          "title": "議事次第（PDF／119KB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/0899e4c0-6742-42e4-89bf-c67dbf3560d7/fbc1529f/20260920_councils_kyuyusei-zemmeikaiketsu_0899e4c0_00.pdf",
+          "status": "ok",
+          "note": null,
+          "pages": 1
+        },
+        {
+          "title": "座席図（PDF／307KB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/0899e4c0-6742-42e4-89bf-c67dbf3560d7/776ede33/20260920_councils_kyuyusei-zemmeikaiketsu_0899e4c0_01.pdf",
+          "status": "skipped",
+          "note": "設定（exclude_titles）で除外した資料です",
+          "pages": null
+        },
+        {
+          "title": "要請書　－ 優生保護法問題の全面解決をめざして －（PDF／240KB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/0899e4c0-6742-42e4-89bf-c67dbf3560d7/1ff7f648/20260920_councils_kyuyusei-zemmeikaiketsu_0899e4c0_02.pdf",
+          "status": "ok",
+          "note": null,
+          "pages": 6
+        },
+        {
+          "title": "旧優生保護法補償金等の相談・請求・認定の状況等（PDF／772KB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/0899e4c0-6742-42e4-89bf-c67dbf3560d7/ee85a172/20260920_councils_kyuyusei-zemmeikaiketsu_0899e4c0_03.pdf",
+          "status": "ok",
+          "note": null,
+          "pages": 4
+        },
+        {
+          "title": "もう一つの優生政策　優生手術と双璧の隔離収容、今も続く長期入院問題として（PDF／367KB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/0899e4c0-6742-42e4-89bf-c67dbf3560d7/4aeb2a88/20260920_councils_kyuyusei-zemmeikaiketsu_0899e4c0_04.pdf",
+          "status": "skipped",
+          "note": "1記事あたりの上限（3件）を超えたため取得していません",
+          "pages": null
+        },
+        {
+          "title": "参考資料　基本合意書（PDF／368KB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/0899e4c0-6742-42e4-89bf-c67dbf3560d7/655cd288/20260920_councils_kyuyusei-zemmeikaiketsu_0899e4c0_05.pdf",
+          "status": "skipped",
+          "note": "1記事あたりの上限（3件）を超えたため取得していません",
+          "pages": null
         }
       ],
       "summary": {
@@ -221,17 +322,32 @@
         "basis": null
       },
       "first_seen_at": "2026-10-02T17:07:01+09:00",
-      "last_seen_at": "2026-10-02T17:10:28+09:00",
+      "last_seen_at": "2026-10-02T17:27:33+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
-      "latest_version": 1,
+      "latest_version": 2,
       "versions": [
         {
           "version": 1,
           "fetched_at": "2026-10-02T17:07:01+09:00",
           "change_type": "new",
           "extraction_status": "ok"
+        },
+        {
+          "version": 2,
+          "fetched_at": "2026-10-02T17:25:26+09:00",
+          "change_type": "extraction_changed",
+          "extraction_status": "ok"
+        }
+      ],
+      "attachments": [
+        {
+          "title": "第16回ヒト受精胚等を用いる生殖補助医療研究等に関する専門委員会の開催について（PDF／364KB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/ab4c3ae4-ba86-4d5a-8ba7-c3f7ea42908c/c945780a/20260930_press_ab4c3ae4-ba86-4d5a-8ba7-c3f7ea42908c_01.pdf",
+          "status": "ok",
+          "note": null,
+          "pages": 2
         }
       ],
       "summary": {

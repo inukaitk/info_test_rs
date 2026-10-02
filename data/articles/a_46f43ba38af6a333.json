@@ -19,8 +19,8 @@
       "updated": "unknown"
     },
     "first_seen_at": "2026-10-02T17:07:01+09:00",
-    "last_seen_at": "2026-10-02T17:10:28+09:00",
-    "latest_version": 1,
+    "last_seen_at": "2026-10-02T17:27:33+09:00",
+    "latest_version": 2,
     "status": "active"
   },
   "versions": [
@@ -34,6 +34,29 @@
       "extraction_status": "ok",
       "extraction_error": null,
       "change_type": "new"
+    },
+    {
+      "extraction_profile": "html+pdf(3files,30pages)",
+      "attachments": [
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/ad6f3159-43eb-48b2-a6c3-40dc43f521e9/b288c002/20260930_press_ad6f3159-43eb-48b2-a6c3-40dc43f521e9_01.pdf",
+          "title": "令和8年健やか親子21内閣府特命担当大臣表彰の受賞者発表について（PDF／735KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 2910,
+          "pages": 4,
+          "pages_read": 4
+        }
+      ],
+      "article_id": "a_46f43ba38af6a333",
+      "version": 2,
+      "content_hash": "sha256:d482153c3030c3033147548fd48ff81b2cbeedafcc1fb310ae09136f8b5aad05",
+      "fetched_at": "2026-10-02T17:25:26+09:00",
+      "content_type": "html",
+      "text_length": 3094,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "extraction_changed"
     }
   ]
 }
