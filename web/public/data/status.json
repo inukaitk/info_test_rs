@@ -146,7 +146,51 @@
         "fetch_failed": 0,
         "summarized": 3,
         "summarize_failed": 1
-      }
+      },
+      "sources": [
+        {
+          "source_id": "demo-kodomo-rss",
+          "status": "success",
+          "new": 2,
+          "changed": 0,
+          "date_unknown": 0,
+          "fetch_failed": 0,
+          "error": null,
+          "warnings": []
+        },
+        {
+          "source_id": "demo-boshi-html",
+          "status": "success",
+          "new": 1,
+          "changed": 1,
+          "date_unknown": 0,
+          "fetch_failed": 0,
+          "error": null,
+          "warnings": []
+        },
+        {
+          "source_id": "demo-jichitai-html",
+          "status": "failed",
+          "new": 0,
+          "changed": 0,
+          "date_unknown": 0,
+          "fetch_failed": 0,
+          "error": "一覧ページがタイムアウト（30秒）",
+          "warnings": []
+        },
+        {
+          "source_id": "demo-tokei-rss",
+          "status": "success",
+          "new": 1,
+          "changed": 0,
+          "date_unknown": 0,
+          "fetch_failed": 0,
+          "error": null,
+          "warnings": [
+            "新着が前回より大きく減少（架空の警告例）"
+          ]
+        }
+      ]
     },
     {
       "run_id": "run_20260920T230000Z",
@@ -163,7 +207,49 @@
         "fetch_failed": 0,
         "summarized": 3,
         "summarize_failed": 2
-      }
+      },
+      "sources": [
+        {
+          "source_id": "demo-kodomo-rss",
+          "status": "success",
+          "new": 2,
+          "changed": 1,
+          "date_unknown": 0,
+          "fetch_failed": 0,
+          "error": null,
+          "warnings": []
+        },
+        {
+          "source_id": "demo-boshi-html",
+          "status": "success",
+          "new": 1,
+          "changed": 0,
+          "date_unknown": 0,
+          "fetch_failed": 0,
+          "error": null,
+          "warnings": []
+        },
+        {
+          "source_id": "demo-jichitai-html",
+          "status": "failed",
+          "new": 0,
+          "changed": 0,
+          "date_unknown": 0,
+          "fetch_failed": 0,
+          "error": "一覧ページがタイムアウト（30秒）",
+          "warnings": []
+        },
+        {
+          "source_id": "demo-tokei-rss",
+          "status": "success",
+          "new": 1,
+          "changed": 0,
+          "date_unknown": 0,
+          "fetch_failed": 0,
+          "error": null,
+          "warnings": []
+        }
+      ]
     },
     {
       "run_id": "run_20260913T230000Z",
@@ -180,7 +266,49 @@
         "fetch_failed": 2,
         "summarized": 5,
         "summarize_failed": 0
-      }
+      },
+      "sources": [
+        {
+          "source_id": "demo-kodomo-rss",
+          "status": "success",
+          "new": 2,
+          "changed": 0,
+          "date_unknown": 0,
+          "fetch_failed": 0,
+          "error": null,
+          "warnings": []
+        },
+        {
+          "source_id": "demo-boshi-html",
+          "status": "success",
+          "new": 2,
+          "changed": 0,
+          "date_unknown": 2,
+          "fetch_failed": 0,
+          "error": null,
+          "warnings": []
+        },
+        {
+          "source_id": "demo-jichitai-html",
+          "status": "success",
+          "new": 2,
+          "changed": 0,
+          "date_unknown": 0,
+          "fetch_failed": 2,
+          "error": null,
+          "warnings": []
+        },
+        {
+          "source_id": "demo-tokei-rss",
+          "status": "success",
+          "new": 1,
+          "changed": 0,
+          "date_unknown": 0,
+          "fetch_failed": 0,
+          "error": null,
+          "warnings": []
+        }
+      ]
     },
     {
       "run_id": "run_20260906T230000Z",
@@ -200,7 +328,49 @@
         "fetch_failed": 0,
         "summarized": 5,
         "summarize_failed": 0
-      }
+      },
+      "sources": [
+        {
+          "source_id": "demo-kodomo-rss",
+          "status": "success",
+          "new": 2,
+          "changed": 0,
+          "date_unknown": 0,
+          "fetch_failed": 0,
+          "error": null,
+          "warnings": []
+        },
+        {
+          "source_id": "demo-boshi-html",
+          "status": "success",
+          "new": 1,
+          "changed": 0,
+          "date_unknown": 0,
+          "fetch_failed": 0,
+          "error": null,
+          "warnings": []
+        },
+        {
+          "source_id": "demo-jichitai-html",
+          "status": "success",
+          "new": 1,
+          "changed": 0,
+          "date_unknown": 0,
+          "fetch_failed": 0,
+          "error": null,
+          "warnings": []
+        },
+        {
+          "source_id": "demo-tokei-rss",
+          "status": "success",
+          "new": 1,
+          "changed": 0,
+          "date_unknown": 0,
+          "fetch_failed": 0,
+          "error": null,
+          "warnings": []
+        }
+      ]
     }
   ]
 }

@@ -4,9 +4,11 @@ import { h } from "../dom";
 import { latestArticles, latestWindow } from "../filters";
 import { formatDateTime, formatPartialDate } from "../format";
 import type { SiteData } from "../types";
+import { correctionLink } from "./layout";
 import { articleTable } from "./list";
+import { statusWarnings } from "./status";
 
-export function latestView(data: SiteData): HTMLElement {
+export function latestView(data: SiteData, now: Date = new Date()): HTMLElement {
   const { meta } = data;
   const window = latestWindow(meta.data_as_of, meta.latest_days);
   const articles = latestArticles(data.articles, window);
@@ -17,14 +19,24 @@ export function latestView(data: SiteData): HTMLElement {
         { class: "lead" },
         `${formatPartialDate(window.from)}〜${formatPartialDate(window.to)}に見つけた記事（直近${meta.latest_days}日間）：`,
         h("strong", {}, `${articles.length}件`),
-        h("span", { class: "muted" }, `　最終収集：${formatDateTime(meta.data_as_of)}`),
       )
     : h("p", { class: "lead" }, "まだ収集したデータがありません。");
+
+  const warnings = statusWarnings(data, now);
+  const summary = h(
+    "div",
+    { class: "top-summary" },
+    h("div", {}, "最終収集：", formatDateTime(data.status.last_run_at), "　",
+      warnings.length ? h("a", { href: "#/status", class: "warn-link" }, `取得状況に注意が${warnings.length}件あります`) : h("a", { href: "#/status" }, "取得状況")),
+    h("div", {}, "今週のまとめ：", h("a", { href: "#/reports" }, "週次レポート"), "　テーマ別：", h("a", { href: "#/wiki" }, "Wiki")),
+    h("div", {}, correctionLink(meta), h("span", { class: "muted small" }, "　（タグや要約の誤りに気づいたらお知らせください）")),
+  );
 
   return h(
     "section",
     {},
     h("h1", {}, "最新情報"),
+    summary,
     period,
     articles.length ? articleTable(articles) : h("p", { class: "empty" }, "この期間に新しく見つけた記事はありません。"),
     h(

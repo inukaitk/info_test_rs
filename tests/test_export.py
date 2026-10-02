@@ -269,7 +269,7 @@ def test_schema_rejects_unexpected_public_field(demo_config):
 def test_export_writes_files(tmp_path):
     out = tmp_path / "out"
     outputs = ex.export("demo", out, GENERATED_AT)
-    assert sorted(p.name for p in out.iterdir()) == ["articles.json", "meta.json", "status.json"]
+    assert sorted(p.name for p in out.iterdir()) == ["articles.json", "meta.json", "reports.json", "status.json"]
     assert read_json(out / "meta.json") == outputs["meta.json"]
 
 

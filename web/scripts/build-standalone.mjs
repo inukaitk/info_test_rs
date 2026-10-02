@@ -9,7 +9,7 @@ import { dirname, join, resolve } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 
 const webDir = resolve(dirname(fileURLToPath(import.meta.url)), "..");
-const distDir = join(webDir, "dist");
+const distDir = join(webDir, "dist-standalone");
 const dataDir = join(webDir, "public", "data");
 const outFile = resolve(webDir, "..", "viewer", "info_viewer.html");
 
@@ -31,7 +31,7 @@ function main() {
 
   const cssMatch = html.match(/<link rel="stylesheet"[^>]*href="\.\/(assets\/[^"]+\.css)"[^>]*>/);
   const jsMatch = html.match(/<script type="module"[^>]*src="\.\/(assets\/[^"]+\.js)"[^>]*><\/script>/);
-  if (!cssMatch || !jsMatch) throw new Error("dist/index.html から CSS/JS を見つけられません。先に npm run build を実行してください");
+  if (!cssMatch || !jsMatch) throw new Error("dist/index.html から CSS/JS を見つけられません。npm run build:standalone で実行してください");
 
   const css = read(join(distDir, cssMatch[1]));
   const js = read(join(distDir, jsMatch[1]));
@@ -40,6 +40,8 @@ function main() {
   const data = {
     meta: JSON.parse(read(join(dataDir, "meta.json"))),
     articles: JSON.parse(read(join(dataDir, "articles.json"))),
+    status: JSON.parse(read(join(dataDir, "status.json"))),
+    reports: JSON.parse(read(join(dataDir, "reports.json"))),
   };
 
   // インラインのスクリプトとスタイルは、ハッシュで指定したものだけを許可する（それ以外は実行しない）

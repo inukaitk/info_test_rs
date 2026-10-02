@@ -22,8 +22,8 @@ def _embedded():
 def test_viewer_matches_public_data():
     """画面用JSONを作り直したら、cd web; npm run build:standalone で1ファイル版も作り直すこと。"""
     data = _embedded()
-    assert data["meta"] == json.loads((PUBLIC_DATA / "meta.json").read_text(encoding="utf-8"))
-    assert data["articles"] == json.loads((PUBLIC_DATA / "articles.json").read_text(encoding="utf-8"))
+    for name in ("meta", "articles", "status", "reports"):
+        assert data[name] == json.loads((PUBLIC_DATA / f"{name}.json").read_text(encoding="utf-8")), name
 
 
 def test_viewer_has_no_external_resources():
@@ -43,9 +43,9 @@ def test_viewer_has_strict_csp():
 
 
 def test_viewer_embeds_only_screen_data():
-    """埋め込むのは画面用JSON（meta と articles）だけ。タグ候補などは含まない。"""
+    """埋め込むのは画面用JSON（meta・articles・status・reports）だけ。タグ候補などは含まない。"""
     data = _embedded()
-    assert set(data) == {"meta", "articles"}
+    assert set(data) == {"meta", "articles", "status", "reports"}
     candidates = json.loads((REPO_ROOT / "demo" / "data" / "tag_candidates.json").read_text(encoding="utf-8"))
     html = _html()
     for c in candidates["candidates"]:

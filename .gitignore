@@ -20,6 +20,7 @@ __pycache__/
 node_modules/
 dist/
 web/dist/
+dist-standalone/
 
 # OS・エディタ
 .DS_Store

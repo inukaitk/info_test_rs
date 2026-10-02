@@ -1,6 +1,6 @@
 // 画面用JSONの読み込み。
 // 通常は public/data/ から取得する。1ファイル版（viewer/*.html）では HTML に埋め込んだデータを使う。
-import type { Article, Meta, SiteData } from "./types";
+import type { Article, Meta, SiteData, Status, WeeklyReport } from "./types";
 
 export const EMBEDDED_DATA_ID = "embedded-site-data";
 
@@ -14,16 +14,20 @@ async function fetchJson<T>(name: string): Promise<T> {
 export function readEmbeddedData(doc: Document = document): SiteData | null {
   const el = doc.getElementById(EMBEDDED_DATA_ID);
   if (!el || el.getAttribute("type") !== "application/json") return null;
-  const parsed = JSON.parse(el.textContent ?? "") as { meta: Meta; articles: { articles: Article[] } };
-  return { meta: parsed.meta, articles: parsed.articles.articles };
+  const parsed = JSON.parse(el.textContent ?? "") as {
+    meta: Meta; articles: { articles: Article[] }; status: Status; reports: { weeks: WeeklyReport[] };
+  };
+  return { meta: parsed.meta, articles: parsed.articles.articles, status: parsed.status, reports: parsed.reports.weeks };
 }
 
 export async function loadSiteData(): Promise<SiteData> {
   const embedded = readEmbeddedData();
   if (embedded) return embedded;
-  const [meta, articles] = await Promise.all([
+  const [meta, articles, status, reports] = await Promise.all([
     fetchJson<Meta>("meta.json"),
     fetchJson<{ articles: Article[] }>("articles.json"),
+    fetchJson<Status>("status.json"),
+    fetchJson<{ weeks: WeeklyReport[] }>("reports.json"),
   ]);
-  return { meta, articles: articles.articles };
+  return { meta, articles: articles.articles, status, reports: reports.weeks };
 }

@@ -87,3 +87,34 @@ table { border-collapse: collapse; width: 100%; background: var(--panel); }
 }
 .lead { margin: 4px 0 12px; }
 .more { margin-top: 16px; }
+.correction { font-size: 0.9rem; }
+nav { display: flex; flex-wrap: wrap; gap: 4px 16px; }
+nav a { margin-left: 0; }
+.top-summary { background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 8px 12px; margin-bottom: 12px; display: grid; gap: 4px; font-size: 0.92rem; }
+.warn-link { color: #9a3412; font-weight: bold; }
+.small { font-size: 0.8rem; }
+.result-bar { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px; }
+.export { font-size: 0.9rem; display: inline-flex; gap: 6px; align-items: center; }
+button.secondary { background: #fff; color: var(--accent); border: 1px solid var(--accent); padding: 3px 10px; }
+.wiki-index { list-style: none; padding: 0; }
+.wiki-entry { background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 8px 12px; margin-bottom: 8px; }
+.wiki-name { font-weight: bold; font-size: 1.05rem; }
+.wiki-desc { margin: 4px 0; color: #444; }
+.wiki-group { margin-top: 16px; }
+.wiki-list { list-style: none; padding: 0; margin: 0; background: var(--panel); border: 1px solid var(--line); border-radius: 6px; }
+.wiki-list li { padding: 6px 10px; border-bottom: 1px solid var(--line); }
+.wiki-list li:last-child { border-bottom: none; }
+.wiki-date { display: inline-block; min-width: 10em; color: var(--muted); font-size: 0.9rem; }
+.origin { margin-left: 8px; font-size: 0.72rem; padding: 0 5px; border-radius: 3px; }
+.origin-ai { background: var(--ai); color: var(--ai-text); }
+.origin-human { background: var(--human); color: var(--human-text); border: 1px dashed #ecd1a5; }
+.badge.retired { background: #ddd; color: #555; margin-left: 6px; }
+.toolbar { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 8px; }
+.report h2, .status h2 { margin-top: 20px; }
+.counts { max-width: 420px; }
+.warn-box { background: var(--warn); border: 1px solid #f0b56b; border-left: 6px solid #e07a00; padding: 8px 12px; border-radius: 4px; }
+.warn-box ul { margin: 4px 0 0; padding-left: 20px; }
+.ok-box { background: #edf7ed; border: 1px solid #b7dfb9; padding: 8px 12px; border-radius: 4px; }
+.row-failed td { background: #fff1f0; }
+ul.plain { margin: 0; padding-left: 16px; }
+.status-table td { font-size: 0.9rem; }

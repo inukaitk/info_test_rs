@@ -230,7 +230,13 @@ def build_status(runs: list[dict], state: dict, articles: list[dict], config: Co
             {"run_id": r["run_id"], "started_at": r["started_at"], "finished_at": r["finished_at"],
              "status": r["status"], "kind": r["kind"],
              "period": dict(r["period"]) if r["period"] else None,
-             "totals": dict(r["totals"])}
+             "totals": dict(r["totals"]),
+             "sources": [
+                 {"source_id": s["source_id"], "status": s["status"], "new": s["new"], "changed": s["changed"],
+                  "date_unknown": s["date_unknown"], "fetch_failed": s["fetch_failed"],
+                  "error": s["error"], "warnings": list(s["warnings"])}
+                 for s in r["sources"]
+             ]}
             for r in reversed(run_records)
         ],
     }
@@ -256,6 +262,7 @@ def build_meta(config: Config, mode: str, generated_at: str, as_of: str | None =
         "correction_request_url": site["correction_request_url"],
         "page_size": site["page_size"],
         "latest_days": site["latest_days"],
+        "stale_after_days": site["stale_after_days"],
         "data_as_of": as_of,
         "tags": [
             {"id": t["id"], "name": t["name"], "description": t["description"], "retired": not t["enabled"]}
@@ -274,11 +281,16 @@ def build_public_data(config: Config, data_dir: Path, mode: str, generated_at: s
     state = load_json(state_path) if state_path.exists() else {"sources": {}}
 
     articles = build_articles(article_files, summary_files, config)
-    return {
+    outputs = {
         "meta.json": build_meta(config, mode, generated_at, data_as_of(runs, article_files)),
         "articles.json": {"schema_version": PUBLIC_SCHEMA_VERSION, "articles": articles},
         "status.json": {"schema_version": PUBLIC_SCHEMA_VERSION, **build_status(runs, state, articles, config)},
     }
+    # 週次レポートは、allowlist を通った画面用JSONだけから作る
+    from collector.report import build_reports
+
+    outputs["reports.json"] = build_reports(outputs["meta.json"], outputs["articles.json"], outputs["status.json"])
+    return outputs
 
 
 # ---------------------------------------------------------------- 出力前の確認
@@ -288,6 +300,7 @@ PUBLIC_SCHEMAS = {
     "meta.json": "public/meta.schema.json",
     "articles.json": "public/articles.schema.json",
     "status.json": "public/status.schema.json",
+    "reports.json": "public/reports.schema.json",
 }
 
 

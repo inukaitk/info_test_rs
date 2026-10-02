@@ -1,4 +1,4 @@
-import type { Article, Meta, SiteData } from "../src/types";
+import type { Article, Meta, SiteData, Status, WeeklyReport } from "../src/types";
 
 export function article(overrides: Partial<Article> = {}): Article {
   return {
@@ -32,7 +32,7 @@ export function meta(overrides: Partial<Meta> = {}): Meta {
   return {
     schema_version: 1, generated_at: "2026-09-29T09:00:00+09:00", release_mode: "demo", is_demo: true,
     site_name: "テスト", correction_request_url: null, page_size: 50,
-    latest_days: 7, data_as_of: "2026-09-28T08:00:00+09:00",
+    latest_days: 7, data_as_of: "2026-09-28T08:00:00+09:00", stale_after_days: 8,
     tags: [
       { id: "maternal-child-health", name: "母子保健", description: "d", retired: false },
       { id: "childcare-support", name: "子育て支援", description: "d", retired: false },
@@ -42,6 +42,26 @@ export function meta(overrides: Partial<Meta> = {}): Meta {
   };
 }
 
-export function site(articles: Article[], m: Partial<Meta> = {}): SiteData {
-  return { meta: meta(m), articles };
+export function status(overrides: Partial<Status> = {}): Status {
+  return {
+    last_run_at: "2026-09-28T08:12:00+09:00",
+    last_run_status: "success",
+    last_full_success_at: "2026-09-28T08:12:00+09:00",
+    counts: { articles: 1, date_unknown: 0, content_missing: 0, unsummarized: 0, summary_outdated: 0 },
+    sources: [
+      {
+        id: "demo-a", name: "架空機関A（デモ）", method: "rss", entry_url: "https://a.example.org/rss", enabled: true,
+        last_success_at: "2026-09-28T08:01:00+09:00", last_attempt_at: "2026-09-28T08:00:00+09:00", last_attempt_status: "success",
+        consecutive_failures: 0, explored_range: { oldest: "2026-09-01", newest: "2026-09-28", pages: 1 }, retry_count: 0,
+        last_run: { status: "success", error: null, warnings: [], new: 1, changed: 0, unchanged: 0, date_unknown: 0, fetch_failed: 0 },
+        articles: 1, date_unknown: 0,
+      },
+    ],
+    runs: [],
+    ...overrides,
+  };
+}
+
+export function site(articles: Article[], m: Partial<Meta> = {}, extra: { status?: Status; reports?: WeeklyReport[] } = {}): SiteData {
+  return { meta: meta(m), articles, status: extra.status ?? status(), reports: extra.reports ?? [] };
 }

@@ -9,7 +9,8 @@
     "correction_request_url",
     "release_mode",
     "page_size",
-    "latest_days"
+    "latest_days",
+    "stale_after_days"
   ],
   "properties": {
     "site_name": {
@@ -43,6 +44,12 @@
       "minimum": 1,
       "maximum": 60,
       "description": "最新一覧に出す期間（取得日＝見つけた日で、最終収集日から何日分か）"
+    },
+    "stale_after_days": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 90,
+      "description": "最終収集からこの日数を超えたら「データが古い」と警告する"
     }
   }
 }
