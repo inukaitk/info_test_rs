@@ -1,0 +1,40 @@
+# テスト用の架空の情報源（tests/fixtures/web のファイルで応答する。実在のサイトにはアクセスしない）
+sources:
+  - id: fx-news-rss
+    name: 架空ニュース省（テスト）
+    entry_url: https://news.example.org/rss.xml
+    method: rss
+    allowed_hosts: [news.example.org]
+    timezone: Asia/Tokyo
+    limits: {max_items: 20, max_bytes: 1048576, wait_seconds: 1, timeout_seconds: 10}
+    enabled: true
+  - id: fx-list-html
+    name: 架空一覧研究所（テスト）
+    entry_url: https://list.example.net/info/index.html
+    method: html
+    allowed_hosts: [list.example.net, files.example.net]
+    link_rules:
+      css_selector: "main .news-list"
+      include:
+        - "^https://list\\.example\\.net/info/\\d{8}\\.html$"
+        - "^https://files\\.example\\.net/.+\\.pdf$"
+    pagination: {next_selector: "a.next", max_pages: 3}
+    timezone: Asia/Tokyo
+    limits: {max_items: 20, max_bytes: 1048576, wait_seconds: 1, timeout_seconds: 10}
+    enabled: true
+  - id: fx-broken
+    name: 架空故障庁（テスト）
+    entry_url: https://broken.example.com/list.html
+    method: html
+    allowed_hosts: [broken.example.com]
+    timezone: Asia/Tokyo
+    limits: {max_items: 20, max_bytes: 1048576, wait_seconds: 1, timeout_seconds: 10}
+    enabled: true
+  - id: fx-empty-rss
+    name: 架空空室局（テスト）
+    entry_url: https://empty.example.org/rss.xml
+    method: rss
+    allowed_hosts: [empty.example.org]
+    timezone: Asia/Tokyo
+    limits: {max_items: 20, max_bytes: 1048576, wait_seconds: 1, timeout_seconds: 10}
+    enabled: true

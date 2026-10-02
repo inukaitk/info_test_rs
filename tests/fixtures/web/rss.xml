@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>架空ニュース省 新着（テスト）</title>
+    <link>https://news.example.org/</link>
+    <item><title>【架空】健診要領の改正</title><link>https://news.example.org/news/a1.html?utm_source=rss&amp;utm_medium=feed</link><pubDate>Thu, 10 Sep 2026 10:00:00 +0900</pubDate></item>
+    <item><title>【架空】健診要領の改正（重複）</title><link>https://NEWS.example.org/news/a1.html#top</link><pubDate>Thu, 10 Sep 2026 10:00:00 +0900</pubDate></item>
+    <item><title>【架空】月末ぎりぎりの通知</title><link>https://news.example.org/news/a2.html</link><pubDate>Wed, 30 Sep 2026 23:59:00 +0900</pubDate></item>
+    <item><title>【架空】日付が翌月になる通知</title><link>https://news.example.org/news/a3.html</link><pubDate>Wed, 30 Sep 2026 15:30:00 GMT</pubDate></item>
+    <item><title>【架空】月初の通知</title><link>https://news.example.org/news/a4.html</link><pubDate>Tue, 01 Sep 2026 00:00:00 +0900</pubDate></item>
+    <item><title>【架空】前月の通知</title><link>https://news.example.org/news/a5.html</link><pubDate>Mon, 31 Aug 2026 23:59:59 +0900</pubDate></item>
+    <item><title>【架空】日付のないお知らせ</title><link>https://news.example.org/news/a6.html</link></item>
+    <item><title>【架空】外部サイトへのリンク</title><link>https://evil.example.com/x.html</link><pubDate>Thu, 10 Sep 2026 10:00:00 +0900</pubDate></item>
+    <item><title>【架空】削除されたページ</title><link>https://news.example.org/news/missing.html</link><pubDate>Fri, 11 Sep 2026 10:00:00 +0900</pubDate></item>
+  </channel>
+</rss>

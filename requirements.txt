@@ -2,3 +2,9 @@
 PyYAML==6.0.3
 jsonschema==4.26.0
 pytest==9.1.1
+# 収集処理（段階2-a）
+beautifulsoup4==4.15.0
+soupsieve==2.10
+defusedxml==0.7.1
+pypdf==6.19.0
+typing_extensions==4.16.0
