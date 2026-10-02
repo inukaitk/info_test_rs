@@ -100,7 +100,9 @@
           "retry_count",
           "last_run",
           "articles",
-          "date_unknown"
+          "date_unknown",
+          "notes",
+          "attachments"
         ],
         "properties": {
           "id": {
@@ -267,6 +269,49 @@
           "date_unknown": {
             "type": "integer",
             "minimum": 0
+          },
+          "notes": {
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "type": "string"
+              }
+            ],
+            "description": "情報源の制約などのメモ（公開される前提で書く）"
+          },
+          "attachments": {
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "max_files",
+                  "max_pages",
+                  "exclude_titles"
+                ],
+                "properties": {
+                  "max_files": {
+                    "type": "integer",
+                    "minimum": 1
+                  },
+                  "max_pages": {
+                    "type": "integer",
+                    "minimum": 1
+                  },
+                  "exclude_titles": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            ]
           }
         }
       }

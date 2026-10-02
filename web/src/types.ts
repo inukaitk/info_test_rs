@@ -95,6 +95,8 @@ export interface SourceStatus {
   } | null;
   articles: number;
   date_unknown: number;
+  notes: string | null;
+  attachments: { max_files: number; max_pages: number; exclude_titles: string[] } | null;
 }
 
 export interface RunSummary {

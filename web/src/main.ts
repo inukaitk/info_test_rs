@@ -6,6 +6,7 @@ import { detailView } from "./views/detail";
 import { errorPage, layout, type Section } from "./views/layout";
 import { latestView } from "./views/latest";
 import { reportView } from "./views/report";
+import { sourcesView } from "./views/sources";
 import { statusView } from "./views/status";
 import { wikiIndexView, wikiTagView } from "./views/wiki";
 import { listView } from "./views/list";
@@ -48,6 +49,10 @@ export function render(data: SiteData): void {
     main = statusView(data);
     title = `取得状況 - ${title}`;
     section = "status";
+  } else if (route.name === "sources") {
+    main = sourcesView(data);
+    title = `情報源 - ${title}`;
+    section = "sources";
   } else if (route.name === "detail") {
     main = detailView(data, route.id);
     const article = data.articles.find((a) => a.id === route.id);

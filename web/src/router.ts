@@ -10,6 +10,7 @@ export type Route =
   | { name: "wikiTag"; tag: string }
   | { name: "reports"; week: string | null }
   | { name: "status" }
+  | { name: "sources" }
   | { name: "notfound" };
 
 export function parseHash(hash: string): Route {
@@ -29,5 +30,6 @@ export function parseHash(hash: string): Route {
   const r = /^\/reports\/(\d{4}-\d{2}-\d{2}_\d{4}-\d{2}-\d{2})$/.exec(path);
   if (r) return { name: "reports", week: r[1] };
   if (path === "/status") return { name: "status" };
+  if (path === "/sources") return { name: "sources" };
   return { name: "notfound" };
 }

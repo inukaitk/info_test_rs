@@ -185,3 +185,27 @@ describe("ルーティング（直リンク）", () => {
     expect(parseHash("#/wiki/<x>").name).toBe("notfound");
   });
 });
+
+describe("情報源", () => {
+  it("収集中と候補を分け、URL・取得方式・添付PDF・制約を出す", async () => {
+    const { sourcesView } = await import("../src/views/sources");
+    const st = status();
+    st.sources.push({ ...st.sources[0], id: "demo-b", name: "架空機関B（候補）", enabled: false, attachments: null,
+      notes: "規約の確認が必要", entry_url: "javascript:alert(1)" });
+    const el = sourcesView(site([], {}, { status: st }));
+    const text = el.textContent!;
+    expect(text).toContain("収集中（1件）");
+    expect(text).toContain("候補（未採用、1件）");
+    expect(text).toContain("添付PDFも読む（1記事3件・30ページまで、「座席」を含む資料は除外）");
+    expect(text).toContain("添付PDFは読まない");
+    expect(text).toContain("規約の確認が必要");
+    expect(el.querySelector(".candidate")?.textContent).not.toContain("取得状況");
+    for (const a of el.querySelectorAll("a")) expect(a.getAttribute("href")).not.toMatch(/^javascript:/i);
+    expect(parseHash("#/sources")).toEqual({ name: "sources" });
+  });
+
+  it("メニューに情報源がある", () => {
+    const page = layout(meta(), "sources", document.createElement("div"));
+    expect(page.querySelector('nav a[aria-current="page"]')?.textContent).toBe("情報源");
+  });
+});

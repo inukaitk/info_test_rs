@@ -118,3 +118,10 @@ button.secondary { background: #fff; color: var(--accent); border: 1px solid var
 .row-failed td { background: #fff1f0; }
 ul.plain { margin: 0; padding-left: 16px; }
 .status-table td { font-size: 0.9rem; }
+.source-cards { display: grid; gap: 12px; }
+.source-card { background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 8px 16px 12px; }
+.source-card.candidate { background: #fafafa; }
+.source-card h3 { display: flex; gap: 8px; align-items: center; margin: 8px 0; }
+.badge.active { background: #e6f4ea; color: #1e6b34; border: 1px solid #b7dfb9; }
+.badge.candidate { background: #eee; color: #555; border: 1px solid #ddd; }
+.sources h2 { margin-top: 20px; }
