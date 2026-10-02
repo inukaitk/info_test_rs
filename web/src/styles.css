@@ -85,3 +85,5 @@ table { border-collapse: collapse; width: 100%; background: var(--panel); }
   .article-table tr { display: block; border-bottom: 1px solid var(--line); padding: 8px 0; }
   .article-table td { display: block; border: none; padding: 2px 8px; }
 }
+.lead { margin: 4px 0 12px; }
+.more { margin-top: 16px; }

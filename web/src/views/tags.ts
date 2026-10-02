@@ -11,7 +11,7 @@ export function tagChip(tag: Tag, withLink = true): HTMLElement {
     title: tag.origin === "ai" ? `AIが付与${tag.reason ? `：${tag.reason}` : ""}` : "人が追加したタグ",
   };
   return withLink
-    ? h("a", { ...attrs, href: `#/?tag=${encodeURIComponent(tag.id)}` }, ...content)
+    ? h("a", { ...attrs, href: `#/search?tag=${encodeURIComponent(tag.id)}` }, ...content)
     : h("span", attrs, ...content);
 }
 

@@ -236,7 +236,16 @@ def build_status(runs: list[dict], state: dict, articles: list[dict], config: Co
     }
 
 
-def build_meta(config: Config, mode: str, generated_at: str) -> dict:
+def data_as_of(runs: list[dict], article_files: list[dict]) -> str | None:
+    """最新一覧の基準日時：最後の収集の開始日時。実行履歴がなければ最も新しい発見日時。"""
+    starts = [r["run"]["started_at"] for r in runs if r["run"]["kind"] in ("collect", "collect_and_summarize")]
+    if starts:
+        return max(starts)
+    seen = [f["article"]["first_seen_at"] for f in article_files]
+    return max(seen) if seen else None
+
+
+def build_meta(config: Config, mode: str, generated_at: str, as_of: str | None = None) -> dict:
     site = config.site
     return {
         "schema_version": PUBLIC_SCHEMA_VERSION,
@@ -246,6 +255,8 @@ def build_meta(config: Config, mode: str, generated_at: str) -> dict:
         "site_name": site["site_name"],
         "correction_request_url": site["correction_request_url"],
         "page_size": site["page_size"],
+        "latest_days": site["latest_days"],
+        "data_as_of": as_of,
         "tags": [
             {"id": t["id"], "name": t["name"], "description": t["description"], "retired": not t["enabled"]}
             for t in config.tags["tags"]
@@ -264,7 +275,7 @@ def build_public_data(config: Config, data_dir: Path, mode: str, generated_at: s
 
     articles = build_articles(article_files, summary_files, config)
     return {
-        "meta.json": build_meta(config, mode, generated_at),
+        "meta.json": build_meta(config, mode, generated_at, data_as_of(runs, article_files)),
         "articles.json": {"schema_version": PUBLIC_SCHEMA_VERSION, "articles": articles},
         "status.json": {"schema_version": PUBLIC_SCHEMA_VERSION, **build_status(runs, state, articles, config)},
     }

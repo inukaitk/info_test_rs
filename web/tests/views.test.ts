@@ -5,6 +5,7 @@ import { formatDate } from "../src/format";
 import { parseHash } from "../src/router";
 import { detailView } from "../src/views/detail";
 import { layout } from "../src/views/layout";
+import { latestView } from "../src/views/latest";
 import { listView } from "../src/views/list";
 import { article, meta, site } from "./fixtures";
 
@@ -50,12 +51,12 @@ describe("XSS対策", () => {
 describe("架空データの表示", () => {
   it("demo では全画面に「架空データ」を出す", () => {
     for (const main of [listView(site([article()]), EMPTY_FILTERS, () => {}), detailView(site([article()]), article().id)]) {
-      const page = layout(meta(), "list", main);
+      const page = layout(meta(), "search", main);
       expect(page.querySelector(".demo-banner")?.textContent).toContain("架空データ");
     }
   });
   it("real では出さない", () => {
-    const page = layout(meta({ is_demo: false, release_mode: "real" }), "list", h("div"));
+    const page = layout(meta({ is_demo: false, release_mode: "real" }), "latest", h("div"));
     expect(page.querySelector(".demo-banner")).toBeNull();
     expect(page.textContent).not.toContain("架空データ");
   });
@@ -73,7 +74,11 @@ describe("一覧", () => {
   });
   it("未要約は概要の代わりに状態を出す", () => {
     const a = article({ summary: { ...article().summary, status: "failed_api_error", text: null } });
-    expect(listView(site([a]), EMPTY_FILTERS, () => {}).textContent).toContain("未要約（AI APIエラー）");
+    const a2 = { ...a, tags: [] };
+    const text = listView(site([a2]), EMPTY_FILTERS, () => {}).textContent!;
+    expect(text).toContain("未要約（AI APIエラー）");
+    expect(text).toContain("AI未処理");
+    expect(text).not.toContain("タグなし");
   });
   it("表示件数の上限", () => {
     const many = Array.from({ length: 5 }, (_, i) => article({ id: `a_000000000000000${i}` }));
@@ -127,13 +132,54 @@ describe("記事詳細", () => {
 
 describe("ルーティングと表示形式", () => {
   it("hash を解釈する", () => {
-    expect(parseHash("").name).toBe("list");
-    expect(parseHash("#/?tag=x")).toEqual({ name: "list", filters: { ...EMPTY_FILTERS, tag: "x" } });
+    expect(parseHash("")).toEqual({ name: "latest" });
+    expect(parseHash("#/")).toEqual({ name: "latest" });
+    expect(parseHash("#/search")).toEqual({ name: "search", filters: EMPTY_FILTERS });
+    expect(parseHash("#/search?tag=x")).toEqual({ name: "search", filters: { ...EMPTY_FILTERS, tag: "x" } });
+    expect(parseHash("#/?tag=x")).toEqual({ name: "search", filters: { ...EMPTY_FILTERS, tag: "x" } });
     expect(parseHash("#/articles/a_0123456789abcdef")).toEqual({ name: "detail", id: "a_0123456789abcdef" });
     expect(parseHash("#/articles/<script>").name).toBe("notfound");
   });
   it("精度に応じた日付", () => {
     expect(formatDate({ value: "2026-09", precision: "month", basis: null })).toBe("2026年9月（日不明）");
     expect(formatDate({ value: null, precision: "unknown", basis: null })).toBe("日付不明");
+  });
+});
+
+describe("最新情報（直近の取得日）", () => {
+  const seen = (id: string, firstSeen: string, title: string) => article({ id, first_seen_at: firstSeen, title });
+  const articles = [
+    seen("a_0000000000000001", "2026-09-28T08:00:00+09:00", "【架空】当日に見つけた"),
+    seen("a_0000000000000002", "2026-09-22T00:30:00+09:00", "【架空】7日前（範囲の初日）"),
+    seen("a_0000000000000003", "2026-09-21T23:59:00+09:00", "【架空】8日前（範囲外）"),
+    article({ id: "a_0000000000000004", first_seen_at: "2026-09-27T08:00:00+09:00", title: "【架空】日付不明だが最近見つけた",
+      published: { value: null, precision: "unknown", basis: null } }),
+  ];
+
+  it("最終収集日を含む直近7日間に見つけた記事だけを出す（日本時間の日付で判定）", () => {
+    const el = latestView(site(articles));
+    const text = el.textContent!;
+    expect(text).toContain("当日に見つけた");
+    expect(text).toContain("7日前（範囲の初日）");
+    expect(text).not.toContain("8日前（範囲外）");
+    expect(text).toContain("日付不明だが最近見つけた");
+    expect(text).toContain("2026年9月22日〜2026年9月28日");
+    expect(text).toContain("3件");
+    expect(el.querySelector('a[href="#/search"]')).not.toBeNull();
+  });
+
+  it("日数は設定で変えられる", () => {
+    const text = latestView(site(articles, { latest_days: 1 })).textContent!;
+    expect(text).toContain("当日に見つけた");
+    expect(text).not.toContain("7日前（範囲の初日）");
+  });
+
+  it("収集データがなければその旨を出す", () => {
+    expect(latestView(site([], { data_as_of: null })).textContent).toContain("まだ収集したデータがありません");
+  });
+
+  it("タグのリンクは「記事を探す」の絞り込みを開く", () => {
+    const el = latestView(site(articles));
+    expect(el.querySelector("a.tag")?.getAttribute("href")).toBe("#/search?tag=maternal-child-health");
   });
 });

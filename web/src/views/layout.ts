@@ -13,11 +13,14 @@ export function demoBanner(meta: Meta): HTMLElement | null {
   );
 }
 
-export function layout(meta: Meta, current: "list" | "detail", main: HTMLElement): HTMLElement {
+export type Section = "latest" | "search" | "detail";
+
+export function layout(meta: Meta, current: Section, main: HTMLElement): HTMLElement {
   const nav = h(
     "nav",
     { "aria-label": "メニュー" },
-    h("a", { href: "#/", "aria-current": current === "list" ? "page" : null }, "最新一覧"),
+    h("a", { href: "#/", "aria-current": current === "latest" ? "page" : null }, "最新情報"),
+    h("a", { href: "#/search", "aria-current": current === "search" ? "page" : null }, "記事を探す"),
   );
   return h(
     "div",

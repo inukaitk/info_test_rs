@@ -69,6 +69,8 @@ export interface Meta {
   site_name: string;
   correction_request_url: string | null;
   page_size: number;
+  latest_days: number;
+  data_as_of: string | null;
   tags: { id: string; name: string; description: string; retired: boolean }[];
   sources: { id: string; name: string }[];
 }

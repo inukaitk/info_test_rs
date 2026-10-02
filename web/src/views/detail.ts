@@ -17,12 +17,12 @@ import { tagChip } from "./tags";
 export function detailView(data: SiteData, id: string): HTMLElement {
   const a = data.articles.find((x) => x.id === id);
   if (!a) {
-    return h("section", {}, h("h1", {}, "記事が見つかりません"), h("p", {}, h("a", { href: "#/" }, "最新一覧へ戻る")));
+    return h("section", {}, h("h1", {}, "記事が見つかりません"), h("p", {}, h("a", { href: "#/" }, "最新情報へ戻る")));
   }
   return h(
     "article",
     { class: "detail" },
-    h("p", { class: "back" }, h("a", { href: "#/" }, "← 最新一覧へ戻る")),
+    h("p", { class: "back" }, h("a", { href: "#/" }, "← 最新情報へ"), "　", h("a", { href: "#/search" }, "記事を探す")),
     h("h1", {}, a.title),
     h("p", { class: "source-line" }, a.source_name, " ／ 出典：", externalLink(a.url, a.url)),
     section("日付", datesTable(a)),

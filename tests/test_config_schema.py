@@ -184,6 +184,8 @@ def test_overrides_can_remove_disabled_tag(config_dir):
         lambda d: d.update(correction_request_url="http://forms.example.com/x"),
         lambda d: d.update(correction_request_url=""),
         lambda d: d.update(page_size=0),
+        lambda d: d.update(latest_days=0),
+        lambda d: d.pop("latest_days"),
         lambda d: d.pop("release_mode"),
     ],
 )
@@ -195,7 +197,7 @@ def test_site_schema_rejects_invalid(config_dir, mutation):
 def test_site_accepts_https_correction_url():
     assert schema_errors(
         {"site_name": "x", "correction_request_url": "https://forms.example.com/r/abc",
-         "release_mode": "real", "page_size": 50},
+         "release_mode": "real", "page_size": 50, "latest_days": 7},
         "config/site.schema.json",
     ) == []
 
