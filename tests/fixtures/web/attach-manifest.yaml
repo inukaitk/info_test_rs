@@ -1,0 +1,7 @@
+# テスト用：添付PDFのある架空サイト
+https://attach.example.org/rss.xml: {file: attach-rss.xml, type: application/rss+xml}
+https://attach.example.org/press/p1.html: {file: attach-page.html}
+https://attach.example.org/files/report.pdf: {file: report.pdf, type: application/pdf}
+https://attach.example.org/files/scan.pdf: {file: scan.pdf, type: application/pdf}
+https://attach.example.org/files/extra.pdf: {file: report.pdf, type: application/pdf}
+https://attach.example.org/menu.pdf: {file: report.pdf, type: application/pdf}

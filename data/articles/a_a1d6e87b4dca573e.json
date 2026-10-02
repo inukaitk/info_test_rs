@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_a1d6e87b4dca573e",
+    "source_id": "cfa-news",
+    "canonical_url": "https://www.cfa.go.jp/councils/shingikai/shougaiji_shien/c1010d3b",
+    "title": "障害児支援部会（第21回）",
+    "published_at": "2026-09-30",
+    "updated_at": null,
+    "date_basis": {
+      "published": {
+        "method": "listing_text",
+        "evidence": "<time datetime=\"2026-09-30\">2026年9月30日</time>"
+      },
+      "updated": null
+    },
+    "date_precision": {
+      "published": "day",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-10-02T17:07:01+09:00",
+    "last_seen_at": "2026-10-02T17:27:33+09:00",
+    "latest_version": 2,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "article_id": "a_a1d6e87b4dca573e",
+      "version": 1,
+      "content_hash": "sha256:86e9103723279f456255e26ed2240161f2909724d042e07daf11ae14e41ed3ef",
+      "fetched_at": "2026-10-02T17:07:01+09:00",
+      "content_type": "html",
+      "text_length": 227,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "new"
+    },
+    {
+      "extraction_profile": "html+pdf(3files,30pages)",
+      "attachments": [
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/c1010d3b-5d21-4a10-9450-1cae46796118/c4901d46/20260817_councils_shingikai_shougaiji_shien_c1010d3b_01.pdf",
+          "title": "資料1-1　医療的ケア児及びその家族に対する支援に関する法律の改正等について（PDF／927KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 4370,
+          "pages": 5,
+          "pages_read": 5
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/c1010d3b-5d21-4a10-9450-1cae46796118/54b28203/20260817_councils_shingikai_shougaiji_shien_c1010d3b_02.pdf",
+          "title": "資料1-2　医療的ケア児及びその家族に対する支援に関する法律の改正を踏まえた基本指針の改正について（本文）（PDF／289KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 17712,
+          "pages": 13,
+          "pages_read": 13
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/c1010d3b-5d21-4a10-9450-1cae46796118/07b09e68/20260925_councils_shingikai_shougaiji_shien_c1010d3b_03.pdf",
+          "title": "議事概要（PDF／1.28MB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 16746,
+          "pages": 22,
+          "pages_read": 22
+        }
+      ],
+      "article_id": "a_a1d6e87b4dca573e",
+      "version": 2,
+      "content_hash": "sha256:d8accbdba5e139acd834649327eeb98ec1ec3a64ecfbd0bf25497cb9dbe43afc",
+      "fetched_at": "2026-10-02T17:25:26+09:00",
+      "content_type": "html",
+      "text_length": 39211,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "extraction_changed"
+    }
+  ]
+}

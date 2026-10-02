@@ -109,6 +109,9 @@ def test_cli_writes_markdown(tmp_path, capsys):
     assert len(list(tmp_path.glob("weekly_*.md"))) == 4
 
 
-def test_real_mode_without_data(tmp_path, capsys):
+def test_real_mode_without_data(tmp_path, capsys, monkeypatch):
+    empty = tmp_path / "empty"
+    empty.mkdir()
+    monkeypatch.setattr(ex, "paths_for_mode", lambda mode: (empty, None))
     assert rp.main(["--mode", "real", "--out", str(tmp_path)]) == 1
     assert "収集データがない" in capsys.readouterr().err

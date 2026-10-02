@@ -1,0 +1,19 @@
+# テスト用：添付PDFを読む情報源（架空）
+sources:
+  - id: fx-attach
+    name: 架空添付庁（テスト）
+    entry_url: https://attach.example.org/rss.xml
+    method: rss
+    allowed_hosts: [attach.example.org]
+    attachments: {pdf: true, max_files: 3, max_bytes: 1048576, max_pages: 30}
+    timezone: Asia/Tokyo
+    limits: {max_items: 20, max_bytes: 1048576, wait_seconds: 1, timeout_seconds: 10}
+    enabled: true
+  - id: fx-attach-off
+    name: 架空添付なし庁（テスト）
+    entry_url: https://attach.example.org/rss-off.xml
+    method: rss
+    allowed_hosts: [attach.example.org]
+    timezone: Asia/Tokyo
+    limits: {max_items: 20, max_bytes: 1048576, wait_seconds: 1, timeout_seconds: 10}
+    enabled: false

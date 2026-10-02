@@ -175,6 +175,11 @@ def build_articles(article_files: list[dict], summary_files: list[dict], config:
                  "extraction_status": v["extraction_status"]}
                 for v in versions
             ],
+            "attachments": [
+                {"title": att["title"], "url": att["url"], "status": att["status"], "note": att["error"],
+                 "pages": att.get("pages")}
+                for att in latest.get("attachments", [])
+            ],
             "summary": _public_summary(summary, article["latest_version"]),
             "tags": final_tags(ai_tags, override, tag_defs),
             "removed_tags": removed_tags(ai_tags, override, tag_defs),

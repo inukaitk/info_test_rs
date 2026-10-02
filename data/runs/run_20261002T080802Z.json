@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "run": {
+    "run_id": "run_20261002T080802Z",
+    "started_at": "2026-10-02T17:08:02+09:00",
+    "finished_at": "2026-10-02T17:08:42+09:00",
+    "status": "success",
+    "trigger": "manual_cli",
+    "kind": "collect",
+    "period": {
+      "start": "2026-09-25",
+      "end": "2026-10-02"
+    },
+    "sources": [
+      {
+        "source_id": "cfa-news",
+        "status": "success",
+        "candidates": 26,
+        "new": 0,
+        "changed": 0,
+        "unchanged": 5,
+        "date_unknown": 0,
+        "fetch_failed": 0,
+        "warnings": [
+          "取得上限（5件）に達したため、残りは次回に回します"
+        ],
+        "error": null
+      }
+    ],
+    "totals": {
+      "new": 0,
+      "changed": 0,
+      "unchanged": 5,
+      "date_unknown": 0,
+      "fetch_failed": 0,
+      "summarized": 0,
+      "summarize_failed": 0
+    },
+    "failures": [],
+    "api_usage": {
+      "requests": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "estimated_cost_usd": null
+    }
+  }
+}

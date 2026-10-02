@@ -1,0 +1,175 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_c940b0c5e054384f",
+    "source_id": "cfa-news",
+    "canonical_url": "https://www.cfa.go.jp/councils/kyuyusei-zemmeikaiketsu/0899e4c0",
+    "title": "旧優生保護法問題の全面解決に向けた協議（第3回）　（令和8年9月30日開催）",
+    "published_at": "2026-09-30",
+    "updated_at": null,
+    "date_basis": {
+      "published": {
+        "method": "listing_text",
+        "evidence": "<time datetime=\"2026-09-30\">2026年9月30日</time>"
+      },
+      "updated": null
+    },
+    "date_precision": {
+      "published": "day",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-10-02T17:07:01+09:00",
+    "last_seen_at": "2026-10-02T17:27:33+09:00",
+    "latest_version": 3,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "article_id": "a_c940b0c5e054384f",
+      "version": 1,
+      "content_hash": "sha256:26f305ba9cc7d820704fd000a3ff99e1e889622a395d26278f67c73997a4bc07",
+      "fetched_at": "2026-10-02T17:07:01+09:00",
+      "content_type": "html",
+      "text_length": 219,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "new"
+    },
+    {
+      "extraction_profile": "html+pdf(3files,30pages)",
+      "attachments": [
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/0899e4c0-6742-42e4-89bf-c67dbf3560d7/fbc1529f/20260920_councils_kyuyusei-zemmeikaiketsu_0899e4c0_00.pdf",
+          "title": "議事次第（PDF／119KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 320,
+          "pages": 1,
+          "pages_read": 1
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/0899e4c0-6742-42e4-89bf-c67dbf3560d7/776ede33/20260920_councils_kyuyusei-zemmeikaiketsu_0899e4c0_01.pdf",
+          "title": "座席図（PDF／307KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 434,
+          "pages": 1,
+          "pages_read": 1
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/0899e4c0-6742-42e4-89bf-c67dbf3560d7/1ff7f648/20260920_councils_kyuyusei-zemmeikaiketsu_0899e4c0_02.pdf",
+          "title": "要請書　－ 優生保護法問題の全面解決をめざして －（PDF／240KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 7330,
+          "pages": 6,
+          "pages_read": 6
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/0899e4c0-6742-42e4-89bf-c67dbf3560d7/ee85a172/20260920_councils_kyuyusei-zemmeikaiketsu_0899e4c0_03.pdf",
+          "title": "旧優生保護法補償金等の相談・請求・認定の状況等（PDF／772KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/0899e4c0-6742-42e4-89bf-c67dbf3560d7/4aeb2a88/20260920_councils_kyuyusei-zemmeikaiketsu_0899e4c0_04.pdf",
+          "title": "もう一つの優生政策　優生手術と双璧の隔離収容、今も続く長期入院問題として（PDF／367KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/0899e4c0-6742-42e4-89bf-c67dbf3560d7/655cd288/20260920_councils_kyuyusei-zemmeikaiketsu_0899e4c0_05.pdf",
+          "title": "参考資料　基本合意書（PDF／368KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        }
+      ],
+      "article_id": "a_c940b0c5e054384f",
+      "version": 2,
+      "content_hash": "sha256:3f1b13b417c66ae0da15f719505ba39b0eb5b2dad921ced54bd1cac82fd9ff39",
+      "fetched_at": "2026-10-02T17:25:26+09:00",
+      "content_type": "html",
+      "text_length": 8395,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "extraction_changed"
+    },
+    {
+      "extraction_profile": "html+pdf(3files,30pages,exclude:座席|席次)",
+      "attachments": [
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/0899e4c0-6742-42e4-89bf-c67dbf3560d7/fbc1529f/20260920_councils_kyuyusei-zemmeikaiketsu_0899e4c0_00.pdf",
+          "title": "議事次第（PDF／119KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 320,
+          "pages": 1,
+          "pages_read": 1
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/0899e4c0-6742-42e4-89bf-c67dbf3560d7/776ede33/20260920_councils_kyuyusei-zemmeikaiketsu_0899e4c0_01.pdf",
+          "title": "座席図（PDF／307KB）",
+          "status": "skipped",
+          "error": "設定（exclude_titles）で除外した資料です",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/0899e4c0-6742-42e4-89bf-c67dbf3560d7/1ff7f648/20260920_councils_kyuyusei-zemmeikaiketsu_0899e4c0_02.pdf",
+          "title": "要請書　－ 優生保護法問題の全面解決をめざして －（PDF／240KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 7330,
+          "pages": 6,
+          "pages_read": 6
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/0899e4c0-6742-42e4-89bf-c67dbf3560d7/ee85a172/20260920_councils_kyuyusei-zemmeikaiketsu_0899e4c0_03.pdf",
+          "title": "旧優生保護法補償金等の相談・請求・認定の状況等（PDF／772KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 2546,
+          "pages": 4,
+          "pages_read": 4
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/0899e4c0-6742-42e4-89bf-c67dbf3560d7/4aeb2a88/20260920_councils_kyuyusei-zemmeikaiketsu_0899e4c0_04.pdf",
+          "title": "もう一つの優生政策　優生手術と双璧の隔離収容、今も続く長期入院問題として（PDF／367KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/0899e4c0-6742-42e4-89bf-c67dbf3560d7/655cd288/20260920_councils_kyuyusei-zemmeikaiketsu_0899e4c0_05.pdf",
+          "title": "参考資料　基本合意書（PDF／368KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        }
+      ],
+      "article_id": "a_c940b0c5e054384f",
+      "version": 3,
+      "content_hash": "sha256:78d0b41f577749e779a4ac14e809b098122ee5c79c955ebe3249113a99b1ac7e",
+      "fetched_at": "2026-10-02T17:27:33+09:00",
+      "content_type": "html",
+      "text_length": 10527,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "extraction_changed"
+    }
+  ]
+}

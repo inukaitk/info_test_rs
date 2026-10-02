@@ -21,6 +21,7 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import re
 import shutil
 import sys
 import tempfile
@@ -30,7 +31,11 @@ from pathlib import Path
 from typing import Any
 
 from collector.dates import JST, ParsedDate, in_period
-from collector.extract import Candidate, DateFound, Extracted, Listing, extract_document, parse_feed, parse_html_listing
+from dataclasses import replace
+
+from collector.extract import (
+    Candidate, DateFound, Extracted, Listing, extract_document, extract_pdf, normalize_text, parse_feed, parse_html_listing,
+)
 from collector.fetch import FetchError, Fetcher, FixtureFetcher, HttpFetcher
 from collector.urls import UrlRejected, check_allowed
 from collector.validation import REPO_ROOT, Config, article_id_from_canonical_url, load_json, validate_all, validate_config
@@ -48,12 +53,14 @@ class Options:
     source_ids: list[str] | None = None
     cache_dir: Path | None = None
     trigger: str = "manual_cli"
+    max_items: int | None = None  # 1つの情報源から本文を取得する件数の上限（設定より小さくするときだけ使う）
 
 
 @dataclass
 class SourceOutcome:
     result: dict
     failures: list[dict] = field(default_factory=list)
+    extraction_changed: int = 0  # 抽出方法の変更で版を追加した件数
 
 
 def _ts(dt: datetime) -> str:
@@ -214,15 +221,16 @@ def process_source(source: dict, store: Store, fetcher: Fetcher, options: Option
         if retry_queue[url]["stage"] in ("fetch", "extract") and url not in unique:
             unique[url] = Candidate(url=url, title=None)
 
-    explored: list[ParsedDate] = []
+    # 探索できた範囲は、一覧で見えたすべての候補の日付から求める（本文を取得したかどうかによらない）
+    explored: list[ParsedDate] = [c.listing_date[0] for c in candidates if c.listing_date]
     processed = 0
+    max_items = min(limits["max_items"], options.max_items) if options.max_items else limits["max_items"]
     for cand in unique.values():
         if cand.listing_date:
-            explored.append(cand.listing_date[0])
             if in_period(cand.listing_date[0], start, end) is False and cand.url not in retry_queue:
                 continue  # 一覧の日付で期間外と分かるものは取得しない
-        if processed >= limits["max_items"]:
-            result["warnings"].append(f"取得上限（{limits['max_items']}件）に達したため、残りは次回に回します")
+        if processed >= max_items:
+            result["warnings"].append(f"取得上限（{max_items}件）に達したため、残りは次回に回します")
             break
         processed += 1
         try:
@@ -239,6 +247,9 @@ def process_source(source: dict, store: Store, fetcher: Fetcher, options: Option
     if list_error is None and prev and prev["candidates"] >= 4 and len(unique) < prev["candidates"] * DROP_RATIO:
         result["warnings"].append(f"候補が前回（{prev['candidates']}件）から{len(unique)}件に大きく減りました")
 
+    if outcome.extraction_changed:
+        result["warnings"].append(
+            f"抽出方法の変更（添付PDFを読む等）により {outcome.extraction_changed}件に版を追加しました（原文の変更ではありません）")
     state["retry_queue"] = list(retry_queue.values())
     state["last_attempt_at"] = now_ts
     if list_error:
@@ -277,6 +288,72 @@ def _retry(retry_queue: dict, url: str, article_id: str | None, stage: str, reas
         retry_queue[url] = item
     if article_id:
         item["article_id"] = article_id
+
+
+# ---------------------------------------------------------------- 添付PDF
+
+
+ATTACHMENT_DEFAULTS = {"max_files": 3, "max_bytes": 10 * 1024 * 1024, "max_pages": 30}
+MAX_ATTACHMENT_RECORDS = 20
+
+
+def extraction_profile(source: dict, extracted: Extracted | None) -> str:
+    """抽出方法を表す文字列。これが変わったときの版は「抽出方法の変更」として記録する。"""
+    if extracted is not None and extracted.content_type == "pdf":
+        return "pdf"
+    conf = source.get("attachments") or {}
+    if not conf.get("pdf"):
+        return "html"
+    c = {**ATTACHMENT_DEFAULTS, **conf}
+    excluded = f",exclude:{'|'.join(c['exclude_titles'])}" if c.get("exclude_titles") else ""
+    return f"html+pdf({c['max_files']}files,{c['max_pages']}pages{excluded})"
+
+
+def fetch_attachments(source: dict, extracted: Extracted, fetcher: Fetcher) -> tuple[Extracted, list[dict], list[str]]:
+    """記事ページの本文中にある PDF を取得し、本文に加える。戻り値：本文を足した抽出結果、添付の記録、失敗の理由。"""
+    conf = source.get("attachments") or {}
+    if not conf.get("pdf") or extracted.content_type != "html" or extracted.status != "ok" or not extracted.pdf_links:
+        return extracted, [], []
+    c = {**ATTACHMENT_DEFAULTS, **conf}
+    records: list[dict] = []
+    parts: list[str] = [extracted.text]
+    failures: list[str] = []
+    exclude = [re.compile(p) for p in c.get("exclude_titles", [])]
+    taken = 0
+    for link, label in extracted.pdf_links[:MAX_ATTACHMENT_RECORDS]:
+        record = {"url": link, "title": label[:200], "status": "skipped", "error": None,
+                  "text_length": None, "pages": None, "pages_read": None}
+        records.append(record)
+        if any(p.search(label) for p in exclude):
+            record["error"] = "設定（exclude_titles）で除外した資料です"
+            continue
+        taken += 1
+        if taken > c["max_files"]:
+            record["error"] = f"1記事あたりの上限（{c['max_files']}件）を超えたため取得していません"
+            continue
+        try:
+            url = check_allowed(link, source["allowed_hosts"])
+        except UrlRejected as e:
+            record["error"] = f"取得対象外：{e}"
+            continue
+        try:
+            resp = fetcher.get(url, allowed_hosts=source["allowed_hosts"], max_bytes=c["max_bytes"],
+                               timeout=source["limits"]["timeout_seconds"])
+        except (FetchError, UrlRejected) as e:
+            record.update(status="failed", error=str(e))
+            failures.append(f"{label[:40]}：{e}")
+            continue
+        pdf = extract_pdf(resp.body, max_pages=c["max_pages"])
+        record.update(status=pdf.status, pages=pdf.page_count, pages_read=pdf.pages_read)
+        if pdf.status != "ok":
+            record["error"] = pdf.error
+            continue
+        record["text_length"] = len(pdf.text)
+        if pdf.page_count and pdf.pages_read and pdf.pages_read < pdf.page_count:
+            record["error"] = f"先頭{pdf.pages_read}ページだけを読み取りました（全{pdf.page_count}ページ）"
+        parts.append(f"［添付PDF］{label}\n{pdf.text}")
+    combined = replace(extracted, text=normalize_text("\n\n".join(parts)))
+    return combined, records, failures
 
 
 def handle_candidate(source, cand: Candidate, url: str, store: Store, fetcher: Fetcher, options: Options, now_ts: str,
@@ -321,10 +398,25 @@ def handle_candidate(source, cand: Candidate, url: str, store: Store, fetcher: F
         return
 
     assert extracted is not None
-    retry_queue.pop(url, None)
+    profile = extraction_profile(source, extracted)
+    extracted, attachments, attachment_failures = fetch_attachments(source, extracted, fetcher)
+    if attachment_failures:
+        reason = "添付PDFの取得に失敗：" + "／".join(attachment_failures)
+        result["fetch_failed"] += 1
+        outcome.failures.append({"source_id": source["id"], "url": url, "stage": "fetch", "reason": reason[:300]})
+        _retry(retry_queue, url, article_id, "fetch", reason[:300], now_ts)
+        if existing is not None:
+            # 一時的な失敗で本文が欠けた版を作らない（次回の再試行でまとめて確認する）
+            existing["article"]["last_seen_at"] = now_ts
+            store.changed_articles.add(article_id)
+            result["unchanged"] += 1
+            return
+    else:
+        retry_queue.pop(url, None)
 
     if existing is None:
-        _new_article(store, source, article_id, url, cand, extracted, published, updated, now_ts)
+        _new_article(store, source, article_id, url, cand, extracted, published, updated, now_ts,
+                     attachments=attachments, profile=profile)
         _cache_text(options.cache_dir, article_id, extracted, 1)
         result["new"] += 1
         if published is None:
@@ -339,23 +431,37 @@ def handle_candidate(source, cand: Candidate, url: str, store: Store, fetcher: F
         article["title"] = extracted.title
     new_hash = extracted.content_hash
     if extracted.status == "ok" and new_hash != latest["content_hash"]:
-        versions.append(_version(article_id, len(versions) + 1, extracted, now_ts, "content_changed"))
+        # 抽出方法（添付PDFを読む等）が前の版と違うときは、原文の変更ではなく「抽出方法の変更」として記録する
+        same_method = latest.get("extraction_profile", "html") == profile or latest["extraction_status"] != "ok"
+        change_type = "content_changed" if same_method else "extraction_changed"
+        versions.append(_version(article_id, len(versions) + 1, extracted, now_ts, change_type,
+                                 attachments=attachments, profile=profile))
         article["latest_version"] = len(versions)
         if article["status"] == "unsupported":
             article["status"] = "active"
         _cache_text(options.cache_dir, article_id, extracted, len(versions))
-        result["changed"] += 1
+        if change_type == "content_changed":
+            result["changed"] += 1
+        else:
+            result["unchanged"] += 1
+            outcome.extraction_changed += 1
     else:
         result["unchanged"] += 1
     store.changed_articles.add(article_id)
 
 
-def _version(article_id: str, n: int, extracted: Extracted | None, now_ts: str, change_type: str, error: str | None = None) -> dict:
+def _version(article_id: str, n: int, extracted: Extracted | None, now_ts: str, change_type: str, error: str | None = None,
+             attachments: list[dict] | None = None, profile: str | None = None) -> dict:
     if extracted is None:
         return {"article_id": article_id, "version": n, "content_hash": None, "fetched_at": now_ts, "content_type": "none",
                 "text_length": None, "extraction_status": "failed", "extraction_error": error, "change_type": change_type}
     ok = extracted.status == "ok"
-    return {
+    extra: dict = {}
+    if profile and profile != "html":
+        extra["extraction_profile"] = profile
+    if attachments:
+        extra["attachments"] = attachments
+    return {**extra, 
         "article_id": article_id, "version": n, "content_hash": extracted.content_hash, "fetched_at": now_ts,
         "content_type": extracted.content_type, "text_length": len(extracted.text) if ok else None,
         "extraction_status": extracted.status, "extraction_error": None if ok else extracted.error, "change_type": change_type,
@@ -363,7 +469,8 @@ def _version(article_id: str, n: int, extracted: Extracted | None, now_ts: str, 
 
 
 def _new_article(store: Store, source, article_id, url, cand: Candidate, extracted: Extracted | None,
-                 published: DateFound | None, updated: DateFound | None, now_ts: str, error: str | None = None) -> None:
+                 published: DateFound | None, updated: DateFound | None, now_ts: str, error: str | None = None,
+                 attachments: list[dict] | None = None, profile: str | None = None) -> None:
     pub_value, pub_basis, pub_precision = _store_date(published)
     upd_value, upd_basis, upd_precision = _store_date(updated)
     # PDF の文書情報のタイトルは当てにならないことが多いため、PDF は一覧のリンク文字を優先する
@@ -382,7 +489,7 @@ def _new_article(store: Store, source, article_id, url, cand: Candidate, extract
             "date_precision": {"published": pub_precision, "updated": upd_precision},
             "first_seen_at": now_ts, "last_seen_at": now_ts, "latest_version": 1, "status": status,
         },
-        "versions": [_version(article_id, 1, extracted, now_ts, "new", error)],
+        "versions": [_version(article_id, 1, extracted, now_ts, "new", error, attachments, profile)],
     }
     store.changed_articles.add(article_id)
 
@@ -453,6 +560,35 @@ def collect(config: Config, data_dir: Path, fetcher: Fetcher, options: Options,
     return run
 
 
+# ---------------------------------------------------------------- 試し読み（情報源を追加するときの確認用）
+
+
+def dry_run(config: Config, fetcher: Fetcher, source_ids: list[str] | None, limit: int = 10) -> int:
+    """一覧ページだけを読み、抽出規則で取れる候補を表示する。記事本文の取得・保存はしない。"""
+    sources = [s for s in config.sources["sources"] if (s["id"] in source_ids if source_ids else s["enabled"])]
+    if not sources:
+        print("NG: 対象の情報源がありません（--source で id を指定するか、enabled: true にしてください）", file=sys.stderr)
+        return 1
+    ok = True
+    for source in sources:
+        if source["method"] == "manual":
+            print(f"- {source['id']}: 手動登録のため一覧はありません")
+            continue
+        source = {**source, "pagination": {**source.get("pagination", {}), "max_pages": 1}}
+        candidates, pages, error, rejected = list_candidates(source, fetcher)
+        print(f"- {source['id']}（{source['name']}）：候補 {len(candidates)}件" + (f"　NG：{error}" if error else ""))
+        if error:
+            ok = False
+        for c in candidates[:limit]:
+            when = f"{c.listing_date[0].value}" if c.listing_date else "日付不明"
+            print(f"    {when:<26} {(c.title or '')[:40]}\n      {c.url}")
+        if len(candidates) > limit:
+            print(f"    …ほか {len(candidates) - limit}件")
+        if not candidates and not error:
+            print("    警告：候補が0件です。link_rules（css_selector・item_selector・include）を見直してください")
+    return 0 if ok else 1
+
+
 # ---------------------------------------------------------------- CLI
 
 
@@ -474,6 +610,9 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--fixtures", type=Path, help="テスト用：URLとファイルの対応表（実際のWebにはアクセスしない）")
     parser.add_argument("--allow-network", action="store_true", help="実際のWebへアクセスする（採用した情報源のみ）")
     parser.add_argument("--cache", type=Path, default=REPO_ROOT / ".cache", help="原文本文の保存先（Git管理外）")
+    parser.add_argument("--max-items", type=int, help="情報源ごとに本文を取得する件数の上限（試しに少数だけ取得するとき）")
+    parser.add_argument("--dry-run", action="store_true",
+                        help="一覧ページだけを読んで候補（題名・日付・URL）を表示する。記事本文は取得せず、何も保存しない")
     args = parser.parse_args(argv)
 
     if (args.start is None) != (args.end is None):
@@ -494,7 +633,10 @@ def main(argv: list[str] | None = None) -> int:
         fetcher: Fetcher = FixtureFetcher.from_manifest(args.fixtures)
     else:
         fetcher = HttpFetcher(wait_seconds=max(s["limits"]["wait_seconds"] for s in config.sources["sources"]))
-    options = Options(now=datetime.now(JST), start=args.start, end=args.end, source_ids=args.sources, cache_dir=args.cache)
+    if args.dry_run:
+        return dry_run(config, fetcher, args.sources)
+    options = Options(now=datetime.now(JST), start=args.start, end=args.end, source_ids=args.sources,
+                      cache_dir=args.cache, max_items=args.max_items)
     try:
         run = collect(config, args.data, fetcher, options, config_dir=config_dir, overlay_dir=args.config_dir)
     except (ValueError, RuntimeError) as e:

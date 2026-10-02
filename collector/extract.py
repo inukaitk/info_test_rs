@@ -57,6 +57,9 @@ class Extracted:
     updated: DateFound | None = None
     status: str = "ok"  # ok / unsupported
     error: str | None = None
+    pdf_links: list[tuple[str, str]] = field(default_factory=list)  # 本文中の PDF へのリンク（URL, リンク文字）
+    page_count: int | None = None  # PDF の総ページ数
+    pages_read: int | None = None  # 実際に読んだページ数（上限で打ち切った場合は総ページ数より少ない）
 
     @property
     def content_hash(self) -> str | None:
@@ -140,7 +143,35 @@ def _soup(body: bytes) -> BeautifulSoup:
     return BeautifulSoup(body, "html.parser")
 
 
+def _date_in(element, date_selector: str | None) -> tuple[ParsedDate, str, str] | None:
+    """要素の中から一覧の日付を探す。優先順：date_selector で指定した要素 ＞ <time datetime> ＞ class に date を含む要素。
+    タイトル中の日付（例「記者会見（令和8年10月2日）」）を掲載日と取り違えないよう、文中の日付は最後の手段にする。"""
+    candidates = []
+    if date_selector:
+        candidates += element.select(date_selector)
+    candidates += element.find_all("time")
+    candidates += element.select("[class*=date], [class*=Date]")
+    for el in candidates:
+        if el.name == "time" and el.get("datetime"):
+            parsed = parse_any(el["datetime"])
+            if parsed:
+                return parsed, "listing_text", f'<time datetime="{el["datetime"]}">{el.get_text(strip=True)}</time>'[:200]
+        found = find_japanese_date(el.get_text(" ", strip=True))
+        if found:
+            return found[0], "listing_text", found[1]
+    return None
+
+
 def parse_html_listing(body: bytes, base_url: str, link_rules: dict, next_selector: str | None = None) -> Listing:
+    """一覧ページから候補を列挙する。
+
+    link_rules の項目（すべて任意）:
+      css_selector   一覧の範囲（例 "main .news-list"）
+      item_selector  1件分の要素（例 "a.card__box"、"div.historical_line"）。指定するとその中からリンク・題名・日付を探す
+      title_selector 1件の中の題名の要素（例 ".card__title"）
+      date_selector  1件の中の日付の要素（例 ".card__date time"、".h_date"）
+      include / exclude  URL の正規表現
+    """
     soup = _soup(body)
     scope = soup.select_one(link_rules["css_selector"]) if link_rules.get("css_selector") else soup.body or soup
     listing = Listing([])
@@ -148,8 +179,21 @@ def parse_html_listing(body: bytes, base_url: str, link_rules: dict, next_select
         return listing
     include = [re.compile(p) for p in link_rules.get("include", [])]
     exclude = [re.compile(p) for p in link_rules.get("exclude", [])]
+    item_selector = link_rules.get("item_selector")
+    title_selector = link_rules.get("title_selector")
+    date_selector = link_rules.get("date_selector")
+
+    if item_selector:
+        pairs = []
+        for item in scope.select(item_selector):
+            a = item if item.name == "a" and item.get("href") else item.find("a", href=True)
+            if a is not None:
+                pairs.append((a, item))
+    else:
+        pairs = [(a, None) for a in scope.find_all("a", href=True)]
+
     seen: set[str] = set()
-    for a in scope.find_all("a", href=True):
+    for a, item in pairs:
         href = a["href"].strip()
         try:
             url = normalize_url(href, base_url)
@@ -163,14 +207,19 @@ def parse_html_listing(body: bytes, base_url: str, link_rules: dict, next_select
         if url in seen:
             continue
         seen.add(url)
-        # リンクを含む行（li・tr・dt/dd など）の文字から日付を探す
-        container = a.find_parent(["li", "tr", "dd", "dt", "p", "div"]) or a.parent
-        row_text = container.get_text(" ", strip=True) if container else ""
-        found = find_japanese_date(row_text)
-        listing.candidates.append(
-            Candidate(url=url, title=a.get_text(" ", strip=True) or None,
-                      listing_date=(found[0], "listing_text", found[1]) if found else None)
-        )
+        if item is not None:
+            title_el = item.select_one(title_selector) if title_selector else None
+            title = (title_el or a).get_text(" ", strip=True) or None
+            found = _date_in(item, date_selector)
+        else:
+            title = a.get_text(" ", strip=True) or None
+            # リンクを含む行（li・tr・dt/dd など）から日付を探す。日付用の要素があればそれを優先する
+            container = a.find_parent(["li", "tr", "dd", "dt", "p", "div"]) or a.parent
+            found = _date_in(container, date_selector) if container is not None else None
+            if found is None and container is not None:
+                text_found = find_japanese_date(container.get_text(" ", strip=True))
+                found = (text_found[0], "listing_text", text_found[1]) if text_found else None
+        listing.candidates.append(Candidate(url=url, title=title, listing_date=found))
     if next_selector:
         nxt = soup.select_one(next_selector)
         if nxt is not None and nxt.get("href"):
@@ -212,7 +261,24 @@ def _labeled_date(text: str, labels: tuple[str, ...], method: str) -> DateFound 
     return None
 
 
-def extract_html(body: bytes) -> Extracted:
+def _pdf_links(main, base_url: str | None) -> list[tuple[str, str]]:
+    links: list[tuple[str, str]] = []
+    seen: set[str] = set()
+    for a in main.find_all("a", href=True):
+        href = a["href"].strip()
+        if ".pdf" not in href.lower().split("?")[0].split("#")[0][-8:]:
+            continue
+        try:
+            url = normalize_url(href, base_url) if base_url else href
+        except UrlRejected:
+            continue
+        if url not in seen:
+            seen.add(url)
+            links.append((url, a.get_text(" ", strip=True) or url.rsplit("/", 1)[-1]))
+    return links
+
+
+def extract_html(body: bytes, base_url: str | None = None) -> Extracted:
     soup = _soup(body)
     title_tag = soup.find("h1") or soup.find("title")
     title = title_tag.get_text(" ", strip=True) if title_tag else None
@@ -226,6 +292,7 @@ def extract_html(body: bytes) -> Extracted:
             tag.decompose()
     main = soup.find("main") or soup.find("article") or soup.find(attrs={"role": "main"}) or soup.find(id="main") or soup.body or soup
     text = normalize_text(main.get_text("\n"))
+    pdf_links = _pdf_links(main, base_url)
 
     if published is None:
         published = _labeled_date(text, PUBLISHED_LABELS, "html_text")
@@ -234,26 +301,30 @@ def extract_html(body: bytes) -> Extracted:
     if updated is None:
         updated = labeled_updated
     if not text:
-        return Extracted(title, "", "html", published, updated, status="unsupported", error="本文を抽出できない（動的ページの可能性）")
-    return Extracted(title, text, "html", published, updated)
+        return Extracted(title, "", "html", published, updated, status="unsupported", error="本文を抽出できない（動的ページの可能性）",
+                         pdf_links=pdf_links)
+    return Extracted(title, text, "html", published, updated, pdf_links=pdf_links)
 
 
 # ---------------------------------------------------------------- PDF
 
 
-def extract_pdf(body: bytes) -> Extracted:
+def extract_pdf(body: bytes, max_pages: int | None = None) -> Extracted:
     from pypdf import PdfReader
     from pypdf.errors import PdfReadError
 
     try:
         reader = PdfReader(io.BytesIO(body))
-        text = normalize_text("\n".join((page.extract_text() or "") for page in reader.pages))
+        total = len(reader.pages)
+        pages = reader.pages[:max_pages] if max_pages else reader.pages
+        text = normalize_text("\n".join((page.extract_text() or "") for page in pages))
         meta = reader.metadata or {}
     except (PdfReadError, ValueError, KeyError) as e:
         return Extracted(None, "", "pdf", status="unsupported", error=f"PDFを読めない（{type(e).__name__}）")
     title = (meta.get("/Title") or "").strip() or None
     if not text.strip():
-        return Extracted(title, "", "pdf", status="unsupported", error="画像PDFのためテキストを抽出できない（OCRは対象外）")
+        return Extracted(title, "", "pdf", status="unsupported", error="画像PDFのためテキストを抽出できない（OCRは対象外）",
+                         page_count=total, pages_read=len(pages))
     published = _labeled_date(text, PUBLISHED_LABELS, "pdf_text")
     updated = _labeled_date(text, UPDATED_LABELS, "pdf_text")
     if published is None:
@@ -267,10 +338,10 @@ def extract_pdf(body: bytes) -> Extracted:
     if title is None:
         first = text.splitlines()[0] if text else ""
         title = _short(first, 80) or None
-    return Extracted(title, text, "pdf", published, updated)
+    return Extracted(title, text, "pdf", published, updated, page_count=total, pages_read=len(pages))
 
 
 def extract_document(body: bytes, content_type: str, url: str) -> Extracted:
     if "pdf" in content_type.lower() or url.lower().endswith(".pdf") or body[:5] == b"%PDF-":
         return extract_pdf(body)
-    return extract_html(body)
+    return extract_html(body, url)

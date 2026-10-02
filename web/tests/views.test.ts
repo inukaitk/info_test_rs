@@ -183,3 +183,32 @@ describe("最新情報（直近の取得日）", () => {
     expect(el.querySelector("a.tag")?.getAttribute("href")).toBe("#/search?tag=maternal-child-health");
   });
 });
+
+describe("添付資料", () => {
+  it("資料ごとの状態を出し、危険なURLはリンクにしない", () => {
+    const a = article({
+      attachments: [
+        { title: "【架空】概要（PDF）", url: "https://a.example.org/a.pdf", status: "ok", note: null, pages: 4 },
+        { title: "【架空】スキャン（PDF）", url: "https://a.example.org/s.pdf", status: "unsupported", note: "画像PDFのため", pages: 1 },
+        { title: XSS, url: "javascript:alert(1)", status: "skipped", note: "上限超過", pages: null },
+      ],
+      versions: [
+        { version: 1, fetched_at: "2026-09-11T08:00:00+09:00", change_type: "new", extraction_status: "ok" },
+        { version: 2, fetched_at: "2026-09-12T08:00:00+09:00", change_type: "extraction_changed", extraction_status: "ok" },
+      ],
+      latest_version: 2,
+    });
+    const el = detailView(site([a]), a.id);
+    const text = el.textContent!;
+    expect(text).toContain("添付資料");
+    expect(text).toContain("読み取り済み（4ページ）");
+    expect(text).toContain("読み取れない形式");
+    expect(text).toContain("抽出方法の変更（原文の変更ではない）");
+    expect(el.querySelector("img")).toBeNull();
+    for (const link of el.querySelectorAll("a")) expect(link.getAttribute("href")).not.toMatch(/^javascript:/i);
+  });
+
+  it("添付がなければ欄を出さない", () => {
+    expect(detailView(site([article()]), article().id).textContent).not.toContain("添付資料");
+  });
+});

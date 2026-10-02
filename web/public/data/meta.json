@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-02T16:03:46+09:00",
-  "release_mode": "demo",
-  "is_demo": true,
+  "generated_at": "2026-10-02T17:29:17+09:00",
+  "release_mode": "real",
+  "is_demo": false,
   "site_name": "外部環境情報（検証版）",
   "correction_request_url": null,
   "page_size": 50,
   "latest_days": 7,
   "stale_after_days": 8,
-  "data_as_of": "2026-09-28T08:00:00+09:00",
+  "data_as_of": "2026-10-02T17:27:33+09:00",
   "tags": [
     {
       "id": "maternal-child-health",
@@ -61,20 +61,16 @@
   ],
   "sources": [
     {
-      "id": "demo-kodomo-rss",
-      "name": "架空こども政策庁（デモ）"
+      "id": "cfa-news",
+      "name": "こども家庭庁（新着・更新）"
     },
     {
-      "id": "demo-boshi-html",
-      "name": "架空母子保健研究機構（デモ）"
+      "id": "mhlw-news",
+      "name": "厚生労働省（新着情報）"
     },
     {
-      "id": "demo-jichitai-html",
-      "name": "架空自治体標準化推進室（デモ）"
-    },
-    {
-      "id": "demo-tokei-rss",
-      "name": "架空統計調査センター（デモ）"
+      "id": "ncchd-news",
+      "name": "国立成育医療研究センター（新着情報）"
     }
   ]
 }

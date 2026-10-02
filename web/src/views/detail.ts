@@ -27,9 +27,49 @@ export function detailView(data: SiteData, id: string): HTMLElement {
     h("p", { class: "source-line" }, a.source_name, " ／ 出典：", externalLink(a.url, a.url)),
     section("日付", datesTable(a)),
     section("概要", summaryBlock(a)),
+    a.attachments.length ? section("添付資料", attachmentsBlock(a)) : null,
     section("タグ", tagsBlock(a)),
     section("処理状態", statusTable(a)),
     section("変更履歴", historyTable(a)),
+  );
+}
+
+const CHANGE_LABEL: Record<string, string> = {
+  new: "新規",
+  content_changed: "本文の変更",
+  extraction_changed: "抽出方法の変更（原文の変更ではない）",
+};
+
+const ATTACHMENT_STATUS: Record<string, string> = {
+  ok: "読み取り済み",
+  failed: "取得失敗",
+  unsupported: "読み取れない形式",
+  skipped: "取得していない",
+};
+
+function attachmentsBlock(a: Article): HTMLElement {
+  return h(
+    "div",
+    {},
+    h("p", { class: "muted" }, "記事ページからリンクされている資料です。「読み取り済み」の資料は概要の材料に含めています（本文は画面に表示しません）。"),
+    h(
+      "table",
+      { class: "history" },
+      h("thead", {}, h("tr", {}, h("th", {}, "資料"), h("th", {}, "状態"), h("th", {}, "備考"))),
+      h(
+        "tbody",
+        {},
+        ...a.attachments.map((x) =>
+          h(
+            "tr",
+            {},
+            h("td", {}, externalLink(x.url, x.title)),
+            h("td", {}, ATTACHMENT_STATUS[x.status] ?? x.status, x.pages ? `（${x.pages}ページ）` : ""),
+            h("td", {}, x.note ?? ""),
+          ),
+        ),
+      ),
+    ),
   );
 }
 
@@ -149,7 +189,7 @@ function historyTable(a: Article): HTMLElement {
           {},
           h("td", {}, `第${v.version}版`),
           h("td", {}, formatDateTime(v.fetched_at)),
-          h("td", {}, v.change_type === "new" ? "新規" : "本文の変更"),
+          h("td", {}, CHANGE_LABEL[v.change_type] ?? v.change_type),
           h("td", {}, CONTENT_STATUS_LABEL[v.extraction_status] ?? v.extraction_status),
         ),
       ),

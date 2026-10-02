@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_cf60bedab57fd625",
+    "source_id": "cfa-news",
+    "canonical_url": "https://www.cfa.go.jp/press/ab4c3ae4-ba86-4d5a-8ba7-c3f7ea42908c",
+    "title": "第16回ヒト受精胚等を用いる生殖補助医療研究等に関する専門委員会の開催について",
+    "published_at": "2026-09-30",
+    "updated_at": null,
+    "date_basis": {
+      "published": {
+        "method": "html_text",
+        "evidence": "公開日:令和8年9月30日"
+      },
+      "updated": null
+    },
+    "date_precision": {
+      "published": "day",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-10-02T17:07:01+09:00",
+    "last_seen_at": "2026-10-02T17:27:33+09:00",
+    "latest_version": 2,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "article_id": "a_cf60bedab57fd625",
+      "version": 1,
+      "content_hash": "sha256:163e81d68b361f7f8e6f3a270b5178cc187381a03e838c49ed15dd23dbe3e7b9",
+      "fetched_at": "2026-10-02T17:07:01+09:00",
+      "content_type": "html",
+      "text_length": 153,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "new"
+    },
+    {
+      "extraction_profile": "html+pdf(3files,30pages)",
+      "attachments": [
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/ab4c3ae4-ba86-4d5a-8ba7-c3f7ea42908c/c945780a/20260930_press_ab4c3ae4-ba86-4d5a-8ba7-c3f7ea42908c_01.pdf",
+          "title": "第16回ヒト受精胚等を用いる生殖補助医療研究等に関する専門委員会の開催について（PDF／364KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 1653,
+          "pages": 2,
+          "pages_read": 2
+        }
+      ],
+      "article_id": "a_cf60bedab57fd625",
+      "version": 2,
+      "content_hash": "sha256:7a749fa18bf82142a672a72d6203879a87502f1b99f3b12b9786104de35cdc2a",
+      "fetched_at": "2026-10-02T17:25:26+09:00",
+      "content_type": "html",
+      "text_length": 1865,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "extraction_changed"
+    }
+  ]
+}

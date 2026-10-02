@@ -54,7 +54,8 @@ export interface Article {
   content_status: "ok" | "failed" | "unsupported" | "not_fetched";
   content_error: string | null;
   latest_version: number;
-  versions: { version: number; fetched_at: string; change_type: "new" | "content_changed"; extraction_status: string }[];
+  versions: { version: number; fetched_at: string; change_type: "new" | "content_changed" | "extraction_changed"; extraction_status: string }[];
+  attachments: { title: string; url: string; status: "ok" | "failed" | "unsupported" | "skipped"; note: string | null; pages: number | null }[];
   summary: Summary;
   tags: Tag[];
   removed_tags: { id: string; name: string }[];
