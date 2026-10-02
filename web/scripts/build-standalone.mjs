@@ -10,8 +10,9 @@ import { fileURLToPath, pathToFileURL } from "node:url";
 
 const webDir = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const distDir = join(webDir, "dist-standalone");
-const dataDir = join(webDir, "public", "data");
-const outFile = resolve(webDir, "..", "viewer", "info_viewer.html");
+// 確認用に別のデータ・出力先を使うとき：DATA_DIR=... OUT_FILE=... npm run build:standalone
+const dataDir = process.env.DATA_DIR ? resolve(process.env.DATA_DIR) : join(webDir, "public", "data");
+const outFile = process.env.OUT_FILE ? resolve(process.env.OUT_FILE) : resolve(webDir, "..", "viewer", "info_viewer.html");
 
 const read = (p) => readFileSync(p, "utf-8");
 const sha256 = (text) => `'sha256-${createHash("sha256").update(text, "utf-8").digest("base64")}'`;

@@ -1,0 +1,19 @@
+# テスト用：URL → 応答ファイルの対応表（FixtureFetcher が使う。実在のサイトにはアクセスしない）
+https://news.example.org/rss.xml: {file: rss.xml, type: application/rss+xml}
+https://news.example.org/news/a1.html: {file: a1.html}
+https://news.example.org/news/a2.html: {file: a2.html}
+https://news.example.org/news/a3.html: {file: a3.html}
+https://news.example.org/news/a4.html: {file: a4.html}
+https://news.example.org/news/a5.html: {file: a5.html}
+https://news.example.org/news/a6.html: {file: a6.html}
+https://news.example.org/news/missing.html: {status: 404}
+https://list.example.net/info/index.html: {file: list1.html}
+https://list.example.net/info/index2.html: {file: list2.html}
+https://list.example.net/info/20260905.html: {file: l_20260905.html}
+https://list.example.net/info/20260912.html: {file: l_20260912.html}
+https://list.example.net/info/20260918.html: {file: l_20260918.html}
+https://list.example.net/info/20260820.html: {file: l_20260820.html}
+https://files.example.net/report.pdf: {file: report.pdf, type: application/pdf}
+https://files.example.net/scan.pdf: {file: scan.pdf, type: application/pdf}
+https://broken.example.com/list.html: {status: 500}
+https://empty.example.org/rss.xml: {file: empty-rss.xml, type: application/rss+xml}

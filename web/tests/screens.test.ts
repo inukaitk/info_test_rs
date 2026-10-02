@@ -118,6 +118,12 @@ describe("取得状況", () => {
     expect(el.querySelector(".row-failed")).not.toBeNull();
   });
 
+  it("前回の収集で出た警告（抽出0件など）も上部に出す", () => {
+    const st = status();
+    st.sources[0] = { ...st.sources[0], last_run: { ...st.sources[0].last_run!, warnings: ["一覧から記事を1件も抽出できませんでした"] } };
+    expect(statusWarnings(site([], {}, { status: st }), NOW).join()).toContain("1件も抽出できませんでした");
+  });
+
   it("一度も成功していない情報源・未実行", () => {
     const st = status({ last_run_at: null, last_run_status: null, last_full_success_at: null });
     st.sources[0] = { ...st.sources[0], last_success_at: null, last_attempt_status: null, last_run: null };

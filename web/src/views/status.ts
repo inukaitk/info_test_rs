@@ -29,6 +29,8 @@ export function statusWarnings(data: SiteData, now: Date): string[] {
     } else if (since !== null && since > limit) {
       warnings.push(`${s.name}：最後の取得成功から${since}日経っています。`);
     }
+    // 抽出0件・急減など、前回の収集で出た警告（抽出規則が壊れていないかの確認用）
+    for (const w of s.last_run?.warnings ?? []) warnings.push(`${s.name}：${w}`);
   }
   return warnings;
 }
