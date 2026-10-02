@@ -78,6 +78,20 @@ def test_meta_marks_demo(demo_config):
     assert meta["correction_request_url"] is None
 
 
+def test_meta_has_latest_window(demo_config):
+    meta = build(demo_config, DEMO_DATA)["meta.json"]
+    assert meta["latest_days"] == 7
+    # 最後の収集（2026-09-28 08:00）が最新一覧の基準日時
+    assert meta["data_as_of"] == "2026-09-28T08:00:00+09:00"
+
+
+def test_data_as_of_without_runs():
+    files = [{"article": {"first_seen_at": "2026-09-01T08:00:00+09:00"}},
+             {"article": {"first_seen_at": "2026-09-05T08:00:00+09:00"}}]
+    assert ex.data_as_of([], files) == "2026-09-05T08:00:00+09:00"
+    assert ex.data_as_of([], []) is None
+
+
 # ---- 最終タグ = AIタグ + 追加 - 除外
 
 TAG_DEFS = {

@@ -14,7 +14,9 @@
     "correction_request_url",
     "page_size",
     "tags",
-    "sources"
+    "sources",
+    "latest_days",
+    "data_as_of"
   ],
   "properties": {
     "schema_version": {
@@ -94,6 +96,21 @@
           }
         }
       }
+    },
+    "latest_days": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "data_as_of": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/timestamp"
+        }
+      ],
+      "description": "最終収集の日時（最新一覧の基準日）"
     }
   }
 }

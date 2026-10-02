@@ -1,4 +1,4 @@
-// 最新一覧：日付、機関、タイトル、概要、タグ。タグ・機関・期間での絞り込みと文字検索。
+// 記事を探す：全期間の記事を、タグ・機関・期間で絞り込み、文字検索する。
 import { h } from "../dom";
 import { applyFilters, countDateUnknownExcluded, type Filters, filtersToQuery } from "../filters";
 import { formatDate, SUMMARY_STATUS_LABEL } from "../format";
@@ -22,16 +22,27 @@ export function listView(data: SiteData, filters: Filters, navigate: (hash: stri
     notes.append(h("p", { class: "note" }, `日付不明の記事 ${excludedUnknown}件は期間の絞り込みに含めていません。期間を外すと表示されます。`));
   }
 
-  const table = results.length
-    ? h(
-        "table",
-        { class: "article-table" },
-        h("thead", {}, h("tr", {}, h("th", {}, "日付"), h("th", {}, "機関"), h("th", {}, "タイトル・概要"), h("th", {}, "タグ"))),
-        h("tbody", {}, ...results.slice(0, limit).map(row)),
-      )
-    : h("p", { class: "empty" }, "条件に合う記事はありません。");
+  const table = results.length ? articleTable(results.slice(0, limit)) : h("p", { class: "empty" }, "条件に合う記事はありません。");
 
-  return h("section", {}, h("h1", {}, "最新一覧"), form, summaryLine, notes, table);
+  return h(
+    "section",
+    {},
+    h("h1", {}, "記事を探す"),
+    h("p", { class: "lead" }, "これまでに集めたすべての記事から、タグ・機関・期間（公開日）で絞り込み、文字で検索できます。"),
+    form,
+    summaryLine,
+    notes,
+    table,
+  );
+}
+
+export function articleTable(articles: Article[]): HTMLElement {
+  return h(
+    "table",
+    { class: "article-table" },
+    h("thead", {}, h("tr", {}, h("th", {}, "公開日"), h("th", {}, "機関"), h("th", {}, "タイトル・概要"), h("th", {}, "タグ"))),
+    h("tbody", {}, ...articles.map(row)),
+  );
 }
 
 function row(a: Article): HTMLElement {
@@ -45,7 +56,7 @@ function row(a: Article): HTMLElement {
     h("td", { class: "date" }, formatDate(a.published)),
     h("td", { class: "source" }, a.source_name),
     h("td", {}, h("a", { href: `#/articles/${encodeURIComponent(a.id)}`, class: "title" }, a.title), summary),
-    h("td", {}, tagList(a.tags)),
+    h("td", {}, a.tags.length || a.summary.status === "success" ? tagList(a.tags) : h("span", { class: "muted" }, "AI未処理")),
   );
 }
 
@@ -70,14 +81,14 @@ function filterForm(data: SiteData, f: Filters, navigate: (hash: string) => void
     field("f-tag", "タグ", tag),
     field("f-source", "機関", source),
     h("div", { class: "field period" }, h("span", { class: "label" }, "期間（公開日）"), from, h("span", {}, "〜"), to),
-    h("div", { class: "actions" }, h("button", { type: "submit" }, "絞り込む"), h("a", { href: "#/", class: "reset" }, "条件をクリア")),
+    h("div", { class: "actions" }, h("button", { type: "submit" }, "絞り込む"), h("a", { href: "#/search", class: "reset" }, "条件をクリア")),
   );
   const current = (): Filters => ({ q: q.value.trim(), tag: tag.value, source: source.value, from: from.value, to: to.value });
   form.addEventListener("submit", (e) => {
     e.preventDefault();
-    navigate(`#/${filtersToQuery(current())}`);
+    navigate(`#/search${filtersToQuery(current())}`);
   });
-  for (const el of [tag, source, from, to]) el.addEventListener("change", () => navigate(`#/${filtersToQuery(current())}`));
+  for (const el of [tag, source, from, to]) el.addEventListener("change", () => navigate(`#/search${filtersToQuery(current())}`));
   return form;
 }
 

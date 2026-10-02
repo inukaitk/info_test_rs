@@ -32,6 +32,7 @@ export function meta(overrides: Partial<Meta> = {}): Meta {
   return {
     schema_version: 1, generated_at: "2026-09-29T09:00:00+09:00", release_mode: "demo", is_demo: true,
     site_name: "テスト", correction_request_url: null, page_size: 50,
+    latest_days: 7, data_as_of: "2026-09-28T08:00:00+09:00",
     tags: [
       { id: "maternal-child-health", name: "母子保健", description: "d", retired: false },
       { id: "childcare-support", name: "子育て支援", description: "d", retired: false },

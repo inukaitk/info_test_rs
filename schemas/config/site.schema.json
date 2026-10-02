@@ -4,14 +4,45 @@
   "title": "config/site.yaml 画面の設定",
   "type": "object",
   "additionalProperties": false,
-  "required": ["site_name", "correction_request_url", "release_mode", "page_size"],
+  "required": [
+    "site_name",
+    "correction_request_url",
+    "release_mode",
+    "page_size",
+    "latest_days"
+  ],
   "properties": {
-    "site_name": { "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/nonempty_text" },
+    "site_name": {
+      "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/nonempty_text"
+    },
     "correction_request_url": {
       "description": "修正依頼フォーム（Microsoft Forms等）のURL。未設定はnull",
-      "oneOf": [ { "type": "null" }, { "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/https_url" } ]
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/https_url"
+        }
+      ]
     },
-    "release_mode": { "enum": ["demo", "real"], "description": "demo=架空データのみ表示、real=実データ" },
-    "page_size": { "type": "integer", "minimum": 10, "maximum": 500 }
+    "release_mode": {
+      "enum": [
+        "demo",
+        "real"
+      ],
+      "description": "demo=架空データのみ表示、real=実データ"
+    },
+    "page_size": {
+      "type": "integer",
+      "minimum": 10,
+      "maximum": 500
+    },
+    "latest_days": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 60,
+      "description": "最新一覧に出す期間（取得日＝見つけた日で、最終収集日から何日分か）"
+    }
   }
 }

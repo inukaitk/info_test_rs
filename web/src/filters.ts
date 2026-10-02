@@ -90,6 +90,34 @@ export function applyFilters(articles: Article[], f: Filters): Article[] {
   });
 }
 
+/** タイムゾーン付き日時を日本時間の日付（YYYY-MM-DD）にする。 */
+export function jstDate(timestamp: string): string {
+  const d = new Date(new Date(timestamp).getTime() + 9 * 60 * 60 * 1000);
+  return d.toISOString().slice(0, 10);
+}
+
+function addDays(date: string, days: number): string {
+  const d = new Date(`${date}T00:00:00Z`);
+  d.setUTCDate(d.getUTCDate() + days);
+  return d.toISOString().slice(0, 10);
+}
+
+/** 最新一覧の期間：最終収集日（日本時間）を含めて days 日分。基準がなければ null。 */
+export function latestWindow(asOf: string | null, days: number): { from: string; to: string } | null {
+  if (!asOf) return null;
+  const to = jstDate(asOf);
+  return { from: addDays(to, -(days - 1)), to };
+}
+
+/** 取得日（見つけた日）が最新一覧の期間に入る記事。 */
+export function latestArticles(articles: Article[], window: { from: string; to: string } | null): Article[] {
+  if (!window) return [];
+  return articles.filter((a) => {
+    const seen = jstDate(a.first_seen_at);
+    return seen >= window.from && seen <= window.to;
+  });
+}
+
 /** 期間指定によって除外された日付不明の記事数（画面で別枠として知らせる）。 */
 export function countDateUnknownExcluded(articles: Article[], f: Filters): number {
   if (!hasPeriod(f)) return 0;
