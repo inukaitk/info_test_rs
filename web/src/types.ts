@@ -24,6 +24,7 @@ export type SummaryStatus =
   | "failed_api_error"
   | "failed_invalid_output"
   | "failed_limit_exceeded"
+  | "failed_refusal"
   | "not_processed";
 
 export interface Summary {

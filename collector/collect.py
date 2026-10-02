@@ -447,6 +447,9 @@ def handle_candidate(source, cand: Candidate, url: str, store: Store, fetcher: F
             outcome.extraction_changed += 1
     else:
         result["unchanged"] += 1
+        # .cache/ はセッションをまたいで残らないため、変化がなくても本文のキャッシュがなければ書き直す（AI要約で使う）
+        if extracted.status == "ok" and new_hash == latest["content_hash"]:
+            _cache_text(options.cache_dir, article_id, extracted, len(versions), only_if_missing=True)
     store.changed_articles.add(article_id)
 
 
@@ -508,11 +511,14 @@ def _update_dates(article: dict, published: DateFound | None, updated: DateFound
             article["date_precision"]["updated"] = precision
 
 
-def _cache_text(cache_dir: Path | None, article_id: str, extracted: Extracted, version: int) -> None:
+def _cache_text(cache_dir: Path | None, article_id: str, extracted: Extracted, version: int,
+                only_if_missing: bool = False) -> None:
     """原文の本文は .cache/ にだけ置く（Git・公開物には入れない）。AI処理（段階3）で使う。"""
     if cache_dir is None or extracted.status != "ok":
         return
     path = cache_dir / "text" / f"{article_id}_v{version}.txt"
+    if only_if_missing and path.exists():
+        return
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(extracted.text, encoding="utf-8")
 

@@ -613,3 +613,15 @@ def test_explored_range_covers_all_listed_candidates(config, fetcher, tmp_path):
     col.collect(config, tmp_path / "data", fetcher, options, config_dir=CONFIG_DIR, overlay_dir=OVERLAY)
     explored = read_json(tmp_path / "data" / "state.json")["sources"]["fx-news-rss"]["explored_range"]
     assert explored["oldest"] == "2026-08-31" and explored["newest"] == "2026-10-01"
+
+
+def test_unchanged_articles_refill_missing_text_cache(config, fetcher, tmp_path):
+    """.cache/ はセッションをまたいで残らないため、変化のない記事でも本文キャッシュがなければ書き直す。"""
+    import shutil
+
+    data, cache = tmp_path / "data", tmp_path / "cache"
+    run(config, data, fetcher, 2, sources=["fx-news-rss"], cache=cache)
+    shutil.rmtree(cache)
+    r = run(config, data, fetcher, 3, sources=["fx-news-rss"], cache=cache)
+    assert result_of(r, "fx-news-rss")["changed"] == 0
+    assert (cache / "text" / f"{A1}_v1.txt").exists()

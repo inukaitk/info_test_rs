@@ -1,0 +1,15 @@
+# AI要約・タグ付けの設定（段階3-a）。APIキーはここに書かない（環境変数 ANTHROPIC_API_KEY から読む）。
+provider: anthropic
+# モデルと価格（米ドル／100万トークン）。価格は 2026-10-02 に公式資料で確認（docs/DECISIONS.md）。
+model: claude-opus-5-5
+price_per_mtok: {input: 4.0, output: 20.0}
+# 考える量（low / medium / high）。高いほど丁寧だが出力トークン（費用）が増える
+effort: medium
+# 安全上の理由で応答が拒否されたとき、APIが自動で別モデルに切り替える（Anthropic の server-side fallback）
+fallbacks: true
+limits:
+  max_articles_per_run: 10        # 1回の実行で処理する記事数の上限
+  max_input_chars: 20000          # 1記事の本文の上限（超えた分は使わず、その旨を記録）
+  max_input_tokens_per_run: 200000  # 1回の実行の入力トークン合計の上限（超えた記事は上限超過として未処理）
+  max_output_tokens: 8000         # 1回の応答の上限
+  max_retries: 2                  # APIエラー・出力の形の誤りのときの再試行回数

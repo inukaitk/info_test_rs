@@ -27,6 +27,7 @@ CONFIG_FILES = {
     "tags.yaml": "config/tags.schema.json",
     "tag_overrides.yaml": "config/tag_overrides.schema.json",
     "site.yaml": "config/site.schema.json",
+    "ai.yaml": "config/ai.schema.json",
 }
 
 
@@ -120,6 +121,7 @@ class Config:
     tags: dict
     tag_overrides: dict
     site: dict
+    ai: dict
 
     @property
     def source_ids(self) -> set[str]:
@@ -179,6 +181,7 @@ def validate_config(
         tags=loaded["tags.yaml"],
         tag_overrides=loaded["tag_overrides.yaml"],
         site=loaded["site.yaml"],
+        ai=loaded["ai.yaml"],
     )
     _check_sources(config, report)
     _check_tags(config, report)

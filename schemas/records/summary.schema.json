@@ -5,29 +5,117 @@
   "description": "analysis_statusがsuccess以外のときは内容欄をすべてnullにする。失敗を成功や「タグなし」（空配列）として記録しない",
   "type": "object",
   "additionalProperties": false,
-  "required": ["article_id", "article_version", "analysis_status", "error", "summary", "key_points", "targets", "dates", "ai_tags", "uncertainties", "provider", "model", "prompt_version", "tags_version", "usage", "processed_at"],
+  "required": [
+    "article_id",
+    "article_version",
+    "analysis_status",
+    "error",
+    "summary",
+    "key_points",
+    "targets",
+    "dates",
+    "ai_tags",
+    "uncertainties",
+    "provider",
+    "model",
+    "prompt_version",
+    "tags_version",
+    "usage",
+    "processed_at"
+  ],
   "properties": {
-    "article_id": { "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/article_id" },
-    "article_version": { "type": "integer", "minimum": 1 },
-    "analysis_status": {
-      "enum": ["success", "pending", "skipped_no_api_key", "skipped_no_content", "failed_api_error", "failed_invalid_output", "failed_limit_exceeded"]
+    "article_id": {
+      "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/article_id"
     },
-    "error": { "type": ["string", "null"] },
-    "summary": { "oneOf": [ { "type": "null" }, { "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/nonempty_text", "maxLength": 300 } ], "description": "200字程度までの日本語の概要" },
-    "key_points": { "oneOf": [ { "type": "null" }, { "type": "array", "maxItems": 5, "items": { "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/nonempty_text" } } ] },
-    "targets": { "oneOf": [ { "type": "null" }, { "type": "array", "items": { "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/nonempty_text" } } ] },
-    "dates": {
+    "article_version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "analysis_status": {
+      "enum": [
+        "success",
+        "pending",
+        "skipped_no_api_key",
+        "skipped_no_content",
+        "failed_api_error",
+        "failed_invalid_output",
+        "failed_limit_exceeded",
+        "failed_refusal"
+      ]
+    },
+    "error": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "summary": {
       "oneOf": [
-        { "type": "null" },
+        {
+          "type": "null"
+        },
+        {
+          "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/nonempty_text",
+          "maxLength": 300
+        }
+      ],
+      "description": "200字程度までの日本語の概要"
+    },
+    "key_points": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "array",
+          "maxItems": 5,
+          "items": {
+            "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/nonempty_text"
+          }
+        }
+      ]
+    },
+    "targets": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
         {
           "type": "array",
           "items": {
-            "type": "object", "additionalProperties": false,
-            "required": ["label", "value", "evidence"],
+            "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/nonempty_text"
+          }
+        }
+      ]
+    },
+    "dates": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "label",
+              "value",
+              "evidence"
+            ],
             "properties": {
-              "label": { "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/nonempty_text", "description": "施行日・締切など" },
-              "value": { "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/partial_date" },
-              "evidence": { "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/nonempty_text", "maxLength": 200, "description": "原文の短い根拠引用（必須）" }
+              "label": {
+                "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/nonempty_text",
+                "description": "施行日・締切など"
+              },
+              "value": {
+                "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/partial_date"
+              },
+              "evidence": {
+                "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/nonempty_text",
+                "maxLength": 200,
+                "description": "原文の短い根拠引用（必須）"
+              }
             }
           }
         }
@@ -35,59 +123,170 @@
     },
     "ai_tags": {
       "oneOf": [
-        { "type": "null" },
+        {
+          "type": "null"
+        },
         {
           "type": "array",
           "items": {
-            "type": "object", "additionalProperties": false,
-            "required": ["tag_id", "reason"],
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "tag_id",
+              "reason"
+            ],
             "properties": {
-              "tag_id": { "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/slug_id", "description": "tags.yamlに登録されたid（登録外は検証で拒否）" },
-              "reason": { "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/nonempty_text" }
+              "tag_id": {
+                "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/slug_id",
+                "description": "tags.yamlに登録されたid（登録外は検証で拒否）"
+              },
+              "reason": {
+                "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/nonempty_text"
+              }
             }
           }
         }
       ]
     },
-    "uncertainties": { "oneOf": [ { "type": "null" }, { "type": "array", "items": { "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/nonempty_text" } } ] },
-    "provider": { "type": ["string", "null"] },
-    "model": { "type": ["string", "null"] },
-    "prompt_version": { "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/nonempty_text" },
-    "tags_version": { "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/sha256", "description": "処理時のタグ定義のhash" },
+    "uncertainties": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "array",
+          "items": {
+            "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/nonempty_text"
+          }
+        }
+      ]
+    },
+    "provider": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "model": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "prompt_version": {
+      "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/nonempty_text"
+    },
+    "tags_version": {
+      "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/sha256",
+      "description": "処理時のタグ定義のhash"
+    },
     "usage": {
-      "type": "object", "additionalProperties": false,
-      "required": ["input_tokens", "output_tokens", "retries", "estimated_cost_usd"],
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "input_tokens",
+        "output_tokens",
+        "retries",
+        "estimated_cost_usd"
+      ],
       "properties": {
-        "input_tokens": { "type": ["integer", "null"], "minimum": 0 },
-        "output_tokens": { "type": ["integer", "null"], "minimum": 0 },
-        "retries": { "type": "integer", "minimum": 0 },
-        "estimated_cost_usd": { "type": ["number", "null"], "minimum": 0 }
+        "input_tokens": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "output_tokens": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "retries": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "estimated_cost_usd": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        }
       }
     },
-    "processed_at": { "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/timestamp" }
+    "processed_at": {
+      "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/timestamp"
+    },
+    "content_hash": {
+      "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/sha256",
+      "description": "処理した本文のhash（キャッシュキーの一部）"
+    },
+    "input_truncated": {
+      "type": "boolean",
+      "description": "本文が上限を超えたため先頭だけを使った"
+    }
   },
-  "if": { "properties": { "analysis_status": { "const": "success" } } },
+  "if": {
+    "properties": {
+      "analysis_status": {
+        "const": "success"
+      }
+    }
+  },
   "then": {
     "properties": {
-      "error": { "type": "null" },
-      "summary": { "type": "string" },
-      "key_points": { "type": "array" },
-      "targets": { "type": "array" },
-      "dates": { "type": "array" },
-      "ai_tags": { "type": "array" },
-      "uncertainties": { "type": "array" },
-      "provider": { "type": "string" },
-      "model": { "type": "string" }
+      "error": {
+        "type": "null"
+      },
+      "summary": {
+        "type": "string"
+      },
+      "key_points": {
+        "type": "array"
+      },
+      "targets": {
+        "type": "array"
+      },
+      "dates": {
+        "type": "array"
+      },
+      "ai_tags": {
+        "type": "array"
+      },
+      "uncertainties": {
+        "type": "array"
+      },
+      "provider": {
+        "type": "string"
+      },
+      "model": {
+        "type": "string"
+      }
     }
   },
   "else": {
     "properties": {
-      "summary": { "type": "null" },
-      "key_points": { "type": "null" },
-      "targets": { "type": "null" },
-      "dates": { "type": "null" },
-      "ai_tags": { "type": "null" },
-      "uncertainties": { "type": "null" }
+      "summary": {
+        "type": "null"
+      },
+      "key_points": {
+        "type": "null"
+      },
+      "targets": {
+        "type": "null"
+      },
+      "dates": {
+        "type": "null"
+      },
+      "ai_tags": {
+        "type": "null"
+      },
+      "uncertainties": {
+        "type": "null"
+      }
     }
   }
 }
