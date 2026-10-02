@@ -2,7 +2,7 @@
 
 中央官庁・公的機関の公開情報を収集し、短い概要と登録済みタグを付けて、最新一覧とテーマ別Wikiで閲覧するための個人開発の検証版です。
 
-> 現在は **段階0-b**（架空データと、画面用JSONを作る公開用変換）まで進んでいます。画面はまだありません。
+> 現在は **段階1-a**（画面：最新一覧・記事詳細・絞り込み・検索）まで進んでいます。
 > 現在の設定・データはすべて **架空** です。
 
 ## フォルダ構成
@@ -18,9 +18,86 @@
 | `schemas/` | 設定とデータの形式（JSON Schema） |
 | `collector/` | Pythonの処理（スキーマ検証、公開用変換） |
 | `demo/` | 架空のデモデータ（`demo/data/`）と、その情報源・タグ修正（`demo/config/`） |
+| `web/` | 画面（TypeScript＋Vite）。`web/src/` がプログラム、`web/tests/` が画面のテスト |
 | `web/public/data/` | 画面用JSON（公開用変換の出力。画面はこれだけを読む） |
 | `scripts/` | 架空データの作成、コミット前の安全確認 |
 | `tests/` | テスト（`tests/fixtures/` は架空のテスト用データ） |
+
+## PC（Windows）で画面を見る
+
+PCでは Python は不要です。画面用JSON（`web/public/data/`）はリポジトリに入っているので、Git と Node.js だけで画面を開けます。
+以下はすべて **Windows PowerShell** で実行します（スタートメニューで「PowerShell」と入力して開きます）。
+
+### 1. Git と Node.js を準備する（初回のみ）
+
+1. Git を https://git-scm.com/download/win からダウンロードしてインストールします（設定は既定のままで構いません）。
+2. Node.js を https://nodejs.org/ja から **LTS** と書かれた版をダウンロードしてインストールします（設定は既定のままで構いません）。
+3. PowerShell を一度閉じて開き直し、次の3つを実行します。
+
+```powershell
+git --version     # Git の版を表示する。例：git version 2.51.0.windows.1
+node --version    # Node.js の版を表示する。v22.12 以上なら OK（例：v24.11.0）
+npm --version     # npm（Node.js に同梱）の版を表示する。例：11.6.2
+```
+
+「認識されません」と表示された場合はインストールできていないか、PowerShell を開き直していません。
+
+### 2. リポジトリを PC にコピーする（初回のみ）
+
+このリポジトリは private なので、初回は GitHub へのログインを求められます（ブラウザが開いたら GitHub にサインインして許可します）。
+
+```powershell
+cd $HOME\Documents                                         # 「ドキュメント」フォルダへ移動する
+git clone https://github.com/inukaitk/info_test_rs.git      # リポジトリをコピーする（info_test_rs フォルダができる）
+cd info_test_rs\web                                         # 画面のフォルダへ移動する
+npm ci                                                      # 画面に必要な部品を入れる（数十秒〜数分）
+```
+
+`npm ci` の最後に `added 〇〇 packages` と表示されれば成功です（`npm warn` は無視して構いません）。
+
+### 3. 画面を起動する（毎回）
+
+```powershell
+cd $HOME\Documents\info_test_rs\web    # 画面のフォルダへ移動する
+npm run dev                             # 画面を起動する（止めるまで動き続ける）
+```
+
+成功すると次のように表示されます。
+
+```
+  VITE v8.x.x  ready in 300 ms
+
+  ➜  Local:   http://localhost:5173/
+```
+
+ブラウザ（Edge や Chrome）で **http://localhost:5173/** を開きます。
+画面の上部に赤い帯で「**架空データ**」と表示され、「最新一覧」に架空の記事が20件並んでいれば成功です。
+終了するときは PowerShell で `Ctrl` キーを押しながら `C` を押します。
+
+### 4. 最新の内容に更新する（Pull Request を merge した後）
+
+```powershell
+cd $HOME\Documents\info_test_rs    # リポジトリのフォルダへ移動する
+git pull                           # GitHub の最新の内容を取り込む
+cd web
+npm ci                             # 部品に変更があっても対応できるよう入れ直す
+npm run dev                        # 画面を起動する
+```
+
+### 参考：公開時と同じ形で確認する
+
+```powershell
+cd $HOME\Documents\info_test_rs\web
+npm run build      # 公開用のファイルを web\dist に作る。最後に「✓ built in …」と出れば成功
+npm run preview    # 作ったファイルで画面を起動する。http://localhost:4173/ を開く
+```
+
+### 画面の使い方
+
+- **最新一覧**：日付・機関・タイトル・概要・タグを新しい順に表示します。タグ・機関・期間（公開日）で絞り込み、文字検索（空白で区切ると「すべてを含む」）ができます。絞り込んだ状態のURLをそのまま共有できます。
+- 期間で絞り込むと、日付不明の記事は含めず「日付不明の記事 〇件は期間の絞り込みに含めていません」と知らせます。
+- **記事詳細**：タイトルを押すと開きます。出典リンク、日付とその根拠、概要・論点・対象・確認できた日付、タグとその由来、AI処理状態、変更履歴を表示します。
+- タグの見分け方：青い「AI」はAIが付けたタグ、点線で橙色の「人が追加」は人が追加したタグ、取り消し線は人が外したタグです。
 
 ## 設定ファイル（config/）
 
@@ -36,7 +113,7 @@
 ## 必要なツールと確認方法
 
 Python の処理（収集・AI処理・検証・テスト）は、主に Claude Code Web版のクラウド環境で実行します。
-PCで画面を見るだけなら、段階1-a以降で Git と Node.js があれば足ります（手順は段階1-aで追記します）。
+PCで画面を見るだけなら Git と Node.js があれば足ります（下の「PC（Windows）で画面を見る」を参照）。
 
 以下は Windows PowerShell の例です。PowerShell は、スタートメニューで「PowerShell」と入力して開きます。
 
@@ -111,6 +188,16 @@ python -m venv .venv                                # 作業用環境を作る�
 .venv/bin/python scripts/make_demo_data.py          # demo/data と demo/config/tag_overrides.yaml を作り直す
 .venv/bin/python -m collector.validate --demo       # 架空データを検証する
 .venv/bin/python -m collector.export --mode demo    # 画面用JSONを作り直す
+```
+
+## 画面のテスト（クラウド環境・開発用）
+
+```bash
+cd web
+npm ci              # 部品を入れる
+npm test            # 画面のテスト（絞り込み、XSS対策、架空データ表示など）。「Tests  26 passed」なら成功
+npm run typecheck   # 型の確認。何も表示されなければ成功
+npm run build       # 型の確認と公開用ファイルの作成
 ```
 
 ## コミット前の安全確認
