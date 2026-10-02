@@ -1,12 +1,13 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-02T15:56:27+09:00",
+  "generated_at": "2026-10-02T16:03:46+09:00",
   "release_mode": "demo",
   "is_demo": true,
   "site_name": "外部環境情報（検証版）",
   "correction_request_url": null,
   "page_size": 50,
   "latest_days": 7,
+  "stale_after_days": 8,
   "data_as_of": "2026-09-28T08:00:00+09:00",
   "tags": [
     {

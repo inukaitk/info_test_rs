@@ -283,7 +283,8 @@
           "status",
           "kind",
           "period",
-          "totals"
+          "totals",
+          "sources"
         ],
         "properties": {
           "run_id": {
@@ -371,6 +372,63 @@
               "summarize_failed": {
                 "type": "integer",
                 "minimum": 0
+              }
+            }
+          },
+          "sources": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "source_id",
+                "status",
+                "new",
+                "changed",
+                "date_unknown",
+                "fetch_failed",
+                "error",
+                "warnings"
+              ],
+              "properties": {
+                "source_id": {
+                  "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/slug_id"
+                },
+                "status": {
+                  "type": "string"
+                },
+                "new": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "changed": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "date_unknown": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "fetch_failed": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "error": {
+                  "oneOf": [
+                    {
+                      "type": "null"
+                    },
+                    {
+                      "type": "string"
+                    }
+                  ]
+                },
+                "warnings": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
               }
             }
           }

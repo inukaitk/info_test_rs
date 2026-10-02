@@ -16,7 +16,8 @@
     "tags",
     "sources",
     "latest_days",
-    "data_as_of"
+    "data_as_of",
+    "stale_after_days"
   ],
   "properties": {
     "schema_version": {
@@ -111,6 +112,10 @@
         }
       ],
       "description": "最終収集の日時（最新一覧の基準日）"
+    },
+    "stale_after_days": {
+      "type": "integer",
+      "minimum": 1
     }
   }
 }

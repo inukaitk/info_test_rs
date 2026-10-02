@@ -1,0 +1,306 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://info-test-rs.local/schemas/public/reports.schema.json",
+  "title": "reports.json 週次レポート",
+  "description": "画面用JSONのallowlist。ここにない項目は出力できない（additionalProperties: false）",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "weeks"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "weeks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "from",
+          "to",
+          "counts",
+          "new",
+          "changed",
+          "tag_counts",
+          "sources",
+          "markdown"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^\\d{4}-\\d{2}-\\d{2}_\\d{4}-\\d{2}-\\d{2}$"
+          },
+          "from": {
+            "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/date"
+          },
+          "to": {
+            "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/date"
+          },
+          "counts": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "new",
+              "changed",
+              "date_unknown",
+              "unsummarized",
+              "untagged",
+              "runs"
+            ],
+            "properties": {
+              "new": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "changed": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "date_unknown": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "unsummarized": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "untagged": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "runs": {
+                "type": "integer",
+                "minimum": 0
+              }
+            }
+          },
+          "new": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "id",
+                "title",
+                "url",
+                "source_name",
+                "published",
+                "first_seen_at",
+                "version",
+                "tags",
+                "summary_status"
+              ],
+              "properties": {
+                "id": {
+                  "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/article_id"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "url": {
+                  "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/http_url"
+                },
+                "source_name": {
+                  "type": "string"
+                },
+                "published": {
+                  "oneOf": [
+                    {
+                      "type": "null"
+                    },
+                    {
+                      "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/partial_date"
+                    }
+                  ]
+                },
+                "first_seen_at": {
+                  "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/timestamp"
+                },
+                "version": {
+                  "oneOf": [
+                    {
+                      "type": "null"
+                    },
+                    {
+                      "type": "integer",
+                      "minimum": 1
+                    }
+                  ]
+                },
+                "tags": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "summary_status": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "changed": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "id",
+                "title",
+                "url",
+                "source_name",
+                "published",
+                "first_seen_at",
+                "version",
+                "tags",
+                "summary_status"
+              ],
+              "properties": {
+                "id": {
+                  "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/article_id"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "url": {
+                  "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/http_url"
+                },
+                "source_name": {
+                  "type": "string"
+                },
+                "published": {
+                  "oneOf": [
+                    {
+                      "type": "null"
+                    },
+                    {
+                      "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/partial_date"
+                    }
+                  ]
+                },
+                "first_seen_at": {
+                  "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/timestamp"
+                },
+                "version": {
+                  "oneOf": [
+                    {
+                      "type": "null"
+                    },
+                    {
+                      "type": "integer",
+                      "minimum": 1
+                    }
+                  ]
+                },
+                "tags": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "summary_status": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "tag_counts": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "id",
+                "name",
+                "count"
+              ],
+              "properties": {
+                "id": {
+                  "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/slug_id"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "count": {
+                  "type": "integer",
+                  "minimum": 0
+                }
+              }
+            }
+          },
+          "sources": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "id",
+                "name",
+                "runs"
+              ],
+              "properties": {
+                "id": {
+                  "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/slug_id"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "runs": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "run_id",
+                      "started_at",
+                      "status",
+                      "new",
+                      "changed",
+                      "error"
+                    ],
+                    "properties": {
+                      "run_id": {
+                        "type": "string"
+                      },
+                      "started_at": {
+                        "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/timestamp"
+                      },
+                      "status": {
+                        "type": "string"
+                      },
+                      "new": {
+                        "type": "integer",
+                        "minimum": 0
+                      },
+                      "changed": {
+                        "type": "integer",
+                        "minimum": 0
+                      },
+                      "error": {
+                        "oneOf": [
+                          {
+                            "type": "null"
+                          },
+                          {
+                            "type": "string"
+                          }
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "markdown": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

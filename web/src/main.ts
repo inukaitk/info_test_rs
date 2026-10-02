@@ -5,6 +5,9 @@ import type { SiteData } from "./types";
 import { detailView } from "./views/detail";
 import { errorPage, layout, type Section } from "./views/layout";
 import { latestView } from "./views/latest";
+import { reportView } from "./views/report";
+import { statusView } from "./views/status";
+import { wikiIndexView, wikiTagView } from "./views/wiki";
 import { listView } from "./views/list";
 
 const app = document.getElementById("app")!;
@@ -28,6 +31,23 @@ export function render(data: SiteData): void {
     main = listView(data, route.filters, navigate);
     title = `記事を探す - ${title}`;
     section = "search";
+  } else if (route.name === "wiki") {
+    main = wikiIndexView(data);
+    title = `Wiki - ${title}`;
+    section = "wiki";
+  } else if (route.name === "wikiTag") {
+    main = wikiTagView(data, route.tag);
+    const tag = data.meta.tags.find((t) => t.id === route.tag);
+    title = `${tag?.name ?? "Wiki"} - ${title}`;
+    section = "wiki";
+  } else if (route.name === "reports") {
+    main = reportView(data, route.week, navigate);
+    title = `週次レポート - ${title}`;
+    section = "reports";
+  } else if (route.name === "status") {
+    main = statusView(data);
+    title = `取得状況 - ${title}`;
+    section = "status";
   } else if (route.name === "detail") {
     main = detailView(data, route.id);
     const article = data.articles.find((a) => a.id === route.id);
@@ -37,7 +57,7 @@ export function render(data: SiteData): void {
   }
   document.title = data.meta.is_demo ? `【架空データ】${title}` : title;
   app.replaceChildren(layout(data.meta, section, main));
-  if (route.name === "detail") window.scrollTo(0, 0);
+  window.scrollTo(0, 0);
 }
 
 loadSiteData()

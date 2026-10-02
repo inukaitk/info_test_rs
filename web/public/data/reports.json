@@ -1,0 +1,685 @@
+{
+  "schema_version": 1,
+  "weeks": [
+    {
+      "id": "2026-09-22_2026-09-28",
+      "from": "2026-09-22",
+      "to": "2026-09-28",
+      "counts": {
+        "new": 4,
+        "changed": 1,
+        "date_unknown": 0,
+        "unsummarized": 2,
+        "untagged": 2,
+        "runs": 1
+      },
+      "new": [
+        {
+          "id": "a_c362818c3eef068a",
+          "title": "【架空】こども政策に関する一括法案の概要",
+          "url": "https://kodomo.example.org/news/2026/0925-ikkatsu.html",
+          "source_name": "架空こども政策庁（デモ）",
+          "published": "2026-09-25",
+          "first_seen_at": "2026-09-28T08:00:00+09:00",
+          "version": null,
+          "tags": [],
+          "summary_status": "failed_invalid_output"
+        },
+        {
+          "id": "a_c69b265bd15d2ebd",
+          "title": "【架空】母子保健情報のデジタル化に関する工程表を公表しました",
+          "url": "https://kodomo.example.org/news/2026/0924-dx.html",
+          "source_name": "架空こども政策庁（デモ）",
+          "published": "2026-09-24",
+          "first_seen_at": "2026-09-28T08:00:00+09:00",
+          "version": null,
+          "tags": [
+            "自治体DX・標準化",
+            "母子保健"
+          ],
+          "summary_status": "success"
+        },
+        {
+          "id": "a_97b37a4b990ba661",
+          "title": "【架空】こどもの事故予防に関する啓発資料",
+          "url": "https://boshi.example.net/info/20260922.html",
+          "source_name": "架空母子保健研究機構（デモ）",
+          "published": "2026-09",
+          "first_seen_at": "2026-09-28T08:00:00+09:00",
+          "version": null,
+          "tags": [
+            "子育て支援"
+          ],
+          "summary_status": "success"
+        },
+        {
+          "id": "a_7794d96817250d11",
+          "title": "【架空】子育てに関する意識調査の結果",
+          "url": "https://tokei.example.org/release/2026/0926-kosodate-ishiki.html",
+          "source_name": "架空統計調査センター（デモ）",
+          "published": "2026",
+          "first_seen_at": "2026-09-28T08:00:00+09:00",
+          "version": null,
+          "tags": [
+            "調査・統計",
+            "子育て支援"
+          ],
+          "summary_status": "success"
+        }
+      ],
+      "changed": [
+        {
+          "id": "a_62ed6a9c5f53d999",
+          "title": "【架空】低出生体重児の支援に関する手引き（改訂版）",
+          "url": "https://boshi.example.net/info/20260916.html",
+          "source_name": "架空母子保健研究機構（デモ）",
+          "published": "2026-09-16",
+          "first_seen_at": "2026-09-21T08:00:00+09:00",
+          "version": 2,
+          "tags": [],
+          "summary_status": "pending"
+        }
+      ],
+      "tag_counts": [
+        {
+          "id": "childcare-support",
+          "name": "子育て支援",
+          "count": 2
+        },
+        {
+          "id": "maternal-child-health",
+          "name": "母子保健",
+          "count": 1
+        },
+        {
+          "id": "municipal-dx-standardization",
+          "name": "自治体DX・標準化",
+          "count": 1
+        },
+        {
+          "id": "survey-statistics",
+          "name": "調査・統計",
+          "count": 1
+        }
+      ],
+      "sources": [
+        {
+          "id": "demo-kodomo-rss",
+          "name": "架空こども政策庁（デモ）",
+          "runs": [
+            {
+              "run_id": "run_20260927T230000Z",
+              "started_at": "2026-09-28T08:00:00+09:00",
+              "status": "success",
+              "new": 2,
+              "changed": 0,
+              "error": null
+            }
+          ]
+        },
+        {
+          "id": "demo-boshi-html",
+          "name": "架空母子保健研究機構（デモ）",
+          "runs": [
+            {
+              "run_id": "run_20260927T230000Z",
+              "started_at": "2026-09-28T08:00:00+09:00",
+              "status": "success",
+              "new": 1,
+              "changed": 1,
+              "error": null
+            }
+          ]
+        },
+        {
+          "id": "demo-jichitai-html",
+          "name": "架空自治体標準化推進室（デモ）",
+          "runs": [
+            {
+              "run_id": "run_20260927T230000Z",
+              "started_at": "2026-09-28T08:00:00+09:00",
+              "status": "failed",
+              "new": 0,
+              "changed": 0,
+              "error": "一覧ページがタイムアウト（30秒）"
+            }
+          ]
+        },
+        {
+          "id": "demo-tokei-rss",
+          "name": "架空統計調査センター（デモ）",
+          "runs": [
+            {
+              "run_id": "run_20260927T230000Z",
+              "started_at": "2026-09-28T08:00:00+09:00",
+              "status": "success",
+              "new": 1,
+              "changed": 0,
+              "error": null
+            }
+          ]
+        }
+      ],
+      "markdown": "# 週次レポート 2026年9月22日〜2026年9月28日\n\n> **架空データ**：このレポートの機関名・記事・URLはすべて架空です。実在の情報ではありません。\n\n- サイト：外部環境情報（検証版）\n- 対象：取得日（見つけた日）が期間内の記事と、期間内に本文が変わった記事\n- データ作成：2026年10月2日 16:03\n\n## 概要\n\n| 項目 | 件数 |\n|---|---:|\n| 新規 | 4 |\n| 変更 | 1 |\n| うち日付不明 | 0 |\n| うち未要約 | 2 |\n| 期間内の収集実行 | 1 |\n\n## 新規（4件）\n\n- 2026年9月25日　架空こども政策庁（デモ）　[【架空】こども政策に関する一括法案の概要](https://kodomo.example.org/news/2026/0925-ikkatsu.html)　タグ：AI未処理\n- 2026年9月24日　架空こども政策庁（デモ）　[【架空】母子保健情報のデジタル化に関する工程表を公表しました](https://kodomo.example.org/news/2026/0924-dx.html)　タグ：自治体DX・標準化、母子保健\n- 2026年9月（日不明）　架空母子保健研究機構（デモ）　[【架空】こどもの事故予防に関する啓発資料](https://boshi.example.net/info/20260922.html)　タグ：子育て支援\n- 2026年（月日不明）　架空統計調査センター（デモ）　[【架空】子育てに関する意識調査の結果](https://tokei.example.org/release/2026/0926-kosodate-ishiki.html)　タグ：調査・統計、子育て支援\n\n## 変更（1件）\n\n- 2026年9月16日　架空母子保健研究機構（デモ）　[【架空】低出生体重児の支援に関する手引き（改訂版）](https://boshi.example.net/info/20260916.html)（第2版）　タグ：AI未処理\n\n## タグ別件数（新規＋変更）\n\n| タグ | 件数 |\n|---|---:|\n| 子育て支援 | 2 |\n| 母子保健 | 1 |\n| 自治体DX・標準化 | 1 |\n| 調査・統計 | 1 |\n\nタグのない記事：2件（AI未処理を含む）\n\n## 情報源別の取得状況\n\n| 情報源 | 実行日時 | 結果 | 新規 | 変更 | 失敗理由 |\n|---|---|---|---:|---:|---|\n| 架空こども政策庁（デモ） | 2026年9月28日 08:00 | 成功 | 2 | 0 |  |\n| 架空母子保健研究機構（デモ） | 2026年9月28日 08:00 | 成功 | 1 | 1 |  |\n| 架空自治体標準化推進室（デモ） | 2026年9月28日 08:00 | 失敗 | 0 | 0 | 一覧ページがタイムアウト（30秒） |\n| 架空統計調査センター（デモ） | 2026年9月28日 08:00 | 成功 | 1 | 0 |  |\n\n---\n公的機関の公開情報をもとに独自に作成した概要です。AIによる要約は誤りを含む可能性があるため、内容は必ず出典で確認してください。\n"
+    },
+    {
+      "id": "2026-09-15_2026-09-21",
+      "from": "2026-09-15",
+      "to": "2026-09-21",
+      "counts": {
+        "new": 4,
+        "changed": 1,
+        "date_unknown": 0,
+        "unsummarized": 3,
+        "untagged": 3,
+        "runs": 1
+      },
+      "new": [
+        {
+          "id": "a_7bde7ee0e438b9a7",
+          "title": "【架空】乳幼児健診の実施状況（年報）",
+          "url": "https://tokei.example.org/release/2026/0919-kenshin-jisshi.html",
+          "source_name": "架空統計調査センター（デモ）",
+          "published": "2026-09-19",
+          "first_seen_at": "2026-09-21T08:00:00+09:00",
+          "version": null,
+          "tags": [],
+          "summary_status": "failed_api_error"
+        },
+        {
+          "id": "a_22ad7f5d9b9f550a",
+          "title": "【架空】産後ケア事業に関するQ&Aを更新しました",
+          "url": "https://kodomo.example.org/news/2026/0917-qa.html",
+          "source_name": "架空こども政策庁（デモ）",
+          "published": "2026-09-17",
+          "first_seen_at": "2026-09-21T08:00:00+09:00",
+          "version": null,
+          "tags": [
+            "母子保健",
+            "通知・事務連絡"
+          ],
+          "summary_status": "success"
+        },
+        {
+          "id": "a_62ed6a9c5f53d999",
+          "title": "【架空】低出生体重児の支援に関する手引き（改訂版）",
+          "url": "https://boshi.example.net/info/20260916.html",
+          "source_name": "架空母子保健研究機構（デモ）",
+          "published": "2026-09-16",
+          "first_seen_at": "2026-09-21T08:00:00+09:00",
+          "version": null,
+          "tags": [],
+          "summary_status": "pending"
+        },
+        {
+          "id": "a_3e57408d91e36c75",
+          "title": "【架空】子育て世帯応援手当の支給要件を見直します",
+          "url": "https://kodomo.example.org/news/2026/0915-teate.html",
+          "source_name": "架空こども政策庁（デモ）",
+          "published": "2026-09-15",
+          "first_seen_at": "2026-09-21T08:00:00+09:00",
+          "version": null,
+          "tags": [],
+          "summary_status": "skipped_no_api_key"
+        }
+      ],
+      "changed": [
+        {
+          "id": "a_3715ddd7b3d7eab6",
+          "title": "【架空】乳幼児健康診査の実施要領を改正しました",
+          "url": "https://kodomo.example.org/news/2026/0901-kenshin.html",
+          "source_name": "架空こども政策庁（デモ）",
+          "published": "2026-09-01",
+          "first_seen_at": "2026-09-07T08:00:00+09:00",
+          "version": 2,
+          "tags": [
+            "母子保健",
+            "制度改正"
+          ],
+          "summary_status": "success"
+        }
+      ],
+      "tag_counts": [
+        {
+          "id": "maternal-child-health",
+          "name": "母子保健",
+          "count": 2
+        },
+        {
+          "id": "system-revision",
+          "name": "制度改正",
+          "count": 1
+        },
+        {
+          "id": "notice-admin-communication",
+          "name": "通知・事務連絡",
+          "count": 1
+        }
+      ],
+      "sources": [
+        {
+          "id": "demo-kodomo-rss",
+          "name": "架空こども政策庁（デモ）",
+          "runs": [
+            {
+              "run_id": "run_20260920T230000Z",
+              "started_at": "2026-09-21T08:00:00+09:00",
+              "status": "success",
+              "new": 2,
+              "changed": 1,
+              "error": null
+            }
+          ]
+        },
+        {
+          "id": "demo-boshi-html",
+          "name": "架空母子保健研究機構（デモ）",
+          "runs": [
+            {
+              "run_id": "run_20260920T230000Z",
+              "started_at": "2026-09-21T08:00:00+09:00",
+              "status": "success",
+              "new": 1,
+              "changed": 0,
+              "error": null
+            }
+          ]
+        },
+        {
+          "id": "demo-jichitai-html",
+          "name": "架空自治体標準化推進室（デモ）",
+          "runs": [
+            {
+              "run_id": "run_20260920T230000Z",
+              "started_at": "2026-09-21T08:00:00+09:00",
+              "status": "failed",
+              "new": 0,
+              "changed": 0,
+              "error": "一覧ページがタイムアウト（30秒）"
+            }
+          ]
+        },
+        {
+          "id": "demo-tokei-rss",
+          "name": "架空統計調査センター（デモ）",
+          "runs": [
+            {
+              "run_id": "run_20260920T230000Z",
+              "started_at": "2026-09-21T08:00:00+09:00",
+              "status": "success",
+              "new": 1,
+              "changed": 0,
+              "error": null
+            }
+          ]
+        }
+      ],
+      "markdown": "# 週次レポート 2026年9月15日〜2026年9月21日\n\n> **架空データ**：このレポートの機関名・記事・URLはすべて架空です。実在の情報ではありません。\n\n- サイト：外部環境情報（検証版）\n- 対象：取得日（見つけた日）が期間内の記事と、期間内に本文が変わった記事\n- データ作成：2026年10月2日 16:03\n\n## 概要\n\n| 項目 | 件数 |\n|---|---:|\n| 新規 | 4 |\n| 変更 | 1 |\n| うち日付不明 | 0 |\n| うち未要約 | 3 |\n| 期間内の収集実行 | 1 |\n\n## 新規（4件）\n\n- 2026年9月19日　架空統計調査センター（デモ）　[【架空】乳幼児健診の実施状況（年報）](https://tokei.example.org/release/2026/0919-kenshin-jisshi.html)　タグ：AI未処理\n- 2026年9月17日　架空こども政策庁（デモ）　[【架空】産後ケア事業に関するQ&Aを更新しました](https://kodomo.example.org/news/2026/0917-qa.html)　タグ：母子保健、通知・事務連絡\n- 2026年9月16日　架空母子保健研究機構（デモ）　[【架空】低出生体重児の支援に関する手引き（改訂版）](https://boshi.example.net/info/20260916.html)　タグ：AI未処理\n- 2026年9月15日　架空こども政策庁（デモ）　[【架空】子育て世帯応援手当の支給要件を見直します](https://kodomo.example.org/news/2026/0915-teate.html)　タグ：AI未処理\n\n## 変更（1件）\n\n- 2026年9月1日　架空こども政策庁（デモ）　[【架空】乳幼児健康診査の実施要領を改正しました](https://kodomo.example.org/news/2026/0901-kenshin.html)（第2版）　タグ：母子保健、制度改正\n\n## タグ別件数（新規＋変更）\n\n| タグ | 件数 |\n|---|---:|\n| 母子保健 | 2 |\n| 制度改正 | 1 |\n| 通知・事務連絡 | 1 |\n\nタグのない記事：3件（AI未処理を含む）\n\n## 情報源別の取得状況\n\n| 情報源 | 実行日時 | 結果 | 新規 | 変更 | 失敗理由 |\n|---|---|---|---:|---:|---|\n| 架空こども政策庁（デモ） | 2026年9月21日 08:00 | 成功 | 2 | 1 |  |\n| 架空母子保健研究機構（デモ） | 2026年9月21日 08:00 | 成功 | 1 | 0 |  |\n| 架空自治体標準化推進室（デモ） | 2026年9月21日 08:00 | 失敗 | 0 | 0 | 一覧ページがタイムアウト（30秒） |\n| 架空統計調査センター（デモ） | 2026年9月21日 08:00 | 成功 | 1 | 0 |  |\n\n---\n公的機関の公開情報をもとに独自に作成した概要です。AIによる要約は誤りを含む可能性があるため、内容は必ず出典で確認してください。\n"
+    },
+    {
+      "id": "2026-09-08_2026-09-14",
+      "from": "2026-09-08",
+      "to": "2026-09-14",
+      "counts": {
+        "new": 7,
+        "changed": 0,
+        "date_unknown": 2,
+        "unsummarized": 3,
+        "untagged": 3,
+        "runs": 1
+      },
+      "new": [
+        {
+          "id": "a_1ca37bd05bc970e9",
+          "title": "【架空】保育所等の利用状況調査の結果",
+          "url": "https://tokei.example.org/release/2026/0912-hoiku-chosa.html",
+          "source_name": "架空統計調査センター（デモ）",
+          "published": "2026-09-12",
+          "first_seen_at": "2026-09-14T08:00:00+09:00",
+          "version": null,
+          "tags": [
+            "調査・統計",
+            "子育て支援"
+          ],
+          "summary_status": "success"
+        },
+        {
+          "id": "a_d7f143bc83e1a0e5",
+          "title": "【架空】標準化に関するよくある質問（更新）",
+          "url": "https://hyojunka.example.com/topics/2026/0912-faq.html",
+          "source_name": "架空自治体標準化推進室（デモ）",
+          "published": "2026-09-12",
+          "first_seen_at": "2026-09-14T08:00:00+09:00",
+          "version": null,
+          "tags": [],
+          "summary_status": "not_processed"
+        },
+        {
+          "id": "a_953434e374c368fc",
+          "title": "【架空】標準化移行に関する説明会の資料",
+          "url": "https://hyojunka.example.com/topics/2026/0911.html",
+          "source_name": "架空自治体標準化推進室（デモ）",
+          "published": "2026-09-11",
+          "first_seen_at": "2026-09-14T08:00:00+09:00",
+          "version": null,
+          "tags": [],
+          "summary_status": "skipped_no_content"
+        },
+        {
+          "id": "a_c0a0d1f0349b4cc9",
+          "title": "【架空】第5回こども健やか検討会の資料を掲載しました",
+          "url": "https://kodomo.example.org/news/2026/0910-shingikai.html",
+          "source_name": "架空こども政策庁（デモ）",
+          "published": "2026-09-10",
+          "first_seen_at": "2026-09-14T08:00:00+09:00",
+          "version": null,
+          "tags": [
+            "審議会・検討会",
+            "母子保健"
+          ],
+          "summary_status": "success"
+        },
+        {
+          "id": "a_c61122ed18b586e6",
+          "title": "【架空】妊婦健康診査の費用助成に関する事務連絡",
+          "url": "https://kodomo.example.org/news/2026/0908-jimurenraku.html",
+          "source_name": "架空こども政策庁（デモ）",
+          "published": "2026-09-08",
+          "first_seen_at": "2026-09-14T08:00:00+09:00",
+          "version": null,
+          "tags": [
+            "通知・事務連絡",
+            "母子保健"
+          ],
+          "summary_status": "success"
+        },
+        {
+          "id": "a_1e732b661e5bfaad",
+          "title": "【架空】研修会「妊産婦のメンタルヘルス支援」開催のお知らせ",
+          "url": "https://boshi.example.net/info/20260911.html",
+          "source_name": "架空母子保健研究機構（デモ）",
+          "published": null,
+          "first_seen_at": "2026-09-14T08:00:00+09:00",
+          "version": null,
+          "tags": [
+            "母子保健"
+          ],
+          "summary_status": "success"
+        },
+        {
+          "id": "a_8e2a26b4d84f3a56",
+          "title": "【架空】乳幼児の発育に関する調査報告書（PDF）",
+          "url": "https://files.boshi.example.net/report-2026.pdf",
+          "source_name": "架空母子保健研究機構（デモ）",
+          "published": null,
+          "first_seen_at": "2026-09-14T08:00:00+09:00",
+          "version": null,
+          "tags": [],
+          "summary_status": "skipped_no_content"
+        }
+      ],
+      "changed": [],
+      "tag_counts": [
+        {
+          "id": "maternal-child-health",
+          "name": "母子保健",
+          "count": 3
+        },
+        {
+          "id": "childcare-support",
+          "name": "子育て支援",
+          "count": 1
+        },
+        {
+          "id": "notice-admin-communication",
+          "name": "通知・事務連絡",
+          "count": 1
+        },
+        {
+          "id": "survey-statistics",
+          "name": "調査・統計",
+          "count": 1
+        },
+        {
+          "id": "council-committee",
+          "name": "審議会・検討会",
+          "count": 1
+        }
+      ],
+      "sources": [
+        {
+          "id": "demo-kodomo-rss",
+          "name": "架空こども政策庁（デモ）",
+          "runs": [
+            {
+              "run_id": "run_20260913T230000Z",
+              "started_at": "2026-09-14T08:00:00+09:00",
+              "status": "success",
+              "new": 2,
+              "changed": 0,
+              "error": null
+            }
+          ]
+        },
+        {
+          "id": "demo-boshi-html",
+          "name": "架空母子保健研究機構（デモ）",
+          "runs": [
+            {
+              "run_id": "run_20260913T230000Z",
+              "started_at": "2026-09-14T08:00:00+09:00",
+              "status": "success",
+              "new": 2,
+              "changed": 0,
+              "error": null
+            }
+          ]
+        },
+        {
+          "id": "demo-jichitai-html",
+          "name": "架空自治体標準化推進室（デモ）",
+          "runs": [
+            {
+              "run_id": "run_20260913T230000Z",
+              "started_at": "2026-09-14T08:00:00+09:00",
+              "status": "success",
+              "new": 2,
+              "changed": 0,
+              "error": null
+            }
+          ]
+        },
+        {
+          "id": "demo-tokei-rss",
+          "name": "架空統計調査センター（デモ）",
+          "runs": [
+            {
+              "run_id": "run_20260913T230000Z",
+              "started_at": "2026-09-14T08:00:00+09:00",
+              "status": "success",
+              "new": 1,
+              "changed": 0,
+              "error": null
+            }
+          ]
+        }
+      ],
+      "markdown": "# 週次レポート 2026年9月8日〜2026年9月14日\n\n> **架空データ**：このレポートの機関名・記事・URLはすべて架空です。実在の情報ではありません。\n\n- サイト：外部環境情報（検証版）\n- 対象：取得日（見つけた日）が期間内の記事と、期間内に本文が変わった記事\n- データ作成：2026年10月2日 16:03\n\n## 概要\n\n| 項目 | 件数 |\n|---|---:|\n| 新規 | 7 |\n| 変更 | 0 |\n| うち日付不明 | 2 |\n| うち未要約 | 3 |\n| 期間内の収集実行 | 1 |\n\n## 新規（7件）\n\n- 2026年9月12日　架空統計調査センター（デモ）　[【架空】保育所等の利用状況調査の結果](https://tokei.example.org/release/2026/0912-hoiku-chosa.html)　タグ：調査・統計、子育て支援\n- 2026年9月12日　架空自治体標準化推進室（デモ）　[【架空】標準化に関するよくある質問（更新）](https://hyojunka.example.com/topics/2026/0912-faq.html)　タグ：AI未処理\n- 2026年9月11日　架空自治体標準化推進室（デモ）　[【架空】標準化移行に関する説明会の資料](https://hyojunka.example.com/topics/2026/0911.html)　タグ：AI未処理\n- 2026年9月10日　架空こども政策庁（デモ）　[【架空】第5回こども健やか検討会の資料を掲載しました](https://kodomo.example.org/news/2026/0910-shingikai.html)　タグ：審議会・検討会、母子保健\n- 2026年9月8日　架空こども政策庁（デモ）　[【架空】妊婦健康診査の費用助成に関する事務連絡](https://kodomo.example.org/news/2026/0908-jimurenraku.html)　タグ：通知・事務連絡、母子保健\n- 日付不明　架空母子保健研究機構（デモ）　[【架空】研修会「妊産婦のメンタルヘルス支援」開催のお知らせ](https://boshi.example.net/info/20260911.html)　タグ：母子保健\n- 日付不明　架空母子保健研究機構（デモ）　[【架空】乳幼児の発育に関する調査報告書（PDF）](https://files.boshi.example.net/report-2026.pdf)　タグ：AI未処理\n\n## 変更（0件）\n\nなし\n\n## タグ別件数（新規＋変更）\n\n| タグ | 件数 |\n|---|---:|\n| 母子保健 | 3 |\n| 子育て支援 | 1 |\n| 通知・事務連絡 | 1 |\n| 調査・統計 | 1 |\n| 審議会・検討会 | 1 |\n\nタグのない記事：3件（AI未処理を含む）\n\n## 情報源別の取得状況\n\n| 情報源 | 実行日時 | 結果 | 新規 | 変更 | 失敗理由 |\n|---|---|---|---:|---:|---|\n| 架空こども政策庁（デモ） | 2026年9月14日 08:00 | 成功 | 2 | 0 |  |\n| 架空母子保健研究機構（デモ） | 2026年9月14日 08:00 | 成功 | 2 | 0 |  |\n| 架空自治体標準化推進室（デモ） | 2026年9月14日 08:00 | 成功 | 2 | 0 |  |\n| 架空統計調査センター（デモ） | 2026年9月14日 08:00 | 成功 | 1 | 0 |  |\n\n---\n公的機関の公開情報をもとに独自に作成した概要です。AIによる要約は誤りを含む可能性があるため、内容は必ず出典で確認してください。\n"
+    },
+    {
+      "id": "2026-09-01_2026-09-07",
+      "from": "2026-09-01",
+      "to": "2026-09-07",
+      "counts": {
+        "new": 5,
+        "changed": 0,
+        "date_unknown": 0,
+        "unsummarized": 0,
+        "untagged": 0,
+        "runs": 1
+      },
+      "new": [
+        {
+          "id": "a_c0886ff10099b539",
+          "title": "【架空】令和7年 出生に関する統計（速報）",
+          "url": "https://tokei.example.org/release/2026/0905-shussho.html",
+          "source_name": "架空統計調査センター（デモ）",
+          "published": "2026-09-05",
+          "first_seen_at": "2026-09-07T08:00:00+09:00",
+          "version": null,
+          "tags": [
+            "調査・統計"
+          ],
+          "summary_status": "success"
+        },
+        {
+          "id": "a_b66eafad7f7eb14c",
+          "title": "【架空】母子保健システムの標準仕様書（第2版）を公表",
+          "url": "https://hyojunka.example.com/topics/2026/0904.html",
+          "source_name": "架空自治体標準化推進室（デモ）",
+          "published": "2026-09-04",
+          "first_seen_at": "2026-09-07T08:00:00+09:00",
+          "version": null,
+          "tags": [
+            "自治体DX・標準化",
+            "母子保健"
+          ],
+          "summary_status": "success"
+        },
+        {
+          "id": "a_bb73575076e7843e",
+          "title": "【架空】保育環境改善交付金の公募を開始します",
+          "url": "https://kodomo.example.org/news/2026/0903-hoiku-kofukin.html",
+          "source_name": "架空こども政策庁（デモ）",
+          "published": "2026-09-03",
+          "first_seen_at": "2026-09-07T08:00:00+09:00",
+          "version": null,
+          "tags": [
+            "補助金・交付金",
+            "子育て支援"
+          ],
+          "summary_status": "success"
+        },
+        {
+          "id": "a_6b7e84ea250ff79c",
+          "title": "【架空】母子健康手帳の様式改定に関する研究報告",
+          "url": "https://boshi.example.net/info/20260902.html",
+          "source_name": "架空母子保健研究機構（デモ）",
+          "published": "2026-09-02",
+          "first_seen_at": "2026-09-07T08:00:00+09:00",
+          "version": null,
+          "tags": [
+            "母子保健"
+          ],
+          "summary_status": "success"
+        },
+        {
+          "id": "a_3715ddd7b3d7eab6",
+          "title": "【架空】乳幼児健康診査の実施要領を改正しました",
+          "url": "https://kodomo.example.org/news/2026/0901-kenshin.html",
+          "source_name": "架空こども政策庁（デモ）",
+          "published": "2026-09-01",
+          "first_seen_at": "2026-09-07T08:00:00+09:00",
+          "version": null,
+          "tags": [
+            "母子保健",
+            "制度改正"
+          ],
+          "summary_status": "success"
+        }
+      ],
+      "changed": [],
+      "tag_counts": [
+        {
+          "id": "maternal-child-health",
+          "name": "母子保健",
+          "count": 3
+        },
+        {
+          "id": "childcare-support",
+          "name": "子育て支援",
+          "count": 1
+        },
+        {
+          "id": "system-revision",
+          "name": "制度改正",
+          "count": 1
+        },
+        {
+          "id": "subsidy-grant",
+          "name": "補助金・交付金",
+          "count": 1
+        },
+        {
+          "id": "municipal-dx-standardization",
+          "name": "自治体DX・標準化",
+          "count": 1
+        },
+        {
+          "id": "survey-statistics",
+          "name": "調査・統計",
+          "count": 1
+        }
+      ],
+      "sources": [
+        {
+          "id": "demo-kodomo-rss",
+          "name": "架空こども政策庁（デモ）",
+          "runs": [
+            {
+              "run_id": "run_20260906T230000Z",
+              "started_at": "2026-09-07T08:00:00+09:00",
+              "status": "success",
+              "new": 2,
+              "changed": 0,
+              "error": null
+            }
+          ]
+        },
+        {
+          "id": "demo-boshi-html",
+          "name": "架空母子保健研究機構（デモ）",
+          "runs": [
+            {
+              "run_id": "run_20260906T230000Z",
+              "started_at": "2026-09-07T08:00:00+09:00",
+              "status": "success",
+              "new": 1,
+              "changed": 0,
+              "error": null
+            }
+          ]
+        },
+        {
+          "id": "demo-jichitai-html",
+          "name": "架空自治体標準化推進室（デモ）",
+          "runs": [
+            {
+              "run_id": "run_20260906T230000Z",
+              "started_at": "2026-09-07T08:00:00+09:00",
+              "status": "success",
+              "new": 1,
+              "changed": 0,
+              "error": null
+            }
+          ]
+        },
+        {
+          "id": "demo-tokei-rss",
+          "name": "架空統計調査センター（デモ）",
+          "runs": [
+            {
+              "run_id": "run_20260906T230000Z",
+              "started_at": "2026-09-07T08:00:00+09:00",
+              "status": "success",
+              "new": 1,
+              "changed": 0,
+              "error": null
+            }
+          ]
+        }
+      ],
+      "markdown": "# 週次レポート 2026年9月1日〜2026年9月7日\n\n> **架空データ**：このレポートの機関名・記事・URLはすべて架空です。実在の情報ではありません。\n\n- サイト：外部環境情報（検証版）\n- 対象：取得日（見つけた日）が期間内の記事と、期間内に本文が変わった記事\n- データ作成：2026年10月2日 16:03\n\n## 概要\n\n| 項目 | 件数 |\n|---|---:|\n| 新規 | 5 |\n| 変更 | 0 |\n| うち日付不明 | 0 |\n| うち未要約 | 0 |\n| 期間内の収集実行 | 1 |\n\n## 新規（5件）\n\n- 2026年9月5日　架空統計調査センター（デモ）　[【架空】令和7年 出生に関する統計（速報）](https://tokei.example.org/release/2026/0905-shussho.html)　タグ：調査・統計\n- 2026年9月4日　架空自治体標準化推進室（デモ）　[【架空】母子保健システムの標準仕様書（第2版）を公表](https://hyojunka.example.com/topics/2026/0904.html)　タグ：自治体DX・標準化、母子保健\n- 2026年9月3日　架空こども政策庁（デモ）　[【架空】保育環境改善交付金の公募を開始します](https://kodomo.example.org/news/2026/0903-hoiku-kofukin.html)　タグ：補助金・交付金、子育て支援\n- 2026年9月2日　架空母子保健研究機構（デモ）　[【架空】母子健康手帳の様式改定に関する研究報告](https://boshi.example.net/info/20260902.html)　タグ：母子保健\n- 2026年9月1日　架空こども政策庁（デモ）　[【架空】乳幼児健康診査の実施要領を改正しました](https://kodomo.example.org/news/2026/0901-kenshin.html)　タグ：母子保健、制度改正\n\n## 変更（0件）\n\nなし\n\n## タグ別件数（新規＋変更）\n\n| タグ | 件数 |\n|---|---:|\n| 母子保健 | 3 |\n| 子育て支援 | 1 |\n| 制度改正 | 1 |\n| 補助金・交付金 | 1 |\n| 自治体DX・標準化 | 1 |\n| 調査・統計 | 1 |\n\n## 情報源別の取得状況\n\n| 情報源 | 実行日時 | 結果 | 新規 | 変更 | 失敗理由 |\n|---|---|---|---:|---:|---|\n| 架空こども政策庁（デモ） | 2026年9月7日 08:00 | 成功 | 2 | 0 |  |\n| 架空母子保健研究機構（デモ） | 2026年9月7日 08:00 | 成功 | 1 | 0 |  |\n| 架空自治体標準化推進室（デモ） | 2026年9月7日 08:00 | 成功 | 1 | 0 |  |\n| 架空統計調査センター（デモ） | 2026年9月7日 08:00 | 成功 | 1 | 0 |  |\n\n---\n公的機関の公開情報をもとに独自に作成した概要です。AIによる要約は誤りを含む可能性があるため、内容は必ず出典で確認してください。\n"
+    }
+  ]
+}

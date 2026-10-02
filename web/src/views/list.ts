@@ -1,5 +1,6 @@
 // 記事を探す：全期間の記事を、タグ・機関・期間で絞り込み、文字検索する。
 import { h } from "../dom";
+import { articlesToCsv, articlesToJson, downloadText } from "../download";
 import { applyFilters, countDateUnknownExcluded, type Filters, filtersToQuery } from "../filters";
 import { formatDate, SUMMARY_STATUS_LABEL } from "../format";
 import type { Article, SiteData } from "../types";
@@ -11,11 +12,22 @@ export function listView(data: SiteData, filters: Filters, navigate: (hash: stri
   const limit = data.meta.page_size;
 
   const form = filterForm(data, filters, navigate);
+  const csvButton = h("button", { type: "button", class: "secondary" }, "CSVで保存");
+  const jsonButton = h("button", { type: "button", class: "secondary" }, "JSONで保存");
+  const stamp = (data.meta.data_as_of ?? data.meta.generated_at).slice(0, 10);
+  const prefix = `${data.meta.is_demo ? "demo_" : ""}articles_${stamp}`;
+  csvButton.addEventListener("click", () => downloadText(`${prefix}.csv`, articlesToCsv(results), "text/csv"));
+  jsonButton.addEventListener("click", () => downloadText(`${prefix}.json`, articlesToJson(results, data.meta), "application/json"));
   const summaryLine = h(
-    "p",
-    { class: "result-count", "aria-live": "polite" },
-    `${data.articles.length}件中 ${results.length}件`,
-    results.length > limit ? `（新しい順に${limit}件を表示）` : "",
+    "div",
+    { class: "result-bar" },
+    h(
+      "p",
+      { class: "result-count", "aria-live": "polite" },
+      `${data.articles.length}件中 ${results.length}件`,
+      results.length > limit ? `（新しい順に${limit}件を表示。保存はすべて）` : "",
+    ),
+    h("span", { class: "export" }, "絞り込み結果を ", csvButton, jsonButton),
   );
   const notes = h("div", {});
   if (excludedUnknown > 0) {

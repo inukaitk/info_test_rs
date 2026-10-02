@@ -197,7 +197,7 @@ def test_site_schema_rejects_invalid(config_dir, mutation):
 def test_site_accepts_https_correction_url():
     assert schema_errors(
         {"site_name": "x", "correction_request_url": "https://forms.example.com/r/abc",
-         "release_mode": "real", "page_size": 50, "latest_days": 7},
+         "release_mode": "real", "page_size": 50, "latest_days": 7, "stale_after_days": 8},
         "config/site.schema.json",
     ) == []
 
