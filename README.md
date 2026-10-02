@@ -20,15 +20,39 @@
 | `demo/` | 架空のデモデータ（`demo/data/`）と、その情報源・タグ修正（`demo/config/`） |
 | `web/` | 画面（TypeScript＋Vite）。`web/src/` がプログラム、`web/tests/` が画面のテスト |
 | `web/public/data/` | 画面用JSON（公開用変換の出力。画面はこれだけを読む） |
+| `viewer/info_viewer.html` | 画面とデータを1つにまとめたファイル（ダブルクリックで開ける） |
 | `scripts/` | 架空データの作成、コミット前の安全確認 |
 | `tests/` | テスト（`tests/fixtures/` は架空のテスト用データ） |
 
 ## PC（Windows）で画面を見る
 
+見る方法は2つあります。**ソフトのインストールが許可されていないPCでは「方法A」を使ってください。**
+
+| | 方法A：HTMLファイルを開く | 方法B：Node.js で起動する |
+|---|---|---|
+| 必要なもの | ブラウザ（Edge・Chrome）だけ | Git と Node.js のインストール |
+| 操作 | ファイルをダウンロードしてダブルクリック | PowerShell でコマンドを実行 |
+| 向いている用途 | 部署レビュー、社用PCでの確認 | 開発中の確認 |
+
+### 方法A：HTMLファイルを開く（インストール不要）
+
+画面とデータを1つにまとめたファイル `viewer/info_viewer.html` を開きます。インターネットへの通信は行わず、ファイルの中だけで動きます。
+
+1. ブラウザで https://github.com/inukaitk/info_test_rs/blob/main/viewer/info_viewer.html を開きます（GitHubへのサインインが必要です）。
+2. ファイル表示の右上にある **下向き矢印のボタン（Download raw file）** を押します。「ダウンロード」フォルダに `info_viewer.html` が保存されます。
+3. エクスプローラーで「ダウンロード」フォルダを開き、`info_viewer.html` を **ダブルクリック** します。ブラウザで画面が開きます。
+4. 画面の上部に赤い帯で「**架空データ**」と表示され、「最新一覧」に記事が並んでいれば成功です。
+
+画面の内容が更新されたら（Pull Request を merge した後）、同じ手順でダウンロードし直してください。
+ファイルはメールやTeamsで共有して、相手のPCでもそのまま開けます（現在の内容はすべて架空データです）。
+
+### 方法B：Node.js で起動する
+
 PCでは Python は不要です。画面用JSON（`web/public/data/`）はリポジトリに入っているので、Git と Node.js だけで画面を開けます。
 以下はすべて **Windows PowerShell** で実行します（スタートメニューで「PowerShell」と入力して開きます）。
+社用PCでは、インストールの前に社内の規定を確認してください。
 
-### 1. Git と Node.js を準備する（初回のみ）
+#### 1. Git と Node.js を準備する（初回のみ）
 
 1. Git を https://git-scm.com/download/win からダウンロードしてインストールします（設定は既定のままで構いません）。
 2. Node.js を https://nodejs.org/ja から **LTS** と書かれた版をダウンロードしてインストールします（設定は既定のままで構いません）。
@@ -42,7 +66,7 @@ npm --version     # npm（Node.js に同梱）の版を表示する。例：11.6
 
 「認識されません」と表示された場合はインストールできていないか、PowerShell を開き直していません。
 
-### 2. リポジトリを PC にコピーする（初回のみ）
+#### 2. リポジトリを PC にコピーする（初回のみ）
 
 このリポジトリは private なので、初回は GitHub へのログインを求められます（ブラウザが開いたら GitHub にサインインして許可します）。
 
@@ -55,7 +79,7 @@ npm ci                                                      # 画面に必要な
 
 `npm ci` の最後に `added 〇〇 packages` と表示されれば成功です（`npm warn` は無視して構いません）。
 
-### 3. 画面を起動する（毎回）
+#### 3. 画面を起動する（毎回）
 
 ```powershell
 cd $HOME\Documents\info_test_rs\web    # 画面のフォルダへ移動する
@@ -74,7 +98,7 @@ npm run dev                             # 画面を起動する（止めるま�
 画面の上部に赤い帯で「**架空データ**」と表示され、「最新一覧」に架空の記事が20件並んでいれば成功です。
 終了するときは PowerShell で `Ctrl` キーを押しながら `C` を押します。
 
-### 4. 最新の内容に更新する（Pull Request を merge した後）
+#### 4. 最新の内容に更新する（Pull Request を merge した後）
 
 ```powershell
 cd $HOME\Documents\info_test_rs    # リポジトリのフォルダへ移動する
@@ -84,7 +108,7 @@ npm ci                             # 部品に変更があっても対応でき�
 npm run dev                        # 画面を起動する
 ```
 
-### 参考：公開時と同じ形で確認する
+#### 参考：公開時と同じ形で確認する
 
 ```powershell
 cd $HOME\Documents\info_test_rs\web
@@ -156,7 +180,7 @@ python -m venv .venv                                # 作業用環境を作る�
 
 ### 成功時の表示
 
-- テスト：最後に `167 passed` のように表示され、`failed` がなければ成功です（件数は今後増えます）。
+- テスト：最後に `172 passed` のように表示され、`failed` がなければ成功です（件数は今後増えます）。
 - 検証：`OK: 設定とデータはスキーマ検証を通過しました` と表示されれば成功です。
   問題があると `NG: 1 件の問題があります` に続けて、ファイル名と問題の箇所が表示されます。
 
@@ -195,10 +219,13 @@ python -m venv .venv                                # 作業用環境を作る�
 ```bash
 cd web
 npm ci              # 部品を入れる
-npm test            # 画面のテスト（絞り込み、XSS対策、架空データ表示など）。「Tests  26 passed」なら成功
+npm test            # 画面のテスト（絞り込み、XSS対策、架空データ表示など）。「Tests  29 passed」なら成功
 npm run typecheck   # 型の確認。何も表示されなければ成功
 npm run build       # 型の確認と公開用ファイルの作成
+npm run build:standalone   # 1ファイル版 viewer/info_viewer.html を作り直す
 ```
+
+画面用JSON（`web/public/data/`）や画面のプログラムを変えたら、`npm run build:standalone` で1ファイル版も作り直してコミットします（古いままだと Python のテスト `tests/test_viewer.py` が失敗して気づけます）。
 
 ## コミット前の安全確認
 
