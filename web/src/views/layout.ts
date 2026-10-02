@@ -13,7 +13,7 @@ export function demoBanner(meta: Meta): HTMLElement | null {
   );
 }
 
-export type Section = "latest" | "search" | "wiki" | "reports" | "status" | "detail";
+export type Section = "latest" | "search" | "wiki" | "reports" | "status" | "sources" | "detail";
 
 const MENU: [Section, string, string][] = [
   ["latest", "#/", "最新情報"],
@@ -21,6 +21,7 @@ const MENU: [Section, string, string][] = [
   ["wiki", "#/wiki", "Wiki"],
   ["reports", "#/reports", "週次レポート"],
   ["status", "#/status", "取得状況"],
+  ["sources", "#/sources", "情報源"],
 ];
 
 /** 修正依頼リンク。URL は site.yaml の correction_request_url。未設定なら「未設定」と表示する。 */

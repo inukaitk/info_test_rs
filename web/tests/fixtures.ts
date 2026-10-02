@@ -56,6 +56,7 @@ export function status(overrides: Partial<Status> = {}): Status {
         consecutive_failures: 0, explored_range: { oldest: "2026-09-01", newest: "2026-09-28", pages: 1 }, retry_count: 0,
         last_run: { status: "success", error: null, warnings: [], new: 1, changed: 0, unchanged: 0, date_unknown: 0, fetch_failed: 0 },
         articles: 1, date_unknown: 0,
+        notes: "架空のメモ", attachments: { max_files: 3, max_pages: 30, exclude_titles: ["座席"] },
       },
     ],
     runs: [],

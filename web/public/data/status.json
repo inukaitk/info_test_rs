@@ -17,6 +17,15 @@
       "method": "html",
       "entry_url": "https://www.cfa.go.jp/news",
       "enabled": true,
+      "notes": "HTML一覧（RSSなし）。1ページ約10件。記事ページの「公開日：」を公開日の根拠にする。 記事の多くは本文がPDF（報道発表資料・会議資料）で、HTMLページには概要とPDFへのリンクだけがある。 そのため本文中のPDFも読む。画像PDFは読めない。 利用条件：公共データ利用規約（PDL1.0）。",
+      "attachments": {
+        "max_files": 3,
+        "max_pages": 30,
+        "exclude_titles": [
+          "座席",
+          "席次"
+        ]
+      },
       "last_success_at": "2026-10-02T17:27:33+09:00",
       "last_attempt_at": "2026-10-02T17:27:33+09:00",
       "last_attempt_status": "success",
@@ -49,6 +58,12 @@
       "method": "rss",
       "entry_url": "https://www.mhlw.go.jp/stf/news.rdf",
       "enabled": false,
+      "notes": "RSS 1.0（直近数日分の約120件）。省全体の新着のため、母子保健と関係のない記事が多い。 利用条件：公共データ利用規約（PDL1.0）。",
+      "attachments": {
+        "max_files": 3,
+        "max_pages": 30,
+        "exclude_titles": []
+      },
       "last_success_at": null,
       "last_attempt_at": null,
       "last_attempt_status": null,
@@ -65,6 +80,12 @@
       "method": "html",
       "entry_url": "https://www.ncchd.go.jp/news/",
       "enabled": false,
+      "notes": "HTML一覧（RSSなし）。1ページに過去分約300件。 利用条件：著作権で保護、無断転載・複製は禁止（引用は出所明示）。採用前に確認が必要。",
+      "attachments": {
+        "max_files": 3,
+        "max_pages": 30,
+        "exclude_titles": []
+      },
       "last_success_at": null,
       "last_attempt_at": null,
       "last_attempt_status": null,

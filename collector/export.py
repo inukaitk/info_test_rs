@@ -189,6 +189,17 @@ def build_articles(article_files: list[dict], summary_files: list[dict], config:
     return result
 
 
+def _attachment_settings(source: dict) -> dict | None:
+    """添付PDFの設定（画面の情報源一覧に出す項目だけ）。"""
+    conf = source.get("attachments") or {}
+    if not conf.get("pdf"):
+        return None
+    from collector.collect import ATTACHMENT_DEFAULTS
+
+    c = {**ATTACHMENT_DEFAULTS, **conf}
+    return {"max_files": c["max_files"], "max_pages": c["max_pages"], "exclude_titles": list(c.get("exclude_titles", []))}
+
+
 def build_status(runs: list[dict], state: dict, articles: list[dict], config: Config) -> dict:
     run_records = sorted((r["run"] for r in runs), key=lambda r: r["started_at"])
     last_run = run_records[-1] if run_records else None
@@ -204,6 +215,8 @@ def build_status(runs: list[dict], state: dict, articles: list[dict], config: Co
             "method": source["method"],
             "entry_url": source["entry_url"],
             "enabled": source["enabled"],
+            "notes": source.get("notes"),
+            "attachments": _attachment_settings(source),
             "last_success_at": st["last_success_at"] if st else None,
             "last_attempt_at": st["last_attempt_at"] if st else None,
             "last_attempt_status": st["last_attempt_status"] if st else None,
