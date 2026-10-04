@@ -2,7 +2,7 @@
 
 中央官庁・公的機関の公開情報を収集し、短い概要と登録済みタグを付けて、最新一覧とテーマ別Wikiで閲覧するための個人開発の検証版です。
 
-> 現在は **段階2-b**（情報源の選定と少数の実取得）まで進んでいます。こども家庭庁の新着5件を取得し、画面は実データ表示（`release_mode: real`）です。AIによる要約・タグ付けはまだ行っていません。
+> 現在は **段階3-a**（AI要約・タグ付けの実装。テストは模擬のみ）まで進んでいます。こども家庭庁の新着5件を取得済みで、画面は実データ表示です。実際のAIによる要約はまだ行っていません（段階3-bで、費用の承認後に実行）。
 > 現在の設定・データはすべて **架空** です。
 
 ## フォルダ構成
@@ -191,7 +191,7 @@ python -m venv .venv                                # 作業用環境を作る�
 
 ### 成功時の表示
 
-- テスト：最後に `280 passed` のように表示され、`failed` がなければ成功です（件数は今後増えます）。
+- テスト：最後に `309 passed` のように表示され、`failed` がなければ成功です（件数は今後増えます）。
 - 検証：`OK: 設定とデータはスキーマ検証を通過しました` と表示されれば成功です。
   問題があると `NG: 1 件の問題があります` に続けて、ファイル名と問題の箇所が表示されます。
 
@@ -276,6 +276,48 @@ cd web && npm run build:standalone                                              
 ### 情報源を追加する
 
 `config/sources.yaml` に候補（厚生労働省・国立成育医療研究センター）が `enabled: false` で入っています。Claude Code に「厚生労働省を有効にして」のように頼めば、有効化・試し読み・少数取得まで行います。新しいサイトを足すときも「〇〇のページを情報源に追加して」と頼めます。詳しくは `docs/SOURCES.md`。
+
+## AIで要約・タグ付けする（段階3）
+
+記事の本文（`.cache/text/`）を Claude API（Anthropic）に渡し、短い概要・論点・対象・確認できた日付・登録タグを作ります。設定は `config/ai.yaml`（モデル、考える量、1回の件数・文字数・トークン・再試行の上限、価格）。
+
+```bash
+.venv/bin/python -m collector.summarize --plan   # 処理予定の件数と概算費用を表示するだけ（APIは呼ばない・費用なし）
+.venv/bin/python -m collector.summarize          # 実行する（APIキーが必要。費用が発生する）
+.venv/bin/python -m collector.export             # 画面用JSONを作り直す
+```
+
+モデルを比べるとき（段階3-b で Sonnet と Haiku を比較する）：
+
+```bash
+.venv/bin/python -m collector.summarize --plan --model claude-haiku-4-5                         # モデルごとの概算費用
+.venv/bin/python -m collector.summarize --model claude-sonnet-5-5 --compare-out /tmp/sonnet.json  # 結果をファイルにだけ書く（data/ は変えない）
+.venv/bin/python -m collector.summarize --model claude-haiku-4-5  --compare-out /tmp/haiku.json
+```
+
+運用に使うモデルは、比較の結果を見て `config/ai.yaml` の `model` で決めます。価格は同じファイルの `prices` に、モデルごとに書いてあります。
+
+- **APIの費用は Claude Code の契約とは別で、API の利用料として個人負担で発生します。**
+- APIキーがないときは「AI未実行」として記録され、収集と画面の作成はそのまま動きます。
+- 本文のキャッシュ（`.cache/`）はセッションをまたいで残りません。新しいセッションでは、先に `python -m collector.collect --allow-network --source cfa-news --max-items 5` を実行して本文を取り直してから要約します。
+- 失敗（APIエラー・出力の形の誤り・登録外タグ・上限超過・拒否）は「未要約（理由）」として記録され、次回の実行で再処理されます。成功した記事は、本文・モデル・指示文の版・タグ定義が変わらない限り再処理しません。
+
+### APIキーの準備（ユーザーが行う。キーをチャットに貼らない）
+
+1. **Claude Console**（https://platform.claude.com/ ）にサインインし、支払い方法を登録します。
+2. **利用上限を設定**します（使いすぎ防止。必ず先に行う）。
+   - 組織全体：Console の「Settings → Billing」（https://platform.claude.com/settings/billing ）で月の上限額を設定します。
+   - さらに絞るなら：この用途専用のワークスペースを作り、そのワークスペースに月の上限額を設定します（Console の「Settings → Workspaces」、またはレート制限の画面 https://platform.claude.com/settings/limits ）。
+   - 上限に達すると、APIは翌月まで（または上限を上げるまで）止まり、エラーになります。
+3. Console の「API Keys」で、（専用ワークスペースの）APIキーを作成します。表示されたキーは一度しか見られないので、そのまま次の手順で貼り付けます。**チャットやリポジトリ、メールには貼らないでください。**
+4. **Claude Code Web版の環境変数に登録**します：Claude Code の画面で、セッションのタイトル部分にあるクラウド環境のメニュー →「Edit」→ 環境変数に
+   ```
+   ANTHROPIC_API_KEY=（作成したキー）
+   ```
+   を追加して保存します。**新しいセッションから有効**になります。
+5. **ネットワークアクセス**：環境のネットワーク設定が Full 以外なら、許可するドメインに **`api.anthropic.com`** を追加します。
+
+キーを止めたいときは、Console の「API Keys」でキーを無効化（削除）します。
 
 ## 週次レポートを Markdown ファイルで出す
 

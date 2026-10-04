@@ -34,6 +34,7 @@ export const SUMMARY_STATUS_LABEL: Record<SummaryStatus, string> = {
   failed_api_error: "未要約（AI APIエラー）",
   failed_invalid_output: "未要約（AI出力の検証に失敗）",
   failed_limit_exceeded: "未要約（処理上限を超過）",
+  failed_refusal: "未要約（AIが応答を拒否）",
   not_processed: "未要約（AI処理なし）",
 };
 

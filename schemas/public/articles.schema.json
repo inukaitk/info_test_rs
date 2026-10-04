@@ -255,7 +255,8 @@
                   "failed_api_error",
                   "failed_invalid_output",
                   "failed_limit_exceeded",
-                  "not_processed"
+                  "not_processed",
+                  "failed_refusal"
                 ]
               },
               "error": {
