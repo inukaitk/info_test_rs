@@ -1,11 +1,16 @@
 # AI要約・タグ付けの設定（段階3-a）。APIキーはここに書かない（環境変数 ANTHROPIC_API_KEY から読む）。
 provider: anthropic
-# モデルと価格（米ドル／100万トークン）。価格は 2026-10-02 に公式資料で確認（docs/DECISIONS.md）。
+# 既定のモデル。実行時に --model で変えられる（比較用）。
 model: claude-opus-5-5
-price_per_mtok: {input: 4.0, output: 20.0}
-# 考える量（low / medium / high）。高いほど丁寧だが出力トークン（費用）が増える
+# モデルごとの価格（米ドル／100万トークン）。2026-10-02 に公式資料で確認（docs/DECISIONS.md）。概算費用の計算に使う
+prices:
+  claude-opus-5-5: {input: 4.0, output: 20.0}
+  claude-sonnet-5-5: {input: 2.0, output: 10.0}
+  claude-haiku-4-5: {input: 1.0, output: 5.0}
+# 考える量（low / medium / high）。高いほど丁寧だが出力トークン（費用）が増える。Haiku 4.5 は非対応のため送らない
 effort: medium
-# 安全上の理由で応答が拒否されたとき、APIが自動で別モデルに切り替える（Anthropic の server-side fallback）
+# 安全上の理由で応答が拒否されたとき、APIが自動で別モデルに切り替える（Anthropic の server-side fallback）。
+# 対応するモデル（Opus 5.5・Sonnet 5.5 など）でだけ使い、Haiku 4.5 では送らない
 fallbacks: true
 limits:
   max_articles_per_run: 10        # 1回の実行で処理する記事数の上限

@@ -73,6 +73,7 @@ def by_aid(provider_responses):
 
 
 def test_success_records_validated_output(config, env):
+    config.ai["prices"]["mock-model"] = {"input": 1.0, "output": 5.0}
     provider = MockProvider([good() for _ in range(4)])
     r, outcome = run(config, env, provider)
     assert r["kind"] == "summarize" and r["totals"]["summarized"] == 4
@@ -431,3 +432,54 @@ def test_cli_without_api_key(monkeypatch, capsys, tmp_path):
 def _records(env):
     data = env[0]
     return [read_json(p)["summaries"][-1] for p in sorted((data / "summaries").glob("*.json"))]
+
+
+# ---------------------------------------------------------------- モデルの切り替え・比較（3-b で Sonnet と Haiku を比べるため）
+
+
+def test_cost_is_unknown_for_unpriced_model(config, env):
+    run(config, env, MockProvider([good() for _ in range(4)], model="unpriced-model"))
+    assert latest(env)["usage"]["estimated_cost_usd"] is None
+
+
+def test_haiku_request_omits_unsupported_options():
+    client, messages = fake_client(response())
+    AnthropicProvider("claude-haiku-4-5", effort="medium", fallbacks=True, client=client).complete("s", "u", {"type": "object"}, 100)
+    call = messages.calls[0]
+    assert "effort" not in call["output_config"], "Haiku 4.5 は effort に対応しない"
+    assert "fallbacks" not in call and "betas" not in call, "Haiku 4.5 には fallbacks を送らない"
+    assert call["output_config"]["format"]["type"] == "json_schema"
+
+
+def test_sonnet_request_uses_effort_and_fallbacks():
+    client, messages = fake_client(response())
+    AnthropicProvider("claude-sonnet-5-5", effort="medium", fallbacks=True, client=client).complete("s", "u", {}, 100)
+    call = messages.calls[0]
+    assert call["output_config"]["effort"] == "medium" and call["fallbacks"] == "default"
+
+
+def test_build_provider_with_model_override(config):
+    p = build_provider(config.ai, environ={"ANTHROPIC_API_KEY": "dummy-key-for-test"}, model="claude-haiku-4-5")
+    assert p.model == "claude-haiku-4-5"
+
+
+def test_plan_cost_depends_on_model(config, env):
+    opus = sm.plan(config, env[0], env[1], model="claude-opus-5-5")
+    sonnet = sm.plan(config, env[0], env[1], model="claude-sonnet-5-5")
+    haiku = sm.plan(config, env[0], env[1], model="claude-haiku-4-5")
+    assert opus["cost_usd"] == pytest.approx(sonnet["cost_usd"] * 2)
+    assert sonnet["cost_usd"] == pytest.approx(haiku["cost_usd"] * 2)
+
+
+def test_compare_out_does_not_change_data(config, env, tmp_path):
+    data, cache = env
+    run(config, env, MockProvider([good() for _ in range(4)]))
+    before = {p.name: p.read_bytes() for p in data.rglob("*.json")}
+    r, outcome = sm.summarize(config, data, cache, MockProvider([good() for _ in range(4)], model="claude-haiku-4-5"),
+                              NOW, sleep=lambda s: None, force=True)
+    out = tmp_path / "compare_haiku.json"
+    sm.write_comparison(out, r, outcome, data)
+    assert {p.name: p.read_bytes() for p in data.rglob("*.json")} == before
+    result = json.loads(out.read_text(encoding="utf-8"))
+    assert result["model"] == "claude-haiku-4-5" and len(result["articles"]) == 4
+    assert result["articles"][0]["title"] and result["articles"][0]["summary"]

@@ -240,8 +240,11 @@ class Outcome:
     missing_text: list[str] = field(default_factory=list)  # 本文のキャッシュがなく処理できなかった記事（記録は作らない）
 
 
-def _cost(ai: dict, tokens_in: int, tokens_out: int) -> float:
-    p = ai["price_per_mtok"]
+def _cost(ai: dict, model: str, tokens_in: int, tokens_out: int) -> float | None:
+    """config/ai.yaml の prices から概算費用（米ドル）を出す。価格が未登録のモデルは None（不明）。"""
+    p = ai["prices"].get(model)
+    if p is None:
+        return None
     return round(tokens_in / 1e6 * p["input"] + tokens_out / 1e6 * p["output"], 6)
 
 
@@ -337,7 +340,7 @@ def summarize(config: Config, data_dir: Path, cache_dir: Path, provider: Provide
                 sleep(min(2 ** attempt, 30))
         outcome.usage_in += used_in
         outcome.usage_out += used_out
-        cost = _cost(ai, used_in, used_out)
+        cost = _cost(ai, served if served in ai["prices"] else model, used_in, used_out)
         if status == "success":
             output["uncertainties"] = output["uncertainties"] + notes
             if target.truncated:
@@ -366,7 +369,7 @@ def summarize(config: Config, data_dir: Path, cache_dir: Path, provider: Provide
                    "summarized": succeeded, "summarize_failed": failed},
         "failures": outcome.failures,
         "api_usage": {"requests": outcome.requests, "input_tokens": outcome.usage_in, "output_tokens": outcome.usage_out,
-                      "estimated_cost_usd": _cost(ai, outcome.usage_in, outcome.usage_out)},
+                      "estimated_cost_usd": _cost(ai, model, outcome.usage_in, outcome.usage_out)},
     }
     if run["finished_at"] < run["started_at"]:
         run["finished_at"] = run["started_at"]
@@ -434,11 +437,13 @@ def commit(data_dir: Path, run: dict, outcome: Outcome, config_dir: Path, overla
 # ---------------------------------------------------------------- 計画（費用の見積もり）
 
 
-def plan(config: Config, data_dir: Path, cache_dir: Path, output_tokens_per_article: int = 3000) -> dict:
+def plan(config: Config, data_dir: Path, cache_dir: Path, output_tokens_per_article: int = 3000,
+         model: str | None = None) -> dict:
     """処理予定の件数・入力の大きさ・概算費用（APIは呼ばない）。トークンは「1文字≒1トークン」で概算する。"""
     ai = config.ai
     limits = ai["limits"]
-    targets = find_targets(data_dir, cache_dir, config, ai["model"])
+    model = model or ai["model"]
+    targets = find_targets(data_dir, cache_dir, config, model)
     rows, total_in = [], 0
     for t in targets[: limits["max_articles_per_run"]]:
         chars = min(len(t.text or ""), limits["max_input_chars"])
@@ -448,8 +453,20 @@ def plan(config: Config, data_dir: Path, cache_dir: Path, output_tokens_per_arti
                      "estimated_input_tokens": tokens if t.text else 0, "has_text": t.text is not None})
     n = sum(1 for r in rows if r["has_text"])
     total_out = n * output_tokens_per_article
-    return {"model": ai["model"], "articles": rows, "count": n, "input_tokens": total_in, "output_tokens": total_out,
-            "cost_usd": _cost(ai, total_in, total_out), "skipped": len(targets) - len(rows)}
+    return {"model": model, "articles": rows, "count": n, "input_tokens": total_in, "output_tokens": total_out,
+            "cost_usd": _cost(ai, model, total_in, total_out), "skipped": len(targets) - len(rows)}
+
+
+def write_comparison(path: Path, run: dict, outcome: Outcome, data_dir: Path) -> None:
+    """比較用の結果（記事ごとの要約・タグ・使用量）を1つの JSON にする。data/ には書かない。"""
+    from collector.collect import _write_json
+
+    articles = []
+    for aid, record in outcome.records.items():
+        title = load_json(data_dir / "articles" / f"{aid}.json")["article"]["title"]
+        articles.append({"title": title, **record})
+    _write_json(path, {"model": run["api_usage"] and (articles[0]["model"] if articles else None),
+                       "api_usage": run["api_usage"], "totals": run["totals"], "articles": articles})
 
 
 # ---------------------------------------------------------------- CLI
@@ -461,6 +478,9 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--cache", type=Path, default=REPO_ROOT / ".cache")
     parser.add_argument("--plan", action="store_true", help="処理予定の件数と概算費用を表示するだけ（APIは呼ばない）")
     parser.add_argument("--force", action="store_true", help="成功済みの記事も再処理する")
+    parser.add_argument("--model", help="このときだけ使うモデル（例 claude-haiku-4-5）。省略時は config/ai.yaml の model")
+    parser.add_argument("--compare-out", type=Path,
+                        help="比較用：結果をこのファイル（JSON）にだけ書き、data/ は変更しない（成功済みの記事も処理する）")
     args = parser.parse_args(argv)
 
     config_dir = REPO_ROOT / "config"
@@ -468,25 +488,36 @@ def main(argv: list[str] | None = None) -> int:
     if config is None:
         print("NG: 設定の検証に失敗しました", file=sys.stderr)
         return 1
+    if args.model and args.model not in config.ai["prices"]:
+        print(f"注意: {args.model} の価格が config/ai.yaml の prices にないため、費用は「不明」になります", file=sys.stderr)
     if args.plan:
-        p = plan(config, args.data, args.cache)
+        p = plan(config, args.data, args.cache, model=args.model)
         print(f"処理予定：{p['count']}件（モデル {p['model']}）")
         for r in p["articles"]:
             mark = "" if r["has_text"] else "（本文キャッシュなし：未処理）"
             cut = f"→先頭{r['used_chars']}文字" if r["used_chars"] < r["chars"] else ""
             print(f"  - {r['title'][:40]}　本文{r['chars']}文字{cut}　入力約{r['estimated_input_tokens']}トークン{mark}")
-        print(f"概算：入力 約{p['input_tokens']:,}トークン、出力 約{p['output_tokens']:,}トークン（考える分を含む見込み）、"
-              f"費用 約${p['cost_usd']:.2f}")
+        cost = f"約${p['cost_usd']:.2f}" if p["cost_usd"] is not None else "不明（価格未登録）"
+        print(f"概算：入力 約{p['input_tokens']:,}トークン、出力 約{p['output_tokens']:,}トークン（考える分を含む見込み）、費用 {cost}")
         if p["skipped"]:
             print(f"  件数の上限を超える {p['skipped']}件は次回に回ります")
         return 0
     provider, provider_error = None, None
     try:
-        provider = build_provider(config.ai)
+        provider = build_provider(config.ai, model=args.model)
     except MissingApiKey as e:
         provider_error = str(e)
     now = datetime.now(JST)
-    run, outcome = summarize(config, args.data, args.cache, provider, now, provider_error=provider_error, force=args.force)
+    compare = args.compare_out is not None
+    run, outcome = summarize(config, args.data, args.cache, provider, now, provider_error=provider_error,
+                             force=args.force or compare)
+    if compare:
+        write_comparison(args.compare_out, run, outcome, args.data)
+        u = run["api_usage"]
+        cost = f"${u['estimated_cost_usd']:.4f}" if u["estimated_cost_usd"] is not None else "不明"
+        print(f"比較用の結果を {args.compare_out} に書きました（data/ は変更していません）。"
+              f"要約 {run['totals']['summarized']}件、失敗 {run['totals']['summarize_failed']}件、概算 {cost}")
+        return 0
     try:
         commit(args.data, run, outcome, config_dir, None)
     except RuntimeError as e:

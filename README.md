@@ -287,6 +287,16 @@ cd web && npm run build:standalone                                              
 .venv/bin/python -m collector.export             # 画面用JSONを作り直す
 ```
 
+モデルを比べるとき（段階3-b で Sonnet と Haiku を比較する）：
+
+```bash
+.venv/bin/python -m collector.summarize --plan --model claude-haiku-4-5                         # モデルごとの概算費用
+.venv/bin/python -m collector.summarize --model claude-sonnet-5-5 --compare-out /tmp/sonnet.json  # 結果をファイルにだけ書く（data/ は変えない）
+.venv/bin/python -m collector.summarize --model claude-haiku-4-5  --compare-out /tmp/haiku.json
+```
+
+運用に使うモデルは、比較の結果を見て `config/ai.yaml` の `model` で決めます。価格は同じファイルの `prices` に、モデルごとに書いてあります。
+
 - **APIの費用は Claude Code の契約とは別で、API の利用料として個人負担で発生します。**
 - APIキーがないときは「AI未実行」として記録され、収集と画面の作成はそのまま動きます。
 - 本文のキャッシュ（`.cache/`）はセッションをまたいで残りません。新しいセッションでは、先に `python -m collector.collect --allow-network --source cfa-news --max-items 5` を実行して本文を取り直してから要約します。

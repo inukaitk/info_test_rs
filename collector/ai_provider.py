@@ -15,6 +15,18 @@ from typing import Any, Callable, Protocol
 API_KEY_ENV = "ANTHROPIC_API_KEY"
 FALLBACK_BETA = "server-side-fallback-2026-07-01"
 
+# モデルごとの対応状況（2026-10-02 に公式資料で確認）。対応しない指定を送ると API が 400 を返す
+EFFORT_UNSUPPORTED = {"claude-haiku-4-5"}  # 考える量（effort）の指定に対応しない
+FALLBACK_SUPPORTED_PREFIXES = ("claude-opus-5", "claude-sonnet-5-5", "claude-fable-5")  # fallbacks: "default" に対応
+
+
+def supports_effort(model: str) -> bool:
+    return model not in EFFORT_UNSUPPORTED
+
+
+def supports_fallbacks(model: str) -> bool:
+    return model.startswith(FALLBACK_SUPPORTED_PREFIXES)
+
 
 class MissingApiKey(Exception):
     """APIキーが設定されていない。"""
@@ -83,13 +95,12 @@ class AnthropicProvider:
     def complete(self, system: str, user: str, schema: dict, max_tokens: int) -> ProviderResult:
         import anthropic
 
-        params: dict[str, Any] = {
-            **self._request(system, user),
-            "max_tokens": max_tokens,
-            "output_config": {"effort": self.effort, "format": {"type": "json_schema", "schema": schema}},
-        }
+        output_config: dict[str, Any] = {"format": {"type": "json_schema", "schema": schema}}
+        if supports_effort(self.model):
+            output_config = {"effort": self.effort, **output_config}
+        params: dict[str, Any] = {**self._request(system, user), "max_tokens": max_tokens, "output_config": output_config}
         try:
-            if self.fallbacks:
+            if self.fallbacks and supports_fallbacks(self.model):
                 # 安全上の理由で拒否されたときに、API 側で既定の別モデルに切り替える
                 response = self.client.beta.messages.create(betas=[FALLBACK_BETA], fallbacks="default", **params)
             else:
@@ -150,9 +161,10 @@ class MockProvider:
 
 
 def build_provider(ai_config: dict, environ: dict[str, str] | None = None,
-                   factory: Callable[..., Provider] | None = None) -> Provider:
-    """設定から provider を作る。APIキーがなければ MissingApiKey。"""
+                   factory: Callable[..., Provider] | None = None, model: str | None = None) -> Provider:
+    """設定から provider を作る。model を指定すると既定のモデルの代わりに使う（比較用）。APIキーがなければ MissingApiKey。"""
     if ai_config["provider"] != "anthropic":
         raise ValueError(f"未対応の provider: {ai_config['provider']}")
     factory = factory or AnthropicProvider
-    return factory(model=ai_config["model"], effort=ai_config["effort"], fallbacks=ai_config["fallbacks"], environ=environ)
+    return factory(model=model or ai_config["model"], effort=ai_config["effort"], fallbacks=ai_config["fallbacks"],
+                   environ=environ)
