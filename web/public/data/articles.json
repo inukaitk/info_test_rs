@@ -21,7 +21,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-02T17:07:01+09:00",
-      "last_seen_at": "2026-10-05T12:32:15+09:00",
+      "last_seen_at": "2026-10-05T16:40:13+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -85,7 +85,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-05T14:38:18+09:00",
-      "last_seen_at": "2026-10-05T14:38:18+09:00",
+      "last_seen_at": "2026-10-05T16:40:13+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -115,19 +115,61 @@
         }
       ],
       "summary": {
-        "status": "not_processed",
+        "status": "success",
         "error": null,
-        "version": null,
+        "version": 1,
         "outdated": false,
-        "text": null,
-        "key_points": null,
-        "targets": null,
-        "dates": null,
-        "uncertainties": null,
-        "model": null,
-        "processed_at": null
+        "text": "母子モ株式会社の母子手帳アプリ『母子モ』が東京都小金井市で本導入され、『こがねいHugくみアプリ』として2026年10月1日から提供が始まる。『子育てDX』も導入し、妊娠届アンケートをアプリから提出できる。利用料金は無料。",
+        "key_points": [
+          "小金井市で『こがねいHugくみアプリ』として母子モの提供を2026年10月1日から開始する",
+          "追加機能『子育てDX』により妊娠届アンケートをアプリから提出できる",
+          "健康データの記録、予防接種のスケジュール管理、市からのお知らせ配信、家族との共有などの機能がある",
+          "月額料金は無料で、App Store・Google Play・Webブラウザから利用できる",
+          "こども家庭庁の電子版母子健康手帳の活用や母子保健DXを推進する方針を踏まえた導入と記載されている"
+        ],
+        "targets": [
+          "小金井市の妊産婦・子育て世帯",
+          "小金井市",
+          "保護者"
+        ],
+        "dates": [
+          {
+            "label": "提供開始日",
+            "value": "2026-10-01",
+            "evidence": "『こがねいHugくみアプリ』として10月1日(木)より提供を開始します。"
+          }
+        ],
+        "uncertainties": [
+          "文書は民間企業のプレスリリースであり、国から自治体への通知や公的機関の文書ではない。",
+          "アプリ利用者数や導入効果の数値は記載されていない。",
+          "文書後半はPR TIMESのサービス案内であり、小金井市の件とは直接関係しない。"
+        ],
+        "model": "claude-sonnet-5-5",
+        "processed_at": "2026-10-05T16:46:34+09:00"
       },
-      "tags": [],
+      "tags": [
+        {
+          "id": "maternal-child-health",
+          "name": "母子保健",
+          "origin": "ai",
+          "reason": "母子手帳アプリによる妊産婦・子どもの健康データ記録、予防接種管理、健診情報の記録を扱っている。",
+          "retired": false
+        },
+        {
+          "id": "childcare-support",
+          "name": "子育て支援",
+          "origin": "ai",
+          "reason": "小金井市の子育て支援の取り組みとして、子育て世帯向けアプリと妊娠届アンケートのオンライン提出を導入する内容である。",
+          "retired": false
+        },
+        {
+          "id": "municipal-dx-standardization",
+          "name": "自治体DX・標準化",
+          "origin": "ai",
+          "reason": "自治体の子育て関連事業のデジタル化支援サービスと母子保健DXに関する導入事例である。",
+          "retired": false
+        }
+      ],
       "removed_tags": [],
       "tag_override_reason": null
     },
@@ -151,7 +193,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-05T14:38:18+09:00",
-      "last_seen_at": "2026-10-05T14:38:18+09:00",
+      "last_seen_at": "2026-10-05T16:40:13+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -174,19 +216,65 @@
         }
       ],
       "summary": {
-        "status": "not_processed",
+        "status": "success",
         "error": null,
-        "version": null,
+        "version": 1,
         "outdated": false,
-        "text": null,
-        "key_points": null,
-        "targets": null,
-        "dates": null,
-        "uncertainties": null,
-        "model": null,
-        "processed_at": null
+        "text": "母子モ株式会社の『子育てDX』の「伴走型相談支援サービス」と「質問票サービス」が広島県坂町で本導入され、2026年10月1日から運用を開始する。妊娠届・届出時アンケートの提出や、産後ケア・子育てヘルパーの申請がアプリから可能になる。",
+        "key_points": [
+          "坂町で「伴走型相談支援サービス」と「質問票サービス」が本導入され、10月1日(木)から運用開始",
+          "妊娠届および届出時のアンケート提出が、アプリからいつでも可能になる",
+          "産後ケアや子育てヘルパーの申請もアプリから可能になる",
+          "自治体職員は申請内容を事前に確認して面談や手続きの準備ができ、事務処理の効率化につながる",
+          "坂町は2025年2月から母子手帳アプリ『母子モ』を『さかっこなび』として提供しており、月額料金は無料"
+        ],
+        "targets": [
+          "広島県安芸郡坂町の妊産婦・子育て世帯",
+          "坂町の自治体職員"
+        ],
+        "dates": [
+          {
+            "label": "運用開始日",
+            "value": "2026-10-01",
+            "evidence": "広島県安芸郡坂町で本導入され、10月1日(木)より運用を開始します。"
+          },
+          {
+            "label": "母子手帳アプリ『母子モ』導入時期",
+            "value": "2025-02",
+            "evidence": "2025年2月からは母子手帳アプリ『母子モ』を導入し、『さかっこなび』として提供する"
+          }
+        ],
+        "uncertainties": [
+          "文書は事業者(母子モ株式会社)のプレスリリースであり、国や自治体の公式文書ではない",
+          "アプリで申請できる範囲の詳細は、坂町の公式情報で確認できない",
+          "文書後半はPR TIMESのサービス案内であり、本件とは関係がない"
+        ],
+        "model": "claude-sonnet-5-5",
+        "processed_at": "2026-10-05T16:46:34+09:00"
       },
-      "tags": [],
+      "tags": [
+        {
+          "id": "maternal-child-health",
+          "name": "母子保健",
+          "origin": "ai",
+          "reason": "妊娠届、妊産婦と子どもの健康データ管理、産後ケアなど母子保健に関する内容",
+          "retired": false
+        },
+        {
+          "id": "childcare-support",
+          "name": "子育て支援",
+          "origin": "ai",
+          "reason": "子育てヘルパーや産後ケアの申請、伴走型相談支援など子育て支援サービスの導入",
+          "retired": false
+        },
+        {
+          "id": "municipal-dx-standardization",
+          "name": "自治体DX・標準化",
+          "origin": "ai",
+          "reason": "自治体の子育て関連手続きのアプリ化・オンライン化というデジタル化の取り組み",
+          "retired": false
+        }
+      ],
       "removed_tags": [],
       "tag_override_reason": null
     },
@@ -210,7 +298,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-05T14:38:18+09:00",
-      "last_seen_at": "2026-10-05T14:38:18+09:00",
+      "last_seen_at": "2026-10-05T16:40:13+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -233,19 +321,75 @@
         }
       ],
       "summary": {
-        "status": "not_processed",
+        "status": "success",
         "error": null,
-        "version": null,
+        "version": 1,
         "outdated": false,
-        "text": null,
-        "key_points": null,
-        "targets": null,
-        "dates": null,
-        "uncertainties": null,
-        "model": null,
-        "processed_at": null
+        "text": "母子モ株式会社の『子育てDX』「伴走型相談支援サービス」が山口県下松市で本導入され、2026年10月1日から運用開始。『くだまる子育て応援アプリ』で母子健康手帳交付の来庁予約と妊娠届出時のアンケート提出ができるようになる。",
+        "key_points": [
+          "下松市が『子育てDX』の「伴走型相談支援サービス」を導入し、10月1日に運用開始",
+          "利用者は母子健康手帳交付の来庁予約、妊娠届出時のアンケート提出をアプリから行える",
+          "職員は予約情報や申請内容を事前に確認して面談や手続きの準備ができ、事務処理の効率化につながるとされる",
+          "下松市は2022年2月に母子手帳アプリ『母子モ』を導入し、2026年2月に「こども家庭センターハピスタくだまつ」を開設",
+          "アプリの月額料金は無料で、利用できる機能は市区町村により一部異なる"
+        ],
+        "targets": [
+          "山口県下松市の妊婦・子育て世帯（アプリ利用者）",
+          "下松市の自治体職員"
+        ],
+        "dates": [
+          {
+            "label": "運用開始日",
+            "value": "2026-10-01",
+            "evidence": "10月1日(木)より運用を開始します。"
+          },
+          {
+            "label": "アプリ導入",
+            "value": "2022-02",
+            "evidence": "2022年2月からは母子手帳アプリ『母子モ』を導入し"
+          },
+          {
+            "label": "こども家庭センター開設",
+            "value": "2026-02",
+            "evidence": "2026年2月には、「こども家庭センターハピスタくだまつ」を開設し"
+          },
+          {
+            "label": "公開日",
+            "value": "2026-10-01",
+            "evidence": "2026年10月1日 11時00分"
+          }
+        ],
+        "uncertainties": [
+          "妊娠届出時のアンケートと面談予約の関係など、具体的な運用の詳細は記載がない",
+          "導入に係る費用や契約条件は本文に記載がない",
+          "本文は民間企業のプレスリリースで、国や自治体の公式文書ではない"
+        ],
+        "model": "claude-sonnet-5-5",
+        "processed_at": "2026-10-05T16:46:34+09:00"
       },
-      "tags": [],
+      "tags": [
+        {
+          "id": "maternal-child-health",
+          "name": "母子保健",
+          "origin": "ai",
+          "reason": "母子健康手帳交付の予約や妊娠届出時のアンケートなど母子保健に関する手続きのデジタル化を扱っている",
+          "retired": false
+        },
+        {
+          "id": "childcare-support",
+          "name": "子育て支援",
+          "origin": "ai",
+          "reason": "妊娠・子育て期の伴走型相談支援と子育て支援体制の整備に関する内容である",
+          "retired": false
+        },
+        {
+          "id": "municipal-dx-standardization",
+          "name": "自治体DX・標準化",
+          "origin": "ai",
+          "reason": "自治体の子育て関連事業のデジタル化（アプリによる予約・届出）の導入事例である",
+          "retired": false
+        }
+      ],
       "removed_tags": [],
       "tag_override_reason": null
     },
@@ -269,7 +413,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-05T14:38:18+09:00",
-      "last_seen_at": "2026-10-05T14:38:18+09:00",
+      "last_seen_at": "2026-10-05T16:40:13+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -292,19 +436,70 @@
         }
       ],
       "summary": {
-        "status": "not_processed",
+        "status": "success",
         "error": null,
-        "version": null,
+        "version": 1,
         "outdated": false,
-        "text": null,
-        "key_points": null,
-        "targets": null,
-        "dates": null,
-        "uncertainties": null,
-        "model": null,
-        "processed_at": null
+        "text": "母子モ株式会社の『子育てDX』「伴走型相談支援サービス」が広島県大竹市で本導入され、2026年10月1日から運用開始。母子健康手帳交付の来庁予約と妊娠届出時のアンケート提出がアプリでできるようになる。",
+        "key_points": [
+          "大竹市が「伴走型相談支援サービス」を本導入し、10月1日(木)から運用を開始する",
+          "利用者は母子健康手帳交付の来庁予約と妊娠届出時のアンケート提出をアプリから行える",
+          "職員は予約情報や申請内容を事前に確認して面談や手続きの準備ができ、事務処理の効率化につながるとしている",
+          "大竹市は2025年12月に母子手帳アプリ『母子モ』を『おおたけ子育て応援アプリ』として導入済みで、月額料金は無料",
+          "市長コメントによると、令和8年4月に「大竹市こども家庭センター」を開設している"
+        ],
+        "targets": [
+          "広島県大竹市の妊産婦・子育て世帯・保護者",
+          "大竹市の自治体職員"
+        ],
+        "dates": [
+          {
+            "label": "運用開始日",
+            "value": "2026-10-01",
+            "evidence": "10月1日(木)より運用を開始します"
+          },
+          {
+            "label": "母子手帳アプリ『母子モ』の導入時期",
+            "value": "2025-12",
+            "evidence": "2025年12月からは母子手帳アプリ『母子モ』を導入し"
+          },
+          {
+            "label": "大竹市こども家庭センター開設",
+            "value": "2026-04",
+            "evidence": "令和8年4月から妊娠期から子育て期まで切れ目なく相談に応じる「大竹市こども家庭センター」を開設しました"
+          }
+        ],
+        "uncertainties": [
+          "本文はプレスリリースで、国の通知や制度改正ではない",
+          "妊娠届の電子申請の開始時期は「今年度」とあるのみで、具体的な日付は記載がない",
+          "利用できる機能は市区町村により一部異なるとされるが、大竹市での詳細な機能範囲は確認できない"
+        ],
+        "model": "claude-sonnet-5-5",
+        "processed_at": "2026-10-05T16:46:34+09:00"
       },
-      "tags": [],
+      "tags": [
+        {
+          "id": "maternal-child-health",
+          "name": "母子保健",
+          "origin": "ai",
+          "reason": "母子健康手帳交付の予約や妊娠届出時のアンケートなど、母子保健に関する手続きを扱っている",
+          "retired": false
+        },
+        {
+          "id": "childcare-support",
+          "name": "子育て支援",
+          "origin": "ai",
+          "reason": "妊娠期から子育て期までの相談支援や子育て支援サービスの充実を目的としている",
+          "retired": false
+        },
+        {
+          "id": "municipal-dx-standardization",
+          "name": "自治体DX・標準化",
+          "origin": "ai",
+          "reason": "自治体の子育て関連手続きのデジタル化・アプリ導入に関する内容",
+          "retired": false
+        }
+      ],
       "removed_tags": [],
       "tag_override_reason": null
     },
@@ -328,7 +523,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-05T14:38:18+09:00",
-      "last_seen_at": "2026-10-05T14:38:18+09:00",
+      "last_seen_at": "2026-10-05T16:40:13+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -351,19 +546,69 @@
         }
       ],
       "summary": {
-        "status": "not_processed",
+        "status": "success",
         "error": null,
-        "version": null,
+        "version": 1,
         "outdated": false,
-        "text": null,
-        "key_points": null,
-        "targets": null,
-        "dates": null,
-        "uncertainties": null,
-        "model": null,
-        "processed_at": null
+        "text": "母子モ株式会社が宮崎県三股町に提供する『みまたん子育てアプリ』で、「質問票サービス」と「オンライン予約サービス」が2026年10月1日から運用開始。妊娠届や妊娠8か月時のアンケート提出、母子健康手帳の交付日予約がアプリで可能になる。",
+        "key_points": [
+          "質問票サービスを妊娠届および妊娠8か月時のアンケート提出に活用する",
+          "オンライン予約サービスを母子健康手帳の交付日予約に活用する",
+          "申請・予約は24時間どこからでもオンラインで可能で、妊娠中の手続きの負担軽減が期待される",
+          "自治体職員は申請・予約内容をもとに面談や手続きの準備ができ、事務処理の効率化につながる",
+          "三股町は2025年12月から母子手帳アプリ『母子モ』を『みまたん子育てアプリ』として提供している"
+        ],
+        "targets": [
+          "宮崎県三股町の利用者（妊婦など）",
+          "三股町の自治体職員"
+        ],
+        "dates": [
+          {
+            "label": "運用開始日",
+            "value": "2026-10-01",
+            "evidence": "10月1日(木)より運用を開始します"
+          },
+          {
+            "label": "アプリ導入時期",
+            "value": "2025-12",
+            "evidence": "2025年12月からは母子手帳アプリ『母子モ』を導入し"
+          },
+          {
+            "label": "プレスリリース公開日",
+            "value": "2026-10-01",
+            "evidence": "2026年10月1日 10時00分"
+          }
+        ],
+        "uncertainties": [
+          "質問票サービスやオンライン予約サービスの詳細な仕様・利用条件は本文からは確認できない",
+          "文書の後半はPR TIMESのサービス紹介であり、三股町の取組とは直接関係しない"
+        ],
+        "model": "claude-sonnet-5-5",
+        "processed_at": "2026-10-05T16:46:34+09:00"
       },
-      "tags": [],
+      "tags": [
+        {
+          "id": "maternal-child-health",
+          "name": "母子保健",
+          "origin": "ai",
+          "reason": "妊娠届、妊娠8か月時のアンケート、母子健康手帳交付の予約など母子保健の手続きを扱う",
+          "retired": false
+        },
+        {
+          "id": "childcare-support",
+          "name": "子育て支援",
+          "origin": "ai",
+          "reason": "子育て支援のアプリサービスの提供と手続きの利便性向上が主題",
+          "retired": false
+        },
+        {
+          "id": "municipal-dx-standardization",
+          "name": "自治体DX・標準化",
+          "origin": "ai",
+          "reason": "自治体の子育て関連手続きのデジタル化・オンライン化に関する内容",
+          "retired": false
+        }
+      ],
       "removed_tags": [],
       "tag_override_reason": null
     },
@@ -387,7 +632,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-05T14:24:29+09:00",
-      "last_seen_at": "2026-10-05T14:24:29+09:00",
+      "last_seen_at": "2026-10-05T16:40:13+09:00",
       "status": "unsupported",
       "content_status": "unsupported",
       "content_error": "会員限定（ログインが必要）のページのため、本文は取得していません。一覧の題名・日付と出典リンクだけを記録しています",
@@ -438,7 +683,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-05T14:38:18+09:00",
-      "last_seen_at": "2026-10-05T14:38:18+09:00",
+      "last_seen_at": "2026-10-05T16:40:13+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -468,19 +713,70 @@
         }
       ],
       "summary": {
-        "status": "not_processed",
+        "status": "success",
         "error": null,
-        "version": null,
+        "version": 1,
         "outdated": false,
-        "text": null,
-        "key_points": null,
-        "targets": null,
-        "dates": null,
-        "uncertainties": null,
-        "model": null,
-        "processed_at": null
+        "text": "母子モ株式会社の母子手帳アプリ『母子モ』が京都府亀岡市に導入され、『かめまるっと』として2026年9月1日から提供を開始した。予防接種や健診の記録管理、自治体からの情報配信などの機能があり、月額無料。",
+        "key_points": [
+          "亀岡市で『母子モ』が『かめまるっと』として9月1日から提供開始",
+          "予防接種スケジュール管理、健診情報記録、成長記録、自治体からのお知らせ配信などの機能",
+          "データはクラウド保存で、転居時や機種変更時も継続利用が可能",
+          "こども家庭庁の電子版母子健康手帳活用・母子保健DX推進の方針を踏まえた運用と記載",
+          "亀岡市のこども医療費助成の18歳までの拡大や保育料無償化などの子育て施策を紹介"
+        ],
+        "targets": [
+          "亀岡市の妊産婦・子育て家庭(保護者)",
+          "対象自治体外の利用希望者(利用可)"
+        ],
+        "dates": [
+          {
+            "label": "提供開始日",
+            "value": "2026-09-01",
+            "evidence": "『かめまるっと』として9月1日(火)より提供を開始しています。"
+          },
+          {
+            "label": "プレスリリース公開日",
+            "value": "2026-09-30",
+            "evidence": "2026年9月30日 11時00分"
+          },
+          {
+            "label": "こども医療費助成制度の開始",
+            "value": "2023-09",
+            "evidence": "令和5年9月から、子どもの保険診療における自己負担分を全額助成する「こども医療費助成制度」を実施し"
+          }
+        ],
+        "uncertainties": [
+          "導入の契約内容や費用負担など、亀岡市側の詳細は記載がない",
+          "自治体別の機能差の具体的な内容は不明",
+          "文書は民間企業のプレスリリースで、国や自治体が発出した公式文書ではない"
+        ],
+        "model": "claude-sonnet-5-5",
+        "processed_at": "2026-10-05T16:46:34+09:00"
       },
-      "tags": [],
+      "tags": [
+        {
+          "id": "maternal-child-health",
+          "name": "母子保健",
+          "origin": "ai",
+          "reason": "母子手帳アプリによる予防接種・健診・成長記録の管理など母子保健に関する内容のため",
+          "retired": false
+        },
+        {
+          "id": "childcare-support",
+          "name": "子育て支援",
+          "origin": "ai",
+          "reason": "亀岡市の子育て支援施策と子育て情報発信アプリの提供を扱っているため",
+          "retired": false
+        },
+        {
+          "id": "municipal-dx-standardization",
+          "name": "自治体DX・標準化",
+          "origin": "ai",
+          "reason": "自治体での母子保健DX・電子版母子健康手帳の導入に関する内容のため",
+          "retired": false
+        }
+      ],
       "removed_tags": [],
       "tag_override_reason": null
     },
@@ -504,7 +800,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-05T14:38:18+09:00",
-      "last_seen_at": "2026-10-05T14:38:18+09:00",
+      "last_seen_at": "2026-10-05T16:40:13+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -527,19 +823,76 @@
         }
       ],
       "summary": {
-        "status": "not_processed",
+        "status": "success",
         "error": null,
-        "version": null,
+        "version": 1,
         "outdated": false,
-        "text": null,
-        "key_points": null,
-        "targets": null,
-        "dates": null,
-        "uncertainties": null,
-        "model": null,
-        "processed_at": null
+        "text": "母子モ株式会社は、北九州市に提供する『子育てDX』「妊産婦健診サービス」を拡充し、2026年10月1日から『きたきゅう子育て応援アプリ』で産婦健診の助成券と問診票をデジタル化する。同社による妊産婦健診のデジタル化は全国で北九州市が初。",
+        "key_points": [
+          "産婦健診の助成券利用と問診票の記入・提出がアプリから可能になる",
+          "産婦には助成券の持ち忘れ・紛失リスクの軽減と手続き負担の軽減がある",
+          "医療機関には請求金額の自動計算、オンライン請求、問診結果の自動集計による効率化がある",
+          "自治体は健診結果が即時に届き、フォローが必要な産婦への早期対応が可能になる",
+          "2026年4月に妊婦健診の助成券利用・結果確認の機能を導入済みで、今回さらに拡充する"
+        ],
+        "targets": [
+          "北九州市の産婦",
+          "医療機関",
+          "北九州市(自治体)"
+        ],
+        "dates": [
+          {
+            "label": "産婦健診デジタル化の開始日",
+            "value": "2026-10-01",
+            "evidence": "10月1日(木)より、産婦健康診査(以下、産婦健診)の助成券や問診票のデジタル化を開始します"
+          },
+          {
+            "label": "連携協定書の締結",
+            "value": "2022-04",
+            "evidence": "北九州市と当社は2022年4月に「『子育てDX』による妊娠、出産、子育て分野のデジタル・トランスフォーメーションの推進に関する連携協定書」を締結し"
+          },
+          {
+            "label": "プレスリリース公開日",
+            "value": "2026-09-30",
+            "evidence": "2026年9月30日 10時00分"
+          },
+          {
+            "label": "「全国初」の根拠調査の実施年月",
+            "value": "2026-08",
+            "evidence": "調査年月:2026年8月"
+          }
+        ],
+        "uncertainties": [
+          "年が明記されていない「本年4月」は文書の公開年から2026年4月と読めるが、本文には年の記載がない",
+          "「全国初」は同社と母子モ導入済み自治体との契約状況の調査に基づく",
+          "助成券の対象となる健診の内容や回数など、制度面の詳細は記載がない"
+        ],
+        "model": "claude-sonnet-5-5",
+        "processed_at": "2026-10-05T16:46:34+09:00"
       },
-      "tags": [],
+      "tags": [
+        {
+          "id": "maternal-child-health",
+          "name": "母子保健",
+          "origin": "ai",
+          "reason": "産婦健診や妊婦健診のデジタル化など母子保健分野の取組を扱っている",
+          "retired": false
+        },
+        {
+          "id": "municipal-dx-standardization",
+          "name": "自治体DX・標準化",
+          "origin": "ai",
+          "reason": "北九州市でアプリを使った健診手続きのデジタル化と医療機関・自治体間のデータ連携を扱っている",
+          "retired": false
+        },
+        {
+          "id": "childcare-support",
+          "name": "子育て支援",
+          "origin": "ai",
+          "reason": "子育て応援アプリを通じた子育て関連手続きの利便性向上に触れている",
+          "retired": false
+        }
+      ],
       "removed_tags": [],
       "tag_override_reason": null
     },
@@ -563,7 +916,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-05T10:14:31+09:00",
-      "last_seen_at": "2026-10-05T12:32:15+09:00",
+      "last_seen_at": "2026-10-05T16:40:13+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -661,7 +1014,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-05T10:14:31+09:00",
-      "last_seen_at": "2026-10-05T12:32:15+09:00",
+      "last_seen_at": "2026-10-05T16:40:13+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -787,7 +1140,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-02T17:07:01+09:00",
-      "last_seen_at": "2026-10-05T12:32:15+09:00",
+      "last_seen_at": "2026-10-05T16:40:13+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -892,7 +1245,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-02T17:07:01+09:00",
-      "last_seen_at": "2026-10-05T12:32:15+09:00",
+      "last_seen_at": "2026-10-05T16:40:13+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -1025,7 +1378,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-02T17:07:01+09:00",
-      "last_seen_at": "2026-10-05T12:32:15+09:00",
+      "last_seen_at": "2026-10-05T16:40:13+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -1205,7 +1558,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-02T17:07:01+09:00",
-      "last_seen_at": "2026-10-05T12:32:15+09:00",
+      "last_seen_at": "2026-10-05T16:40:13+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -1315,7 +1668,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-05T10:14:31+09:00",
-      "last_seen_at": "2026-10-05T12:32:15+09:00",
+      "last_seen_at": "2026-10-05T16:40:13+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -1430,7 +1783,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-05T10:14:31+09:00",
-      "last_seen_at": "2026-10-05T12:32:15+09:00",
+      "last_seen_at": "2026-10-05T16:40:13+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -1494,7 +1847,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-05T10:14:31+09:00",
-      "last_seen_at": "2026-10-05T12:32:15+09:00",
+      "last_seen_at": "2026-10-05T16:40:13+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -1589,7 +1942,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-05T10:14:31+09:00",
-      "last_seen_at": "2026-10-05T12:32:15+09:00",
+      "last_seen_at": "2026-10-05T16:40:13+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -1667,7 +2020,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-05T10:14:31+09:00",
-      "last_seen_at": "2026-10-05T12:32:15+09:00",
+      "last_seen_at": "2026-10-05T16:40:13+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -1747,7 +2100,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-05T10:14:31+09:00",
-      "last_seen_at": "2026-10-05T12:32:15+09:00",
+      "last_seen_at": "2026-10-05T16:40:13+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -1811,7 +2164,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-05T14:53:03+09:00",
-      "last_seen_at": "2026-10-05T14:53:03+09:00",
+      "last_seen_at": "2026-10-05T16:40:13+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -1826,19 +2179,40 @@
       ],
       "attachments": [],
       "summary": {
-        "status": "not_processed",
+        "status": "success",
         "error": null,
-        "version": null,
+        "version": 1,
         "outdated": false,
-        "text": null,
-        "key_points": null,
-        "targets": null,
-        "dates": null,
-        "uncertainties": null,
-        "model": null,
-        "processed_at": null
+        "text": "ひたちなか市で本格始動した予防接種事務デジタル化の取り組みを紹介するnote記事の公開のお知らせ。医療機関向け合同説明会の様子や、自治体・医療機関・企業が連携する予防接種DX、本格運用に向けた準備、アプリ「harmoワクチンケア」の体験会を掲載している。",
+        "key_points": [
+          "ひたちなか市で予防接種事務デジタル化が本格始動した",
+          "医療機関向け合同説明会の様子を中心に紹介している",
+          "自治体・医療機関・企業が連携して進める予防接種DXの取り組みを紹介している",
+          "90名を超える医療関係者が説明会に参加した",
+          "医療機関向けアプリ「harmoワクチンケア」の体験会の様子も掲載している"
+        ],
+        "targets": [
+          "予防接種DXに課題を持つ自治体・関係者",
+          "医療機関"
+        ],
+        "dates": [],
+        "uncertainties": [
+          "記事本体（noteの内容）は未掲載で、詳細な取り組み内容は確認できない",
+          "説明会の開催日や本格運用の開始日は記載がない",
+          "対象となる予防接種の種類は記載がない"
+        ],
+        "model": "claude-sonnet-5-5",
+        "processed_at": "2026-10-05T16:46:34+09:00"
       },
-      "tags": [],
+      "tags": [
+        {
+          "id": "municipal-dx-standardization",
+          "name": "自治体DX・標準化",
+          "origin": "ai",
+          "reason": "自治体の予防接種事務のデジタル化・予防接種DXの取り組みを扱っているため。",
+          "retired": false
+        }
+      ],
       "removed_tags": [],
       "tag_override_reason": null
     },
@@ -7879,7 +8253,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-05T14:24:29+09:00",
-      "last_seen_at": "2026-10-05T14:24:29+09:00",
+      "last_seen_at": "2026-10-05T16:40:13+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,

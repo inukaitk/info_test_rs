@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "article_id": "a_6b1f3a16bad6a43f",
+  "summaries": [
+    {
+      "article_id": "a_6b1f3a16bad6a43f",
+      "article_version": 1,
+      "analysis_status": "success",
+      "error": null,
+      "summary": "ひたちなか市で本格始動した予防接種事務デジタル化の取り組みを紹介するnote記事の公開のお知らせ。医療機関向け合同説明会の様子や、自治体・医療機関・企業が連携する予防接種DX、本格運用に向けた準備、アプリ「harmoワクチンケア」の体験会を掲載している。",
+      "key_points": [
+        "ひたちなか市で予防接種事務デジタル化が本格始動した",
+        "医療機関向け合同説明会の様子を中心に紹介している",
+        "自治体・医療機関・企業が連携して進める予防接種DXの取り組みを紹介している",
+        "90名を超える医療関係者が説明会に参加した",
+        "医療機関向けアプリ「harmoワクチンケア」の体験会の様子も掲載している"
+      ],
+      "targets": [
+        "予防接種DXに課題を持つ自治体・関係者",
+        "医療機関"
+      ],
+      "dates": [],
+      "ai_tags": [
+        {
+          "tag_id": "municipal-dx-standardization",
+          "reason": "自治体の予防接種事務のデジタル化・予防接種DXの取り組みを扱っているため。"
+        }
+      ],
+      "uncertainties": [
+        "記事本体（noteの内容）は未掲載で、詳細な取り組み内容は確認できない",
+        "説明会の開催日や本格運用の開始日は記載がない",
+        "対象となる予防接種の種類は記載がない"
+      ],
+      "provider": "anthropic",
+      "model": "claude-sonnet-5-5",
+      "prompt_version": "p1-2026-10-02",
+      "tags_version": "sha256:bde74cf4ea967ef07307b37972c605277d95999c697068f6c5e9d5a6af8a7951",
+      "usage": {
+        "input_tokens": 2557,
+        "output_tokens": 520,
+        "retries": 0,
+        "estimated_cost_usd": 0.010314
+      },
+      "processed_at": "2026-10-05T16:46:34+09:00",
+      "content_hash": "sha256:437630ffb2e23dee7f23d75546c3d67fea19ed8808643a29a30d0979232c1ae8"
+    }
+  ]
+}
