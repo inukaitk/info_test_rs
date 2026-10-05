@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
-  "last_run_at": "2026-10-05T14:54:43+09:00",
+  "last_run_at": "2026-10-05T16:41:03+09:00",
   "last_run_status": "success",
-  "last_full_success_at": "2026-10-05T14:54:43+09:00",
+  "last_full_success_at": "2026-10-05T16:41:03+09:00",
   "counts": {
     "articles": 72,
     "date_unknown": 1,
     "content_missing": 1,
-    "unsummarized": 15,
+    "unsummarized": 1,
     "summary_outdated": 0
   },
   "sources": [
@@ -319,16 +319,7 @@
       },
       "retry_count": 0,
       "retry_items": [],
-      "last_run": {
-        "status": "success",
-        "error": null,
-        "warnings": [],
-        "new": 1,
-        "changed": 0,
-        "unchanged": 0,
-        "date_unknown": 0,
-        "fetch_failed": 0
-      },
+      "last_run": null,
       "articles": 1,
       "date_unknown": 0
     },
@@ -442,6 +433,24 @@
     }
   ],
   "runs": [
+    {
+      "run_id": "run_20261005T073915Z",
+      "started_at": "2026-10-05T16:39:15+09:00",
+      "finished_at": "2026-10-05T16:41:03+09:00",
+      "status": "success",
+      "kind": "summarize",
+      "period": null,
+      "totals": {
+        "new": 0,
+        "changed": 0,
+        "unchanged": 0,
+        "date_unknown": 0,
+        "fetch_failed": 0,
+        "summarized": 14,
+        "summarize_failed": 0
+      },
+      "sources": []
+    },
     {
       "run_id": "run_20261005T055303Z",
       "started_at": "2026-10-05T14:53:03+09:00",
