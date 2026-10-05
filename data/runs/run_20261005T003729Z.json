@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "run": {
+    "run_id": "run_20261005T003729Z",
+    "started_at": "2026-10-05T09:37:29+09:00",
+    "finished_at": "2026-10-05T09:38:05+09:00",
+    "status": "success",
+    "trigger": "manual_cli",
+    "kind": "summarize",
+    "period": null,
+    "sources": [],
+    "totals": {
+      "new": 0,
+      "changed": 0,
+      "unchanged": 0,
+      "date_unknown": 0,
+      "fetch_failed": 0,
+      "summarized": 5,
+      "summarize_failed": 0
+    },
+    "failures": [],
+    "api_usage": {
+      "requests": 5,
+      "input_tokens": 44434,
+      "output_tokens": 4145,
+      "estimated_cost_usd": 0.130318
+    }
+  }
+}
