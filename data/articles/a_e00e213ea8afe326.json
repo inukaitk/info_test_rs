@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_e00e213ea8afe326",
+    "source_id": "cfa-news",
+    "canonical_url": "https://www.cfa.go.jp/councils/internet-kaigi/5468bf4a",
+    "title": "青少年インターネット環境整備法の在り方等に関する検討ワーキンググループ（第9回）",
+    "published_at": "2026-09-29",
+    "updated_at": null,
+    "date_basis": {
+      "published": {
+        "method": "listing_text",
+        "evidence": "<time datetime=\"2026-09-29\">2026年9月29日</time>"
+      },
+      "updated": null
+    },
+    "date_precision": {
+      "published": "day",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-10-05T10:14:31+09:00",
+    "last_seen_at": "2026-10-05T10:14:31+09:00",
+    "latest_version": 1,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "extraction_profile": "html+pdf(3files,30pages,exclude:座席|席次)",
+      "article_id": "a_e00e213ea8afe326",
+      "version": 1,
+      "content_hash": "sha256:5b6092eee0caeadbf7a46db19b070fef363d4c58a6781eeed75201f46ad6e5bf",
+      "fetched_at": "2026-10-05T10:14:31+09:00",
+      "content_type": "html",
+      "text_length": 141,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "new"
+    }
+  ]
+}

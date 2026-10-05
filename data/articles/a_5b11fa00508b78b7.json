@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_5b11fa00508b78b7",
+    "source_id": "cfa-news",
+    "canonical_url": "https://www.cfa.go.jp/musashino/tsuushin-katei",
+    "title": "附属人材育成センター養成部（通信課程）",
+    "published_at": "2026-09-09",
+    "updated_at": null,
+    "date_basis": {
+      "published": {
+        "method": "listing_text",
+        "evidence": "<time datetime=\"2026-09-09\">2026年9月9日</time>"
+      },
+      "updated": null
+    },
+    "date_precision": {
+      "published": "day",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-10-05T10:14:31+09:00",
+    "last_seen_at": "2026-10-05T10:14:31+09:00",
+    "latest_version": 1,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "extraction_profile": "html+pdf(3files,30pages,exclude:座席|席次)",
+      "attachments": [
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/ae3174d5-20e9-4cc9-929b-625d06747d03/331f0f9a/20250918_musashino_tsuushin-katei_72.pdf",
+          "title": "通信課程概要（PDF／140KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 1075,
+          "pages": 2,
+          "pages_read": 2
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/ae3174d5-20e9-4cc9-929b-625d06747d03/eb98f4d2/20260908_musashino_tsuushin-katei_76.pdf",
+          "title": "募集要項（PDF／481KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 4568,
+          "pages": 8,
+          "pages_read": 8
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/ae3174d5-20e9-4cc9-929b-625d06747d03/d2859bba/20260908_musashino_tsuushin-katei_77.pdf",
+          "title": "選考試験成績開示取扱要領（PDF／329KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 1260,
+          "pages": 3,
+          "pages_read": 3
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/ae3174d5-20e9-4cc9-929b-625d06747d03/d41a96b3/20260915_musashino_tsuushin-katei_80.pdf",
+          "title": "募集要項（PDF／352KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/ae3174d5-20e9-4cc9-929b-625d06747d03/64bcf45e/20260908_musashino_tsuushin-katei_79.pdf",
+          "title": "よくある質問（Q＆A）（PDF／163KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/ae3174d5-20e9-4cc9-929b-625d06747d03/bd5fc94e/20241004_musashino_tsuushin-katei_70.pdf",
+          "title": "様式 証明書類申請書（PDF／80KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        }
+      ],
+      "article_id": "a_5b11fa00508b78b7",
+      "version": 1,
+      "content_hash": "sha256:07f3f3a0d138778fc78f8b27a40b6e204c279d1ada111740fd76f13e991a6758",
+      "fetched_at": "2026-10-05T10:14:31+09:00",
+      "content_type": "html",
+      "text_length": 7501,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "new"
+    }
+  ]
+}

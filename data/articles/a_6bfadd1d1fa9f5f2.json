@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_6bfadd1d1fa9f5f2",
+    "source_id": "cfa-news",
+    "canonical_url": "https://www.cfa.go.jp/policies/child-safety/efforts/koseibouhou/security-specialist",
+    "title": "情報セキュリティの専門家（情報処理安全確保支援士）への相談について",
+    "published_at": "2026-09-25",
+    "updated_at": null,
+    "date_basis": {
+      "published": {
+        "method": "listing_text",
+        "evidence": "<time datetime=\"2026-09-25\">2026年9月25日</time>"
+      },
+      "updated": null
+    },
+    "date_precision": {
+      "published": "day",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-10-05T10:14:31+09:00",
+    "last_seen_at": "2026-10-05T10:14:31+09:00",
+    "latest_version": 1,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "extraction_profile": "html+pdf(3files,30pages,exclude:座席|席次)",
+      "attachments": [
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/8a61ed06-da23-4a51-ad74-076d05042e81/6e81d45e/20260915_policies_child-safety_efforts_koseibouhou_security-specialist_01.pdf",
+          "title": "本窓口の紹介リーフレット（PDF／670KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 885,
+          "pages": 2,
+          "pages_read": 2
+        }
+      ],
+      "article_id": "a_6bfadd1d1fa9f5f2",
+      "version": 1,
+      "content_hash": "sha256:0953fe83ceb1c65ea65a74ad9286596455c9f82d867c7370f341ed7f341cc30e",
+      "fetched_at": "2026-10-05T10:14:31+09:00",
+      "content_type": "html",
+      "text_length": 3229,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "new"
+    }
+  ]
+}

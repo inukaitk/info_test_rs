@@ -1,0 +1,150 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_b472cd06b8376f4a",
+    "source_id": "cfa-news",
+    "canonical_url": "https://www.cfa.go.jp/councils/shingikai/shakai_katei/care-needs/1a4c1dc3",
+    "title": "こどものケアニーズに応じた支援の在り方に関する専門委員会（第7回）",
+    "published_at": "2026-09-04",
+    "updated_at": null,
+    "date_basis": {
+      "published": {
+        "method": "listing_text",
+        "evidence": "<time datetime=\"2026-09-04\">2026年9月4日</time>"
+      },
+      "updated": null
+    },
+    "date_precision": {
+      "published": "day",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-10-05T10:14:31+09:00",
+    "last_seen_at": "2026-10-05T10:14:31+09:00",
+    "latest_version": 1,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "extraction_profile": "html+pdf(3files,30pages,exclude:座席|席次)",
+      "attachments": [
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/1a4c1dc3-f7ad-484e-90e3-7cd649ec6b37/20c32a75/20260831_councils_shingikai_shakai_katei_care-needs_1a4c1dc3_01.pdf",
+          "title": "議事次第（PDF／100KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 323,
+          "pages": 1,
+          "pages_read": 1
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/1a4c1dc3-f7ad-484e-90e3-7cd649ec6b37/fc9c5695/20260831_councils_shingikai_shakai_katei_care-needs_1a4c1dc3_02.pdf",
+          "title": "資料1：こどものケアニーズに応じた支援について（PDF／2.07MB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 22362,
+          "pages": 26,
+          "pages_read": 26
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/1a4c1dc3-f7ad-484e-90e3-7cd649ec6b37/be829e37/20260831_councils_shingikai_shakai_katei_care-needs_1a4c1dc3_03.pdf",
+          "title": "資料2：相澤委員提出資料（PDF／317KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 2422,
+          "pages": 3,
+          "pages_read": 3
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/1a4c1dc3-f7ad-484e-90e3-7cd649ec6b37/56e6bcee/20260831_councils_shingikai_shakai_katei_care-needs_1a4c1dc3_04.pdf",
+          "title": "資料3：上鹿渡委員提出資料（PDF／794KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/1a4c1dc3-f7ad-484e-90e3-7cd649ec6b37/71694470/20260831_councils_shingikai_shakai_katei_care-needs_1a4c1dc3_05.pdf",
+          "title": "資料4：増沢委員提出資料（PDF／656KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/1a4c1dc3-f7ad-484e-90e3-7cd649ec6b37/620b10fe/20260831_councils_shingikai_shakai_katei_care-needs_1a4c1dc3_06.pdf",
+          "title": "資料5：渡辺委員提出資料（PDF／369KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/1a4c1dc3-f7ad-484e-90e3-7cd649ec6b37/102e0119/20260831_councils_shingikai_shakai_katei_care-needs_1a4c1dc3_07.pdf",
+          "title": "資料6：山口参考人提出資料（PDF／352KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/1a4c1dc3-f7ad-484e-90e3-7cd649ec6b37/d6b7e572/20260831_councils_shingikai_shakai_katei_care-needs_1a4c1dc3_08.pdf",
+          "title": "参考資料1：委員等名簿（PDF／131KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/1a4c1dc3-f7ad-484e-90e3-7cd649ec6b37/f631805a/20260831_councils_shingikai_shakai_katei_care-needs_1a4c1dc3_09.pdf",
+          "title": "参考資料2：社会的養護の現状（PDF／820KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/1a4c1dc3-f7ad-484e-90e3-7cd649ec6b37/a4e591b7/20260831_councils_shingikai_shakai_katei_care-needs_1a4c1dc3_10.pdf",
+          "title": "参考資料3：里親制度・各施設等の概要（PDF／510KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/1a4c1dc3-f7ad-484e-90e3-7cd649ec6b37/0b30fb9e/20260831_councils_shingikai_shakai_katei_care-needs_1a4c1dc3_11.pdf",
+          "title": "参考資料4：子ども・若者ケアプラン（自立支援計画）ガイドライン（抜粋）（PDF／8.68MB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/1a4c1dc3-f7ad-484e-90e3-7cd649ec6b37/1b943276/20260908_councils_shingikai_shakai_katei_care-needs_1a4c1dc3_12.pdf",
+          "title": "（追加）参考資料：研修実施状況（PDF／258KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        }
+      ],
+      "article_id": "a_b472cd06b8376f4a",
+      "version": 1,
+      "content_hash": "sha256:849a620d183b9d54eab2a5f041532130eeea3c741132444d6354a8210422b337",
+      "fetched_at": "2026-10-05T10:14:31+09:00",
+      "content_type": "html",
+      "text_length": 25652,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "new"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_408bd98dc7782cd5",
+    "source_id": "cfa-news",
+    "canonical_url": "https://www.cfa.go.jp/press/ae304a7d-0c06-4b27-9733-df3cc8772a10",
+    "title": "令和8年度里親月間　10月は「里親月間」です",
+    "published_at": "2026-09-29",
+    "updated_at": null,
+    "date_basis": {
+      "published": {
+        "method": "html_text",
+        "evidence": "公開日:令和8年9月29日"
+      },
+      "updated": null
+    },
+    "date_precision": {
+      "published": "day",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-10-05T10:14:31+09:00",
+    "last_seen_at": "2026-10-05T10:14:31+09:00",
+    "latest_version": 1,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "extraction_profile": "html+pdf(3files,30pages,exclude:座席|席次)",
+      "attachments": [
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/ae304a7d-0c06-4b27-9733-df3cc8772a10/306a6dc7/20260929_press_ae304a7d-0c06-4b27-9733-df3cc8772a10_01.pdf",
+          "title": "令和8年度里親月間　10月は「里親月間」です（PDF／3MB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 2576,
+          "pages": 6,
+          "pages_read": 6
+        }
+      ],
+      "article_id": "a_408bd98dc7782cd5",
+      "version": 1,
+      "content_hash": "sha256:5922f17cb947278e5c92e53c2dbec1213aab319abb12a3f24834dc7df981c7c4",
+      "fetched_at": "2026-10-05T10:14:31+09:00",
+      "content_type": "html",
+      "text_length": 2718,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "new"
+    }
+  ]
+}

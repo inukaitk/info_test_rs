@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_5aebd9490b789a43",
+    "source_id": "cfa-news",
+    "canonical_url": "https://www.cfa.go.jp/press/75abdfb1-aae7-40f4-a979-ea7d838f1c09",
+    "title": "匿名障害福祉及び障害児福祉情報等の提供に関する専門委員会（第9回）の開催について",
+    "published_at": "2026-09-18",
+    "updated_at": null,
+    "date_basis": {
+      "published": {
+        "method": "html_text",
+        "evidence": "公開日:令和8年9月18日"
+      },
+      "updated": null
+    },
+    "date_precision": {
+      "published": "day",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-10-05T10:14:31+09:00",
+    "last_seen_at": "2026-10-05T10:14:31+09:00",
+    "latest_version": 1,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "extraction_profile": "html+pdf(3files,30pages,exclude:座席|席次)",
+      "attachments": [
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/75abdfb1-aae7-40f4-a979-ea7d838f1c09/b5ce5196/20260918_press_75abdfb1-aae7-40f4-a979-ea7d838f1c09_01.pdf",
+          "title": "匿名障害福祉及び障害児福祉情報等の提供に関する専門委員会（第9回）の開催について（PDF／243KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 315,
+          "pages": 1,
+          "pages_read": 1
+        }
+      ],
+      "article_id": "a_5aebd9490b789a43",
+      "version": 1,
+      "content_hash": "sha256:305dd2f04b6e1892a8a81eaec49714d5e5abfb9d609f39b0f65869ecc4036b74",
+      "fetched_at": "2026-10-05T10:14:31+09:00",
+      "content_type": "html",
+      "text_length": 531,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "new"
+    }
+  ]
+}

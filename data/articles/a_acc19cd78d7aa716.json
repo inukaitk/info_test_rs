@@ -1,0 +1,132 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_acc19cd78d7aa716",
+    "source_id": "cfa-news",
+    "canonical_url": "https://www.cfa.go.jp/councils/child-safety-kyoiku-hoiku",
+    "title": "教育・保育施設等における重大事故防止策を考える有識者会議",
+    "published_at": "2026-09-18",
+    "updated_at": null,
+    "date_basis": {
+      "published": {
+        "method": "listing_text",
+        "evidence": "<time datetime=\"2026-09-18\">2026年9月18日</time>"
+      },
+      "updated": null
+    },
+    "date_precision": {
+      "published": "day",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-10-05T10:14:31+09:00",
+    "last_seen_at": "2026-10-05T10:14:31+09:00",
+    "latest_version": 1,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "extraction_profile": "html+pdf(3files,30pages,exclude:座席|席次)",
+      "attachments": [
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/44a616e7-e810-4cfe-b5b6-4d45069901ef/046cedee/20230809_councils_child-safety-kyoiku-hoiku_01.pdf",
+          "title": "開催要綱（PDF／132KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 1247,
+          "pages": 2,
+          "pages_read": 2
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/44a616e7-e810-4cfe-b5b6-4d45069901ef/72903739/20260917_councils_child-safety-kyoiku-hoiku_15.pdf",
+          "title": "委員名簿（PDF／85KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 398,
+          "pages": 1,
+          "pages_read": 1
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/44a616e7-e810-4cfe-b5b6-4d45069901ef/5ccea600/20260601_councils_child-safety-kyoiku-hoiku_14.pdf",
+          "title": "令和7年度（PDF／2MB）",
+          "status": "ok",
+          "error": "先頭30ページだけを読み取りました（全35ページ）",
+          "text_length": 22350,
+          "pages": 35,
+          "pages_read": 30
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/44a616e7-e810-4cfe-b5b6-4d45069901ef/151e5e7d/20250312_councils_child-safety-kyoiku-hoiku_11.pdf",
+          "title": "令和6年度（PDF／1,205KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/44a616e7-e810-4cfe-b5b6-4d45069901ef/d613fa06/20240329_councils_child-safety-kyoiku-hoiku_08.pdf",
+          "title": "令和5年度（PDF／7,309KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/44a616e7-e810-4cfe-b5b6-4d45069901ef/c1377028/20230809_councils_child-safety-kyoiku-hoiku_03.pdf",
+          "title": "令和4年度（PDF／774KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/44a616e7-e810-4cfe-b5b6-4d45069901ef/61c3b0fe/20230809_councils_child-safety-kyoiku-hoiku_04.pdf",
+          "title": "令和3年度（PDF／427KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/44a616e7-e810-4cfe-b5b6-4d45069901ef/5be43766/20230809_councils_child-safety-kyoiku-hoiku_05.pdf",
+          "title": "令和2年度（PDF／138KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/44a616e7-e810-4cfe-b5b6-4d45069901ef/97ce68b6/20230809_councils_child-safety-kyoiku-hoiku_06.pdf",
+          "title": "令和元年度（PDF／86KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/44a616e7-e810-4cfe-b5b6-4d45069901ef/7974abf3/20230809_councils_child-safety-kyoiku-hoiku_07.pdf",
+          "title": "平成30年度（PDF／1,653KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        }
+      ],
+      "article_id": "a_acc19cd78d7aa716",
+      "version": 1,
+      "content_hash": "sha256:839b154c2d15081a48515ef98d81f6b430cd39e4225069dd4c863d21fa77e547",
+      "fetched_at": "2026-10-05T10:14:31+09:00",
+      "content_type": "html",
+      "text_length": 24760,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "new"
+    }
+  ]
+}

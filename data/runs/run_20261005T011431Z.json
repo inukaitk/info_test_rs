@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "run": {
+    "run_id": "run_20261005T011431Z",
+    "started_at": "2026-10-05T10:14:31+09:00",
+    "finished_at": "2026-10-05T10:27:07+09:00",
+    "status": "partial",
+    "trigger": "manual_cli",
+    "kind": "collect",
+    "period": {
+      "start": "2026-09-01",
+      "end": "2026-10-05"
+    },
+    "sources": [
+      {
+        "source_id": "cfa-news",
+        "status": "success",
+        "candidates": 59,
+        "new": 50,
+        "changed": 0,
+        "unchanged": 5,
+        "date_unknown": 0,
+        "fetch_failed": 1,
+        "warnings": [],
+        "error": null
+      }
+    ],
+    "totals": {
+      "new": 50,
+      "changed": 0,
+      "unchanged": 5,
+      "date_unknown": 0,
+      "fetch_failed": 1,
+      "summarized": 0,
+      "summarize_failed": 0
+    },
+    "failures": [
+      {
+        "source_id": "cfa-news",
+        "url": "https://www.cfa.go.jp/councils/jisou-kaigi/r08",
+        "stage": "fetch",
+        "reason": "添付PDFの取得に失敗：支援局 虐待防止対策課（PDF／10.5MB）：サイズ上限（10485760バイト）を超えました"
+      }
+    ],
+    "api_usage": {
+      "requests": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "estimated_cost_usd": null
+    }
+  }
+}

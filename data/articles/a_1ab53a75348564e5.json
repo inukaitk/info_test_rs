@@ -1,0 +1,222 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_1ab53a75348564e5",
+    "source_id": "cfa-news",
+    "canonical_url": "https://www.cfa.go.jp/kyuyusei-hoshokin",
+    "title": "旧優生保護法補償金等に係る特設ホームページ",
+    "published_at": "2026-09-18",
+    "updated_at": null,
+    "date_basis": {
+      "published": {
+        "method": "listing_text",
+        "evidence": "<time datetime=\"2026-09-18\">2026年9月18日</time>"
+      },
+      "updated": null
+    },
+    "date_precision": {
+      "published": "day",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-10-05T10:14:31+09:00",
+    "last_seen_at": "2026-10-05T10:14:31+09:00",
+    "latest_version": 1,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "extraction_profile": "html+pdf(3files,30pages,exclude:座席|席次)",
+      "attachments": [
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/8c416afe-520a-4a3d-967e-ee6d3ff13c58/9b59720c/20251210_kyuyusei-hoshokin_90.pdf",
+          "title": "※リーフレットの誤記についてのお詫びと訂正等（PDF／220KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 983,
+          "pages": 1,
+          "pages_read": 1
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/8c416afe-520a-4a3d-967e-ee6d3ff13c58/7e1eb22d/20241224_kyuyusei-hoshokin_01.pdf",
+          "title": "旧優生保護法補償金等ポスター（PDF／185KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 291,
+          "pages": 1,
+          "pages_read": 1
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/8c416afe-520a-4a3d-967e-ee6d3ff13c58/4a1ed48b/20251215_kyuyusei-hoshokin_92.pdf",
+          "title": "旧優生保護法補償金等リーフレット1（PDF／1.1MB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 5801,
+          "pages": 2,
+          "pages_read": 2
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/8c416afe-520a-4a3d-967e-ee6d3ff13c58/3d93c825/20251215_kyuyusei-hoshokin_93.pdf",
+          "title": "旧優生保護法補償金等リーフレット（分かりやすい版）（PDF／1.3MB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/8c416afe-520a-4a3d-967e-ee6d3ff13c58/85201716/20260109_kyuyusei-hoshokin_103.pdf",
+          "title": "旧優生保護法補償金等リーフレット2（ルビなし）（PDF／1.1MB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/8c416afe-520a-4a3d-967e-ee6d3ff13c58/1c53c7e0/20260109_kyuyusei-hoshokin_104.pdf",
+          "title": "旧優生保護法補償金等リーフレット2（ルビあり）（PDF／1.2MB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/8c416afe-520a-4a3d-967e-ee6d3ff13c58/b9516542/20250117_kyuyusei-hoshokin_04.pdf",
+          "title": "弁護士による旧優生補償金等請求サポート事業の概要（PDF）（PDF／307KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/8c416afe-520a-4a3d-967e-ee6d3ff13c58/956f209e/20250120_kyuyusei-hoshokin_05.pdf",
+          "title": "弁護士による旧優生補償金等請求サポート事業に関するガイドライン（PDF／477KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/8c416afe-520a-4a3d-967e-ee6d3ff13c58/87c8bbe8/20251001_kyuyusei-hoshokin_62.pdf",
+          "title": "【PDF】（PDF／146KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/8c416afe-520a-4a3d-967e-ee6d3ff13c58/907d7fc7/20260130_kyuyusei-hoshokin_111.pdf",
+          "title": "【PDF】（PDF／2MB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/8c416afe-520a-4a3d-967e-ee6d3ff13c58/56a531ee/20251001_kyuyusei-hoshokin_64.pdf",
+          "title": "【PDF】（PDF／1.8MB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/8c416afe-520a-4a3d-967e-ee6d3ff13c58/61718e52/20251001_kyuyusei-hoshokin_65.pdf",
+          "title": "【PDF】（PDF／407KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/8c416afe-520a-4a3d-967e-ee6d3ff13c58/de6ac6fe/20251001_kyuyusei-hoshokin_66.pdf",
+          "title": "【PDF】（PDF／748KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/8c416afe-520a-4a3d-967e-ee6d3ff13c58/ff8d9fab/20260708_kyuyusei-hoshokin_145.pdf",
+          "title": "【PDF】（PDF／151KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/8c416afe-520a-4a3d-967e-ee6d3ff13c58/2740f0c1/20260708_kyuyusei-hoshokin_147.pdf",
+          "title": "【PDF】（PDF／2.4MB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/8c416afe-520a-4a3d-967e-ee6d3ff13c58/78a827c3/20260708_kyuyusei-hoshokin_149.pdf",
+          "title": "【PDF】（PDF／778KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/8c416afe-520a-4a3d-967e-ee6d3ff13c58/9220c0bb/20260708_kyuyusei-hoshokin_151.pdf",
+          "title": "【PDF】（PDF／429KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/8c416afe-520a-4a3d-967e-ee6d3ff13c58/a8648c18/20260708_kyuyusei-hoshokin_153.pdf",
+          "title": "【PDF】（PDF／2.4MB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/8c416afe-520a-4a3d-967e-ee6d3ff13c58/187ec755/20260708_kyuyusei-hoshokin_155.pdf",
+          "title": "【PDF】（PDF／945KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/8c416afe-520a-4a3d-967e-ee6d3ff13c58/45e644d9/20260925_kyuyusei-hoshokin_175.pdf",
+          "title": "【PDF】（PDF／108KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        }
+      ],
+      "article_id": "a_1ab53a75348564e5",
+      "version": 1,
+      "content_hash": "sha256:4fdb3cdf0965e033c9f1653ffd28df197615860e5a3bb200e37ab6b483197b31",
+      "fetched_at": "2026-10-05T10:14:31+09:00",
+      "content_type": "html",
+      "text_length": 16988,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "new"
+    }
+  ]
+}

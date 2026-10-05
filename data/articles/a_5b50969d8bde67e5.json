@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_5b50969d8bde67e5",
+    "source_id": "cfa-news",
+    "canonical_url": "https://www.cfa.go.jp/press/20fe1404-5c10-4f02-bd5a-2f7d3c9339ad",
+    "title": "悩みを抱えるこども・若者への「声かけ」～その一言が誰かの支えになる～「声かけキャンペーン」特設サイトを公開しました",
+    "published_at": "2026-09-04",
+    "updated_at": null,
+    "date_basis": {
+      "published": {
+        "method": "html_text",
+        "evidence": "公開日:令和8年9月4日"
+      },
+      "updated": null
+    },
+    "date_precision": {
+      "published": "day",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-10-05T10:14:31+09:00",
+    "last_seen_at": "2026-10-05T10:14:31+09:00",
+    "latest_version": 1,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "extraction_profile": "html+pdf(3files,30pages,exclude:座席|席次)",
+      "attachments": [
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/20fe1404-5c10-4f02-bd5a-2f7d3c9339ad/2071a216/20260904_press_20fe1404-5c10-4f02-bd5a-2f7d3c9339ad_01.pdf",
+          "title": "悩みを抱えるこども・若者への「声かけ」～その一言が誰かの支えになる～「声かけキャンペーン」特設サイトについて（PDF／429KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 1500,
+          "pages": 2,
+          "pages_read": 2
+        }
+      ],
+      "article_id": "a_5b50969d8bde67e5",
+      "version": 1,
+      "content_hash": "sha256:ceef48187e693207a0dec3285d410b90b25fbc383c9b83ef6c818e6c5e7f8078",
+      "fetched_at": "2026-10-05T10:14:31+09:00",
+      "content_type": "html",
+      "text_length": 1826,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "new"
+    }
+  ]
+}

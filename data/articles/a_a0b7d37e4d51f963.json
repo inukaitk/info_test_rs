@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_a0b7d37e4d51f963",
+    "source_id": "cfa-news",
+    "canonical_url": "https://www.cfa.go.jp/councils/jinkoninshinchuzetsu-ichijikin/bf8cb456",
+    "title": "人工妊娠中絶一時金認定審査部会（第19回）",
+    "published_at": "2026-09-30",
+    "updated_at": null,
+    "date_basis": {
+      "published": {
+        "method": "listing_text",
+        "evidence": "<time datetime=\"2026-09-30\">2026年9月30日</time>"
+      },
+      "updated": null
+    },
+    "date_precision": {
+      "published": "day",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-10-05T10:14:31+09:00",
+    "last_seen_at": "2026-10-05T10:14:31+09:00",
+    "latest_version": 1,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "extraction_profile": "html+pdf(3files,30pages,exclude:座席|席次)",
+      "attachments": [
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/df5dca32-e428-49f9-ad36-c4d4bf8cb456/8c796048/20260924_councils_jinkoninshinchuzetsu-ichijikin_bf8cb456_05.pdf",
+          "title": "議事要旨（PDF／120KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 502,
+          "pages": 1,
+          "pages_read": 1
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/df5dca32-e428-49f9-ad36-c4d4bf8cb456/c2f1198b/20260928_councils_jinkoninshinchuzetsu-ichijikin_bf8cb456_01.pdf",
+          "title": "議事次第（PDF／102KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 230,
+          "pages": 1,
+          "pages_read": 1
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/df5dca32-e428-49f9-ad36-c4d4bf8cb456/f04a35b3/20260928_councils_jinkoninshinchuzetsu-ichijikin_bf8cb456_02.pdf",
+          "title": "参考資料1：人工妊娠中絶一時金認定審査部会審査方針（PDF／177KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 476,
+          "pages": 1,
+          "pages_read": 1
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/df5dca32-e428-49f9-ad36-c4d4bf8cb456/7bd22f2a/20260928_councils_jinkoninshinchuzetsu-ichijikin_bf8cb456_03.pdf",
+          "title": "参考資料2：旧優生保護法補償金等認定審査会運営規程（PDF／188KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/df5dca32-e428-49f9-ad36-c4d4bf8cb456/9c0ea0a4/20260928_councils_jinkoninshinchuzetsu-ichijikin_bf8cb456_04.pdf",
+          "title": "参考資料3：人工妊娠中絶一時金認定審査部会　委員名簿（PDF／159KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        }
+      ],
+      "article_id": "a_a0b7d37e4d51f963",
+      "version": 1,
+      "content_hash": "sha256:03bc8dcc5cdd0c7ff640c22651b65d3002a221bfc9d072b36b8dcfca52a74a0c",
+      "fetched_at": "2026-10-05T10:14:31+09:00",
+      "content_type": "html",
+      "text_length": 1594,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "new"
+    }
+  ]
+}

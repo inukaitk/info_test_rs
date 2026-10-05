@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_48b9e379c6bc0e65",
+    "source_id": "cfa-news",
+    "canonical_url": "https://www.cfa.go.jp/policies/kodomonojisatsutaisaku/jisatsuyoboushukan",
+    "title": "自殺予防週間",
+    "published_at": "2026-09-01",
+    "updated_at": null,
+    "date_basis": {
+      "published": {
+        "method": "listing_text",
+        "evidence": "<time datetime=\"2026-09-01\">2026年9月1日</time>"
+      },
+      "updated": null
+    },
+    "date_precision": {
+      "published": "day",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-10-05T10:14:31+09:00",
+    "last_seen_at": "2026-10-05T10:14:31+09:00",
+    "latest_version": 1,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "extraction_profile": "html+pdf(3files,30pages,exclude:座席|席次)",
+      "attachments": [
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/1b0c35b6-83ef-4c3d-b7ee-0efcc06b3896/ef08bd80/20260831_policies_kodomonojisatsutaisaku_jisatsuyoboushukan_05.pdf",
+          "title": "あなたの声を聞かせてください（一般向け）（令和8年9月1日）（PDF／183KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 505,
+          "pages": 1,
+          "pages_read": 1
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/1b0c35b6-83ef-4c3d-b7ee-0efcc06b3896/a9240fc6/20260831_policies_kodomonojisatsutaisaku_jisatsuyoboushukan_06.pdf",
+          "title": "若い世代のみなさんへ（こども・若者向け）（令和8年9月1日）（PDF／221KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 931,
+          "pages": 1,
+          "pages_read": 1
+        }
+      ],
+      "article_id": "a_48b9e379c6bc0e65",
+      "version": 1,
+      "content_hash": "sha256:d567d67670382372191815aa5ad2f61df58da65796e45249432c6ebe80f3b0d3",
+      "fetched_at": "2026-10-05T10:14:31+09:00",
+      "content_type": "html",
+      "text_length": 2166,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "new"
+    }
+  ]
+}
