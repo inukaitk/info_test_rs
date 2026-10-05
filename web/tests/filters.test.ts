@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { applyFilters, countDateUnknownExcluded, dateRange, EMPTY_FILTERS, filtersToQuery, parseFilters } from "../src/filters";
+import { applyFilters, countDateUnknownExcluded, dateRange, EMPTY_FILTERS, filtersToQuery, pageWindow, paginate, parseFilters } from "../src/filters";
 import { article } from "./fixtures";
 
 const a1 = article({ id: "a_0000000000000001" });
@@ -61,5 +61,32 @@ describe("URLとの変換", () => {
     expect(dateRange("2026-02")).toEqual(["2026-02-01", "2026-02-28"]);
     expect(dateRange("2026")).toEqual(["2026-01-01", "2026-12-31"]);
     expect(dateRange(null)).toBeNull();
+  });
+});
+
+
+describe("ページ送り", () => {
+  it("件数からページ数と表示範囲を決める（範囲外のページは端に収める）", () => {
+    expect(paginate(120, 50, undefined)).toEqual({ pages: 3, page: 1, start: 0, end: 50 });
+    expect(paginate(120, 50, 3)).toEqual({ pages: 3, page: 3, start: 100, end: 120 });
+    expect(paginate(120, 50, 99)).toEqual({ pages: 3, page: 3, start: 100, end: 120 });
+    expect(paginate(0, 50, 2)).toEqual({ pages: 1, page: 1, start: 0, end: 0 });
+    expect(paginate(50, 50, 2)).toEqual({ pages: 1, page: 1, start: 0, end: 50 });
+  });
+
+  it("ページ番号は、先頭・末尾・現在の前後2ページを出し、間は省略する", () => {
+    expect(pageWindow(3, 1)).toEqual([1, 2, 3]);
+    expect(pageWindow(20, 1)).toEqual([1, 2, 3, null, 20]);
+    expect(pageWindow(20, 10)).toEqual([1, null, 8, 9, 10, 11, 12, null, 20]);
+    expect(pageWindow(20, 20)).toEqual([1, null, 18, 19, 20]);
+  });
+
+  it("page は URL に入り、1ページ目や不正な値は入れない。絞り込み条件を変えるとページは引き継がない", () => {
+    expect(filtersToQuery({ ...EMPTY_FILTERS, q: "健診", page: 2 })).toBe("?q=%E5%81%A5%E8%A8%BA&page=2");
+    expect(filtersToQuery({ ...EMPTY_FILTERS, page: 1 })).toBe("");
+    expect(parseFilters(new URLSearchParams("page=3")).page).toBe(3);
+    expect(parseFilters(new URLSearchParams("page=1")).page).toBeUndefined();
+    for (const bad of ["0", "-2", "abc", "2.5x", ""]) expect(parseFilters(new URLSearchParams(`page=${bad}`)).page).toBeUndefined();
+    expect(parseFilters(new URLSearchParams("page=99999999999")).page).toBe(100000);
   });
 });

@@ -217,3 +217,58 @@ describe("添付資料", () => {
     expect(detailView(site([article()]), article().id).textContent).not.toContain("添付資料");
   });
 });
+
+
+describe("記事を探す：ページ送り", () => {
+  const many = Array.from({ length: 120 }, (_, i) => {
+    const n = i + 1;
+    return article({
+      id: `a_${String(n).padStart(16, "0")}`, title: `【架空】記事${String(n).padStart(3, "0")}`,
+      published: { value: `2026-${n <= 60 ? "09" : "10"}-${String((n % 28) + 1).padStart(2, "0")}`, precision: "day", basis: null },
+    });
+  });
+  const titles = (el: HTMLElement) => [...el.querySelectorAll("a.title")].map((a) => a.textContent!);
+
+  it("50件ごとに表示し、すべて保存の案内と件数の範囲を出す", () => {
+    const first = listView(site(many), EMPTY_FILTERS, () => {});
+    expect(titles(first)).toHaveLength(50);
+    expect(first.textContent).toContain("120件中 120件（新しい順に1〜50件目を表示。保存はすべて）");
+    const third = listView(site(many), { ...EMPTY_FILTERS, page: 3 }, () => {});
+    expect(titles(third)).toHaveLength(20);
+    expect(third.textContent).toContain("101〜120件目");
+  });
+
+  it("どのページでも、すべての記事がちょうど1回ずつ見え、抜けも重なりもない", () => {
+    const seen: string[] = [];
+    for (const page of [1, 2, 3]) seen.push(...titles(listView(site(many), { ...EMPTY_FILTERS, page }, () => {})));
+    expect(new Set(seen).size).toBe(120);
+    expect(seen).toHaveLength(120);
+  });
+
+  it("ページ送りのリンクは、絞り込み条件を引き継いでページだけを変える。上下に出し、現在のページは印を付ける", () => {
+    const el = listView(site(many), { ...EMPTY_FILTERS, source: "demo-a", page: 2 }, () => {});
+    expect(el.querySelectorAll("nav.pager")).toHaveLength(2);
+    const nav = el.querySelector("nav.pager")!;
+    expect(nav.querySelector('[aria-current="page"]')?.textContent).toBe("2");
+    const hrefs = [...nav.querySelectorAll("a.pager-item")].map((a) => a.getAttribute("href"));
+    expect(hrefs).toContain("#/search?source=demo-a");
+    expect(hrefs).toContain("#/search?source=demo-a&page=3");
+    expect(nav.textContent).toContain("2 / 3ページ");
+  });
+
+  it("最初のページでは「前へ」、最後のページでは「次へ」を押せない", () => {
+    const first = listView(site(many), EMPTY_FILTERS, () => {}).querySelector("nav.pager")!;
+    expect(first.querySelector("span.disabled")?.textContent).toBe("前へ");
+    const last = listView(site(many), { ...EMPTY_FILTERS, page: 3 }, () => {}).querySelector("nav.pager")!;
+    expect(last.querySelector("span.disabled")?.textContent).toBe("次へ");
+    expect(last.querySelector('a[aria-label="2ページ目へ（前へ）"]')).not.toBeNull();
+  });
+
+  it("範囲外のページ番号は最後のページに収める。1ページに収まるときはページ送りを出さない", () => {
+    const beyond = listView(site(many), { ...EMPTY_FILTERS, page: 99 }, () => {});
+    expect(titles(beyond)).toHaveLength(20);
+    const few = listView(site(many.slice(0, 30)), EMPTY_FILTERS, () => {});
+    expect(few.querySelector("nav.pager")).toBeNull();
+    expect(few.textContent).not.toContain("件目を表示");
+  });
+});

@@ -93,6 +93,13 @@ nav a { margin-left: 0; }
 .top-summary { background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 8px 12px; margin-bottom: 12px; display: grid; gap: 4px; font-size: 0.92rem; }
 .warn-link { color: #9a3412; font-weight: bold; }
 .small { font-size: 0.8rem; }
+.pager { display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-start; gap: 6px; margin: 12px 0; }
+.pager a.pager-item { margin-left: 0; }
+.pager .pager-item { display: inline-block; min-width: 2.2em; padding: 4px 10px; border: 1px solid var(--line, #c8ccd0); border-radius: 4px; text-align: center; text-decoration: none; }
+.pager a.pager-item:hover { background: var(--hover, #eef2f6); }
+.pager .pager-item.current { background: var(--accent, #1f4e79); border-color: var(--accent, #1f4e79); color: #fff; font-weight: bold; }
+.pager .pager-item.disabled, .pager .pager-item.gap { border-color: transparent; color: #8a8f94; }
+.pager .pager-info { margin-left: 8px; color: #5b6168; font-size: 0.9em; }
 .result-bar { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px; }
 .export { font-size: 0.9rem; display: inline-flex; gap: 6px; align-items: center; }
 button.secondary { background: #fff; color: var(--accent); border: 1px solid var(--accent); padding: 3px 10px; }

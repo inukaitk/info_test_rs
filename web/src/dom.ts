@@ -7,7 +7,7 @@ type Attrs = Record<string, string | number | boolean | null | undefined>;
 
 const SAFE_ATTRS = new Set([
   "class", "id", "href", "title", "type", "name", "value", "placeholder", "for", "role",
-  "aria-label", "aria-live", "aria-current", "lang", "rel", "target", "min", "max", "datetime", "colspan", "selected",
+  "aria-label", "aria-live", "aria-current", "aria-disabled", "lang", "rel", "target", "min", "max", "datetime", "colspan", "selected",
 ]);
 
 export function h(tag: string, attrs: Attrs = {}, ...children: Child[]): HTMLElement {
