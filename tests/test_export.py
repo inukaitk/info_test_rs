@@ -294,3 +294,24 @@ def test_real_mode_with_empty_data(tmp_path, monkeypatch):
     outputs = ex.export("real", tmp_path / "out", GENERATED_AT)
     assert outputs["articles.json"]["articles"] == []
     assert outputs["meta.json"]["is_demo"] is False
+
+
+def test_plain_text_strips_html_from_date_evidence():
+    assert ex._plain_text('<time datetime="2026-10-02">2026年10月2日</time>') == "2026年10月2日"
+    assert ex._plain_text("公開日：令和8年9月30日") == "公開日：令和8年9月30日"
+    assert ex._plain_text("a &amp; b\n  <b>c</b>") == "a & b c"
+    assert ex._plain_text("<br>") == "<br>", "タグだけで空になる場合は元の文字を残す（根拠を空にしない）"
+
+
+def test_retry_items_are_exposed_with_plain_kind():
+    st = {"retry_queue": [
+        {"url": "https://a.example.org/x", "stage": "fetch", "article_id": "a_0123456789abcdef", "attempts": 2,
+         "first_failed_at": "2026-10-05T10:14:31+09:00",
+         "reason": "添付PDFの取得に失敗：資料（PDF／10.5MB）：サイズ上限（10485760バイト）を超えました"},
+        {"url": "https://a.example.org/y", "stage": "fetch", "article_id": None, "attempts": 1,
+         "first_failed_at": "2026-10-05T10:14:31+09:00", "reason": "HTTP 500"},
+    ]}
+    items = ex._retry_items(st, [{"id": "a_0123456789abcdef", "title": "会議資料"}])
+    assert [i["kind"] for i in items] == ["size_limit", "other"]
+    assert items[0]["title"] == "会議資料" and items[1]["title"] is None
+    assert ex._retry_items(None, []) == []

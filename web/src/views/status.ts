@@ -1,7 +1,7 @@
 // 取得状況：最終実行、最終全情報源成功、情報源ごとの成否と失敗理由、日付不明・未処理件数、データが古いときの警告。
 import { h } from "../dom";
 import { formatDateTime, formatPartialDate } from "../format";
-import type { SiteData, SourceStatus } from "../types";
+import type { RetryItem, SiteData, SourceStatus } from "../types";
 
 const RUN_STATUS: Record<string, string> = { success: "成功", partial: "一部失敗", failed: "失敗", running: "実行中" };
 const SOURCE_STATUS: Record<string, string> = { success: "成功", failed: "失敗", skipped: "対象外", unsupported: "未対応" };
@@ -12,6 +12,12 @@ function daysSince(ts: string | null, now: Date): number | null {
   if (!ts) return null;
   return Math.floor((now.getTime() - new Date(ts).getTime()) / DAY);
 }
+
+const RETRY_KIND: Record<RetryItem["kind"], string> = {
+  size_limit: "ファイルサイズが上限を超える添付資料があり、取得が完了していません",
+  attachment: "添付資料の取得に失敗し、取得が完了していません",
+  other: "取得に失敗し、取得が完了していません",
+};
 
 /** 画面上部に出す警告（データが古い、失敗が続く情報源など）。 */
 export function statusWarnings(data: SiteData, now: Date): string[] {
@@ -28,6 +34,11 @@ export function statusWarnings(data: SiteData, now: Date): string[] {
       warnings.push(`${s.name}：直近${s.consecutive_failures}回続けて取得に失敗しています（最後の成功：${formatDateTime(s.last_success_at)}）。`);
     } else if (since !== null && since > limit) {
       warnings.push(`${s.name}：最後の取得成功から${since}日経っています。`);
+    }
+    // 取得が完了していない記事（添付PDFが大きすぎる等）。「問題なし」と見せない
+    if (s.retry_items.length > 0) {
+      const kinds = [...new Set(s.retry_items.map((r) => r.kind))].map((k) => RETRY_KIND[k]);
+      warnings.push(`${s.name}：${s.retry_items.length}件の記事で、${kinds.join("／")}（下の「取得が完了していない記事」を確認してください）。`);
     }
     // 抽出0件・急減など、前回の収集で出た警告（抽出規則が壊れていないかの確認用）
     for (const w of s.last_run?.warnings ?? []) warnings.push(`${s.name}：${w}`);
@@ -46,6 +57,7 @@ export function statusView(data: SiteData, now: Date = new Date()): HTMLElement 
     warnings.length
       ? h("div", { class: "warn-box", role: "alert" }, h("strong", {}, "注意"), h("ul", {}, ...warnings.map((w) => h("li", {}, w))))
       : h("p", { class: "ok-box" }, "問題は見つかっていません。"),
+    retryTable(data),
     h(
       "table",
       { class: "kv" },
@@ -111,6 +123,44 @@ function sourceRow(s: SourceStatus): HTMLElement {
     h("td", {}, `${s.date_unknown}件`),
     h("td", {}, `${s.retry_count}件`),
     h("td", {}, range ? `${range.oldest ? formatPartialDate(range.oldest) : "?"}〜${range.newest ? formatPartialDate(range.newest) : "?"}（${range.pages}ページ）` : "—"),
+  );
+}
+
+/** 取得が完了していない記事の一覧（理由と、その記事で読めている範囲を案内する）。 */
+function retryTable(data: SiteData): HTMLElement | null {
+  const rows = data.status.sources.flatMap((s) => s.retry_items.map((r) => ({ source: s.name, item: r })));
+  if (rows.length === 0) return null;
+  return h(
+    "div",
+    { class: "detail-section" },
+    h("h2", {}, "取得が完了していない記事"),
+    h("p", { class: "muted" }, "次回の収集で再試行します。記事の本文や読めた資料だけで要約している場合があります（記事詳細の「添付資料」で、読めた資料と読めなかった資料を確認できます）。"),
+    h(
+      "table",
+      { class: "history" },
+      h("thead", {}, h("tr", {}, h("th", {}, "記事"), h("th", {}, "理由"), h("th", {}, "試行"), h("th", {}, "最初に失敗した日時"))),
+      h(
+        "tbody",
+        {},
+        ...rows.map(({ source, item }) =>
+          h(
+            "tr",
+            {},
+            h(
+              "td",
+              {},
+              item.article_id
+                ? h("a", { href: `#/articles/${item.article_id}` }, item.title ?? item.url)
+                : h("span", {}, item.title ?? item.url),
+              h("div", { class: "muted small" }, source),
+            ),
+            h("td", {}, RETRY_KIND[item.kind], h("div", { class: "muted small" }, item.reason)),
+            h("td", {}, `${item.attempts}回`),
+            h("td", {}, formatDateTime(item.first_failed_at)),
+          ),
+        ),
+      ),
+    ),
   );
 }
 

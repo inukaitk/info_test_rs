@@ -14,6 +14,7 @@ allowlist方式：画面に出してよい項目だけを明示的に取り出�
 from __future__ import annotations
 
 import argparse
+import html
 import json
 import os
 import re
@@ -111,12 +112,18 @@ def removed_tags(ai_tags: list[dict] | None, override: dict | None, tag_defs: di
 # ---------------------------------------------------------------- 変換（allowlist）
 
 
+def _plain_text(text: str) -> str:
+    """根拠の引用に残ったHTMLタグを除いて、画面で読める文字だけにする（例：<time ...>2026年10月2日</time> → 2026年10月2日）。"""
+    plain = re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]*>", "", text))).strip()
+    return plain or text
+
+
 def _date_info(article: dict, key: str) -> dict:
     basis = article["date_basis"][key]
     return {
         "value": article[f"{key}_at"],
         "precision": article["date_precision"][key],
-        "basis": {"method": basis["method"], "evidence": basis["evidence"]} if basis else None,
+        "basis": {"method": basis["method"], "evidence": _plain_text(basis["evidence"])} if basis else None,
     }
 
 
@@ -200,6 +207,32 @@ def _attachment_settings(source: dict) -> dict | None:
     return {"max_files": c["max_files"], "max_pages": c["max_pages"], "exclude_titles": list(c.get("exclude_titles", []))}
 
 
+def _retry_kind(reason: str) -> str:
+    """再試行待ちの理由の種類（画面で分かりやすい説明に変えるため）。"""
+    if "サイズ上限" in reason:
+        return "size_limit"
+    if "添付" in reason:
+        return "attachment"
+    return "other"
+
+
+def _retry_items(st: dict | None, articles: list[dict]) -> list[dict]:
+    titles = {a["id"]: a["title"] for a in articles}
+    return [
+        {
+            "article_id": r.get("article_id"),
+            "title": titles.get(r.get("article_id")),
+            "url": r["url"],
+            "stage": r["stage"],
+            "kind": _retry_kind(r["reason"]),
+            "reason": r["reason"],
+            "attempts": r["attempts"],
+            "first_failed_at": r["first_failed_at"],
+        }
+        for r in (st["retry_queue"] if st else [])
+    ]
+
+
 def build_status(runs: list[dict], state: dict, articles: list[dict], config: Config) -> dict:
     run_records = sorted((r["run"] for r in runs), key=lambda r: r["started_at"])
     last_run = run_records[-1] if run_records else None
@@ -223,6 +256,7 @@ def build_status(runs: list[dict], state: dict, articles: list[dict], config: Co
             "consecutive_failures": st["consecutive_failures"] if st else 0,
             "explored_range": dict(st["explored_range"]) if st and st["explored_range"] else None,
             "retry_count": len(st["retry_queue"]) if st else 0,
+            "retry_items": _retry_items(st, articles),
             "last_run": {
                 "status": res["status"], "error": res["error"], "warnings": list(res["warnings"]),
                 "new": res["new"], "changed": res["changed"], "unchanged": res["unchanged"],

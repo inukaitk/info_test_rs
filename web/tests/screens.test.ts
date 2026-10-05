@@ -124,6 +124,25 @@ describe("取得状況", () => {
     expect(statusWarnings(site([], {}, { status: st }), NOW).join()).toContain("1件も抽出できませんでした");
   });
 
+  it("取得が完了していない記事（添付PDFが大きい等）は「問題なし」とせず、理由を示す", () => {
+    const st = status();
+    st.sources[0] = { ...st.sources[0], retry_count: 1, retry_items: [{
+      article_id: "a_0123456789abcdef", title: "【架空】会議資料", url: "https://a.example.org/x", stage: "fetch", kind: "size_limit",
+      reason: "添付PDFの取得に失敗：資料（PDF／10.5MB）：サイズ上限（10485760バイト）を超えました", attempts: 1,
+      first_failed_at: "2026-09-28T08:00:00+09:00" }] };
+    const data = site([], {}, { status: st });
+    expect(statusWarnings(data, NOW).join()).toContain("ファイルサイズが上限を超える添付資料があり、取得が完了していません");
+    const el = statusView(data, NOW);
+    expect(el.textContent).not.toContain("問題は見つかっていません");
+    expect(el.textContent).toContain("取得が完了していない記事");
+    expect(el.querySelector('a[href="#/articles/a_0123456789abcdef"]')?.textContent).toBe("【架空】会議資料");
+  });
+
+  it("再試行待ちがなければ従来どおり「問題は見つかっていません」", () => {
+    expect(statusView(site([]), NOW).textContent).toContain("問題は見つかっていません");
+    expect(statusView(site([]), NOW).textContent).not.toContain("取得が完了していない記事");
+  });
+
   it("一度も成功していない情報源・未実行", () => {
     const st = status({ last_run_at: null, last_run_status: null, last_full_success_at: null });
     st.sources[0] = { ...st.sources[0], last_success_at: null, last_attempt_status: null, last_run: null };

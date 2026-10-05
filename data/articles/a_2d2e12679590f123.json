@@ -19,8 +19,8 @@
       "updated": "unknown"
     },
     "first_seen_at": "2026-10-05T10:14:31+09:00",
-    "last_seen_at": "2026-10-05T10:14:31+09:00",
-    "latest_version": 1,
+    "last_seen_at": "2026-10-05T11:56:27+09:00",
+    "latest_version": 2,
     "status": "active"
   },
   "versions": [
@@ -217,6 +217,200 @@
       "extraction_status": "ok",
       "extraction_error": null,
       "change_type": "new"
+    },
+    {
+      "extraction_profile": "html+pdf(3files,30pages,exclude:座席|席次)",
+      "attachments": [
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/76aaf367-76f1-4669-be9c-91358699f0a5/cb3e610d/20260903_councils_jisou-kaigi_r08_01.pdf",
+          "title": "資料一覧（PDF／299KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 3282,
+          "pages": 5,
+          "pages_read": 5
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/76aaf367-76f1-4669-be9c-91358699f0a5/a2a452e4/20260903_councils_jisou-kaigi_r08_02.pdf",
+          "title": "支援局 虐待防止対策課（PDF／10.5MB）",
+          "status": "ok",
+          "error": "先頭30ページだけを読み取りました（全125ページ）",
+          "text_length": 29128,
+          "pages": 125,
+          "pages_read": 30
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/76aaf367-76f1-4669-be9c-91358699f0a5/8d84da5e/20260903_councils_jisou-kaigi_r08_03.pdf",
+          "title": "支援局 参事官（こどもの性暴力防止担当）（PDF／3.42MB）",
+          "status": "ok",
+          "error": "先頭30ページだけを読み取りました（全35ページ）",
+          "text_length": 19905,
+          "pages": 35,
+          "pages_read": 30
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/76aaf367-76f1-4669-be9c-91358699f0a5/ae114613/20260903_councils_jisou-kaigi_r08_04.pdf",
+          "title": "支援局 家庭福祉課（PDF／13.6MB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/76aaf367-76f1-4669-be9c-91358699f0a5/687da51d/20260903_councils_jisou-kaigi_r08_05.pdf",
+          "title": "支援局 家庭福祉課 ひとり親家庭等支援室（PDF／1.74MB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/76aaf367-76f1-4669-be9c-91358699f0a5/1a894a63/20260903_councils_jisou-kaigi_r08_06.pdf",
+          "title": "支援局 障害児支援課（PDF／1.6MB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/76aaf367-76f1-4669-be9c-91358699f0a5/f46e9aa5/20260903_councils_jisou-kaigi_r08_07.pdf",
+          "title": "支援局 総務課 こどもの自殺対策推進室（PDF／3.28MB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/76aaf367-76f1-4669-be9c-91358699f0a5/537c01b1/20260903_councils_jisou-kaigi_r08_08.pdf",
+          "title": "男女共同参画局（PDF／2.45B）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/76aaf367-76f1-4669-be9c-91358699f0a5/769fe7c6/20260903_councils_jisou-kaigi_r08_09.pdf",
+          "title": "生活安全局（PDF／737KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/76aaf367-76f1-4669-be9c-91358699f0a5/e3ae4600/20260903_councils_jisou-kaigi_r08_10.pdf",
+          "title": "民事局（PDF／1.16MB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/76aaf367-76f1-4669-be9c-91358699f0a5/65ba8e11/20260903_councils_jisou-kaigi_r08_11.pdf",
+          "title": "人権擁護局（PDF／5.43MB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/76aaf367-76f1-4669-be9c-91358699f0a5/5c867ca6/20260903_councils_jisou-kaigi_r08_12.pdf",
+          "title": "社会・援護局 地域福祉課（PDF／4.07MB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/76aaf367-76f1-4669-be9c-91358699f0a5/82254c94/20260903_councils_jisou-kaigi_r08_13.pdf",
+          "title": "社会・援護局 地域福祉課 女性支援室（PDF／2.09MB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/76aaf367-76f1-4669-be9c-91358699f0a5/4eaa03a3/20260903_councils_jisou-kaigi_r08_14.pdf",
+          "title": "社会・援護局 地域福祉課 生活困窮者自立支援室（PDF／1.47MB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/76aaf367-76f1-4669-be9c-91358699f0a5/bd5c83f8/20260903_councils_jisou-kaigi_r08_15.pdf",
+          "title": "社会・援護局 障害保健福祉部 企画課 アルコール健康障害対策推進室（PDF／1.31MB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/76aaf367-76f1-4669-be9c-91358699f0a5/164c6b1f/20260903_councils_jisou-kaigi_r08_16.pdf",
+          "title": "「里親支援センターとの連携について」（山梨県）（PDF／1.05MB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/76aaf367-76f1-4669-be9c-91358699f0a5/fd2ff294/20260903_councils_jisou-kaigi_r08_17.pdf",
+          "title": "「長野県における一時保護について」（長野県）（PDF／1.92MB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/76aaf367-76f1-4669-be9c-91358699f0a5/b681e298/20260903_councils_jisou-kaigi_r08_18.pdf",
+          "title": "「長野県における市町村機能の強化に向けた支援について」（長野県）（PDF／1.54MB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/76aaf367-76f1-4669-be9c-91358699f0a5/b7c24196/20260903_councils_jisou-kaigi_r08_19.pdf",
+          "title": "「三重県におけるライフストーリーワーク普及の歩み ～子ども一人ひとりの物語に寄り添う支援をめざして～」（三重県）（PDF／2.19MB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/76aaf367-76f1-4669-be9c-91358699f0a5/a9de9392/20260903_councils_jisou-kaigi_r08_20.pdf",
+          "title": "「児童相談所と児童家庭支援センターのパートナーシップ ～和歌山県の取組を通して～」（和歌山県・和歌山児童家庭支援センターきずな）（PDF／3.19MB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        }
+      ],
+      "article_id": "a_2d2e12679590f123",
+      "version": 2,
+      "content_hash": "sha256:1416b367c7e8cd835b28240876e361cb22fecd5024e7dd79581289bf543340f9",
+      "fetched_at": "2026-10-05T11:56:27+09:00",
+      "content_type": "html",
+      "text_length": 55756,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "content_changed"
     }
   ]
 }

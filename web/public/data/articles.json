@@ -12,7 +12,7 @@
         "precision": "day",
         "basis": {
           "method": "listing_text",
-          "evidence": "<time datetime=\"2026-10-02\">2026年10月2日</time>"
+          "evidence": "2026年10月2日"
         }
       },
       "updated": {
@@ -21,7 +21,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-02T17:07:01+09:00",
-      "last_seen_at": "2026-10-05T10:14:31+09:00",
+      "last_seen_at": "2026-10-05T11:56:27+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -174,7 +174,7 @@
         "precision": "day",
         "basis": {
           "method": "listing_text",
-          "evidence": "<time datetime=\"2026-09-30\">2026年9月30日</time>"
+          "evidence": "2026年9月30日"
         }
       },
       "updated": {
@@ -405,7 +405,7 @@
         "precision": "day",
         "basis": {
           "method": "listing_text",
-          "evidence": "<time datetime=\"2026-09-30\">2026年9月30日</time>"
+          "evidence": "2026年9月30日"
         }
       },
       "updated": {
@@ -538,7 +538,7 @@
         "precision": "day",
         "basis": {
           "method": "listing_text",
-          "evidence": "<time datetime=\"2026-09-30\">2026年9月30日</time>"
+          "evidence": "2026年9月30日"
         }
       },
       "updated": {
@@ -943,7 +943,7 @@
         "precision": "day",
         "basis": {
           "method": "listing_text",
-          "evidence": "<time datetime=\"2026-09-29\">2026年9月29日</time>"
+          "evidence": "2026年9月29日"
         }
       },
       "updated": {
@@ -1102,7 +1102,7 @@
         "precision": "day",
         "basis": {
           "method": "listing_text",
-          "evidence": "<time datetime=\"2026-09-29\">2026年9月29日</time>"
+          "evidence": "2026年9月29日"
         }
       },
       "updated": {
@@ -1180,7 +1180,7 @@
         "precision": "day",
         "basis": {
           "method": "listing_text",
-          "evidence": "<time datetime=\"2026-09-25\">2026年9月25日</time>"
+          "evidence": "2026年9月25日"
         }
       },
       "updated": {
@@ -1260,7 +1260,7 @@
         "precision": "day",
         "basis": {
           "method": "listing_text",
-          "evidence": "<time datetime=\"2026-09-25\">2026年9月25日</time>"
+          "evidence": "2026年9月25日"
         }
       },
       "updated": {
@@ -1324,7 +1324,7 @@
         "precision": "day",
         "basis": {
           "method": "listing_text",
-          "evidence": "<time datetime=\"2026-09-18\">2026年9月18日</time>"
+          "evidence": "2026年9月18日"
         }
       },
       "updated": {
@@ -1614,7 +1614,7 @@
         "precision": "day",
         "basis": {
           "method": "listing_text",
-          "evidence": "<time datetime=\"2026-09-18\">2026年9月18日</time>"
+          "evidence": "2026年9月18日"
         }
       },
       "updated": {
@@ -1679,7 +1679,7 @@
         "precision": "day",
         "basis": {
           "method": "listing_text",
-          "evidence": "<time datetime=\"2026-09-18\">2026年9月18日</time>"
+          "evidence": "2026年9月18日"
         }
       },
       "updated": {
@@ -2017,7 +2017,7 @@
         "precision": "day",
         "basis": {
           "method": "listing_text",
-          "evidence": "<time datetime=\"2026-09-18\">2026年9月18日</time>"
+          "evidence": "2026年9月18日"
         }
       },
       "updated": {
@@ -2396,7 +2396,7 @@
         "precision": "day",
         "basis": {
           "method": "listing_text",
-          "evidence": "<time datetime=\"2026-09-17\">2026年9月17日</time>"
+          "evidence": "2026年9月17日"
         }
       },
       "updated": {
@@ -2550,7 +2550,7 @@
         "precision": "day",
         "basis": {
           "method": "listing_text",
-          "evidence": "<time datetime=\"2026-09-17\">2026年9月17日</time>"
+          "evidence": "2026年9月17日"
         }
       },
       "updated": {
@@ -2703,7 +2703,7 @@
         "precision": "day",
         "basis": {
           "method": "listing_text",
-          "evidence": "<time datetime=\"2026-09-17\">2026年9月17日</time>"
+          "evidence": "2026年9月17日"
         }
       },
       "updated": {
@@ -2921,7 +2921,7 @@
         "precision": "day",
         "basis": {
           "method": "listing_text",
-          "evidence": "<time datetime=\"2026-09-17\">2026年9月17日</time>"
+          "evidence": "2026年9月17日"
         }
       },
       "updated": {
@@ -2985,7 +2985,7 @@
         "precision": "day",
         "basis": {
           "method": "listing_text",
-          "evidence": "<time datetime=\"2026-09-16\">2026年9月16日</time>"
+          "evidence": "2026年9月16日"
         }
       },
       "updated": {
@@ -3298,7 +3298,7 @@
         "precision": "day",
         "basis": {
           "method": "listing_text",
-          "evidence": "<time datetime=\"2026-09-16\">2026年9月16日</time>"
+          "evidence": "2026年9月16日"
         }
       },
       "updated": {
@@ -3397,7 +3397,7 @@
         "precision": "day",
         "basis": {
           "method": "listing_text",
-          "evidence": "<time datetime=\"2026-09-16\">2026年9月16日</time>"
+          "evidence": "2026年9月16日"
         }
       },
       "updated": {
@@ -3529,7 +3529,7 @@
         "precision": "day",
         "basis": {
           "method": "listing_text",
-          "evidence": "<time datetime=\"2026-09-15\">2026年9月15日</time>"
+          "evidence": "2026年9月15日"
         }
       },
       "updated": {
@@ -3688,7 +3688,7 @@
         "precision": "day",
         "basis": {
           "method": "listing_text",
-          "evidence": "<time datetime=\"2026-09-11\">2026年9月11日</time>"
+          "evidence": "2026年9月11日"
         }
       },
       "updated": {
@@ -3753,7 +3753,7 @@
         "precision": "day",
         "basis": {
           "method": "listing_text",
-          "evidence": "<time datetime=\"2026-09-10\">2026年9月10日</time>"
+          "evidence": "2026年9月10日"
         }
       },
       "updated": {
@@ -3762,16 +3762,22 @@
         "basis": null
       },
       "first_seen_at": "2026-10-05T10:14:31+09:00",
-      "last_seen_at": "2026-10-05T10:14:31+09:00",
+      "last_seen_at": "2026-10-05T11:56:27+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
-      "latest_version": 1,
+      "latest_version": 2,
       "versions": [
         {
           "version": 1,
           "fetched_at": "2026-10-05T10:14:31+09:00",
           "change_type": "new",
+          "extraction_status": "ok"
+        },
+        {
+          "version": 2,
+          "fetched_at": "2026-10-05T11:56:27+09:00",
+          "change_type": "content_changed",
           "extraction_status": "ok"
         }
       ],
@@ -3786,9 +3792,9 @@
         {
           "title": "支援局 虐待防止対策課（PDF／10.5MB）",
           "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/76aaf367-76f1-4669-be9c-91358699f0a5/a2a452e4/20260903_councils_jisou-kaigi_r08_02.pdf",
-          "status": "failed",
-          "note": "サイズ上限（10485760バイト）を超えました",
-          "pages": null
+          "status": "ok",
+          "note": "先頭30ページだけを読み取りました（全125ページ）",
+          "pages": 125
         },
         {
           "title": "支援局 参事官（こどもの性暴力防止担当）（PDF／3.42MB）",
@@ -3920,93 +3926,109 @@
       "summary": {
         "status": "success",
         "error": null,
-        "version": 1,
+        "version": 2,
         "outdated": false,
-        "text": "こども家庭庁等が令和8年度全国児童福祉主管課長・児童相談所長会議の資料一覧を公開。行政説明、取組事例、関連資料、参考資料を掲載し、添付のこども性暴力防止法資料では施行日が令和8年12月25日と示され、事業者の準備事項が説明されている。",
+        "text": "こども家庭庁が令和8年9月10日に開催した全国児童福祉主管課長・児童相談所長会議の資料集。行政説明、取組事例、関連資料、参考資料を掲載。虐待防止対策課資料では一時保護委託の登録制度が令和8年10月1日に施行され、条例整備等が求められている。",
         "key_points": [
-          "会議資料は行政説明・取組事例・関連資料・参考資料・照会先一覧で構成されている",
-          "行政説明はこども家庭庁各課のほか内閣府、警察庁、法務省、厚生労働省が担当している",
-          "取組事例として山梨県、長野県、三重県、和歌山県、静岡市などの事例が掲載されている",
-          "関連資料に事務連絡・通知、令和9年度概算要求の概要、母子保健施策の動向(補助金、研修等)などが含まれる",
-          "こども性暴力防止法の資料では、犯罪事実確認、安全確保措置、情報管理措置、就業規則見直し、研修、相談体制整備などの対応が示されている"
+          "会議資料は行政説明・取組事例・関連資料・参考資料で構成され、こども家庭庁のほか内閣府、警察庁、法務省、厚労省、文科省の資料を含む。",
+          "令和7年児童福祉法等改正法により、一時保護委託の登録制度が令和8年10月1日に施行される。都道府県には基準を定める条例の制定が求められている。",
+          "令和9年度概算要求で、一時保護委託先機能充実化事業や多職種・他機関連携機能強化事業などの新規事業(補助率国1/2)を要求している。",
+          "こども虐待による死亡事例等の検証結果(第22次報告)では、令和6年度の死亡事例が65例77人で、心中事例は「保護者の自殺を伴うこどもの虐待死」に名称変更された。",
+          "関連資料に、事務連絡・通知、こども家庭センターの設置状況(令和8年4月時点)、乳幼児健診未受診者等の状況確認調査結果、母子保健施策の動向などが含まれる。"
         ],
         "targets": [
-          "都道府県・市区町村の児童福祉主管課",
+          "都道府県",
+          "指定都市",
+          "児童相談所設置市",
+          "市区町村",
           "児童相談所",
-          "学校設置者等(義務事業者)",
-          "民間教育保育等事業者(認定事業者)",
-          "対象業務従事者"
+          "こども家庭センター",
+          "一時保護委託先"
         ],
         "dates": [
           {
-            "label": "こども性暴力防止法の施行日",
-            "value": "2026-12-25",
-            "evidence": "施行日:令和8年12月25日"
+            "label": "会議資料の日付",
+            "value": "2026-09-10",
+            "evidence": "こども家庭庁支援局虐待防止対策課\n令和8年9月10日"
           },
           {
-            "label": "現職者の犯罪事実確認の期限(学校設置者等)",
-            "value": "2029-12",
-            "evidence": "施行から3年以内(第4条第3項)"
+            "label": "一時保護委託の登録制度の施行日",
+            "value": "2026-10-01",
+            "evidence": "施行日:令和8年10月1日"
+          },
+          {
+            "label": "改正法の施行期日",
+            "value": "2025-10-01",
+            "evidence": "令和7年10月1日(ただし、(2)2は令和8年4月1日、(3)2は令和8年10月1日、(3)3は令和7年10月20日に施行する。)"
+          },
+          {
+            "label": "内閣府令の暫定適用期間の開始",
+            "value": "2026-10-01",
+            "evidence": "令和8年10月1日~令和9年9月30日の間は、条例が未制定の場合、条例の代わりに上記内閣府令が登録の基準として適用される"
+          },
+          {
+            "label": "第22次報告の検証対象期間(開始)",
+            "value": "2024-04-01",
+            "evidence": "令和6年4月1日から令和7年3月31日までの間に発生、又は表面化した児童虐待による死亡事例65例・77人を対象とした。"
           }
         ],
         "uncertainties": [
-          "本文は先頭部分のみで、こども性暴力防止法資料の後半は途中で終わっている",
-          "各PDFの詳細内容は一覧の題名以外確認できない",
-          "会議の開催日は記載がない",
-          "現職者確認期限の具体的な日付は施行日からの計算によるもので原文に明記されていない",
+          "本文は先頭部分のみで、第22次報告以降や各課の資料の詳細は確認できない。",
+          "会議の開催日や開催形式は本文から確認できない。",
+          "公開日(2026-09-10)と資料の日付(令和8年9月10日)の関係は明記されていない。",
           "本文が長いため、先頭20000文字だけで作成しました"
         ],
         "model": "claude-sonnet-5-5",
-        "processed_at": "2026-10-05T10:29:20+09:00"
+        "processed_at": "2026-10-05T11:57:41+09:00"
       },
       "tags": [
-        {
-          "id": "council-committee",
-          "name": "審議会・検討会",
-          "origin": "ai",
-          "reason": "全国課長・児童相談所長会議の資料一覧である",
-          "retired": false
-        },
         {
           "id": "system-revision",
           "name": "制度改正",
           "origin": "ai",
-          "reason": "こども性暴力防止法の施行や令和7年児童福祉法等改正法の施行に関する説明を含む",
-          "retired": false
-        },
-        {
-          "id": "notice-admin-communication",
-          "name": "通知・事務連絡",
-          "origin": "ai",
-          "reason": "関連資料に事務連絡・通知が複数掲載されている",
-          "retired": false
-        },
-        {
-          "id": "childcare-support",
-          "name": "子育て支援",
-          "origin": "ai",
-          "reason": "こども家庭センター、家庭支援事業、地域子育て相談機関などの資料を含む",
-          "retired": false
-        },
-        {
-          "id": "maternal-child-health",
-          "name": "母子保健",
-          "origin": "ai",
-          "reason": "母子保健課の母子保健施策の動向や乳幼児健診未受診者調査結果が掲載されている",
-          "retired": false
-        },
-        {
-          "id": "survey-statistics",
-          "name": "調査・統計",
-          "origin": "ai",
-          "reason": "状況確認調査結果、安全確認調査結果、設置状況などの資料が含まれる",
+          "reason": "令和7年児童福祉法等改正法の施行と一時保護委託の登録制度の創設を扱っている。",
           "retired": false
         },
         {
           "id": "subsidy-grant",
           "name": "補助金・交付金",
           "origin": "ai",
-          "reason": "令和9年度概算要求の概要や母子保健の補助金に関する資料が含まれる",
+          "reason": "令和9年度概算要求の補助事業(補助率・補助基準額案)が示されている。",
+          "retired": false
+        },
+        {
+          "id": "notice-admin-communication",
+          "name": "通知・事務連絡",
+          "origin": "ai",
+          "reason": "関連資料に国から自治体への事務連絡・通知が複数掲載されている。",
+          "retired": false
+        },
+        {
+          "id": "survey-statistics",
+          "name": "調査・統計",
+          "origin": "ai",
+          "reason": "虐待死亡事例の検証結果や乳幼児健診未受診者等の状況確認調査結果などを掲載している。",
+          "retired": false
+        },
+        {
+          "id": "council-committee",
+          "name": "審議会・検討会",
+          "origin": "ai",
+          "reason": "こども家庭審議会の専門委員会による第22次報告の概要を含む。",
+          "retired": false
+        },
+        {
+          "id": "childcare-support",
+          "name": "子育て支援",
+          "origin": "ai",
+          "reason": "こども家庭センター、家庭支援事業、地域子育て相談機関など子育て支援に関する資料を含む。",
+          "retired": false
+        },
+        {
+          "id": "maternal-child-health",
+          "name": "母子保健",
+          "origin": "ai",
+          "reason": "母子保健課の資料や乳幼児健診未受診者等の調査結果が含まれる。",
           "retired": false
         }
       ],
@@ -4024,7 +4046,7 @@
         "precision": "day",
         "basis": {
           "method": "listing_text",
-          "evidence": "<time datetime=\"2026-09-10\">2026年9月10日</time>"
+          "evidence": "2026年9月10日"
         }
       },
       "updated": {
@@ -4296,7 +4318,7 @@
         "precision": "day",
         "basis": {
           "method": "listing_text",
-          "evidence": "<time datetime=\"2026-09-09\">2026年9月9日</time>"
+          "evidence": "2026年9月9日"
         }
       },
       "updated": {
@@ -4541,7 +4563,7 @@
         "precision": "day",
         "basis": {
           "method": "listing_text",
-          "evidence": "<time datetime=\"2026-09-08\">2026年9月8日</time>"
+          "evidence": "2026年9月8日"
         }
       },
       "updated": {
@@ -4606,7 +4628,7 @@
         "precision": "day",
         "basis": {
           "method": "listing_text",
-          "evidence": "<time datetime=\"2026-09-04\">2026年9月4日</time>"
+          "evidence": "2026年9月4日"
         }
       },
       "updated": {
@@ -4887,7 +4909,7 @@
         "precision": "day",
         "basis": {
           "method": "listing_text",
-          "evidence": "<time datetime=\"2026-09-04\">2026年9月4日</time>"
+          "evidence": "2026年9月4日"
         }
       },
       "updated": {
@@ -4952,7 +4974,7 @@
         "precision": "day",
         "basis": {
           "method": "listing_text",
-          "evidence": "<time datetime=\"2026-09-04\">2026年9月4日</time>"
+          "evidence": "2026年9月4日"
         }
       },
       "updated": {
@@ -5131,7 +5153,7 @@
         "precision": "day",
         "basis": {
           "method": "listing_text",
-          "evidence": "<time datetime=\"2026-09-04\">2026年9月4日</time>"
+          "evidence": "2026年9月4日"
         }
       },
       "updated": {
@@ -5311,7 +5333,7 @@
         "precision": "day",
         "basis": {
           "method": "listing_text",
-          "evidence": "<time datetime=\"2026-09-04\">2026年9月4日</time>"
+          "evidence": "2026年9月4日"
         }
       },
       "updated": {
@@ -5849,7 +5871,7 @@
         "precision": "day",
         "basis": {
           "method": "listing_text",
-          "evidence": "<time datetime=\"2026-09-01\">2026年9月1日</time>"
+          "evidence": "2026年9月1日"
         }
       },
       "updated": {
@@ -5950,7 +5972,7 @@
         "precision": "day",
         "basis": {
           "method": "listing_text",
-          "evidence": "<time datetime=\"2026-09-01\">2026年9月1日</time>"
+          "evidence": "2026年9月1日"
         }
       },
       "updated": {
@@ -6205,7 +6227,7 @@
         "precision": "day",
         "basis": {
           "method": "listing_text",
-          "evidence": "<time datetime=\"2026-09-01\">2026年9月1日</time>"
+          "evidence": "2026年9月1日"
         }
       },
       "updated": {
@@ -6499,7 +6521,7 @@
         "precision": "day",
         "basis": {
           "method": "listing_text",
-          "evidence": "<time datetime=\"2026-09-01\">2026年9月1日</time>"
+          "evidence": "2026年9月1日"
         }
       },
       "updated": {
@@ -6665,7 +6687,7 @@
         "precision": "day",
         "basis": {
           "method": "listing_text",
-          "evidence": "<time datetime=\"2026-09-01\">2026年9月1日</time>"
+          "evidence": "2026年9月1日"
         }
       },
       "updated": {

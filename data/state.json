@@ -3,24 +3,15 @@
   "sources": {
     "cfa-news": {
       "source_id": "cfa-news",
-      "last_success_at": "2026-10-05T10:14:31+09:00",
-      "last_attempt_at": "2026-10-05T10:14:31+09:00",
+      "last_success_at": "2026-10-05T11:56:27+09:00",
+      "last_attempt_at": "2026-10-05T11:56:27+09:00",
       "last_attempt_status": "success",
       "explored_range": {
         "oldest": "2026-08-31",
         "newest": "2026-10-02",
         "pages": 7
       },
-      "retry_queue": [
-        {
-          "url": "https://www.cfa.go.jp/councils/jisou-kaigi/r08",
-          "stage": "fetch",
-          "reason": "添付PDFの取得に失敗：支援局 虐待防止対策課（PDF／10.5MB）：サイズ上限（10485760バイト）を超えました",
-          "first_failed_at": "2026-10-05T10:14:31+09:00",
-          "attempts": 1,
-          "article_id": "a_2d2e12679590f123"
-        }
-      ],
+      "retry_queue": [],
       "consecutive_failures": 0
     }
   }

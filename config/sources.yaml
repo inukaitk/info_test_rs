@@ -28,7 +28,7 @@ sources:
       next_selector: "a.pagination__button[aria-label*='次']"
       max_pages: 7
     # 記事ページからリンクされた PDF も読む（1記事3件・1件10MB・30ページまで。座席図などは読まない）
-    attachments: {pdf: true, max_files: 3, max_bytes: 10485760, max_pages: 30, exclude_titles: ["座席", "席次"]}
+    attachments: {pdf: true, max_files: 3, max_bytes: 12582912, max_pages: 30, exclude_titles: ["座席", "席次"]}
     timezone: Asia/Tokyo
     limits: {max_items: 60, max_bytes: 5242880, wait_seconds: 5, timeout_seconds: 30}
     enabled: true
