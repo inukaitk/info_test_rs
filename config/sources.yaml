@@ -26,11 +26,11 @@ sources:
         - "^https://www\\.cfa\\.go\\.jp/procurement/"  # 調達情報（入札の総合ページ）
     pagination:
       next_selector: "a.pagination__button[aria-label*='次']"
-      max_pages: 3
+      max_pages: 7
     # 記事ページからリンクされた PDF も読む（1記事3件・1件10MB・30ページまで。座席図などは読まない）
     attachments: {pdf: true, max_files: 3, max_bytes: 10485760, max_pages: 30, exclude_titles: ["座席", "席次"]}
     timezone: Asia/Tokyo
-    limits: {max_items: 30, max_bytes: 5242880, wait_seconds: 5, timeout_seconds: 30}
+    limits: {max_items: 60, max_bytes: 5242880, wait_seconds: 5, timeout_seconds: 30}
     enabled: true
     notes: >-
       HTML一覧（RSSなし）。1ページ約10件。記事ページの「公開日：」を公開日の根拠にする。
