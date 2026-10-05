@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "article_id": "a_e0dd0eb579802b13",
+  "summaries": [
+    {
+      "article_id": "a_e0dd0eb579802b13",
+      "article_version": 1,
+      "analysis_status": "success",
+      "error": null,
+      "summary": "こども家庭庁が、第19回人工妊娠中絶一時金認定審査部会を令和8年9月29日14時から16時にオンラインで開催すると案内した。議題は請求事案の審査で、会議は非公開、頭撮りも不可。",
+      "key_points": [
+        "第19回人工妊娠中絶一時金認定審査部会の開催案内である",
+        "日時は2026年9月29日(火)14:00〜16:00",
+        "開催形態はオンライン(非公開)",
+        "議題は請求事案の審査",
+        "非公開の理由は、当事者・第三者の権利利益や公共の利益を害するおそれがあるため。頭撮りも不可"
+      ],
+      "targets": [
+        "報道関係者(頭撮り不可の案内があるため)"
+      ],
+      "dates": [
+        {
+          "label": "開催日",
+          "value": "2026-09-29",
+          "evidence": "日 時: 令和8年9月29日(火) 14時00分~16時00分"
+        },
+        {
+          "label": "公開日",
+          "value": "2026-09-18",
+          "evidence": "公開日:令和8年9月18日"
+        }
+      ],
+      "ai_tags": [
+        {
+          "tag_id": "council-committee",
+          "reason": "認定審査部会の開催案内であるため"
+        },
+        {
+          "tag_id": "maternal-child-health",
+          "reason": "成育局母子保健課が所管する人工妊娠中絶一時金に関する部会であるため"
+        }
+      ],
+      "uncertainties": [
+        "人工妊娠中絶一時金制度の内容や請求事案の詳細は文書に記載がない",
+        "案内の対象者が誰かは明記されていない(報道関係者向けかどうかは不明)"
+      ],
+      "provider": "anthropic",
+      "model": "claude-sonnet-5-5",
+      "prompt_version": "p1-2026-10-02",
+      "tags_version": "sha256:bde74cf4ea967ef07307b37972c605277d95999c697068f6c5e9d5a6af8a7951",
+      "usage": {
+        "input_tokens": 2657,
+        "output_tokens": 533,
+        "retries": 0,
+        "estimated_cost_usd": 0.010644
+      },
+      "processed_at": "2026-10-05T10:29:20+09:00",
+      "content_hash": "sha256:d3596fcde5d51f9e3aa934d9b9d00f84be4e59adb7e4a1bab8d231212c668e25"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "article_id": "a_dfa1d70360c2f656",
+  "summaries": [
+    {
+      "article_id": "a_dfa1d70360c2f656",
+      "article_version": 1,
+      "analysis_status": "success",
+      "error": null,
+      "summary": "こども家庭庁が令和8年9月1日、令和8年度次世代育成対策施設整備交付金の第3次内示について、各自治体ごとの内示額を別添資料のとおり公表した。今回内示額の合計は754,215千円。",
+      "key_points": [
+        "令和8年度次世代育成対策施設整備交付金の第3次内示を公表",
+        "各自治体ごとの内示額を別添資料で示している",
+        "単位は千円で、合計は754,215千円",
+        "都道府県（市区町村含む）と指定都市・中核市に分けて今回内示額を掲載",
+        "東京都229,091千円、鹿児島県141,920千円、群馬県86,632千円などの内示がある一方、0の自治体も多い"
+      ],
+      "targets": [
+        "都道府県（市区町村含む）",
+        "指定都市・中核市"
+      ],
+      "dates": [
+        {
+          "label": "公表日",
+          "value": "2026-09-01",
+          "evidence": "こども家庭庁ホームページへ公表 令和8年9月1日"
+        }
+      ],
+      "ai_tags": [
+        {
+          "tag_id": "subsidy-grant",
+          "reason": "次世代育成対策施設整備交付金の内示額を自治体ごとに示す内容のため。"
+        },
+        {
+          "tag_id": "childcare-support",
+          "reason": "次世代育成対策に関する施設整備の交付金に関する情報であるため。"
+        },
+        {
+          "tag_id": "notice-admin-communication",
+          "reason": "各自治体に内示額を知らせ、照会先を案内する通知形式の文書であるため。"
+        }
+      ],
+      "uncertainties": [
+        "交付金の対象となる施設の種類や事業内容は本文に記載がない",
+        "内示額の詳細な内訳は別添PDFにあり、本文では都道府県・指定都市・中核市別の額のみ確認できる",
+        "内示を受けた具体的な事業名は確認できない",
+        "第1次・第2次の内示との関係や金額は記載がない"
+      ],
+      "provider": "anthropic",
+      "model": "claude-sonnet-5-5",
+      "prompt_version": "p1-2026-10-02",
+      "tags_version": "sha256:bde74cf4ea967ef07307b37972c605277d95999c697068f6c5e9d5a6af8a7951",
+      "usage": {
+        "input_tokens": 3617,
+        "output_tokens": 635,
+        "retries": 0,
+        "estimated_cost_usd": 0.013584
+      },
+      "processed_at": "2026-10-05T10:29:20+09:00",
+      "content_hash": "sha256:f1bc732f3daefdce383a2a16d71332c3a7c05594b49629bc73feeb69a484a8ee"
+    }
+  ]
+}

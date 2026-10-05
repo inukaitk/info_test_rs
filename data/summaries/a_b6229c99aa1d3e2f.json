@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "article_id": "a_b6229c99aa1d3e2f",
+  "summaries": [
+    {
+      "article_id": "a_b6229c99aa1d3e2f",
+      "article_version": 1,
+      "analysis_status": "success",
+      "error": null,
+      "summary": "令和8年9月1日に黄川田大臣が記者会見を行ったとの告知。会見要旨は後日掲載予定とされており、本文に会見の具体的な内容は含まれていない。",
+      "key_points": [
+        "令和8年9月1日に黄川田大臣が記者会見を行った",
+        "会見要旨は後日掲載される予定",
+        "本文には会見の議題や発言内容の記載がない"
+      ],
+      "targets": [],
+      "dates": [
+        {
+          "label": "記者会見実施日",
+          "value": "2026-09-01",
+          "evidence": "令和8年9月1日、黄川田大臣が記者会見を行いました。"
+        }
+      ],
+      "ai_tags": [],
+      "uncertainties": [
+        "会見で取り上げられた議題や発言内容は本文に記載がなく確認できない",
+        "会見要旨の掲載日は「後日」とのみ記載されており不明",
+        "対象者・対象機関は記載がない"
+      ],
+      "provider": "anthropic",
+      "model": "claude-sonnet-5-5",
+      "prompt_version": "p1-2026-10-02",
+      "tags_version": "sha256:bde74cf4ea967ef07307b37972c605277d95999c697068f6c5e9d5a6af8a7951",
+      "usage": {
+        "input_tokens": 2254,
+        "output_tokens": 310,
+        "retries": 0,
+        "estimated_cost_usd": 0.007608
+      },
+      "processed_at": "2026-10-05T10:29:20+09:00",
+      "content_hash": "sha256:7ff0fae04badbe220a0b6abca9d126e9a9d1eec07c0cb3fa0b76747a9764c75c"
+    }
+  ]
+}

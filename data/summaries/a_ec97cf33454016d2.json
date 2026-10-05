@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "article_id": "a_ec97cf33454016d2",
+  "summaries": [
+    {
+      "article_id": "a_ec97cf33454016d2",
+      "article_version": 1,
+      "analysis_status": "success",
+      "error": null,
+      "summary": "こども家庭庁は、保育士養成課程等検討会(第5回)を令和8年9月10日(木)15時30分~17時30分に対面とオンライン(Zoom)で開催する。議題(予定)は保育士等キャリアアップ研修及び保育士のキャリアラダーに関する検討課題。YouTube Liveで配信される。",
+      "key_points": [
+        "第5回の開催日時は2026年9月10日(木)15時30分~17時30分",
+        "開催形式は対面とオンライン(Zoom)",
+        "議題(予定)は保育士等キャリアアップ研修及び保育士のキャリアラダーに関する検討課題",
+        "報道関係者及び一般向けにYouTube Liveで配信し、配信URLは当日ホームページに掲載",
+        "録画・録音を希望する場合は登録が必要で、会議資料は開始時間にホームページへ掲載"
+      ],
+      "targets": [
+        "報道関係者",
+        "一般の方(傍聴希望者)",
+        "録画・録音を希望する方"
+      ],
+      "dates": [
+        {
+          "label": "開催日",
+          "value": "2026-09-10",
+          "evidence": "保育士養成課程等検討会(第5回)を令和8年9月10日(木)に開催します"
+        },
+        {
+          "label": "公開日",
+          "value": "2026-09-04",
+          "evidence": "公開日:令和8年9月4日"
+        }
+      ],
+      "ai_tags": [
+        {
+          "tag_id": "council-committee",
+          "reason": "保育士養成課程等検討会の開催案内であるため"
+        },
+        {
+          "tag_id": "childcare-support",
+          "reason": "保育士の養成・キャリアアップなど保育に関する検討を扱うため"
+        }
+      ],
+      "uncertainties": [
+        "議題・進行順序は変更される可能性があると記載されている",
+        "検討会の具体的な資料内容や検討結果は本文から確認できない"
+      ],
+      "provider": "anthropic",
+      "model": "claude-sonnet-5-5",
+      "prompt_version": "p1-2026-10-02",
+      "tags_version": "sha256:bde74cf4ea967ef07307b37972c605277d95999c697068f6c5e9d5a6af8a7951",
+      "usage": {
+        "input_tokens": 3235,
+        "output_tokens": 659,
+        "retries": 0,
+        "estimated_cost_usd": 0.01306
+      },
+      "processed_at": "2026-10-05T10:29:20+09:00",
+      "content_hash": "sha256:191e67c4246aabc03a78d475f003a60f7a8f2ecde8b355ee0a58443e4a8cc654"
+    }
+  ]
+}

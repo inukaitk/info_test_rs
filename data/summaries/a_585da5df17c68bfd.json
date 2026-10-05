@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "article_id": "a_585da5df17c68bfd",
+  "summaries": [
+    {
+      "article_id": "a_585da5df17c68bfd",
+      "article_version": 1,
+      "analysis_status": "success",
+      "error": null,
+      "summary": "こども家庭庁が令和8年9月1日、令和8年度子ども・子育て支援施設整備交付金の第3次内示として、27自治体への自治体ごとの内示額を公表した。合計は449,642千円。詳細は成育局参事官(事業調整担当)付調整係が照会先。",
+      "key_points": [
+        "令和8年度子ども・子育て支援施設整備交付金の第3次内示を公表",
+        "別添資料で各自治体ごとの内示額を通知",
+        "内示対象は27自治体(福島県鏡石町から宮崎県宮崎市まで)",
+        "内示額の合計は449,642千円(単位:千円)",
+        "最大は大分県大分市の74,276千円、最小は大分県宇佐市の107千円"
+      ],
+      "targets": [
+        "内示対象の27自治体(市区町村)"
+      ],
+      "dates": [
+        {
+          "label": "公開日",
+          "value": "2026-09-01",
+          "evidence": "公開日:令和8年9月1日"
+        }
+      ],
+      "ai_tags": [
+        {
+          "tag_id": "subsidy-grant",
+          "reason": "子ども・子育て支援施設整備交付金の内示額を自治体ごとに示す内容のため"
+        },
+        {
+          "tag_id": "childcare-support",
+          "reason": "子ども・子育て支援施設の整備に係る交付金に関する情報のため"
+        },
+        {
+          "tag_id": "notice-admin-communication",
+          "reason": "こども家庭庁から自治体へ内示額をお知らせする文書のため"
+        }
+      ],
+      "uncertainties": [
+        "交付金の対象となる具体的な施設や事業内容は本文に記載がない",
+        "内示額の算定根拠や交付手続きの期限は記載がない",
+        "別添資料の全体は確認できず、表に記載された内容のみ確認した"
+      ],
+      "provider": "anthropic",
+      "model": "claude-sonnet-5-5",
+      "prompt_version": "p1-2026-10-02",
+      "tags_version": "sha256:bde74cf4ea967ef07307b37972c605277d95999c697068f6c5e9d5a6af8a7951",
+      "usage": {
+        "input_tokens": 3056,
+        "output_tokens": 582,
+        "retries": 0,
+        "estimated_cost_usd": 0.011932
+      },
+      "processed_at": "2026-10-05T10:29:20+09:00",
+      "content_hash": "sha256:1c731df1aaf373cb9d189d087cc26a449f7064bad519d1f51f0a667c60ba9f33"
+    }
+  ]
+}
