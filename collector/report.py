@@ -34,12 +34,20 @@ def jst_date(timestamp: str) -> date:
     return datetime.fromisoformat(timestamp).astimezone(JST).date()
 
 
+def basis_date(article: dict) -> date:
+    """週次の集計に使う日。公開日（日まで分かるもの）を優先し、日付不明・月のみの記事は取得日（見つけた日）で数える。"""
+    value = (article.get("published") or {}).get("value")
+    if value and re.fullmatch(r"\d{4}-\d{2}-\d{2}", value):
+        return date.fromisoformat(value)
+    return jst_date(article["first_seen_at"])
+
+
 def week_windows(as_of: str | None, articles: list[dict], days: int = 7) -> list[tuple[date, date]]:
     """最終収集日を最後の日とする7日ごとの期間を、新しい順に返す（記事が見つかった最初の週まで）。"""
     if not as_of:
         return []
     end = jst_date(as_of)
-    seen = [jst_date(a["first_seen_at"]) for a in articles]
+    seen = [basis_date(a) for a in articles]
     earliest = min(seen) if seen else end
     windows = []
     while len(windows) < MAX_WEEKS:
@@ -96,7 +104,7 @@ def _item(a: dict, version: int | None = None) -> dict:
 def build_week(start: date, end: date, meta: dict, articles: list[dict], status: dict) -> dict:
     inside = lambda ts: start <= jst_date(ts) <= end  # noqa: E731
 
-    new = [a for a in articles if inside(a["first_seen_at"])]
+    new = [a for a in articles if start <= basis_date(a) <= end]
     new_ids = {a["id"] for a in new}
     changed = []
     for a in articles:
@@ -141,7 +149,7 @@ def build_week(start: date, end: date, meta: dict, articles: list[dict], status:
             "untagged": sum(1 for a in targets if not a["tags"]),
             "runs": len(runs),
         },
-        "new": [_item(a) for a in sorted(new, key=lambda a: a["first_seen_at"], reverse=True)],
+        "new": [_item(a) for a in sorted(new, key=lambda a: (basis_date(a), a["first_seen_at"]), reverse=True)],
         "changed": [_item(a, v) for a, v in changed],
         "tag_counts": tag_counts,
         "sources": sources,
@@ -181,7 +189,7 @@ def to_markdown(week: dict, meta: dict) -> str:
         lines += ["> **架空データ**：このレポートの機関名・記事・URLはすべて架空です。実在の情報ではありません。", ""]
     lines += [
         f"- サイト：{md(meta['site_name'])}",
-        f"- 対象：取得日（見つけた日）が期間内の記事と、期間内に本文が変わった記事",
+        f"- 対象：公開日が期間内の記事（公開日が不明・月のみの記事は取得日で数える）と、期間内に本文が変わった記事",
         f"- データ作成：{format_timestamp(meta['generated_at'])}",
         "",
         "## 概要",

@@ -535,7 +535,10 @@ def test_collected_data_flows_to_public_json(config, fetcher, tmp_path):
     assert broken["last_attempt_status"] == "failed" and "HTTP 500" in broken["last_run"]["error"]
     assert outputs["meta.json"]["is_demo"] is False
     week = outputs["reports.json"]["weeks"][0]
-    assert week["counts"]["new"] == 10
+    # 週次は公開日基準：10件のうち、公開日が週の中にある記事と日付不明（取得日で数える）の6件。
+    # 公開日が週より前の記事は、今回初めて取得しても「新規」に数えない
+    assert week["counts"]["new"] == 6
+    assert sum(1 for i in week["new"] if i["published"] is None) == week["counts"]["date_unknown"]
 
 
 def test_cli_requires_explicit_network_flag(capsys):

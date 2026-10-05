@@ -27,7 +27,7 @@ export function reportView(data: SiteData, weekId: string | null, navigate: (has
     { class: "report" },
     h("h1", {}, "週次レポート"),
     h("div", { class: "toolbar" }, h("label", { for: "report-week" }, "期間："), select, mdButton),
-    h("p", { class: "lead" }, `${periodLabel(week)}：取得日（見つけた日）が期間内の記事と、期間内に本文が変わった記事`),
+    h("p", { class: "lead" }, `${periodLabel(week)}：公開日が期間内の記事（公開日が不明・月のみの記事は取得日で数える）と、期間内に本文が変わった記事`),
     h(
       "table",
       { class: "kv counts" },

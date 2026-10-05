@@ -1,4 +1,4 @@
-// 最新情報：取得日（見つけた日）が直近 latest_days 日（最終収集日を含む）の記事。
+// 最新情報：公開日が直近 latest_days 日（最終収集日を含む）の記事（日付不明・月のみの記事は取得日で数える）。
 // それより前の記事は「記事を探す」（全期間の絞り込み・検索）と Wiki で見る。
 import { h } from "../dom";
 import { latestArticles, latestWindow } from "../filters";
@@ -17,7 +17,7 @@ export function latestView(data: SiteData, now: Date = new Date()): HTMLElement 
     ? h(
         "p",
         { class: "lead" },
-        `${formatPartialDate(window.from)}〜${formatPartialDate(window.to)}に見つけた記事（直近${meta.latest_days}日間）：`,
+        `${formatPartialDate(window.from)}〜${formatPartialDate(window.to)}に公開された記事（直近${meta.latest_days}日間）：`,
         h("strong", {}, `${articles.length}件`),
       )
     : h("p", { class: "lead" }, "まだ収集したデータがありません。");
@@ -38,7 +38,7 @@ export function latestView(data: SiteData, now: Date = new Date()): HTMLElement 
     h("h1", {}, "最新情報"),
     summary,
     period,
-    articles.length ? articleTable(articles) : h("p", { class: "empty" }, "この期間に新しく見つけた記事はありません。"),
+    articles.length ? articleTable(articles) : h("p", { class: "empty" }, "この期間に公開された記事はありません。"),
     h(
       "p",
       { class: "more" },
