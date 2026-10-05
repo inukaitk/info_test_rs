@@ -7,7 +7,7 @@
     "articles": 72,
     "date_unknown": 1,
     "content_missing": 1,
-    "unsummarized": 7,
+    "unsummarized": 1,
     "summary_outdated": 0
   },
   "sources": [
@@ -543,6 +543,24 @@
           "warnings": []
         }
       ]
+    },
+    {
+      "run_id": "run_20261005T073915Z",
+      "started_at": "2026-10-05T16:39:15+09:00",
+      "finished_at": "2026-10-05T16:41:03+09:00",
+      "status": "success",
+      "kind": "summarize",
+      "period": null,
+      "totals": {
+        "new": 0,
+        "changed": 0,
+        "unchanged": 0,
+        "date_unknown": 0,
+        "fetch_failed": 0,
+        "summarized": 14,
+        "summarize_failed": 0
+      },
+      "sources": []
     },
     {
       "run_id": "run_20261005T055303Z",

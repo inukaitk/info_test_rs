@@ -42,6 +42,14 @@ jobs:
       - name: 設定とデータを検証する
         run: python -m collector.validate
 
+      # AIのAPIキーが使えるかを、課金されない方法で先に確認する。使えなくても収集と公開は続け、最後の手順で赤にして知らせる
+      - name: AIのAPIキーを確認する（無料）
+        id: keycheck
+        continue-on-error: true
+        env:
+          INFO_AI_API_KEY: ${{ secrets.INFO_AI_API_KEY }}
+        run: python scripts/check_ai_key.py
+
       # 取得に失敗した（情報源が全滅した）場合はここで止まり、何も保存・公開しない。
       # 一部の情報源だけ失敗した場合は成功分を保存し、失敗した情報源の成功地点は進めない（収集CLIの仕様）
       - name: 収集する（採用した情報源だけ）
@@ -96,10 +104,10 @@ jobs:
           fi
           echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
 
-      - name: 要約の失敗を知らせる
-        if: steps.summarize.outcome == 'failure'
+      - name: AIの失敗を知らせる
+        if: steps.summarize.outcome == 'failure' || steps.keycheck.outcome == 'failure'
         run: |
-          echo "::error::AI要約の手順が失敗しました（収集できた記事は「未要約」として公開されます）。Actionsのログを確認してください。"
+          echo "::error::AIのAPIキーの確認、またはAI要約の手順が失敗しました（収集できた記事は「未要約」として公開されます）。Actionsのログを確認してください。"
           exit 1
 
   deploy:
