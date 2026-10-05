@@ -1,7 +1,7 @@
 # AI要約・タグ付けの設定（段階3-a）。APIキーはここに書かない（環境変数 INFO_AI_API_KEY から読む）。
 provider: anthropic
-# 既定のモデル。実行時に --model で変えられる（比較用）。
-model: claude-opus-5-5
+# 既定のモデル（段階3-bの比較で Sonnet 5.5 に決定。docs/DECISIONS.md）。実行時に --model で変えられる。
+model: claude-sonnet-5-5
 # モデルごとの価格（米ドル／100万トークン）。2026-10-02 に公式資料で確認（docs/DECISIONS.md）。概算費用の計算に使う
 prices:
   claude-opus-5-5: {input: 4.0, output: 20.0}
