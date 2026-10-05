@@ -27,7 +27,11 @@ def test_demo_sources_are_fictional():
 
 
 # go.jp 以外のドメインで収集してよい情報源（ユーザーが採用を指示したもの。理由は docs/DECISIONS.md）
-NON_GO_JP_ADOPTED = {"gosaiji-topics"}  # 5歳児健診ポータル（こども家庭庁の支援）
+NON_GO_JP_ADOPTED = {
+    "gosaiji-topics",       # 5歳児健診ポータル（こども家庭庁の支援）
+    # 民間企業4社：ユーザーが特別に認めた（2026-10-05）。どれも同じ形式・同じ処理で扱い、優劣を付けない
+    "cmic-news", "mchh-prtimes", "milabo-news", "ryobi-neuvola-karte",
+}
 
 
 def test_real_sources_are_official_and_documented():

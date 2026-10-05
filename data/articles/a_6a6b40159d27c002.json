@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_6a6b40159d27c002",
+    "source_id": "cmic-news",
+    "canonical_url": "https://www.cmicgroup.com/news/20260915/",
+    "title": "「BioJapan 2026」出展のお知らせ",
+    "published_at": "2026-09-15",
+    "updated_at": null,
+    "date_basis": {
+      "published": {
+        "method": "listing_text",
+        "evidence": "<time datetime=\"2026-09-15\">2026年09月15日</time>"
+      },
+      "updated": null
+    },
+    "date_precision": {
+      "published": "day",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-10-05T14:38:18+09:00",
+    "last_seen_at": "2026-10-05T14:38:18+09:00",
+    "latest_version": 1,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "extraction_profile": "html+pdf(3files,30pages)",
+      "article_id": "a_6a6b40159d27c002",
+      "version": 1,
+      "content_hash": "sha256:8a841e73a7c248633e7ecb0b86db4eb90e0eac22c7d0893c60a0c421c21178f7",
+      "fetched_at": "2026-10-05T14:38:18+09:00",
+      "content_type": "html",
+      "text_length": 777,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "new"
+    }
+  ]
+}

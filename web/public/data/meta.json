@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-05T14:26:35+09:00",
+  "generated_at": "2026-10-05T14:43:46+09:00",
   "release_mode": "real",
   "is_demo": false,
   "site_name": "外部環境情報（検証版）",
@@ -8,7 +8,7 @@
   "page_size": 50,
   "latest_days": 7,
   "stale_after_days": 8,
-  "data_as_of": "2026-10-05T14:24:29+09:00",
+  "data_as_of": "2026-10-05T14:38:18+09:00",
   "tags": [
     {
       "id": "maternal-child-health",
@@ -107,6 +107,22 @@
     {
       "id": "jt-tsushin",
       "name": "自治体通信Online（新着記事）"
+    },
+    {
+      "id": "cmic-news",
+      "name": "シミックグループ（ニュース＆イベント）"
+    },
+    {
+      "id": "mchh-prtimes",
+      "name": "母子モ株式会社（プレスリリース、PR TIMES）"
+    },
+    {
+      "id": "milabo-news",
+      "name": "株式会社ミラボ（お知らせ）"
+    },
+    {
+      "id": "ryobi-neuvola-karte",
+      "name": "両備システムズ（ネウボラかるてに関するお知らせ）"
     }
   ]
 }

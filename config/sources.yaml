@@ -271,3 +271,82 @@ sources:
       SPEC 3章の範囲に合うか、記事の転載・引用の条件を採用前に確認する。
       robots.txt：検索結果ページ（/searchDetail）以外は許可。運営方針：https://www.jt-tsushin.jp/sitepolicy
 
+  # ⑧ 採用（2026-10-05）：民間企業4社。公的機関ではないが、ユーザーが特別に認めた（docs/DECISIONS.md）。
+  #   優劣・順位は付けず、同じ設定の形式・同じ処理で扱う。並びは五十音順。
+  - id: cmic-news
+    name: シミックグループ（ニュース＆イベント）
+    entry_url: https://www.cmicgroup.com/news/
+    method: html
+    allowed_hosts: [www.cmicgroup.com]
+    link_rules:
+      css_selector: "main"
+      item_selector: "li.c-news-list__item a.c-news-list__link"
+      title_selector: "p.c-news-list__ttl"
+      date_selector: "time.c-news-list__data"
+      include:
+        - "^https://www\\.cmicgroup\\.com/news/.+"
+    pagination: {max_pages: 1}
+    attachments: {pdf: true, max_files: 3, max_bytes: 12582912, max_pages: 30}
+    timezone: Asia/Tokyo
+    limits: {max_items: 30, max_bytes: 5242880, wait_seconds: 5, timeout_seconds: 30}
+    enabled: true
+    notes: >-
+      公的機関ではない（民間企業）が、ユーザーが特別に認めた情報源。HTML一覧（1ページ約10〜20件、ページ送りは未確認）。
+      医薬・ヘルスケア全般のニュースで、母子保健に関係しないものが多い。robots.txt：なし（404）。利用条件：未確認。
+
+  - id: mchh-prtimes
+    name: 母子モ株式会社（プレスリリース、PR TIMES）
+    entry_url: https://prtimes.jp/companyrdf.php?company_id=99909
+    method: rss
+    allowed_hosts: [prtimes.jp]
+    attachments: {pdf: true, max_files: 3, max_bytes: 12582912, max_pages: 30}
+    timezone: Asia/Tokyo
+    limits: {max_items: 30, max_bytes: 5242880, wait_seconds: 5, timeout_seconds: 30}
+    enabled: true
+    notes: >-
+      公的機関ではない（民間企業）が、ユーザーが特別に認めた情報源。PR TIMES が会社ごとに配信している公式のRSS（RSS 1.0）から、
+      プレスリリースを取得する（母子モの自社サイトは、新着がログイン画面の向こうにあるため対象にしない）。
+      robots.txt：PR TIMES は許可。利用条件：PR TIMES の利用規約を確認できていない（出典を示し、短い概要とリンクだけを掲載）。
+
+  - id: milabo-news
+    name: 株式会社ミラボ（お知らせ）
+    entry_url: https://mi-labo.co.jp/news/
+    method: html
+    allowed_hosts: [mi-labo.co.jp]
+    link_rules:
+      css_selector: "main"
+      item_selector: "li > a:has(.post-card)"
+      title_selector: ".post-card__title"
+      date_selector: ".post-card__meta--date"
+      include:
+        - "^https://mi-labo\\.co\\.jp/posts/.+"
+    pagination: {max_pages: 1}
+    attachments: {pdf: true, max_files: 3, max_bytes: 12582912, max_pages: 30}
+    timezone: Asia/Tokyo
+    limits: {max_items: 30, max_bytes: 8388608, wait_seconds: 5, timeout_seconds: 60}
+    enabled: true
+    notes: >-
+      公的機関ではない（民間企業）が、ユーザーが特別に認めた情報源。HTML一覧（カード形式、1ページ12件）。
+      一覧ページが約4.6MBと大きいため、サイズの上限を8MBにしている。ページ送りは未確認。robots.txt：なし（404）。利用条件：未確認。
+
+  - id: ryobi-neuvola-karte
+    name: 両備システムズ（ネウボラかるてに関するお知らせ）
+    entry_url: https://service.ryobi.co.jp/healthcare_solution/sh-neuvola-karte/
+    method: html
+    allowed_hosts: [service.ryobi.co.jp, www.ryobi.co.jp]
+    link_rules:
+      css_selector: "ul.news-wrapper"
+      item_selector: "li.date-list"
+      title_selector: "p"
+      date_selector: "div.date"
+      include:
+        - "^https://www\\.ryobi\\.co\\.jp/news/.+"
+    pagination: {max_pages: 1}
+    attachments: {pdf: true, max_files: 3, max_bytes: 12582912, max_pages: 30}
+    timezone: Asia/Tokyo
+    limits: {max_items: 30, max_bytes: 5242880, wait_seconds: 5, timeout_seconds: 30}
+    enabled: true
+    notes: >-
+      公的機関ではない（民間企業）が、ユーザーが特別に認めた情報源。子育て支援システム「ネウボラかるて」の製品ページにある
+      お知らせ欄（ネウボラかるてに関する部分だけ。両備システムズ全体のニュースではない）から、同社のお知らせ記事を取得する。
+      お知らせは4件（最新は2026年7月29日）。robots.txt：管理用のパスのみ制限。利用条件：未確認。

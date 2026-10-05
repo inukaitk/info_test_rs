@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "article_id": "a_3b333de840b1ce13",
+  "summaries": [
+    {
+      "article_id": "a_3b333de840b1ce13",
+      "article_version": 1,
+      "analysis_status": "success",
+      "error": null,
+      "summary": "2026年9月3日、「作業療法士・理学療法士が活躍する種子島の5歳児健診」という新しい取材レポートが公開された。本文は公開の告知のみで、レポートの具体的な内容は記載されていない。",
+      "key_points": [
+        "鹿児島県種子島に関する取材レポートを公開した",
+        "レポートの題材は、作業療法士・理学療法士が活躍する種子島の5歳児健診",
+        "本文は閲覧を案内する告知のみ"
+      ],
+      "targets": [],
+      "dates": [
+        {
+          "label": "公開日",
+          "value": "2026-09-03",
+          "evidence": "2026.09.03"
+        }
+      ],
+      "ai_tags": [
+        {
+          "tag_id": "maternal-child-health",
+          "reason": "5歳児健診に関する取材レポートの公開であり、乳幼児の健康診査に関わる情報のため。"
+        }
+      ],
+      "uncertainties": [
+        "レポートの具体的な内容（健診の実施体制、対象者、成果など）は本文に書かれていない",
+        "対象者・対象機関は本文から確認できない",
+        "発信元の組織や運営主体は本文から確認できない"
+      ],
+      "provider": "anthropic",
+      "model": "claude-sonnet-5-5",
+      "prompt_version": "p1-2026-10-02",
+      "tags_version": "sha256:bde74cf4ea967ef07307b37972c605277d95999c697068f6c5e9d5a6af8a7951",
+      "usage": {
+        "input_tokens": 2285,
+        "output_tokens": 439,
+        "retries": 0,
+        "estimated_cost_usd": 0.00896
+      },
+      "processed_at": "2026-10-05T14:43:04+09:00",
+      "content_hash": "sha256:cdc107500e1cce8b72899a16961c1b16426360e63d76701fc975b38630e3e47c"
+    }
+  ]
+}

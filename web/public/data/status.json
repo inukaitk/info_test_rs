@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
-  "last_run_at": "2026-10-05T14:24:52+09:00",
+  "last_run_at": "2026-10-05T14:43:13+09:00",
   "last_run_status": "success",
-  "last_full_success_at": "2026-10-05T14:24:52+09:00",
+  "last_full_success_at": "2026-10-05T14:43:13+09:00",
   "counts": {
-    "articles": 58,
+    "articles": 86,
     "date_unknown": 1,
     "content_missing": 1,
-    "unsummarized": 3,
+    "unsummarized": 29,
     "summary_outdated": 0
   },
   "sources": [
@@ -113,18 +113,7 @@
       },
       "retry_count": 0,
       "retry_items": [],
-      "last_run": {
-        "status": "success",
-        "error": null,
-        "warnings": [
-          "同じURLを指す一覧の項目 7件を1件にまとめました（#以降だけが違うリンクなど）"
-        ],
-        "new": 1,
-        "changed": 0,
-        "unchanged": 0,
-        "date_unknown": 0,
-        "fetch_failed": 0
-      },
+      "last_run": null,
       "articles": 1,
       "date_unknown": 0
     },
@@ -154,16 +143,7 @@
       },
       "retry_count": 0,
       "retry_items": [],
-      "last_run": {
-        "status": "success",
-        "error": null,
-        "warnings": [],
-        "new": 2,
-        "changed": 0,
-        "unchanged": 0,
-        "date_unknown": 1,
-        "fetch_failed": 0
-      },
+      "last_run": null,
       "articles": 2,
       "date_unknown": 1
     },
@@ -315,9 +295,197 @@
       "last_run": null,
       "articles": 0,
       "date_unknown": 0
+    },
+    {
+      "id": "cmic-news",
+      "name": "シミックグループ（ニュース＆イベント）",
+      "method": "html",
+      "entry_url": "https://www.cmicgroup.com/news/",
+      "enabled": true,
+      "notes": "公的機関ではない（民間企業）が、ユーザーが特別に認めた情報源。HTML一覧（1ページ約10〜20件、ページ送りは未確認）。 医薬・ヘルスケア全般のニュースで、母子保健に関係しないものが多い。robots.txt：なし（404）。利用条件：未確認。",
+      "attachments": {
+        "max_files": 3,
+        "max_pages": 30,
+        "exclude_titles": []
+      },
+      "last_success_at": "2026-10-05T14:38:18+09:00",
+      "last_attempt_at": "2026-10-05T14:38:18+09:00",
+      "last_attempt_status": "success",
+      "consecutive_failures": 0,
+      "explored_range": {
+        "oldest": "2026-08-24",
+        "newest": "2026-10-05",
+        "pages": 1
+      },
+      "retry_count": 0,
+      "retry_items": [],
+      "last_run": null,
+      "articles": 15,
+      "date_unknown": 0
+    },
+    {
+      "id": "mchh-prtimes",
+      "name": "母子モ株式会社（プレスリリース、PR TIMES）",
+      "method": "rss",
+      "entry_url": "https://prtimes.jp/companyrdf.php?company_id=99909",
+      "enabled": true,
+      "notes": "公的機関ではない（民間企業）が、ユーザーが特別に認めた情報源。PR TIMES が会社ごとに配信している公式のRSS（RSS 1.0）から、 プレスリリースを取得する（母子モの自社サイトは、新着がログイン画面の向こうにあるため対象にしない）。 robots.txt：PR TIMES は許可。利用条件：PR TIMES の利用規約を確認できていない（出典を示し、短い概要とリンクだけを掲載）。",
+      "attachments": {
+        "max_files": 3,
+        "max_pages": 30,
+        "exclude_titles": []
+      },
+      "last_success_at": "2026-10-05T14:38:18+09:00",
+      "last_attempt_at": "2026-10-05T14:38:18+09:00",
+      "last_attempt_status": "success",
+      "consecutive_failures": 0,
+      "explored_range": {
+        "oldest": "2025-04-01",
+        "newest": "2026-10-01",
+        "pages": 1
+      },
+      "retry_count": 0,
+      "retry_items": [],
+      "last_run": null,
+      "articles": 13,
+      "date_unknown": 0
+    },
+    {
+      "id": "milabo-news",
+      "name": "株式会社ミラボ（お知らせ）",
+      "method": "html",
+      "entry_url": "https://mi-labo.co.jp/news/",
+      "enabled": true,
+      "notes": "公的機関ではない（民間企業）が、ユーザーが特別に認めた情報源。HTML一覧（カード形式、1ページ12件）。 一覧ページが約4.6MBと大きいため、サイズの上限を8MBにしている。ページ送りは未確認。robots.txt：なし（404）。利用条件：未確認。",
+      "attachments": {
+        "max_files": 3,
+        "max_pages": 30,
+        "exclude_titles": []
+      },
+      "last_success_at": "2026-10-05T14:38:18+09:00",
+      "last_attempt_at": "2026-10-05T14:38:18+09:00",
+      "last_attempt_status": "success",
+      "consecutive_failures": 0,
+      "explored_range": {
+        "oldest": "2026-06-15",
+        "newest": "2026-07-08",
+        "pages": 1
+      },
+      "retry_count": 0,
+      "retry_items": [],
+      "last_run": null,
+      "articles": 0,
+      "date_unknown": 0
+    },
+    {
+      "id": "ryobi-neuvola-karte",
+      "name": "両備システムズ（ネウボラかるてに関するお知らせ）",
+      "method": "html",
+      "entry_url": "https://service.ryobi.co.jp/healthcare_solution/sh-neuvola-karte/",
+      "enabled": true,
+      "notes": "公的機関ではない（民間企業）が、ユーザーが特別に認めた情報源。子育て支援システム「ネウボラかるて」の製品ページにある お知らせ欄（ネウボラかるてに関する部分だけ。両備システムズ全体のニュースではない）から、同社のお知らせ記事を取得する。 お知らせは4件（最新は2026年7月29日）。robots.txt：管理用のパスのみ制限。利用条件：未確認。",
+      "attachments": {
+        "max_files": 3,
+        "max_pages": 30,
+        "exclude_titles": []
+      },
+      "last_success_at": "2026-10-05T14:38:18+09:00",
+      "last_attempt_at": "2026-10-05T14:38:18+09:00",
+      "last_attempt_status": "success",
+      "consecutive_failures": 0,
+      "explored_range": {
+        "oldest": "2022-03-17",
+        "newest": "2026-07-29",
+        "pages": 1
+      },
+      "retry_count": 0,
+      "retry_items": [],
+      "last_run": null,
+      "articles": 0,
+      "date_unknown": 0
     }
   ],
   "runs": [
+    {
+      "run_id": "run_20261005T054304Z",
+      "started_at": "2026-10-05T14:43:04+09:00",
+      "finished_at": "2026-10-05T14:43:13+09:00",
+      "status": "success",
+      "kind": "summarize",
+      "period": null,
+      "totals": {
+        "new": 0,
+        "changed": 0,
+        "unchanged": 0,
+        "date_unknown": 0,
+        "fetch_failed": 0,
+        "summarized": 2,
+        "summarize_failed": 0
+      },
+      "sources": []
+    },
+    {
+      "run_id": "run_20261005T053818Z",
+      "started_at": "2026-10-05T14:38:18+09:00",
+      "finished_at": "2026-10-05T14:42:39+09:00",
+      "status": "success",
+      "kind": "collect",
+      "period": {
+        "start": "2026-09-01",
+        "end": "2026-10-05"
+      },
+      "totals": {
+        "new": 28,
+        "changed": 0,
+        "unchanged": 0,
+        "date_unknown": 0,
+        "fetch_failed": 0,
+        "summarized": 0,
+        "summarize_failed": 0
+      },
+      "sources": [
+        {
+          "source_id": "cmic-news",
+          "status": "success",
+          "new": 15,
+          "changed": 0,
+          "date_unknown": 0,
+          "fetch_failed": 0,
+          "error": null,
+          "warnings": []
+        },
+        {
+          "source_id": "mchh-prtimes",
+          "status": "success",
+          "new": 13,
+          "changed": 0,
+          "date_unknown": 0,
+          "fetch_failed": 0,
+          "error": null,
+          "warnings": []
+        },
+        {
+          "source_id": "milabo-news",
+          "status": "success",
+          "new": 0,
+          "changed": 0,
+          "date_unknown": 0,
+          "fetch_failed": 0,
+          "error": null,
+          "warnings": []
+        },
+        {
+          "source_id": "ryobi-neuvola-karte",
+          "status": "success",
+          "new": 0,
+          "changed": 0,
+          "date_unknown": 0,
+          "fetch_failed": 0,
+          "error": null,
+          "warnings": []
+        }
+      ]
+    },
     {
       "run_id": "run_20261005T052429Z",
       "started_at": "2026-10-05T14:24:29+09:00",
