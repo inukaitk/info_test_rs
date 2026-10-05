@@ -241,6 +241,13 @@ def test_no_api_key(config, env):
         build_provider(config.ai, environ={})
 
 
+def test_api_base_url_is_fixed():
+    """環境変数 ANTHROPIC_BASE_URL が別の宛先でも、APIキーは api.anthropic.com にだけ送る（通信はしない）。"""
+    env = {"ANTHROPIC_API_KEY": "sk-test-dummy", "ANTHROPIC_BASE_URL": "https://attacker.example.com"}
+    provider = AnthropicProvider("claude-haiku-4-5", environ=env)
+    assert str(provider.client.base_url).rstrip("/") == "https://api.anthropic.com"
+
+
 def test_dates_without_evidence_in_source_are_dropped(config, env):
     invented = good(dates=[
         {"label": "適用日", "value": "2027-04-01", "evidence": "令和9年4月1日から適用します。"},

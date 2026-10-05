@@ -13,6 +13,8 @@ from dataclasses import dataclass, field
 from typing import Any, Callable, Protocol
 
 API_KEY_ENV = "ANTHROPIC_API_KEY"
+# 送信先は固定する（環境変数 ANTHROPIC_BASE_URL があっても使わない。APIキーを別の宛先へ送らないため）
+API_BASE_URL = "https://api.anthropic.com"
 FALLBACK_BETA = "server-side-fallback-2026-07-01"
 
 # モデルごとの対応状況（2026-10-02 に公式資料で確認）。対応しない指定を送ると API が 400 を返す
@@ -75,7 +77,8 @@ class AnthropicProvider:
             import anthropic
 
             # 再試行は呼び出し側（summarize）で回数を数えて行うため、SDK の自動再試行は使わない
-            client = anthropic.Anthropic(api_key=environ[API_KEY_ENV], max_retries=0, timeout=300.0)
+            client = anthropic.Anthropic(api_key=environ[API_KEY_ENV], base_url=API_BASE_URL, max_retries=0,
+                                         timeout=300.0)
         self.client = client
         self.model = model
         self.effort = effort
