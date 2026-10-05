@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "run": {
+    "run_id": "run_20261005T025627Z",
+    "started_at": "2026-10-05T11:56:27+09:00",
+    "finished_at": "2026-10-05T11:57:29+09:00",
+    "status": "success",
+    "trigger": "manual_cli",
+    "kind": "collect",
+    "period": {
+      "start": "2026-10-02",
+      "end": "2026-10-05"
+    },
+    "sources": [
+      {
+        "source_id": "cfa-news",
+        "status": "success",
+        "candidates": 59,
+        "new": 0,
+        "changed": 1,
+        "unchanged": 1,
+        "date_unknown": 0,
+        "fetch_failed": 0,
+        "warnings": [],
+        "error": null
+      }
+    ],
+    "totals": {
+      "new": 0,
+      "changed": 1,
+      "unchanged": 1,
+      "date_unknown": 0,
+      "fetch_failed": 0,
+      "summarized": 0,
+      "summarize_failed": 0
+    },
+    "failures": [],
+    "api_usage": {
+      "requests": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "estimated_cost_usd": null
+    }
+  }
+}

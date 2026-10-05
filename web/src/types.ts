@@ -78,6 +78,18 @@ export interface Meta {
   sources: { id: string; name: string }[];
 }
 
+/** 取得が完了していない記事（再試行待ち）。 */
+export interface RetryItem {
+  article_id: string | null;
+  title: string | null;
+  url: string;
+  stage: string;
+  kind: "size_limit" | "attachment" | "other";
+  reason: string;
+  attempts: number;
+  first_failed_at: string;
+}
+
 export interface SourceStatus {
   id: string;
   name: string;
@@ -90,6 +102,7 @@ export interface SourceStatus {
   consecutive_failures: number;
   explored_range: { oldest: string | null; newest: string | null; pages: number } | null;
   retry_count: number;
+  retry_items: RetryItem[];
   last_run: {
     status: string; error: string | null; warnings: string[];
     new: number; changed: number; unchanged: number; date_unknown: number; fetch_failed: number;

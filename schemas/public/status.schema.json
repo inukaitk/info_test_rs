@@ -98,6 +98,7 @@
           "consecutive_failures",
           "explored_range",
           "retry_count",
+          "retry_items",
           "last_run",
           "articles",
           "date_unknown",
@@ -312,6 +313,66 @@
                 }
               }
             ]
+          },
+          "retry_items": {
+            "type": "array",
+            "description": "取得が完了していない記事（再試行待ち）。理由は画面で読める説明に使う",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "article_id",
+                "title",
+                "url",
+                "stage",
+                "kind",
+                "reason",
+                "attempts",
+                "first_failed_at"
+              ],
+              "properties": {
+                "article_id": {
+                  "oneOf": [
+                    {
+                      "type": "null"
+                    },
+                    {
+                      "type": "string",
+                      "pattern": "^a_[0-9a-f]{16}$"
+                    }
+                  ]
+                },
+                "title": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "url": {
+                  "type": "string"
+                },
+                "stage": {
+                  "type": "string"
+                },
+                "kind": {
+                  "enum": [
+                    "size_limit",
+                    "attachment",
+                    "other"
+                  ]
+                },
+                "reason": {
+                  "type": "string"
+                },
+                "attempts": {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                "first_failed_at": {
+                  "type": "string"
+                }
+              }
+            }
           }
         }
       }
