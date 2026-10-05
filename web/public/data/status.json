@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "last_run_at": "2026-10-05T11:57:52+09:00",
+  "last_run_at": "2026-10-05T12:35:12+09:00",
   "last_run_status": "success",
-  "last_full_success_at": "2026-10-05T11:57:52+09:00",
+  "last_full_success_at": "2026-10-05T12:35:12+09:00",
   "counts": {
     "articles": 55,
     "date_unknown": 0,
@@ -26,8 +26,8 @@
           "席次"
         ]
       },
-      "last_success_at": "2026-10-05T11:56:27+09:00",
-      "last_attempt_at": "2026-10-05T11:56:27+09:00",
+      "last_success_at": "2026-10-05T12:32:15+09:00",
+      "last_attempt_at": "2026-10-05T12:32:15+09:00",
       "last_attempt_status": "success",
       "consecutive_failures": 0,
       "explored_range": {
@@ -89,6 +89,53 @@
     }
   ],
   "runs": [
+    {
+      "run_id": "run_20261005T033512Z",
+      "started_at": "2026-10-05T12:35:12+09:00",
+      "finished_at": "2026-10-05T12:35:12+09:00",
+      "status": "success",
+      "kind": "summarize",
+      "period": null,
+      "totals": {
+        "new": 0,
+        "changed": 0,
+        "unchanged": 0,
+        "date_unknown": 0,
+        "fetch_failed": 0,
+        "summarized": 0,
+        "summarize_failed": 0
+      },
+      "sources": []
+    },
+    {
+      "run_id": "run_20261005T033215Z",
+      "started_at": "2026-10-05T12:32:15+09:00",
+      "finished_at": "2026-10-05T12:35:11+09:00",
+      "status": "success",
+      "kind": "collect",
+      "period": null,
+      "totals": {
+        "new": 0,
+        "changed": 0,
+        "unchanged": 13,
+        "date_unknown": 0,
+        "fetch_failed": 0,
+        "summarized": 0,
+        "summarize_failed": 0
+      },
+      "sources": [
+        {
+          "source_id": "cfa-news",
+          "status": "success",
+          "new": 0,
+          "changed": 0,
+          "date_unknown": 0,
+          "fetch_failed": 0,
+          "error": null,
+          "warnings": []
+        }
+      ]
+    },
     {
       "run_id": "run_20261005T025741Z",
       "started_at": "2026-10-05T11:57:41+09:00",
