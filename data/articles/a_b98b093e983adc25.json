@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_b98b093e983adc25",
+    "source_id": "cfa-news",
+    "canonical_url": "https://www.cfa.go.jp/press/cc08f710-c1c1-425e-b0b0-ddbf95576e20",
+    "title": "第7回 こどものケアニーズに応じた支援の在り方に関する専門委員会の開催について",
+    "published_at": "2026-09-03",
+    "updated_at": null,
+    "date_basis": {
+      "published": {
+        "method": "html_text",
+        "evidence": "公開日:令和8年9月3日"
+      },
+      "updated": null
+    },
+    "date_precision": {
+      "published": "day",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-10-05T10:14:31+09:00",
+    "last_seen_at": "2026-10-05T10:14:31+09:00",
+    "latest_version": 1,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "extraction_profile": "html+pdf(3files,30pages,exclude:座席|席次)",
+      "attachments": [
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/cc08f710-c1c1-425e-b0b0-ddbf95576e20/872f6295/20260901_press_cc08f710-c1c1-425e-b0b0-ddbf95576e20_01.pdf",
+          "title": "第7回 こどものケアニーズに応じた支援の在り方に関する専門委員会の開催について（PDF／243KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 295,
+          "pages": 1,
+          "pages_read": 1
+        }
+      ],
+      "article_id": "a_b98b093e983adc25",
+      "version": 1,
+      "content_hash": "sha256:1fddb6e3af8be58ef7a91ee0874842ee43b909ba80012f9f190dfdd8711bcde5",
+      "fetched_at": "2026-10-05T10:14:31+09:00",
+      "content_type": "html",
+      "text_length": 506,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "new"
+    }
+  ]
+}

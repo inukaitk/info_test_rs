@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_dfa1d70360c2f656",
+    "source_id": "cfa-news",
+    "canonical_url": "https://www.cfa.go.jp/press/e6e7b195-a73a-4162-a043-a9770764edc5",
+    "title": "令和8年度次世代育成対策施設整備交付金の内示について （第3次）",
+    "published_at": "2026-09-01",
+    "updated_at": null,
+    "date_basis": {
+      "published": {
+        "method": "html_text",
+        "evidence": "公開日:令和8年9月1日"
+      },
+      "updated": null
+    },
+    "date_precision": {
+      "published": "day",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-10-05T10:14:31+09:00",
+    "last_seen_at": "2026-10-05T10:14:31+09:00",
+    "latest_version": 1,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "extraction_profile": "html+pdf(3files,30pages,exclude:座席|席次)",
+      "attachments": [
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/e6e7b195-a73a-4162-a043-a9770764edc5/8eef7423/20260901_press_e6e7b195-a73a-4162-a043-a9770764edc5_01.pdf",
+          "title": "令和8年度次世代育成対策施設整備交付金の内示について （第3次）（PDF／391KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 1244,
+          "pages": 2,
+          "pages_read": 2
+        }
+      ],
+      "article_id": "a_dfa1d70360c2f656",
+      "version": 1,
+      "content_hash": "sha256:f1bc732f3daefdce383a2a16d71332c3a7c05594b49629bc73feeb69a484a8ee",
+      "fetched_at": "2026-10-05T10:14:31+09:00",
+      "content_type": "html",
+      "text_length": 1431,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "new"
+    }
+  ]
+}

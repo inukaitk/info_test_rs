@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "article_id": "a_b98b093e983adc25",
+  "summaries": [
+    {
+      "article_id": "a_b98b093e983adc25",
+      "article_version": 1,
+      "analysis_status": "success",
+      "error": null,
+      "summary": "こども家庭庁が、第7回「こどものケアニーズに応じた支援の在り方に関する専門委員会」を令和8年9月7日14時から17時まで霞が関ビルディング14階で開催すると案内した。議事は「こどものケアニーズに応じた支援について」等で、YouTubeでオンライン配信される。",
+      "key_points": [
+        "第7回専門委員会を2026年9月7日(月)14:00~17:00に開催",
+        "場所は霞が関ビルディング14階 こども家庭庁 共用中会議室",
+        "議事(予定)は「こどものケアニーズに応じた支援について」「その他」",
+        "YouTubeでオンライン配信を実施",
+        "政務の出席および記者ブリーフィングはなし"
+      ],
+      "targets": [
+        "専門委員会の委員",
+        "委員会の傍聴・視聴を希望する一般"
+      ],
+      "dates": [
+        {
+          "label": "開催日",
+          "value": "2026-09-07",
+          "evidence": "令和8年9月7日(月)14時00分~17時00分"
+        },
+        {
+          "label": "公開日",
+          "value": "2026-09-03",
+          "evidence": "令和8年9月3日"
+        }
+      ],
+      "ai_tags": [
+        {
+          "tag_id": "council-committee",
+          "reason": "専門委員会の開催案内であるため"
+        }
+      ],
+      "uncertainties": [
+        "委員の構成や配布資料の内容は本文に記載がない",
+        "「こどものケアニーズ」の具体的な対象や論点は本文から確認できない",
+        "一般の傍聴可否は、オンライン配信の記載以外は不明"
+      ],
+      "provider": "anthropic",
+      "model": "claude-sonnet-5-5",
+      "prompt_version": "p1-2026-10-02",
+      "tags_version": "sha256:bde74cf4ea967ef07307b37972c605277d95999c697068f6c5e9d5a6af8a7951",
+      "usage": {
+        "input_tokens": 2657,
+        "output_tokens": 514,
+        "retries": 0,
+        "estimated_cost_usd": 0.010454
+      },
+      "processed_at": "2026-10-05T10:29:20+09:00",
+      "content_hash": "sha256:1fddb6e3af8be58ef7a91ee0874842ee43b909ba80012f9f190dfdd8711bcde5"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_722cbd59feaf55a5",
+    "source_id": "cfa-news",
+    "canonical_url": "https://www.cfa.go.jp/press/2020862d-cd0d-4ae3-9ba9-6d93e3ba2a2f",
+    "title": "第19回人工妊娠中絶一時金認定審査部会の審査結果について",
+    "published_at": "2026-09-30",
+    "updated_at": null,
+    "date_basis": {
+      "published": {
+        "method": "html_text",
+        "evidence": "公開日:令和8年9月30日"
+      },
+      "updated": null
+    },
+    "date_precision": {
+      "published": "day",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-10-05T10:14:31+09:00",
+    "last_seen_at": "2026-10-05T10:14:31+09:00",
+    "latest_version": 1,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "extraction_profile": "html+pdf(3files,30pages,exclude:座席|席次)",
+      "attachments": [
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/2020862d-cd0d-4ae3-9ba9-6d93e3ba2a2f/dff37c12/20260930_press_2020862d-cd0d-4ae3-9ba9-6d93e3ba2a2f_01.pdf",
+          "title": "第19回人工妊娠中絶一時金認定審査部会の審査結果について（PDF／263KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 602,
+          "pages": 1,
+          "pages_read": 1
+        }
+      ],
+      "article_id": "a_722cbd59feaf55a5",
+      "version": 1,
+      "content_hash": "sha256:fcebbcae688fe0e39c4e360f1d24d73fa6b6e433bbc712bd13fecaf635e5a276",
+      "fetched_at": "2026-10-05T10:14:31+09:00",
+      "content_type": "html",
+      "text_length": 770,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "new"
+    }
+  ]
+}

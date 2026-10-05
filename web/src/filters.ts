@@ -109,12 +109,18 @@ export function latestWindow(asOf: string | null, days: number): { from: string;
   return { from: addDays(to, -(days - 1)), to };
 }
 
-/** 取得日（見つけた日）が最新一覧の期間に入る記事。 */
+/** 集計に使う日：公開日（日まで分かるもの）を優先し、日付不明・月のみの記事は取得日（見つけた日）。 */
+export function basisDate(a: Article): string {
+  const v = a.published.value;
+  return v && /^\d{4}-\d{2}-\d{2}$/.test(v) ? v : jstDate(a.first_seen_at);
+}
+
+/** 公開日（日付不明などは取得日）が最新一覧の期間に入る記事。 */
 export function latestArticles(articles: Article[], window: { from: string; to: string } | null): Article[] {
   if (!window) return [];
   return articles.filter((a) => {
-    const seen = jstDate(a.first_seen_at);
-    return seen >= window.from && seen <= window.to;
+    const d = basisDate(a);
+    return d >= window.from && d <= window.to;
   });
 }
 

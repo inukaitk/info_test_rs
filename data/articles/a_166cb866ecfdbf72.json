@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_166cb866ecfdbf72",
+    "source_id": "cfa-news",
+    "canonical_url": "https://www.cfa.go.jp/press/bf13e277-6990-4f85-9268-09891a8fb956",
+    "title": "第5回特別養子縁組に関する支援の在り方に関する専門委員会の開催について",
+    "published_at": "2026-09-17",
+    "updated_at": null,
+    "date_basis": {
+      "published": {
+        "method": "html_text",
+        "evidence": "公開日:令和8年9月17日"
+      },
+      "updated": null
+    },
+    "date_precision": {
+      "published": "day",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-10-05T10:14:31+09:00",
+    "last_seen_at": "2026-10-05T10:14:31+09:00",
+    "latest_version": 1,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "extraction_profile": "html+pdf(3files,30pages,exclude:座席|席次)",
+      "attachments": [
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/bf13e277-6990-4f85-9268-09891a8fb956/e40e389c/20260917_press_bf13e277-6990-4f85-9268-09891a8fb956_02.pdf",
+          "title": "第5回特別養子縁組に関する支援の在り方に関する専門委員会の開催について（PDF／263KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 429,
+          "pages": 1,
+          "pages_read": 1
+        }
+      ],
+      "article_id": "a_166cb866ecfdbf72",
+      "version": 1,
+      "content_hash": "sha256:5f84218458cb608d3592b3832be8749684246763bf3db1897c52de0fdb51fc6d",
+      "fetched_at": "2026-10-05T10:14:31+09:00",
+      "content_type": "html",
+      "text_length": 625,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "new"
+    }
+  ]
+}

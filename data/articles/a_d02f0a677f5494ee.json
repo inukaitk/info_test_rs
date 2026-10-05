@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_d02f0a677f5494ee",
+    "source_id": "cfa-news",
+    "canonical_url": "https://www.cfa.go.jp/recruitment/kikan",
+    "title": "期間業務職員",
+    "published_at": "2026-09-16",
+    "updated_at": null,
+    "date_basis": {
+      "published": {
+        "method": "listing_text",
+        "evidence": "<time datetime=\"2026-09-16\">2026年9月16日</time>"
+      },
+      "updated": null
+    },
+    "date_precision": {
+      "published": "day",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-10-05T10:14:31+09:00",
+    "last_seen_at": "2026-10-05T10:14:31+09:00",
+    "latest_version": 1,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "extraction_profile": "html+pdf(3files,30pages,exclude:座席|席次)",
+      "attachments": [
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/1c31fc42-55b2-4d2b-8d1e-b02dc2008b2a/b839a933/20260915_recruitment_kikan_50.pdf",
+          "title": "（支援局虐待防止対策課）期間業務職員（一般事務補助）（PDF／177KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 1957,
+          "pages": 3,
+          "pages_read": 3
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/1c31fc42-55b2-4d2b-8d1e-b02dc2008b2a/b7c5f665/20251225_recruitment_kikan_32.pdf",
+          "title": "（様式）履歴書（PDF／70KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 438,
+          "pages": 2,
+          "pages_read": 2
+        }
+      ],
+      "article_id": "a_d02f0a677f5494ee",
+      "version": 1,
+      "content_hash": "sha256:983eb99fbd74c04a92b4178805b81a4deb7efbe6aed83c446d716057e2c0678a",
+      "fetched_at": "2026-10-05T10:14:31+09:00",
+      "content_type": "html",
+      "text_length": 2585,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "new"
+    }
+  ]
+}

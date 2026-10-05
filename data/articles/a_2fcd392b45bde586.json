@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_2fcd392b45bde586",
+    "source_id": "cfa-news",
+    "canonical_url": "https://www.cfa.go.jp/recruitment/ninki",
+    "title": "任期付職員",
+    "published_at": "2026-09-18",
+    "updated_at": null,
+    "date_basis": {
+      "published": {
+        "method": "listing_text",
+        "evidence": "<time datetime=\"2026-09-18\">2026年9月18日</time>"
+      },
+      "updated": null
+    },
+    "date_precision": {
+      "published": "day",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-10-05T10:14:31+09:00",
+    "last_seen_at": "2026-10-05T10:14:31+09:00",
+    "latest_version": 1,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "extraction_profile": "html+pdf(3files,30pages,exclude:座席|席次)",
+      "attachments": [
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/b7e42c1c-7402-4d3f-81b5-38545588654d/5dd9bcff/20260915_recruitment_ninki_90.pdf",
+          "title": "任期付職員（支援局参事官こども性暴力防止法担当付（課長補佐級、係長級））（PDF／215KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 2785,
+          "pages": 3,
+          "pages_read": 3
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/b7e42c1c-7402-4d3f-81b5-38545588654d/a3fb3764/20260728_recruitment_ninki_89.pdf",
+          "title": "任期付職員（成育局保育政策課（係長）（PDF／190KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 2032,
+          "pages": 3,
+          "pages_read": 3
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/b7e42c1c-7402-4d3f-81b5-38545588654d/013e3b62/20260707_recruitment_ninki_87.pdf",
+          "title": "成育環境課居場所づくり専門官（課長補佐級）又は居場所づくり係長（PDF／168KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 2818,
+          "pages": 3,
+          "pages_read": 3
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/b7e42c1c-7402-4d3f-81b5-38545588654d/7b7ca608/20260727_recruitment_ninki_88.pdf",
+          "title": "任期付職員（支援局参事官こども性暴力防止法担当付（課長補佐級、係長級））（PDF／227KB）　※令和8年6月9日に掲載資料を更新）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/b7e42c1c-7402-4d3f-81b5-38545588654d/09cd8c93/20260408_recruitment_ninki_82.pdf",
+          "title": "任期付職員（支援局虐待防止対策課主査（係長級）（PDF／229KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/b7e42c1c-7402-4d3f-81b5-38545588654d/6cc721f9/20260115_recruitment_ninki_73.pdf",
+          "title": "支援局家庭福祉課専門官（補佐級）、主査（係長級）（PDF／138KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/b7e42c1c-7402-4d3f-81b5-38545588654d/aa49a022/20240430_recruitment_ninki_24.pdf",
+          "title": "（様式）履歴書（PDF／117KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        }
+      ],
+      "article_id": "a_2fcd392b45bde586",
+      "version": 1,
+      "content_hash": "sha256:cb6516744c3aadc4aef8d71f305dd1e19d34c929b3c9d04e56676cc5ae22a29d",
+      "fetched_at": "2026-10-05T10:14:31+09:00",
+      "content_type": "html",
+      "text_length": 8228,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "new"
+    }
+  ]
+}

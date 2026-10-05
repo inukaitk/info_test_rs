@@ -1,0 +1,132 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_5c389f7f575c0776",
+    "source_id": "cfa-news",
+    "canonical_url": "https://www.cfa.go.jp/policies/ibasho/saigaiji",
+    "title": "災害時のこどもの居場所づくりについて",
+    "published_at": "2026-09-01",
+    "updated_at": null,
+    "date_basis": {
+      "published": {
+        "method": "listing_text",
+        "evidence": "<time datetime=\"2026-09-01\">2026年9月1日</time>"
+      },
+      "updated": null
+    },
+    "date_precision": {
+      "published": "day",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-10-05T10:14:31+09:00",
+    "last_seen_at": "2026-10-05T10:14:31+09:00",
+    "latest_version": 1,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "extraction_profile": "html+pdf(3files,30pages,exclude:座席|席次)",
+      "attachments": [
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/ed7b9ebf-b482-4bcc-b257-e02fb46f70cb/820bbc08/20260831_policies_ibasho_saigaiji_06.pdf",
+          "title": "令和8年熊本地震において被災したこどもの居場所づくりに対する支援事業の実施について（周知）（PDF／536KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 2262,
+          "pages": 5,
+          "pages_read": 5
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/ed7b9ebf-b482-4bcc-b257-e02fb46f70cb/50b53d39/20260831_policies_ibasho_saigaiji_07.pdf",
+          "title": "実施要綱（PDF／219KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 8226,
+          "pages": 10,
+          "pages_read": 10
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/ed7b9ebf-b482-4bcc-b257-e02fb46f70cb/8a53f248/20260831_policies_ibasho_saigaiji_08.pdf",
+          "title": "交付要綱（PDF／6.95MB）",
+          "status": "ok",
+          "error": "先頭30ページだけを読み取りました（全65ページ）",
+          "text_length": 17640,
+          "pages": 65,
+          "pages_read": 30
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/ed7b9ebf-b482-4bcc-b257-e02fb46f70cb/60779eb5/20260414_policies_ibasho_saigaiji_04.pdf",
+          "title": "ハンドブック（PDF／1.17MB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/ed7b9ebf-b482-4bcc-b257-e02fb46f70cb/cbb06b87/20260414_policies_ibasho_saigaiji_05.pdf",
+          "title": "研修資料（PDF／1.34MB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/ed7b9ebf-b482-4bcc-b257-e02fb46f70cb/e8557c97/20251127_policies_ibasho_saigaiji_01.pdf",
+          "title": "「災害時のこどもの居場所づくり」手引き（本文）（PDF／4MB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/ed7b9ebf-b482-4bcc-b257-e02fb46f70cb/f8d5d34f/20251127_policies_ibasho_saigaiji_02.pdf",
+          "title": "ロードマップ（手引きより抜粋）（PDF／720KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/ed7b9ebf-b482-4bcc-b257-e02fb46f70cb/49a02000/20251127_policies_ibasho_saigaiji_03.pdf",
+          "title": "チェックリスト（手引きより抜粋）（PDF／394KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/5a8a774e-7f28-4ff4-9424-09bddc0b440b/019b55b6/20260325_policies_ibasho_V28SVlai_27.pdf",
+          "title": "令和5年度モデル事業事例集（被災地支援モデル）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/5a8a774e-7f28-4ff4-9424-09bddc0b440b/2aeb5ebf/20260325_policies_ibasho_V28SVlai_29.pdf",
+          "title": "令和6年度モデル事業事例集（被災地支援モデル）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        }
+      ],
+      "article_id": "a_5c389f7f575c0776",
+      "version": 1,
+      "content_hash": "sha256:0d22fa12b04d22627b2f94138eeb0d9af67dbf095b8b3a3a5658c7cda3b2f1be",
+      "fetched_at": "2026-10-05T10:14:31+09:00",
+      "content_type": "html",
+      "text_length": 30501,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "new"
+    }
+  ]
+}

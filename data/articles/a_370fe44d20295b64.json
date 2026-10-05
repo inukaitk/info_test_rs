@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_370fe44d20295b64",
+    "source_id": "cfa-news",
+    "canonical_url": "https://www.cfa.go.jp/press/837d4573-e5f0-4d47-a150-8490a0837967",
+    "title": "みてかんじてつながる劇体験～優良児童劇等公演事業～令和8年11月1日（日）群馬県桐生市にて開催",
+    "published_at": "2026-09-18",
+    "updated_at": null,
+    "date_basis": {
+      "published": {
+        "method": "html_text",
+        "evidence": "公開日:令和8年9月18日"
+      },
+      "updated": null
+    },
+    "date_precision": {
+      "published": "day",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-10-05T10:14:31+09:00",
+    "last_seen_at": "2026-10-05T10:14:31+09:00",
+    "latest_version": 1,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "extraction_profile": "html+pdf(3files,30pages,exclude:座席|席次)",
+      "attachments": [
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/837d4573-e5f0-4d47-a150-8490a0837967/c6efb790/20260918_press_837d4573-e5f0-4d47-a150-8490a0837967_01.pdf",
+          "title": "みてかんじてつながる劇体験～優良児童劇等公演事業～令和8年11月1日（日）群馬県桐生市にて開催（PDF／515KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 1247,
+          "pages": 2,
+          "pages_read": 2
+        }
+      ],
+      "article_id": "a_370fe44d20295b64",
+      "version": 1,
+      "content_hash": "sha256:f3265142668a08035f3a13c4f911b904c994f9103e533f61f2b97c7663390ac5",
+      "fetched_at": "2026-10-05T10:14:31+09:00",
+      "content_type": "html",
+      "text_length": 1495,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "new"
+    }
+  ]
+}

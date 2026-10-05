@@ -146,23 +146,28 @@ describe("ルーティングと表示形式", () => {
   });
 });
 
-describe("最新情報（直近の取得日）", () => {
-  const seen = (id: string, firstSeen: string, title: string) => article({ id, first_seen_at: firstSeen, title });
+describe("最新情報（直近の公開日）", () => {
+  const pub = (id: string, published: string | null, title: string, firstSeen = "2026-09-28T08:00:00+09:00") =>
+    article({ id, first_seen_at: firstSeen, title,
+      published: published ? { value: published, precision: "day", basis: null } : { value: null, precision: "unknown", basis: null } });
   const articles = [
-    seen("a_0000000000000001", "2026-09-28T08:00:00+09:00", "【架空】当日に見つけた"),
-    seen("a_0000000000000002", "2026-09-22T00:30:00+09:00", "【架空】7日前（範囲の初日）"),
-    seen("a_0000000000000003", "2026-09-21T23:59:00+09:00", "【架空】8日前（範囲外）"),
-    article({ id: "a_0000000000000004", first_seen_at: "2026-09-27T08:00:00+09:00", title: "【架空】日付不明だが最近見つけた",
-      published: { value: null, precision: "unknown", basis: null } }),
+    pub("a_0000000000000001", "2026-09-28", "【架空】当日に公開"),
+    pub("a_0000000000000002", "2026-09-22", "【架空】7日前（範囲の初日）"),
+    pub("a_0000000000000003", "2026-09-21", "【架空】8日前（範囲外）"),
+    pub("a_0000000000000004", null, "【架空】日付不明だが最近見つけた", "2026-09-27T08:00:00+09:00"),
+    pub("a_0000000000000005", null, "【架空】日付不明で古い取得", "2026-09-10T08:00:00+09:00"),
+    pub("a_0000000000000006", "2026-08-01", "【架空】古い公開日だが今週初めて取得", "2026-09-28T08:00:00+09:00"),
   ];
 
-  it("最終収集日を含む直近7日間に見つけた記事だけを出す（日本時間の日付で判定）", () => {
+  it("最終収集日を含む直近7日間に公開された記事だけを出す（取得日ではなく公開日で判定）", () => {
     const el = latestView(site(articles));
     const text = el.textContent!;
-    expect(text).toContain("当日に見つけた");
+    expect(text).toContain("当日に公開");
     expect(text).toContain("7日前（範囲の初日）");
     expect(text).not.toContain("8日前（範囲外）");
+    expect(text).not.toContain("古い公開日だが今週初めて取得");
     expect(text).toContain("日付不明だが最近見つけた");
+    expect(text).not.toContain("日付不明で古い取得");
     expect(text).toContain("2026年9月22日〜2026年9月28日");
     expect(text).toContain("3件");
     expect(el.querySelector('a[href="#/search"]')).not.toBeNull();
@@ -170,7 +175,7 @@ describe("最新情報（直近の取得日）", () => {
 
   it("日数は設定で変えられる", () => {
     const text = latestView(site(articles, { latest_days: 1 })).textContent!;
-    expect(text).toContain("当日に見つけた");
+    expect(text).toContain("当日に公開");
     expect(text).not.toContain("7日前（範囲の初日）");
   });
 

@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_2220f926bb62c8ea",
+    "source_id": "cfa-news",
+    "canonical_url": "https://www.cfa.go.jp/councils/shingikai/shakai_katei/tokubetsu-yoshi/b96b26c4",
+    "title": "特別養子縁組に関する支援の在り方に関する専門委員会（第5回）",
+    "published_at": "2026-09-17",
+    "updated_at": null,
+    "date_basis": {
+      "published": {
+        "method": "listing_text",
+        "evidence": "<time datetime=\"2026-09-17\">2026年9月17日</time>"
+      },
+      "updated": null
+    },
+    "date_precision": {
+      "published": "day",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-10-05T10:14:31+09:00",
+    "last_seen_at": "2026-10-05T10:14:31+09:00",
+    "latest_version": 1,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "extraction_profile": "html+pdf(3files,30pages,exclude:座席|席次)",
+      "attachments": [
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/b96b26c4-af66-4711-b556-872530b38092/bda4ff61/20260925_councils_shingikai_shakai_katei_tokubetsu-yoshi_b96b26c4_01.pdf",
+          "title": "議事次第（PDF／235KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 285,
+          "pages": 1,
+          "pages_read": 1
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/b96b26c4-af66-4711-b556-872530b38092/de635897/20260925_councils_shingikai_shakai_katei_tokubetsu-yoshi_b96b26c4_02.pdf",
+          "title": "資料1：これまでの議論を踏まえた論点イメージ（修正案）について（PDF／598KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 25948,
+          "pages": 28,
+          "pages_read": 28
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/b96b26c4-af66-4711-b556-872530b38092/f7acc5b8/20260925_councils_shingikai_shakai_katei_tokubetsu-yoshi_b96b26c4_03.pdf",
+          "title": "資料3：藤林委員提出資料（PDF／487KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 3923,
+          "pages": 4,
+          "pages_read": 4
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/b96b26c4-af66-4711-b556-872530b38092/562ff677/20260925_councils_shingikai_shakai_katei_tokubetsu-yoshi_b96b26c4_04.pdf",
+          "title": "参考資料1：委員名簿（PDF／80KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/b96b26c4-af66-4711-b556-872530b38092/ccf2d318/20260925_councils_shingikai_shakai_katei_tokubetsu-yoshi_b96b26c4_05.pdf",
+          "title": "参考資料2：特別養子縁組の現状（PDF／2.2MB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        }
+      ],
+      "article_id": "a_2220f926bb62c8ea",
+      "version": 1,
+      "content_hash": "sha256:5626a7ab762fd2953cfc42b4542c59769af6e014e3c7c4a3d8b5b017881260bb",
+      "fetched_at": "2026-10-05T10:14:31+09:00",
+      "content_type": "html",
+      "text_length": 30682,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "new"
+    }
+  ]
+}

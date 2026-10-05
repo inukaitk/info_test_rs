@@ -1,0 +1,150 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_ff44d6651fc1323f",
+    "source_id": "cfa-news",
+    "canonical_url": "https://www.cfa.go.jp/councils/shingikai/kagaku_gijutsu/art/eafb9e4e",
+    "title": "ヒト受精胚を用いる生殖補助医療研究等に関する専門委員会（第15回）",
+    "published_at": "2026-09-01",
+    "updated_at": null,
+    "date_basis": {
+      "published": {
+        "method": "listing_text",
+        "evidence": "<time datetime=\"2026-09-01\">2026年9月1日</time>"
+      },
+      "updated": null
+    },
+    "date_precision": {
+      "published": "day",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-10-05T10:14:31+09:00",
+    "last_seen_at": "2026-10-05T10:14:31+09:00",
+    "latest_version": 1,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "extraction_profile": "html+pdf(3files,30pages,exclude:座席|席次)",
+      "attachments": [
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/e2d3c006-4468-4e24-bd73-7c25eafb9e4e/9e27d73d/20260831_councils_shingikai_kagaku_gijutsu_art_eafb9e4e_01.pdf",
+          "title": "議事次第（PDF／104KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 778,
+          "pages": 2,
+          "pages_read": 2
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/e2d3c006-4468-4e24-bd73-7c25eafb9e4e/d4af15bf/20260831_councils_shingikai_kagaku_gijutsu_art_eafb9e4e_02.pdf",
+          "title": "資料1：動物胎内移植禁止の例外規定について（PDF／1.4MB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 6334,
+          "pages": 7,
+          "pages_read": 7
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/e2d3c006-4468-4e24-bd73-7c25eafb9e4e/17305ee8/20260831_councils_shingikai_kagaku_gijutsu_art_eafb9e4e_03.pdf",
+          "title": "資料2：ヒトゲノム編集胚等の取扱いの規制に関する法律に基づく省令及び指針（案）について（PDF／2.6MB）",
+          "status": "ok",
+          "error": "先頭30ページだけを読み取りました（全31ページ）",
+          "text_length": 23687,
+          "pages": 31,
+          "pages_read": 30
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/e2d3c006-4468-4e24-bd73-7c25eafb9e4e/320b5ce5/20260831_councils_shingikai_kagaku_gijutsu_art_eafb9e4e_04.pdf",
+          "title": "参考資料1：ゲノム編集技術等を用いたヒト受精胚等の取扱い等に関する合同会議の開催について （PDF／272KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/e2d3c006-4468-4e24-bd73-7c25eafb9e4e/a65ed030/20260831_councils_shingikai_kagaku_gijutsu_art_eafb9e4e_05.pdf",
+          "title": "参考資料2：ゲノム編集技術等を用いたヒト受精胚等の取扱い等に関する合同会議委員名簿（PDF／141KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/e2d3c006-4468-4e24-bd73-7c25eafb9e4e/1c22905e/20260831_councils_shingikai_kagaku_gijutsu_art_eafb9e4e_06.pdf",
+          "title": "参考資料3：「ヒト胚の取扱いに関する基本的考え方」見直しに係る報告（第三次）（PDF／9.4MB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/e2d3c006-4468-4e24-bd73-7c25eafb9e4e/64550c05/20260831_councils_shingikai_kagaku_gijutsu_art_eafb9e4e_07.pdf",
+          "title": "参考資料4：ゲノム編集技術等を用いたヒト受精胚等の臨床利用のあり方に関する専門委員会　議論の整理（令和7年12月10日）（PDF／1.2MB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/e2d3c006-4468-4e24-bd73-7c25eafb9e4e/0744acc0/20260831_councils_shingikai_kagaku_gijutsu_art_eafb9e4e_08.pdf",
+          "title": "参考資料5：ヒトゲノム編集胚等の取扱いの規制に関する法律条文 （PDF／9.4MB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/e2d3c006-4468-4e24-bd73-7c25eafb9e4e/e530a64b/20260831_councils_shingikai_kagaku_gijutsu_art_eafb9e4e_09.pdf",
+          "title": "参考資料6：第3回合同会議　資料4 （PDF／9.5MB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/e2d3c006-4468-4e24-bd73-7c25eafb9e4e/35308e8e/20260831_councils_shingikai_kagaku_gijutsu_art_eafb9e4e_10.pdf",
+          "title": "参考資料7：ヒトの幹細胞から作成されるヒト生殖細胞を用いるヒト胚作成研究に係る合同会議（第3回）資料2（PDF／9.7MB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/e2d3c006-4468-4e24-bd73-7c25eafb9e4e/1b55b777/20260831_councils_shingikai_kagaku_gijutsu_art_eafb9e4e_11.pdf",
+          "title": "参考資料8：関連指針等一覧（PDF／98KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/e2d3c006-4468-4e24-bd73-7c25eafb9e4e/ceed4782/20260831_councils_shingikai_kagaku_gijutsu_art_eafb9e4e_12.pdf",
+          "title": "参考資料9：今後のスケジュール（案）（PDF／293KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        }
+      ],
+      "article_id": "a_ff44d6651fc1323f",
+      "version": 1,
+      "content_hash": "sha256:cedb7b6f9c50a92fab9d8f4a737c6d7a622601238757f4e1bebf30aad83a14de",
+      "fetched_at": "2026-10-05T10:14:31+09:00",
+      "content_type": "html",
+      "text_length": 32029,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "new"
+    }
+  ]
+}

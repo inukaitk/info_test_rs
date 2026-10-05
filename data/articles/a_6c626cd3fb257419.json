@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_6c626cd3fb257419",
+    "source_id": "cfa-news",
+    "canonical_url": "https://www.cfa.go.jp/press/b178778c-ed47-447a-af76-3225a4017ec2",
+    "title": "第23回こどもの居場所部会 の開催について",
+    "published_at": "2026-09-15",
+    "updated_at": null,
+    "date_basis": {
+      "published": {
+        "method": "html_text",
+        "evidence": "公開日:令和8年9月15日"
+      },
+      "updated": null
+    },
+    "date_precision": {
+      "published": "day",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-10-05T10:14:31+09:00",
+    "last_seen_at": "2026-10-05T10:14:31+09:00",
+    "latest_version": 1,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "extraction_profile": "html+pdf(3files,30pages,exclude:座席|席次)",
+      "attachments": [
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/b178778c-ed47-447a-af76-3225a4017ec2/e9cd93a0/20260915_press_b178778c-ed47-447a-af76-3225a4017ec2_01.pdf",
+          "title": "第23回こどもの居場所部会 の開催について（PDF／300KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 586,
+          "pages": 1,
+          "pages_read": 1
+        }
+      ],
+      "article_id": "a_6c626cd3fb257419",
+      "version": 1,
+      "content_hash": "sha256:c02a743ffa81c8a32dce329ed6ccd29fc7ae35f117495ffe57d5d8d02596d16f",
+      "fetched_at": "2026-10-05T10:14:31+09:00",
+      "content_type": "html",
+      "text_length": 726,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "new"
+    }
+  ]
+}

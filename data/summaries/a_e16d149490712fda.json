@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "article_id": "a_e16d149490712fda",
+  "summaries": [
+    {
+      "article_id": "a_e16d149490712fda",
+      "article_version": 1,
+      "analysis_status": "success",
+      "error": null,
+      "summary": "こども家庭庁が公開する人事異動情報（室長級）のページ。令和5年から令和8年9月17日付までの発令一覧PDFを掲載し、本文には令和8年9月17日付、9月1日付、8月14日付の室長級異動が示されている。",
+      "key_points": [
+        "令和8年9月17日付発令：児童手当管理室長が小林洋介氏から東善博氏に交代する内容",
+        "令和8年9月1日付発令：認可外保育施設担当室長に今井崇史氏（前職は内閣府経済社会総合研究所国民経済計算部国民支出課長）",
+        "令和8年8月14日付発令：支援局家庭福祉課企画官（ひとり親家庭等支援担当）に佐々木千景氏",
+        "令和5年7月から令和8年9月までの発令PDFが一覧で掲載されている"
+      ],
+      "targets": [
+        "こども家庭庁の室長級職員（人事異動の対象）"
+      ],
+      "dates": [
+        {
+          "label": "発令日（最新）",
+          "value": "2026-09-17",
+          "evidence": "《令和8年9月17日付発令》"
+        },
+        {
+          "label": "発令日",
+          "value": "2026-09-01",
+          "evidence": "《令和8年9月1日付発令》"
+        },
+        {
+          "label": "発令日",
+          "value": "2026-08-14",
+          "evidence": "《令和8年8月14日付発令》"
+        }
+      ],
+      "ai_tags": [],
+      "uncertainties": [
+        "9月17日付発令の氏名と現職名の対応は、PDF抽出テキストの表形式が崩れており正確な読み取りに不確実さがある",
+        "一覧中の他の発令PDFの内容は本文に含まれていない"
+      ],
+      "provider": "anthropic",
+      "model": "claude-sonnet-5-5",
+      "prompt_version": "p1-2026-10-02",
+      "tags_version": "sha256:bde74cf4ea967ef07307b37972c605277d95999c697068f6c5e9d5a6af8a7951",
+      "usage": {
+        "input_tokens": 3647,
+        "output_tokens": 615,
+        "retries": 0,
+        "estimated_cost_usd": 0.013444
+      },
+      "processed_at": "2026-10-05T10:29:20+09:00",
+      "content_hash": "sha256:fbba455a43e31313f092b6d87e2832df32f38bf7f7e9f069fa4a94e74aacf158"
+    }
+  ]
+}

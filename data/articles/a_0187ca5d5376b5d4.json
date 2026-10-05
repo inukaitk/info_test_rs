@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_0187ca5d5376b5d4",
+    "source_id": "cfa-news",
+    "canonical_url": "https://www.cfa.go.jp/councils/internet-kaigi/cc66334f",
+    "title": "インターネットの利用を巡る青少年の保護の在り方に関する関係府省庁連絡会議　第5回会合",
+    "published_at": "2026-09-16",
+    "updated_at": null,
+    "date_basis": {
+      "published": {
+        "method": "listing_text",
+        "evidence": "<time datetime=\"2026-09-16\">2026年9月16日</time>"
+      },
+      "updated": null
+    },
+    "date_precision": {
+      "published": "day",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-10-05T10:14:31+09:00",
+    "last_seen_at": "2026-10-05T10:14:31+09:00",
+    "latest_version": 1,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "extraction_profile": "html+pdf(3files,30pages,exclude:座席|席次)",
+      "attachments": [
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/cc66334f-7451-45b4-96c9-b186a3fd0726/f28c5df2/20260915_councils_internet-kaigi_cc66334f_01.pdf",
+          "title": "資料1 インターネットの利用を巡る青少年の保護の在り方に関する関係府省庁連絡会議設置要綱一部改正（案）（PDF／265KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 677,
+          "pages": 1,
+          "pages_read": 1
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/cc66334f-7451-45b4-96c9-b186a3fd0726/964214f8/20260915_councils_internet-kaigi_cc66334f_02.pdf",
+          "title": "資料2 インターネットの利用を巡る青少年の保護の在り方に関する関係府省庁連絡会議幹事会の官職の指定について（案）（PDF／262KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 572,
+          "pages": 1,
+          "pages_read": 1
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/cc66334f-7451-45b4-96c9-b186a3fd0726/4182b30d/20260915_councils_internet-kaigi_cc66334f_03.pdf",
+          "title": "資料3 次期基本計画の策定に向けた施策整理について（PDF／680KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 4358,
+          "pages": 5,
+          "pages_read": 5
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/cc66334f-7451-45b4-96c9-b186a3fd0726/bcd277d2/20260917_councils_internet-kaigi_cc66334f_04.pdf",
+          "title": "議事要旨（PDF／273KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        }
+      ],
+      "article_id": "a_0187ca5d5376b5d4",
+      "version": 1,
+      "content_hash": "sha256:7ec9230c8bc84ba7127eaf36ff86933931d1dbec22762683a7a10279cdfe867d",
+      "fetched_at": "2026-10-05T10:14:31+09:00",
+      "content_type": "html",
+      "text_length": 6163,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "new"
+    }
+  ]
+}

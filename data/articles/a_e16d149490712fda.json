@@ -1,0 +1,222 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_e16d149490712fda",
+    "source_id": "cfa-news",
+    "canonical_url": "https://www.cfa.go.jp/about/jinji",
+    "title": "人事異動情報",
+    "published_at": "2026-09-17",
+    "updated_at": null,
+    "date_basis": {
+      "published": {
+        "method": "listing_text",
+        "evidence": "<time datetime=\"2026-09-17\">2026年9月17日</time>"
+      },
+      "updated": null
+    },
+    "date_precision": {
+      "published": "day",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-10-05T10:14:31+09:00",
+    "last_seen_at": "2026-10-05T10:14:31+09:00",
+    "latest_version": 1,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "extraction_profile": "html+pdf(3files,30pages,exclude:座席|席次)",
+      "attachments": [
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/52f18506-7119-48e6-b78f-d0f0514b3a9a/4dbc9ebf/20260917_about_jinji_37.pdf",
+          "title": "令和8年9月17日付発令（PDF／86KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 174,
+          "pages": 1,
+          "pages_read": 1
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/52f18506-7119-48e6-b78f-d0f0514b3a9a/f907052e/20260831_about_jinji_36.pdf",
+          "title": "令和8年9月1日付発令（PDF／154KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 182,
+          "pages": 1,
+          "pages_read": 1
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/52f18506-7119-48e6-b78f-d0f0514b3a9a/0bd44b30/20260813_about_jinji_35.pdf",
+          "title": "令和8年8月14日付発令（PDF／84KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 142,
+          "pages": 1,
+          "pages_read": 1
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/52f18506-7119-48e6-b78f-d0f0514b3a9a/ea43ea09/20260807_about_jinji_34.pdf",
+          "title": "令和8年8月10日付発令（PDF／86KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/52f18506-7119-48e6-b78f-d0f0514b3a9a/86b4e719/20260807about_jinji_32.pdf",
+          "title": "令和8年8月7日付発令（PDF／471KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/52f18506-7119-48e6-b78f-d0f0514b3a9a/b50d59dd/20260807_about_jinji_33.pdf",
+          "title": "令和8年8月4日付発令（PDF／204KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/52f18506-7119-48e6-b78f-d0f0514b3a9a/419c4ab9/20260801about_jinji_31.pdf",
+          "title": "令和8年8月1日付発令（PDF／104KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/52f18506-7119-48e6-b78f-d0f0514b3a9a/0f69c61a/20260724_about_jinji_30.pdf",
+          "title": "令和8年7月27日付発令（PDF／84KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/52f18506-7119-48e6-b78f-d0f0514b3a9a/cb6a548b/20260722_about_jinji_29.pdf",
+          "title": "令和8年7月22日付発令（PDF／85KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/52f18506-7119-48e6-b78f-d0f0514b3a9a/80db37ee/20260428_about_jinji_28.pdf",
+          "title": "令和8年5月1日付発令（PDF／135KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/52f18506-7119-48e6-b78f-d0f0514b3a9a/75dfd4be/20260408_about_jinji_27.pdf",
+          "title": "令和8年4月8日付発令（PDF／143KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/52f18506-7119-48e6-b78f-d0f0514b3a9a/85cc8057/20260406_about_jinji_25.pdf",
+          "title": "令和8年4月6日付発令（PDF／136KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/52f18506-7119-48e6-b78f-d0f0514b3a9a/71524963/20260401_about_jinji_24.pdf",
+          "title": "令和8年4月1日付発令（PDF／137KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/52f18506-7119-48e6-b78f-d0f0514b3a9a/017af3ed/20260331_about_jinji_23.pdf",
+          "title": "令和8年3月31日付発令（PDF／81KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/52f18506-7119-48e6-b78f-d0f0514b3a9a/1941460d/20260114_about_jinji_22.pdf",
+          "title": "令和8年1月15日付発令（PDF／181KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/52f18506-7119-48e6-b78f-d0f0514b3a9a/7e3e4ad3/20251021_about_jinji_21.pdf",
+          "title": "令和7年10月21日付発令（PDF／153KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/52f18506-7119-48e6-b78f-d0f0514b3a9a/fb3d3e4c/20250904_about_jinji_20.pdf",
+          "title": "令和7年9月7日付発令（PDF／185KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/52f18506-7119-48e6-b78f-d0f0514b3a9a/ea06ebaf/20250820_about_jinji_19.pdf",
+          "title": "令和7年8月22日付発令（PDF／185KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/52f18506-7119-48e6-b78f-d0f0514b3a9a/43b00767/20250708_about_jinji_18.pdf",
+          "title": "令和7年7月7日及び7月8日付発令（PDF／141KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/52f18506-7119-48e6-b78f-d0f0514b3a9a/aa5a9526/20250630_about_jinji_17.pdf",
+          "title": "令和7年7月1日付発令（PDF／187KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        }
+      ],
+      "article_id": "a_e16d149490712fda",
+      "version": 1,
+      "content_hash": "sha256:fbba455a43e31313f092b6d87e2832df32f38bf7f7e9f069fa4a94e74aacf158",
+      "fetched_at": "2026-10-05T10:14:31+09:00",
+      "content_type": "html",
+      "text_length": 1514,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "new"
+    }
+  ]
+}

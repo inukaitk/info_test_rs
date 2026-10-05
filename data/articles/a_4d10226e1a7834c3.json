@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_4d10226e1a7834c3",
+    "source_id": "cfa-news",
+    "canonical_url": "https://www.cfa.go.jp/councils/meetings/inclusion/01",
+    "title": "第1回インクルージョン推進に向けた関係者懇談会",
+    "published_at": "2026-09-01",
+    "updated_at": null,
+    "date_basis": {
+      "published": {
+        "method": "listing_text",
+        "evidence": "<time datetime=\"2026-09-01\">2026年9月1日</time>"
+      },
+      "updated": null
+    },
+    "date_precision": {
+      "published": "day",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-10-05T10:14:31+09:00",
+    "last_seen_at": "2026-10-05T10:14:31+09:00",
+    "latest_version": 1,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "extraction_profile": "html+pdf(3files,30pages,exclude:座席|席次)",
+      "attachments": [
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/3c9bb212-51b2-4f78-90de-f570a0837958/8b3fb30a/20260723_councils_meetings_inclusion_01_01.pdf",
+          "title": "議事次第（PDF／59KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 328,
+          "pages": 1,
+          "pages_read": 1
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/3c9bb212-51b2-4f78-90de-f570a0837958/15e32795/20260723_councils_meetings_inclusion_01_02.pdf",
+          "title": "資料1　「インクルージョン推進に向けた関係者懇談会」開催要綱（PDF／210KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 1480,
+          "pages": 2,
+          "pages_read": 2
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/3c9bb212-51b2-4f78-90de-f570a0837958/e7730edb/20260723_councils_meetings_inclusion_01_03.pdf",
+          "title": "資料2　各施策の動向（PDF／8.8MB）",
+          "status": "ok",
+          "error": "先頭30ページだけを読み取りました（全67ページ）",
+          "text_length": 26108,
+          "pages": 67,
+          "pages_read": 30
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/3c9bb212-51b2-4f78-90de-f570a0837958/13498512/20260723_councils_meetings_inclusion_01_04.pdf",
+          "title": "資料3　インクルージョン推進に向けた関係者懇談会参加団体提出資料（PDF／8.2MB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/3c9bb212-51b2-4f78-90de-f570a0837958/4ace4ee3/20260901_councils_meetings_inclusion_01_05.pdf",
+          "title": "インクルージョン懇談会（第1回）議事概要（PDF／156KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        }
+      ],
+      "article_id": "a_4d10226e1a7834c3",
+      "version": 1,
+      "content_hash": "sha256:7d7ae0e077f0a6c7298d6ba941197f542fe95ac5425a9cfb7ae1650673971d6b",
+      "fetched_at": "2026-10-05T10:14:31+09:00",
+      "content_type": "html",
+      "text_length": 28348,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "new"
+    }
+  ]
+}
