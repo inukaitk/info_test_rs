@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_27d76fdb5aea7c15",
+    "source_id": "kokasen-news",
+    "canonical_url": "https://kokasen.cfa.go.jp/login/briefing",
+    "title": "全国オンライン情報交換会（人口５～10万人）の開催案内を掲載しました",
+    "published_at": "2026-09-30T12:34:34+09:00",
+    "updated_at": null,
+    "date_basis": {
+      "published": {
+        "method": "listing_text",
+        "evidence": "<time datetime=\"2026-09-30T12:34:34+09:00\">2026/09/30</time>"
+      },
+      "updated": null
+    },
+    "date_precision": {
+      "published": "datetime",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-10-05T14:24:29+09:00",
+    "last_seen_at": "2026-10-05T14:24:29+09:00",
+    "latest_version": 1,
+    "status": "unsupported"
+  },
+  "versions": [
+    {
+      "extraction_profile": "html+pdf(3files,30pages,exclude:座席|席次)",
+      "article_id": "a_27d76fdb5aea7c15",
+      "version": 1,
+      "content_hash": null,
+      "fetched_at": "2026-10-05T14:24:29+09:00",
+      "content_type": "html",
+      "text_length": null,
+      "extraction_status": "unsupported",
+      "extraction_error": "会員限定（ログインが必要）のページのため、本文は取得していません。一覧の題名・日付と出典リンクだけを記録しています",
+      "change_type": "new"
+    }
+  ]
+}

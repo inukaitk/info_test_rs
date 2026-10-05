@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "article_id": "a_8d006531e4717bb2",
+  "summaries": [
+    {
+      "article_id": "a_8d006531e4717bb2",
+      "article_version": 1,
+      "analysis_status": "success",
+      "error": null,
+      "summary": "北海道妹背牛町の取材レポートが公開された。内容は、保健師が保護者全員と個別面談を実施する、園医方式による5歳児健診についてのもの。公開日は2026年3月5日と記載されている。",
+      "key_points": [
+        "北海道妹背牛町の取材レポートを公開した",
+        "テーマは園医方式による5歳児健診",
+        "保健師が保護者全員と個別面談を実施する",
+        "本文は告知のみで、レポートの詳細な内容は記載されていない"
+      ],
+      "targets": [],
+      "dates": [
+        {
+          "label": "公開日",
+          "value": "2026-03-05",
+          "evidence": "2026.03.05"
+        }
+      ],
+      "ai_tags": [
+        {
+          "tag_id": "maternal-child-health",
+          "reason": "5歳児健診と保健師による保護者面談という母子保健の取り組みを扱っているため。"
+        }
+      ],
+      "uncertainties": [
+        "取材レポートの具体的な内容(健診の実施方法、実施体制、成果など)は本文に記載がない",
+        "想定される読者や対象者は明記されていない",
+        "文書情報の公開日は不明だが、本文中に2026.03.05の記載がある"
+      ],
+      "provider": "anthropic",
+      "model": "claude-sonnet-5-5",
+      "prompt_version": "p1-2026-10-02",
+      "tags_version": "sha256:bde74cf4ea967ef07307b37972c605277d95999c697068f6c5e9d5a6af8a7951",
+      "usage": {
+        "input_tokens": 2287,
+        "output_tokens": 389,
+        "retries": 0,
+        "estimated_cost_usd": 0.008464
+      },
+      "processed_at": "2026-10-05T14:43:04+09:00",
+      "content_hash": "sha256:110dd7ceff712c146492cf69412d464041395027c9f228d63d4cfa04e7287f1a"
+    }
+  ]
+}

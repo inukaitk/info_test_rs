@@ -66,6 +66,484 @@
       "tag_override_reason": null
     },
     {
+      "id": "a_783cff3827c34393",
+      "source_id": "mchh-prtimes",
+      "source_name": "母子モ株式会社（プレスリリース、PR TIMES）",
+      "title": "母子手帳アプリ『母子モ』が東京都小金井市で提供を開始！",
+      "url": "https://prtimes.jp/main/html/rd/p/000000579.000099909.html",
+      "published": {
+        "value": "2026-10-01T12:00:02+09:00",
+        "precision": "datetime",
+        "basis": {
+          "method": "rss_pubdate",
+          "evidence": "2026-10-01T12:00:02+09:00"
+        }
+      },
+      "updated": {
+        "value": null,
+        "precision": "unknown",
+        "basis": null
+      },
+      "first_seen_at": "2026-10-05T14:38:18+09:00",
+      "last_seen_at": "2026-10-05T14:38:18+09:00",
+      "status": "active",
+      "content_status": "ok",
+      "content_error": null,
+      "latest_version": 1,
+      "versions": [
+        {
+          "version": 1,
+          "fetched_at": "2026-10-05T14:38:18+09:00",
+          "change_type": "new",
+          "extraction_status": "ok"
+        }
+      ],
+      "attachments": [
+        {
+          "title": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/6cfab22c-d2bf-4dd1-81ea-49308519ac3a/6f948f38/20250630_councils_kodomo_seisaku_DX_6cfab22c_08.pdf",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/6cfab22c-d2bf-4dd1-81ea-49308519ac3a/6f948f38/20250630_councils_kodomo_seisaku_DX_6cfab22c_08.pdf",
+          "status": "skipped",
+          "note": "取得対象外：許可ホスト以外です: www.cfa.go.jp",
+          "pages": null
+        },
+        {
+          "title": "PR TIMESのご利用について 資料をダウンロード",
+          "url": "https://prtimes.jp/common/file/service_guide.pdf",
+          "status": "ok",
+          "note": null,
+          "pages": 14
+        }
+      ],
+      "summary": {
+        "status": "not_processed",
+        "error": null,
+        "version": null,
+        "outdated": false,
+        "text": null,
+        "key_points": null,
+        "targets": null,
+        "dates": null,
+        "uncertainties": null,
+        "model": null,
+        "processed_at": null
+      },
+      "tags": [],
+      "removed_tags": [],
+      "tag_override_reason": null
+    },
+    {
+      "id": "a_c666c624f85d6ef2",
+      "source_id": "mchh-prtimes",
+      "source_name": "母子モ株式会社（プレスリリース、PR TIMES）",
+      "title": "『子育てDX』の「伴走型相談支援サービス」と「質問票サービス」が広島県坂町で導入！",
+      "url": "https://prtimes.jp/main/html/rd/p/000000578.000099909.html",
+      "published": {
+        "value": "2026-10-01T11:30:02+09:00",
+        "precision": "datetime",
+        "basis": {
+          "method": "rss_pubdate",
+          "evidence": "2026-10-01T11:30:02+09:00"
+        }
+      },
+      "updated": {
+        "value": null,
+        "precision": "unknown",
+        "basis": null
+      },
+      "first_seen_at": "2026-10-05T14:38:18+09:00",
+      "last_seen_at": "2026-10-05T14:38:18+09:00",
+      "status": "active",
+      "content_status": "ok",
+      "content_error": null,
+      "latest_version": 1,
+      "versions": [
+        {
+          "version": 1,
+          "fetched_at": "2026-10-05T14:38:18+09:00",
+          "change_type": "new",
+          "extraction_status": "ok"
+        }
+      ],
+      "attachments": [
+        {
+          "title": "PR TIMESのご利用について 資料をダウンロード",
+          "url": "https://prtimes.jp/common/file/service_guide.pdf",
+          "status": "ok",
+          "note": null,
+          "pages": 14
+        }
+      ],
+      "summary": {
+        "status": "not_processed",
+        "error": null,
+        "version": null,
+        "outdated": false,
+        "text": null,
+        "key_points": null,
+        "targets": null,
+        "dates": null,
+        "uncertainties": null,
+        "model": null,
+        "processed_at": null
+      },
+      "tags": [],
+      "removed_tags": [],
+      "tag_override_reason": null
+    },
+    {
+      "id": "a_6bc26fc3ed8f3ff4",
+      "source_id": "mchh-prtimes",
+      "source_name": "母子モ株式会社（プレスリリース、PR TIMES）",
+      "title": "『子育てDX』の「伴走型相談支援サービス」が山口県下松市で導入！",
+      "url": "https://prtimes.jp/main/html/rd/p/000000577.000099909.html",
+      "published": {
+        "value": "2026-10-01T11:00:02+09:00",
+        "precision": "datetime",
+        "basis": {
+          "method": "rss_pubdate",
+          "evidence": "2026-10-01T11:00:02+09:00"
+        }
+      },
+      "updated": {
+        "value": null,
+        "precision": "unknown",
+        "basis": null
+      },
+      "first_seen_at": "2026-10-05T14:38:18+09:00",
+      "last_seen_at": "2026-10-05T14:38:18+09:00",
+      "status": "active",
+      "content_status": "ok",
+      "content_error": null,
+      "latest_version": 1,
+      "versions": [
+        {
+          "version": 1,
+          "fetched_at": "2026-10-05T14:38:18+09:00",
+          "change_type": "new",
+          "extraction_status": "ok"
+        }
+      ],
+      "attachments": [
+        {
+          "title": "PR TIMESのご利用について 資料をダウンロード",
+          "url": "https://prtimes.jp/common/file/service_guide.pdf",
+          "status": "ok",
+          "note": null,
+          "pages": 14
+        }
+      ],
+      "summary": {
+        "status": "not_processed",
+        "error": null,
+        "version": null,
+        "outdated": false,
+        "text": null,
+        "key_points": null,
+        "targets": null,
+        "dates": null,
+        "uncertainties": null,
+        "model": null,
+        "processed_at": null
+      },
+      "tags": [],
+      "removed_tags": [],
+      "tag_override_reason": null
+    },
+    {
+      "id": "a_c8d1e3f668a376db",
+      "source_id": "mchh-prtimes",
+      "source_name": "母子モ株式会社（プレスリリース、PR TIMES）",
+      "title": "『子育てDX』の「伴走型相談支援サービス」が広島県大竹市で導入！",
+      "url": "https://prtimes.jp/main/html/rd/p/000000576.000099909.html",
+      "published": {
+        "value": "2026-10-01T10:30:01+09:00",
+        "precision": "datetime",
+        "basis": {
+          "method": "rss_pubdate",
+          "evidence": "2026-10-01T10:30:01+09:00"
+        }
+      },
+      "updated": {
+        "value": null,
+        "precision": "unknown",
+        "basis": null
+      },
+      "first_seen_at": "2026-10-05T14:38:18+09:00",
+      "last_seen_at": "2026-10-05T14:38:18+09:00",
+      "status": "active",
+      "content_status": "ok",
+      "content_error": null,
+      "latest_version": 1,
+      "versions": [
+        {
+          "version": 1,
+          "fetched_at": "2026-10-05T14:38:18+09:00",
+          "change_type": "new",
+          "extraction_status": "ok"
+        }
+      ],
+      "attachments": [
+        {
+          "title": "PR TIMESのご利用について 資料をダウンロード",
+          "url": "https://prtimes.jp/common/file/service_guide.pdf",
+          "status": "ok",
+          "note": null,
+          "pages": 14
+        }
+      ],
+      "summary": {
+        "status": "not_processed",
+        "error": null,
+        "version": null,
+        "outdated": false,
+        "text": null,
+        "key_points": null,
+        "targets": null,
+        "dates": null,
+        "uncertainties": null,
+        "model": null,
+        "processed_at": null
+      },
+      "tags": [],
+      "removed_tags": [],
+      "tag_override_reason": null
+    },
+    {
+      "id": "a_89ef9d926a1241cf",
+      "source_id": "mchh-prtimes",
+      "source_name": "母子モ株式会社（プレスリリース、PR TIMES）",
+      "title": "宮崎県三股町の『みまたん子育てアプリ』で「質問票サービス」と「オンライン予約サービス」の提供を開始！",
+      "url": "https://prtimes.jp/main/html/rd/p/000000580.000099909.html",
+      "published": {
+        "value": "2026-10-01T10:00:03+09:00",
+        "precision": "datetime",
+        "basis": {
+          "method": "rss_pubdate",
+          "evidence": "2026-10-01T10:00:03+09:00"
+        }
+      },
+      "updated": {
+        "value": null,
+        "precision": "unknown",
+        "basis": null
+      },
+      "first_seen_at": "2026-10-05T14:38:18+09:00",
+      "last_seen_at": "2026-10-05T14:38:18+09:00",
+      "status": "active",
+      "content_status": "ok",
+      "content_error": null,
+      "latest_version": 1,
+      "versions": [
+        {
+          "version": 1,
+          "fetched_at": "2026-10-05T14:38:18+09:00",
+          "change_type": "new",
+          "extraction_status": "ok"
+        }
+      ],
+      "attachments": [
+        {
+          "title": "PR TIMESのご利用について 資料をダウンロード",
+          "url": "https://prtimes.jp/common/file/service_guide.pdf",
+          "status": "ok",
+          "note": null,
+          "pages": 14
+        }
+      ],
+      "summary": {
+        "status": "not_processed",
+        "error": null,
+        "version": null,
+        "outdated": false,
+        "text": null,
+        "key_points": null,
+        "targets": null,
+        "dates": null,
+        "uncertainties": null,
+        "model": null,
+        "processed_at": null
+      },
+      "tags": [],
+      "removed_tags": [],
+      "tag_override_reason": null
+    },
+    {
+      "id": "a_27d76fdb5aea7c15",
+      "source_id": "kokasen-news",
+      "source_name": "こども家庭センターポータルサイト（新着情報）",
+      "title": "全国オンライン情報交換会（人口５～10万人）の開催案内を掲載しました",
+      "url": "https://kokasen.cfa.go.jp/login/briefing",
+      "published": {
+        "value": "2026-09-30T12:34:34+09:00",
+        "precision": "datetime",
+        "basis": {
+          "method": "listing_text",
+          "evidence": "2026/09/30"
+        }
+      },
+      "updated": {
+        "value": null,
+        "precision": "unknown",
+        "basis": null
+      },
+      "first_seen_at": "2026-10-05T14:24:29+09:00",
+      "last_seen_at": "2026-10-05T14:24:29+09:00",
+      "status": "unsupported",
+      "content_status": "unsupported",
+      "content_error": "会員限定（ログインが必要）のページのため、本文は取得していません。一覧の題名・日付と出典リンクだけを記録しています",
+      "latest_version": 1,
+      "versions": [
+        {
+          "version": 1,
+          "fetched_at": "2026-10-05T14:24:29+09:00",
+          "change_type": "new",
+          "extraction_status": "unsupported"
+        }
+      ],
+      "attachments": [],
+      "summary": {
+        "status": "not_processed",
+        "error": null,
+        "version": null,
+        "outdated": false,
+        "text": null,
+        "key_points": null,
+        "targets": null,
+        "dates": null,
+        "uncertainties": null,
+        "model": null,
+        "processed_at": null
+      },
+      "tags": [],
+      "removed_tags": [],
+      "tag_override_reason": null
+    },
+    {
+      "id": "a_ba1b8a76f18ce4d2",
+      "source_id": "mchh-prtimes",
+      "source_name": "母子モ株式会社（プレスリリース、PR TIMES）",
+      "title": "母子手帳アプリ『母子モ』が京都府亀岡市で提供を開始！",
+      "url": "https://prtimes.jp/main/html/rd/p/000000575.000099909.html",
+      "published": {
+        "value": "2026-09-30T11:00:03+09:00",
+        "precision": "datetime",
+        "basis": {
+          "method": "rss_pubdate",
+          "evidence": "2026-09-30T11:00:03+09:00"
+        }
+      },
+      "updated": {
+        "value": null,
+        "precision": "unknown",
+        "basis": null
+      },
+      "first_seen_at": "2026-10-05T14:38:18+09:00",
+      "last_seen_at": "2026-10-05T14:38:18+09:00",
+      "status": "active",
+      "content_status": "ok",
+      "content_error": null,
+      "latest_version": 1,
+      "versions": [
+        {
+          "version": 1,
+          "fetched_at": "2026-10-05T14:38:18+09:00",
+          "change_type": "new",
+          "extraction_status": "ok"
+        }
+      ],
+      "attachments": [
+        {
+          "title": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/6cfab22c-d2bf-4dd1-81ea-49308519ac3a/6f948f38/20250630_councils_kodomo_seisaku_DX_6cfab22c_08.pdf",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/6cfab22c-d2bf-4dd1-81ea-49308519ac3a/6f948f38/20250630_councils_kodomo_seisaku_DX_6cfab22c_08.pdf",
+          "status": "skipped",
+          "note": "取得対象外：許可ホスト以外です: www.cfa.go.jp",
+          "pages": null
+        },
+        {
+          "title": "PR TIMESのご利用について 資料をダウンロード",
+          "url": "https://prtimes.jp/common/file/service_guide.pdf",
+          "status": "ok",
+          "note": null,
+          "pages": 14
+        }
+      ],
+      "summary": {
+        "status": "not_processed",
+        "error": null,
+        "version": null,
+        "outdated": false,
+        "text": null,
+        "key_points": null,
+        "targets": null,
+        "dates": null,
+        "uncertainties": null,
+        "model": null,
+        "processed_at": null
+      },
+      "tags": [],
+      "removed_tags": [],
+      "tag_override_reason": null
+    },
+    {
+      "id": "a_dc10adf99b4eefa9",
+      "source_id": "mchh-prtimes",
+      "source_name": "母子モ株式会社（プレスリリース、PR TIMES）",
+      "title": "福岡県北九州市にて、『子育てDX』「妊産婦健診サービス」を機能拡充！",
+      "url": "https://prtimes.jp/main/html/rd/p/000000574.000099909.html",
+      "published": {
+        "value": "2026-09-30T10:00:02+09:00",
+        "precision": "datetime",
+        "basis": {
+          "method": "rss_pubdate",
+          "evidence": "2026-09-30T10:00:02+09:00"
+        }
+      },
+      "updated": {
+        "value": null,
+        "precision": "unknown",
+        "basis": null
+      },
+      "first_seen_at": "2026-10-05T14:38:18+09:00",
+      "last_seen_at": "2026-10-05T14:38:18+09:00",
+      "status": "active",
+      "content_status": "ok",
+      "content_error": null,
+      "latest_version": 1,
+      "versions": [
+        {
+          "version": 1,
+          "fetched_at": "2026-10-05T14:38:18+09:00",
+          "change_type": "new",
+          "extraction_status": "ok"
+        }
+      ],
+      "attachments": [
+        {
+          "title": "PR TIMESのご利用について 資料をダウンロード",
+          "url": "https://prtimes.jp/common/file/service_guide.pdf",
+          "status": "ok",
+          "note": null,
+          "pages": 14
+        }
+      ],
+      "summary": {
+        "status": "not_processed",
+        "error": null,
+        "version": null,
+        "outdated": false,
+        "text": null,
+        "key_points": null,
+        "targets": null,
+        "dates": null,
+        "uncertainties": null,
+        "model": null,
+        "processed_at": null
+      },
+      "tags": [],
+      "removed_tags": [],
+      "tag_override_reason": null
+    },
+    {
       "id": "a_722cbd59feaf55a5",
       "source_id": "cfa-news",
       "source_name": "こども家庭庁（新着・更新）",
@@ -1314,6 +1792,57 @@
       "tag_override_reason": null
     },
     {
+      "id": "a_6b1f3a16bad6a43f",
+      "source_id": "cmic-trust-news",
+      "source_name": "CMIC Trust 株式会社（NEWS）",
+      "title": "記事公開のお知らせ：ひたちなか市で予防接種事務デジタル化が本格始動",
+      "url": "https://www.cmic-trust.jp/news/hitachinaka2",
+      "published": {
+        "value": "2026-09-18T16:27:48+09:00",
+        "precision": "datetime",
+        "basis": {
+          "method": "page_data",
+          "evidence": "publishedAt: \"2026-09-18T07:27:48.000Z\""
+        }
+      },
+      "updated": {
+        "value": null,
+        "precision": "unknown",
+        "basis": null
+      },
+      "first_seen_at": "2026-10-05T14:53:03+09:00",
+      "last_seen_at": "2026-10-05T14:53:03+09:00",
+      "status": "active",
+      "content_status": "ok",
+      "content_error": null,
+      "latest_version": 1,
+      "versions": [
+        {
+          "version": 1,
+          "fetched_at": "2026-10-05T14:53:03+09:00",
+          "change_type": "new",
+          "extraction_status": "ok"
+        }
+      ],
+      "attachments": [],
+      "summary": {
+        "status": "not_processed",
+        "error": null,
+        "version": null,
+        "outdated": false,
+        "text": null,
+        "key_points": null,
+        "targets": null,
+        "dates": null,
+        "uncertainties": null,
+        "model": null,
+        "processed_at": null
+      },
+      "tags": [],
+      "removed_tags": [],
+      "tag_override_reason": null
+    },
+    {
       "id": "a_1ab53a75348564e5",
       "source_id": "cfa-news",
       "source_name": "こども家庭庁（新着・更新）",
@@ -2291,6 +2820,138 @@
           "retired": false
         }
       ],
+      "removed_tags": [],
+      "tag_override_reason": null
+    },
+    {
+      "id": "a_59d5711fe29b7a24",
+      "source_id": "mchh-prtimes",
+      "source_name": "母子モ株式会社（プレスリリース、PR TIMES）",
+      "title": "母子手帳アプリ『母子モ』が大阪府枚方市で提供を開始！",
+      "url": "https://prtimes.jp/main/html/rd/p/000000572.000099909.html",
+      "published": {
+        "value": "2026-09-17T14:00:02+09:00",
+        "precision": "datetime",
+        "basis": {
+          "method": "rss_pubdate",
+          "evidence": "2026-09-17T14:00:02+09:00"
+        }
+      },
+      "updated": {
+        "value": null,
+        "precision": "unknown",
+        "basis": null
+      },
+      "first_seen_at": "2026-10-05T14:38:18+09:00",
+      "last_seen_at": "2026-10-05T14:38:18+09:00",
+      "status": "active",
+      "content_status": "ok",
+      "content_error": null,
+      "latest_version": 1,
+      "versions": [
+        {
+          "version": 1,
+          "fetched_at": "2026-10-05T14:38:18+09:00",
+          "change_type": "new",
+          "extraction_status": "ok"
+        }
+      ],
+      "attachments": [
+        {
+          "title": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/6cfab22c-d2bf-4dd1-81ea-49308519ac3a/6f948f38/20250630_councils_kodomo_seisaku_DX_6cfab22c_08.pdf",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/6cfab22c-d2bf-4dd1-81ea-49308519ac3a/6f948f38/20250630_councils_kodomo_seisaku_DX_6cfab22c_08.pdf",
+          "status": "skipped",
+          "note": "取得対象外：許可ホスト以外です: www.cfa.go.jp",
+          "pages": null
+        },
+        {
+          "title": "PR TIMESのご利用について 資料をダウンロード",
+          "url": "https://prtimes.jp/common/file/service_guide.pdf",
+          "status": "ok",
+          "note": null,
+          "pages": 14
+        }
+      ],
+      "summary": {
+        "status": "not_processed",
+        "error": null,
+        "version": null,
+        "outdated": false,
+        "text": null,
+        "key_points": null,
+        "targets": null,
+        "dates": null,
+        "uncertainties": null,
+        "model": null,
+        "processed_at": null
+      },
+      "tags": [],
+      "removed_tags": [],
+      "tag_override_reason": null
+    },
+    {
+      "id": "a_abb0a9d023ca19c7",
+      "source_id": "mchh-prtimes",
+      "source_name": "母子モ株式会社（プレスリリース、PR TIMES）",
+      "title": "母子手帳アプリ『母子モ』が京都府京丹波町で提供を開始！",
+      "url": "https://prtimes.jp/main/html/rd/p/000000573.000099909.html",
+      "published": {
+        "value": "2026-09-17T10:00:02+09:00",
+        "precision": "datetime",
+        "basis": {
+          "method": "rss_pubdate",
+          "evidence": "2026-09-17T10:00:02+09:00"
+        }
+      },
+      "updated": {
+        "value": null,
+        "precision": "unknown",
+        "basis": null
+      },
+      "first_seen_at": "2026-10-05T14:38:18+09:00",
+      "last_seen_at": "2026-10-05T14:38:18+09:00",
+      "status": "active",
+      "content_status": "ok",
+      "content_error": null,
+      "latest_version": 1,
+      "versions": [
+        {
+          "version": 1,
+          "fetched_at": "2026-10-05T14:38:18+09:00",
+          "change_type": "new",
+          "extraction_status": "ok"
+        }
+      ],
+      "attachments": [
+        {
+          "title": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/6cfab22c-d2bf-4dd1-81ea-49308519ac3a/6f948f38/20250630_councils_kodomo_seisaku_DX_6cfab22c_08.pdf",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/6cfab22c-d2bf-4dd1-81ea-49308519ac3a/6f948f38/20250630_councils_kodomo_seisaku_DX_6cfab22c_08.pdf",
+          "status": "skipped",
+          "note": "取得対象外：許可ホスト以外です: www.cfa.go.jp",
+          "pages": null
+        },
+        {
+          "title": "PR TIMESのご利用について 資料をダウンロード",
+          "url": "https://prtimes.jp/common/file/service_guide.pdf",
+          "status": "ok",
+          "note": null,
+          "pages": 14
+        }
+      ],
+      "summary": {
+        "status": "not_processed",
+        "error": null,
+        "version": null,
+        "outdated": false,
+        "text": null,
+        "key_points": null,
+        "targets": null,
+        "dates": null,
+        "uncertainties": null,
+        "model": null,
+        "processed_at": null
+      },
+      "tags": [],
       "removed_tags": [],
       "tag_override_reason": null
     },
@@ -3737,6 +4398,72 @@
         ],
         "model": "claude-sonnet-5-5",
         "processed_at": "2026-10-05T10:29:20+09:00"
+      },
+      "tags": [],
+      "removed_tags": [],
+      "tag_override_reason": null
+    },
+    {
+      "id": "a_2c482fb7123f06ce",
+      "source_id": "mchh-prtimes",
+      "source_name": "母子モ株式会社（プレスリリース、PR TIMES）",
+      "title": "母子モが新たに22自治体で妊娠届のデジタル申請サポートを開始！",
+      "url": "https://prtimes.jp/main/html/rd/p/000000571.000099909.html",
+      "published": {
+        "value": "2026-09-10T13:00:02+09:00",
+        "precision": "datetime",
+        "basis": {
+          "method": "rss_pubdate",
+          "evidence": "2026-09-10T13:00:02+09:00"
+        }
+      },
+      "updated": {
+        "value": null,
+        "precision": "unknown",
+        "basis": null
+      },
+      "first_seen_at": "2026-10-05T14:38:18+09:00",
+      "last_seen_at": "2026-10-05T14:38:18+09:00",
+      "status": "active",
+      "content_status": "ok",
+      "content_error": null,
+      "latest_version": 1,
+      "versions": [
+        {
+          "version": 1,
+          "fetched_at": "2026-10-05T14:38:18+09:00",
+          "change_type": "new",
+          "extraction_status": "ok"
+        }
+      ],
+      "attachments": [
+        {
+          "title": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/6cfab22c-d2bf-4dd1-81ea-49308519ac3a/cf0aacb9/20250630_councils_kodomo_seisaku_DX_6cfab22c_06.pdf?utm_source=chatgpt.com",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/6cfab22c-d2bf-4dd1-81ea-49308519ac3a/cf0aacb9/20250630_councils_kodomo_seisaku_DX_6cfab22c_06.pdf",
+          "status": "skipped",
+          "note": "取得対象外：許可ホスト以外です: www.cfa.go.jp",
+          "pages": null
+        },
+        {
+          "title": "PR TIMESのご利用について 資料をダウンロード",
+          "url": "https://prtimes.jp/common/file/service_guide.pdf",
+          "status": "ok",
+          "note": null,
+          "pages": 14
+        }
+      ],
+      "summary": {
+        "status": "not_processed",
+        "error": null,
+        "version": null,
+        "outdated": false,
+        "text": null,
+        "key_points": null,
+        "targets": null,
+        "dates": null,
+        "uncertainties": null,
+        "model": null,
+        "processed_at": null
       },
       "tags": [],
       "removed_tags": [],
@@ -5680,6 +6407,79 @@
       "tag_override_reason": null
     },
     {
+      "id": "a_3b333de840b1ce13",
+      "source_id": "gosaiji-topics",
+      "source_name": "5歳児健診ポータル（トピックス）",
+      "title": "鹿児島県種子島のレポートを公開しました！",
+      "url": "https://gosaiji-kenshin.com/topics/kagoshima-tanegashima/",
+      "published": {
+        "value": "2026-09-03",
+        "precision": "day",
+        "basis": {
+          "method": "listing_text",
+          "evidence": "2026.09.03"
+        }
+      },
+      "updated": {
+        "value": null,
+        "precision": "unknown",
+        "basis": null
+      },
+      "first_seen_at": "2026-10-05T14:24:29+09:00",
+      "last_seen_at": "2026-10-05T14:24:29+09:00",
+      "status": "active",
+      "content_status": "ok",
+      "content_error": null,
+      "latest_version": 1,
+      "versions": [
+        {
+          "version": 1,
+          "fetched_at": "2026-10-05T14:24:29+09:00",
+          "change_type": "new",
+          "extraction_status": "ok"
+        }
+      ],
+      "attachments": [],
+      "summary": {
+        "status": "success",
+        "error": null,
+        "version": 1,
+        "outdated": false,
+        "text": "2026年9月3日、「作業療法士・理学療法士が活躍する種子島の5歳児健診」という新しい取材レポートが公開された。本文は公開の告知のみで、レポートの具体的な内容は記載されていない。",
+        "key_points": [
+          "鹿児島県種子島に関する取材レポートを公開した",
+          "レポートの題材は、作業療法士・理学療法士が活躍する種子島の5歳児健診",
+          "本文は閲覧を案内する告知のみ"
+        ],
+        "targets": [],
+        "dates": [
+          {
+            "label": "公開日",
+            "value": "2026-09-03",
+            "evidence": "2026.09.03"
+          }
+        ],
+        "uncertainties": [
+          "レポートの具体的な内容（健診の実施体制、対象者、成果など）は本文に書かれていない",
+          "対象者・対象機関は本文から確認できない",
+          "発信元の組織や運営主体は本文から確認できない"
+        ],
+        "model": "claude-sonnet-5-5",
+        "processed_at": "2026-10-05T14:43:04+09:00"
+      },
+      "tags": [
+        {
+          "id": "maternal-child-health",
+          "name": "母子保健",
+          "origin": "ai",
+          "reason": "5歳児健診に関する取材レポートの公開であり、乳幼児の健康診査に関わる情報のため。",
+          "retired": false
+        }
+      ],
+      "removed_tags": [],
+      "tag_override_reason": null
+    },
+    {
       "id": "a_b98b093e983adc25",
       "source_id": "cfa-news",
       "source_name": "こども家庭庁（新着・更新）",
@@ -5857,6 +6657,204 @@
           "retired": false
         }
       ],
+      "removed_tags": [],
+      "tag_override_reason": null
+    },
+    {
+      "id": "a_eff9cafe3fb2a1d6",
+      "source_id": "mchh-prtimes",
+      "source_name": "母子モ株式会社（プレスリリース、PR TIMES）",
+      "title": "母子手帳アプリ『母子モ』が埼玉県松伏町で提供を開始！",
+      "url": "https://prtimes.jp/main/html/rd/p/000000570.000099909.html",
+      "published": {
+        "value": "2026-09-01T13:00:02+09:00",
+        "precision": "datetime",
+        "basis": {
+          "method": "rss_pubdate",
+          "evidence": "2026-09-01T13:00:02+09:00"
+        }
+      },
+      "updated": {
+        "value": null,
+        "precision": "unknown",
+        "basis": null
+      },
+      "first_seen_at": "2026-10-05T14:38:18+09:00",
+      "last_seen_at": "2026-10-05T14:38:18+09:00",
+      "status": "active",
+      "content_status": "ok",
+      "content_error": null,
+      "latest_version": 1,
+      "versions": [
+        {
+          "version": 1,
+          "fetched_at": "2026-10-05T14:38:18+09:00",
+          "change_type": "new",
+          "extraction_status": "ok"
+        }
+      ],
+      "attachments": [
+        {
+          "title": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/6cfab22c-d2bf-4dd1-81ea-49308519ac3a/6f948f38/20250630_councils_kodomo_seisaku_DX_6cfab22c_08.pdf",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/6cfab22c-d2bf-4dd1-81ea-49308519ac3a/6f948f38/20250630_councils_kodomo_seisaku_DX_6cfab22c_08.pdf",
+          "status": "skipped",
+          "note": "取得対象外：許可ホスト以外です: www.cfa.go.jp",
+          "pages": null
+        },
+        {
+          "title": "PR TIMESのご利用について 資料をダウンロード",
+          "url": "https://prtimes.jp/common/file/service_guide.pdf",
+          "status": "ok",
+          "note": null,
+          "pages": 14
+        }
+      ],
+      "summary": {
+        "status": "not_processed",
+        "error": null,
+        "version": null,
+        "outdated": false,
+        "text": null,
+        "key_points": null,
+        "targets": null,
+        "dates": null,
+        "uncertainties": null,
+        "model": null,
+        "processed_at": null
+      },
+      "tags": [],
+      "removed_tags": [],
+      "tag_override_reason": null
+    },
+    {
+      "id": "a_f563c285515829a2",
+      "source_id": "mchh-prtimes",
+      "source_name": "母子モ株式会社（プレスリリース、PR TIMES）",
+      "title": "母子手帳アプリ『母子モ』が長野県軽井沢町で提供を開始！",
+      "url": "https://prtimes.jp/main/html/rd/p/000000569.000099909.html",
+      "published": {
+        "value": "2026-09-01T12:00:02+09:00",
+        "precision": "datetime",
+        "basis": {
+          "method": "rss_pubdate",
+          "evidence": "2026-09-01T12:00:02+09:00"
+        }
+      },
+      "updated": {
+        "value": null,
+        "precision": "unknown",
+        "basis": null
+      },
+      "first_seen_at": "2026-10-05T14:38:18+09:00",
+      "last_seen_at": "2026-10-05T14:38:18+09:00",
+      "status": "active",
+      "content_status": "ok",
+      "content_error": null,
+      "latest_version": 1,
+      "versions": [
+        {
+          "version": 1,
+          "fetched_at": "2026-10-05T14:38:18+09:00",
+          "change_type": "new",
+          "extraction_status": "ok"
+        }
+      ],
+      "attachments": [
+        {
+          "title": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/6cfab22c-d2bf-4dd1-81ea-49308519ac3a/6f948f38/20250630_councils_kodomo_seisaku_DX_6cfab22c_08.pdf",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/6cfab22c-d2bf-4dd1-81ea-49308519ac3a/6f948f38/20250630_councils_kodomo_seisaku_DX_6cfab22c_08.pdf",
+          "status": "skipped",
+          "note": "取得対象外：許可ホスト以外です: www.cfa.go.jp",
+          "pages": null
+        },
+        {
+          "title": "PR TIMESのご利用について 資料をダウンロード",
+          "url": "https://prtimes.jp/common/file/service_guide.pdf",
+          "status": "ok",
+          "note": null,
+          "pages": 14
+        }
+      ],
+      "summary": {
+        "status": "not_processed",
+        "error": null,
+        "version": null,
+        "outdated": false,
+        "text": null,
+        "key_points": null,
+        "targets": null,
+        "dates": null,
+        "uncertainties": null,
+        "model": null,
+        "processed_at": null
+      },
+      "tags": [],
+      "removed_tags": [],
+      "tag_override_reason": null
+    },
+    {
+      "id": "a_4048059155eac3a0",
+      "source_id": "mchh-prtimes",
+      "source_name": "母子モ株式会社（プレスリリース、PR TIMES）",
+      "title": "母子手帳アプリ『母子モ』が宮崎県高鍋町で提供を開始！",
+      "url": "https://prtimes.jp/main/html/rd/p/000000568.000099909.html",
+      "published": {
+        "value": "2026-09-01T10:00:03+09:00",
+        "precision": "datetime",
+        "basis": {
+          "method": "rss_pubdate",
+          "evidence": "2026-09-01T10:00:03+09:00"
+        }
+      },
+      "updated": {
+        "value": null,
+        "precision": "unknown",
+        "basis": null
+      },
+      "first_seen_at": "2026-10-05T14:38:18+09:00",
+      "last_seen_at": "2026-10-05T14:38:18+09:00",
+      "status": "active",
+      "content_status": "ok",
+      "content_error": null,
+      "latest_version": 1,
+      "versions": [
+        {
+          "version": 1,
+          "fetched_at": "2026-10-05T14:38:18+09:00",
+          "change_type": "new",
+          "extraction_status": "ok"
+        }
+      ],
+      "attachments": [
+        {
+          "title": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/6cfab22c-d2bf-4dd1-81ea-49308519ac3a/6f948f38/20250630_councils_kodomo_seisaku_DX_6cfab22c_08.pdf",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/6cfab22c-d2bf-4dd1-81ea-49308519ac3a/6f948f38/20250630_councils_kodomo_seisaku_DX_6cfab22c_08.pdf",
+          "status": "skipped",
+          "note": "取得対象外：許可ホスト以外です: www.cfa.go.jp",
+          "pages": null
+        },
+        {
+          "title": "PR TIMESのご利用について 資料をダウンロード",
+          "url": "https://prtimes.jp/common/file/service_guide.pdf",
+          "status": "ok",
+          "note": null,
+          "pages": 14
+        }
+      ],
+      "summary": {
+        "status": "not_processed",
+        "error": null,
+        "version": null,
+        "outdated": false,
+        "text": null,
+        "key_points": null,
+        "targets": null,
+        "dates": null,
+        "uncertainties": null,
+        "model": null,
+        "processed_at": null
+      },
+      "tags": [],
       "removed_tags": [],
       "tag_override_reason": null
     },
@@ -6858,6 +7856,77 @@
           "name": "制度改正",
           "origin": "ai",
           "reason": "ヒトゲノム編集胚等取扱規制法に基づく省令・指針(案)や政令要件(案)の検討内容を扱う",
+          "retired": false
+        }
+      ],
+      "removed_tags": [],
+      "tag_override_reason": null
+    },
+    {
+      "id": "a_8d006531e4717bb2",
+      "source_id": "gosaiji-topics",
+      "source_name": "5歳児健診ポータル（トピックス）",
+      "title": "北海道妹背牛町の取材レポートを公開しました！",
+      "url": "https://gosaiji-kenshin.com/topics/hokkaido-moseushi/",
+      "published": {
+        "value": null,
+        "precision": "unknown",
+        "basis": null
+      },
+      "updated": {
+        "value": null,
+        "precision": "unknown",
+        "basis": null
+      },
+      "first_seen_at": "2026-10-05T14:24:29+09:00",
+      "last_seen_at": "2026-10-05T14:24:29+09:00",
+      "status": "active",
+      "content_status": "ok",
+      "content_error": null,
+      "latest_version": 1,
+      "versions": [
+        {
+          "version": 1,
+          "fetched_at": "2026-10-05T14:24:29+09:00",
+          "change_type": "new",
+          "extraction_status": "ok"
+        }
+      ],
+      "attachments": [],
+      "summary": {
+        "status": "success",
+        "error": null,
+        "version": 1,
+        "outdated": false,
+        "text": "北海道妹背牛町の取材レポートが公開された。内容は、保健師が保護者全員と個別面談を実施する、園医方式による5歳児健診についてのもの。公開日は2026年3月5日と記載されている。",
+        "key_points": [
+          "北海道妹背牛町の取材レポートを公開した",
+          "テーマは園医方式による5歳児健診",
+          "保健師が保護者全員と個別面談を実施する",
+          "本文は告知のみで、レポートの詳細な内容は記載されていない"
+        ],
+        "targets": [],
+        "dates": [
+          {
+            "label": "公開日",
+            "value": "2026-03-05",
+            "evidence": "2026.03.05"
+          }
+        ],
+        "uncertainties": [
+          "取材レポートの具体的な内容(健診の実施方法、実施体制、成果など)は本文に記載がない",
+          "想定される読者や対象者は明記されていない",
+          "文書情報の公開日は不明だが、本文中に2026.03.05の記載がある"
+        ],
+        "model": "claude-sonnet-5-5",
+        "processed_at": "2026-10-05T14:43:04+09:00"
+      },
+      "tags": [
+        {
+          "id": "maternal-child-health",
+          "name": "母子保健",
+          "origin": "ai",
+          "reason": "5歳児健診と保健師による保護者面談という母子保健の取り組みを扱っているため。",
           "retired": false
         }
       ],

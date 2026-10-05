@@ -34,7 +34,7 @@ from collector.dates import JST, ParsedDate, in_period
 from dataclasses import replace
 
 from collector.extract import (
-    Candidate, DateFound, Extracted, Listing, extract_document, extract_pdf, normalize_text, parse_feed, parse_html_listing,
+    Candidate, DateFound, Extracted, Listing, extract_document, extract_pdf, normalize_text, parse_feed, parse_html_listing, parse_sitemap,
 )
 from collector.fetch import FetchError, Fetcher, FixtureFetcher, HttpFetcher
 from collector.urls import UrlRejected, check_allowed
@@ -147,13 +147,14 @@ def collection_window(state: dict, options: Options) -> tuple[date | None, date 
     return today - timedelta(days=INITIAL_DAYS), today
 
 
-def list_candidates(source: dict, fetcher: Fetcher) -> tuple[list[Candidate], int, str | None, list[str]]:
-    """候補を列挙する。戻り値：候補、探索したページ数、失敗理由（失敗時）、除外したリンク。"""
+def list_candidates(source: dict, fetcher: Fetcher) -> tuple[list[Candidate], int, str | None, list[str], int]:
+    """候補を列挙する。戻り値：候補、探索したページ数、失敗理由（失敗時）、除外したリンク、同じURLのため1件にまとめた項目数。"""
     limits = source["limits"]
     url: str | None = source["entry_url"]
     max_pages = source.get("pagination", {}).get("max_pages", 1) if source["method"] == "html" else 1
     candidates: list[Candidate] = []
     rejected: list[str] = []
+    duplicates = 0
     pages = 0
     while url and pages < max_pages:
         try:
@@ -161,17 +162,20 @@ def list_candidates(source: dict, fetcher: Fetcher) -> tuple[list[Candidate], in
                                timeout=limits["timeout_seconds"])
             if source["method"] == "rss":
                 listing: Listing = parse_feed(resp.body, resp.url)
+            elif source["method"] == "sitemap":
+                listing = parse_sitemap(resp.body, resp.url, source.get("link_rules", {}))
             else:
                 listing = parse_html_listing(resp.body, resp.url, source.get("link_rules", {}),
                                              source.get("pagination", {}).get("next_selector"))
         except (FetchError, UrlRejected, ValueError) as e:
             label = "一覧ページ" if pages == 0 else f"一覧の{pages + 1}ページ目"
-            return candidates, pages, f"{label}を取得できません：{e}", rejected
+            return candidates, pages, f"{label}を取得できません：{e}", rejected, duplicates
         pages += 1
         candidates += listing.candidates
         rejected += listing.rejected
+        duplicates += listing.duplicates
         url = listing.next_url
-    return candidates, pages, None, rejected
+    return candidates, pages, None, rejected, duplicates
 
 
 def choose_dates(candidate: Candidate, extracted: Extracted | None) -> tuple[DateFound | None, DateFound | None]:
@@ -205,13 +209,16 @@ def process_source(source: dict, store: Store, fetcher: Fetcher, options: Option
         return outcome
 
     start, end = collection_window(state, options)
-    candidates, pages, list_error, rejected = list_candidates(source, fetcher)
+    candidates, pages, list_error, rejected, duplicates = list_candidates(source, fetcher)
 
     # 重複URL（正規化後に同じもの）は1件にまとめる
     unique: dict[str, Candidate] = {}
     for c in candidates:
         unique.setdefault(c.url, c)
     result["candidates"] = len(unique)
+    merged = duplicates + len(candidates) - len(unique)
+    if merged:
+        result["warnings"].append(f"同じURLを指す一覧の項目 {merged}件を1件にまとめました（#以降だけが違うリンクなど）")
     if rejected:
         result["warnings"].append(f"取得対象外のリンク {len(rejected)}件を除外しました（http(s)以外など）")
 
@@ -293,6 +300,7 @@ def _retry(retry_queue: dict, url: str, article_id: str | None, stage: str, reas
 # ---------------------------------------------------------------- 添付PDF
 
 
+LOGIN_REQUIRED_NOTE = "会員限定（ログインが必要）のページのため、本文は取得していません。一覧の題名・日付と出典リンクだけを記録しています"
 ATTACHMENT_DEFAULTS = {"max_files": 3, "max_bytes": 10 * 1024 * 1024, "max_pages": 30}
 MAX_ATTACHMENT_RECORDS = 20
 
@@ -363,13 +371,17 @@ def handle_candidate(source, cand: Candidate, url: str, store: Store, fetcher: F
     extracted: Extracted | None = None
     error: str | None = None
     final_url = url
-    try:
-        resp = fetcher.get(url, allowed_hosts=source["allowed_hosts"], max_bytes=limits["max_bytes"],
-                           timeout=limits["timeout_seconds"])
-        final_url = resp.url
-        extracted = extract_document(resp.body, resp.content_type, resp.url)
-    except (FetchError, UrlRejected) as e:
-        error = str(e)
+    if any(re.search(p, url) for p in source.get("link_rules", {}).get("login_required", [])):
+        # 会員限定ページ：ログイン・認証回避は行わない。ページを取得せず、一覧にある題名・日付・リンクだけを記録する
+        extracted = Extracted(cand.title, "", "html", status="unsupported", error=LOGIN_REQUIRED_NOTE)
+    else:
+        try:
+            resp = fetcher.get(url, allowed_hosts=source["allowed_hosts"], max_bytes=limits["max_bytes"],
+                               timeout=limits["timeout_seconds"])
+            final_url = resp.url
+            extracted = extract_document(resp.body, resp.content_type, resp.url)
+        except (FetchError, UrlRejected) as e:
+            error = str(e)
 
     article_id = article_id_from_canonical_url(url)
     existing = store.articles.get(article_id)
@@ -581,7 +593,7 @@ def dry_run(config: Config, fetcher: Fetcher, source_ids: list[str] | None, limi
             print(f"- {source['id']}: 手動登録のため一覧はありません")
             continue
         source = {**source, "pagination": {**source.get("pagination", {}), "max_pages": 1}}
-        candidates, pages, error, rejected = list_candidates(source, fetcher)
+        candidates, pages, error, rejected, duplicates = list_candidates(source, fetcher)
         print(f"- {source['id']}（{source['name']}）：候補 {len(candidates)}件" + (f"　NG：{error}" if error else ""))
         if error:
             ok = False

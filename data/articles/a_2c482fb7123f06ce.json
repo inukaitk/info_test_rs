@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_2c482fb7123f06ce",
+    "source_id": "mchh-prtimes",
+    "canonical_url": "https://prtimes.jp/main/html/rd/p/000000571.000099909.html",
+    "title": "母子モが新たに22自治体で妊娠届のデジタル申請サポートを開始！",
+    "published_at": "2026-09-10T13:00:02+09:00",
+    "updated_at": null,
+    "date_basis": {
+      "published": {
+        "method": "rss_pubdate",
+        "evidence": "<dc:date>2026-09-10T13:00:02+09:00</dc:date>"
+      },
+      "updated": null
+    },
+    "date_precision": {
+      "published": "datetime",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-10-05T14:38:18+09:00",
+    "last_seen_at": "2026-10-05T14:38:18+09:00",
+    "latest_version": 1,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "extraction_profile": "html+pdf(3files,30pages)",
+      "attachments": [
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/6cfab22c-d2bf-4dd1-81ea-49308519ac3a/cf0aacb9/20250630_councils_kodomo_seisaku_DX_6cfab22c_06.pdf",
+          "title": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/6cfab22c-d2bf-4dd1-81ea-49308519ac3a/cf0aacb9/20250630_councils_kodomo_seisaku_DX_6cfab22c_06.pdf?utm_source=chatgpt.com",
+          "status": "skipped",
+          "error": "取得対象外：許可ホスト以外です: www.cfa.go.jp",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://prtimes.jp/common/file/service_guide.pdf",
+          "title": "PR TIMESのご利用について 資料をダウンロード",
+          "status": "ok",
+          "error": null,
+          "text_length": 7357,
+          "pages": 14,
+          "pages_read": 14
+        }
+      ],
+      "article_id": "a_2c482fb7123f06ce",
+      "version": 1,
+      "content_hash": "sha256:2cdea0788247ee64d6d1af9342c4b8f3ff5a242c31b2ca63777fe2b71bd29b21",
+      "fetched_at": "2026-10-05T14:38:18+09:00",
+      "content_type": "html",
+      "text_length": 11476,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "new"
+    }
+  ]
+}

@@ -45,9 +45,10 @@
           "enum": [
             "rss",
             "html",
+            "sitemap",
             "manual"
           ],
-          "description": "取得方式"
+          "description": "取得方式（sitemap：サイトマップのURL一覧。記事ページの文字が表示用プログラムで組み立てられるサイト向け）"
         },
         "allowed_hosts": {
           "type": "array",
@@ -96,6 +97,14 @@
               "type": "string",
               "minLength": 1,
               "description": "1件の中の日付の要素"
+            },
+            "login_required": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              },
+              "description": "ログインが必要な会員限定ページのURL（正規表現）。ログイン・認証回避は行わないため、本文は取得せず、一覧にある題名・日付・出典リンクだけを「読み取れない」として記録する"
             }
           }
         },

@@ -3,7 +3,7 @@ import { externalLink, h } from "../dom";
 import { formatDateTime } from "../format";
 import type { SiteData, SourceStatus } from "../types";
 
-const METHOD: Record<string, string> = { rss: "RSS", html: "HTML一覧ページ", manual: "手動登録" };
+const METHOD: Record<string, string> = { rss: "RSS", html: "HTML一覧ページ", sitemap: "サイトマップ", manual: "手動登録" };
 const RESULT: Record<string, string> = { success: "成功", failed: "失敗", skipped: "対象外", unsupported: "未対応" };
 
 export function sourcesView(data: SiteData): HTMLElement {
@@ -17,7 +17,7 @@ export function sourcesView(data: SiteData): HTMLElement {
     h(
       "p",
       { class: "lead" },
-      "記事を集めている公的機関のページです。ここに載っているページの範囲だけを収集し、Web全体は探していません。",
+      "記事を集めているページです。公的機関（またはその支援を受けた公式サービスサイト）のほか、特別に認めた民間企業4社を含みます。民間企業は、他の情報源と同じ設定・同じ処理で扱い、優劣や順位は付けていません（五十音順）。「候補」には、公的機関ではない団体・媒体を含みます。ここに載っているページの範囲だけを収集し、Web全体は探していません。",
       "各ページの利用条件と robots.txt を確認したうえで、間隔を空けて少しずつ取得しています。",
     ),
     h("h2", {}, `収集中（${active.length}件）`),

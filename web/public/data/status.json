@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
-  "last_run_at": "2026-10-05T12:35:12+09:00",
+  "last_run_at": "2026-10-05T14:54:43+09:00",
   "last_run_status": "success",
-  "last_full_success_at": "2026-10-05T12:35:12+09:00",
+  "last_full_success_at": "2026-10-05T14:54:43+09:00",
   "counts": {
-    "articles": 55,
-    "date_unknown": 0,
-    "content_missing": 0,
-    "unsummarized": 0,
+    "articles": 72,
+    "date_unknown": 1,
+    "content_missing": 1,
+    "unsummarized": 15,
     "summary_outdated": 0
   },
   "sources": [
@@ -86,9 +86,518 @@
       "last_run": null,
       "articles": 0,
       "date_unknown": 0
+    },
+    {
+      "id": "kokasen-news",
+      "name": "こども家庭センターポータルサイト（新着情報）",
+      "method": "html",
+      "entry_url": "https://kokasen.cfa.go.jp/",
+      "enabled": true,
+      "notes": "トップページの「新着情報」に直近約16件（ページ送りなし）。新着の多くは「限定」（会員向けでログインが必要）で、 その本文は取得できないため、題名・日付・出典リンクだけを記録し「読み取れない」と表示する。 「全般」の新着は一般公開のページで、本文を取得する。#以降だけが違うリンクは同じページとして1件にまとまる。 robots.txt：管理画面（/site/wp-admin/）以外は許可。利用条件：こども家庭庁のサイトのため公共データ利用規約（PDL1.0）の想定（サイト個別の記載は未確認）。",
+      "attachments": {
+        "max_files": 3,
+        "max_pages": 30,
+        "exclude_titles": [
+          "座席",
+          "席次"
+        ]
+      },
+      "last_success_at": "2026-10-05T14:24:29+09:00",
+      "last_attempt_at": "2026-10-05T14:24:29+09:00",
+      "last_attempt_status": "success",
+      "consecutive_failures": 0,
+      "explored_range": {
+        "oldest": "2025-09-11",
+        "newest": "2026-09-30",
+        "pages": 1
+      },
+      "retry_count": 0,
+      "retry_items": [],
+      "last_run": null,
+      "articles": 1,
+      "date_unknown": 0
+    },
+    {
+      "id": "gosaiji-topics",
+      "name": "5歳児健診ポータル（トピックス）",
+      "method": "html",
+      "entry_url": "https://gosaiji-kenshin.com/topics/",
+      "enabled": true,
+      "notes": "トピックス一覧の1ページ目（12件、約1年半分）だけを読む。2ページ目以降は古い記事のため対象外。 ドメインは go.jp ではないが、こども家庭庁の支援（supported by）で、厚生労働科学研究費の成果として制作されたサイト。 robots.txt：制限なし。利用条件：サイト内に記載を確認できなかった（出典を示し、短い概要とリンクだけを掲載する）。",
+      "attachments": {
+        "max_files": 3,
+        "max_pages": 30,
+        "exclude_titles": [
+          "座席",
+          "席次"
+        ]
+      },
+      "last_success_at": "2026-10-05T14:24:29+09:00",
+      "last_attempt_at": "2026-10-05T14:24:29+09:00",
+      "last_attempt_status": "success",
+      "consecutive_failures": 0,
+      "explored_range": {
+        "oldest": "2024-12-10",
+        "newest": "2026-09-03",
+        "pages": 1
+      },
+      "retry_count": 0,
+      "retry_items": [],
+      "last_run": null,
+      "articles": 2,
+      "date_unknown": 1
+    },
+    {
+      "id": "boshikenshu-top",
+      "name": "母子保健指導者養成研修（令和8年度）",
+      "method": "html",
+      "entry_url": "https://boshikenshu.cfa.go.jp/",
+      "enabled": false,
+      "notes": "「新着情報」の一覧がなく、研修ごとの案内と母子保健情報誌（年1回）だけのサイト。日付付きの新着を集める方式は使えない。 有効にしても記事として取れるのは研修ページ等の固定ページで、更新の検知（本文の変更）が中心になる。 robots.txt：なし（404）。",
+      "attachments": null,
+      "last_success_at": null,
+      "last_attempt_at": null,
+      "last_attempt_status": null,
+      "consecutive_failures": 0,
+      "explored_range": null,
+      "retry_count": 0,
+      "retry_items": [],
+      "last_run": null,
+      "articles": 0,
+      "date_unknown": 0
+    },
+    {
+      "id": "mchbook-top",
+      "name": "母子健康手帳情報支援サイト",
+      "method": "html",
+      "entry_url": "https://mchbook.cfa.go.jp/",
+      "enabled": false,
+      "notes": "「新着情報」の一覧がなく、トップページに母子健康手帳の資料（PDF）が並び、資料ごとに「最終更新：令和〇年〇月〇日」だけが載る。 最新の更新は令和8年1月19日で、2026年9月1日以降の更新はない。有効にすると、PDFの更新（本文の変更）の検知になる。 日付は公開日ではなく最終更新日。robots.txt：なし（404）。",
+      "attachments": {
+        "max_files": 3,
+        "max_pages": 30,
+        "exclude_titles": []
+      },
+      "last_success_at": null,
+      "last_attempt_at": null,
+      "last_attempt_status": null,
+      "consecutive_failures": 0,
+      "explored_range": null,
+      "retry_count": 0,
+      "retry_items": [],
+      "last_run": null,
+      "articles": 0,
+      "date_unknown": 0
+    },
+    {
+      "id": "digital-news",
+      "name": "デジタル庁（新着・更新）",
+      "method": "html",
+      "entry_url": "https://www.digital.go.jp/news",
+      "enabled": false,
+      "notes": "HTML一覧（1ページ約10〜20件）。こども・母子保健に限らない省庁全体の新着（調達・ダッシュボード・会見など）。 ページ送りは未確認。robots.txt：制限は主に管理用のパス。利用条件：サイトポリシー https://www.digital.go.jp/site-policy を確認する。",
+      "attachments": {
+        "max_files": 3,
+        "max_pages": 30,
+        "exclude_titles": []
+      },
+      "last_success_at": null,
+      "last_attempt_at": null,
+      "last_attempt_status": null,
+      "consecutive_failures": 0,
+      "explored_range": null,
+      "retry_count": 0,
+      "retry_items": [],
+      "last_run": null,
+      "articles": 0,
+      "date_unknown": 0
+    },
+    {
+      "id": "cao-press",
+      "name": "内閣府（報道発表資料）",
+      "method": "html",
+      "entry_url": "https://www.cao.go.jp/press/houdou.html",
+      "enabled": false,
+      "notes": "HTMLの表（月ごとの見出しの下に「10月5日」のような日付だけで、年がない）。年が書かれていないため、一覧の日付は 月までしか確定できない可能性がある（記事ページ側の日付で補う）。内閣府の報道発表全体で、リンク先が他の府省・機関（食品安全委員会など）になる行や、 同じ一覧ページを指す行がある。1ページに過去分を含む約260件が載り、日付に年がないため一覧では「日付不明」になる。こども・母子保健に限らない。 robots.txt：この環境からの取得が接続リセットで確認できなかった。有効にする前に確認が必要。",
+      "attachments": {
+        "max_files": 3,
+        "max_pages": 30,
+        "exclude_titles": []
+      },
+      "last_success_at": null,
+      "last_attempt_at": null,
+      "last_attempt_status": null,
+      "consecutive_failures": 0,
+      "explored_range": null,
+      "retry_count": 0,
+      "retry_items": [],
+      "last_run": null,
+      "articles": 0,
+      "date_unknown": 0
+    },
+    {
+      "id": "kodomodx-news",
+      "name": "一般社団法人こどもDX推進協会（お知らせ）",
+      "method": "html",
+      "entry_url": "https://kodomodx.or.jp/news/",
+      "enabled": false,
+      "notes": "HTML一覧（カード形式。`?page=N` で過去分）。公的機関ではない（業界団体＝一般社団法人）のお知らせ・イベント報告のため、 SPEC 3章（公的機関の公開情報）の範囲に合うかを採用前に確認する。robots.txt：なし（404）。利用条件：記載は未確認。",
+      "attachments": {
+        "max_files": 3,
+        "max_pages": 30,
+        "exclude_titles": []
+      },
+      "last_success_at": null,
+      "last_attempt_at": null,
+      "last_attempt_status": null,
+      "consecutive_failures": 0,
+      "explored_range": null,
+      "retry_count": 0,
+      "retry_items": [],
+      "last_run": null,
+      "articles": 0,
+      "date_unknown": 0
+    },
+    {
+      "id": "mcfh-info",
+      "name": "公益財団法人母子衛生研究会（お知らせ）",
+      "method": "html",
+      "entry_url": "https://www.mcfh.or.jp/information/",
+      "enabled": false,
+      "notes": "1つのページにお知らせが日付付きで縦に並ぶ形式で、お知らせごとの記事ページがない（本文中のリンク先だけがある）。 今の収集の仕組み（記事ページを1件ずつ取得）には合わないため、有効にする前に取り方を決める必要がある。 公的機関ではない（財団法人）ため、SPEC 3章の範囲に合うかも確認する。robots.txt：なし（404）。 利用条件：https://www.mcfh.or.jp/aboutus/termofuse.html を確認する。",
+      "attachments": null,
+      "last_success_at": null,
+      "last_attempt_at": null,
+      "last_attempt_status": null,
+      "consecutive_failures": 0,
+      "explored_range": null,
+      "retry_count": 0,
+      "retry_items": [],
+      "last_run": null,
+      "articles": 0,
+      "date_unknown": 0
+    },
+    {
+      "id": "jt-tsushin",
+      "name": "自治体通信Online（新着記事）",
+      "method": "html",
+      "entry_url": "https://www.jt-tsushin.jp/articles",
+      "enabled": false,
+      "notes": "HTML一覧（カード形式）。民間の専門メディアで、自治体のDX・事例・イベント情報が中心。公的機関ではない（民間メディア）ため、 SPEC 3章の範囲に合うか、記事の転載・引用の条件を採用前に確認する。 robots.txt：検索結果ページ（/searchDetail）以外は許可。運営方針：https://www.jt-tsushin.jp/sitepolicy",
+      "attachments": null,
+      "last_success_at": null,
+      "last_attempt_at": null,
+      "last_attempt_status": null,
+      "consecutive_failures": 0,
+      "explored_range": null,
+      "retry_count": 0,
+      "retry_items": [],
+      "last_run": null,
+      "articles": 0,
+      "date_unknown": 0
+    },
+    {
+      "id": "cmic-trust-news",
+      "name": "CMIC Trust 株式会社（NEWS）",
+      "method": "sitemap",
+      "entry_url": "https://www.cmic-trust.jp/sitemap-dynamic/sitemap-dynamic-bmV3cy86c2x1Zw.xml",
+      "enabled": true,
+      "notes": "公的機関ではない（民間企業。シミックグループの子会社）が、ユーザーが特別に認めた情報源。CMIC Trust のサイトは文字が表示用のプログラムで 組み立てられ、一覧ページには記事へのリンクが載らないため、NEWSの記事のサイトマップ（URL一覧）から記事を探し、 各記事ページに埋め込まれたデータの題名・本文・公開日を使う（公開日はサイトマップの更新日ではなく、記事のデータにある公開日）。 サイトマップは記事全体（19件、2024年11月〜）で、日付での絞り込みは記事ページを取得してから行う。 サイトマップのURLが変わった場合は https://www.cmic-trust.jp/sitemap.xml から探し直す。 robots.txt：制限なし。利用条件：未確認。",
+      "attachments": {
+        "max_files": 3,
+        "max_pages": 30,
+        "exclude_titles": []
+      },
+      "last_success_at": "2026-10-05T14:53:03+09:00",
+      "last_attempt_at": "2026-10-05T14:53:03+09:00",
+      "last_attempt_status": "success",
+      "consecutive_failures": 0,
+      "explored_range": {
+        "oldest": null,
+        "newest": null,
+        "pages": 1
+      },
+      "retry_count": 0,
+      "retry_items": [],
+      "last_run": {
+        "status": "success",
+        "error": null,
+        "warnings": [],
+        "new": 1,
+        "changed": 0,
+        "unchanged": 0,
+        "date_unknown": 0,
+        "fetch_failed": 0
+      },
+      "articles": 1,
+      "date_unknown": 0
+    },
+    {
+      "id": "cmic-news",
+      "name": "シミックグループ（ニュース＆イベント）",
+      "method": "html",
+      "entry_url": "https://www.cmicgroup.com/news/",
+      "enabled": false,
+      "notes": "公的機関ではない（民間企業）。グループ全体のニュース（医薬・ヘルスケア全般で、母子保健に関係しないものが多い）のため、 ユーザー指示で子会社の CMIC Trust（cmic-trust-news）を参照することにし、こちらは無効にした。 HTML一覧（1ページ約10〜20件）。robots.txt：なし（404）。利用条件：未確認。",
+      "attachments": {
+        "max_files": 3,
+        "max_pages": 30,
+        "exclude_titles": []
+      },
+      "last_success_at": "2026-10-05T14:38:18+09:00",
+      "last_attempt_at": "2026-10-05T14:38:18+09:00",
+      "last_attempt_status": "success",
+      "consecutive_failures": 0,
+      "explored_range": {
+        "oldest": "2026-08-24",
+        "newest": "2026-10-05",
+        "pages": 1
+      },
+      "retry_count": 0,
+      "retry_items": [],
+      "last_run": null,
+      "articles": 0,
+      "date_unknown": 0
+    },
+    {
+      "id": "mchh-prtimes",
+      "name": "母子モ株式会社（プレスリリース、PR TIMES）",
+      "method": "rss",
+      "entry_url": "https://prtimes.jp/companyrdf.php?company_id=99909",
+      "enabled": true,
+      "notes": "公的機関ではない（民間企業）が、ユーザーが特別に認めた情報源。PR TIMES が会社ごとに配信している公式のRSS（RSS 1.0）から、 プレスリリースを取得する（母子モの自社サイトは、新着がログイン画面の向こうにあるため対象にしない）。 robots.txt：PR TIMES は許可。利用条件：PR TIMES の利用規約を確認できていない（出典を示し、短い概要とリンクだけを掲載）。",
+      "attachments": {
+        "max_files": 3,
+        "max_pages": 30,
+        "exclude_titles": []
+      },
+      "last_success_at": "2026-10-05T14:38:18+09:00",
+      "last_attempt_at": "2026-10-05T14:38:18+09:00",
+      "last_attempt_status": "success",
+      "consecutive_failures": 0,
+      "explored_range": {
+        "oldest": "2025-04-01",
+        "newest": "2026-10-01",
+        "pages": 1
+      },
+      "retry_count": 0,
+      "retry_items": [],
+      "last_run": null,
+      "articles": 13,
+      "date_unknown": 0
+    },
+    {
+      "id": "milabo-news",
+      "name": "株式会社ミラボ（お知らせ）",
+      "method": "html",
+      "entry_url": "https://mi-labo.co.jp/news/",
+      "enabled": true,
+      "notes": "公的機関ではない（民間企業）が、ユーザーが特別に認めた情報源。HTML一覧（カード形式、1ページ12件）。 一覧ページが約4.6MBと大きいため、サイズの上限を8MBにしている。ページ送りは未確認。robots.txt：なし（404）。利用条件：未確認。",
+      "attachments": {
+        "max_files": 3,
+        "max_pages": 30,
+        "exclude_titles": []
+      },
+      "last_success_at": "2026-10-05T14:38:18+09:00",
+      "last_attempt_at": "2026-10-05T14:38:18+09:00",
+      "last_attempt_status": "success",
+      "consecutive_failures": 0,
+      "explored_range": {
+        "oldest": "2026-06-15",
+        "newest": "2026-07-08",
+        "pages": 1
+      },
+      "retry_count": 0,
+      "retry_items": [],
+      "last_run": null,
+      "articles": 0,
+      "date_unknown": 0
+    },
+    {
+      "id": "ryobi-neuvola-karte",
+      "name": "両備システムズ（ネウボラかるてに関するお知らせ）",
+      "method": "html",
+      "entry_url": "https://service.ryobi.co.jp/healthcare_solution/sh-neuvola-karte/",
+      "enabled": true,
+      "notes": "公的機関ではない（民間企業）が、ユーザーが特別に認めた情報源。子育て支援システム「ネウボラかるて」の製品ページにある お知らせ欄（ネウボラかるてに関する部分だけ。両備システムズ全体のニュースではない）から、同社のお知らせ記事を取得する。 お知らせは4件（最新は2026年7月29日）。robots.txt：管理用のパスのみ制限。利用条件：未確認。",
+      "attachments": {
+        "max_files": 3,
+        "max_pages": 30,
+        "exclude_titles": []
+      },
+      "last_success_at": "2026-10-05T14:38:18+09:00",
+      "last_attempt_at": "2026-10-05T14:38:18+09:00",
+      "last_attempt_status": "success",
+      "consecutive_failures": 0,
+      "explored_range": {
+        "oldest": "2022-03-17",
+        "newest": "2026-07-29",
+        "pages": 1
+      },
+      "retry_count": 0,
+      "retry_items": [],
+      "last_run": null,
+      "articles": 0,
+      "date_unknown": 0
     }
   ],
   "runs": [
+    {
+      "run_id": "run_20261005T055303Z",
+      "started_at": "2026-10-05T14:53:03+09:00",
+      "finished_at": "2026-10-05T14:54:43+09:00",
+      "status": "success",
+      "kind": "collect",
+      "period": {
+        "start": "2026-09-01",
+        "end": "2026-10-05"
+      },
+      "totals": {
+        "new": 1,
+        "changed": 0,
+        "unchanged": 0,
+        "date_unknown": 0,
+        "fetch_failed": 0,
+        "summarized": 0,
+        "summarize_failed": 0
+      },
+      "sources": [
+        {
+          "source_id": "cmic-trust-news",
+          "status": "success",
+          "new": 1,
+          "changed": 0,
+          "date_unknown": 0,
+          "fetch_failed": 0,
+          "error": null,
+          "warnings": []
+        }
+      ]
+    },
+    {
+      "run_id": "run_20261005T054304Z",
+      "started_at": "2026-10-05T14:43:04+09:00",
+      "finished_at": "2026-10-05T14:43:13+09:00",
+      "status": "success",
+      "kind": "summarize",
+      "period": null,
+      "totals": {
+        "new": 0,
+        "changed": 0,
+        "unchanged": 0,
+        "date_unknown": 0,
+        "fetch_failed": 0,
+        "summarized": 2,
+        "summarize_failed": 0
+      },
+      "sources": []
+    },
+    {
+      "run_id": "run_20261005T053818Z",
+      "started_at": "2026-10-05T14:38:18+09:00",
+      "finished_at": "2026-10-05T14:42:39+09:00",
+      "status": "success",
+      "kind": "collect",
+      "period": {
+        "start": "2026-09-01",
+        "end": "2026-10-05"
+      },
+      "totals": {
+        "new": 28,
+        "changed": 0,
+        "unchanged": 0,
+        "date_unknown": 0,
+        "fetch_failed": 0,
+        "summarized": 0,
+        "summarize_failed": 0
+      },
+      "sources": [
+        {
+          "source_id": "cmic-news",
+          "status": "success",
+          "new": 15,
+          "changed": 0,
+          "date_unknown": 0,
+          "fetch_failed": 0,
+          "error": null,
+          "warnings": []
+        },
+        {
+          "source_id": "mchh-prtimes",
+          "status": "success",
+          "new": 13,
+          "changed": 0,
+          "date_unknown": 0,
+          "fetch_failed": 0,
+          "error": null,
+          "warnings": []
+        },
+        {
+          "source_id": "milabo-news",
+          "status": "success",
+          "new": 0,
+          "changed": 0,
+          "date_unknown": 0,
+          "fetch_failed": 0,
+          "error": null,
+          "warnings": []
+        },
+        {
+          "source_id": "ryobi-neuvola-karte",
+          "status": "success",
+          "new": 0,
+          "changed": 0,
+          "date_unknown": 0,
+          "fetch_failed": 0,
+          "error": null,
+          "warnings": []
+        }
+      ]
+    },
+    {
+      "run_id": "run_20261005T052429Z",
+      "started_at": "2026-10-05T14:24:29+09:00",
+      "finished_at": "2026-10-05T14:24:52+09:00",
+      "status": "success",
+      "kind": "collect",
+      "period": {
+        "start": "2026-09-01",
+        "end": "2026-10-05"
+      },
+      "totals": {
+        "new": 3,
+        "changed": 0,
+        "unchanged": 0,
+        "date_unknown": 1,
+        "fetch_failed": 0,
+        "summarized": 0,
+        "summarize_failed": 0
+      },
+      "sources": [
+        {
+          "source_id": "kokasen-news",
+          "status": "success",
+          "new": 1,
+          "changed": 0,
+          "date_unknown": 0,
+          "fetch_failed": 0,
+          "error": null,
+          "warnings": [
+            "同じURLを指す一覧の項目 7件を1件にまとめました（#以降だけが違うリンクなど）"
+          ]
+        },
+        {
+          "source_id": "gosaiji-topics",
+          "status": "success",
+          "new": 2,
+          "changed": 0,
+          "date_unknown": 1,
+          "fetch_failed": 0,
+          "error": null,
+          "warnings": []
+        }
+      ]
+    },
     {
       "run_id": "run_20261005T033512Z",
       "started_at": "2026-10-05T12:35:12+09:00",

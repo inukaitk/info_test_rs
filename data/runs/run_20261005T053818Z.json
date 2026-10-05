@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "run": {
+    "run_id": "run_20261005T053818Z",
+    "started_at": "2026-10-05T14:38:18+09:00",
+    "finished_at": "2026-10-05T14:42:39+09:00",
+    "status": "success",
+    "trigger": "manual_cli",
+    "kind": "collect",
+    "period": {
+      "start": "2026-09-01",
+      "end": "2026-10-05"
+    },
+    "sources": [
+      {
+        "source_id": "cmic-news",
+        "status": "success",
+        "candidates": 20,
+        "new": 15,
+        "changed": 0,
+        "unchanged": 0,
+        "date_unknown": 0,
+        "fetch_failed": 0,
+        "warnings": [],
+        "error": null
+      },
+      {
+        "source_id": "mchh-prtimes",
+        "status": "success",
+        "candidates": 200,
+        "new": 13,
+        "changed": 0,
+        "unchanged": 0,
+        "date_unknown": 0,
+        "fetch_failed": 0,
+        "warnings": [],
+        "error": null
+      },
+      {
+        "source_id": "milabo-news",
+        "status": "success",
+        "candidates": 12,
+        "new": 0,
+        "changed": 0,
+        "unchanged": 0,
+        "date_unknown": 0,
+        "fetch_failed": 0,
+        "warnings": [],
+        "error": null
+      },
+      {
+        "source_id": "ryobi-neuvola-karte",
+        "status": "success",
+        "candidates": 4,
+        "new": 0,
+        "changed": 0,
+        "unchanged": 0,
+        "date_unknown": 0,
+        "fetch_failed": 0,
+        "warnings": [],
+        "error": null
+      }
+    ],
+    "totals": {
+      "new": 28,
+      "changed": 0,
+      "unchanged": 0,
+      "date_unknown": 0,
+      "fetch_failed": 0,
+      "summarized": 0,
+      "summarize_failed": 0
+    },
+    "failures": [],
+    "api_usage": {
+      "requests": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "estimated_cost_usd": null
+    }
+  }
+}
