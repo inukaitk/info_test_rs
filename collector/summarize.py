@@ -10,7 +10,7 @@
 
 使い方（リポジトリのルートで実行）:
     python -m collector.summarize --plan      # 処理予定の件数・トークン・概算費用を表示する（APIは呼ばない）
-    python -m collector.summarize             # 実行する（ANTHROPIC_API_KEY が必要。費用が発生する）
+    python -m collector.summarize             # 実行する（環境変数 INFO_AI_API_KEY が必要。費用が発生する）
 """
 
 from __future__ import annotations

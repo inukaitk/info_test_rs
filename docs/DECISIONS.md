@@ -168,7 +168,9 @@
 | OpenAI 等の他社API | 実装は1つに限る指示のため見送り。設定（`config/ai.yaml` の `provider`）と `collector/ai_provider.py` の Provider の形を分けてあり、後から追加できる |
 
 - **Claude Code の契約に API の費用は含まれない**前提で設計した。API の利用料は Claude Console で別途支払い（個人負担）。
-- APIキーは環境変数 `ANTHROPIC_API_KEY` からだけ読む。ファイル・ログ・画面・チャットに書かない。
+- APIキーは環境変数 `INFO_AI_API_KEY`（なければ `ANTHROPIC_API_KEY`）からだけ読む。ファイル・ログ・画面・チャットに書かない。
+  - 段階3-b（2026-10-05）で変更：Claude Code Web版の環境変数に `ANTHROPIC_API_KEY` を登録しても、新しいセッションに渡らなかった（Claude Code 自身の認証と重なる名前のため）。別の名前を優先して読むようにした。
+  - 同じく3-bで、送信先を `https://api.anthropic.com` に固定した。クラウド環境には Claude Code 用の `ANTHROPIC_BASE_URL` があり、SDK はこれを読むため、宛先が変わってもキーを別の場所へ送らないようにする。
 
 ### 公式資料で確認した内容（確認日：2026-10-02）
 
