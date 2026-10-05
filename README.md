@@ -134,6 +134,25 @@ npm run preview    # 作ったファイルで画面を起動する。http://loca
 
 タグの見分け方：青い「AI」はAIが付けたタグ、点線で橙色の「人が追加」は人が追加したタグ、取り消し線は人が外したタグです。
 
+## 自動更新とWeb公開（GitHub Actions と Pages）
+
+`.github/workflows/weekly-update.yml` が、**毎週日曜の日本時間15時**に次を自動で行います（協定世界時 日曜6時。混雑時は遅れたり、まれに抜けたりします）。
+
+1. こども家庭庁（採用した情報源）から新しい記事を収集する
+2. AIで要約・タグ付けする（Secrets の `INFO_AI_API_KEY` を使う。費用の目安は週に十数件で約$0.3）
+3. 検証・テストを通ったら、`data/` などを `main` にコミットする
+4. そのコミットから画面を作り、GitHub Pages に公開する
+
+公開された画面に、実行ボタンはありません。手動で動かせるのは、リポジトリの **Actions** タブからだけです（書き込み権限のある人のみ）。
+
+### 最初に一度だけ行う設定（GitHubの画面）
+
+1. **Secrets**：リポジトリの **Settings** → **Secrets and variables** → **Actions** → **New repository secret** で、Name を `INFO_AI_API_KEY`、Secret に新しいAPIキーを入れて **Add secret**（登録済み）
+2. **Pages**：**Settings** → **Pages** → **Build and deployment** の **Source** を **GitHub Actions** にする
+3. **確認の実行**：**Actions** タブ → 左の「週次更新と公開」→ 右の **Run workflow** → **Run workflow**。緑のチェックになれば成功。完了後、Settings → Pages の上部、またはワークフローの実行画面の `deploy` に出るアドレス（`https://（アカウント名）.github.io/info_test_rs/`）で画面を開く
+
+うまくいかないとき：赤いバツの実行を開き、失敗した手順のログを確認します。AIの手順だけが失敗した場合は、収集できた記事が「未要約」と表示された状態で公開されます。
+
 ## 設定ファイル（config/）
 
 | ファイル | 内容 |
@@ -359,4 +378,4 @@ git config core.hooksPath .githooks                     # コミットのたび�
 
 ## 公開に関する注意
 
-このリポジトリは部署レビュー後に public へ切り替える予定です。過去のコミット履歴も公開されるため、APIキーなどの秘密値、原文全文、内部情報はコミットしません。`.env` と `.cache/` は `.gitignore` で除外しています。
+このリポジトリは public です（部署レビューの前に切り替え。切り替え前に全コミット履歴を検査済み、DECISIONS.md）。Pages の画面もインターネット上で誰でも見られます。過去のコミット履歴も公開されるため、APIキーなどの秘密値、原文全文、内部情報はコミットしません。`.env` と `.cache/` は `.gitignore` で除外しています。
