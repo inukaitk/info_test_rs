@@ -30,7 +30,7 @@ def test_demo_sources_are_fictional():
 NON_GO_JP_ADOPTED = {
     "gosaiji-topics",       # 5歳児健診ポータル（こども家庭庁の支援）
     # 民間企業4社：ユーザーが特別に認めた（2026-10-05）。どれも同じ形式・同じ処理で扱い、優劣を付けない
-    "cmic-news", "mchh-prtimes", "milabo-news", "ryobi-neuvola-karte",
+    "cmic-trust-news", "mchh-prtimes", "milabo-news", "ryobi-neuvola-karte",
 }
 
 

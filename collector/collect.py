@@ -34,7 +34,7 @@ from collector.dates import JST, ParsedDate, in_period
 from dataclasses import replace
 
 from collector.extract import (
-    Candidate, DateFound, Extracted, Listing, extract_document, extract_pdf, normalize_text, parse_feed, parse_html_listing,
+    Candidate, DateFound, Extracted, Listing, extract_document, extract_pdf, normalize_text, parse_feed, parse_html_listing, parse_sitemap,
 )
 from collector.fetch import FetchError, Fetcher, FixtureFetcher, HttpFetcher
 from collector.urls import UrlRejected, check_allowed
@@ -162,6 +162,8 @@ def list_candidates(source: dict, fetcher: Fetcher) -> tuple[list[Candidate], in
                                timeout=limits["timeout_seconds"])
             if source["method"] == "rss":
                 listing: Listing = parse_feed(resp.body, resp.url)
+            elif source["method"] == "sitemap":
+                listing = parse_sitemap(resp.body, resp.url, source.get("link_rules", {}))
             else:
                 listing = parse_html_listing(resp.body, resp.url, source.get("link_rules", {}),
                                              source.get("pagination", {}).get("next_selector"))

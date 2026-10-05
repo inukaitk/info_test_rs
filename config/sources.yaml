@@ -273,6 +273,27 @@ sources:
 
   # ⑧ 採用（2026-10-05）：民間企業4社。公的機関ではないが、ユーザーが特別に認めた（docs/DECISIONS.md）。
   #   優劣・順位は付けず、同じ設定の形式・同じ処理で扱う。並びは五十音順。
+  - id: cmic-trust-news
+    name: CMIC Trust 株式会社（NEWS）
+    entry_url: https://www.cmic-trust.jp/sitemap-dynamic/sitemap-dynamic-bmV3cy86c2x1Zw.xml
+    method: sitemap
+    allowed_hosts: [www.cmic-trust.jp]
+    link_rules:
+      include:
+        - "^https://www\\.cmic-trust\\.jp/news/[^/]+$"
+    attachments: {pdf: true, max_files: 3, max_bytes: 12582912, max_pages: 30}
+    timezone: Asia/Tokyo
+    limits: {max_items: 30, max_bytes: 5242880, wait_seconds: 5, timeout_seconds: 30}
+    enabled: true
+    notes: >-
+      公的機関ではない（民間企業。シミックグループの子会社）が、ユーザーが特別に認めた情報源。CMIC Trust のサイトは文字が表示用のプログラムで
+      組み立てられ、一覧ページには記事へのリンクが載らないため、NEWSの記事のサイトマップ（URL一覧）から記事を探し、
+      各記事ページに埋め込まれたデータの題名・本文・公開日を使う（公開日はサイトマップの更新日ではなく、記事のデータにある公開日）。
+      サイトマップは記事全体（19件、2024年11月〜）で、日付での絞り込みは記事ページを取得してから行う。
+      サイトマップのURLが変わった場合は https://www.cmic-trust.jp/sitemap.xml から探し直す。
+      robots.txt：制限なし。利用条件：未確認。
+
+  # （無効）シミックグループ全体のニュース。CMIC Trust を参照する方針のため
   - id: cmic-news
     name: シミックグループ（ニュース＆イベント）
     entry_url: https://www.cmicgroup.com/news/
@@ -289,10 +310,11 @@ sources:
     attachments: {pdf: true, max_files: 3, max_bytes: 12582912, max_pages: 30}
     timezone: Asia/Tokyo
     limits: {max_items: 30, max_bytes: 5242880, wait_seconds: 5, timeout_seconds: 30}
-    enabled: true
+    enabled: false
     notes: >-
-      公的機関ではない（民間企業）が、ユーザーが特別に認めた情報源。HTML一覧（1ページ約10〜20件、ページ送りは未確認）。
-      医薬・ヘルスケア全般のニュースで、母子保健に関係しないものが多い。robots.txt：なし（404）。利用条件：未確認。
+      公的機関ではない（民間企業）。グループ全体のニュース（医薬・ヘルスケア全般で、母子保健に関係しないものが多い）のため、
+      ユーザー指示で子会社の CMIC Trust（cmic-trust-news）を参照することにし、こちらは無効にした。
+      HTML一覧（1ページ約10〜20件）。robots.txt：なし（404）。利用条件：未確認。
 
   - id: mchh-prtimes
     name: 母子モ株式会社（プレスリリース、PR TIMES）

@@ -91,6 +91,19 @@
       },
       "retry_queue": [],
       "consecutive_failures": 0
+    },
+    "cmic-trust-news": {
+      "source_id": "cmic-trust-news",
+      "last_success_at": "2026-10-05T14:53:03+09:00",
+      "last_attempt_at": "2026-10-05T14:53:03+09:00",
+      "last_attempt_status": "success",
+      "explored_range": {
+        "oldest": null,
+        "newest": null,
+        "pages": 1
+      },
+      "retry_queue": [],
+      "consecutive_failures": 0
     }
   }
 }

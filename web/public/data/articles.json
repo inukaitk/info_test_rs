@@ -2,57 +2,6 @@
   "schema_version": 1,
   "articles": [
     {
-      "id": "a_a1818c15ae913bbc",
-      "source_id": "cmic-news",
-      "source_name": "シミックグループ（ニュース＆イベント）",
-      "title": "「そのヘルスケア新規事業、本当の顧客は誰ですか？」ウェビナー登壇・動画配信のお知らせ",
-      "url": "https://www.cmicgroup.com/news/event/webinar20260928/",
-      "published": {
-        "value": "2026-10-05",
-        "precision": "day",
-        "basis": {
-          "method": "listing_text",
-          "evidence": "2026年10月05日"
-        }
-      },
-      "updated": {
-        "value": null,
-        "precision": "unknown",
-        "basis": null
-      },
-      "first_seen_at": "2026-10-05T14:38:18+09:00",
-      "last_seen_at": "2026-10-05T14:38:18+09:00",
-      "status": "active",
-      "content_status": "ok",
-      "content_error": null,
-      "latest_version": 1,
-      "versions": [
-        {
-          "version": 1,
-          "fetched_at": "2026-10-05T14:38:18+09:00",
-          "change_type": "new",
-          "extraction_status": "ok"
-        }
-      ],
-      "attachments": [],
-      "summary": {
-        "status": "not_processed",
-        "error": null,
-        "version": null,
-        "outdated": false,
-        "text": null,
-        "key_points": null,
-        "targets": null,
-        "dates": null,
-        "uncertainties": null,
-        "model": null,
-        "processed_at": null
-      },
-      "tags": [],
-      "removed_tags": [],
-      "tag_override_reason": null
-    },
-    {
       "id": "a_57ce70991ce444ef",
       "source_id": "cfa-news",
       "source_name": "こども家庭庁（新着・更新）",
@@ -575,116 +524,6 @@
           "status": "ok",
           "note": null,
           "pages": 14
-        }
-      ],
-      "summary": {
-        "status": "not_processed",
-        "error": null,
-        "version": null,
-        "outdated": false,
-        "text": null,
-        "key_points": null,
-        "targets": null,
-        "dates": null,
-        "uncertainties": null,
-        "model": null,
-        "processed_at": null
-      },
-      "tags": [],
-      "removed_tags": [],
-      "tag_override_reason": null
-    },
-    {
-      "id": "a_2affdd57f91db9e9",
-      "source_id": "cmic-news",
-      "source_name": "シミックグループ（ニュース＆イベント）",
-      "title": "SASユーザー総会2026　出展・論文発表のお知らせ",
-      "url": "https://www.cmicgroup.com/news/20260930_2/",
-      "published": {
-        "value": "2026-09-30",
-        "precision": "day",
-        "basis": {
-          "method": "listing_text",
-          "evidence": "2026年09月30日"
-        }
-      },
-      "updated": {
-        "value": null,
-        "precision": "unknown",
-        "basis": null
-      },
-      "first_seen_at": "2026-10-05T14:38:18+09:00",
-      "last_seen_at": "2026-10-05T14:38:18+09:00",
-      "status": "active",
-      "content_status": "ok",
-      "content_error": null,
-      "latest_version": 1,
-      "versions": [
-        {
-          "version": 1,
-          "fetched_at": "2026-10-05T14:38:18+09:00",
-          "change_type": "new",
-          "extraction_status": "ok"
-        }
-      ],
-      "attachments": [],
-      "summary": {
-        "status": "not_processed",
-        "error": null,
-        "version": null,
-        "outdated": false,
-        "text": null,
-        "key_points": null,
-        "targets": null,
-        "dates": null,
-        "uncertainties": null,
-        "model": null,
-        "processed_at": null
-      },
-      "tags": [],
-      "removed_tags": [],
-      "tag_override_reason": null
-    },
-    {
-      "id": "a_80ca3563b1613d4c",
-      "source_id": "cmic-news",
-      "source_name": "シミックグループ（ニュース＆イベント）",
-      "title": "人事異動に関するお知らせ",
-      "url": "https://www.cmicgroup.com/news/20260930/",
-      "published": {
-        "value": "2026-09-30",
-        "precision": "day",
-        "basis": {
-          "method": "listing_text",
-          "evidence": "2026年09月30日"
-        }
-      },
-      "updated": {
-        "value": null,
-        "precision": "unknown",
-        "basis": null
-      },
-      "first_seen_at": "2026-10-05T14:38:18+09:00",
-      "last_seen_at": "2026-10-05T14:38:18+09:00",
-      "status": "active",
-      "content_status": "ok",
-      "content_error": null,
-      "latest_version": 1,
-      "versions": [
-        {
-          "version": 1,
-          "fetched_at": "2026-10-05T14:38:18+09:00",
-          "change_type": "new",
-          "extraction_status": "ok"
-        }
-      ],
-      "attachments": [
-        {
-          "title": "PDF",
-          "url": "https://www.cmicgroup.com/news/files/pdf/2026093001.pdf",
-          "status": "ok",
-          "note": null,
-          "pages": 2
         }
       ],
       "summary": {
@@ -1809,57 +1648,6 @@
       "tag_override_reason": null
     },
     {
-      "id": "a_e39d4a1c4db58dee",
-      "source_id": "cmic-news",
-      "source_name": "シミックグループ（ニュース＆イベント）",
-      "title": "国際共同研究によるパンデミック対応試験モデルの検討成果をAPSIC 2026で発表 シミック社員が共著者として参画",
-      "url": "https://www.cmicgroup.com/news/20260928/",
-      "published": {
-        "value": "2026-09-28",
-        "precision": "day",
-        "basis": {
-          "method": "listing_text",
-          "evidence": "2026年09月28日"
-        }
-      },
-      "updated": {
-        "value": null,
-        "precision": "unknown",
-        "basis": null
-      },
-      "first_seen_at": "2026-10-05T14:38:18+09:00",
-      "last_seen_at": "2026-10-05T14:38:18+09:00",
-      "status": "active",
-      "content_status": "ok",
-      "content_error": null,
-      "latest_version": 1,
-      "versions": [
-        {
-          "version": 1,
-          "fetched_at": "2026-10-05T14:38:18+09:00",
-          "change_type": "new",
-          "extraction_status": "ok"
-        }
-      ],
-      "attachments": [],
-      "summary": {
-        "status": "not_processed",
-        "error": null,
-        "version": null,
-        "outdated": false,
-        "text": null,
-        "key_points": null,
-        "targets": null,
-        "dates": null,
-        "uncertainties": null,
-        "model": null,
-        "processed_at": null
-      },
-      "tags": [],
-      "removed_tags": [],
-      "tag_override_reason": null
-    },
-    {
       "id": "a_6bfadd1d1fa9f5f2",
       "source_id": "cfa-news",
       "source_name": "こども家庭庁（新着・更新）",
@@ -2004,17 +1792,17 @@
       "tag_override_reason": null
     },
     {
-      "id": "a_3aa7ba51ba8bd2e1",
-      "source_id": "cmic-news",
-      "source_name": "シミックグループ（ニュース＆イベント）",
-      "title": "ウェビナー「有望な適応症をどう見つけ、どう選ぶか」開催のお知らせ",
-      "url": "https://www.cmicgroup.com/news/20260918_2/",
+      "id": "a_6b1f3a16bad6a43f",
+      "source_id": "cmic-trust-news",
+      "source_name": "CMIC Trust 株式会社（NEWS）",
+      "title": "記事公開のお知らせ：ひたちなか市で予防接種事務デジタル化が本格始動",
+      "url": "https://www.cmic-trust.jp/news/hitachinaka2",
       "published": {
-        "value": "2026-09-18",
-        "precision": "day",
+        "value": "2026-09-18T16:27:48+09:00",
+        "precision": "datetime",
         "basis": {
-          "method": "listing_text",
-          "evidence": "2026年09月18日"
+          "method": "page_data",
+          "evidence": "publishedAt: \"2026-09-18T07:27:48.000Z\""
         }
       },
       "updated": {
@@ -2022,8 +1810,8 @@
         "precision": "unknown",
         "basis": null
       },
-      "first_seen_at": "2026-10-05T14:38:18+09:00",
-      "last_seen_at": "2026-10-05T14:38:18+09:00",
+      "first_seen_at": "2026-10-05T14:53:03+09:00",
+      "last_seen_at": "2026-10-05T14:53:03+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -2031,58 +1819,7 @@
       "versions": [
         {
           "version": 1,
-          "fetched_at": "2026-10-05T14:38:18+09:00",
-          "change_type": "new",
-          "extraction_status": "ok"
-        }
-      ],
-      "attachments": [],
-      "summary": {
-        "status": "not_processed",
-        "error": null,
-        "version": null,
-        "outdated": false,
-        "text": null,
-        "key_points": null,
-        "targets": null,
-        "dates": null,
-        "uncertainties": null,
-        "model": null,
-        "processed_at": null
-      },
-      "tags": [],
-      "removed_tags": [],
-      "tag_override_reason": null
-    },
-    {
-      "id": "a_bedffcc9add2d3b3",
-      "source_id": "cmic-news",
-      "source_name": "シミックグループ（ニュース＆イベント）",
-      "title": "CMIC CMO USAの株式譲渡に関するお知らせ",
-      "url": "https://www.cmicgroup.com/news/20260918/",
-      "published": {
-        "value": "2026-09-18",
-        "precision": "day",
-        "basis": {
-          "method": "listing_text",
-          "evidence": "2026年09月18日"
-        }
-      },
-      "updated": {
-        "value": null,
-        "precision": "unknown",
-        "basis": null
-      },
-      "first_seen_at": "2026-10-05T14:38:18+09:00",
-      "last_seen_at": "2026-10-05T14:38:18+09:00",
-      "status": "active",
-      "content_status": "ok",
-      "content_error": null,
-      "latest_version": 1,
-      "versions": [
-        {
-          "version": 1,
-          "fetched_at": "2026-10-05T14:38:18+09:00",
+          "fetched_at": "2026-10-05T14:53:03+09:00",
           "change_type": "new",
           "extraction_status": "ok"
         }
@@ -3219,65 +2956,6 @@
       "tag_override_reason": null
     },
     {
-      "id": "a_83e38824ac2d0fd7",
-      "source_id": "cmic-news",
-      "source_name": "シミックグループ（ニュース＆イベント）",
-      "title": "シミックヘルスケア、専門人材が長く活躍できる環境づくりを推進",
-      "url": "https://www.cmicgroup.com/news/20260917/",
-      "published": {
-        "value": "2026-09-17",
-        "precision": "day",
-        "basis": {
-          "method": "listing_text",
-          "evidence": "2026年09月17日"
-        }
-      },
-      "updated": {
-        "value": null,
-        "precision": "unknown",
-        "basis": null
-      },
-      "first_seen_at": "2026-10-05T14:38:18+09:00",
-      "last_seen_at": "2026-10-05T14:38:18+09:00",
-      "status": "active",
-      "content_status": "ok",
-      "content_error": null,
-      "latest_version": 1,
-      "versions": [
-        {
-          "version": 1,
-          "fetched_at": "2026-10-05T14:38:18+09:00",
-          "change_type": "new",
-          "extraction_status": "ok"
-        }
-      ],
-      "attachments": [
-        {
-          "title": "PDF",
-          "url": "https://www.cmicgroup.com/news/files/pdf/2026091701.pdf",
-          "status": "ok",
-          "note": null,
-          "pages": 3
-        }
-      ],
-      "summary": {
-        "status": "not_processed",
-        "error": null,
-        "version": null,
-        "outdated": false,
-        "text": null,
-        "key_points": null,
-        "targets": null,
-        "dates": null,
-        "uncertainties": null,
-        "model": null,
-        "processed_at": null
-      },
-      "tags": [],
-      "removed_tags": [],
-      "tag_override_reason": null
-    },
-    {
       "id": "a_166cb866ecfdbf72",
       "source_id": "cfa-news",
       "source_name": "こども家庭庁（新着・更新）",
@@ -3958,57 +3636,6 @@
       "tag_override_reason": null
     },
     {
-      "id": "a_b938f17d5ae39c3c",
-      "source_id": "cmic-news",
-      "source_name": "シミックグループ（ニュース＆イベント）",
-      "title": "シミック・イニジオ、製薬業界の社員エンゲージメントをテーマにセミナーを開催 「Employee Experienceの視点から、社員との接点や施策のあり方を考える」",
-      "url": "https://www.cmicgroup.com/news/20260916/",
-      "published": {
-        "value": "2026-09-16",
-        "precision": "day",
-        "basis": {
-          "method": "listing_text",
-          "evidence": "2026年09月16日"
-        }
-      },
-      "updated": {
-        "value": null,
-        "precision": "unknown",
-        "basis": null
-      },
-      "first_seen_at": "2026-10-05T14:38:18+09:00",
-      "last_seen_at": "2026-10-05T14:38:18+09:00",
-      "status": "active",
-      "content_status": "ok",
-      "content_error": null,
-      "latest_version": 1,
-      "versions": [
-        {
-          "version": 1,
-          "fetched_at": "2026-10-05T14:38:18+09:00",
-          "change_type": "new",
-          "extraction_status": "ok"
-        }
-      ],
-      "attachments": [],
-      "summary": {
-        "status": "not_processed",
-        "error": null,
-        "version": null,
-        "outdated": false,
-        "text": null,
-        "key_points": null,
-        "targets": null,
-        "dates": null,
-        "uncertainties": null,
-        "model": null,
-        "processed_at": null
-      },
-      "tags": [],
-      "removed_tags": [],
-      "tag_override_reason": null
-    },
-    {
       "id": "a_0187ca5d5376b5d4",
       "source_id": "cfa-news",
       "source_name": "こども家庭庁（新着・更新）",
@@ -4553,57 +4180,6 @@
       "tag_override_reason": null
     },
     {
-      "id": "a_6a6b40159d27c002",
-      "source_id": "cmic-news",
-      "source_name": "シミックグループ（ニュース＆イベント）",
-      "title": "「BioJapan 2026」出展のお知らせ",
-      "url": "https://www.cmicgroup.com/news/20260915/",
-      "published": {
-        "value": "2026-09-15",
-        "precision": "day",
-        "basis": {
-          "method": "listing_text",
-          "evidence": "2026年09月15日"
-        }
-      },
-      "updated": {
-        "value": null,
-        "precision": "unknown",
-        "basis": null
-      },
-      "first_seen_at": "2026-10-05T14:38:18+09:00",
-      "last_seen_at": "2026-10-05T14:38:18+09:00",
-      "status": "active",
-      "content_status": "ok",
-      "content_error": null,
-      "latest_version": 1,
-      "versions": [
-        {
-          "version": 1,
-          "fetched_at": "2026-10-05T14:38:18+09:00",
-          "change_type": "new",
-          "extraction_status": "ok"
-        }
-      ],
-      "attachments": [],
-      "summary": {
-        "status": "not_processed",
-        "error": null,
-        "version": null,
-        "outdated": false,
-        "text": null,
-        "key_points": null,
-        "targets": null,
-        "dates": null,
-        "uncertainties": null,
-        "model": null,
-        "processed_at": null
-      },
-      "tags": [],
-      "removed_tags": [],
-      "tag_override_reason": null
-    },
-    {
       "id": "a_12f22aef89e46c4e",
       "source_id": "cfa-news",
       "source_name": "こども家庭庁（新着・更新）",
@@ -4759,189 +4335,6 @@
           "retired": false
         }
       ],
-      "removed_tags": [],
-      "tag_override_reason": null
-    },
-    {
-      "id": "a_8da9142500c3687e",
-      "source_id": "cmic-news",
-      "source_name": "シミックグループ（ニュース＆イベント）",
-      "title": "「第59回日本薬剤師会学術大会」出展のお知らせ",
-      "url": "https://www.cmicgroup.com/news/20260914/",
-      "published": {
-        "value": "2026-09-14",
-        "precision": "day",
-        "basis": {
-          "method": "listing_text",
-          "evidence": "2026年09月14日"
-        }
-      },
-      "updated": {
-        "value": null,
-        "precision": "unknown",
-        "basis": null
-      },
-      "first_seen_at": "2026-10-05T14:38:18+09:00",
-      "last_seen_at": "2026-10-05T14:38:18+09:00",
-      "status": "active",
-      "content_status": "ok",
-      "content_error": null,
-      "latest_version": 1,
-      "versions": [
-        {
-          "version": 1,
-          "fetched_at": "2026-10-05T14:38:18+09:00",
-          "change_type": "new",
-          "extraction_status": "ok"
-        }
-      ],
-      "attachments": [],
-      "summary": {
-        "status": "not_processed",
-        "error": null,
-        "version": null,
-        "outdated": false,
-        "text": null,
-        "key_points": null,
-        "targets": null,
-        "dates": null,
-        "uncertainties": null,
-        "model": null,
-        "processed_at": null
-      },
-      "tags": [],
-      "removed_tags": [],
-      "tag_override_reason": null
-    },
-    {
-      "id": "a_cb332a08e9ed9115",
-      "source_id": "cmic-news",
-      "source_name": "シミックグループ（ニュース＆イベント）",
-      "title": "harmo、運輸事業者向け服薬管理サービス「ヤクレコ」を10月1日提供開始",
-      "url": "https://www.cmicgroup.com/news/2026091402/",
-      "published": {
-        "value": "2026-09-14",
-        "precision": "day",
-        "basis": {
-          "method": "listing_text",
-          "evidence": "2026年09月14日"
-        }
-      },
-      "updated": {
-        "value": null,
-        "precision": "unknown",
-        "basis": null
-      },
-      "first_seen_at": "2026-10-05T14:38:18+09:00",
-      "last_seen_at": "2026-10-05T14:38:18+09:00",
-      "status": "active",
-      "content_status": "ok",
-      "content_error": null,
-      "latest_version": 1,
-      "versions": [
-        {
-          "version": 1,
-          "fetched_at": "2026-10-05T14:38:18+09:00",
-          "change_type": "new",
-          "extraction_status": "ok"
-        }
-      ],
-      "attachments": [
-        {
-          "title": "https://www.mlit.go.jp/jidosha/anzen/03analysis/resourse/data/h26_3.pdf",
-          "url": "https://www.mlit.go.jp/jidosha/anzen/03analysis/resourse/data/h26_3.pdf",
-          "status": "skipped",
-          "note": "取得対象外：許可ホスト以外です: www.mlit.go.jp",
-          "pages": null
-        },
-        {
-          "title": "https://www.mlit.go.jp/report/press/content/001847568.pdf",
-          "url": "https://www.mlit.go.jp/report/press/content/001847568.pdf",
-          "status": "skipped",
-          "note": "取得対象外：許可ホスト以外です: www.mlit.go.jp",
-          "pages": null
-        },
-        {
-          "title": "PDF",
-          "url": "https://www.cmicgroup.com/news/files/pdf/2026091403.pdf",
-          "status": "ok",
-          "note": null,
-          "pages": 4
-        }
-      ],
-      "summary": {
-        "status": "not_processed",
-        "error": null,
-        "version": null,
-        "outdated": false,
-        "text": null,
-        "key_points": null,
-        "targets": null,
-        "dates": null,
-        "uncertainties": null,
-        "model": null,
-        "processed_at": null
-      },
-      "tags": [],
-      "removed_tags": [],
-      "tag_override_reason": null
-    },
-    {
-      "id": "a_d52414fb2f63b1a5",
-      "source_id": "cmic-news",
-      "source_name": "シミックグループ（ニュース＆イベント）",
-      "title": "シミック株式会社、代表取締役社長の交代に関するお知らせ",
-      "url": "https://www.cmicgroup.com/news/2026091403/",
-      "published": {
-        "value": "2026-09-14",
-        "precision": "day",
-        "basis": {
-          "method": "listing_text",
-          "evidence": "2026年09月14日"
-        }
-      },
-      "updated": {
-        "value": null,
-        "precision": "unknown",
-        "basis": null
-      },
-      "first_seen_at": "2026-10-05T14:38:18+09:00",
-      "last_seen_at": "2026-10-05T14:38:18+09:00",
-      "status": "active",
-      "content_status": "ok",
-      "content_error": null,
-      "latest_version": 1,
-      "versions": [
-        {
-          "version": 1,
-          "fetched_at": "2026-10-05T14:38:18+09:00",
-          "change_type": "new",
-          "extraction_status": "ok"
-        }
-      ],
-      "attachments": [
-        {
-          "title": "PDF",
-          "url": "https://www.cmicgroup.com/news/files/pdf/2026091405.pdf",
-          "status": "ok",
-          "note": null,
-          "pages": 2
-        }
-      ],
-      "summary": {
-        "status": "not_processed",
-        "error": null,
-        "version": null,
-        "outdated": false,
-        "text": null,
-        "key_points": null,
-        "targets": null,
-        "dates": null,
-        "uncertainties": null,
-        "model": null,
-        "processed_at": null
-      },
-      "tags": [],
       "removed_tags": [],
       "tag_override_reason": null
     },
@@ -5638,65 +5031,6 @@
           "retired": false
         }
       ],
-      "removed_tags": [],
-      "tag_override_reason": null
-    },
-    {
-      "id": "a_e78f4ea5aca77377",
-      "source_id": "cmic-news",
-      "source_name": "シミックグループ（ニュース＆イベント）",
-      "title": "【「書く」から「話す」へ】シミックホールディングス、 新卒採用で対話型選考（トークエントリー選考）を開始",
-      "url": "https://www.cmicgroup.com/news/20260909/",
-      "published": {
-        "value": "2026-09-09",
-        "precision": "day",
-        "basis": {
-          "method": "listing_text",
-          "evidence": "2026年09月09日"
-        }
-      },
-      "updated": {
-        "value": null,
-        "precision": "unknown",
-        "basis": null
-      },
-      "first_seen_at": "2026-10-05T14:38:18+09:00",
-      "last_seen_at": "2026-10-05T14:38:18+09:00",
-      "status": "active",
-      "content_status": "ok",
-      "content_error": null,
-      "latest_version": 1,
-      "versions": [
-        {
-          "version": 1,
-          "fetched_at": "2026-10-05T14:38:18+09:00",
-          "change_type": "new",
-          "extraction_status": "ok"
-        }
-      ],
-      "attachments": [
-        {
-          "title": "PDF",
-          "url": "https://www.cmicgroup.com/news/files/pdf/2026090901.pdf",
-          "status": "ok",
-          "note": null,
-          "pages": 3
-        }
-      ],
-      "summary": {
-        "status": "not_processed",
-        "error": null,
-        "version": null,
-        "outdated": false,
-        "text": null,
-        "key_points": null,
-        "targets": null,
-        "dates": null,
-        "uncertainties": null,
-        "model": null,
-        "processed_at": null
-      },
-      "tags": [],
       "removed_tags": [],
       "tag_override_reason": null
     },
@@ -7073,57 +6407,6 @@
       "tag_override_reason": null
     },
     {
-      "id": "a_04df4bc7ffb37e6c",
-      "source_id": "cmic-news",
-      "source_name": "シミックグループ（ニュース＆イベント）",
-      "title": "「KoNECT International Conference」出展のお知らせ",
-      "url": "https://www.cmicgroup.com/news/20260903/",
-      "published": {
-        "value": "2026-09-03",
-        "precision": "day",
-        "basis": {
-          "method": "listing_text",
-          "evidence": "2026年09月03日"
-        }
-      },
-      "updated": {
-        "value": null,
-        "precision": "unknown",
-        "basis": null
-      },
-      "first_seen_at": "2026-10-05T14:38:18+09:00",
-      "last_seen_at": "2026-10-05T14:38:18+09:00",
-      "status": "active",
-      "content_status": "ok",
-      "content_error": null,
-      "latest_version": 1,
-      "versions": [
-        {
-          "version": 1,
-          "fetched_at": "2026-10-05T14:38:18+09:00",
-          "change_type": "new",
-          "extraction_status": "ok"
-        }
-      ],
-      "attachments": [],
-      "summary": {
-        "status": "not_processed",
-        "error": null,
-        "version": null,
-        "outdated": false,
-        "text": null,
-        "key_points": null,
-        "targets": null,
-        "dates": null,
-        "uncertainties": null,
-        "model": null,
-        "processed_at": null
-      },
-      "tags": [],
-      "removed_tags": [],
-      "tag_override_reason": null
-    },
-    {
       "id": "a_3b333de840b1ce13",
       "source_id": "gosaiji-topics",
       "source_name": "5歳児健診ポータル（トピックス）",
@@ -7556,65 +6839,6 @@
           "status": "ok",
           "note": null,
           "pages": 14
-        }
-      ],
-      "summary": {
-        "status": "not_processed",
-        "error": null,
-        "version": null,
-        "outdated": false,
-        "text": null,
-        "key_points": null,
-        "targets": null,
-        "dates": null,
-        "uncertainties": null,
-        "model": null,
-        "processed_at": null
-      },
-      "tags": [],
-      "removed_tags": [],
-      "tag_override_reason": null
-    },
-    {
-      "id": "a_bc892d17cc5a5c0b",
-      "source_id": "cmic-news",
-      "source_name": "シミックグループ（ニュース＆イベント）",
-      "title": "animo、アルフレッサおよび12薬局が次世代アニマルヘルスケア・プラットフォームの事業化に向けた基本合意書を締結",
-      "url": "https://www.cmicgroup.com/news/20260901/",
-      "published": {
-        "value": "2026-09-01",
-        "precision": "day",
-        "basis": {
-          "method": "listing_text",
-          "evidence": "2026年09月01日"
-        }
-      },
-      "updated": {
-        "value": null,
-        "precision": "unknown",
-        "basis": null
-      },
-      "first_seen_at": "2026-10-05T14:38:18+09:00",
-      "last_seen_at": "2026-10-05T14:38:18+09:00",
-      "status": "active",
-      "content_status": "ok",
-      "content_error": null,
-      "latest_version": 1,
-      "versions": [
-        {
-          "version": 1,
-          "fetched_at": "2026-10-05T14:38:18+09:00",
-          "change_type": "new",
-          "extraction_status": "ok"
-        }
-      ],
-      "attachments": [
-        {
-          "title": "PDF",
-          "url": "https://www.cmicgroup.com/news/files/pdf/2026090102.pdf",
-          "status": "ok",
-          "note": null,
-          "pages": 3
         }
       ],
       "summary": {

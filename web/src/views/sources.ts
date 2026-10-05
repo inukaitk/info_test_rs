@@ -3,7 +3,7 @@ import { externalLink, h } from "../dom";
 import { formatDateTime } from "../format";
 import type { SiteData, SourceStatus } from "../types";
 
-const METHOD: Record<string, string> = { rss: "RSS", html: "HTML一覧ページ", manual: "手動登録" };
+const METHOD: Record<string, string> = { rss: "RSS", html: "HTML一覧ページ", sitemap: "サイトマップ", manual: "手動登録" };
 const RESULT: Record<string, string> = { success: "成功", failed: "失敗", skipped: "対象外", unsupported: "未対応" };
 
 export function sourcesView(data: SiteData): HTMLElement {

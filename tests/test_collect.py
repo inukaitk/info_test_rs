@@ -1,5 +1,6 @@
 """収集処理のテスト（tests/fixtures/web の架空のRSS・HTML・PDFだけを使い、実際のWebにはアクセスしない）。"""
 
+import json
 from datetime import date, datetime
 from pathlib import Path
 
@@ -692,3 +693,82 @@ def test_login_required_pages_are_recorded_title_only_without_fetching(tmp_path)
     assert not (tmp_path / "cache" / "text").exists() or not list((tmp_path / "cache" / "text").glob(f"{login['article']['article_id']}*"))
     public = article(tmp_path / "data", aid("https://members.example.org/public/guide"))
     assert public["versions"][-1]["extraction_status"] == "ok"
+
+
+# ---------------------------------------------------------------- サイトマップ・ページに埋め込まれたデータ（文字を表示用プログラムで組み立てるサイト）
+
+
+def _nuxt_page(title: str, body_html: str, published: str) -> str:
+    """STUDIO（Nuxt）のページに似せた架空のHTML。画面の文字はなく、__NUXT_DATA__ に題名・本文・公開日だけがある。"""
+    payload = [
+        ["ShallowReactive", 1], {"data": 2}, {"dynamicDatanews/x": 3},
+        {"title": 4, "body": 5, "_meta": 6, "slug": 7}, title, body_html,
+        {"publishedAt": 8, "publishType": 9}, "x", ["Date", published], "change",
+    ]
+    return ('<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"><title>NEWS｜架空株式会社</title></head>'
+            '<body><div id="__nuxt"></div><script type="application/json" id="__NUXT_DATA__">'
+            + json.dumps(payload, ensure_ascii=False) + "</script></body></html>")
+
+
+def test_extract_html_reads_embedded_page_data():
+    html = _nuxt_page("【架空】製品を発表", '<p>【架空】本文その1。</p><p>その2<br>改行</p><a href="/files/a.pdf">資料（PDF）</a>',
+                      "2026-09-18T07:27:48.000Z")
+    e = extract_html(html.encode(), "https://t.example.org/news/x")
+    assert e.status == "ok" and e.title == "【架空】製品を発表"
+    assert "【架空】本文その1。" in e.text and "NEWS｜" not in e.text
+    assert e.published.method == "page_data" and e.published.value.value.startswith("2026-09-18")
+    assert e.pdf_links == [("https://t.example.org/files/a.pdf", "資料（PDF）")]
+
+
+def test_extract_html_without_visible_text_or_data_is_unsupported():
+    e = extract_html('<html><body><div id="__nuxt"></div></body></html>'.encode())
+    assert e.status == "unsupported"
+
+
+def test_parse_sitemap_filters_and_rejects_index():
+    from collector.extract import parse_sitemap
+    body = ('<?xml version="1.0"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
+            "<url><loc>https://t.example.org/news/a</loc><lastmod>2026-09-18T00:00:00Z</lastmod></url>"
+            "<url><loc>https://t.example.org/news/a#top</loc></url>"
+            "<url><loc>https://t.example.org/news/b</loc></url>"
+            "<url><loc>https://t.example.org/about</loc></url></urlset>").encode()
+    listing = parse_sitemap(body, "https://t.example.org/sitemap.xml", {"include": [r"^https://t\.example\.org/news/[^/]+$"]})
+    assert [c.url for c in listing.candidates] == ["https://t.example.org/news/a", "https://t.example.org/news/b"]
+    assert listing.duplicates == 1
+    assert all(c.listing_date is None for c in listing.candidates), "サイトマップの日付は公開日として使わない"
+    index = b'<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><sitemap><loc>https://t.example.org/s.xml</loc></sitemap></sitemapindex>'
+    with pytest.raises(ValueError, match="サイトマップインデックス"):
+        parse_sitemap(index, "https://t.example.org/sitemap.xml")
+
+
+def test_sitemap_source_collects_only_articles_published_in_period(tmp_path):
+    site = tmp_path / "site"
+    site.mkdir()
+    (site / "sitemap.xml").write_text(
+        '<?xml version="1.0"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
+        "<url><loc>https://t.example.org/news/new</loc><lastmod>2026-09-18T00:00:00Z</lastmod></url>"
+        "<url><loc>https://t.example.org/news/old</loc><lastmod>2026-09-18T00:00:00Z</lastmod></url></urlset>", encoding="utf-8")
+    (site / "new.html").write_text(_nuxt_page("【架空】9月の発表", "<p>【架空】9月の本文。</p>", "2026-09-18T07:27:48.000Z"), encoding="utf-8")
+    (site / "old.html").write_text(_nuxt_page("【架空】昨年の発表", "<p>【架空】昨年の本文。</p>", "2025-05-09T04:00:00.000Z"), encoding="utf-8")
+    (site / "manifest.yaml").write_text(
+        "https://t.example.org/sitemap.xml: {file: sitemap.xml, type: application/xml}\n"
+        "https://t.example.org/news/new: {file: new.html}\nhttps://t.example.org/news/old: {file: old.html}\n", encoding="utf-8")
+    overlay = tmp_path / "overlay"
+    overlay.mkdir()
+    (overlay / "sources.yaml").write_text(
+        "sources:\n  - id: fx-sitemap\n    name: 架空サイトマップ社（テスト）\n    entry_url: https://t.example.org/sitemap.xml\n"
+        "    method: sitemap\n    allowed_hosts: [t.example.org]\n    link_rules:\n      include: ['^https://t\\.example\\.org/news/[^/]+$']\n"
+        "    timezone: Asia/Tokyo\n    limits: {max_items: 20, max_bytes: 1048576, wait_seconds: 1, timeout_seconds: 10}\n"
+        "    enabled: true\n", encoding="utf-8")
+    cfg, report = validate_config(CONFIG_DIR, overlay_dir=overlay)
+    assert report.errors == []
+    options = col.Options(now=datetime(2026, 10, 5, 8, 0, tzinfo=JST), start=date(2026, 9, 1), end=date(2026, 10, 5),
+                          source_ids=["fx-sitemap"], cache_dir=tmp_path / "cache")
+    record = col.collect(cfg, tmp_path / "data", FixtureFetcher.from_manifest(site / "manifest.yaml"), options,
+                         config_dir=CONFIG_DIR, overlay_dir=overlay)
+    res = result_of(record, "fx-sitemap")
+    assert res["status"] == "success" and res["candidates"] == 2 and res["new"] == 1 and res["date_unknown"] == 0
+    saved = article(tmp_path / "data", aid("https://t.example.org/news/new"))
+    assert saved["article"]["title"] == "【架空】9月の発表"
+    assert saved["article"]["date_basis"]["published"]["method"] == "page_data"
+    assert not (tmp_path / "data" / "articles" / f"{aid('https://t.example.org/news/old')}.json").exists(), "期間外の記事は保存しない"

@@ -61,6 +61,7 @@ export const DATE_METHOD_LABEL: Record<string, string> = {
   pdf_text: "PDF本文の記載",
   listing_text: "一覧ページの記載",
   url_pattern: "URL中の日付",
+  page_data: "ページに埋め込まれたデータ",
   manual: "手動登録",
 };
 

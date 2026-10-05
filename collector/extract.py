@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import hashlib
 import io
+import json
 import re
 import unicodedata
 from dataclasses import dataclass, field
@@ -40,6 +41,40 @@ class Listing:
     next_url: str | None = None
     rejected: list[str] = field(default_factory=list)
     duplicates: int = 0  # 同じURLを指していたため1件にまとめた項目の数
+
+
+def parse_sitemap(body: bytes, base_url: str, link_rules: dict | None = None) -> Listing:
+    """サイトマップ（urlset）のURL一覧を候補にする。日付は載っていても公開日とは限らないため使わない（記事ページ側の日付で判定する）。"""
+    try:
+        root = SafeET.fromstring(body)
+    except Exception as e:  # noqa: BLE001
+        raise ValueError(f"サイトマップとして読めません（{type(e).__name__}）") from e
+    if _local(root.tag) == "sitemapindex":
+        raise ValueError("サイトマップインデックスは未対応です（記事一覧のサイトマップのURLを指定してください）")
+    rules = link_rules or {}
+    include = [re.compile(p) for p in rules.get("include", [])]
+    exclude = [re.compile(p) for p in rules.get("exclude", [])]
+    listing = Listing([])
+    seen: set[str] = set()
+    for el in root.iter():
+        if _local(el.tag) != "url":
+            continue
+        loc = _child_text(el, "loc")
+        if not loc:
+            continue
+        try:
+            url = normalize_url(loc, base_url)
+        except UrlRejected:
+            listing.rejected.append(loc)
+            continue
+        if (include and not any(p.search(url) for p in include)) or any(p.search(url) for p in exclude):
+            continue
+        if url in seen:
+            listing.duplicates += 1
+            continue
+        seen.add(url)
+        listing.candidates.append(Candidate(url=url, title=None))
+    return listing
 
 
 @dataclass
@@ -280,8 +315,59 @@ def _pdf_links(main, base_url: str | None) -> list[tuple[str, str]]:
     return links
 
 
+def _decode_nuxt(payload: list):
+    """Nuxt の埋め込みデータ（__NUXT_DATA__、番号で参照し合う形）を、ふつうの辞書・リストに戻す。"""
+    cache: dict[int, object] = {}
+
+    def res(i):
+        if not isinstance(i, int) or i < 0 or i >= len(payload):
+            return None
+        if i in cache:
+            return cache[i]
+        v = payload[i]
+        if isinstance(v, list):
+            if v and isinstance(v[0], str) and v[0] in ("Reactive", "ShallowReactive", "Ref", "ShallowRef"):
+                out = res(v[1]) if len(v) > 1 else None
+            elif v and isinstance(v[0], str) and v[0] == "Date":
+                out = v[1] if len(v) > 1 else None
+            elif v and isinstance(v[0], str) and v[0] in ("Set", "Map", "EmptyRef", "EmptyShallowRef", "NuxtError", "undefined", "null"):
+                out = None
+            else:
+                out = []
+                cache[i] = out
+                out.extend(res(x) for x in v)
+        elif isinstance(v, dict):
+            out = {}
+            cache[i] = out
+            out.update({k: res(x) for k, x in v.items()})
+        else:
+            out = v
+        cache[i] = out
+        return out
+
+    return res(0)
+
+
+def _nuxt_article(soup: BeautifulSoup) -> dict | None:
+    """画面の文字が表示用プログラムで組み立てられるサイト（STUDIO等）の記事ページから、題名・本文（HTML）・公開日を取り出す。"""
+    tag = soup.find("script", id="__NUXT_DATA__")
+    if tag is None or not (tag.string or "").strip():
+        return None
+    try:
+        data = _decode_nuxt(json.loads(tag.string)) or {}
+    except (ValueError, RecursionError):
+        return None
+    entries = data.get("data") if isinstance(data, dict) else None
+    for entry in (entries or {}).values():
+        if isinstance(entry, dict) and isinstance(entry.get("title"), str) and isinstance(entry.get("body"), str):
+            meta = entry.get("_meta") if isinstance(entry.get("_meta"), dict) else {}
+            return {"title": entry["title"], "body": entry["body"], "published": meta.get("publishedAt")}
+    return None
+
+
 def extract_html(body: bytes, base_url: str | None = None) -> Extracted:
     soup = _soup(body)
+    nuxt = _nuxt_article(soup)
     title_tag = soup.find("h1") or soup.find("title")
     title = title_tag.get_text(" ", strip=True) if title_tag else None
     published = _meta_date(soup, ("article:published_time", "dcterms.issued", "DC.date.issued", "date", "DC.date", "pubdate"))
@@ -302,6 +388,16 @@ def extract_html(body: bytes, base_url: str | None = None) -> Extracted:
     labeled_updated = _labeled_date(text, UPDATED_LABELS, "html_text")
     if updated is None:
         updated = labeled_updated
+    if not text and nuxt is not None:
+        # 表示用プログラムで文字を組み立てるサイト：ページに埋め込まれたデータの題名・本文・公開日を使う
+        body_soup = BeautifulSoup(nuxt["body"], "html.parser")
+        text = normalize_text(f"{nuxt['title']}\n{body_soup.get_text(chr(10))}")
+        pdf_links = _pdf_links(body_soup, base_url)
+        title = nuxt["title"]
+        raw_date = nuxt["published"]
+        parsed = parse_any(raw_date) if isinstance(raw_date, str) else None
+        if parsed is not None:
+            published = DateFound(parsed, "page_data", f'publishedAt: "{raw_date}"')
     if not text:
         return Extracted(title, "", "html", published, updated, status="unsupported", error="本文を抽出できない（動的ページの可能性）",
                          pdf_links=pdf_links)

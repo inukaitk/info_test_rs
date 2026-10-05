@@ -45,9 +45,10 @@
           "enum": [
             "rss",
             "html",
+            "sitemap",
             "manual"
           ],
-          "description": "取得方式"
+          "description": "取得方式（sitemap：サイトマップのURL一覧。記事ページの文字が表示用プログラムで組み立てられるサイト向け）"
         },
         "allowed_hosts": {
           "type": "array",

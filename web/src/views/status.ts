@@ -5,7 +5,7 @@ import type { RetryItem, SiteData, SourceStatus } from "../types";
 
 const RUN_STATUS: Record<string, string> = { success: "成功", partial: "一部失敗", failed: "失敗", running: "実行中" };
 const SOURCE_STATUS: Record<string, string> = { success: "成功", failed: "失敗", skipped: "対象外", unsupported: "未対応" };
-const METHOD: Record<string, string> = { rss: "RSS", html: "HTML一覧", manual: "手動登録" };
+const METHOD: Record<string, string> = { rss: "RSS", html: "HTML一覧", sitemap: "サイトマップ", manual: "手動登録" };
 const DAY = 24 * 60 * 60 * 1000;
 
 function daysSince(ts: string | null, now: Date): number | null {

@@ -41,7 +41,7 @@
       "type": "object", "additionalProperties": false, "required": ["method", "evidence"],
       "properties": {
         "method": {
-          "enum": ["rss_pubdate", "rss_updated", "html_meta", "html_text", "pdf_metadata", "pdf_text", "listing_text", "url_pattern", "manual"],
+          "enum": ["rss_pubdate", "rss_updated", "html_meta", "html_text", "pdf_metadata", "pdf_text", "listing_text", "url_pattern", "page_data", "manual"],
           "description": "HTTPのLast-Modifiedだけで日付を確定しないため、選択肢に含めない"
         },
         "evidence": { "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/nonempty_text", "description": "根拠となった原文の短い引用や要素" }
