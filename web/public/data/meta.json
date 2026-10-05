@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-05T12:35:13+09:00",
+  "generated_at": "2026-10-05T14:26:35+09:00",
   "release_mode": "real",
   "is_demo": false,
   "site_name": "外部環境情報（検証版）",
@@ -8,7 +8,7 @@
   "page_size": 50,
   "latest_days": 7,
   "stale_after_days": 8,
-  "data_as_of": "2026-10-05T12:32:15+09:00",
+  "data_as_of": "2026-10-05T14:24:29+09:00",
   "tags": [
     {
       "id": "maternal-child-health",
@@ -71,6 +71,42 @@
     {
       "id": "ncchd-news",
       "name": "国立成育医療研究センター（新着情報）"
+    },
+    {
+      "id": "kokasen-news",
+      "name": "こども家庭センターポータルサイト（新着情報）"
+    },
+    {
+      "id": "gosaiji-topics",
+      "name": "5歳児健診ポータル（トピックス）"
+    },
+    {
+      "id": "boshikenshu-top",
+      "name": "母子保健指導者養成研修（令和8年度）"
+    },
+    {
+      "id": "mchbook-top",
+      "name": "母子健康手帳情報支援サイト"
+    },
+    {
+      "id": "digital-news",
+      "name": "デジタル庁（新着・更新）"
+    },
+    {
+      "id": "cao-press",
+      "name": "内閣府（報道発表資料）"
+    },
+    {
+      "id": "kodomodx-news",
+      "name": "一般社団法人こどもDX推進協会（お知らせ）"
+    },
+    {
+      "id": "mcfh-info",
+      "name": "公益財団法人母子衛生研究会（お知らせ）"
+    },
+    {
+      "id": "jt-tsushin",
+      "name": "自治体通信Online（新着記事）"
     }
   ]
 }

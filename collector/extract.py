@@ -39,6 +39,7 @@ class Listing:
     candidates: list[Candidate]
     next_url: str | None = None
     rejected: list[str] = field(default_factory=list)
+    duplicates: int = 0  # 同じURLを指していたため1件にまとめた項目の数
 
 
 @dataclass
@@ -205,6 +206,7 @@ def parse_html_listing(body: bytes, base_url: str, link_rules: dict, next_select
         if any(p.search(url) for p in exclude):
             continue
         if url in seen:
+            listing.duplicates += 1
             continue
         seen.add(url)
         if item is not None:

@@ -13,6 +13,32 @@
       },
       "retry_queue": [],
       "consecutive_failures": 0
+    },
+    "kokasen-news": {
+      "source_id": "kokasen-news",
+      "last_success_at": "2026-10-05T14:24:29+09:00",
+      "last_attempt_at": "2026-10-05T14:24:29+09:00",
+      "last_attempt_status": "success",
+      "explored_range": {
+        "oldest": "2025-09-11",
+        "newest": "2026-09-30",
+        "pages": 1
+      },
+      "retry_queue": [],
+      "consecutive_failures": 0
+    },
+    "gosaiji-topics": {
+      "source_id": "gosaiji-topics",
+      "last_success_at": "2026-10-05T14:24:29+09:00",
+      "last_attempt_at": "2026-10-05T14:24:29+09:00",
+      "last_attempt_status": "success",
+      "explored_range": {
+        "oldest": "2024-12-10",
+        "newest": "2026-09-03",
+        "pages": 1
+      },
+      "retry_queue": [],
+      "consecutive_failures": 0
     }
   }
 }

@@ -66,6 +66,57 @@
       "tag_override_reason": null
     },
     {
+      "id": "a_27d76fdb5aea7c15",
+      "source_id": "kokasen-news",
+      "source_name": "こども家庭センターポータルサイト（新着情報）",
+      "title": "全国オンライン情報交換会（人口５～10万人）の開催案内を掲載しました",
+      "url": "https://kokasen.cfa.go.jp/login/briefing",
+      "published": {
+        "value": "2026-09-30T12:34:34+09:00",
+        "precision": "datetime",
+        "basis": {
+          "method": "listing_text",
+          "evidence": "2026/09/30"
+        }
+      },
+      "updated": {
+        "value": null,
+        "precision": "unknown",
+        "basis": null
+      },
+      "first_seen_at": "2026-10-05T14:24:29+09:00",
+      "last_seen_at": "2026-10-05T14:24:29+09:00",
+      "status": "unsupported",
+      "content_status": "unsupported",
+      "content_error": "会員限定（ログインが必要）のページのため、本文は取得していません。一覧の題名・日付と出典リンクだけを記録しています",
+      "latest_version": 1,
+      "versions": [
+        {
+          "version": 1,
+          "fetched_at": "2026-10-05T14:24:29+09:00",
+          "change_type": "new",
+          "extraction_status": "unsupported"
+        }
+      ],
+      "attachments": [],
+      "summary": {
+        "status": "not_processed",
+        "error": null,
+        "version": null,
+        "outdated": false,
+        "text": null,
+        "key_points": null,
+        "targets": null,
+        "dates": null,
+        "uncertainties": null,
+        "model": null,
+        "processed_at": null
+      },
+      "tags": [],
+      "removed_tags": [],
+      "tag_override_reason": null
+    },
+    {
       "id": "a_722cbd59feaf55a5",
       "source_id": "cfa-news",
       "source_name": "こども家庭庁（新着・更新）",
@@ -5680,6 +5731,57 @@
       "tag_override_reason": null
     },
     {
+      "id": "a_3b333de840b1ce13",
+      "source_id": "gosaiji-topics",
+      "source_name": "5歳児健診ポータル（トピックス）",
+      "title": "鹿児島県種子島のレポートを公開しました！",
+      "url": "https://gosaiji-kenshin.com/topics/kagoshima-tanegashima/",
+      "published": {
+        "value": "2026-09-03",
+        "precision": "day",
+        "basis": {
+          "method": "listing_text",
+          "evidence": "2026.09.03"
+        }
+      },
+      "updated": {
+        "value": null,
+        "precision": "unknown",
+        "basis": null
+      },
+      "first_seen_at": "2026-10-05T14:24:29+09:00",
+      "last_seen_at": "2026-10-05T14:24:29+09:00",
+      "status": "active",
+      "content_status": "ok",
+      "content_error": null,
+      "latest_version": 1,
+      "versions": [
+        {
+          "version": 1,
+          "fetched_at": "2026-10-05T14:24:29+09:00",
+          "change_type": "new",
+          "extraction_status": "ok"
+        }
+      ],
+      "attachments": [],
+      "summary": {
+        "status": "not_processed",
+        "error": null,
+        "version": null,
+        "outdated": false,
+        "text": null,
+        "key_points": null,
+        "targets": null,
+        "dates": null,
+        "uncertainties": null,
+        "model": null,
+        "processed_at": null
+      },
+      "tags": [],
+      "removed_tags": [],
+      "tag_override_reason": null
+    },
+    {
       "id": "a_b98b093e983adc25",
       "source_id": "cfa-news",
       "source_name": "こども家庭庁（新着・更新）",
@@ -6861,6 +6963,54 @@
           "retired": false
         }
       ],
+      "removed_tags": [],
+      "tag_override_reason": null
+    },
+    {
+      "id": "a_8d006531e4717bb2",
+      "source_id": "gosaiji-topics",
+      "source_name": "5歳児健診ポータル（トピックス）",
+      "title": "北海道妹背牛町の取材レポートを公開しました！",
+      "url": "https://gosaiji-kenshin.com/topics/hokkaido-moseushi/",
+      "published": {
+        "value": null,
+        "precision": "unknown",
+        "basis": null
+      },
+      "updated": {
+        "value": null,
+        "precision": "unknown",
+        "basis": null
+      },
+      "first_seen_at": "2026-10-05T14:24:29+09:00",
+      "last_seen_at": "2026-10-05T14:24:29+09:00",
+      "status": "active",
+      "content_status": "ok",
+      "content_error": null,
+      "latest_version": 1,
+      "versions": [
+        {
+          "version": 1,
+          "fetched_at": "2026-10-05T14:24:29+09:00",
+          "change_type": "new",
+          "extraction_status": "ok"
+        }
+      ],
+      "attachments": [],
+      "summary": {
+        "status": "not_processed",
+        "error": null,
+        "version": null,
+        "outdated": false,
+        "text": null,
+        "key_points": null,
+        "targets": null,
+        "dates": null,
+        "uncertainties": null,
+        "model": null,
+        "processed_at": null
+      },
+      "tags": [],
       "removed_tags": [],
       "tag_override_reason": null
     }
