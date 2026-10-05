@@ -2,7 +2,7 @@
 
 実装している provider は Anthropic（Claude API）の1つだけ。テストでは MockProvider を使い、実際のAPIは呼ばない。
 LLM には道具（tools）や権限を一切渡さない。1回の呼び出しで JSON を1つ返させるだけ。
-APIキーは環境変数 ANTHROPIC_API_KEY からだけ読み、ログ・ファイル・画面には書かない。
+APIキーは環境変数 INFO_AI_API_KEY（なければ ANTHROPIC_API_KEY）からだけ読み、ログ・ファイル・画面には書かない。
 """
 
 from __future__ import annotations
@@ -12,7 +12,15 @@ import os
 from dataclasses import dataclass, field
 from typing import Any, Callable, Protocol
 
-API_KEY_ENV = "ANTHROPIC_API_KEY"
+# Claude Code Web版では ANTHROPIC_API_KEY という名前の環境変数がセッションに渡らないため、別の名前を優先して読む
+API_KEY_ENV = "INFO_AI_API_KEY"
+API_KEY_ENV_FALLBACK = "ANTHROPIC_API_KEY"  # PC等で実行する場合のため
+
+
+def read_api_key(environ: dict[str, str]) -> str | None:
+    return environ.get(API_KEY_ENV) or environ.get(API_KEY_ENV_FALLBACK) or None
+# 送信先は固定する（環境変数 ANTHROPIC_BASE_URL があっても使わない。APIキーを別の宛先へ送らないため）
+API_BASE_URL = "https://api.anthropic.com"
 FALLBACK_BETA = "server-side-fallback-2026-07-01"
 
 # モデルごとの対応状況（2026-10-02 に公式資料で確認）。対応しない指定を送ると API が 400 を返す
@@ -70,12 +78,14 @@ class AnthropicProvider:
                  environ: dict[str, str] | None = None):
         environ = os.environ if environ is None else environ
         if client is None:
-            if not environ.get(API_KEY_ENV):
+            api_key = read_api_key(environ)
+            if not api_key:
                 raise MissingApiKey(f"環境変数 {API_KEY_ENV} が設定されていません")
             import anthropic
 
             # 再試行は呼び出し側（summarize）で回数を数えて行うため、SDK の自動再試行は使わない
-            client = anthropic.Anthropic(api_key=environ[API_KEY_ENV], max_retries=0, timeout=300.0)
+            client = anthropic.Anthropic(api_key=api_key, base_url=API_BASE_URL, max_retries=0,
+                                         timeout=300.0)
         self.client = client
         self.model = model
         self.effort = effort

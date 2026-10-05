@@ -232,13 +232,31 @@ def test_long_text_is_truncated_and_noted(config, env):
 
 
 def test_no_api_key(config, env):
-    run(config, env, None, provider_error="環境変数 ANTHROPIC_API_KEY が設定されていません")
+    run(config, env, None, provider_error="環境変数 INFO_AI_API_KEY が設定されていません")
     records = _records(env)
     assert len(records) == 4
     for x in records:
         assert_not_success(x, "skipped_no_api_key")
     with pytest.raises(MissingApiKey):
         build_provider(config.ai, environ={})
+
+
+def test_api_key_variable_names():
+    """INFO_AI_API_KEY を優先し、なければ ANTHROPIC_API_KEY を読む（通信はしない）。"""
+    from collector.ai_provider import read_api_key
+
+    assert read_api_key({"INFO_AI_API_KEY": "k1", "ANTHROPIC_API_KEY": "k2"}) == "k1"
+    assert read_api_key({"ANTHROPIC_API_KEY": "k2"}) == "k2"
+    assert read_api_key({"INFO_AI_API_KEY": ""}) is None
+    provider = AnthropicProvider("claude-haiku-4-5", environ={"INFO_AI_API_KEY": "dummy-key-for-test"})
+    assert provider.client.api_key == "dummy-key-for-test"
+
+
+def test_api_base_url_is_fixed():
+    """環境変数 ANTHROPIC_BASE_URL が別の宛先でも、APIキーは api.anthropic.com にだけ送る（通信はしない）。"""
+    env = {"ANTHROPIC_API_KEY": "sk-test-dummy", "ANTHROPIC_BASE_URL": "https://attacker.example.com"}
+    provider = AnthropicProvider("claude-haiku-4-5", environ=env)
+    assert str(provider.client.base_url).rstrip("/") == "https://api.anthropic.com"
 
 
 def test_dates_without_evidence_in_source_are_dropped(config, env):
@@ -421,6 +439,7 @@ def test_plan_estimates_without_calling_api(config, env):
 
 def test_cli_without_api_key(monkeypatch, capsys, tmp_path):
     monkeypatch.delenv("ANTHROPIC_API_KEY", raising=False)
+    monkeypatch.delenv("INFO_AI_API_KEY", raising=False)
     data = tmp_path / "data"
     data.mkdir()
     for sub in ("articles", "summaries", "runs"):

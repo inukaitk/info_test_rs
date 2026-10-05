@@ -3,8 +3,8 @@
   "sources": {
     "cfa-news": {
       "source_id": "cfa-news",
-      "last_success_at": "2026-10-02T17:27:33+09:00",
-      "last_attempt_at": "2026-10-02T17:27:33+09:00",
+      "last_success_at": "2026-10-05T09:05:35+09:00",
+      "last_attempt_at": "2026-10-05T09:05:35+09:00",
       "last_attempt_status": "success",
       "explored_range": {
         "oldest": "2026-09-17",
