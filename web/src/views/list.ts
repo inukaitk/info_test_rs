@@ -1,7 +1,7 @@
 // 記事を探す：全期間の記事を、タグ・機関・期間で絞り込み、文字検索する。
 import { h } from "../dom";
 import { articlesToCsv, articlesToJson, downloadText } from "../download";
-import { applyFilters, countDateUnknownExcluded, type Filters, filtersToQuery } from "../filters";
+import { applyFilters, countDateUnknownExcluded, type Filters, filtersToQuery, pageWindow, paginate } from "../filters";
 import { formatDate, SUMMARY_STATUS_LABEL } from "../format";
 import type { Article, SiteData } from "../types";
 import { tagList } from "./tags";
@@ -10,6 +10,7 @@ export function listView(data: SiteData, filters: Filters, navigate: (hash: stri
   const results = applyFilters(data.articles, filters);
   const excludedUnknown = countDateUnknownExcluded(data.articles, filters);
   const limit = data.meta.page_size;
+  const view = paginate(results.length, limit, filters.page);
 
   const form = filterForm(data, filters, navigate);
   const csvButton = h("button", { type: "button", class: "secondary" }, "CSVで保存");
@@ -25,7 +26,7 @@ export function listView(data: SiteData, filters: Filters, navigate: (hash: stri
       "p",
       { class: "result-count", "aria-live": "polite" },
       `${data.articles.length}件中 ${results.length}件`,
-      results.length > limit ? `（新しい順に${limit}件を表示。保存はすべて）` : "",
+      view.pages > 1 ? `（新しい順に${view.start + 1}〜${view.end}件目を表示。保存はすべて）` : "",
     ),
     h("span", { class: "export" }, "絞り込み結果を ", csvButton, jsonButton),
   );
@@ -34,7 +35,8 @@ export function listView(data: SiteData, filters: Filters, navigate: (hash: stri
     notes.append(h("p", { class: "note" }, `日付不明の記事 ${excludedUnknown}件は期間の絞り込みに含めていません。期間を外すと表示されます。`));
   }
 
-  const table = results.length ? articleTable(results.slice(0, limit)) : h("p", { class: "empty" }, "条件に合う記事はありません。");
+  const table = results.length ? articleTable(results.slice(view.start, view.end)) : h("p", { class: "empty" }, "条件に合う記事はありません。");
+  const pager = (): HTMLElement | null => pagerNav(filters, view.pages, view.page);
 
   return h(
     "section",
@@ -44,7 +46,28 @@ export function listView(data: SiteData, filters: Filters, navigate: (hash: stri
     form,
     summaryLine,
     notes,
+    pager(),
     table,
+    pager(),
+  );
+}
+
+/** ページ送り。絞り込み条件は引き継ぎ、ページだけを変える。1ページしかなければ出さない。 */
+function pagerNav(filters: Filters, pages: number, current: number): HTMLElement | null {
+  if (pages <= 1) return null;
+  const href = (n: number) => `#/search${filtersToQuery({ ...filters, page: n })}`;
+  const item = (label: string, n: number, ariaLabel?: string): HTMLElement =>
+    n === current && !ariaLabel
+      ? h("span", { class: "pager-item current", "aria-current": "page" }, label)
+      : h("a", { class: "pager-item", href: href(n), ...(ariaLabel ? { "aria-label": ariaLabel } : {}) } as Record<string, string>, label);
+  const disabled = (label: string): HTMLElement => h("span", { class: "pager-item disabled", "aria-disabled": "true" }, label);
+  return h(
+    "nav",
+    { class: "pager", "aria-label": "ページ送り" },
+    current > 1 ? item("前へ", current - 1, `${current - 1}ページ目へ（前へ）`) : disabled("前へ"),
+    ...pageWindow(pages, current).map((n) => (n === null ? h("span", { class: "pager-item gap" }, "…") : item(String(n), n))),
+    current < pages ? item("次へ", current + 1, `${current + 1}ページ目へ（次へ）`) : disabled("次へ"),
+    h("span", { class: "pager-info" }, `${current} / ${pages}ページ`),
   );
 }
 

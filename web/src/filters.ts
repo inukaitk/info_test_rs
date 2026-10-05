@@ -7,6 +7,7 @@ export interface Filters {
   source: string;
   from: string; // YYYY-MM-DD（日本時間、両端を含む）
   to: string;
+  page?: number; // 一覧のページ（1始まり。省略は1ページ目）。絞り込み条件ではない
 }
 
 export const EMPTY_FILTERS: Filters = { q: "", tag: "", source: "", from: "", to: "" };
@@ -19,14 +20,38 @@ export function parseFilters(params: URLSearchParams): Filters {
   for (const key of KEYS) f[key] = (params.get(key) ?? "").slice(0, 200);
   if (!DATE_RE.test(f.from)) f.from = "";
   if (!DATE_RE.test(f.to)) f.to = "";
+  const rawPage = params.get("page") ?? "";
+  if (/^\d{1,12}$/.test(rawPage) && Number(rawPage) > 1) f.page = Math.min(Number(rawPage), 100000);
   return f;
 }
 
 export function filtersToQuery(f: Filters): string {
   const params = new URLSearchParams();
   for (const key of KEYS) if (f[key]) params.set(key, f[key]);
+  if (f.page && f.page > 1) params.set("page", String(f.page));
   const s = params.toString();
   return s ? `?${s}` : "";
+}
+
+/** 件数と1ページの件数から、ページ数（最低1）と、範囲内に収めた現在のページを返す。 */
+export function paginate(total: number, size: number, page: number | undefined): { pages: number; page: number; start: number; end: number } {
+  const pages = Math.max(1, Math.ceil(total / Math.max(1, size)));
+  const current = Math.min(Math.max(1, page ?? 1), pages);
+  return { pages, page: current, start: (current - 1) * size, end: Math.min(total, current * size) };
+}
+
+/** ページ送りに並べるページ番号。先頭・末尾・現在の前後2ページを出し、間は null（「…」）にする。 */
+export function pageWindow(pages: number, current: number): (number | null)[] {
+  const keep = new Set([1, pages]);
+  for (let i = current - 2; i <= current + 2; i++) if (i >= 1 && i <= pages) keep.add(i);
+  const out: (number | null)[] = [];
+  let prev = 0;
+  for (const n of [...keep].sort((a, b) => a - b)) {
+    if (n - prev > 1) out.push(null);
+    out.push(n);
+    prev = n;
+  }
+  return out;
 }
 
 /** 全角・半角や大文字・小文字の違いを無視して比較するための正規化。 */
