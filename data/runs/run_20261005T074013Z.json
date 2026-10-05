@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "run": {
+    "run_id": "run_20261005T074013Z",
+    "started_at": "2026-10-05T16:40:13+09:00",
+    "finished_at": "2026-10-05T16:46:33+09:00",
+    "status": "success",
+    "trigger": "manual_cli",
+    "kind": "collect",
+    "period": null,
+    "sources": [
+      {
+        "source_id": "cfa-news",
+        "status": "success",
+        "candidates": 59,
+        "new": 0,
+        "changed": 0,
+        "unchanged": 13,
+        "date_unknown": 0,
+        "fetch_failed": 0,
+        "warnings": [
+          "同じURLを指す一覧の項目 3件を1件にまとめました（#以降だけが違うリンクなど）"
+        ],
+        "error": null
+      },
+      {
+        "source_id": "kokasen-news",
+        "status": "success",
+        "candidates": 10,
+        "new": 0,
+        "changed": 0,
+        "unchanged": 1,
+        "date_unknown": 0,
+        "fetch_failed": 0,
+        "warnings": [
+          "同じURLを指す一覧の項目 7件を1件にまとめました（#以降だけが違うリンクなど）"
+        ],
+        "error": null
+      },
+      {
+        "source_id": "gosaiji-topics",
+        "status": "success",
+        "candidates": 12,
+        "new": 0,
+        "changed": 0,
+        "unchanged": 1,
+        "date_unknown": 0,
+        "fetch_failed": 0,
+        "warnings": [],
+        "error": null
+      },
+      {
+        "source_id": "cmic-trust-news",
+        "status": "success",
+        "candidates": 19,
+        "new": 0,
+        "changed": 0,
+        "unchanged": 1,
+        "date_unknown": 0,
+        "fetch_failed": 0,
+        "warnings": [],
+        "error": null
+      },
+      {
+        "source_id": "mchh-prtimes",
+        "status": "success",
+        "candidates": 200,
+        "new": 0,
+        "changed": 0,
+        "unchanged": 7,
+        "date_unknown": 0,
+        "fetch_failed": 0,
+        "warnings": [],
+        "error": null
+      },
+      {
+        "source_id": "milabo-news",
+        "status": "success",
+        "candidates": 12,
+        "new": 0,
+        "changed": 0,
+        "unchanged": 0,
+        "date_unknown": 0,
+        "fetch_failed": 0,
+        "warnings": [],
+        "error": null
+      },
+      {
+        "source_id": "ryobi-neuvola-karte",
+        "status": "success",
+        "candidates": 4,
+        "new": 0,
+        "changed": 0,
+        "unchanged": 0,
+        "date_unknown": 0,
+        "fetch_failed": 0,
+        "warnings": [],
+        "error": null
+      }
+    ],
+    "totals": {
+      "new": 0,
+      "changed": 0,
+      "unchanged": 23,
+      "date_unknown": 0,
+      "fetch_failed": 0,
+      "summarized": 0,
+      "summarize_failed": 0
+    },
+    "failures": [],
+    "api_usage": {
+      "requests": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "estimated_cost_usd": null
+    }
+  }
+}
