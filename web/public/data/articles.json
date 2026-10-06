@@ -168,6 +168,13 @@
           "origin": "ai",
           "reason": "自治体の子育て関連事業のデジタル化支援サービスと母子保健DXに関する導入事例である。",
           "retired": false
+        },
+        {
+          "id": "vendor-trend",
+          "name": "ベンダ動向",
+          "origin": "source",
+          "reason": "情報源の設定：母子モ株式会社（プレスリリース、PR TIMES）の記事すべてに付けています",
+          "retired": false
         }
       ],
       "removed_tags": [],
@@ -272,6 +279,13 @@
           "name": "自治体DX・標準化",
           "origin": "ai",
           "reason": "自治体の子育て関連手続きのアプリ化・オンライン化というデジタル化の取り組み",
+          "retired": false
+        },
+        {
+          "id": "vendor-trend",
+          "name": "ベンダ動向",
+          "origin": "source",
+          "reason": "情報源の設定：母子モ株式会社（プレスリリース、PR TIMES）の記事すべてに付けています",
           "retired": false
         }
       ],
@@ -388,6 +402,13 @@
           "origin": "ai",
           "reason": "自治体の子育て関連事業のデジタル化（アプリによる予約・届出）の導入事例である",
           "retired": false
+        },
+        {
+          "id": "vendor-trend",
+          "name": "ベンダ動向",
+          "origin": "source",
+          "reason": "情報源の設定：母子モ株式会社（プレスリリース、PR TIMES）の記事すべてに付けています",
+          "retired": false
         }
       ],
       "removed_tags": [],
@@ -498,6 +519,13 @@
           "origin": "ai",
           "reason": "自治体の子育て関連手続きのデジタル化・アプリ導入に関する内容",
           "retired": false
+        },
+        {
+          "id": "vendor-trend",
+          "name": "ベンダ動向",
+          "origin": "source",
+          "reason": "情報源の設定：母子モ株式会社（プレスリリース、PR TIMES）の記事すべてに付けています",
+          "retired": false
         }
       ],
       "removed_tags": [],
@@ -606,6 +634,13 @@
           "name": "自治体DX・標準化",
           "origin": "ai",
           "reason": "自治体の子育て関連手続きのデジタル化・オンライン化に関する内容",
+          "retired": false
+        },
+        {
+          "id": "vendor-trend",
+          "name": "ベンダ動向",
+          "origin": "source",
+          "reason": "情報源の設定：母子モ株式会社（プレスリリース、PR TIMES）の記事すべてに付けています",
           "retired": false
         }
       ],
@@ -775,6 +810,13 @@
           "origin": "ai",
           "reason": "自治体での母子保健DX・電子版母子健康手帳の導入に関する内容のため",
           "retired": false
+        },
+        {
+          "id": "vendor-trend",
+          "name": "ベンダ動向",
+          "origin": "source",
+          "reason": "情報源の設定：母子モ株式会社（プレスリリース、PR TIMES）の記事すべてに付けています",
+          "retired": false
         }
       ],
       "removed_tags": [],
@@ -890,6 +932,13 @@
           "name": "子育て支援",
           "origin": "ai",
           "reason": "子育て応援アプリを通じた子育て関連手続きの利便性向上に触れている",
+          "retired": false
+        },
+        {
+          "id": "vendor-trend",
+          "name": "ベンダ動向",
+          "origin": "source",
+          "reason": "情報源の設定：母子モ株式会社（プレスリリース、PR TIMES）の記事すべてに付けています",
           "retired": false
         }
       ],
@@ -2211,6 +2260,13 @@
           "origin": "ai",
           "reason": "自治体の予防接種事務のデジタル化・予防接種DXの取り組みを扱っているため。",
           "retired": false
+        },
+        {
+          "id": "vendor-trend",
+          "name": "ベンダ動向",
+          "origin": "source",
+          "reason": "情報源の設定：CMIC Trust 株式会社（NEWS）の記事すべてに付けています",
+          "retired": false
         }
       ],
       "removed_tags": [],
@@ -3305,6 +3361,13 @@
           "origin": "ai",
           "reason": "自治体の子育て関連手続のデジタル化(質問票・オンライン予約)と母子保健DXに関する内容である。",
           "retired": false
+        },
+        {
+          "id": "vendor-trend",
+          "name": "ベンダ動向",
+          "origin": "source",
+          "reason": "情報源の設定：母子モ株式会社（プレスリリース、PR TIMES）の記事すべてに付けています",
+          "retired": false
         }
       ],
       "removed_tags": [],
@@ -3416,6 +3479,13 @@
           "name": "自治体DX・標準化",
           "origin": "ai",
           "reason": "自治体への母子手帳アプリ導入と母子保健DXの推進、母子保健情報の連携に関する内容であるため。",
+          "retired": false
+        },
+        {
+          "id": "vendor-trend",
+          "name": "ベンダ動向",
+          "origin": "source",
+          "reason": "情報源の設定：母子モ株式会社（プレスリリース、PR TIMES）の記事すべてに付けています",
           "retired": false
         }
       ],
@@ -4978,6 +5048,13 @@
           "name": "自治体DX・標準化",
           "origin": "ai",
           "reason": "自治体の母子保健DX、妊娠届のデジタル化、母子保健情報の連携を扱っている。",
+          "retired": false
+        },
+        {
+          "id": "vendor-trend",
+          "name": "ベンダ動向",
+          "origin": "source",
+          "reason": "情報源の設定：母子モ株式会社（プレスリリース、PR TIMES）の記事すべてに付けています",
           "retired": false
         }
       ],
@@ -7282,6 +7359,13 @@
           "origin": "ai",
           "reason": "自治体での母子保健DX・電子版母子健康手帳アプリの導入と情報連携",
           "retired": false
+        },
+        {
+          "id": "vendor-trend",
+          "name": "ベンダ動向",
+          "origin": "source",
+          "reason": "情報源の設定：母子モ株式会社（プレスリリース、PR TIMES）の記事すべてに付けています",
+          "retired": false
         }
       ],
       "removed_tags": [],
@@ -7394,6 +7478,13 @@
           "name": "自治体DX・標準化",
           "origin": "ai",
           "reason": "自治体での電子版母子健康手帳の導入と母子保健DX、関係機関との母子保健情報連携に言及している",
+          "retired": false
+        },
+        {
+          "id": "vendor-trend",
+          "name": "ベンダ動向",
+          "origin": "source",
+          "reason": "情報源の設定：母子モ株式会社（プレスリリース、PR TIMES）の記事すべてに付けています",
           "retired": false
         }
       ],
@@ -7512,6 +7603,13 @@
           "name": "自治体DX・標準化",
           "origin": "ai",
           "reason": "自治体での母子手帳アプリ導入と母子保健情報のデジタル化・連携を扱うため",
+          "retired": false
+        },
+        {
+          "id": "vendor-trend",
+          "name": "ベンダ動向",
+          "origin": "source",
+          "reason": "情報源の設定：母子モ株式会社（プレスリリース、PR TIMES）の記事すべてに付けています",
           "retired": false
         }
       ],

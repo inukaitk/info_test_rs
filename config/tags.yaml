@@ -42,3 +42,10 @@ tags:
     description: 審議会・検討会・部会の開催案内、資料、議事録、報告書に関する情報。
     keywords: [審議会, 検討会, 部会, 議事録, 報告書]
     enabled: true
+  # ユーザー指示（2026-10-05）。AIには選ばせず、sources.yaml の fixed_tags で指定した情報源の記事すべてに、設定で付ける
+  - id: vendor-trend
+    name: ベンダ動向
+    description: ベンダ（民間のサービス・システム提供事業者）の製品・サービス・導入事例・出展などの動向に関する情報。
+    keywords: [ベンダ, 導入事例, 提供開始, 出展]
+    enabled: true
+    source_only: true

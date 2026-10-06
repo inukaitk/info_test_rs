@@ -68,8 +68,10 @@ def _latest_summary(summaries: list[dict]) -> dict | None:
 # ---------------------------------------------------------------- タグ
 
 
-def final_tags(ai_tags: list[dict] | None, override: dict | None, tag_defs: dict[str, dict]) -> list[dict]:
-    """画面に出すタグ = AIタグ ＋ 追加 － 除外。各タグに由来（ai / human）を付ける。"""
+def final_tags(ai_tags: list[dict] | None, override: dict | None, tag_defs: dict[str, dict],
+               fixed: list[dict] | None = None) -> list[dict]:
+    """画面に出すタグ = AIタグ ＋ 情報源の設定で付けるタグ ＋ 追加 － 除外。各タグに由来（ai / source / human）を付ける。
+    fixed は情報源の設定（fixed_tags）で付けるタグ（tag_id と reason）。AIの結果の有無にかかわらず付く。"""
     add = list((override or {}).get("add", []))
     remove = set((override or {}).get("remove", []))
     result = []
@@ -80,6 +82,12 @@ def final_tags(ai_tags: list[dict] | None, override: dict | None, tag_defs: dict
             continue
         seen.add(tag_id)
         result.append(_tag_entry(tag_id, "ai", tag["reason"], tag_defs))
+    for tag in fixed or []:
+        tag_id = tag["tag_id"]
+        if tag_id in remove or tag_id in seen:
+            continue
+        seen.add(tag_id)
+        result.append(_tag_entry(tag_id, "source", tag["reason"], tag_defs))
     for tag_id in add:
         if tag_id in seen or tag_id in remove:
             continue
@@ -99,14 +107,21 @@ def _tag_entry(tag_id: str, origin: str, reason: str | None, tag_defs: dict[str,
     }
 
 
-def removed_tags(ai_tags: list[dict] | None, override: dict | None, tag_defs: dict[str, dict]) -> list[dict]:
-    """AIが付けたが人が除外したタグ（記事詳細で「除外」と表示するため）。"""
+def removed_tags(ai_tags: list[dict] | None, override: dict | None, tag_defs: dict[str, dict],
+                 fixed: list[dict] | None = None) -> list[dict]:
+    """AIまたは情報源の設定で付くが、人が除外したタグ（記事詳細で「除外」と表示するため）。"""
     remove = set((override or {}).get("remove", []))
     return [
         {"id": t["tag_id"], "name": tag_defs.get(t["tag_id"], {}).get("name", t["tag_id"])}
-        for t in ai_tags or []
+        for t in [*(ai_tags or []), *(fixed or [])]
         if t["tag_id"] in remove
     ]
+
+
+def source_fixed_tags(source: dict | None) -> list[dict]:
+    """情報源の設定（fixed_tags）で、その情報源の記事すべてに付けるタグ。"""
+    name = source["name"] if source else ""
+    return [{"tag_id": tag_id, "reason": f"情報源の設定：{name}の記事すべてに付けています"} for tag_id in (source or {}).get("fixed_tags", [])]
 
 
 # ---------------------------------------------------------------- 変換（allowlist）
@@ -154,6 +169,7 @@ def build_articles(article_files: list[dict], summary_files: list[dict], config:
     overrides = {o["article_id"]: o for o in config.tag_overrides["overrides"]}
     tag_defs = {t["id"]: t for t in config.tags["tags"]}
     source_names = {s["id"]: s["name"] for s in config.sources["sources"]}
+    sources_by_id = {s["id"]: s for s in config.sources["sources"]}
 
     result = []
     for file in article_files:
@@ -162,6 +178,7 @@ def build_articles(article_files: list[dict], summary_files: list[dict], config:
         summary = _latest_summary(summaries_by_id.get(article_id, []))
         ai_tags = summary["ai_tags"] if summary and summary["analysis_status"] == "success" else None
         override = overrides.get(article_id)
+        fixed = source_fixed_tags(sources_by_id.get(article["source_id"]))
         latest = versions[-1]
         result.append({
             "id": article_id,
@@ -188,8 +205,8 @@ def build_articles(article_files: list[dict], summary_files: list[dict], config:
                 for att in latest.get("attachments", [])
             ],
             "summary": _public_summary(summary, article["latest_version"]),
-            "tags": final_tags(ai_tags, override, tag_defs),
-            "removed_tags": removed_tags(ai_tags, override, tag_defs),
+            "tags": final_tags(ai_tags, override, tag_defs, fixed),
+            "removed_tags": removed_tags(ai_tags, override, tag_defs, fixed),
             "tag_override_reason": override.get("reason") if override else None,
         })
     result.sort(key=lambda a: (a["published"]["value"] or "", a["first_seen_at"]), reverse=True)

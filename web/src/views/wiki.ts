@@ -2,6 +2,7 @@
 import { h } from "../dom";
 import { formatDate, formatPartialDate } from "../format";
 import type { Article, SiteData } from "../types";
+import { ORIGIN_TEXT } from "./tags";
 
 function articlesWithTag(data: SiteData, tagId: string): Article[] {
   return data.articles.filter((a) => a.tags.some((t) => t.id === tagId));
@@ -58,7 +59,7 @@ export function wikiTagView(data: SiteData, tagId: string): HTMLElement {
       h("span", { class: "wiki-date" }, formatDate(a.published)),
       h("a", { href: `#/articles/${encodeURIComponent(a.id)}` }, a.title),
       h("span", { class: "muted" }, `　${a.source_name}`),
-      h("span", { class: `origin origin-${t.origin}` }, t.origin === "ai" ? "AI" : "人が追加"),
+      h("span", { class: `origin origin-${t.origin}` }, ORIGIN_TEXT[t.origin]),
     );
   };
 

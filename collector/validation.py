@@ -135,6 +135,11 @@ class Config:
     def enabled_tag_ids(self) -> set[str]:
         return {t["id"] for t in self.tags.get("tags", []) if t.get("enabled")}
 
+    @property
+    def ai_tags(self) -> list[dict]:
+        """AIが選べるタグ（有効で、情報源の設定でだけ付ける `source_only` ではないもの）。"""
+        return [t for t in self.tags.get("tags", []) if t.get("enabled") and not t.get("source_only")]
+
 
 def _duplicates(values: list) -> list:
     seen, dups = set(), []
@@ -185,6 +190,7 @@ def validate_config(
     )
     _check_sources(config, report)
     _check_tags(config, report)
+    _check_source_fixed_tags(config, report)
     _check_overrides(config, report)
     return config, report
 
@@ -213,6 +219,16 @@ def _check_tags(config: Config, report: Report) -> None:
         report.add(where, [f"タグid {dup!r} が重複しています"])
     for dup in _duplicates([t["name"] for t in tags]):
         report.add(where, [f"タグ名 {dup!r} が重複しています"])
+
+
+def _check_source_fixed_tags(config: Config, report: Report) -> None:
+    where = "config/sources.yaml"
+    for s in config.sources["sources"]:
+        for tag_id in s.get("fixed_tags", []):
+            if tag_id not in config.tag_ids:
+                report.add(where, [f"{s['id']}: fixed_tags の未登録のタグid {tag_id!r} です"])
+            elif tag_id not in config.enabled_tag_ids:
+                report.add(where, [f"{s['id']}: fixed_tags の廃止済みのタグ {tag_id!r} は指定できません"])
 
 
 def _check_overrides(config: Config, report: Report) -> None:

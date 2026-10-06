@@ -59,9 +59,9 @@ SYSTEM_PROMPT = """あなたは日本の中央官庁・公的機関が公開し�
 
 
 def tags_version(config: Config) -> str:
-    """有効なタグ定義の hash。タグを追加・変更すると変わり、再処理の対象になる。"""
+    """AIが選べる（有効で、source_only でない）タグ定義の hash。それらを追加・変更すると変わり、再処理の対象になる。"""
     tags = sorted(
-        ({"id": t["id"], "name": t["name"], "description": t["description"]} for t in config.tags["tags"] if t["enabled"]),
+        ({"id": t["id"], "name": t["name"], "description": t["description"]} for t in config.ai_tags),
         key=lambda t: t["id"],
     )
     return "sha256:" + hashlib.sha256(json.dumps(tags, ensure_ascii=False, sort_keys=True).encode("utf-8")).hexdigest()
@@ -171,7 +171,7 @@ def validate_output(text: str | None, tag_ids: list[str], source_text: str) -> t
 
 
 def build_user_message(article: dict, text: str, config: Config, truncated: bool) -> str:
-    tags = [t for t in config.tags["tags"] if t["enabled"]]
+    tags = config.ai_tags
     tag_lines = "\n".join(f"- {t['id']}: {t['name']}（{t['description']}）" for t in tags)
     # 本文の中に区切り記号があっても抜け出せないようにする
     safe = text.replace("<document", "＜document").replace("</document", "＜/document")
@@ -278,7 +278,7 @@ def summarize(config: Config, data_dir: Path, cache_dir: Path, provider: Provide
     limits = ai["limits"]
     model = provider.model if provider else ai["model"]
     tags_ver = tags_version(config)
-    tag_ids = [t["id"] for t in config.tags["tags"] if t["enabled"]]
+    tag_ids = [t["id"] for t in config.ai_tags]
     schema = output_schema(tag_ids)
     now_ts = now.astimezone(JST).isoformat(timespec="seconds")
     outcome = Outcome()

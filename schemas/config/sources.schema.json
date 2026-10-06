@@ -211,6 +211,14 @@
               "description": "読まない資料のリンク文字（正規表現）。例 座席図"
             }
           }
+        },
+        "fixed_tags": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/slug_id"
+          },
+          "description": "この情報源の記事すべてに付けるタグのid（登録済みで有効なもの）。AIの判断ではなく設定で付けるため、画面では「設定」と区別して表示する"
         }
       }
     }

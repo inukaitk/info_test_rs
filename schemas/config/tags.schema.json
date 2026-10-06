@@ -17,7 +17,8 @@
           "name": { "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/nonempty_text" },
           "description": { "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/nonempty_text" },
           "keywords": { "type": "array", "uniqueItems": true, "items": { "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/nonempty_text" } },
-          "enabled": { "type": "boolean", "description": "falseで廃止。過去の記事に付いた記録は残す" }
+          "enabled": { "type": "boolean", "description": "falseで廃止。過去の記事に付いた記録は残す" },
+          "source_only": { "type": "boolean", "description": "trueなら、AIには選ばせず、情報源の設定（sources.yaml の fixed_tags）でだけ付ける。省略はfalse" }
         }
       }
     }

@@ -408,7 +408,8 @@
                 "origin": {
                   "enum": [
                     "ai",
-                    "human"
+                    "human",
+                    "source"
                   ]
                 },
                 "reason": {
