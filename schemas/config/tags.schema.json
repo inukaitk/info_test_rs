@@ -18,7 +18,20 @@
           "description": { "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/nonempty_text" },
           "keywords": { "type": "array", "uniqueItems": true, "items": { "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/nonempty_text" } },
           "enabled": { "type": "boolean", "description": "falseで廃止。過去の記事に付いた記録は残す" },
-          "source_only": { "type": "boolean", "description": "trueなら、AIには選ばせず、情報源の設定（sources.yaml の fixed_tags）でだけ付ける。省略はfalse" }
+          "rule_only": { "type": "boolean", "description": "trueなら、AIには選ばせず、設定（sources.yaml の fixed_tags）とルール（auto_rules）でだけ付ける。省略はfalse" },
+          "auto_rules": {
+            "type": "array",
+            "description": "題名・本文にこの言葉（正規表現）があれば、この記事にこのタグを付けるルール。AIではなく、決まったルールで判定する（rule_only のタグだけに指定できる）",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["label", "pattern"],
+              "properties": {
+                "label": { "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/nonempty_text", "description": "理由として画面に出す名前（例：ベンダ名）" },
+                "pattern": { "type": "string", "minLength": 1, "description": "全角・半角と大文字・小文字を区別せず、題名と本文から探す正規表現" }
+              }
+            }
+          }
         }
       }
     }

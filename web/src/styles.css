@@ -63,6 +63,8 @@ table { border-collapse: collapse; width: 100%; background: var(--panel); }
 .tag-human .tag-origin { background: #ecd1a5; }
 .tag-source { background: #eef0f2; color: #3d4349; border-color: #cfd4d9; border-style: dotted; }
 .tag-source .tag-origin { background: #cfd4d9; }
+.tag-rule { background: #eef4ea; color: #2f4a26; border-color: #c9dcc0; border-style: dashed; }
+.tag-rule .tag-origin { background: #c9dcc0; }
 .tag-retired { opacity: 0.6; }
 .tag-removed { background: #eee; color: #888; text-decoration: line-through; }
 .muted { color: var(--muted); }
@@ -116,6 +118,7 @@ button.secondary { background: #fff; color: var(--accent); border: 1px solid var
 .wiki-date { display: inline-block; min-width: 10em; color: var(--muted); font-size: 0.9rem; }
 .origin { margin-left: 8px; font-size: 0.72rem; padding: 0 5px; border-radius: 3px; }
 .origin-ai { background: var(--ai); color: var(--ai-text); }
+.origin-rule { background: #eef4ea; color: #2f4a26; border: 1px dashed #c9dcc0; }
 .origin-source { background: #eef0f2; color: #3d4349; border: 1px dotted #cfd4d9; }
 .origin-human { background: var(--human); color: var(--human-text); border: 1px dashed #ecd1a5; }
 .badge.retired { background: #ddd; color: #555; margin-left: 6px; }

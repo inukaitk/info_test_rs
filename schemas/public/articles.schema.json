@@ -409,7 +409,8 @@
                   "enum": [
                     "ai",
                     "human",
-                    "source"
+                    "source",
+                    "rule"
                   ]
                 },
                 "reason": {

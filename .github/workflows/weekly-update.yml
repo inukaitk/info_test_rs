@@ -64,6 +64,10 @@ jobs:
           INFO_AI_API_KEY: ${{ secrets.INFO_AI_API_KEY }}
         run: python -m collector.summarize
 
+      # 題名・本文に決まった言葉（ベンダ名など）がある記事に、ルールでタグを付ける。AIは使わず、費用はかからない
+      - name: ルール（キーワード一致）でタグを付ける
+        run: python -m collector.rule_tags
+
       - name: 画面用データと週次レポートを作る
         run: |
           python -m collector.validate

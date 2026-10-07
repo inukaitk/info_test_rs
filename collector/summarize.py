@@ -59,7 +59,7 @@ SYSTEM_PROMPT = """あなたは日本の中央官庁・公的機関が公開し�
 
 
 def tags_version(config: Config) -> str:
-    """AIが選べる（有効で、source_only でない）タグ定義の hash。それらを追加・変更すると変わり、再処理の対象になる。"""
+    """AIが選べる（有効で、rule_only でない）タグ定義の hash。それらを追加・変更すると変わり、再処理の対象になる。"""
     tags = sorted(
         ({"id": t["id"], "name": t["name"], "description": t["description"]} for t in config.ai_tags),
         key=lambda t: t["id"],

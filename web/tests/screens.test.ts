@@ -192,7 +192,7 @@ describe("CSV", () => {
     expect(csv.charCodeAt(0)).toBe(0xfeff);
     const [header, row] = csv.slice(1).trim().split("\r\n");
     expect(header.split(",")).toContain("人が追加したタグ");
-    expect(row).toContain("母子保健,,子育て支援,調査・統計"); // AIタグ、設定で付けたタグ（なし）、人が追加、人が除外
+    expect(row).toContain("母子保健,,,子育て支援,調査・統計"); // AIタグ、設定で付けたタグ（なし）、ルールで付けたタグ（なし）、人が追加、人が除外
   });
 });
 
@@ -217,14 +217,29 @@ describe("情報源の設定で付けるタグ（ベンダ動向）", () => {
     expect(detailView(site([article()]), article().id).textContent).not.toContain("情報源の設定で付与");
   });
 
+  it("ルール（キーワード一致）のタグは「一致」と表示し、記事詳細に「ルールで付与」の欄とその理由を出す", () => {
+    const rule = { ...vendor, origin: "rule" as const, reason: "ルール（キーワード一致）：「ミラボ」（本文）が見つかりました" };
+    const chip = tagChip(rule);
+    expect(chip.textContent).toBe("一致ベンダ動向");
+    expect(chip.className).toContain("tag-rule");
+    expect(chip.getAttribute("title")).toContain("ルール（キーワード一致）で付与");
+    const a = article({ tags: [rule] });
+    const text = detailView(site([a]), a.id).textContent!;
+    expect(text).toContain("ルールで付与");
+    expect(text).toContain("「ミラボ」（本文）が見つかりました");
+    expect(text).not.toContain("情報源の設定で付与");
+  });
+
   it("CSVには「設定で付けたタグ」の列を別に出す", () => {
-    const csv = articlesToCsv([article({ tags: [vendor, { id: "maternal-child-health", name: "母子保健", origin: "ai", reason: "r", retired: false }] })]);
+    const csv = articlesToCsv([article({ tags: [vendor, { id: "maternal-child-health", name: "母子保健", origin: "ai", reason: "r", retired: false },
+      { id: "childcare-support", name: "子育て支援", origin: "rule", reason: "r", retired: false }] })]);
     const [header, row] = csv.slice(1).trim().split("\r\n");
     const cols = header.split(",");
     const cells = row.split(",");
     expect(cols).toContain("設定で付けたタグ");
     expect(cells[cols.indexOf("AIタグ")]).toBe("母子保健");
     expect(cells[cols.indexOf("設定で付けたタグ")]).toBe("ベンダ動向");
+    expect(cells[cols.indexOf("ルールで付けたタグ")]).toBe("子育て支援");
   });
 });
 

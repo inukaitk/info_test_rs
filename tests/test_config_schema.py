@@ -56,10 +56,10 @@ def test_tags_follow_spec_examples():
     }
 
 
-def test_vendor_trend_tag_is_source_only_and_fixed_on_the_four_vendor_sources():
+def test_vendor_trend_tag_is_rule_only_and_fixed_on_the_four_vendor_sources():
     tags = {t["id"]: t for t in read_yaml(REPO_ROOT / "config" / "tags.yaml")["tags"]}
-    assert tags["vendor-trend"]["name"] == "ベンダ動向" and tags["vendor-trend"]["source_only"] is True
-    assert not any(t.get("source_only") for tid, t in tags.items() if tid != "vendor-trend")
+    assert tags["vendor-trend"]["name"] == "ベンダ動向" and tags["vendor-trend"]["rule_only"] is True
+    assert not any(t.get("rule_only") for tid, t in tags.items() if tid != "vendor-trend")
     fixed = {s["id"] for s in read_yaml(REPO_ROOT / "config" / "sources.yaml")["sources"] if "vendor-trend" in s.get("fixed_tags", [])}
     assert fixed == {"cmic-trust-news", "mchh-prtimes", "milabo-news", "ryobi-neuvola-karte"}
 

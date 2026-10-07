@@ -109,21 +109,21 @@ def test_tag_definition_change_triggers_reprocessing(config, env, tmp_path):
     assert len(sm.find_targets(env[0], env[1], cfg2, "mock-model")) == 4
 
 
-def test_source_only_tag_is_not_offered_to_the_ai_and_does_not_change_tags_version(config, env, tmp_path):
+def test_rule_only_tag_is_not_offered_to_the_ai_and_does_not_change_tags_version(config, env, tmp_path):
     base = sm.tags_version(config)
     changed = tmp_path / "changed"
     changed.mkdir()
     (changed / "sources.yaml").write_bytes((OVERLAY / "sources.yaml").read_bytes())
     tags = read_yaml(CONFIG_DIR / "tags.yaml")
-    tags["tags"].append({"id": "extra-source-only", "name": "設定だけのタグ", "description": "説明", "enabled": True, "source_only": True})
+    tags["tags"].append({"id": "extra-source-only", "name": "設定だけのタグ", "description": "説明", "enabled": True, "rule_only": True})
     write_yaml(changed / "tags.yaml", tags)
     cfg2, report = validate_config(CONFIG_DIR, overlay_dir=changed)
     assert report.errors == []
-    assert sm.tags_version(cfg2) == base, "source_only のタグを足しても、既存の要約は再処理にならない"
+    assert sm.tags_version(cfg2) == base, "rule_only のタグを足しても、既存の要約は再処理にならない"
     assert "vendor-trend" not in [t["id"] for t in config.ai_tags]
     message = sm.build_user_message({"title": "t", "canonical_url": "https://x.example.org/", "published_at": None}, "本文", cfg2, False)
     assert "extra-source-only" not in message and "vendor-trend" not in message
-    # AIが source_only のタグを返しても、登録外として拒否される
+    # AIが rule_only のタグを返しても、登録外として拒否される
     ai_ids = [t["id"] for t in cfg2.ai_tags]
     out = json.dumps({"summary": "概要", "key_points": [], "targets": [], "dates": [],
                       "ai_tags": [{"tag_id": "vendor-trend", "reason": "理由"}], "new_tag_suggestions": [], "uncertainties": []}, ensure_ascii=False)
