@@ -147,9 +147,9 @@ describe("ルーティングと表示形式", () => {
 });
 
 describe("最新情報（直近の公開日）", () => {
-  const pub = (id: string, published: string | null, title: string, firstSeen = "2026-09-28T08:00:00+09:00") =>
+  const pub = (id: string, published: string | null, title: string, firstSeen = "2026-09-28T08:00:00+09:00", precision = "day") =>
     article({ id, first_seen_at: firstSeen, title,
-      published: published ? { value: published, precision: "day", basis: null } : { value: null, precision: "unknown", basis: null } });
+      published: published ? { value: published, precision: precision as "day", basis: null } : { value: null, precision: "unknown", basis: null } });
   const articles = [
     pub("a_0000000000000001", "2026-09-28", "【架空】当日に公開"),
     pub("a_0000000000000002", "2026-09-22", "【架空】7日前（範囲の初日）"),
@@ -157,20 +157,33 @@ describe("最新情報（直近の公開日）", () => {
     pub("a_0000000000000004", null, "【架空】日付不明だが最近見つけた", "2026-09-27T08:00:00+09:00"),
     pub("a_0000000000000005", null, "【架空】日付不明で古い取得", "2026-09-10T08:00:00+09:00"),
     pub("a_0000000000000006", "2026-08-01", "【架空】古い公開日だが今週初めて取得", "2026-09-28T08:00:00+09:00"),
+    pub("a_0000000000000007", "2026-09", "【架空】月までしか分からない", "2026-09-28T08:00:00+09:00", "month"),
+    pub("a_0000000000000008", "2026-09-25T10:30:00+09:00", "【架空】時刻つきの公開日（期間内）", "2026-09-28T08:00:00+09:00", "datetime"),
+    pub("a_0000000000000009", "2026-09-01T10:30:00+09:00", "【架空】時刻つきの公開日（期間外）。取得は今週", "2026-09-28T08:00:00+09:00", "datetime"),
+    pub("a_000000000000000a", "2026-09-21T16:00:00+00:00", "【架空】UTCでは前日、日本時間では期間の初日", "2026-09-28T08:00:00+09:00", "datetime"),
   ];
 
-  it("最終収集日を含む直近7日間に公開された記事だけを出す（取得日ではなく公開日で判定）", () => {
+  it("最終収集日を含む直近7日間に公開された記事だけを出す（取得日ではなく、公開日の日本時間の日付で判定）", () => {
     const el = latestView(site(articles));
     const text = el.textContent!;
     expect(text).toContain("当日に公開");
     expect(text).toContain("7日前（範囲の初日）");
+    expect(text).toContain("時刻つきの公開日（期間内）");
+    expect(text).toContain("UTCでは前日、日本時間では期間の初日");
     expect(text).not.toContain("8日前（範囲外）");
     expect(text).not.toContain("古い公開日だが今週初めて取得");
-    expect(text).toContain("日付不明だが最近見つけた");
-    expect(text).not.toContain("日付不明で古い取得");
+    expect(text).not.toContain("時刻つきの公開日（期間外）");
     expect(text).toContain("2026年9月22日〜2026年9月28日");
-    expect(text).toContain("3件");
+    expect(text).toContain("4件");
     expect(el.querySelector('a[href="#/search"]')).not.toBeNull();
+  });
+
+  it("日付不明・月までしか分からない記事は、取得日で代用せず、表示しない。件数を別に知らせる", () => {
+    const text = latestView(site(articles)).textContent!;
+    for (const hidden of ["日付不明だが最近見つけた", "日付不明で古い取得", "月までしか分からない"]) expect(text).not.toContain(hidden);
+    expect(text).toContain("公開日が日まで分からない記事 3件は、ここには表示していません");
+    // 日付不明がなければ、案内は出さない
+    expect(latestView(site(articles.slice(0, 3))).textContent).not.toContain("ここには表示していません");
   });
 
   it("日数は設定で変えられる", () => {

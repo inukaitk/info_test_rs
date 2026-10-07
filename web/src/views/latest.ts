@@ -1,7 +1,7 @@
-// 最新情報：公開日が直近 latest_days 日（最終収集日を含む）の記事（日付不明・月のみの記事は取得日で数える）。
+// 最新情報：公開日が直近 latest_days 日（最終収集日を含む）の記事。公開日が日まで分からない記事は含めない（件数だけ知らせる）。
 // それより前の記事は「記事を探す」（全期間の絞り込み・検索）と Wiki で見る。
 import { h } from "../dom";
-import { latestArticles, latestWindow } from "../filters";
+import { countUndatedForLatest, latestArticles, latestWindow } from "../filters";
 import { formatDateTime, formatPartialDate } from "../format";
 import type { SiteData } from "../types";
 import { correctionLink } from "./layout";
@@ -12,6 +12,7 @@ export function latestView(data: SiteData, now: Date = new Date()): HTMLElement 
   const { meta } = data;
   const window = latestWindow(meta.data_as_of, meta.latest_days);
   const articles = latestArticles(data.articles, window);
+  const undated = countUndatedForLatest(data.articles);
 
   const period = window
     ? h(
@@ -38,6 +39,9 @@ export function latestView(data: SiteData, now: Date = new Date()): HTMLElement 
     h("h1", {}, "最新情報"),
     summary,
     period,
+    undated > 0
+      ? h("p", { class: "note" }, `公開日が日まで分からない記事 ${undated}件は、ここには表示していません。`, h("a", { href: "#/search" }, "記事を探す"), "で確認できます（期間の絞り込みを外すと表示されます）。")
+      : null,
     articles.length ? articleTable(articles) : h("p", { class: "empty" }, "この期間に公開された記事はありません。"),
     h(
       "p",

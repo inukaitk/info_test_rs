@@ -83,6 +83,15 @@ describe("週次レポート", () => {
     expect(el.querySelector("img")).toBeNull();
   });
 
+  it("公開日が日まで分からない記事は数えず、数えていない件数と、数えない旨を出す", () => {
+    const w = week();
+    const data = site([], {}, { reports: [{ ...w, counts: { ...w.counts, date_unknown: 2 } }] });
+    const text = reportView(data, null, () => {}).textContent!;
+    expect(text).toContain("公開日が日まで分からない記事は数えない");
+    expect(text).toContain("公開日不明のため数えていない記事（この期間に見つけたもの）2件");
+    expect(text).not.toContain("うち日付不明");
+  });
+
   it("期間を選べる（指定がなければ最新の週）", () => {
     const older = week({ id: "2026-09-15_2026-09-21", from: "2026-09-15", to: "2026-09-21" });
     const data = site([], {}, { reports: [week(), older] });

@@ -62,7 +62,8 @@
               },
               "date_unknown": {
                 "type": "integer",
-                "minimum": 0
+                "minimum": 0,
+                "description": "公開日が日まで分からないため、新規・変更に数えていない記事のうち、この期間に見つけたものの数"
               },
               "unsummarized": {
                 "type": "integer",

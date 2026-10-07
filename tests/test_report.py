@@ -36,9 +36,15 @@ def test_weeks_end_at_last_collection(weeks):
     ]
 
 
-def test_every_article_is_new_in_exactly_one_week(weeks, outputs):
+def test_every_dated_article_is_new_in_exactly_one_week_and_undated_ones_are_not_counted(weeks, outputs):
     ids = [i["id"] for w in weeks for i in w["new"]]
-    assert sorted(ids) == sorted(a["id"] for a in outputs["articles.json"]["articles"])
+    articles = outputs["articles.json"]["articles"]
+    dated = sorted(a["id"] for a in articles if rp.published_day(a) is not None)
+    assert sorted(ids) == dated, "公開日が日まで分かる記事は、ちょうど1つの週の新規になる"
+    undated = [a for a in articles if rp.published_day(a) is None]
+    assert undated, "デモデータには、公開日が日まで分からない記事がある"
+    assert not set(ids) & {a["id"] for a in undated}
+    assert sum(w["counts"]["date_unknown"] for w in weeks) <= len(undated)
 
 
 def test_changed_articles(weeks):
@@ -91,30 +97,44 @@ def test_markdown_escapes_titles():
     assert "架空データ" not in text
 
 
-def test_basis_date_prefers_published_day():
-    seen = "2026-10-05T09:00:00+09:00"
-    assert rp.basis_date({"published": {"value": "2026-09-17"}, "first_seen_at": seen}) == date(2026, 9, 17)
-    # 日付不明・月のみ・年のみは、取得日で数える
+def test_published_day_reads_timestamps_as_japan_time_and_ignores_unknown_or_partial():
+    assert rp.published_day({"published": {"value": "2026-09-17"}}) == date(2026, 9, 17)
+    assert rp.published_day({"published": {"value": "2026-09-01T12:00:02+09:00"}}) == date(2026, 9, 1)
+    assert rp.published_day({"published": {"value": "2026-09-21T16:00:00+00:00"}}) == date(2026, 9, 22), "UTCの夕方は日本時間では翌日"
     for value in (None, "2026-09", "2026"):
-        assert rp.basis_date({"published": {"value": value}, "first_seen_at": seen}) == date(2026, 10, 5)
+        assert rp.published_day({"published": {"value": value}}) is None
 
 
-def test_backfilled_old_articles_do_not_count_as_new_this_week():
-    article = lambda i, pub: {  # noqa: E731
+def test_undated_articles_are_not_counted_and_only_reported_as_not_counted():
+    article = lambda i, pub, seen="2026-10-05T09:00:00+09:00", versions=(): {  # noqa: E731
         "id": i, "title": i, "url": "https://a.example.org/" + i, "source_name": "s",
-        "published": {"value": pub}, "first_seen_at": "2026-10-05T09:00:00+09:00",
-        "versions": [], "tags": [], "summary": {"status": "success"}}
-    articles = [article("old", "2026-09-01"), article("recent", "2026-10-02"), article("unknown", None)]
+        "published": {"value": pub}, "first_seen_at": seen, "versions": list(versions), "tags": [], "summary": {"status": "success"}}
+    changed = [{"version": 2, "change_type": "content_changed", "fetched_at": "2026-10-04T09:00:00+09:00"}]
+    articles = [
+        article("old", "2026-09-01"),                                  # 公開日が期間より前：取得が今週でも数えない
+        article("recent", "2026-10-02"),
+        article("timestamp", "2026-10-03T23:30:00+09:00"),             # 時刻つきは日本時間の日付で数える
+        article("unknown", None),                                      # 日付不明：数えない
+        article("month-only", "2026-10"),                              # 月だけ：数えない
+        article("unknown-changed", None, versions=changed),            # 日付不明で本文が変わった：変更にも数えない
+        article("old-changed", "2026-08-01", versions=changed),        # 公開日は古いが、今週本文が変わった：変更に数える
+        article("unknown-seen-before", None, seen="2026-09-01T09:00:00+09:00"),
+    ]
     meta = {"tags": [], "sources": []}
     week = rp.build_week(date(2026, 9, 29), date(2026, 10, 5), meta, articles, {"runs": []})
-    assert [i["id"] for i in week["new"]] == ["unknown", "recent"]  # 並びは集計に使う日の新しい順
-    assert week["counts"]["new"] == 2 and week["counts"]["date_unknown"] == 1
-    # 週の一覧は、公開日が最も古い記事の週まで作られる
-    assert rp.week_windows("2026-10-05T09:00:00+09:00", articles)[-1][0] <= date(2026, 9, 1)
+    assert [i["id"] for i in week["new"]] == ["timestamp", "recent"]  # 公開日の新しい順
+    assert [i["id"] for i in week["changed"]] == ["old-changed"]
+    assert week["counts"]["new"] == 2 and week["counts"]["changed"] == 1
+    # 数えていない件数は、この期間に見つけた日付不明の記事だけ（前の週に見つけたものは含めない）
+    assert week["counts"]["date_unknown"] == 3
+    # 週の一覧は、公開日が最も古い記事の週まで作られる（日付不明の記事の取得日では延ばさない）
+    assert rp.week_windows("2026-10-05T09:00:00+09:00", articles)[-1][0] <= date(2026, 8, 1)
+    only_unknown = [article("u", None, seen="2026-01-01T09:00:00+09:00")]
+    assert len(rp.week_windows("2026-10-05T09:00:00+09:00", only_unknown)) == 1
 
 
 def test_week_windows_limit():
-    articles = [{"first_seen_at": "2025-01-01T08:00:00+09:00"}]
+    articles = [{"published": {"value": "2025-01-01"}, "first_seen_at": "2025-01-01T08:00:00+09:00"}]
     assert len(rp.week_windows("2026-09-28T08:00:00+09:00", articles)) == rp.MAX_WEEKS
     assert rp.week_windows(None, articles) == []
 
