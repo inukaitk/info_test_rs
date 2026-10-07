@@ -55,6 +55,12 @@
       "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
       "tags": []
     },
+    "a_2b04e6bc3f4187da": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
     "a_2c482fb7123f06ce": {
       "article_version": 1,
       "scope": "body",
@@ -112,6 +118,12 @@
       ]
     },
     "a_408bd98dc7782cd5": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
+    "a_41af1f531ea454e3": {
       "article_version": 1,
       "scope": "body",
       "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
@@ -369,6 +381,12 @@
         }
       ]
     },
+    "a_bbc8f15415b0b677": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
     "a_c666c624f85d6ef2": {
       "article_version": 1,
       "scope": "body",
@@ -397,6 +415,12 @@
     },
     "a_c940b0c5e054384f": {
       "article_version": 3,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
+    "a_ca7411e34a45cbfb": {
+      "article_version": 1,
       "scope": "body",
       "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
       "tags": []
@@ -445,7 +469,7 @@
       "tags": []
     },
     "a_e00e213ea8afe326": {
-      "article_version": 1,
+      "article_version": 2,
       "scope": "body",
       "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
       "tags": []

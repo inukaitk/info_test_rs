@@ -1,16 +1,16 @@
 {
   "schema_version": 1,
   "article": {
-    "article_id": "a_80f10594f52f9edf",
+    "article_id": "a_41af1f531ea454e3",
     "source_id": "cfa-news",
-    "canonical_url": "https://www.cfa.go.jp/speech/6b7e57d9",
-    "title": "中司大臣記者会見（令和8年9月29日）",
-    "published_at": "2026-09-29",
+    "canonical_url": "https://www.cfa.go.jp/speech/15435bb4",
+    "title": "中司大臣記者会見（令和8年10月6日）",
+    "published_at": "2026-10-06",
     "updated_at": null,
     "date_basis": {
       "published": {
         "method": "listing_text",
-        "evidence": "<time datetime=\"2026-09-29\">2026年9月29日</time>"
+        "evidence": "<time datetime=\"2026-10-06\">2026年10月6日</time>"
       },
       "updated": null
     },
@@ -18,7 +18,7 @@
       "published": "day",
       "updated": "unknown"
     },
-    "first_seen_at": "2026-10-05T10:14:31+09:00",
+    "first_seen_at": "2026-10-07T11:50:38+09:00",
     "last_seen_at": "2026-10-07T11:50:38+09:00",
     "latest_version": 1,
     "status": "active"
@@ -26,16 +26,16 @@
   "versions": [
     {
       "extraction_profile": "html+pdf(3files,30pages,exclude:座席|席次)",
-      "article_id": "a_80f10594f52f9edf",
+      "article_id": "a_41af1f531ea454e3",
       "version": 1,
-      "content_hash": "sha256:839fa1c09652632d773b0df27af53e6aa6a77003ca8ed1bbc18d17081ccd471e",
-      "fetched_at": "2026-10-05T10:14:31+09:00",
+      "content_hash": "sha256:21501c61bf356d284add2f91b95035cc990feb841f27200147ed735826e7fa01",
+      "fetched_at": "2026-10-07T11:50:38+09:00",
       "content_type": "html",
       "text_length": 66,
       "extraction_status": "ok",
       "extraction_error": null,
       "change_type": "new",
-      "export_hash": "097c27b071c6d2f21ccb7cee6d62e810bc48e588637399402c0e44229dd13d51",
+      "export_hash": "e635e9b0d9053b1115eede160b7a2349873184fd29251d4cdf85ec59cda49816",
       "export_hash_status": "ok",
       "export_hash_scope": "title+main_text"
     }

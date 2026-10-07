@@ -19,8 +19,8 @@
       "updated": "unknown"
     },
     "first_seen_at": "2026-10-05T10:14:31+09:00",
-    "last_seen_at": "2026-10-05T16:40:13+09:00",
-    "latest_version": 1,
+    "last_seen_at": "2026-10-07T11:50:38+09:00",
+    "latest_version": 2,
     "status": "active"
   },
   "versions": [
@@ -38,6 +38,50 @@
       "export_hash": "13314de23119bbb9e6526779a37b862c2ed8b345ba100c58852374f7695a80e8",
       "export_hash_status": "ok",
       "export_hash_scope": "title+main_text"
+    },
+    {
+      "extraction_profile": "html+pdf(3files,30pages,exclude:座席|席次)",
+      "attachments": [
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/5468bf4a-1931-49d1-aaa9-d05a1cdf2055/e1900207/20261006_councils_internet-kaigi_5468bf4a_01.pdf",
+          "title": "資料1　技術的保護手段の在り方について（PDF／2.9MB）",
+          "status": "ok",
+          "error": "先頭30ページだけを読み取りました（全37ページ）",
+          "text_length": 17888,
+          "pages": 37,
+          "pages_read": 30
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/5468bf4a-1931-49d1-aaa9-d05a1cdf2055/de755768/20261006_councils_internet-kaigi_5468bf4a_02.pdf",
+          "title": "参考資料1　第8回ワーキンググループでの委員提出意見（PDF／216KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 523,
+          "pages": 1,
+          "pages_read": 1
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/5468bf4a-1931-49d1-aaa9-d05a1cdf2055/5315542e/20261006_councils_internet-kaigi_5468bf4a_03.pdf",
+          "title": "参考資料2　第8回ワーキンググループ御議論のまとめ（PDF／580KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 1906,
+          "pages": 4,
+          "pages_read": 4
+        }
+      ],
+      "article_id": "a_e00e213ea8afe326",
+      "version": 2,
+      "content_hash": "sha256:960579e912626e480c78db54660c0d60d7013f304c277fea810c8b71659cd9e4",
+      "fetched_at": "2026-10-07T11:50:38+09:00",
+      "content_type": "html",
+      "text_length": 20697,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "content_changed",
+      "export_hash": "621160a8e21d164f492e4af426496b767952c867f34437ad965cb11ff7a90477",
+      "export_hash_status": "ok",
+      "export_hash_scope": "title+main_text+attachments"
     }
   ]
 }

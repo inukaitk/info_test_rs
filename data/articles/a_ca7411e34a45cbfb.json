@@ -1,0 +1,117 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_ca7411e34a45cbfb",
+    "source_id": "cfa-news",
+    "canonical_url": "https://www.cfa.go.jp/kinugawa",
+    "title": "国立きぬ川学院",
+    "published_at": "2026-10-07",
+    "updated_at": null,
+    "date_basis": {
+      "published": {
+        "method": "listing_text",
+        "evidence": "<time datetime=\"2026-10-07\">2026年10月7日</time>"
+      },
+      "updated": null
+    },
+    "date_precision": {
+      "published": "day",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-10-07T11:50:38+09:00",
+    "last_seen_at": "2026-10-07T11:50:38+09:00",
+    "latest_version": 1,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "extraction_profile": "html+pdf(3files,30pages,exclude:座席|席次)",
+      "attachments": [
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/12852fb5-7abe-4800-914b-8d20d57de449/733d4f10/20230401_kinugawa_18.pdf",
+          "title": "国立児童自立支援施設医務課医師の公募について（PDF／118KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 510,
+          "pages": 1,
+          "pages_read": 1
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/12852fb5-7abe-4800-914b-8d20d57de449/c44ef59f/20260827_kinugawa_59.pdf",
+          "title": "国立児童自立支援施設職員（児童自立支援専門員）の募集について（PDF／402KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 3995,
+          "pages": 5,
+          "pages_read": 5
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/12852fb5-7abe-4800-914b-8d20d57de449/63a4d55a/20261006_kinugawa_60.pdf",
+          "title": "国立児童自立支援施設職員（心理療法士）の募集について（PDF／443KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 2606,
+          "pages": 3,
+          "pages_read": 3
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/12852fb5-7abe-4800-914b-8d20d57de449/690db477/20230401_kinugawa_06.pdf",
+          "title": "「子どもから施設外での性的被害の開示があったときの対応」（PDF／1,069KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/12852fb5-7abe-4800-914b-8d20d57de449/4fc437d1/20230401_kinugawa_07.pdf",
+          "title": "「性暴力被害児への児童自立支援施設における支援に関する調査研究報告」（PDF／2,030KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/12852fb5-7abe-4800-914b-8d20d57de449/efdbad04/20230401_kinugawa_08.pdf",
+          "title": "「別冊図」（PDF／2,663KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/12852fb5-7abe-4800-914b-8d20d57de449/d7e071ea/20230401_kinugawa_09.pdf",
+          "title": "「性暴力被害児への児童自立支援施設における支援に関する調査研究報告（その2）（PDF／7,538KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/12852fb5-7abe-4800-914b-8d20d57de449/6e78fb74/20250421_kinugawa_49.pdf",
+          "title": "標準文書保存期間基準（保存期間表）（PDF／539KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        }
+      ],
+      "article_id": "a_ca7411e34a45cbfb",
+      "version": 1,
+      "content_hash": "sha256:df55f7ab0d3456f2dc3d74540fabc7655588a91ce385022a42fde31d6a618f7d",
+      "fetched_at": "2026-10-07T11:50:38+09:00",
+      "content_type": "html",
+      "text_length": 8193,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "new",
+      "export_hash": "cae441d27314b0711c16c5767f9a64fdffbaac68994c07bcbf32b2268b103762",
+      "export_hash_status": "ok",
+      "export_hash_scope": "title+main_text+attachments"
+    }
+  ]
+}

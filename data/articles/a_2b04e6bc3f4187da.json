@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_2b04e6bc3f4187da",
+    "source_id": "cfa-news",
+    "canonical_url": "https://www.cfa.go.jp/musashino/others",
+    "title": "その他",
+    "published_at": "2026-10-07",
+    "updated_at": null,
+    "date_basis": {
+      "published": {
+        "method": "listing_text",
+        "evidence": "<time datetime=\"2026-10-07\">2026年10月7日</time>"
+      },
+      "updated": null
+    },
+    "date_precision": {
+      "published": "day",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-10-07T11:50:38+09:00",
+    "last_seen_at": "2026-10-07T11:50:38+09:00",
+    "latest_version": 1,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "extraction_profile": "html+pdf(3files,30pages,exclude:座席|席次)",
+      "attachments": [
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/787013c0-01b8-4db6-8940-1d902dba01f3/590e8ff6/20230401_musashino_others_09.pdf",
+          "title": "国立児童自立支援施設医務課医師の公募について（PDF／118KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 510,
+          "pages": 1,
+          "pages_read": 1
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/787013c0-01b8-4db6-8940-1d902dba01f3/9dcdea7e/20260827_musashino_others_33.pdf",
+          "title": "国立児童自立支援施設職員（児童自立支援専門員）の募集について（PDF／402KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 3995,
+          "pages": 5,
+          "pages_read": 5
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/787013c0-01b8-4db6-8940-1d902dba01f3/40a611cf/20261006_musashino_others_34.pdf",
+          "title": "国立児童自立支援施設職員（心理療法士）の募集について（PDF／443KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 2606,
+          "pages": 3,
+          "pages_read": 3
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/787013c0-01b8-4db6-8940-1d902dba01f3/36470de0/20250421_musashino_others_21.pdf",
+          "title": "保存期間表（PDF／664KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/787013c0-01b8-4db6-8940-1d902dba01f3/6aaf06c1/20260108_musashino_others_27.pdf",
+          "title": "令和5年度受審結果（PDF／526KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        }
+      ],
+      "article_id": "a_2b04e6bc3f4187da",
+      "version": 1,
+      "content_hash": "sha256:960e288804f02eecd353b9f3e94010f998dec8c9fb3f489f053915e5ae370022",
+      "fetched_at": "2026-10-07T11:50:38+09:00",
+      "content_type": "html",
+      "text_length": 8067,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "new",
+      "export_hash": "dc3208a5de06f5f87b75166241696b078abb21ed3430d22de714891fec25152a",
+      "export_hash_status": "ok",
+      "export_hash_scope": "title+main_text+attachments"
+    }
+  ]
+}

@@ -2,6 +2,600 @@
   "schema_version": 1,
   "articles": [
     {
+      "id": "a_2b04e6bc3f4187da",
+      "source_id": "cfa-news",
+      "source_name": "こども家庭庁（新着・更新）",
+      "title": "その他",
+      "url": "https://www.cfa.go.jp/musashino/others",
+      "published": {
+        "value": "2026-10-07",
+        "precision": "day",
+        "basis": {
+          "method": "listing_text",
+          "evidence": "2026年10月7日"
+        }
+      },
+      "updated": {
+        "value": null,
+        "precision": "unknown",
+        "basis": null
+      },
+      "first_seen_at": "2026-10-07T11:50:38+09:00",
+      "last_seen_at": "2026-10-07T11:50:38+09:00",
+      "status": "active",
+      "content_status": "ok",
+      "content_error": null,
+      "latest_version": 1,
+      "versions": [
+        {
+          "version": 1,
+          "fetched_at": "2026-10-07T11:50:38+09:00",
+          "change_type": "new",
+          "extraction_status": "ok"
+        }
+      ],
+      "attachments": [
+        {
+          "title": "国立児童自立支援施設医務課医師の公募について（PDF／118KB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/787013c0-01b8-4db6-8940-1d902dba01f3/590e8ff6/20230401_musashino_others_09.pdf",
+          "status": "ok",
+          "note": null,
+          "pages": 1
+        },
+        {
+          "title": "国立児童自立支援施設職員（児童自立支援専門員）の募集について（PDF／402KB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/787013c0-01b8-4db6-8940-1d902dba01f3/9dcdea7e/20260827_musashino_others_33.pdf",
+          "status": "ok",
+          "note": null,
+          "pages": 5
+        },
+        {
+          "title": "国立児童自立支援施設職員（心理療法士）の募集について（PDF／443KB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/787013c0-01b8-4db6-8940-1d902dba01f3/40a611cf/20261006_musashino_others_34.pdf",
+          "status": "ok",
+          "note": null,
+          "pages": 3
+        },
+        {
+          "title": "保存期間表（PDF／664KB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/787013c0-01b8-4db6-8940-1d902dba01f3/36470de0/20250421_musashino_others_21.pdf",
+          "status": "skipped",
+          "note": "1記事あたりの上限（3件）を超えたため取得していません",
+          "pages": null
+        },
+        {
+          "title": "令和5年度受審結果（PDF／526KB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/787013c0-01b8-4db6-8940-1d902dba01f3/6aaf06c1/20260108_musashino_others_27.pdf",
+          "status": "skipped",
+          "note": "1記事あたりの上限（3件）を超えたため取得していません",
+          "pages": null
+        }
+      ],
+      "summary": {
+        "status": "success",
+        "error": null,
+        "version": 1,
+        "outdated": false,
+        "text": "国立武蔵野学院のその他ページ。見学の問い合わせ先、採用情報（医師公募、児童自立支援専門員約6名、心理療法士若干名の募集）、調達情報、保存期間基準、第三者評価結果、連絡先を掲載。採用日は令和9年4月1日予定。",
+        "key_points": [
+          "見学希望者は調査課へ電話で問い合わせる（見学申込書・見学者名簿の様式あり）",
+          "医務課医師（常勤）は若干名を随時受付、試験日は別途連絡",
+          "児童自立支援専門員は6名程度、応募期間は令和8年8月27日〜10月16日17時必着、試験日は10月26日",
+          "心理療法士は若干名、応募期間は令和8年10月9日〜11月27日17時必着、試験日は12月9日",
+          "応募者は特定性犯罪事実該当者に該当しない旨の誓約書の提出が必要"
+        ],
+        "targets": [
+          "国立武蔵野学院の見学希望者",
+          "児童自立支援施設の職員応募希望者（医師、児童自立支援専門員、心理療法士）"
+        ],
+        "dates": [
+          {
+            "label": "児童自立支援専門員 採用日",
+            "value": "2027-04-01",
+            "evidence": "○採 用 日 令和9年4月1日(予定)"
+          },
+          {
+            "label": "児童自立支援専門員 応募期間開始",
+            "value": "2026-08-27",
+            "evidence": "令和8年8月 27 日(木)~ 令和8年 10 月 16 日(金)17 時(必着)"
+          },
+          {
+            "label": "児童自立支援専門員 応募締切",
+            "value": "2026-10-16",
+            "evidence": "令和8年8月 27 日(木)~ 令和8年 10 月 16 日(金)17 時(必着)"
+          },
+          {
+            "label": "児童自立支援専門員 試験日",
+            "value": "2026-10-26",
+            "evidence": "令和\n8年 10 月 26 日(月)"
+          },
+          {
+            "label": "心理療法士 応募期間開始",
+            "value": "2026-10-09",
+            "evidence": "令和8年 10 月9日(金)~令和8年 11 月 27 日(金)17 時(必着)"
+          },
+          {
+            "label": "心理療法士 応募締切",
+            "value": "2026-11-27",
+            "evidence": "令和8年 10 月9日(金)~令和8年 11 月 27 日(金)17 時(必着)"
+          },
+          {
+            "label": "心理療法士 試験日",
+            "value": "2026-12-09",
+            "evidence": "令和\n8年 12 月9日(水)"
+          },
+          {
+            "label": "心理療法士 採用時期",
+            "value": "2027-04-01",
+            "evidence": "○採用時期 令和9年4月1日(予定)"
+          },
+          {
+            "label": "掲載資料更新日",
+            "value": "2026-08-27",
+            "evidence": "※令和8年8月27日に掲載資料を更新"
+          }
+        ],
+        "uncertainties": [
+          "調達情報（入札公告等）や第三者評価結果の具体的内容は本文に含まれない",
+          "公開日（2026-10-07）より前に締切が過ぎている募集が含まれ、現在の受付状況は確認できない"
+        ],
+        "model": "claude-sonnet-5-5",
+        "processed_at": "2026-10-07T11:58:23+09:00"
+      },
+      "csv": {
+        "source_type": "news",
+        "hash": "dc3208a5de06f5f87b75166241696b078abb21ed3430d22de714891fec25152a",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text+attachments"
+      },
+      "tags": [],
+      "removed_tags": [],
+      "tag_override_reason": null
+    },
+    {
+      "id": "a_ca7411e34a45cbfb",
+      "source_id": "cfa-news",
+      "source_name": "こども家庭庁（新着・更新）",
+      "title": "国立きぬ川学院",
+      "url": "https://www.cfa.go.jp/kinugawa",
+      "published": {
+        "value": "2026-10-07",
+        "precision": "day",
+        "basis": {
+          "method": "listing_text",
+          "evidence": "2026年10月7日"
+        }
+      },
+      "updated": {
+        "value": null,
+        "precision": "unknown",
+        "basis": null
+      },
+      "first_seen_at": "2026-10-07T11:50:38+09:00",
+      "last_seen_at": "2026-10-07T11:50:38+09:00",
+      "status": "active",
+      "content_status": "ok",
+      "content_error": null,
+      "latest_version": 1,
+      "versions": [
+        {
+          "version": 1,
+          "fetched_at": "2026-10-07T11:50:38+09:00",
+          "change_type": "new",
+          "extraction_status": "ok"
+        }
+      ],
+      "attachments": [
+        {
+          "title": "国立児童自立支援施設医務課医師の公募について（PDF／118KB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/12852fb5-7abe-4800-914b-8d20d57de449/733d4f10/20230401_kinugawa_18.pdf",
+          "status": "ok",
+          "note": null,
+          "pages": 1
+        },
+        {
+          "title": "国立児童自立支援施設職員（児童自立支援専門員）の募集について（PDF／402KB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/12852fb5-7abe-4800-914b-8d20d57de449/c44ef59f/20260827_kinugawa_59.pdf",
+          "status": "ok",
+          "note": null,
+          "pages": 5
+        },
+        {
+          "title": "国立児童自立支援施設職員（心理療法士）の募集について（PDF／443KB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/12852fb5-7abe-4800-914b-8d20d57de449/63a4d55a/20261006_kinugawa_60.pdf",
+          "status": "ok",
+          "note": null,
+          "pages": 3
+        },
+        {
+          "title": "「子どもから施設外での性的被害の開示があったときの対応」（PDF／1,069KB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/12852fb5-7abe-4800-914b-8d20d57de449/690db477/20230401_kinugawa_06.pdf",
+          "status": "skipped",
+          "note": "1記事あたりの上限（3件）を超えたため取得していません",
+          "pages": null
+        },
+        {
+          "title": "「性暴力被害児への児童自立支援施設における支援に関する調査研究報告」（PDF／2,030KB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/12852fb5-7abe-4800-914b-8d20d57de449/4fc437d1/20230401_kinugawa_07.pdf",
+          "status": "skipped",
+          "note": "1記事あたりの上限（3件）を超えたため取得していません",
+          "pages": null
+        },
+        {
+          "title": "「別冊図」（PDF／2,663KB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/12852fb5-7abe-4800-914b-8d20d57de449/efdbad04/20230401_kinugawa_08.pdf",
+          "status": "skipped",
+          "note": "1記事あたりの上限（3件）を超えたため取得していません",
+          "pages": null
+        },
+        {
+          "title": "「性暴力被害児への児童自立支援施設における支援に関する調査研究報告（その2）（PDF／7,538KB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/12852fb5-7abe-4800-914b-8d20d57de449/d7e071ea/20230401_kinugawa_09.pdf",
+          "status": "skipped",
+          "note": "1記事あたりの上限（3件）を超えたため取得していません",
+          "pages": null
+        },
+        {
+          "title": "標準文書保存期間基準（保存期間表）（PDF／539KB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/12852fb5-7abe-4800-914b-8d20d57de449/6e78fb74/20250421_kinugawa_49.pdf",
+          "status": "skipped",
+          "note": "1記事あたりの上限（3件）を超えたため取得していません",
+          "pages": null
+        }
+      ],
+      "summary": {
+        "status": "success",
+        "error": null,
+        "version": 1,
+        "outdated": false,
+        "text": "こども家庭庁所管の国立きぬ川学院（栃木県さくら市、児童自立支援施設）のページ。概要、職員募集（医師・児童自立支援専門員・心理療法士）、性的虐待等相談支援事業、アクセスを掲載。児童自立支援専門員は令和9年4月1日採用予定で6名程度を募集している。",
+        "key_points": [
+          "国立きぬ川学院は昭和36年(1961年)4月開設の児童自立支援施設",
+          "医務課医師（常勤）を若干名、随時受付で公募",
+          "児童自立支援専門員は6名程度、応募期間は令和8年8月27日〜10月16日、試験日は10月26日",
+          "心理療法士は若干名、応募期間は令和8年10月9日〜11月27日、試験日は12月9日",
+          "性的虐待等相談支援事業として専門研修（定員到達で締切）、調査研究報告、相談窓口を掲載"
+        ],
+        "targets": [
+          "児童自立支援専門員・心理療法士・医師の応募希望者",
+          "性的虐待・性被害を受けたこどもの支援に関わる施設・関係者"
+        ],
+        "dates": [
+          {
+            "label": "施設開設",
+            "value": "1961-04",
+            "evidence": "昭和36年 (1961年)4月に開設された児童自立支援施設です。"
+          },
+          {
+            "label": "児童自立支援専門員 採用予定日",
+            "value": "2027-04-01",
+            "evidence": "採 用 日 令和9年4月1日(予定)"
+          },
+          {
+            "label": "児童自立支援専門員 応募締切",
+            "value": "2026-10-16",
+            "evidence": "令和8年8月 27 日(木)~ 令和8年 10 月 16 日(金)17 時(必着)"
+          },
+          {
+            "label": "児童自立支援専門員 試験日",
+            "value": "2026-10-26",
+            "evidence": "8年 10 月 26 日(月)"
+          },
+          {
+            "label": "心理療法士 応募開始",
+            "value": "2026-10-09",
+            "evidence": "令和8年 10 月9日(金)~令和8年 11 月 27 日(金)17 時(必着)"
+          },
+          {
+            "label": "心理療法士 応募締切",
+            "value": "2026-11-27",
+            "evidence": "令和8年 10 月9日(金)~令和8年 11 月 27 日(金)17 時(必着)"
+          },
+          {
+            "label": "心理療法士 試験日",
+            "value": "2026-12-09",
+            "evidence": "8年 12 月9日(水)"
+          },
+          {
+            "label": "心理療法士 採用予定日",
+            "value": "2027-04-01",
+            "evidence": "○採用時期 令和9年4月1日(予定)"
+          },
+          {
+            "label": "掲載資料の更新日",
+            "value": "2026-08-27",
+            "evidence": "※令和8年8月27日に掲載資料を更新"
+          }
+        ],
+        "uncertainties": [
+          "医師募集の採用時期は「応相談」で、具体的な日付は示されていない",
+          "医師募集の受付期間は「随時」で、締切日は不明",
+          "専門研修の開催日は本文に記載がない",
+          "相談窓口の受付時間等は本文に記載がない"
+        ],
+        "model": "claude-sonnet-5-5",
+        "processed_at": "2026-10-07T11:58:23+09:00"
+      },
+      "csv": {
+        "source_type": "news",
+        "hash": "cae441d27314b0711c16c5767f9a64fdffbaac68994c07bcbf32b2268b103762",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text+attachments"
+      },
+      "tags": [],
+      "removed_tags": [],
+      "tag_override_reason": null
+    },
+    {
+      "id": "a_41af1f531ea454e3",
+      "source_id": "cfa-news",
+      "source_name": "こども家庭庁（新着・更新）",
+      "title": "中司大臣記者会見（令和8年10月6日）",
+      "url": "https://www.cfa.go.jp/speech/15435bb4",
+      "published": {
+        "value": "2026-10-06",
+        "precision": "day",
+        "basis": {
+          "method": "listing_text",
+          "evidence": "2026年10月6日"
+        }
+      },
+      "updated": {
+        "value": null,
+        "precision": "unknown",
+        "basis": null
+      },
+      "first_seen_at": "2026-10-07T11:50:38+09:00",
+      "last_seen_at": "2026-10-07T11:50:38+09:00",
+      "status": "active",
+      "content_status": "ok",
+      "content_error": null,
+      "latest_version": 1,
+      "versions": [
+        {
+          "version": 1,
+          "fetched_at": "2026-10-07T11:50:38+09:00",
+          "change_type": "new",
+          "extraction_status": "ok"
+        }
+      ],
+      "attachments": [],
+      "summary": {
+        "status": "success",
+        "error": null,
+        "version": 1,
+        "outdated": false,
+        "text": "令和8年10月6日に中司大臣が記者会見を行った旨の告知。会見要旨は後日掲載される予定とされており、会見の具体的な内容は本文に記載がない。",
+        "key_points": [
+          "令和8年10月6日に中司大臣が記者会見を行った",
+          "会見要旨は後日掲載される予定",
+          "本文には会見の議題・発言内容の記載がない"
+        ],
+        "targets": [],
+        "dates": [
+          {
+            "label": "記者会見の実施日",
+            "value": "2026-10-06",
+            "evidence": "令和8年10月6日、中司大臣が記者会見を行いました。"
+          }
+        ],
+        "uncertainties": [
+          "会見で取り上げられた議題や発言内容は本文からは確認できない",
+          "会見要旨の掲載日は示されていない",
+          "対象者・対象機関は記載がない"
+        ],
+        "model": "claude-sonnet-5-5",
+        "processed_at": "2026-10-07T11:58:23+09:00"
+      },
+      "csv": {
+        "source_type": "news",
+        "hash": "e635e9b0d9053b1115eede160b7a2349873184fd29251d4cdf85ec59cda49816",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text"
+      },
+      "tags": [],
+      "removed_tags": [],
+      "tag_override_reason": null
+    },
+    {
+      "id": "a_bbc8f15415b0b677",
+      "source_id": "cfa-news",
+      "source_name": "こども家庭庁（新着・更新）",
+      "title": "ヒト受精胚を用いる生殖補助医療研究等に関する専門委員会（第16回）",
+      "url": "https://www.cfa.go.jp/councils/shingikai/kagaku_gijutsu/art/1fba736a",
+      "published": {
+        "value": "2026-10-06",
+        "precision": "day",
+        "basis": {
+          "method": "listing_text",
+          "evidence": "2026年10月6日"
+        }
+      },
+      "updated": {
+        "value": null,
+        "precision": "unknown",
+        "basis": null
+      },
+      "first_seen_at": "2026-10-07T11:50:38+09:00",
+      "last_seen_at": "2026-10-07T11:50:38+09:00",
+      "status": "active",
+      "content_status": "ok",
+      "content_error": null,
+      "latest_version": 1,
+      "versions": [
+        {
+          "version": 1,
+          "fetched_at": "2026-10-07T11:50:38+09:00",
+          "change_type": "new",
+          "extraction_status": "ok"
+        }
+      ],
+      "attachments": [
+        {
+          "title": "議事次第（PDF／51KB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/7057d018-f7ba-4327-97a6-70611fba736a/babafb61/20261002_councils_shingikai_kagaku_gijutsu_art_1fba736a_00.pdf",
+          "status": "ok",
+          "note": null,
+          "pages": 2
+        },
+        {
+          "title": "資料1―1：ヒトゲノム編集胚等の取扱いの規制に関する法律に基づく指針（案）について（PDF／547KB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/7057d018-f7ba-4327-97a6-70611fba736a/8b89da92/20261002_councils_shingikai_kagaku_gijutsu_art_1fba736a_01.pdf",
+          "status": "ok",
+          "note": null,
+          "pages": 2
+        },
+        {
+          "title": "資料1―2：ヒトゲノム編集胚等の取扱いに関する指針（案）（PDF／390KB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/7057d018-f7ba-4327-97a6-70611fba736a/5e3a76b9/20261002_councils_shingikai_kagaku_gijutsu_art_1fba736a_02.pdf",
+          "status": "ok",
+          "note": null,
+          "pages": 18
+        },
+        {
+          "title": "資料2：ヒトゲノム編集胚等の取扱いの規制に関する法律に基づく省令（案）について（PDF／6.2MB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/7057d018-f7ba-4327-97a6-70611fba736a/0dfb457d/20261002_councils_shingikai_kagaku_gijutsu_art_1fba736a_03.pdf",
+          "status": "skipped",
+          "note": "1記事あたりの上限（3件）を超えたため取得していません",
+          "pages": null
+        },
+        {
+          "title": "資料3：「ヒト受精胚を作成して行う研究に関する倫理指針」の見直しについて（PDF／250KB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/7057d018-f7ba-4327-97a6-70611fba736a/6ab2c871/20261002_councils_shingikai_kagaku_gijutsu_art_1fba736a_04.pdf",
+          "status": "skipped",
+          "note": "1記事あたりの上限（3件）を超えたため取得していません",
+          "pages": null
+        },
+        {
+          "title": "参考資料1：ゲノム編集技術等を用いたヒト受精胚等の取扱い等に関する合同会議の開催について （PDF／279KB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/7057d018-f7ba-4327-97a6-70611fba736a/5a92f94c/20261002_councils_shingikai_kagaku_gijutsu_art_1fba736a_05.pdf",
+          "status": "skipped",
+          "note": "1記事あたりの上限（3件）を超えたため取得していません",
+          "pages": null
+        },
+        {
+          "title": "参考資料2：ゲノム編集技術等を用いたヒト受精胚等の取扱い等に関する合同会議委員名簿 （PDF／141KB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/7057d018-f7ba-4327-97a6-70611fba736a/c0ac64cc/20261002_councils_shingikai_kagaku_gijutsu_art_1fba736a_06.pdf",
+          "status": "skipped",
+          "note": "1記事あたりの上限（3件）を超えたため取得していません",
+          "pages": null
+        },
+        {
+          "title": "参考資料3：「ヒト胚の取扱いに関する基本的考え方」見直しに係る報告（第三次）（PDF／8.7MB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/7057d018-f7ba-4327-97a6-70611fba736a/ea106fda/20261002_councils_shingikai_kagaku_gijutsu_art_1fba736a_07.pdf",
+          "status": "skipped",
+          "note": "1記事あたりの上限（3件）を超えたため取得していません",
+          "pages": null
+        },
+        {
+          "title": "参考資料4：ゲノム編集技術等を用いたヒト受精胚等の臨床利用のあり方に関する専門委員会　議論の整理（令和７年12月10日）（PDF／1.2MB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/7057d018-f7ba-4327-97a6-70611fba736a/eb05ec10/20261002_councils_shingikai_kagaku_gijutsu_art_1fba736a_08.pdf",
+          "status": "skipped",
+          "note": "1記事あたりの上限（3件）を超えたため取得していません",
+          "pages": null
+        },
+        {
+          "title": "参考資料5：ヒトゲノム編集胚等の取扱いの規制に関する法律条文 （PDF／8.7MB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/7057d018-f7ba-4327-97a6-70611fba736a/0c364199/20261002_councils_shingikai_kagaku_gijutsu_art_1fba736a_09.pdf",
+          "status": "skipped",
+          "note": "1記事あたりの上限（3件）を超えたため取得していません",
+          "pages": null
+        },
+        {
+          "title": "参考資料6：関連指針等一覧（PDF／99KB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/7057d018-f7ba-4327-97a6-70611fba736a/dcc4ad6b/20261002_councils_shingikai_kagaku_gijutsu_art_1fba736a_10.pdf",
+          "status": "skipped",
+          "note": "1記事あたりの上限（3件）を超えたため取得していません",
+          "pages": null
+        },
+        {
+          "title": "参考資料7：今後のスケジュール（案）（PDF／991KB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/7057d018-f7ba-4327-97a6-70611fba736a/12ae75ec/20261002_councils_shingikai_kagaku_gijutsu_art_1fba736a_11.pdf",
+          "status": "skipped",
+          "note": "1記事あたりの上限（3件）を超えたため取得していません",
+          "pages": null
+        },
+        {
+          "title": "参考資料8：「ヒト受精胚を作成して行う研究に関する倫理指針」条文比較表（PDF／346KB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/7057d018-f7ba-4327-97a6-70611fba736a/152904bc/20261002_councils_shingikai_kagaku_gijutsu_art_1fba736a_12.pdf",
+          "status": "skipped",
+          "note": "1記事あたりの上限（3件）を超えたため取得していません",
+          "pages": null
+        }
+      ],
+      "summary": {
+        "status": "success",
+        "error": null,
+        "version": 1,
+        "outdated": false,
+        "text": "こども家庭庁・文部科学省・厚生労働省の関係専門委員会が合同会議(第5回)を令和8年10月7日にオンライン開催する。議題はヒトゲノム編集胚等の取扱いの規制に関する法律に基づく指針(案)・省令(案)、および関係指針の見直し。",
+        "key_points": [
+          "ヒトゲノム編集胚等の規制の在り方として、法に基づく指針(案)と省令(案)を議題とする",
+          "法の成立に伴う関係指針(ヒト受精胚を作成して行う研究に関する倫理指針など)の見直しも議題とする",
+          "資料1-1は第4回会議での意見と事務局回答を整理しており、用途の要件、同意の撤回、輸入要件、動物胎内移植禁止の例外規定、取扱主体の用語などが論点",
+          "資料1-2は従来の指針(案)(令和8年2月25日時点)と新法に基づく指針(案)(令和8年10月7日時点)の比較表",
+          "こども家庭庁、文部科学省、厚生労働省の4専門委員会による合同開催で、YouTubeでライブ配信される"
+        ],
+        "targets": [
+          "専門委員会の委員",
+          "ヒトゲノム編集胚等の取扱いに関する会議の傍聴者(YouTube視聴者)",
+          "(指針案の対象として)ヒトゲノム編集胚等研究取扱者、提供機関"
+        ],
+        "dates": [
+          {
+            "label": "開催日",
+            "value": "2026-10-07",
+            "evidence": "日時:令和8年10月7日(水)14時00分~16時00分"
+          },
+          {
+            "label": "参考資料4の議論の整理の日付",
+            "value": "2025-12-10",
+            "evidence": "議論の整理(令和7年12月10日)"
+          }
+        ],
+        "uncertainties": [
+          "本文は先頭部分のみで、指針(案)の全条文、資料2(省令案)、資料3の内容は確認できない",
+          "会議の議論結果や指針・省令の施行日は記載がない",
+          "法律(令和8年法律第70号)の施行日は確認できない",
+          "根拠を原文で確認できない日付（比較対象の指針(案)の時点：2026-02-25）は採用しませんでした",
+          "本文が長いため、先頭20000文字だけで作成しました"
+        ],
+        "model": "claude-sonnet-5-5",
+        "processed_at": "2026-10-07T11:58:23+09:00"
+      },
+      "csv": {
+        "source_type": "news",
+        "hash": "7ea052645655d80f2d47b26a641b5153e2edc97a6881271695a5a38a208ae92c",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text+attachments"
+      },
+      "tags": [
+        {
+          "id": "council-committee",
+          "name": "審議会・検討会",
+          "origin": "ai",
+          "reason": "専門委員会・合同会議の開催案内、議事次第、資料一覧を掲載している",
+          "retired": false
+        },
+        {
+          "id": "system-revision",
+          "name": "制度改正",
+          "origin": "ai",
+          "reason": "新法に基づく指針(案)・省令(案)の検討と関係指針の見直しが議題",
+          "retired": false
+        },
+        {
+          "id": "maternal-child-health",
+          "name": "母子保健",
+          "origin": "ai",
+          "reason": "こども家庭庁成育局母子保健課が関わる、生殖補助医療研究・ヒト受精胚に関する会議",
+          "retired": false
+        }
+      ],
+      "removed_tags": [],
+      "tag_override_reason": null
+    },
+    {
       "id": "a_57ce70991ce444ef",
       "source_id": "cfa-news",
       "source_name": "こども家庭庁（新着・更新）",
@@ -21,7 +615,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-02T17:07:01+09:00",
-      "last_seen_at": "2026-10-05T16:40:13+09:00",
+      "last_seen_at": "2026-10-07T11:50:38+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -91,7 +685,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-05T14:38:18+09:00",
-      "last_seen_at": "2026-10-05T16:40:13+09:00",
+      "last_seen_at": "2026-10-07T11:50:38+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -212,7 +806,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-05T14:38:18+09:00",
-      "last_seen_at": "2026-10-05T16:40:13+09:00",
+      "last_seen_at": "2026-10-07T11:50:38+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -330,7 +924,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-05T14:38:18+09:00",
-      "last_seen_at": "2026-10-05T16:40:13+09:00",
+      "last_seen_at": "2026-10-07T11:50:38+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -458,7 +1052,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-05T14:38:18+09:00",
-      "last_seen_at": "2026-10-05T16:40:13+09:00",
+      "last_seen_at": "2026-10-07T11:50:38+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -581,7 +1175,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-05T14:38:18+09:00",
-      "last_seen_at": "2026-10-05T16:40:13+09:00",
+      "last_seen_at": "2026-10-07T11:50:38+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -703,7 +1297,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-05T14:24:29+09:00",
-      "last_seen_at": "2026-10-05T16:40:13+09:00",
+      "last_seen_at": "2026-10-07T11:50:38+09:00",
       "status": "unsupported",
       "content_status": "unsupported",
       "content_error": "会員限定（ログインが必要）のページのため、本文は取得していません。一覧の題名・日付と出典リンクだけを記録しています",
@@ -760,7 +1354,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-05T14:38:18+09:00",
-      "last_seen_at": "2026-10-05T16:40:13+09:00",
+      "last_seen_at": "2026-10-07T11:50:38+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -890,7 +1484,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-05T14:38:18+09:00",
-      "last_seen_at": "2026-10-05T16:40:13+09:00",
+      "last_seen_at": "2026-10-07T11:50:38+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -1019,7 +1613,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-05T10:14:31+09:00",
-      "last_seen_at": "2026-10-05T16:40:13+09:00",
+      "last_seen_at": "2026-10-07T11:50:38+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -1123,7 +1717,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-05T10:14:31+09:00",
-      "last_seen_at": "2026-10-05T16:40:13+09:00",
+      "last_seen_at": "2026-10-07T11:50:38+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -1255,7 +1849,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-02T17:07:01+09:00",
-      "last_seen_at": "2026-10-05T16:40:13+09:00",
+      "last_seen_at": "2026-10-07T11:50:38+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -1366,7 +1960,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-02T17:07:01+09:00",
-      "last_seen_at": "2026-10-05T16:40:13+09:00",
+      "last_seen_at": "2026-10-07T11:50:38+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -1505,7 +2099,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-02T17:07:01+09:00",
-      "last_seen_at": "2026-10-05T16:40:13+09:00",
+      "last_seen_at": "2026-10-07T11:50:38+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -1691,7 +2285,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-02T17:07:01+09:00",
-      "last_seen_at": "2026-10-05T16:40:13+09:00",
+      "last_seen_at": "2026-10-07T11:50:38+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -1807,7 +2401,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-05T10:14:31+09:00",
-      "last_seen_at": "2026-10-05T16:40:13+09:00",
+      "last_seen_at": "2026-10-07T11:50:38+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -1928,7 +2522,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-05T10:14:31+09:00",
-      "last_seen_at": "2026-10-05T16:40:13+09:00",
+      "last_seen_at": "2026-10-07T11:50:38+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -1998,7 +2592,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-05T10:14:31+09:00",
-      "last_seen_at": "2026-10-05T16:40:13+09:00",
+      "last_seen_at": "2026-10-07T11:50:38+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -2099,64 +2693,120 @@
         "basis": null
       },
       "first_seen_at": "2026-10-05T10:14:31+09:00",
-      "last_seen_at": "2026-10-05T16:40:13+09:00",
+      "last_seen_at": "2026-10-07T11:50:38+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
-      "latest_version": 1,
+      "latest_version": 2,
       "versions": [
         {
           "version": 1,
           "fetched_at": "2026-10-05T10:14:31+09:00",
           "change_type": "new",
           "extraction_status": "ok"
+        },
+        {
+          "version": 2,
+          "fetched_at": "2026-10-07T11:50:38+09:00",
+          "change_type": "content_changed",
+          "extraction_status": "ok"
         }
       ],
-      "attachments": [],
+      "attachments": [
+        {
+          "title": "資料1　技術的保護手段の在り方について（PDF／2.9MB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/5468bf4a-1931-49d1-aaa9-d05a1cdf2055/e1900207/20261006_councils_internet-kaigi_5468bf4a_01.pdf",
+          "status": "ok",
+          "note": "先頭30ページだけを読み取りました（全37ページ）",
+          "pages": 37
+        },
+        {
+          "title": "参考資料1　第8回ワーキンググループでの委員提出意見（PDF／216KB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/5468bf4a-1931-49d1-aaa9-d05a1cdf2055/de755768/20261006_councils_internet-kaigi_5468bf4a_02.pdf",
+          "status": "ok",
+          "note": null,
+          "pages": 1
+        },
+        {
+          "title": "参考資料2　第8回ワーキンググループ御議論のまとめ（PDF／580KB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/5468bf4a-1931-49d1-aaa9-d05a1cdf2055/5315542e/20261006_councils_internet-kaigi_5468bf4a_03.pdf",
+          "status": "ok",
+          "note": null,
+          "pages": 4
+        }
+      ],
       "summary": {
         "status": "success",
         "error": null,
-        "version": 1,
+        "version": 2,
         "outdated": false,
-        "text": "青少年インターネット環境整備法の在り方等に関する検討ワーキンググループ第9回が、令和8年（2026年）10月6日9時00分からオンラインで開催される。議題は「技術的保護手段の在り方」とその他。当日の映像配信の予定はない。",
+        "text": "こども家庭庁の青少年インターネット環境整備法の在り方等に関する検討WG第9回が令和8年10月6日にオンライン開催される。議題は技術的保護手段の在り方で、諸外国・国内の現状を整理し、位置付けや関係者の役割分担の論点を示している。",
         "key_points": [
-          "第9回ワーキンググループの開催案内である",
-          "日時は令和8年10月6日（火）9時00分から",
-          "場所はオンライン開催",
-          "議題1は技術的保護手段の在り方、議題2はその他",
-          "当日の映像配信の予定はない"
+          "第9回WGの議題は「技術的保護手段の在り方」と「その他」で、映像配信は行わない。",
+          "従来のフィルタリング中心の保護では、SNS利用や情報発信に伴うリスクへの対応に限界があるとして、より広い「技術的保護手段」の法的位置付けを検討するとしている。",
+          "OS事業者のペアレンタルコントロール機能について、提供義務を課す等の対応を検討する必要があるとされている。",
+          "諸外国の例として仏・独・韓・米の制度を整理し、独は2025年12月改正でOS事業者に青少年保護機能の提供を義務付けた。",
+          "論点は技術的保護手段の位置付け、関係者の役割分担、実効的な活用のための法制度対応。SNS等のプラットフォーム事業者の保護措置は次回以降に議論する予定。"
         ],
         "targets": [
-          "青少年インターネット環境整備法の在り方等に関する検討ワーキンググループ"
+          "携帯電話事業者",
+          "インターネット接続役務提供事業者",
+          "OS事業者",
+          "インターネット接続機器製造事業者",
+          "フィルタリングソフトウェア開発事業者",
+          "保護者",
+          "青少年・こども",
+          "SNS等プラットフォーム事業者"
         ],
         "dates": [
           {
-            "label": "開催日",
+            "label": "第9回WG開催日",
             "value": "2026-10-06",
             "evidence": "日時:令和8年10月6日(火)9時00分から"
+          },
+          {
+            "label": "中間整理報告書の公表日",
+            "value": "2026-07-31",
+            "evidence": "本ワーキンググループ中間整理報告書(令和8年7月31日公表)"
+          },
+          {
+            "label": "ドイツ青少年メディア州際協定の改正施行",
+            "value": "2025-12",
+            "evidence": "改正され、2025年12月に施行された。"
+          },
+          {
+            "label": "ドイツの対象OS指定の期限",
+            "value": "2026-12-01",
+            "evidence": "対象となるOSの指定は2026年12月1日までに行われ"
           }
         ],
         "uncertainties": [
-          "終了時刻は記載されていない",
-          "構成員や配布資料の内容は記載されていない",
-          "議題の具体的な内容は記載されていない",
-          "傍聴方法や申込みの有無は記載されていない"
+          "本文は先頭部分のみで、資料1の論点3以降や参考資料2の末尾は確認できない。",
+          "WGで決定された事項や結論は文書から確認できない。",
+          "本文が長いため、先頭20000文字だけで作成しました"
         ],
         "model": "claude-sonnet-5-5",
-        "processed_at": "2026-10-05T10:29:20+09:00"
+        "processed_at": "2026-10-07T11:58:23+09:00"
       },
       "csv": {
         "source_type": "news",
-        "hash": "13314de23119bbb9e6526779a37b862c2ed8b345ba100c58852374f7695a80e8",
+        "hash": "621160a8e21d164f492e4af426496b767952c867f34437ad965cb11ff7a90477",
         "hash_status": "ok",
-        "hash_scope": "title+main_text"
+        "hash_scope": "title+main_text+attachments"
       },
       "tags": [
         {
           "id": "council-committee",
           "name": "審議会・検討会",
           "origin": "ai",
-          "reason": "検討ワーキンググループの開催案内と議事次第であるため",
+          "reason": "検討ワーキンググループの開催案内、議事次第、資料を掲載している。",
+          "retired": false
+        },
+        {
+          "id": "system-revision",
+          "name": "制度改正",
+          "origin": "ai",
+          "reason": "青少年インターネット環境整備法における技術的保護手段の位置付けや事業者義務の在り方を検討する内容。",
           "retired": false
         }
       ],
@@ -2183,7 +2833,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-05T10:14:31+09:00",
-      "last_seen_at": "2026-10-05T16:40:13+09:00",
+      "last_seen_at": "2026-10-07T11:50:38+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -2269,7 +2919,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-05T10:14:31+09:00",
-      "last_seen_at": "2026-10-05T16:40:13+09:00",
+      "last_seen_at": "2026-10-07T11:50:38+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -2339,7 +2989,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-05T14:53:03+09:00",
-      "last_seen_at": "2026-10-05T16:40:13+09:00",
+      "last_seen_at": "2026-10-07T11:50:38+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -9063,7 +9713,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-05T14:24:29+09:00",
-      "last_seen_at": "2026-10-05T16:40:13+09:00",
+      "last_seen_at": "2026-10-07T11:50:38+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,

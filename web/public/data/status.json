@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "last_run_at": "2026-10-05T16:47:35+09:00",
+  "last_run_at": "2026-10-07T11:58:58+09:00",
   "last_run_status": "success",
-  "last_full_success_at": "2026-10-05T16:47:35+09:00",
+  "last_full_success_at": "2026-10-07T11:58:58+09:00",
   "counts": {
-    "articles": 72,
+    "articles": 76,
     "date_unknown": 1,
     "content_missing": 1,
     "unsummarized": 1,
@@ -26,19 +26,19 @@
           "席次"
         ]
       },
-      "last_success_at": "2026-10-05T16:40:13+09:00",
-      "last_attempt_at": "2026-10-05T16:40:13+09:00",
+      "last_success_at": "2026-10-07T11:50:38+09:00",
+      "last_attempt_at": "2026-10-07T11:50:38+09:00",
       "last_attempt_status": "success",
       "consecutive_failures": 0,
       "explored_range": {
-        "oldest": "2026-08-31",
-        "newest": "2026-10-02",
+        "oldest": "2026-09-01",
+        "newest": "2026-10-07",
         "pages": 7
       },
       "retry_count": 0,
       "retry_items": [],
       "last_run": null,
-      "articles": 55,
+      "articles": 59,
       "date_unknown": 0
     },
     {
@@ -102,8 +102,8 @@
           "席次"
         ]
       },
-      "last_success_at": "2026-10-05T16:40:13+09:00",
-      "last_attempt_at": "2026-10-05T16:40:13+09:00",
+      "last_success_at": "2026-10-07T11:50:38+09:00",
+      "last_attempt_at": "2026-10-07T11:50:38+09:00",
       "last_attempt_status": "success",
       "consecutive_failures": 0,
       "explored_range": {
@@ -132,8 +132,8 @@
           "席次"
         ]
       },
-      "last_success_at": "2026-10-05T16:40:13+09:00",
-      "last_attempt_at": "2026-10-05T16:40:13+09:00",
+      "last_success_at": "2026-10-07T11:50:38+09:00",
+      "last_attempt_at": "2026-10-07T11:50:38+09:00",
       "last_attempt_status": "success",
       "consecutive_failures": 0,
       "explored_range": {
@@ -308,8 +308,8 @@
         "max_pages": 30,
         "exclude_titles": []
       },
-      "last_success_at": "2026-10-05T16:40:13+09:00",
-      "last_attempt_at": "2026-10-05T16:40:13+09:00",
+      "last_success_at": "2026-10-07T11:50:38+09:00",
+      "last_attempt_at": "2026-10-07T11:50:38+09:00",
       "last_attempt_status": "success",
       "consecutive_failures": 0,
       "explored_range": {
@@ -362,8 +362,8 @@
         "max_pages": 30,
         "exclude_titles": []
       },
-      "last_success_at": "2026-10-05T16:40:13+09:00",
-      "last_attempt_at": "2026-10-05T16:40:13+09:00",
+      "last_success_at": "2026-10-07T11:50:38+09:00",
+      "last_attempt_at": "2026-10-07T11:50:38+09:00",
       "last_attempt_status": "success",
       "consecutive_failures": 0,
       "explored_range": {
@@ -389,8 +389,8 @@
         "max_pages": 30,
         "exclude_titles": []
       },
-      "last_success_at": "2026-10-05T16:40:13+09:00",
-      "last_attempt_at": "2026-10-05T16:40:13+09:00",
+      "last_success_at": "2026-10-07T11:50:38+09:00",
+      "last_attempt_at": "2026-10-07T11:50:38+09:00",
       "last_attempt_status": "success",
       "consecutive_failures": 0,
       "explored_range": {
@@ -416,8 +416,8 @@
         "max_pages": 30,
         "exclude_titles": []
       },
-      "last_success_at": "2026-10-05T16:40:13+09:00",
-      "last_attempt_at": "2026-10-05T16:40:13+09:00",
+      "last_success_at": "2026-10-07T11:50:38+09:00",
+      "last_attempt_at": "2026-10-07T11:50:38+09:00",
       "last_attempt_status": "success",
       "consecutive_failures": 0,
       "explored_range": {
@@ -433,6 +433,117 @@
     }
   ],
   "runs": [
+    {
+      "run_id": "run_20261007T025823Z",
+      "started_at": "2026-10-07T11:58:23+09:00",
+      "finished_at": "2026-10-07T11:58:58+09:00",
+      "status": "success",
+      "kind": "summarize",
+      "period": null,
+      "totals": {
+        "new": 0,
+        "changed": 0,
+        "unchanged": 0,
+        "date_unknown": 0,
+        "fetch_failed": 0,
+        "summarized": 5,
+        "summarize_failed": 0
+      },
+      "sources": []
+    },
+    {
+      "run_id": "run_20261007T025038Z",
+      "started_at": "2026-10-07T11:50:38+09:00",
+      "finished_at": "2026-10-07T11:58:21+09:00",
+      "status": "success",
+      "kind": "collect",
+      "period": null,
+      "totals": {
+        "new": 4,
+        "changed": 1,
+        "unchanged": 22,
+        "date_unknown": 0,
+        "fetch_failed": 0,
+        "summarized": 0,
+        "summarize_failed": 0
+      },
+      "sources": [
+        {
+          "source_id": "cfa-news",
+          "status": "success",
+          "new": 4,
+          "changed": 1,
+          "date_unknown": 0,
+          "fetch_failed": 0,
+          "error": null,
+          "warnings": [
+            "同じURLを指す一覧の項目 3件を1件にまとめました（#以降だけが違うリンクなど）"
+          ]
+        },
+        {
+          "source_id": "kokasen-news",
+          "status": "success",
+          "new": 0,
+          "changed": 0,
+          "date_unknown": 0,
+          "fetch_failed": 0,
+          "error": null,
+          "warnings": [
+            "同じURLを指す一覧の項目 7件を1件にまとめました（#以降だけが違うリンクなど）"
+          ]
+        },
+        {
+          "source_id": "gosaiji-topics",
+          "status": "success",
+          "new": 0,
+          "changed": 0,
+          "date_unknown": 0,
+          "fetch_failed": 0,
+          "error": null,
+          "warnings": []
+        },
+        {
+          "source_id": "cmic-trust-news",
+          "status": "success",
+          "new": 0,
+          "changed": 0,
+          "date_unknown": 0,
+          "fetch_failed": 0,
+          "error": null,
+          "warnings": []
+        },
+        {
+          "source_id": "mchh-prtimes",
+          "status": "success",
+          "new": 0,
+          "changed": 0,
+          "date_unknown": 0,
+          "fetch_failed": 0,
+          "error": null,
+          "warnings": []
+        },
+        {
+          "source_id": "milabo-news",
+          "status": "success",
+          "new": 0,
+          "changed": 0,
+          "date_unknown": 0,
+          "fetch_failed": 0,
+          "error": null,
+          "warnings": []
+        },
+        {
+          "source_id": "ryobi-neuvola-karte",
+          "status": "success",
+          "new": 0,
+          "changed": 0,
+          "date_unknown": 0,
+          "fetch_failed": 0,
+          "error": null,
+          "warnings": []
+        }
+      ]
+    },
     {
       "run_id": "run_20261005T074634Z",
       "started_at": "2026-10-05T16:46:34+09:00",
