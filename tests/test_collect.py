@@ -664,6 +664,7 @@ def _members_site(tmp_path: Path):
         "    link_rules:\n      css_selector: main\n      item_selector: article.item\n      title_selector: h3\n"
         "      date_selector: time\n      include: ['^https://members\\.example\\.org/']\n"
         "      login_required: ['^https://members\\.example\\.org/login/']\n"
+        "    csv_id: FX_MEMBERS\n    publisher: 【架空】会員サイト\n    source_type: news\n"
         "    timezone: Asia/Tokyo\n    limits: {max_items: 20, max_bytes: 1048576, wait_seconds: 1, timeout_seconds: 10}\n"
         "    enabled: true\n", encoding="utf-8")
     return FixtureFetcher.from_manifest(site / "manifest.yaml"), overlay
@@ -759,6 +760,7 @@ def test_sitemap_source_collects_only_articles_published_in_period(tmp_path):
     (overlay / "sources.yaml").write_text(
         "sources:\n  - id: fx-sitemap\n    name: 架空サイトマップ社（テスト）\n    entry_url: https://t.example.org/sitemap.xml\n"
         "    method: sitemap\n    allowed_hosts: [t.example.org]\n    link_rules:\n      include: ['^https://t\\.example\\.org/news/[^/]+$']\n"
+        "    csv_id: FX_SITEMAP\n    publisher: 【架空】サイトマップ社\n    source_type: news\n"
         "    timezone: Asia/Tokyo\n    limits: {max_items: 20, max_bytes: 1048576, wait_seconds: 1, timeout_seconds: 10}\n"
         "    enabled: true\n", encoding="utf-8")
     cfg, report = validate_config(CONFIG_DIR, overlay_dir=overlay)

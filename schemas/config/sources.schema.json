@@ -219,6 +219,24 @@
             "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/slug_id"
           },
           "description": "この情報源の記事すべてに付けるタグのid（登録済みで有効なもの）。AIの判断ではなく設定で付けるため、画面では「設定」と区別して表示する"
+        },
+        "publisher": {
+          "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/nonempty_text",
+          "description": "外部連携用CSVの発行主体（publisher）。例：こども家庭庁"
+        },
+        "csv_id": {
+          "type": "string",
+          "pattern": "^[A-Z][A-Z0-9_]{1,40}$",
+          "description": "外部連携用CSVの監視元の固定ID（source_id）。大文字・数字・_ だけ。変えると、受け取る側の前回との比較が途切れる"
+        },
+        "source_type": {
+          "enum": [
+            "news",
+            "press_release",
+            "notice_pdf",
+            "dashboard"
+          ],
+          "description": "外部連携用CSVの情報種別の既定値。URLが .pdf で終わる記事は、自動で notice_pdf にする"
         }
       }
     }

@@ -66,6 +66,18 @@
         "null"
       ]
     },
+    "export_hash": {
+      "oneOf": [{"type": "null"}, {"type": "string", "pattern": "^[0-9a-f]{64}$"}],
+      "description": "外部連携用CSVの content_hash（小文字hex 64桁）。題名＋本文を正規化したSHA-256。算出できなければnull"
+    },
+    "export_hash_status": {
+      "enum": ["ok", "unavailable", "error"],
+      "description": "ok：算出済み、unavailable：本文を取得できず算出していない、error：算出に失敗"
+    },
+    "export_hash_scope": {
+      "type": ["string", "null"],
+      "description": "ハッシュの対象（title+main_text / title+main_text+attachments / title+pdf_text）"
+    },
     "change_type": {
       "enum": [
         "new",

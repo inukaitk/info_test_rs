@@ -5,6 +5,9 @@ sources:
     entry_url: https://news.example.org/rss.xml
     method: rss
     allowed_hosts: [news.example.org]
+    csv_id: FX_NEWS_RSS
+    publisher: 【架空】fx-news-rss
+    source_type: news
     timezone: Asia/Tokyo
     limits: {max_items: 20, max_bytes: 1048576, wait_seconds: 1, timeout_seconds: 10}
     enabled: true
@@ -19,6 +22,9 @@ sources:
         - "^https://list\\.example\\.net/info/\\d{8}\\.html$"
         - "^https://files\\.example\\.net/.+\\.pdf$"
     pagination: {next_selector: "a.next", max_pages: 3}
+    csv_id: FX_LIST_HTML
+    publisher: 【架空】fx-list-html
+    source_type: news
     timezone: Asia/Tokyo
     limits: {max_items: 20, max_bytes: 1048576, wait_seconds: 1, timeout_seconds: 10}
     enabled: true
@@ -27,6 +33,9 @@ sources:
     entry_url: https://broken.example.com/list.html
     method: html
     allowed_hosts: [broken.example.com]
+    csv_id: FX_BROKEN
+    publisher: 【架空】fx-broken
+    source_type: news
     timezone: Asia/Tokyo
     limits: {max_items: 20, max_bytes: 1048576, wait_seconds: 1, timeout_seconds: 10}
     enabled: true
@@ -35,6 +44,9 @@ sources:
     entry_url: https://empty.example.org/rss.xml
     method: rss
     allowed_hosts: [empty.example.org]
+    csv_id: FX_EMPTY_RSS
+    publisher: 【架空】fx-empty-rss
+    source_type: news
     timezone: Asia/Tokyo
     limits: {max_items: 20, max_bytes: 1048576, wait_seconds: 1, timeout_seconds: 10}
     enabled: true

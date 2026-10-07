@@ -216,7 +216,10 @@
       "text_length": 15724,
       "extraction_status": "ok",
       "extraction_error": null,
-      "change_type": "new"
+      "change_type": "new",
+      "export_hash": "5a9e4d872d70cdc5efeb96c74761238c674228129af3698f8530ea2e5afea992",
+      "export_hash_status": "ok",
+      "export_hash_scope": "title+main_text+attachments"
     }
   ]
 }

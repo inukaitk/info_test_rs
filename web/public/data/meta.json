@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-07T10:57:40+09:00",
+  "generated_at": "2026-10-07T11:27:23+09:00",
   "release_mode": "real",
   "is_demo": false,
   "site_name": "外部環境情報（検証版）",
@@ -68,71 +68,122 @@
   "sources": [
     {
       "id": "cfa-news",
-      "name": "こども家庭庁（新着・更新）"
+      "name": "こども家庭庁（新着・更新）",
+      "publisher": "こども家庭庁",
+      "csv_id": "CFA_NEWS",
+      "list_url": "https://www.cfa.go.jp/news"
     },
     {
       "id": "mhlw-news",
-      "name": "厚生労働省（新着情報）"
+      "name": "厚生労働省（新着情報）",
+      "publisher": null,
+      "csv_id": null,
+      "list_url": "https://www.mhlw.go.jp/stf/news.rdf"
     },
     {
       "id": "ncchd-news",
-      "name": "国立成育医療研究センター（新着情報）"
+      "name": "国立成育医療研究センター（新着情報）",
+      "publisher": null,
+      "csv_id": null,
+      "list_url": "https://www.ncchd.go.jp/news/"
     },
     {
       "id": "kokasen-news",
-      "name": "こども家庭センターポータルサイト（新着情報）"
+      "name": "こども家庭センターポータルサイト（新着情報）",
+      "publisher": "こども家庭庁（こども家庭センターポータルサイト）",
+      "csv_id": "CFA_KOKASEN_NEWS",
+      "list_url": "https://kokasen.cfa.go.jp/"
     },
     {
       "id": "gosaiji-topics",
-      "name": "5歳児健診ポータル（トピックス）"
+      "name": "5歳児健診ポータル（トピックス）",
+      "publisher": "5歳児健診ポータル（こども家庭庁の支援）",
+      "csv_id": "GOSAIJI_TOPICS",
+      "list_url": "https://gosaiji-kenshin.com/topics/"
     },
     {
       "id": "boshikenshu-top",
-      "name": "母子保健指導者養成研修（令和8年度）"
+      "name": "母子保健指導者養成研修（令和8年度）",
+      "publisher": null,
+      "csv_id": null,
+      "list_url": "https://boshikenshu.cfa.go.jp/"
     },
     {
       "id": "mchbook-top",
-      "name": "母子健康手帳情報支援サイト"
+      "name": "母子健康手帳情報支援サイト",
+      "publisher": null,
+      "csv_id": null,
+      "list_url": "https://mchbook.cfa.go.jp/"
     },
     {
       "id": "digital-news",
-      "name": "デジタル庁（新着・更新）"
+      "name": "デジタル庁（新着・更新）",
+      "publisher": null,
+      "csv_id": null,
+      "list_url": "https://www.digital.go.jp/news"
     },
     {
       "id": "cao-press",
-      "name": "内閣府（報道発表資料）"
+      "name": "内閣府（報道発表資料）",
+      "publisher": null,
+      "csv_id": null,
+      "list_url": "https://www.cao.go.jp/press/houdou.html"
     },
     {
       "id": "kodomodx-news",
-      "name": "一般社団法人こどもDX推進協会（お知らせ）"
+      "name": "一般社団法人こどもDX推進協会（お知らせ）",
+      "publisher": null,
+      "csv_id": null,
+      "list_url": "https://kodomodx.or.jp/news/"
     },
     {
       "id": "mcfh-info",
-      "name": "公益財団法人母子衛生研究会（お知らせ）"
+      "name": "公益財団法人母子衛生研究会（お知らせ）",
+      "publisher": null,
+      "csv_id": null,
+      "list_url": "https://www.mcfh.or.jp/information/"
     },
     {
       "id": "jt-tsushin",
-      "name": "自治体通信Online（新着記事）"
+      "name": "自治体通信Online（新着記事）",
+      "publisher": null,
+      "csv_id": null,
+      "list_url": "https://www.jt-tsushin.jp/articles"
     },
     {
       "id": "cmic-trust-news",
-      "name": "CMIC Trust 株式会社（NEWS）"
+      "name": "CMIC Trust 株式会社（NEWS）",
+      "publisher": "CMIC Trust 株式会社",
+      "csv_id": "CMIC_TRUST_NEWS",
+      "list_url": "https://www.cmic-trust.jp/sitemap-dynamic/sitemap-dynamic-bmV3cy86c2x1Zw.xml"
     },
     {
       "id": "cmic-news",
-      "name": "シミックグループ（ニュース＆イベント）"
+      "name": "シミックグループ（ニュース＆イベント）",
+      "publisher": null,
+      "csv_id": null,
+      "list_url": "https://www.cmicgroup.com/news/"
     },
     {
       "id": "mchh-prtimes",
-      "name": "母子モ株式会社（プレスリリース、PR TIMES）"
+      "name": "母子モ株式会社（プレスリリース、PR TIMES）",
+      "publisher": "母子モ株式会社",
+      "csv_id": "MTI_BOSHIMO_NEWS",
+      "list_url": "https://prtimes.jp/companyrdf.php?company_id=99909"
     },
     {
       "id": "milabo-news",
-      "name": "株式会社ミラボ（お知らせ）"
+      "name": "株式会社ミラボ（お知らせ）",
+      "publisher": "株式会社ミラボ",
+      "csv_id": "MILABO_NEWS",
+      "list_url": "https://mi-labo.co.jp/news/"
     },
     {
       "id": "ryobi-neuvola-karte",
-      "name": "両備システムズ（ネウボラかるてに関するお知らせ）"
+      "name": "両備システムズ（ネウボラかるてに関するお知らせ）",
+      "publisher": "株式会社両備システムズ",
+      "csv_id": "RYOBI_NEUVOLA_NEWS",
+      "list_url": "https://service.ryobi.co.jp/healthcare_solution/sh-neuvola-karte/"
     }
   ]
 }

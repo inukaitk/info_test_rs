@@ -13,10 +13,10 @@ export function downloadText(filename: string, text: string, mime: string): void
   setTimeout(() => URL.revokeObjectURL(url), 1000);
 }
 
-/** CSVの1セル。表計算ソフトで式として実行されないよう、= + - @ などで始まる値の先頭に ' を付ける。 */
+/** CSVの1セル。表計算ソフトで式として実行されないよう、先頭の非空白文字が = + - @ の値（と、先頭がタブ・改行の値）の先頭に ' を付ける。 */
 export function csvCell(value: string | number | null | undefined): string {
   let s = value === null || value === undefined ? "" : String(value);
-  if (/^[=+\-@\t\r]/.test(s)) s = `'${s}`;
+  if (/^\s*[=+\-@]/.test(s) || /^[\t\r]/.test(s)) s = `'${s}`;
   return /[",\r\n]/.test(s) ? `"${s.replace(/"/g, '""')}"` : s;
 }
 

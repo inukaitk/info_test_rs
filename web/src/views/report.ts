@@ -1,6 +1,7 @@
 // 週次レポート：期間内の新規・変更、タグ別件数、情報源別の取得状況。Markdown でも保存できる。
 import { externalLink, h } from "../dom";
 import { downloadText } from "../download";
+import { externalCsvFilename, externalCsvForWeek } from "../externalCsv";
 import { formatDateTime, formatPartialDate } from "../format";
 import type { ReportItem, SiteData, WeeklyReport } from "../types";
 
@@ -21,12 +22,16 @@ export function reportView(data: SiteData, weekId: string | null, navigate: (has
   const mdButton = h("button", { type: "button" }, "Markdownで保存");
   mdButton.addEventListener("click", () => downloadText(`weekly_${week.id}.md`, week.markdown, "text/markdown"));
 
+  const csvButton = h("button", { type: "button", title: "この期間の新規・変更の記事を、固定の列のCSVで保存します" }, "CSVで保存");
+  csvButton.addEventListener("click", () =>
+    downloadText(externalCsvFilename(data.meta.generated_at), externalCsvForWeek(week, data), "text/csv"));
+
   const c = week.counts;
   return h(
     "section",
     { class: "report" },
     h("h1", {}, "週次レポート"),
-    h("div", { class: "toolbar" }, h("label", { for: "report-week" }, "期間："), select, mdButton),
+    h("div", { class: "toolbar" }, h("label", { for: "report-week" }, "期間："), select, mdButton, csvButton),
     h("p", { class: "lead" }, `${periodLabel(week)}：公開日が期間内の記事と、期間内に本文が変わった記事（公開日が日まで分からない記事は数えない）`),
     h(
       "table",

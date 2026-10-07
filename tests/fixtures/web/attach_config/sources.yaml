@@ -6,6 +6,9 @@ sources:
     method: rss
     allowed_hosts: [attach.example.org]
     attachments: {pdf: true, max_files: 3, max_bytes: 1048576, max_pages: 30}
+    csv_id: FX_ATTACH
+    publisher: 【架空】fx-attach
+    source_type: news
     timezone: Asia/Tokyo
     limits: {max_items: 20, max_bytes: 1048576, wait_seconds: 1, timeout_seconds: 10}
     enabled: true
@@ -14,6 +17,9 @@ sources:
     entry_url: https://attach.example.org/rss-off.xml
     method: rss
     allowed_hosts: [attach.example.org]
+    csv_id: FX_ATTACH_OFF
+    publisher: 【架空】fx-attach-off
+    source_type: news
     timezone: Asia/Tokyo
     limits: {max_items: 20, max_bytes: 1048576, wait_seconds: 1, timeout_seconds: 10}
     enabled: false

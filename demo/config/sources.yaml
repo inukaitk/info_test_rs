@@ -6,6 +6,9 @@ sources:
     entry_url: https://kodomo.example.org/news/rss.xml
     method: rss
     allowed_hosts: [kodomo.example.org]
+    csv_id: DEMO_KODOMO_RSS
+    publisher: 【架空】demo-kodomo-rss
+    source_type: news
     timezone: Asia/Tokyo
     limits: {max_items: 30, max_bytes: 5242880, wait_seconds: 3, timeout_seconds: 30}
     enabled: true
@@ -15,6 +18,9 @@ sources:
     method: html
     allowed_hosts: [boshi.example.net, files.boshi.example.net]
     pagination: {max_pages: 3}
+    csv_id: DEMO_BOSHI_HTML
+    publisher: 【架空】demo-boshi-html
+    source_type: news
     timezone: Asia/Tokyo
     limits: {max_items: 20, max_bytes: 10485760, wait_seconds: 5, timeout_seconds: 30}
     enabled: true
@@ -24,6 +30,9 @@ sources:
     entry_url: https://hyojunka.example.com/topics/
     method: html
     allowed_hosts: [hyojunka.example.com]
+    csv_id: DEMO_JICHITAI_HTML
+    publisher: 【架空】demo-jichitai-html
+    source_type: news
     timezone: Asia/Tokyo
     limits: {max_items: 20, max_bytes: 5242880, wait_seconds: 5, timeout_seconds: 30}
     enabled: true
@@ -33,6 +42,9 @@ sources:
     entry_url: https://tokei.example.org/release/feed.xml
     method: rss
     allowed_hosts: [tokei.example.org]
+    csv_id: DEMO_TOKEI_RSS
+    publisher: 【架空】demo-tokei-rss
+    source_type: news
     timezone: Asia/Tokyo
     limits: {max_items: 30, max_bytes: 5242880, wait_seconds: 3, timeout_seconds: 30}
     enabled: true

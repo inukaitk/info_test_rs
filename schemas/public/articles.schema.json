@@ -37,7 +37,8 @@
           "tags",
           "removed_tags",
           "tag_override_reason",
-          "attachments"
+          "attachments",
+          "csv"
         ],
         "properties": {
           "id": {
@@ -506,6 +507,51 @@
                     }
                   ]
                 }
+              }
+            }
+          },
+          "csv": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "source_type",
+              "hash",
+              "hash_status",
+              "hash_scope"
+            ],
+            "description": "外部連携用CSVの項目（情報種別と、題名＋本文のSHA-256）",
+            "properties": {
+              "source_type": {
+                "enum": [
+                  "news",
+                  "press_release",
+                  "notice_pdf",
+                  "dashboard"
+                ]
+              },
+              "hash": {
+                "oneOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string",
+                    "pattern": "^[0-9a-f]{64}$"
+                  }
+                ]
+              },
+              "hash_status": {
+                "enum": [
+                  "ok",
+                  "unavailable",
+                  "error"
+                ]
+              },
+              "hash_scope": {
+                "type": [
+                  "string",
+                  "null"
+                ]
               }
             }
           }

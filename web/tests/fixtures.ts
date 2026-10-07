@@ -22,6 +22,7 @@ export function article(overrides: Partial<Article> = {}): Article {
       processed_at: "2026-09-11T08:10:00+09:00",
     },
     tags: [{ id: "maternal-child-health", name: "母子保健", origin: "ai", reason: "健診のため", retired: false }],
+    csv: { source_type: "news", hash: "a".repeat(64), hash_status: "ok", hash_scope: "title+main_text" },
     removed_tags: [],
     tag_override_reason: null,
     attachments: [],
@@ -38,7 +39,10 @@ export function meta(overrides: Partial<Meta> = {}): Meta {
       { id: "maternal-child-health", name: "母子保健", description: "d", retired: false },
       { id: "childcare-support", name: "子育て支援", description: "d", retired: false },
     ],
-    sources: [{ id: "demo-a", name: "架空機関A（デモ）" }, { id: "demo-b", name: "架空機関B（デモ）" }],
+    sources: [
+      { id: "demo-a", name: "架空機関A（デモ）", publisher: "架空機関A", csv_id: "DEMO_A_NEWS", list_url: "https://a.example.org/news/" },
+      { id: "demo-b", name: "架空機関B（デモ）", publisher: "架空機関B", csv_id: "DEMO_B_NEWS", list_url: "https://b.example.org/news/" },
+    ],
     ...overrides,
   };
 }

@@ -34,7 +34,10 @@
       "text_length": null,
       "extraction_status": "unsupported",
       "extraction_error": "会員限定（ログインが必要）のページのため、本文は取得していません。一覧の題名・日付と出典リンクだけを記録しています",
-      "change_type": "new"
+      "change_type": "new",
+      "export_hash": null,
+      "export_hash_status": "unavailable",
+      "export_hash_scope": null
     }
   ]
 }

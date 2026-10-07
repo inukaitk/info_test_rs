@@ -20,6 +20,7 @@ import os
 import re
 import sys
 from pathlib import Path
+from urllib.parse import urlsplit
 from typing import Any
 
 from collector.validation import REPO_ROOT, Config, load_json, schema_errors, validate_all, validate_config
@@ -135,6 +136,19 @@ def removed_tags(ai_tags: list[dict] | None, override: dict | None, tag_defs: di
     return out
 
 
+def source_type_of(source: dict | None, url: str) -> str:
+    """外部連携用CSVの情報種別。URLが .pdf で終わる記事は notice_pdf、それ以外は情報源の既定値。"""
+    if re.search(r"\.pdf$", urlsplit(url).path, re.IGNORECASE):
+        return "notice_pdf"
+    return (source or {}).get("source_type") or "news"
+
+
+def export_hash_fields(version: dict) -> dict:
+    """外部連携用CSVのハッシュの3項目。版にない（この項目を足す前の）ときは、算出していないものとして出す。"""
+    return {"hash": version.get("export_hash"), "hash_status": version.get("export_hash_status", "unavailable"),
+            "hash_scope": version.get("export_hash_scope")}
+
+
 def source_fixed_tags(source: dict | None) -> list[dict]:
     """情報源の設定（fixed_tags）で、その情報源の記事すべてに付けるタグ。"""
     name = source["name"] if source else ""
@@ -224,6 +238,8 @@ def build_articles(article_files: list[dict], summary_files: list[dict], config:
                 for att in latest.get("attachments", [])
             ],
             "summary": _public_summary(summary, article["latest_version"]),
+            "csv": {"source_type": source_type_of(sources_by_id.get(article["source_id"]), article["canonical_url"]),
+                    **export_hash_fields(latest)},
             "tags": final_tags(ai_tags, override, tag_defs, fixed, rules),
             "removed_tags": removed_tags(ai_tags, override, tag_defs, fixed, rules),
             "tag_override_reason": override.get("reason") if override else None,
@@ -356,7 +372,8 @@ def build_meta(config: Config, mode: str, generated_at: str, as_of: str | None =
             {"id": t["id"], "name": t["name"], "description": t["description"], "retired": not t["enabled"]}
             for t in config.tags["tags"]
         ],
-        "sources": [{"id": s["id"], "name": s["name"]} for s in config.sources["sources"]],
+        "sources": [{"id": s["id"], "name": s["name"], "publisher": s.get("publisher"), "csv_id": s.get("csv_id"),
+                     "list_url": s["entry_url"]} for s in config.sources["sources"]],
     }
 
 
