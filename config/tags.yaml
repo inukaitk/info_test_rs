@@ -42,3 +42,18 @@ tags:
     description: 審議会・検討会・部会の開催案内、資料、議事録、報告書に関する情報。
     keywords: [審議会, 検討会, 部会, 議事録, 報告書]
     enabled: true
+  # ユーザー指示（2026-10-05〜07）。AIには選ばせない。次の2つで付ける：
+  #   1. sources.yaml の fixed_tags で指定した情報源（各ベンダ自身のサイト）の記事すべて
+  #   2. 全情報源の記事のうち、題名・本文に下の言葉がある記事（auto_rules。AIではなく決まったルール。python -m collector.rule_tags）
+  # 4社とも同じ形式で、優劣・順位は付けない（五十音順）
+  - id: vendor-trend
+    name: ベンダ動向
+    description: ベンダ（民間のサービス・システム提供事業者）の製品・サービス・導入事例・出展などの動向に関する情報。
+    keywords: [ベンダ, 導入事例, 提供開始, 出展]
+    enabled: true
+    rule_only: true
+    auto_rules:
+      - {label: "CMIC Trust", pattern: "CMIC\\s?Trust|シミックトラスト"}
+      - {label: "母子モ", pattern: "母子モ(?!デル)"}
+      - {label: "ミラボ", pattern: "ミラボ|mila-e|mi-labo"}
+      - {label: "両備システムズ", pattern: "両備システムズ|ネウボラかるて|健康かるて"}

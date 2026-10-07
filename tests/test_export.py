@@ -315,3 +315,50 @@ def test_retry_items_are_exposed_with_plain_kind():
     assert [i["kind"] for i in items] == ["size_limit", "other"]
     assert items[0]["title"] == "会議資料" and items[1]["title"] is None
     assert ex._retry_items(None, []) == []
+
+
+# ---- 情報源の設定で付けるタグ（fixed_tags）
+
+FIXED = [{"tag_id": "c", "reason": "情報源の設定：架空社の記事すべてに付けています"}]
+
+
+def test_final_tags_source_fixed_tag_is_added_even_without_ai_result():
+    tags = ex.final_tags(None, None, TAG_DEFS, FIXED)
+    assert ids(tags) == [("c", "source")] and "情報源の設定" in tags[0]["reason"]
+
+
+def test_final_tags_order_ai_then_source_then_human_without_duplicates():
+    ai = [{"tag_id": "a", "reason": "r"}, {"tag_id": "c", "reason": "AIも付けた"}]
+    tags = ex.final_tags(ai, {"add": ["b"]}, TAG_DEFS, FIXED)
+    assert ids(tags) == [("a", "ai"), ("c", "ai"), ("b", "human")], "AIが付けたタグは由来をaiのままにする"
+    assert ids(ex.final_tags([{"tag_id": "a", "reason": "r"}], {"add": ["b"]}, TAG_DEFS, FIXED)) == [("a", "ai"), ("c", "source"), ("b", "human")]
+
+
+def test_final_tags_human_can_remove_a_source_fixed_tag_and_it_is_shown_as_removed():
+    override = {"remove": ["c"]}
+    assert ex.final_tags(None, override, TAG_DEFS, FIXED) == []
+    assert ex.removed_tags(None, override, TAG_DEFS, FIXED) == [{"id": "c", "name": "C"}]
+
+
+def test_source_fixed_tags_come_from_the_source_config():
+    src = {"id": "s", "name": "架空社", "fixed_tags": ["a", "b"]}
+    assert [t["tag_id"] for t in ex.source_fixed_tags(src)] == ["a", "b"]
+    assert ex.source_fixed_tags({"id": "s", "name": "架空社"}) == []
+    assert ex.source_fixed_tags(None) == []
+
+
+def test_real_vendor_articles_all_have_vendor_trend_and_others_do_not():
+    from collector.validation import validate_config
+    config, report = validate_config(REPO_ROOT / "config")
+    assert report.errors == []
+    outputs = ex.build_public_data(config, REPO_ROOT / "data", "real", "2026-10-06T09:00:00+09:00")
+    assert ex.check_public_data(outputs, environ={}) == []
+    vendors = {"cmic-trust-news", "mchh-prtimes", "milabo-news", "ryobi-neuvola-karte"}
+    articles = outputs["articles.json"]["articles"]
+    for a in articles:
+        has = [t for t in a["tags"] if t["id"] == "vendor-trend"]
+        if a["source_id"] in vendors:
+            assert len(has) == 1 and has[0]["origin"] == "source", a["title"]
+        else:
+            assert not has, a["title"]
+    assert any(a["source_id"] in vendors for a in articles)

@@ -135,6 +135,11 @@ class Config:
     def enabled_tag_ids(self) -> set[str]:
         return {t["id"] for t in self.tags.get("tags", []) if t.get("enabled")}
 
+    @property
+    def ai_tags(self) -> list[dict]:
+        """AIが選べるタグ（有効で、情報源の設定でだけ付ける `rule_only` ではないもの）。"""
+        return [t for t in self.tags.get("tags", []) if t.get("enabled") and not t.get("rule_only")]
+
 
 def _duplicates(values: list) -> list:
     seen, dups = set(), []
@@ -185,6 +190,7 @@ def validate_config(
     )
     _check_sources(config, report)
     _check_tags(config, report)
+    _check_source_fixed_tags(config, report)
     _check_overrides(config, report)
     return config, report
 
@@ -213,6 +219,27 @@ def _check_tags(config: Config, report: Report) -> None:
         report.add(where, [f"タグid {dup!r} が重複しています"])
     for dup in _duplicates([t["name"] for t in tags]):
         report.add(where, [f"タグ名 {dup!r} が重複しています"])
+    for t in tags:
+        rules = t.get("auto_rules", [])
+        if rules and not t.get("rule_only"):
+            report.add(where, [f"{t['id']}: auto_rules は rule_only: true のタグだけに指定できます（AIとルールの二重判定を避けるため）"])
+        for dup in _duplicates([r["label"] for r in rules]):
+            report.add(where, [f"{t['id']}: auto_rules の名前 {dup!r} が重複しています"])
+        for r in rules:
+            try:
+                re.compile(r["pattern"])
+            except re.error as e:
+                report.add(where, [f"{t['id']}: auto_rules {r['label']!r} の正規表現が不正です（{e}）"])
+
+
+def _check_source_fixed_tags(config: Config, report: Report) -> None:
+    where = "config/sources.yaml"
+    for s in config.sources["sources"]:
+        for tag_id in s.get("fixed_tags", []):
+            if tag_id not in config.tag_ids:
+                report.add(where, [f"{s['id']}: fixed_tags の未登録のタグid {tag_id!r} です"])
+            elif tag_id not in config.enabled_tag_ids:
+                report.add(where, [f"{s['id']}: fixed_tags の廃止済みのタグ {tag_id!r} は指定できません"])
 
 
 def _check_overrides(config: Config, report: Report) -> None:
@@ -240,6 +267,7 @@ def validate_data(data_dir: Path, config: Config, report: Report | None = None) 
     _check_runs(data_dir, config, report)
     _check_state(data_dir, config, report)
     _check_tag_candidates(data_dir, latest_versions, report)
+    _check_rule_tags(data_dir, config, latest_versions, report)
     return report
 
 
@@ -334,6 +362,27 @@ def _check_state(data_dir: Path, config: Config, report: Report) -> None:
         if key not in config.source_ids:
             problems.append(f"sources/{key}: 未登録の情報源idです")
     report.add("data/state.json", problems)
+
+
+def _check_rule_tags(data_dir: Path, config: Config, latest_versions: dict[str, int], report: Report) -> None:
+    path = data_dir / "rule_tags.json"
+    if not path.exists():
+        return
+    where = "data/rule_tags.json"
+    data = _load_and_check(path, "files/rule_tags_file.schema.json", where, report)
+    if data is None:
+        return
+    problems = []
+    for article_id, entry in data["articles"].items():
+        if article_id not in latest_versions:
+            problems.append(f"{article_id}: 記事がありません")
+            continue
+        if entry["article_version"] > latest_versions[article_id]:
+            problems.append(f"{article_id}: article_version が記事の最新版より新しくなっています")
+        for t in entry["tags"]:
+            if t["tag_id"] not in config.tag_ids:
+                problems.append(f"{article_id}: 未登録のタグid {t['tag_id']!r} です")
+    report.add(where, problems)
 
 
 def _check_tag_candidates(data_dir: Path, latest_versions: dict[str, int], report: Report) -> None:

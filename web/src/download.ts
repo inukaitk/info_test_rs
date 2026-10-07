@@ -22,7 +22,7 @@ export function csvCell(value: string | number | null | undefined): string {
 
 export const CSV_COLUMNS = [
   "記事ID", "公開日", "公開日の精度", "更新日", "取得日時", "機関", "タイトル", "出典URL",
-  "概要", "AI処理状態", "AIタグ", "人が追加したタグ", "人が除外したタグ", "本文の状態", "最新版",
+  "概要", "AI処理状態", "AIタグ", "設定で付けたタグ", "ルールで付けたタグ", "人が追加したタグ", "人が除外したタグ", "本文の状態", "最新版",
 ] as const;
 
 export function articlesToCsv(articles: Article[]): string {
@@ -38,6 +38,8 @@ export function articlesToCsv(articles: Article[]): string {
     a.summary.text ?? "",
     a.summary.status,
     a.tags.filter((t) => t.origin === "ai").map((t) => t.name).join(";"),
+    a.tags.filter((t) => t.origin === "source").map((t) => t.name).join(";"),
+    a.tags.filter((t) => t.origin === "rule").map((t) => t.name).join(";"),
     a.tags.filter((t) => t.origin === "human").map((t) => t.name).join(";"),
     a.removed_tags.map((t) => t.name).join(";"),
     a.content_status,

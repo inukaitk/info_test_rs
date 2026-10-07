@@ -2,10 +2,12 @@ import { describe, expect, it } from "vitest";
 import { articlesToCsv, csvCell } from "../src/download";
 import { parseHash } from "../src/router";
 import type { WeeklyReport } from "../src/types";
+import { detailView } from "../src/views/detail";
 import { latestView } from "../src/views/latest";
 import { layout } from "../src/views/layout";
 import { reportView } from "../src/views/report";
 import { statusView, statusWarnings } from "../src/views/status";
+import { tagChip } from "../src/views/tags";
 import { wikiIndexView, wikiTagView } from "../src/views/wiki";
 import { article, meta, site, status } from "./fixtures";
 
@@ -190,7 +192,54 @@ describe("CSV", () => {
     expect(csv.charCodeAt(0)).toBe(0xfeff);
     const [header, row] = csv.slice(1).trim().split("\r\n");
     expect(header.split(",")).toContain("人が追加したタグ");
-    expect(row).toContain("母子保健,子育て支援,調査・統計");
+    expect(row).toContain("母子保健,,,子育て支援,調査・統計"); // AIタグ、設定で付けたタグ（なし）、ルールで付けたタグ（なし）、人が追加、人が除外
+  });
+});
+
+describe("情報源の設定で付けるタグ（ベンダ動向）", () => {
+  const vendor = { id: "vendor-trend", name: "ベンダ動向", origin: "source" as const, reason: "情報源の設定：架空社の記事すべてに付けています", retired: false };
+
+  it("チップは「設定」と表示し、AI・人の追加と区別する。説明は title に出す", () => {
+    const chip = tagChip(vendor);
+    expect(chip.textContent).toBe("設定ベンダ動向");
+    expect(chip.className).toContain("tag-source");
+    expect(chip.getAttribute("title")).toContain("情報源の設定で付与");
+    expect(tagChip({ ...vendor, origin: "ai" }).textContent).toBe("AIベンダ動向");
+    expect(tagChip({ ...vendor, origin: "human" }).textContent).toBe("人が追加ベンダ動向");
+  });
+
+  it("記事詳細に「情報源の設定で付与」の欄を出す（AIが未処理でも）。設定のタグがない記事では欄を出さない", () => {
+    const withTag = article({ summary: { ...article().summary, status: "not_processed", text: null }, tags: [vendor] });
+    const text = detailView(site([withTag]), withTag.id).textContent!;
+    expect(text).toContain("情報源の設定で付与");
+    expect(text).toContain("架空社の記事すべてに付けています");
+    expect(text).toContain("AI未処理のためなし");
+    expect(detailView(site([article()]), article().id).textContent).not.toContain("情報源の設定で付与");
+  });
+
+  it("ルール（キーワード一致）のタグは「一致」と表示し、記事詳細に「ルールで付与」の欄とその理由を出す", () => {
+    const rule = { ...vendor, origin: "rule" as const, reason: "ルール（キーワード一致）：「ミラボ」（本文）が見つかりました" };
+    const chip = tagChip(rule);
+    expect(chip.textContent).toBe("一致ベンダ動向");
+    expect(chip.className).toContain("tag-rule");
+    expect(chip.getAttribute("title")).toContain("ルール（キーワード一致）で付与");
+    const a = article({ tags: [rule] });
+    const text = detailView(site([a]), a.id).textContent!;
+    expect(text).toContain("ルールで付与");
+    expect(text).toContain("「ミラボ」（本文）が見つかりました");
+    expect(text).not.toContain("情報源の設定で付与");
+  });
+
+  it("CSVには「設定で付けたタグ」の列を別に出す", () => {
+    const csv = articlesToCsv([article({ tags: [vendor, { id: "maternal-child-health", name: "母子保健", origin: "ai", reason: "r", retired: false },
+      { id: "childcare-support", name: "子育て支援", origin: "rule", reason: "r", retired: false }] })]);
+    const [header, row] = csv.slice(1).trim().split("\r\n");
+    const cols = header.split(",");
+    const cells = row.split(",");
+    expect(cols).toContain("設定で付けたタグ");
+    expect(cells[cols.indexOf("AIタグ")]).toBe("母子保健");
+    expect(cells[cols.indexOf("設定で付けたタグ")]).toBe("ベンダ動向");
+    expect(cells[cols.indexOf("ルールで付けたタグ")]).toBe("子育て支援");
   });
 });
 

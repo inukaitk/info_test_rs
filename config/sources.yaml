@@ -284,6 +284,7 @@ sources:
     attachments: {pdf: true, max_files: 3, max_bytes: 12582912, max_pages: 30}
     timezone: Asia/Tokyo
     limits: {max_items: 30, max_bytes: 5242880, wait_seconds: 5, timeout_seconds: 30}
+    fixed_tags: [vendor-trend]   # この情報源の記事すべてに「ベンダ動向」を設定で付ける（AIの判断ではない）
     enabled: true
     notes: >-
       公的機関ではない（民間企業。シミックグループの子会社）が、ユーザーが特別に認めた情報源。CMIC Trust のサイトは文字が表示用のプログラムで
@@ -324,6 +325,7 @@ sources:
     attachments: {pdf: true, max_files: 3, max_bytes: 12582912, max_pages: 30}
     timezone: Asia/Tokyo
     limits: {max_items: 30, max_bytes: 5242880, wait_seconds: 5, timeout_seconds: 30}
+    fixed_tags: [vendor-trend]   # この情報源の記事すべてに「ベンダ動向」を設定で付ける（AIの判断ではない）
     enabled: true
     notes: >-
       公的機関ではない（民間企業）が、ユーザーが特別に認めた情報源。PR TIMES が会社ごとに配信している公式のRSS（RSS 1.0）から、
@@ -346,6 +348,7 @@ sources:
     attachments: {pdf: true, max_files: 3, max_bytes: 12582912, max_pages: 30}
     timezone: Asia/Tokyo
     limits: {max_items: 30, max_bytes: 8388608, wait_seconds: 5, timeout_seconds: 60}
+    fixed_tags: [vendor-trend]   # この情報源の記事すべてに「ベンダ動向」を設定で付ける（AIの判断ではない）
     enabled: true
     notes: >-
       公的機関ではない（民間企業）が、ユーザーが特別に認めた情報源。HTML一覧（カード形式、1ページ12件）。
@@ -367,6 +370,7 @@ sources:
     attachments: {pdf: true, max_files: 3, max_bytes: 12582912, max_pages: 30}
     timezone: Asia/Tokyo
     limits: {max_items: 30, max_bytes: 5242880, wait_seconds: 5, timeout_seconds: 30}
+    fixed_tags: [vendor-trend]   # この情報源の記事すべてに「ベンダ動向」を設定で付ける（AIの判断ではない）
     enabled: true
     notes: >-
       公的機関ではない（民間企業）が、ユーザーが特別に認めた情報源。子育て支援システム「ネウボラかるて」の製品ページにある

@@ -1,0 +1,528 @@
+{
+  "schema_version": 1,
+  "articles": {
+    "a_0187ca5d5376b5d4": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
+    "a_0bb6585af9635125": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
+    "a_12f22aef89e46c4e": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
+    "a_166cb866ecfdbf72": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
+    "a_1ab53a75348564e5": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
+    "a_202dc418f8f9b39a": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
+    "a_2220f926bb62c8ea": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
+    "a_27d76fdb5aea7c15": {
+      "article_version": 1,
+      "scope": "title",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
+    "a_28b91981736611ad": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
+    "a_2c482fb7123f06ce": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": [
+        {
+          "tag_id": "vendor-trend",
+          "label": "母子モ",
+          "matched": "母子モ",
+          "in": "title"
+        }
+      ]
+    },
+    "a_2d2e12679590f123": {
+      "article_version": 2,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
+    "a_2fcd392b45bde586": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
+    "a_370fe44d20295b64": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
+    "a_3b333de840b1ce13": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
+    "a_3b7d00298c0b051e": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
+    "a_4048059155eac3a0": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": [
+        {
+          "tag_id": "vendor-trend",
+          "label": "母子モ",
+          "matched": "母子モ",
+          "in": "title"
+        }
+      ]
+    },
+    "a_408bd98dc7782cd5": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
+    "a_46f43ba38af6a333": {
+      "article_version": 2,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
+    "a_48b9e379c6bc0e65": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
+    "a_4d10226e1a7834c3": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
+    "a_57ce70991ce444ef": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
+    "a_585da5df17c68bfd": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
+    "a_59d5711fe29b7a24": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": [
+        {
+          "tag_id": "vendor-trend",
+          "label": "母子モ",
+          "matched": "母子モ",
+          "in": "title"
+        }
+      ]
+    },
+    "a_5aebd9490b789a43": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
+    "a_5b11fa00508b78b7": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
+    "a_5b50969d8bde67e5": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
+    "a_5c389f7f575c0776": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
+    "a_6b1f3a16bad6a43f": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
+    "a_6bc26fc3ed8f3ff4": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": [
+        {
+          "tag_id": "vendor-trend",
+          "label": "母子モ",
+          "matched": "母子モ",
+          "in": "body"
+        }
+      ]
+    },
+    "a_6bfadd1d1fa9f5f2": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
+    "a_6c626cd3fb257419": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
+    "a_722cbd59feaf55a5": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
+    "a_783cff3827c34393": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": [
+        {
+          "tag_id": "vendor-trend",
+          "label": "母子モ",
+          "matched": "母子モ",
+          "in": "title"
+        }
+      ]
+    },
+    "a_80f10594f52f9edf": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
+    "a_84d4b97f53fae5a6": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
+    "a_89ef9d926a1241cf": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": [
+        {
+          "tag_id": "vendor-trend",
+          "label": "母子モ",
+          "matched": "母子モ",
+          "in": "body"
+        }
+      ]
+    },
+    "a_8d006531e4717bb2": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
+    "a_8d7fe7139616ed7d": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
+    "a_9457bbab21bd409d": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
+    "a_9b57615ed58e967b": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
+    "a_a0b7d37e4d51f963": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
+    "a_a1d6e87b4dca573e": {
+      "article_version": 2,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
+    "a_abb0a9d023ca19c7": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": [
+        {
+          "tag_id": "vendor-trend",
+          "label": "母子モ",
+          "matched": "母子モ",
+          "in": "title"
+        }
+      ]
+    },
+    "a_acc19cd78d7aa716": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
+    "a_aeac996d8e0d14d5": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
+    "a_af28a5aea352c823": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
+    "a_b0535133aa414782": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
+    "a_b472cd06b8376f4a": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
+    "a_b6229c99aa1d3e2f": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
+    "a_b98b093e983adc25": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
+    "a_b9ad263f86df8e5c": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
+    "a_ba1b8a76f18ce4d2": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": [
+        {
+          "tag_id": "vendor-trend",
+          "label": "母子モ",
+          "matched": "母子モ",
+          "in": "title"
+        }
+      ]
+    },
+    "a_c666c624f85d6ef2": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": [
+        {
+          "tag_id": "vendor-trend",
+          "label": "母子モ",
+          "matched": "母子モ",
+          "in": "body"
+        }
+      ]
+    },
+    "a_c8d1e3f668a376db": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": [
+        {
+          "tag_id": "vendor-trend",
+          "label": "母子モ",
+          "matched": "母子モ",
+          "in": "body"
+        }
+      ]
+    },
+    "a_c940b0c5e054384f": {
+      "article_version": 3,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
+    "a_cf60bedab57fd625": {
+      "article_version": 2,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
+    "a_d02f0a677f5494ee": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
+    "a_d2206bea0593008e": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
+    "a_d7f316409f1803f8": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
+    "a_dc10adf99b4eefa9": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": [
+        {
+          "tag_id": "vendor-trend",
+          "label": "母子モ",
+          "matched": "母子モ",
+          "in": "body"
+        }
+      ]
+    },
+    "a_dfa1d70360c2f656": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
+    "a_e00e213ea8afe326": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
+    "a_e03be12a88b9b376": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
+    "a_e0dd0eb579802b13": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
+    "a_e16d149490712fda": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
+    "a_e49b6ef8f77c0e96": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
+    "a_ec97cf33454016d2": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
+    "a_ee8065db1df28b06": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
+    "a_eff9cafe3fb2a1d6": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": [
+        {
+          "tag_id": "vendor-trend",
+          "label": "母子モ",
+          "matched": "母子モ",
+          "in": "title"
+        }
+      ]
+    },
+    "a_f105a907e32b2cb7": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
+    "a_f563c285515829a2": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": [
+        {
+          "tag_id": "vendor-trend",
+          "label": "母子モ",
+          "matched": "母子モ",
+          "in": "title"
+        }
+      ]
+    },
+    "a_ff44d6651fc1323f": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    }
+  }
+}

@@ -68,8 +68,20 @@ def _latest_summary(summaries: list[dict]) -> dict | None:
 # ---------------------------------------------------------------- タグ
 
 
-def final_tags(ai_tags: list[dict] | None, override: dict | None, tag_defs: dict[str, dict]) -> list[dict]:
-    """画面に出すタグ = AIタグ ＋ 追加 － 除外。各タグに由来（ai / human）を付ける。"""
+def rule_tag_entries(matches: list[dict] | None) -> list[dict]:
+    """ルール（キーワード一致）の結果を、タグごとの項目（tag_id と reason）にまとめる。理由には、一致した名前と場所だけを書く。"""
+    by_tag: dict[str, list[str]] = {}
+    for m in matches or []:
+        by_tag.setdefault(m["tag_id"], []).append(f"「{m['label']}」（{'題名' if m['in'] == 'title' else '本文'}）")
+    return [{"tag_id": tag_id, "reason": "ルール（キーワード一致）：" + "".join(parts) + "が見つかりました"} for tag_id, parts in by_tag.items()]
+
+
+def final_tags(ai_tags: list[dict] | None, override: dict | None, tag_defs: dict[str, dict],
+               fixed: list[dict] | None = None, rules: list[dict] | None = None) -> list[dict]:
+    """画面に出すタグ = AIタグ ＋ 情報源の設定で付けるタグ ＋ ルールで付けるタグ ＋ 追加 － 除外。
+    各タグに由来（ai / source / rule / human）を付ける。同じタグは、先に付いた由来を残す。
+    fixed は情報源の設定（fixed_tags）で付けるタグ、rules はルール（auto_rules）で付けるタグ（どちらも tag_id と reason）。
+    AIの結果の有無にかかわらず付く。"""
     add = list((override or {}).get("add", []))
     remove = set((override or {}).get("remove", []))
     result = []
@@ -80,6 +92,18 @@ def final_tags(ai_tags: list[dict] | None, override: dict | None, tag_defs: dict
             continue
         seen.add(tag_id)
         result.append(_tag_entry(tag_id, "ai", tag["reason"], tag_defs))
+    for tag in fixed or []:
+        tag_id = tag["tag_id"]
+        if tag_id in remove or tag_id in seen:
+            continue
+        seen.add(tag_id)
+        result.append(_tag_entry(tag_id, "source", tag["reason"], tag_defs))
+    for tag in rules or []:
+        tag_id = tag["tag_id"]
+        if tag_id in remove or tag_id in seen:
+            continue
+        seen.add(tag_id)
+        result.append(_tag_entry(tag_id, "rule", tag["reason"], tag_defs))
     for tag_id in add:
         if tag_id in seen or tag_id in remove:
             continue
@@ -99,14 +123,22 @@ def _tag_entry(tag_id: str, origin: str, reason: str | None, tag_defs: dict[str,
     }
 
 
-def removed_tags(ai_tags: list[dict] | None, override: dict | None, tag_defs: dict[str, dict]) -> list[dict]:
-    """AIが付けたが人が除外したタグ（記事詳細で「除外」と表示するため）。"""
+def removed_tags(ai_tags: list[dict] | None, override: dict | None, tag_defs: dict[str, dict],
+                 fixed: list[dict] | None = None, rules: list[dict] | None = None) -> list[dict]:
+    """AI・情報源の設定・ルールで付くが、人が除外したタグ（記事詳細で「除外」と表示するため）。同じタグは1回だけ。"""
     remove = set((override or {}).get("remove", []))
-    return [
-        {"id": t["tag_id"], "name": tag_defs.get(t["tag_id"], {}).get("name", t["tag_id"])}
-        for t in ai_tags or []
-        if t["tag_id"] in remove
-    ]
+    out, seen = [], set()
+    for t in [*(ai_tags or []), *(fixed or []), *(rules or [])]:
+        if t["tag_id"] in remove and t["tag_id"] not in seen:
+            seen.add(t["tag_id"])
+            out.append({"id": t["tag_id"], "name": tag_defs.get(t["tag_id"], {}).get("name", t["tag_id"])})
+    return out
+
+
+def source_fixed_tags(source: dict | None) -> list[dict]:
+    """情報源の設定（fixed_tags）で、その情報源の記事すべてに付けるタグ。"""
+    name = source["name"] if source else ""
+    return [{"tag_id": tag_id, "reason": f"情報源の設定：{name}の記事すべてに付けています"} for tag_id in (source or {}).get("fixed_tags", [])]
 
 
 # ---------------------------------------------------------------- 変換（allowlist）
@@ -149,11 +181,13 @@ def _public_summary(summary: dict | None, latest_version: int) -> dict:
     }
 
 
-def build_articles(article_files: list[dict], summary_files: list[dict], config: Config) -> list[dict]:
+def build_articles(article_files: list[dict], summary_files: list[dict], config: Config,
+                   rule_tags: dict | None = None) -> list[dict]:
     summaries_by_id = {f["article_id"]: f["summaries"] for f in summary_files}
     overrides = {o["article_id"]: o for o in config.tag_overrides["overrides"]}
     tag_defs = {t["id"]: t for t in config.tags["tags"]}
     source_names = {s["id"]: s["name"] for s in config.sources["sources"]}
+    sources_by_id = {s["id"]: s for s in config.sources["sources"]}
 
     result = []
     for file in article_files:
@@ -162,6 +196,8 @@ def build_articles(article_files: list[dict], summary_files: list[dict], config:
         summary = _latest_summary(summaries_by_id.get(article_id, []))
         ai_tags = summary["ai_tags"] if summary and summary["analysis_status"] == "success" else None
         override = overrides.get(article_id)
+        fixed = source_fixed_tags(sources_by_id.get(article["source_id"]))
+        rules = rule_tag_entries(((rule_tags or {}).get(article_id) or {}).get("tags"))
         latest = versions[-1]
         result.append({
             "id": article_id,
@@ -188,8 +224,8 @@ def build_articles(article_files: list[dict], summary_files: list[dict], config:
                 for att in latest.get("attachments", [])
             ],
             "summary": _public_summary(summary, article["latest_version"]),
-            "tags": final_tags(ai_tags, override, tag_defs),
-            "removed_tags": removed_tags(ai_tags, override, tag_defs),
+            "tags": final_tags(ai_tags, override, tag_defs, fixed, rules),
+            "removed_tags": removed_tags(ai_tags, override, tag_defs, fixed, rules),
             "tag_override_reason": override.get("reason") if override else None,
         })
     result.sort(key=lambda a: (a["published"]["value"] or "", a["first_seen_at"]), reverse=True)
@@ -332,7 +368,9 @@ def build_public_data(config: Config, data_dir: Path, mode: str, generated_at: s
     state_path = data_dir / "state.json"
     state = load_json(state_path) if state_path.exists() else {"sources": {}}
 
-    articles = build_articles(article_files, summary_files, config)
+    rule_tags_path = data_dir / "rule_tags.json"
+    rule_tags = load_json(rule_tags_path)["articles"] if rule_tags_path.exists() else {}
+    articles = build_articles(article_files, summary_files, config, rule_tags)
     outputs = {
         "meta.json": build_meta(config, mode, generated_at, data_as_of(runs, article_files)),
         "articles.json": {"schema_version": PUBLIC_SCHEMA_VERSION, "articles": articles},

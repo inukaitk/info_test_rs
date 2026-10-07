@@ -56,7 +56,7 @@ export function layout(meta: Meta, current: Section, main: HTMLElement): HTMLEle
       "footer",
       { class: "site-footer" },
       `データ作成：${formatDateTime(meta.generated_at)}`,
-      " ／ 公的機関の公開情報をもとに独自に作成した概要です。内容は必ず出典で確認してください。",
+      " ／ 公的機関・企業の公開情報をもとに独自に作成した概要です。内容は必ず出典で確認してください。",
     ),
   );
 }

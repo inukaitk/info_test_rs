@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-05T17:29:12+09:00",
+  "generated_at": "2026-10-07T10:42:15+09:00",
   "release_mode": "real",
   "is_demo": false,
   "site_name": "外部環境情報（検証版）",
@@ -56,6 +56,12 @@
       "id": "council-committee",
       "name": "審議会・検討会",
       "description": "審議会・検討会・部会の開催案内、資料、議事録、報告書に関する情報。",
+      "retired": false
+    },
+    {
+      "id": "vendor-trend",
+      "name": "ベンダ動向",
+      "description": "ベンダ（民間のサービス・システム提供事業者）の製品・サービス・導入事例・出展などの動向に関する情報。",
       "retired": false
     }
   ],

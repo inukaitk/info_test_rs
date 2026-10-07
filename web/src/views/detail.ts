@@ -136,6 +136,8 @@ function summaryBlock(a: Article): HTMLElement {
 function tagsBlock(a: Article): HTMLElement {
   const ai = a.tags.filter((t) => t.origin === "ai");
   const human = a.tags.filter((t) => t.origin === "human");
+  const source = a.tags.filter((t) => t.origin === "source");
+  const rule = a.tags.filter((t) => t.origin === "rule");
   return h(
     "div",
     {},
@@ -150,6 +152,12 @@ function tagsBlock(a: Article): HTMLElement {
             ? "該当なし"
             : "AI未処理のためなし",
       ),
+      source.length
+        ? kv("情報源の設定で付与", h("ul", { class: "tag-reasons" }, ...source.map((t) => h("li", {}, tagChip(t), t.reason ? h("span", { class: "reason" }, t.reason) : null))))
+        : null,
+      rule.length
+        ? kv("ルールで付与", h("ul", { class: "tag-reasons" }, ...rule.map((t) => h("li", {}, tagChip(t), t.reason ? h("span", { class: "reason" }, t.reason) : null))))
+        : null,
       kv("人が追加", human.length ? h("span", { class: "tags" }, ...human.map((t) => tagChip(t))) : "なし"),
       kv(
         "人が除外",

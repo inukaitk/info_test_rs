@@ -52,7 +52,34 @@ def test_tags_follow_spec_examples():
     assert names == {
         "母子保健", "子育て支援", "制度改正", "補助金・交付金",
         "通知・事務連絡", "自治体DX・標準化", "調査・統計", "審議会・検討会",
+        "ベンダ動向",  # ユーザー指示（2026-10-05）。AIには選ばせず、情報源の設定（fixed_tags）でだけ付ける
     }
+
+
+def test_vendor_trend_tag_is_rule_only_and_fixed_on_the_four_vendor_sources():
+    tags = {t["id"]: t for t in read_yaml(REPO_ROOT / "config" / "tags.yaml")["tags"]}
+    assert tags["vendor-trend"]["name"] == "ベンダ動向" and tags["vendor-trend"]["rule_only"] is True
+    assert not any(t.get("rule_only") for tid, t in tags.items() if tid != "vendor-trend")
+    fixed = {s["id"] for s in read_yaml(REPO_ROOT / "config" / "sources.yaml")["sources"] if "vendor-trend" in s.get("fixed_tags", [])}
+    assert fixed == {"cmic-trust-news", "mchh-prtimes", "milabo-news", "ryobi-neuvola-karte"}
+
+
+def test_fixed_tags_must_be_registered_and_enabled(tmp_path):
+    import shutil
+    from collector.validation import validate_config
+    shutil.copytree(REPO_ROOT / "config", tmp_path / "config")
+    sources = read_yaml(tmp_path / "config" / "sources.yaml")
+    sources["sources"][0]["fixed_tags"] = ["no-such-tag"]
+    write_yaml(tmp_path / "config" / "sources.yaml", sources)
+    _, report = validate_config(tmp_path / "config")
+    assert any("未登録のタグid 'no-such-tag'" in e for e in report.errors)
+    sources["sources"][0]["fixed_tags"] = ["subsidy-grant"]
+    write_yaml(tmp_path / "config" / "sources.yaml", sources)
+    tags = read_yaml(tmp_path / "config" / "tags.yaml")
+    next(t for t in tags["tags"] if t["id"] == "subsidy-grant")["enabled"] = False
+    write_yaml(tmp_path / "config" / "tags.yaml", tags)
+    _, report = validate_config(tmp_path / "config")
+    assert any("廃止済みのタグ 'subsidy-grant'" in e for e in report.errors)
 
 
 def test_site_shows_real_data_without_correction_url_yet():

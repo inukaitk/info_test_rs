@@ -11,7 +11,7 @@ export interface DateInfo {
 export interface Tag {
   id: string;
   name: string;
-  origin: "ai" | "human";
+  origin: "ai" | "human" | "source" | "rule"; // ai：AIが付与、human：人が追加、source：情報源の設定で付与、rule：ルール（キーワード一致）で付与
   reason: string | null;
   retired: boolean;
 }

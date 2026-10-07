@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://info-test-rs.local/schemas/files/rule_tags_file.schema.json",
+  "title": "data/rule_tags.json ルール（キーワード一致）で付けたタグ",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "articles"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "articles": {
+      "type": "object",
+      "additionalProperties": false,
+      "patternProperties": {
+        "^a_[0-9a-f]{16}$": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "article_version",
+            "scope",
+            "rules_version",
+            "tags"
+          ],
+          "properties": {
+            "article_version": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "scope": {
+              "enum": [
+                "body",
+                "title"
+              ],
+              "description": "body：題名と本文で判定、title：本文を取得できず題名だけで判定"
+            },
+            "rules_version": {
+              "type": "string",
+              "pattern": "^sha256:[0-9a-f]{64}$"
+            },
+            "tags": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "tag_id",
+                  "label",
+                  "matched",
+                  "in"
+                ],
+                "properties": {
+                  "tag_id": {
+                    "$ref": "https://info-test-rs.local/schemas/common.schema.json#/$defs/slug_id"
+                  },
+                  "label": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "matched": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 80,
+                    "description": "一致した語（短い引用だけ。本文は保存しない）"
+                  },
+                  "in": {
+                    "enum": [
+                      "title",
+                      "body"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
