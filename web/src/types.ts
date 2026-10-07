@@ -41,6 +41,14 @@ export interface Summary {
   processed_at: string | null;
 }
 
+/** 外部連携用CSVの項目。 */
+export interface ArticleCsv {
+  source_type: "news" | "press_release" | "notice_pdf" | "dashboard";
+  hash: string | null; // 題名＋本文のSHA-256（小文字hex 64桁）
+  hash_status: "ok" | "unavailable" | "error";
+  hash_scope: string | null;
+}
+
 export interface Article {
   id: string;
   source_id: string;
@@ -58,6 +66,7 @@ export interface Article {
   versions: { version: number; fetched_at: string; change_type: "new" | "content_changed" | "extraction_changed"; extraction_status: string }[];
   attachments: { title: string; url: string; status: "ok" | "failed" | "unsupported" | "skipped"; note: string | null; pages: number | null }[];
   summary: Summary;
+  csv: ArticleCsv;
   tags: Tag[];
   removed_tags: { id: string; name: string }[];
   tag_override_reason: string | null;
@@ -75,7 +84,7 @@ export interface Meta {
   stale_after_days: number;
   data_as_of: string | null;
   tags: { id: string; name: string; description: string; retired: boolean }[];
-  sources: { id: string; name: string }[];
+  sources: { id: string; name: string; publisher: string | null; csv_id: string | null; list_url: string | null }[];
 }
 
 /** 取得が完了していない記事（再試行待ち）。 */

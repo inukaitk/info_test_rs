@@ -86,7 +86,10 @@
         "additionalProperties": false,
         "required": [
           "id",
-          "name"
+          "name",
+          "publisher",
+          "csv_id",
+          "list_url"
         ],
         "properties": {
           "id": {
@@ -94,6 +97,24 @@
           },
           "name": {
             "type": "string"
+          },
+          "publisher": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "csv_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "list_url": {
+            "type": [
+              "string",
+              "null"
+            ]
           }
         }
       }

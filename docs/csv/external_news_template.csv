@@ -1,0 +1,4 @@
+﻿record_id,source_id,publisher,title,url,published_date,updated_date,fetched_at,source_type,content_hash,category,excerpt,source_list_url,hash_status,hash_scope
+SAMPLE_NEWS_20260901_001,SAMPLE_NEWS,【架空】サンプル機関,【架空】サンプルのお知らせ,https://www.example.org/news/sample-001,2026-09-01,,2026-10-05T09:00:00+09:00,news,18ada12b833a86ec3a0facfc506ff542c0a42b80382e9bde141032541119602e,母子保健/子育て支援,【架空】サンプルの要約です。 【主な論点】論点その1 / 論点その2,https://www.example.org/news/,ok,title+main_text
+SAMPLE_NEWS_20260924_001,SAMPLE_NEWS,【架空】サンプル機関,【架空】サンプルの通知（PDF）,https://www.example.org/files/sample-notice.pdf,2026-09-24,2026-09-30,2026-10-05T09:00:00+09:00,notice_pdf,870d73db38c2f441d86d279e8a746930cec8edbabc27813631a4eb354bd2df0f,通知,,https://www.example.org/news/,ok,title+pdf_text
+SAMPLE_NEWS_20261001_001,SAMPLE_NEWS,【架空】サンプル機関,【架空】本文を取得できなかった例,https://www.example.org/news/sample-003,2026-10-01,,2026-10-05T09:00:00+09:00,news,,,,https://www.example.org/news/,unavailable,

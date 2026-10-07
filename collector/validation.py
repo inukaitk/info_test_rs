@@ -189,6 +189,7 @@ def validate_config(
         ai=loaded["ai.yaml"],
     )
     _check_sources(config, report)
+    _check_csv_fields(config, report)
     _check_tags(config, report)
     _check_source_fixed_tags(config, report)
     _check_overrides(config, report)
@@ -210,6 +211,18 @@ def _check_sources(config: Config, report: Report) -> None:
                     re.compile(pattern)
                 except re.error as e:
                     report.add(where, [f"{s['id']}: link_rules.{kind} の正規表現 {pattern!r} が不正です（{e}）"])
+
+
+def _check_csv_fields(config: Config, report: Report) -> None:
+    where = "config/sources.yaml"
+    sources = config.sources["sources"]
+    for s in sources:
+        if s["enabled"]:
+            for key in ("csv_id", "publisher", "source_type"):
+                if not s.get(key):
+                    report.add(where, [f"{s['id']}: 収集中の情報源には、外部連携用CSVの {key} が必要です"])
+    for dup in _duplicates([s["csv_id"] for s in sources if s.get("csv_id")]):
+        report.add(where, [f"csv_id {dup!r} が重複しています"])
 
 
 def _check_tags(config: Config, report: Report) -> None:

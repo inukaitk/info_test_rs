@@ -29,6 +29,10 @@ sources:
       max_pages: 7
     # 記事ページからリンクされた PDF も読む（1記事3件・1件10MB・30ページまで。座席図などは読まない）
     attachments: {pdf: true, max_files: 3, max_bytes: 12582912, max_pages: 30, exclude_titles: ["座席", "席次"]}
+    # 外部連携用CSV（docs/csv/）の列。csv_id は監視元の固定ID（変えない）
+    csv_id: CFA_NEWS
+    publisher: こども家庭庁
+    source_type: news
     timezone: Asia/Tokyo
     limits: {max_items: 60, max_bytes: 5242880, wait_seconds: 5, timeout_seconds: 30}
     enabled: true
@@ -88,6 +92,10 @@ sources:
       login_required:
         - "^https://kokasen\\.cfa\\.go\\.jp/login/"
     attachments: {pdf: true, max_files: 3, max_bytes: 12582912, max_pages: 30, exclude_titles: ["座席", "席次"]}
+    # 外部連携用CSV（docs/csv/）の列。csv_id は監視元の固定ID（変えない）
+    csv_id: CFA_KOKASEN_NEWS
+    publisher: こども家庭庁（こども家庭センターポータルサイト）
+    source_type: news
     timezone: Asia/Tokyo
     limits: {max_items: 30, max_bytes: 5242880, wait_seconds: 5, timeout_seconds: 30}
     enabled: true
@@ -114,6 +122,10 @@ sources:
         - "^https://gosaiji-kenshin\\.com/topics/page/"
     attachments: {pdf: true, max_files: 3, max_bytes: 12582912, max_pages: 30, exclude_titles: ["座席", "席次"]}
     pagination: {max_pages: 1}
+    # 外部連携用CSV（docs/csv/）の列。csv_id は監視元の固定ID（変えない）
+    csv_id: GOSAIJI_TOPICS
+    publisher: 5歳児健診ポータル（こども家庭庁の支援）
+    source_type: news
     timezone: Asia/Tokyo
     limits: {max_items: 30, max_bytes: 5242880, wait_seconds: 5, timeout_seconds: 30}
     enabled: true
@@ -282,6 +294,10 @@ sources:
       include:
         - "^https://www\\.cmic-trust\\.jp/news/[^/]+$"
     attachments: {pdf: true, max_files: 3, max_bytes: 12582912, max_pages: 30}
+    # 外部連携用CSV（docs/csv/）の列。csv_id は監視元の固定ID（変えない）
+    csv_id: CMIC_TRUST_NEWS
+    publisher: CMIC Trust 株式会社
+    source_type: news
     timezone: Asia/Tokyo
     limits: {max_items: 30, max_bytes: 5242880, wait_seconds: 5, timeout_seconds: 30}
     fixed_tags: [vendor-trend]   # この情報源の記事すべてに「ベンダ動向」を設定で付ける（AIの判断ではない）
@@ -323,6 +339,10 @@ sources:
     method: rss
     allowed_hosts: [prtimes.jp]
     attachments: {pdf: true, max_files: 3, max_bytes: 12582912, max_pages: 30}
+    # 外部連携用CSV（docs/csv/）の列。csv_id は監視元の固定ID（変えない）
+    csv_id: MTI_BOSHIMO_NEWS
+    publisher: 母子モ株式会社
+    source_type: press_release
     timezone: Asia/Tokyo
     limits: {max_items: 30, max_bytes: 5242880, wait_seconds: 5, timeout_seconds: 30}
     fixed_tags: [vendor-trend]   # この情報源の記事すべてに「ベンダ動向」を設定で付ける（AIの判断ではない）
@@ -346,6 +366,10 @@ sources:
         - "^https://mi-labo\\.co\\.jp/posts/.+"
     pagination: {max_pages: 1}
     attachments: {pdf: true, max_files: 3, max_bytes: 12582912, max_pages: 30}
+    # 外部連携用CSV（docs/csv/）の列。csv_id は監視元の固定ID（変えない）
+    csv_id: MILABO_NEWS
+    publisher: 株式会社ミラボ
+    source_type: news
     timezone: Asia/Tokyo
     limits: {max_items: 30, max_bytes: 8388608, wait_seconds: 5, timeout_seconds: 60}
     fixed_tags: [vendor-trend]   # この情報源の記事すべてに「ベンダ動向」を設定で付ける（AIの判断ではない）
@@ -368,6 +392,10 @@ sources:
         - "^https://www\\.ryobi\\.co\\.jp/news/.+"
     pagination: {max_pages: 1}
     attachments: {pdf: true, max_files: 3, max_bytes: 12582912, max_pages: 30}
+    # 外部連携用CSV（docs/csv/）の列。csv_id は監視元の固定ID（変えない）
+    csv_id: RYOBI_NEUVOLA_NEWS
+    publisher: 株式会社両備システムズ
+    source_type: news
     timezone: Asia/Tokyo
     limits: {max_items: 30, max_bytes: 5242880, wait_seconds: 5, timeout_seconds: 30}
     fixed_tags: [vendor-trend]   # この情報源の記事すべてに「ベンダ動向」を設定で付ける（AIの判断ではない）

@@ -37,6 +37,7 @@ from collector.extract import (
     Candidate, DateFound, Extracted, Listing, extract_document, extract_pdf, normalize_text, parse_feed, parse_html_listing, parse_sitemap,
 )
 from collector.fetch import FetchError, Fetcher, FixtureFetcher, HttpFetcher
+from collector.spec_hash import hash_fields
 from collector.urls import UrlRejected, check_allowed
 from collector.validation import REPO_ROOT, Config, article_id_from_canonical_url, load_json, validate_all, validate_config
 
@@ -447,7 +448,7 @@ def handle_candidate(source, cand: Candidate, url: str, store: Store, fetcher: F
         same_method = latest.get("extraction_profile", "html") == profile or latest["extraction_status"] != "ok"
         change_type = "content_changed" if same_method else "extraction_changed"
         versions.append(_version(article_id, len(versions) + 1, extracted, now_ts, change_type,
-                                 attachments=attachments, profile=profile))
+                                 attachments=attachments, profile=profile, title=article["title"]))
         article["latest_version"] = len(versions)
         if article["status"] == "unsupported":
             article["status"] = "active"
@@ -462,24 +463,28 @@ def handle_candidate(source, cand: Candidate, url: str, store: Store, fetcher: F
         # .cache/ はセッションをまたいで残らないため、変化がなくても本文のキャッシュがなければ書き直す（AI要約で使う）
         if extracted.status == "ok" and new_hash == latest["content_hash"]:
             _cache_text(options.cache_dir, article_id, extracted, len(versions), only_if_missing=True)
+            if "export_hash_status" not in latest:  # 外部連携用CSVのハッシュがない版（この項目を足す前の版）には、本文がある今、足す
+                latest.update(hash_fields(article["title"], extracted.text, extracted.content_type, extracted.status, attachments))
     store.changed_articles.add(article_id)
 
 
 def _version(article_id: str, n: int, extracted: Extracted | None, now_ts: str, change_type: str, error: str | None = None,
-             attachments: list[dict] | None = None, profile: str | None = None) -> dict:
+             attachments: list[dict] | None = None, profile: str | None = None, title: str = "") -> dict:
     if extracted is None:
         return {"article_id": article_id, "version": n, "content_hash": None, "fetched_at": now_ts, "content_type": "none",
-                "text_length": None, "extraction_status": "failed", "extraction_error": error, "change_type": change_type}
+                "text_length": None, "extraction_status": "failed", "extraction_error": error, "change_type": change_type,
+                **hash_fields(title, None, "none", "failed", None)}
     ok = extracted.status == "ok"
     extra: dict = {}
     if profile and profile != "html":
         extra["extraction_profile"] = profile
     if attachments:
         extra["attachments"] = attachments
-    return {**extra, 
+    return {**extra,
         "article_id": article_id, "version": n, "content_hash": extracted.content_hash, "fetched_at": now_ts,
         "content_type": extracted.content_type, "text_length": len(extracted.text) if ok else None,
         "extraction_status": extracted.status, "extraction_error": None if ok else extracted.error, "change_type": change_type,
+        **hash_fields(title, extracted.text, extracted.content_type, extracted.status, attachments),
     }
 
 
@@ -504,7 +509,7 @@ def _new_article(store: Store, source, article_id, url, cand: Candidate, extract
             "date_precision": {"published": pub_precision, "updated": upd_precision},
             "first_seen_at": now_ts, "last_seen_at": now_ts, "latest_version": 1, "status": status,
         },
-        "versions": [_version(article_id, 1, extracted, now_ts, "new", error, attachments, profile)],
+        "versions": [_version(article_id, 1, extracted, now_ts, "new", error, attachments, profile, title=title[:300])],
     }
     store.changed_articles.add(article_id)
 

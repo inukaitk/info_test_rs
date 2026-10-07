@@ -45,7 +45,10 @@
       "text_length": 1154,
       "extraction_status": "ok",
       "extraction_error": null,
-      "change_type": "new"
+      "change_type": "new",
+      "export_hash": "9b8a71403dbd408f58d8ff0d5a785c6ef1f4bb7bba5a28ede261ae6722c861b7",
+      "export_hash_status": "ok",
+      "export_hash_scope": "title+main_text+attachments"
     }
   ]
 }

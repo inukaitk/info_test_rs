@@ -61,6 +61,12 @@
         "model": "claude-sonnet-5-5",
         "processed_at": "2026-10-05T09:37:29+09:00"
       },
+      "csv": {
+        "source_type": "news",
+        "hash": "03084e0d62d2e2bd6e6b7a400f512dbf1ac09a77f1db235d05170372fa8b4524",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text"
+      },
       "tags": [],
       "removed_tags": [],
       "tag_override_reason": null
@@ -146,6 +152,12 @@
         ],
         "model": "claude-sonnet-5-5",
         "processed_at": "2026-10-05T16:46:34+09:00"
+      },
+      "csv": {
+        "source_type": "press_release",
+        "hash": "3e51bb4e2a2d6a01b3f3952f8c80d8be2f8063ad1f77a667fc79d629f91eb9b4",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text+attachments"
       },
       "tags": [
         {
@@ -258,6 +270,12 @@
         ],
         "model": "claude-sonnet-5-5",
         "processed_at": "2026-10-05T16:46:34+09:00"
+      },
+      "csv": {
+        "source_type": "press_release",
+        "hash": "76cca52e01de77b82cec75bd8b9b2cca739155713a73309f5b7f20ce398d6d15",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text+attachments"
       },
       "tags": [
         {
@@ -381,6 +399,12 @@
         "model": "claude-sonnet-5-5",
         "processed_at": "2026-10-05T16:46:34+09:00"
       },
+      "csv": {
+        "source_type": "press_release",
+        "hash": "1ba7a6bfca80af3d3065b2943b686d5331439f25b282e8c7de5db63a6c3834b4",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text+attachments"
+      },
       "tags": [
         {
           "id": "maternal-child-health",
@@ -498,6 +522,12 @@
         "model": "claude-sonnet-5-5",
         "processed_at": "2026-10-05T16:46:34+09:00"
       },
+      "csv": {
+        "source_type": "press_release",
+        "hash": "88fc5b8b22537dc212f74de070a82cefdf67e6de83dec4a9aeb8b25a5195bb0c",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text+attachments"
+      },
       "tags": [
         {
           "id": "maternal-child-health",
@@ -614,6 +644,12 @@
         "model": "claude-sonnet-5-5",
         "processed_at": "2026-10-05T16:46:34+09:00"
       },
+      "csv": {
+        "source_type": "press_release",
+        "hash": "e507e2bd7f868157297c065cc4a32e95cbd4275bf2d6d0ffcda995326c07794f",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text+attachments"
+      },
       "tags": [
         {
           "id": "maternal-child-health",
@@ -693,6 +729,12 @@
         "uncertainties": null,
         "model": null,
         "processed_at": null
+      },
+      "csv": {
+        "source_type": "news",
+        "hash": null,
+        "hash_status": "unavailable",
+        "hash_scope": null
       },
       "tags": [],
       "removed_tags": [],
@@ -788,6 +830,12 @@
         ],
         "model": "claude-sonnet-5-5",
         "processed_at": "2026-10-05T16:46:34+09:00"
+      },
+      "csv": {
+        "source_type": "press_release",
+        "hash": "25c5f78fa473a8e97a26d3b6961bf6dedf76f8e3ada5d335c22fe265124ebfb6",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text+attachments"
       },
       "tags": [
         {
@@ -912,6 +960,12 @@
         "model": "claude-sonnet-5-5",
         "processed_at": "2026-10-05T16:46:34+09:00"
       },
+      "csv": {
+        "source_type": "press_release",
+        "hash": "77ebf5d5a393702e617785c108ea63aa4b32b623272745795d1aa84572898290",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text+attachments"
+      },
       "tags": [
         {
           "id": "maternal-child-health",
@@ -1023,6 +1077,12 @@
         ],
         "model": "claude-sonnet-5-5",
         "processed_at": "2026-10-05T10:29:20+09:00"
+      },
+      "csv": {
+        "source_type": "news",
+        "hash": "9848d92cc17c27cbdd448928db37c06fe4d84d78c6ea2c00163d72ece23f78f8",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text+attachments"
       },
       "tags": [
         {
@@ -1150,6 +1210,12 @@
         "model": "claude-sonnet-5-5",
         "processed_at": "2026-10-05T10:29:20+09:00"
       },
+      "csv": {
+        "source_type": "news",
+        "hash": "1cc199d1444df3f9d02e527351d6c2d7bdcf2e17c2339a1b7ef93ceb9603acbf",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text+attachments"
+      },
       "tags": [
         {
           "id": "council-committee",
@@ -1254,6 +1320,12 @@
         ],
         "model": "claude-sonnet-5-5",
         "processed_at": "2026-10-05T09:37:29+09:00"
+      },
+      "csv": {
+        "source_type": "news",
+        "hash": "a639425fe8fde165714ea24cd491b8c7aa0665b6aa5429e3228ba27d43275f6b",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text+attachments"
       },
       "tags": [
         {
@@ -1387,6 +1459,12 @@
         ],
         "model": "claude-sonnet-5-5",
         "processed_at": "2026-10-05T09:37:29+09:00"
+      },
+      "csv": {
+        "source_type": "news",
+        "hash": "1482fd2dfa99b47e5938966f0dcde9b815ce211fcb71e26dc6af700bea891703",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text+attachments"
       },
       "tags": [
         {
@@ -1554,6 +1632,12 @@
         "model": "claude-sonnet-5-5",
         "processed_at": "2026-10-05T09:37:29+09:00"
       },
+      "csv": {
+        "source_type": "news",
+        "hash": "09debc308473ab5d937f7eac4c80de703d79deecb08a5499868d7fc88e229fc9",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text+attachments"
+      },
       "tags": [
         {
           "id": "council-committee",
@@ -1678,6 +1762,12 @@
         "model": "claude-sonnet-5-5",
         "processed_at": "2026-10-05T09:37:29+09:00"
       },
+      "csv": {
+        "source_type": "news",
+        "hash": "9a5e2e652455610d58cd4c98800e78aabcd6f0ec7704b096ec85c037ee1ff782",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text+attachments"
+      },
       "tags": [
         {
           "id": "council-committee",
@@ -1800,6 +1890,12 @@
         "model": "claude-sonnet-5-5",
         "processed_at": "2026-10-05T10:29:20+09:00"
       },
+      "csv": {
+        "source_type": "news",
+        "hash": "4d1006cdb1e92ca3ec6884ad289cf051038584ec40ee2e0224619d23df2e32c5",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text+attachments"
+      },
       "tags": [
         {
           "id": "childcare-support",
@@ -1871,6 +1967,12 @@
         ],
         "model": "claude-sonnet-5-5",
         "processed_at": "2026-10-05T10:29:20+09:00"
+      },
+      "csv": {
+        "source_type": "news",
+        "hash": "097c27b071c6d2f21ccb7cee6d62e810bc48e588637399402c0e44229dd13d51",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text"
       },
       "tags": [],
       "removed_tags": [],
@@ -1959,6 +2061,12 @@
         "model": "claude-sonnet-5-5",
         "processed_at": "2026-10-05T10:29:20+09:00"
       },
+      "csv": {
+        "source_type": "news",
+        "hash": "e12d7a8cfe67ab0f1cc896dc1a1b49815bbe3ef5dba71ef20dd50831a91f384d",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text+attachments"
+      },
       "tags": [
         {
           "id": "council-committee",
@@ -2036,6 +2144,12 @@
         ],
         "model": "claude-sonnet-5-5",
         "processed_at": "2026-10-05T10:29:20+09:00"
+      },
+      "csv": {
+        "source_type": "news",
+        "hash": "13314de23119bbb9e6526779a37b862c2ed8b345ba100c58852374f7695a80e8",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text"
       },
       "tags": [
         {
@@ -2117,6 +2231,12 @@
         "model": "claude-sonnet-5-5",
         "processed_at": "2026-10-05T10:29:20+09:00"
       },
+      "csv": {
+        "source_type": "news",
+        "hash": "1104dc5f3773e2f99ed3ab52efc537b68cd506893ad8304a34ba30239a0d4e41",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text+attachments"
+      },
       "tags": [
         {
           "id": "subsidy-grant",
@@ -2189,6 +2309,12 @@
         "model": "claude-sonnet-5-5",
         "processed_at": "2026-10-05T10:29:20+09:00"
       },
+      "csv": {
+        "source_type": "news",
+        "hash": "49ecffa1608408c6fb0f83e08c1dc6952414f9c9a292e9061957812d7a6faf44",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text"
+      },
       "tags": [],
       "removed_tags": [],
       "tag_override_reason": null
@@ -2252,6 +2378,12 @@
         ],
         "model": "claude-sonnet-5-5",
         "processed_at": "2026-10-05T16:46:34+09:00"
+      },
+      "csv": {
+        "source_type": "news",
+        "hash": "ae55ac3892e8e03ddd1b2c84c13962ecb5fdb7ce9a5c3f477c6b2d489ea1df63",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text"
       },
       "tags": [
         {
@@ -2529,6 +2661,12 @@
         "model": "claude-sonnet-5-5",
         "processed_at": "2026-10-05T10:29:20+09:00"
       },
+      "csv": {
+        "source_type": "news",
+        "hash": "bc30a02f941b0e05995bdffb139b3d4a30681bfd0101c85546a73219b790f673",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text+attachments"
+      },
       "tags": [
         {
           "id": "system-revision",
@@ -2622,6 +2760,12 @@
         ],
         "model": "claude-sonnet-5-5",
         "processed_at": "2026-10-05T10:29:20+09:00"
+      },
+      "csv": {
+        "source_type": "news",
+        "hash": "6303209c77686e5c7badcfab06ebadafb0658239d571628526585172daf9b205",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text"
       },
       "tags": [],
       "removed_tags": [],
@@ -2767,6 +2911,12 @@
         "model": "claude-sonnet-5-5",
         "processed_at": "2026-10-05T10:29:20+09:00"
       },
+      "csv": {
+        "source_type": "news",
+        "hash": "6ad35baf8d94399dd89c59751313fb34cb98931152bd0f063562190a8334c38c",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text+attachments"
+      },
       "tags": [
         {
           "id": "childcare-support",
@@ -2863,6 +3013,12 @@
         "model": "claude-sonnet-5-5",
         "processed_at": "2026-10-05T10:29:20+09:00"
       },
+      "csv": {
+        "source_type": "news",
+        "hash": "356b9168de54634296d2396951251c9ebc526b37139b8c1550a9d1d4bd27c7a3",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text+attachments"
+      },
       "tags": [
         {
           "id": "childcare-support",
@@ -2952,6 +3108,12 @@
         ],
         "model": "claude-sonnet-5-5",
         "processed_at": "2026-10-05T10:29:20+09:00"
+      },
+      "csv": {
+        "source_type": "news",
+        "hash": "4ed7c219d74bf45f516a69fd6c014076ba05a43196e4dd563546cc15613957fa",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text+attachments"
       },
       "tags": [
         {
@@ -3124,6 +3286,12 @@
         "model": "claude-sonnet-5-5",
         "processed_at": "2026-10-05T10:29:20+09:00"
       },
+      "csv": {
+        "source_type": "news",
+        "hash": "e73c319a6873034515934c3f8be72df7f14c1f92017202b5a0031ebcf517c291",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text+attachments"
+      },
       "tags": [
         {
           "id": "council-committee",
@@ -3234,6 +3402,12 @@
         "model": "claude-sonnet-5-5",
         "processed_at": "2026-10-05T10:29:20+09:00"
       },
+      "csv": {
+        "source_type": "news",
+        "hash": "46c92898e037c325c9e25cb6f537e5991c609de7ef8033970dd39ddc26851d8e",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text+attachments"
+      },
       "tags": [
         {
           "id": "council-committee",
@@ -3339,6 +3513,12 @@
         ],
         "model": "claude-sonnet-5-5",
         "processed_at": "2026-10-05T16:39:15+09:00"
+      },
+      "csv": {
+        "source_type": "press_release",
+        "hash": "70f9eb1ede077e032758f55acca3dc96dad48f4994011c9bb0279ae4c59ac327",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text+attachments"
       },
       "tags": [
         {
@@ -3459,6 +3639,12 @@
         "model": "claude-sonnet-5-5",
         "processed_at": "2026-10-05T16:39:15+09:00"
       },
+      "csv": {
+        "source_type": "press_release",
+        "hash": "22315739c314e0da8279668eab1fd9aaee2178fd4abfe71c2e9ba0837984d3fc",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text+attachments"
+      },
       "tags": [
         {
           "id": "maternal-child-health",
@@ -3570,6 +3756,12 @@
         ],
         "model": "claude-sonnet-5-5",
         "processed_at": "2026-10-05T10:29:20+09:00"
+      },
+      "csv": {
+        "source_type": "news",
+        "hash": "ad282487096e06d659203de3d1239ca2860466eb1d60a5273a88bf8f0ab131ae",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text+attachments"
       },
       "tags": [
         {
@@ -3696,6 +3888,12 @@
         ],
         "model": "claude-sonnet-5-5",
         "processed_at": "2026-10-05T10:29:20+09:00"
+      },
+      "csv": {
+        "source_type": "news",
+        "hash": "e2ef3e6fa9b92b37a1d722a0155cf3d16a78a816e92e5475d5910ca14c69f828",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text+attachments"
       },
       "tags": [
         {
@@ -3863,6 +4061,12 @@
         ],
         "model": "claude-sonnet-5-5",
         "processed_at": "2026-10-05T10:29:20+09:00"
+      },
+      "csv": {
+        "source_type": "news",
+        "hash": "b8aaae1eea2f613a15f9a61d2ffb0f348f8d10681a3f55a7b6eafeffe0385490",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text+attachments"
       },
       "tags": [
         {
@@ -4104,6 +4308,12 @@
         "model": "claude-sonnet-5-5",
         "processed_at": "2026-10-05T10:29:20+09:00"
       },
+      "csv": {
+        "source_type": "news",
+        "hash": "db5701330cac72cd62e43122d8c3ff4210ce2a2fb1ea49dd192f40250efa00fd",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text+attachments"
+      },
       "tags": [],
       "removed_tags": [],
       "tag_override_reason": null
@@ -4167,6 +4377,12 @@
         ],
         "model": "claude-sonnet-5-5",
         "processed_at": "2026-10-05T10:29:20+09:00"
+      },
+      "csv": {
+        "source_type": "news",
+        "hash": "26a05a011dba36f93349d8a0239a66bbc4f7c90a7206b8eb720f05fd04a94f59",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text"
       },
       "tags": [],
       "removed_tags": [],
@@ -4285,6 +4501,12 @@
         "model": "claude-sonnet-5-5",
         "processed_at": "2026-10-05T10:29:20+09:00"
       },
+      "csv": {
+        "source_type": "news",
+        "hash": "35d20b438dbace6c752fcbaac2a04f2968a76913e0c7c6a882b097be0c80113a",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text+attachments"
+      },
       "tags": [
         {
           "id": "council-committee",
@@ -4383,6 +4605,12 @@
         "model": "claude-sonnet-5-5",
         "processed_at": "2026-10-05T10:29:20+09:00"
       },
+      "csv": {
+        "source_type": "news",
+        "hash": "f8d1b153a9225550a103daa0084ba9ad561c7a8a98b4722b3a12c555b093ccce",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text+attachments"
+      },
       "tags": [],
       "removed_tags": [],
       "tag_override_reason": null
@@ -4465,6 +4693,12 @@
         ],
         "model": "claude-sonnet-5-5",
         "processed_at": "2026-10-05T10:29:20+09:00"
+      },
+      "csv": {
+        "source_type": "news",
+        "hash": "fd2ffc111218f05133c32cde91a637e446f98a5a252f313f31abb538c1fa3117",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text+attachments"
       },
       "tags": [
         {
@@ -4579,6 +4813,12 @@
         ],
         "model": "claude-sonnet-5-5",
         "processed_at": "2026-10-05T10:29:20+09:00"
+      },
+      "csv": {
+        "source_type": "news",
+        "hash": "9349c57eaaaced88aebd1d3e26c2b0e553af09347aa794dd512d72ccfb82d4b5",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text+attachments"
       },
       "tags": [],
       "removed_tags": [],
@@ -4697,6 +4937,12 @@
         "model": "claude-sonnet-5-5",
         "processed_at": "2026-10-05T10:29:20+09:00"
       },
+      "csv": {
+        "source_type": "news",
+        "hash": "c741d35608fc34731f78e3915b5dd16f7e6bc4d9b5b29a50ac66eab7f46617ca",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text+attachments"
+      },
       "tags": [
         {
           "id": "council-committee",
@@ -4775,6 +5021,12 @@
         ],
         "model": "claude-sonnet-5-5",
         "processed_at": "2026-10-05T10:29:20+09:00"
+      },
+      "csv": {
+        "source_type": "news",
+        "hash": "4a33c5ef08519656204a933adf124431af0521cff8832fbb8fe8d3ac26c13004",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text"
       },
       "tags": [],
       "removed_tags": [],
@@ -4863,6 +5115,12 @@
         "model": "claude-sonnet-5-5",
         "processed_at": "2026-10-05T10:29:20+09:00"
       },
+      "csv": {
+        "source_type": "news",
+        "hash": "f85eb286b86ffa7911264cbdb0c40ab0ac3a42db83b66ebe8336c72c404adbb3",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text+attachments"
+      },
       "tags": [
         {
           "id": "council-committee",
@@ -4935,6 +5193,12 @@
         ],
         "model": "claude-sonnet-5-5",
         "processed_at": "2026-10-05T10:29:20+09:00"
+      },
+      "csv": {
+        "source_type": "news",
+        "hash": "5a649f0c04ef6f88f98f20a4521fd3674e499f2776a4a2fbc62de8be26cc5165",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text"
       },
       "tags": [],
       "removed_tags": [],
@@ -5027,6 +5291,12 @@
         ],
         "model": "claude-sonnet-5-5",
         "processed_at": "2026-10-05T16:39:15+09:00"
+      },
+      "csv": {
+        "source_type": "press_release",
+        "hash": "68be96c62a0f69f2502114034f1d84e2edd4984d31b5813a25a2197de06cf321",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text+attachments"
       },
       "tags": [
         {
@@ -5299,6 +5569,12 @@
         ],
         "model": "claude-sonnet-5-5",
         "processed_at": "2026-10-05T11:57:41+09:00"
+      },
+      "csv": {
+        "source_type": "news",
+        "hash": "836c551f19b6b07883d96421230bfc19361f640e3736707c634c10419d240f5c",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text+attachments"
       },
       "tags": [
         {
@@ -5579,6 +5855,12 @@
         "model": "claude-sonnet-5-5",
         "processed_at": "2026-10-05T10:29:20+09:00"
       },
+      "csv": {
+        "source_type": "news",
+        "hash": "5a9e4d872d70cdc5efeb96c74761238c674228129af3698f8530ea2e5afea992",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text+attachments"
+      },
       "tags": [
         {
           "id": "council-committee",
@@ -5777,6 +6059,12 @@
         "model": "claude-sonnet-5-5",
         "processed_at": "2026-10-05T10:29:20+09:00"
       },
+      "csv": {
+        "source_type": "news",
+        "hash": "1fca8597610818f6e0cf5a0fe5acbe8bedc2192d878ccc8b8d4f5ab2c3e60e78",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text+attachments"
+      },
       "tags": [],
       "removed_tags": [],
       "tag_override_reason": null
@@ -5859,6 +6147,12 @@
         "model": "claude-sonnet-5-5",
         "processed_at": "2026-10-05T10:29:20+09:00"
       },
+      "csv": {
+        "source_type": "news",
+        "hash": "7779b88793bad292a689419419c306f927b372740010d5981a2c767983d0207d",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text+attachments"
+      },
       "tags": [
         {
           "id": "council-committee",
@@ -5931,6 +6225,12 @@
         ],
         "model": "claude-sonnet-5-5",
         "processed_at": "2026-10-05T10:29:20+09:00"
+      },
+      "csv": {
+        "source_type": "news",
+        "hash": "d16a039ed9311a055a7a8debe483d7f7486efcad0769fafe754d834b6e49f300",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text"
       },
       "tags": [],
       "removed_tags": [],
@@ -6100,6 +6400,12 @@
         "model": "claude-sonnet-5-5",
         "processed_at": "2026-10-05T10:29:20+09:00"
       },
+      "csv": {
+        "source_type": "news",
+        "hash": "37ea01fca3b9557fd64ac11b4fd7f5d1b8b5a5cc1b3c95d886df1221643e72e0",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text+attachments"
+      },
       "tags": [
         {
           "id": "subsidy-grant",
@@ -6213,6 +6519,12 @@
         "model": "claude-sonnet-5-5",
         "processed_at": "2026-10-05T10:29:20+09:00"
       },
+      "csv": {
+        "source_type": "news",
+        "hash": "de001e6ade38e00cdc69fd135d68a6d7c09031d367107c8c67e6b37752bd92e9",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text+attachments"
+      },
       "tags": [],
       "removed_tags": [],
       "tag_override_reason": null
@@ -6277,6 +6589,12 @@
         ],
         "model": "claude-sonnet-5-5",
         "processed_at": "2026-10-05T10:29:20+09:00"
+      },
+      "csv": {
+        "source_type": "news",
+        "hash": "2aa34770646a5d78f051f568681f5fd29554cd498428fa202df521f9427bc53c",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text"
       },
       "tags": [],
       "removed_tags": [],
@@ -6420,6 +6738,12 @@
         ],
         "model": "claude-sonnet-5-5",
         "processed_at": "2026-10-05T10:29:20+09:00"
+      },
+      "csv": {
+        "source_type": "news",
+        "hash": "65bee8afb597fa3ffdfe7ed7b6fd78f53e6a7fbdfb7f37cef19a351471e05d8d",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text+attachments"
       },
       "tags": [
         {
@@ -6621,6 +6945,12 @@
         ],
         "model": "claude-sonnet-5-5",
         "processed_at": "2026-10-05T10:29:20+09:00"
+      },
+      "csv": {
+        "source_type": "news",
+        "hash": "e6121f4e3a2cd4db6b1242e55fcdda02923cfdc202167888ccd2d9298502b71f",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text+attachments"
       },
       "tags": [
         {
@@ -6874,6 +7204,12 @@
         "model": "claude-sonnet-5-5",
         "processed_at": "2026-10-05T10:29:20+09:00"
       },
+      "csv": {
+        "source_type": "news",
+        "hash": "787dc1f02c5b2450090c35edcff790e4b8fc0655b4c0865fa2c5337445dbd420",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text+attachments"
+      },
       "tags": [
         {
           "id": "subsidy-grant",
@@ -6979,6 +7315,12 @@
         "model": "claude-sonnet-5-5",
         "processed_at": "2026-10-05T10:29:20+09:00"
       },
+      "csv": {
+        "source_type": "news",
+        "hash": "9b8a71403dbd408f58d8ff0d5a785c6ef1f4bb7bba5a28ede261ae6722c861b7",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text+attachments"
+      },
       "tags": [
         {
           "id": "council-committee",
@@ -7058,6 +7400,12 @@
         ],
         "model": "claude-sonnet-5-5",
         "processed_at": "2026-10-05T14:43:04+09:00"
+      },
+      "csv": {
+        "source_type": "news",
+        "hash": "3346509cdd3211c4fc6017977194911e25d690080bc4eeae232c2a1cf9615ca7",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text"
       },
       "tags": [
         {
@@ -7150,6 +7498,12 @@
         "model": "claude-sonnet-5-5",
         "processed_at": "2026-10-05T10:29:20+09:00"
       },
+      "csv": {
+        "source_type": "news",
+        "hash": "8836a535304c1ca74d156cf84ce253c18ca406696f505077a2bff354f6077948",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text+attachments"
+      },
       "tags": [
         {
           "id": "council-committee",
@@ -7239,6 +7593,12 @@
         ],
         "model": "claude-sonnet-5-5",
         "processed_at": "2026-10-05T10:29:20+09:00"
+      },
+      "csv": {
+        "source_type": "news",
+        "hash": "642c6f0c04f516587efa378d329415cce80634dba3db447df696d445384a7bbe",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text+attachments"
       },
       "tags": [
         {
@@ -7337,6 +7697,12 @@
         ],
         "model": "claude-sonnet-5-5",
         "processed_at": "2026-10-05T16:39:15+09:00"
+      },
+      "csv": {
+        "source_type": "press_release",
+        "hash": "71a3e740e24938cf9c8b630fde08dd5fd52be484bb6b35189027b1a289b0806c",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text+attachments"
       },
       "tags": [
         {
@@ -7457,6 +7823,12 @@
         ],
         "model": "claude-sonnet-5-5",
         "processed_at": "2026-10-05T16:39:15+09:00"
+      },
+      "csv": {
+        "source_type": "press_release",
+        "hash": "7c872c9083d836544b7030d0c868931427e84b57acb45f6b43a31c38bf901261",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text+attachments"
       },
       "tags": [
         {
@@ -7582,6 +7954,12 @@
         ],
         "model": "claude-sonnet-5-5",
         "processed_at": "2026-10-05T16:39:15+09:00"
+      },
+      "csv": {
+        "source_type": "press_release",
+        "hash": "ccbcad80c1bce574ffe3e57aa9da5a328c66e3f638f9cf532af45d79dfe2d72d",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text+attachments"
       },
       "tags": [
         {
@@ -7713,6 +8091,12 @@
         "model": "claude-sonnet-5-5",
         "processed_at": "2026-10-05T10:29:20+09:00"
       },
+      "csv": {
+        "source_type": "news",
+        "hash": "44dc244296a4bf379616c8153374d6e3eb321affc0e0d62d7159a4e5202e5612",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text+attachments"
+      },
       "tags": [],
       "removed_tags": [],
       "tag_override_reason": null
@@ -7840,6 +8224,12 @@
         "model": "claude-sonnet-5-5",
         "processed_at": "2026-10-05T10:29:20+09:00"
       },
+      "csv": {
+        "source_type": "news",
+        "hash": "e9bd09d29166f88ee2a1e29bfabc80fa3b1d2a0ffbe58ba930ffad01b1e2861b",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text+attachments"
+      },
       "tags": [
         {
           "id": "council-committee",
@@ -7945,6 +8335,12 @@
         ],
         "model": "claude-sonnet-5-5",
         "processed_at": "2026-10-05T10:29:20+09:00"
+      },
+      "csv": {
+        "source_type": "news",
+        "hash": "febf63663bd65380307ea52e284e976d9663134015033313138250ff9965acb2",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text+attachments"
       },
       "tags": [
         {
@@ -8134,6 +8530,12 @@
         "model": "claude-sonnet-5-5",
         "processed_at": "2026-10-05T10:29:20+09:00"
       },
+      "csv": {
+        "source_type": "news",
+        "hash": "f652663320f2cbb9da756dd329379a08c2cc8c887134b2d3aca7f684ca45cf53",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text+attachments"
+      },
       "tags": [
         {
           "id": "subsidy-grant",
@@ -8240,6 +8642,12 @@
         "model": "claude-sonnet-5-5",
         "processed_at": "2026-10-05T10:29:20+09:00"
       },
+      "csv": {
+        "source_type": "news",
+        "hash": "251419f884dfde51cfb38edf38ecd474e818ba3a1e0fbd58848cbc4629976ce8",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text+attachments"
+      },
       "tags": [
         {
           "id": "subsidy-grant",
@@ -8327,6 +8735,12 @@
         "model": "claude-sonnet-5-5",
         "processed_at": "2026-10-05T10:29:20+09:00"
       },
+      "csv": {
+        "source_type": "news",
+        "hash": "5ab1557e6c90f58bb0617326dbeb6d67c52a88b9b807b33c281eab7ed52609e9",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text"
+      },
       "tags": [],
       "removed_tags": [],
       "tag_override_reason": null
@@ -8405,6 +8819,12 @@
         ],
         "model": "claude-sonnet-5-5",
         "processed_at": "2026-10-05T10:29:20+09:00"
+      },
+      "csv": {
+        "source_type": "news",
+        "hash": "a0b7d99bf9e48efb7bdc88791181e6341e30225f2f4856473a0bb46d348940d1",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text+attachments"
       },
       "tags": [
         {
@@ -8601,6 +9021,12 @@
         "model": "claude-sonnet-5-5",
         "processed_at": "2026-10-05T10:29:20+09:00"
       },
+      "csv": {
+        "source_type": "news",
+        "hash": "779f18f73078eb305a3c392c45b6904ed948032efc89b22633835527899f25d7",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text+attachments"
+      },
       "tags": [
         {
           "id": "council-committee",
@@ -8678,6 +9104,12 @@
         ],
         "model": "claude-sonnet-5-5",
         "processed_at": "2026-10-05T14:43:04+09:00"
+      },
+      "csv": {
+        "source_type": "news",
+        "hash": "a7afca8d54e268229e0b86a4922d4468a36f3f40eaea9fc71f520dfaae479cde",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text"
       },
       "tags": [
         {
