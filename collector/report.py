@@ -46,17 +46,12 @@ def published_day(article: dict) -> date | None:
     return None
 
 
-def basis_date(article: dict) -> date:
-    """週次の集計に使う日。公開日（日本時間）を優先し、日付不明・月のみの記事だけ取得日（見つけた日）で数える。"""
-    return published_day(article) or jst_date(article["first_seen_at"])
-
-
 def week_windows(as_of: str | None, articles: list[dict], days: int = 7) -> list[tuple[date, date]]:
     """最終収集日を最後の日とする7日ごとの期間を、新しい順に返す（記事が見つかった最初の週まで）。"""
     if not as_of:
         return []
     end = jst_date(as_of)
-    seen = [basis_date(a) for a in articles]
+    seen = [d for d in (published_day(a) for a in articles) if d is not None]  # 公開日が日まで分からない記事は数えない
     earliest = min(seen) if seen else end
     windows = []
     while len(windows) < MAX_WEEKS:
@@ -113,11 +108,14 @@ def _item(a: dict, version: int | None = None) -> dict:
 def build_week(start: date, end: date, meta: dict, articles: list[dict], status: dict) -> dict:
     inside = lambda ts: start <= jst_date(ts) <= end  # noqa: E731
 
-    new = [a for a in articles if start <= basis_date(a) <= end]
+    # 公開日（日本時間）が期間内の記事だけを数える。公開日が日まで分からない記事（日付不明・月だけ・年だけ）は、
+    # 取得日などで代用せず、新規にも変更にも数えない（この期間に見つけた件数だけを date_unknown に出す）
+    new = [a for a in articles if (d := published_day(a)) is not None and start <= d <= end]
     new_ids = {a["id"] for a in new}
+    undated = [a for a in articles if published_day(a) is None]
     changed = []
     for a in articles:
-        if a["id"] in new_ids:
+        if a["id"] in new_ids or published_day(a) is None:
             continue
         versions = [v for v in a["versions"] if v["change_type"] == "content_changed" and inside(v["fetched_at"])]
         if versions:
@@ -153,12 +151,12 @@ def build_week(start: date, end: date, meta: dict, articles: list[dict], status:
         "counts": {
             "new": len(new),
             "changed": len(changed),
-            "date_unknown": sum(1 for a in targets if a["published"]["value"] is None),
+            "date_unknown": sum(1 for a in undated if inside(a["first_seen_at"])),
             "unsummarized": sum(1 for a in targets if a["summary"]["status"] != "success"),
             "untagged": sum(1 for a in targets if not a["tags"]),
             "runs": len(runs),
         },
-        "new": [_item(a) for a in sorted(new, key=lambda a: (basis_date(a), a["first_seen_at"]), reverse=True)],
+        "new": [_item(a) for a in sorted(new, key=lambda a: (published_day(a), a["first_seen_at"]), reverse=True)],
         "changed": [_item(a, v) for a, v in changed],
         "tag_counts": tag_counts,
         "sources": sources,
@@ -198,7 +196,7 @@ def to_markdown(week: dict, meta: dict) -> str:
         lines += ["> **架空データ**：このレポートの機関名・記事・URLはすべて架空です。実在の情報ではありません。", ""]
     lines += [
         f"- サイト：{md(meta['site_name'])}",
-        f"- 対象：公開日が期間内の記事（公開日が不明・月のみの記事は取得日で数える）と、期間内に本文が変わった記事",
+        f"- 対象：公開日が期間内の記事と、期間内に本文が変わった記事（公開日が日まで分からない記事は数えない）",
         f"- データ作成：{format_timestamp(meta['generated_at'])}",
         "",
         "## 概要",
@@ -207,7 +205,7 @@ def to_markdown(week: dict, meta: dict) -> str:
         "|---|---:|",
         f"| 新規 | {c['new']} |",
         f"| 変更 | {c['changed']} |",
-        f"| うち日付不明 | {c['date_unknown']} |",
+        f"| 公開日不明のため数えていない記事（この期間に見つけたもの） | {c['date_unknown']} |",
         f"| うち未要約 | {c['unsummarized']} |",
         f"| 期間内の収集実行 | {c['runs']} |",
         "",
