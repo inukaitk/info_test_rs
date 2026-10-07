@@ -12,6 +12,8 @@
 | `CLAUDE.md` | Claude Code への開発指示 |
 | `docs/handoff/` | 仕様（SPEC.md）と実装指針（IMPLEMENTATION.md） |
 | `docs/PLAN.md` | 段階0-a〜3-bの実装計画 |
+| `docs/SITE_SPEC.md` | 現行の仕様書（いま動いているもの） |
+| `docs/site_overview.html` | 仕様を図入りで説明するHTML（ダブルクリックで開ける） |
 | `docs/DECISIONS.md` | 決定事項と未確定事項 |
 | `config/` | 人が変更する設定（情報源、タグ、タグ修正、画面設定） |
 | `data/` | 自動処理が作るデータ（記事、版、要約、実行履歴、取得状態、タグ候補） |

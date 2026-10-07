@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>外部環境情報サイト 仕様の概要</title>
+<style>
+  :root { --bg:#f6f8fb; --card:#fff; --ink:#1d2733; --muted:#5b6876; --line:#d9e0e8; --accent:#1f5fae; --accent-bg:#e8f0fb; --warn:#9a5b00; --warn-bg:#fff4e0; --ok:#1d6b43; --ok-bg:#e6f5ec; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#12171d; --card:#1a2129; --ink:#e6ebf0; --muted:#9aa7b5; --line:#2c3743; --accent:#7db3f2; --accent-bg:#1c2b3d; --warn:#f0b866; --warn-bg:#33270f; --ok:#74d09c; --ok-bg:#12301f; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.75 "Yu Gothic UI","Hiragino Sans","Meiryo",system-ui,sans-serif; }
+  header { background:var(--accent); color:#fff; padding:28px 16px; }
+  header .in, main, footer { max-width:960px; margin:0 auto; padding:0 16px; }
+  header .in { padding:0; }
+  h1 { margin:0 0 6px; font-size:1.6rem; }
+  header p { margin:0; opacity:.92; }
+  nav { background:var(--card); border-bottom:1px solid var(--line); position:sticky; top:0; z-index:5; }
+  nav ul { max-width:960px; margin:0 auto; padding:8px 16px; list-style:none; display:flex; flex-wrap:wrap; gap:4px 14px; }
+  nav a { color:var(--accent); text-decoration:none; font-size:.92rem; }
+  nav a:hover { text-decoration:underline; }
+  section { margin:36px 0; }
+  h2 { font-size:1.35rem; border-left:6px solid var(--accent); padding-left:10px; margin:0 0 14px; }
+  h3 { font-size:1.08rem; margin:22px 0 8px; }
+  p { margin:8px 0; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:16px 18px; }
+  .grid { display:grid; gap:12px; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); }
+  .grid .card h3 { margin-top:0; }
+  .tag { display:inline-block; font-size:.8rem; padding:0 8px; border-radius:99px; background:var(--accent-bg); color:var(--accent); border:1px solid var(--line); margin-right:4px; }
+  .note { background:var(--warn-bg); color:var(--warn); border-radius:8px; padding:10px 14px; margin:12px 0; }
+  .okbox { background:var(--ok-bg); color:var(--ok); border-radius:8px; padding:10px 14px; margin:12px 0; }
+  table { width:100%; border-collapse:collapse; background:var(--card); border:1px solid var(--line); font-size:.94rem; }
+  th, td { text-align:left; vertical-align:top; padding:8px 10px; border-bottom:1px solid var(--line); }
+  th { background:var(--accent-bg); white-space:nowrap; }
+  .scroll { overflow-x:auto; }
+  code { font-family:ui-monospace,Consolas,monospace; font-size:.88em; background:var(--accent-bg); padding:1px 5px; border-radius:4px; }
+  /* 流れ図 */
+  .flow { display:flex; flex-wrap:wrap; align-items:stretch; gap:6px; margin:14px 0; }
+  .step { flex:1 1 130px; background:var(--card); border:1px solid var(--line); border-top:4px solid var(--accent); border-radius:8px; padding:10px 12px; font-size:.9rem; }
+  .step b { display:block; margin-bottom:2px; }
+  .step small { color:var(--muted); }
+  .arrow { align-self:center; color:var(--muted); font-size:1.2rem; }
+  .step.human { border-top-color:#c27a00; }
+  .step.pub { border-top-color:#1d6b43; }
+  @media (max-width:640px) { .arrow { display:none; } }
+  ul.tight { margin:6px 0; padding-left:1.3em; }
+  ul.tight li { margin:2px 0; }
+  .mock { border:1px solid var(--line); border-radius:8px; background:var(--card); overflow:hidden; }
+  .mock .bar { background:var(--accent-bg); padding:6px 10px; font-size:.82rem; color:var(--muted); border-bottom:1px solid var(--line); }
+  .mock .body { padding:10px 12px; font-size:.9rem; }
+  .row { border-bottom:1px dashed var(--line); padding:6px 0; }
+  .row:last-child { border:0; }
+  .ai { font-size:.72rem; border:1px solid var(--accent); color:var(--accent); border-radius:4px; padding:0 4px; margin-left:3px; }
+  footer { padding:24px 16px 48px; color:var(--muted); font-size:.88rem; }
+</style>
+</head>
+<body>
+<header>
+  <div class="in" style="max-width:960px;margin:0 auto;padding:0 16px">
+    <h1>外部環境情報サイト 仕様の概要</h1>
+    <p>公的機関などの公開情報を集め、短い概要とタグを付けて、最新一覧とテーマ別Wikiで見られるようにする検証版。2026年10月7日時点。</p>
+  </div>
+</header>
+<nav><ul>
+  <li><a href="#what">1 何をするものか</a></li>
+  <li><a href="#flow">2 仕組み</a></li>
+  <li><a href="#sources">3 情報源</a></li>
+  <li><a href="#ai">4 AIとタグ</a></li>
+  <li><a href="#screens">5 画面</a></li>
+  <li><a href="#csv">6 外部連携用CSV</a></li>
+  <li><a href="#ops">7 運用</a></li>
+  <li><a href="#safe">8 安全と限界</a></li>
+</ul></nav>
+
+<main>
+<section id="what">
+  <h2>1 何をするものか</h2>
+  <div class="grid">
+    <div class="card"><h3>集める</h3><p>指定した公的機関などのWebページ・PDFから、新しい記事を毎週自動で集める。</p></div>
+    <div class="card"><h3>まとめる</h3><p>記事ごとに、日本語の短い概要・論点・日付と、登録済みのタグを付ける。根拠となる原文の引用も残す。</p></div>
+    <div class="card"><h3>見せる</h3><p>最新情報、検索、テーマ別Wiki、週次レポートで閲覧できる。出典リンクで公式ページへ飛べる。</p></div>
+  </div>
+  <div class="note"><b>扱わないもの：</b>自社製品の評価、重要度・優先度、内部メモ、顧客・案件情報。扱うのは公開情報と、一般的な分類タグだけ。個人の検証版であり、部署の公式な成果物ではない。</div>
+</section>
+
+<section id="flow">
+  <h2>2 仕組み（毎週の流れ）</h2>
+  <p>毎週日曜 日本時間15時に、GitHub Actions が次の順で自動実行する。人が手でボタンを押す必要はなく、公開画面にも実行ボタンはない。</p>
+  <div class="flow">
+    <div class="step human"><b>設定</b><small>情報源・タグ・AI設定（人が決める）</small></div><div class="arrow">→</div>
+    <div class="step"><b>収集</b><small>一覧・本文・添付PDFを取得。重複させず、変更は「版」で保存</small></div><div class="arrow">→</div>
+    <div class="step"><b>AI要約</b><small>新規・変更の記事だけ。概要・論点・タグを生成して検証</small></div><div class="arrow">→</div>
+    <div class="step"><b>ルールタグ</b><small>キーワード一致（AIなし・無料）</small></div><div class="arrow">→</div>
+    <div class="step"><b>公開用変換</b><small>許可した項目だけを画面用データに</small></div><div class="arrow">→</div>
+    <div class="step pub"><b>検査・公開</b><small>テストと安全検査のあと、GitHub Pagesへ</small></div>
+  </div>
+  <div class="card">
+    <h3>データの置き場所</h3>
+    <div class="scroll"><table>
+      <tr><th>場所</th><th>中身</th><th>誰が変えるか</th></tr>
+      <tr><td><code>config/</code></td><td>情報源、タグ、AI、サイト表示、記事ごとのタグ修正</td><td>人（Claude Codeへ依頼して編集）</td></tr>
+      <tr><td><code>data/</code></td><td>記事・版・要約・実行履歴などの自動生成データ</td><td>プログラムだけ</td></tr>
+      <tr><td><code>web/public/data/</code></td><td>画面用データ（許可した項目だけ）</td><td>プログラムだけ</td></tr>
+      <tr><td><code>reports/</code></td><td>週次レポート（Markdown）</td><td>プログラムだけ</td></tr>
+      <tr><td><code>.cache/</code>（Gitに入れない）</td><td>本文の全文</td><td>プログラムだけ</td></tr>
+    </table></div>
+  </div>
+  <p>失敗しても無かったことにしない：日付不明・本文未取得・AI失敗は、成功や「該当なし」にせず、そのまま状態として記録・表示する。一部の情報源が失敗したときは、成功した分だけ保存し、失敗した情報源の「成功地点」は進めない。</p>
+</section>
+
+<section id="sources">
+  <h2>3 情報源</h2>
+  <div class="scroll"><table>
+    <tr><th>情報源</th><th>取得方式</th><th>特記事項</th></tr>
+    <tr><td>こども家庭庁（新着・更新）</td><td>HTML一覧</td><td>添付PDFも読む</td></tr>
+    <tr><td>こども家庭センターポータルサイト</td><td>HTML一覧</td><td>会員限定ページは題名・日付のみ</td></tr>
+    <tr><td>5歳児健診ポータル（トピックス）</td><td>HTML一覧</td><td></td></tr>
+    <tr><td>CMIC Trust 株式会社（NEWS）</td><td>サイトマップ＋ページ内データ</td><td rowspan="4">全記事に「ベンダ動向」タグを設定で付与（個別に認めた民間企業）</td></tr>
+    <tr><td>母子モ株式会社（PR TIMES）</td><td>HTML一覧</td></tr>
+    <tr><td>株式会社ミラボ（ニュース）</td><td>HTML一覧</td></tr>
+    <tr><td>株式会社両備システムズ（ネウボラかるて関連）</td><td>HTML一覧</td></tr>
+  </table></div>
+  <p>厚生労働省、国立成育医療研究センター、デジタル庁、内閣府などは「候補（未採用）」として登録済み。有効にするには設定ファイルを変える。</p>
+  <ul class="tight">
+    <li>1回の週次収集は、情報源ごとに「前回の成功日の14日前から今日まで」を探索する。</li>
+    <li>添付PDFは1記事3件・30ページ・12MBまで。画像だけのPDFは読めない。</li>
+  </ul>
+</section>
+
+<section id="ai">
+  <h2>4 AI要約とタグ</h2>
+  <div class="grid">
+    <div class="card"><h3>概要</h3><p>150〜200字前後の概要、主要な論点（5つまで）、対象、確認できた日付、確認できなかった点。原文で確認できた事実だけを書く。</p></div>
+    <div class="card"><h3>検証</h3><p>出力の形をスキーマで検証し、誤りは再試行（最大2回）。日付の根拠の引用が原文にあるかも自動で確認する。失敗は「失敗」と記録する。</p></div>
+    <div class="card"><h3>費用の管理</h3><p>AIを呼ぶのは新規・変更の記事だけ。1件あたり約$0.024。1回の件数と入力量に上限があり、超えたら「未処理」で止める。</p></div>
+  </div>
+  <h3>タグの付き方</h3>
+  <div class="scroll"><table>
+    <tr><th>画面の表示</th><th>付け方</th></tr>
+    <tr><td><span class="tag">AI</span></td><td>登録済みタグの中から、AIが理由つきで選ぶ。登録外のタグは付けない。</td></tr>
+    <tr><td><span class="tag">設定</span></td><td>情報源の設定で、その情報源の全記事に付ける（ベンダ動向）。</td></tr>
+    <tr><td><span class="tag">一致</span></td><td>決めたキーワードが題名・本文にあれば付ける（AIは使わない）。</td></tr>
+    <tr><td><span class="tag">人が追加</span></td><td>設定ファイルで記事ごとに追加・取り消し。再処理で上書きしない。</td></tr>
+  </table></div>
+  <p>登録済みタグ：母子保健／子育て支援／制度改正／補助金・交付金／通知・事務連絡／自治体DX・標準化／調査・統計／審議会・検討会／ベンダ動向（AIは選べず、設定・ルールだけで付く）。</p>
+  <div class="note">AIが提案した新しいタグの候補は記録するだけで、自動では追加しない。画面にも出さない。自社の判断が読み取れるタグ（要対応、営業機会など）は作らない。</div>
+</section>
+
+<section id="screens">
+  <h2>5 画面</h2>
+  <p>上部のメニューで切り替える。どの画面もURLをそのまま共有・ブックマークできる。</p>
+  <div class="scroll"><table>
+    <tr><th>画面</th><th>できること</th></tr>
+    <tr><td>最新情報</td><td>直近7日に<b>公開された</b>記事の一覧。公開日が不明な記事は表示せず、除いた件数を示す。</td></tr>
+    <tr><td>記事を探す</td><td>タグ・機関・期間（公開日）で絞り込み、文字検索。結果をCSV・JSONで保存できる。</td></tr>
+    <tr><td>記事詳細</td><td>出典リンク、日付と根拠、概要、論点、タグと理由、AI処理状態、版の履歴、添付資料の読み取り状況。</td></tr>
+    <tr><td>Wiki</td><td>タグごとの説明と、該当記事を公開日の年月ごとに新しい順で表示。</td></tr>
+    <tr><td>週次レポート</td><td>7日ごとの新規・変更の記事、タグ別件数、情報源別の取得状況。Markdown・CSVで保存できる。</td></tr>
+    <tr><td>取得状況</td><td>情報源ごとの成否・失敗理由・探索範囲、未処理の件数。データが古いと警告。</td></tr>
+    <tr><td>情報源</td><td>収集中の情報源と候補の一覧、取得方式、制約。</td></tr>
+  </table></div>
+  <h3>イメージ（記事の見え方・架空の例）</h3>
+  <div class="mock">
+    <div class="bar">最新情報（公開日が直近7日の記事）</div>
+    <div class="body">
+      <div class="row"><b>【架空】サンプルのお知らせ</b>　<small>2026-10-02 ／ 架空機関</small><br>
+        概要（短い要約） <span class="ai">AI</span><br>
+        <span class="tag">母子保健</span><span class="tag">通知・事務連絡</span><span class="ai">AI</span></div>
+      <div class="row"><b>【架空】事業者のニュース</b>　<small>2026-10-01 ／ 架空事業者</small><br>
+        概要（短い要約） <span class="ai">AI</span><br>
+        <span class="tag">ベンダ動向</span>（設定）</div>
+    </div>
+  </div>
+  <p>すべての画面に「独自に作成した概要で、必ず出典で確認すること」を表示する。ブラウザからの編集や、収集の実行はできない。</p>
+  <p>画面は、公開サイト（GitHub Pages）のほか、1ファイルのHTML（<code>viewer/info_viewer.html</code>）をダブルクリックして開く方法でも見られる。</p>
+</section>
+
+<section id="csv">
+  <h2>6 外部連携用CSV</h2>
+  <p>別の社内分析システムに渡すため、「週次レポート」の「CSVで保存」から、選択中の週の新規・変更の記事を固定15列のCSVで保存できる。</p>
+  <div class="scroll"><table>
+    <tr><th>列</th><th>内容</th></tr>
+    <tr><td><code>record_id</code></td><td><code>{情報源の固定ID}_{公開日YYYYMMDD}_{連番3桁}</code></td></tr>
+    <tr><td><code>source_id</code> / <code>publisher</code></td><td>情報源の固定ID／発信元の名称</td></tr>
+    <tr><td><code>title</code> / <code>url</code></td><td>題名／出典のURL</td></tr>
+    <tr><td><code>published_date</code> / <code>updated_date</code></td><td>公開日・更新日（日まで分かるものだけ）</td></tr>
+    <tr><td><code>fetched_at</code></td><td>取得日時（日本時間）</td></tr>
+    <tr><td><code>source_type</code></td><td>news／press_release／notice_pdf／dashboard</td></tr>
+    <tr><td><code>content_hash</code></td><td>題名＋本文のSHA-256。本文がなければ空欄</td></tr>
+    <tr><td><code>category</code></td><td>タグ名を半角スラッシュでつないだもの（例：母子保健/子育て支援）</td></tr>
+    <tr><td><code>excerpt</code></td><td>独自の要約＋主な論点（1000字まで）。本文の抜粋ではない</td></tr>
+    <tr><td><code>source_list_url</code></td><td>情報源の一覧ページのURL</td></tr>
+    <tr><td><code>hash_status</code> / <code>hash_scope</code></td><td>ハッシュの状態（ok／unavailable）／計算の範囲</td></tr>
+  </table></div>
+  <p>形式：UTF-8（BOM付き）、CRLF、ファイル名 <code>external_news_YYYYMMDD_HHmm.csv</code>。公開日が日まで分からない記事は含めない。ひな形は <code>docs/csv/external_news_template.csv</code>（架空の3行）。</p>
+</section>
+
+<section id="ops">
+  <h2>7 運用</h2>
+  <div class="grid">
+    <div class="card"><h3>誰が何をするか</h3>
+      <ul class="tight"><li>人：情報源・タグ・設定の変更をClaude Codeに依頼し、Pull Requestを確認してマージする。</li>
+      <li>自動：収集・要約・公開（毎週）。</li></ul></div>
+    <div class="card"><h3>失敗したとき</h3>
+      <ul class="tight"><li>要約だけ失敗：記事は「未要約」で公開し、Actionsを赤にして知らせる。</li>
+      <li>全情報源が失敗：何も保存・公開しない。</li></ul></div>
+    <div class="card"><h3>費用</h3>
+      <p>AI APIは従量課金（個人負担）。1回の上限を設定済み。GitHubの機能は公開リポジトリの範囲で利用。</p></div>
+  </div>
+</section>
+
+<section id="safe">
+  <h2>8 安全と限界</h2>
+  <div class="okbox"><b>安全の仕組み：</b>画面用データは許可した項目だけに変換（allowlist）／秘密値・原文全文・AIの生応答・タグ候補は画面に渡さない／APIキーは環境変数・GitHub Secretsだけ／コミット前とActionsで秘密値の混入を検査／テスト（Python 362件、画面 84件）。</div>
+  <div class="note"><b>限界：</b>
+    <ul class="tight">
+      <li>すべての記事を取れているとは限らない（一覧に残っている範囲だけ）。取得範囲は「取得状況」「情報源」画面で確認できる。</li>
+      <li>AIの要約・タグは誤ることがある。必ず出典で確認する。</li>
+      <li>画像だけのPDFは読めない。長い本文は先頭2万文字まで。</li>
+      <li>公開日が不明な記事は、最新情報・週次レポート・CSVに含めない（件数は表示する）。</li>
+      <li>修正依頼のリンクは未設定。週次レポートは直近12週まで。</li>
+    </ul>
+  </div>
+  <p>リポジトリは公開で、履歴も公開される。詳しい仕様は <code>docs/SITE_SPEC.md</code>、設計判断の経緯は <code>docs/DECISIONS.md</code>。</p>
+</section>
+</main>
+<footer>この資料は、実装（main ブランチ）に基づいて作成した説明用の資料です。</footer>
+</body>
+</html>
