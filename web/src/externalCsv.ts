@@ -64,6 +64,11 @@ export function excerptOf(a: Article): string {
   return text.length > EXCERPT_MAX ? `${text.slice(0, EXCERPT_MAX - 1)}…` : text;
 }
 
+/** category：付いているタグの名前を、半角スラッシュでつなぐ（無効にしたタグは除く）。タグがなければ空欄。 */
+export function categoryOf(a: Article): string {
+  return a.tags.filter((t) => !t.retired).map((t) => t.name).join("/");
+}
+
 export function externalCsvRow(data: SiteData, a: Article, recordId: string): string[] {
   const meta = data.meta.sources.find((s) => s.id === a.source_id);
   return [
@@ -77,7 +82,7 @@ export function externalCsvRow(data: SiteData, a: Article, recordId: string): st
     toJstIso(a.last_seen_at),
     a.csv.source_type,
     a.csv.hash ?? "",
-    "", // category：サイト側の公開カテゴリ。今は取得していないため空欄
+    categoryOf(a),
     excerptOf(a),
     meta?.list_url ?? "",
     a.csv.hash_status,

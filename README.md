@@ -160,6 +160,7 @@ npm run preview    # 作ったファイルで画面を起動する。http://loca
 - 列と形式のひな形：`docs/csv/external_news_template.csv`（架空のサンプル3行つき）。UTF-8 BOM付き、カンマ区切り、CRLF。Windowsの表計算ソフトで、そのまま開けます。
 - ファイル名：`external_news_YYYYMMDD_HHmm.csv`（日本時間）。
 - `excerpt` は本文の抜粋ではなく、このサイトで作った要約と主な論点です。公開日が日まで分からない記事は含まれません。
+- `category` は、記事に付いているタグの名前を半角スラッシュでつないだものです（例：`母子保健/子育て支援`）。無効にしたタグは含まず、タグがなければ空欄です。
 - `content_hash` は、題名と本文のSHA-256です。本文を取得できない記事は空欄で、`hash_status` が `unavailable` になります。
 - 情報源を足すときは、`config/sources.yaml` に `csv_id`（固定ID。変えない）、`publisher`、`source_type` を書きます。
 

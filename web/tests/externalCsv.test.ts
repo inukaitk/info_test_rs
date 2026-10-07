@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { csvCell } from "../src/download";
-import { EXTERNAL_CSV_COLUMNS, excerptOf, externalCsvFilename, externalCsvForWeek, jstStamp, recordIds, toJstIso } from "../src/externalCsv";
+import { EXTERNAL_CSV_COLUMNS, categoryOf, excerptOf, externalCsvFilename, externalCsvForWeek, jstStamp, recordIds, toJstIso } from "../src/externalCsv";
 import type { Article, WeeklyReport } from "../src/types";
 import { reportView } from "../src/views/report";
 import { article, site } from "./fixtures";
@@ -38,6 +38,14 @@ const B = article({ id: "a_000000000000000b", title: "【架空】記事B", url:
   updated: day("2026-10-03"), csv: { source_type: "notice_pdf", hash: "b".repeat(64), hash_status: "ok", hash_scope: "title+pdf_text" } });
 const C = article({ id: "a_000000000000000c", title: "【架空】記事C", published: day("2026-09", "month"), source_id: "demo-b", source_name: "架空機関B（デモ）",
   csv: { source_type: "news", hash: null, hash_status: "unavailable", hash_scope: null }, summary: { ...article().summary, status: "not_processed", text: null } });
+
+describe("外部連携用CSV：category", () => {
+  const tag = (id: string, name: string, retired = false) => ({ id, name, origin: "ai" as const, reason: null, retired });
+  it("タグ名を半角スラッシュでつなぎ、無効なタグは除く。タグがなければ空欄", () => {
+    expect(categoryOf(article({ tags: [tag("a", "母子保健"), tag("b", "子育て支援"), tag("c", "旧タグ", true)] }))).toBe("母子保健/子育て支援");
+    expect(categoryOf(article({ tags: [] }))).toBe("");
+  });
+});
 
 describe("外部連携用CSV：形式（仕様の受け入れ条件）", () => {
   const data = site([A, B, C]);
