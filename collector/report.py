@@ -34,12 +34,21 @@ def jst_date(timestamp: str) -> date:
     return datetime.fromisoformat(timestamp).astimezone(JST).date()
 
 
-def basis_date(article: dict) -> date:
-    """週次の集計に使う日。公開日（日まで分かるもの）を優先し、日付不明・月のみの記事は取得日（見つけた日）で数える。"""
+def published_day(article: dict) -> date | None:
+    """公開日（日本時間の日付）。日まで分かる値と、時刻つきの値（RSSなど）が対象。日付不明・月だけ・年だけは None。"""
     value = (article.get("published") or {}).get("value")
-    if value and re.fullmatch(r"\d{4}-\d{2}-\d{2}", value):
+    if not value:
+        return None
+    if re.fullmatch(r"\d{4}-\d{2}-\d{2}", value):
         return date.fromisoformat(value)
-    return jst_date(article["first_seen_at"])
+    if re.match(r"\d{4}-\d{2}-\d{2}T", value):
+        return jst_date(value)
+    return None
+
+
+def basis_date(article: dict) -> date:
+    """週次の集計に使う日。公開日（日本時間）を優先し、日付不明・月のみの記事だけ取得日（見つけた日）で数える。"""
+    return published_day(article) or jst_date(article["first_seen_at"])
 
 
 def week_windows(as_of: str | None, articles: list[dict], days: int = 7) -> list[tuple[date, date]]:

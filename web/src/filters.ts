@@ -134,19 +134,27 @@ export function latestWindow(asOf: string | null, days: number): { from: string;
   return { from: addDays(to, -(days - 1)), to };
 }
 
-/** 集計に使う日：公開日（日まで分かるもの）を優先し、日付不明・月のみの記事は取得日（見つけた日）。 */
-export function basisDate(a: Article): string {
+/** 公開日（日本時間の日付）。日まで分かる値と、時刻つきの値（RSSなど）が対象。日付不明・月だけ・年だけは null。 */
+export function publishedDay(a: Article): string | null {
   const v = a.published.value;
-  return v && /^\d{4}-\d{2}-\d{2}$/.test(v) ? v : jstDate(a.first_seen_at);
+  if (!v) return null;
+  if (/^\d{4}-\d{2}-\d{2}$/.test(v)) return v;
+  if (/^\d{4}-\d{2}-\d{2}T/.test(v)) return jstDate(v);
+  return null;
 }
 
-/** 公開日（日付不明などは取得日）が最新一覧の期間に入る記事。 */
+/** 公開日が最新一覧の期間に入る記事。日付不明・月だけの記事は、取得日などで代用せず、含めない。 */
 export function latestArticles(articles: Article[], window: { from: string; to: string } | null): Article[] {
   if (!window) return [];
   return articles.filter((a) => {
-    const d = basisDate(a);
-    return d >= window.from && d <= window.to;
+    const d = publishedDay(a);
+    return d !== null && d >= window.from && d <= window.to;
   });
+}
+
+/** 公開日が日まで分からないため、最新一覧に出せない記事の数（画面で別に知らせる）。 */
+export function countUndatedForLatest(articles: Article[]): number {
+  return articles.filter((a) => publishedDay(a) === null).length;
 }
 
 /** 期間指定によって除外された日付不明の記事数（画面で別枠として知らせる）。 */

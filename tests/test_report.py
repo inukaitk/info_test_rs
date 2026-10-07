@@ -99,6 +99,19 @@ def test_basis_date_prefers_published_day():
         assert rp.basis_date({"published": {"value": value}, "first_seen_at": seen}) == date(2026, 10, 5)
 
 
+def test_published_day_reads_timestamps_as_japan_time_and_ignores_unknown_or_partial():
+    assert rp.published_day({"published": {"value": "2026-09-17"}}) == date(2026, 9, 17)
+    assert rp.published_day({"published": {"value": "2026-09-01T12:00:02+09:00"}}) == date(2026, 9, 1)
+    assert rp.published_day({"published": {"value": "2026-09-21T16:00:00+00:00"}}) == date(2026, 9, 22), "UTCの夕方は日本時間では翌日"
+    for value in (None, "2026-09", "2026"):
+        assert rp.published_day({"published": {"value": value}}) is None
+
+
+def test_basis_date_uses_the_published_day_of_timestamp_values_not_the_first_seen_day():
+    seen = "2026-10-05T09:00:00+09:00"
+    assert rp.basis_date({"published": {"value": "2026-09-01T12:00:02+09:00"}, "first_seen_at": seen}) == date(2026, 9, 1)
+
+
 def test_backfilled_old_articles_do_not_count_as_new_this_week():
     article = lambda i, pub: {  # noqa: E731
         "id": i, "title": i, "url": "https://a.example.org/" + i, "source_name": "s",
