@@ -2,6 +2,466 @@
   "schema_version": 1,
   "articles": [
     {
+      "id": "a_eeee4b09421f751c",
+      "source_id": "cfa-news",
+      "source_name": "こども家庭庁（新着・更新）",
+      "title": "中司大臣記者会見（令和8年10月9日）",
+      "url": "https://www.cfa.go.jp/speech/841eb9e1",
+      "published": {
+        "value": "2026-10-09",
+        "precision": "day",
+        "basis": {
+          "method": "listing_text",
+          "evidence": "2026年10月9日"
+        }
+      },
+      "updated": {
+        "value": null,
+        "precision": "unknown",
+        "basis": null
+      },
+      "first_seen_at": "2026-10-11T21:33:02+09:00",
+      "last_seen_at": "2026-10-11T21:33:02+09:00",
+      "status": "active",
+      "content_status": "ok",
+      "content_error": null,
+      "latest_version": 1,
+      "versions": [
+        {
+          "version": 1,
+          "fetched_at": "2026-10-11T21:33:02+09:00",
+          "change_type": "new",
+          "extraction_status": "ok"
+        }
+      ],
+      "attachments": [],
+      "summary": {
+        "status": "success",
+        "error": null,
+        "version": 1,
+        "outdated": false,
+        "text": "令和8年10月9日に中司大臣が記者会見を行ったとの告知。会見要旨は後日掲載される予定とされており、会見の具体的な内容は本文からは確認できない。",
+        "key_points": [
+          "中司大臣が令和8年10月9日に記者会見を行った",
+          "会見要旨は後日掲載予定である"
+        ],
+        "targets": [],
+        "dates": [
+          {
+            "label": "記者会見の開催日",
+            "value": "2026-10-09",
+            "evidence": "令和8年10月9日、中司大臣が記者会見を行いました。"
+          }
+        ],
+        "uncertainties": [
+          "会見で扱われた議題・発言内容は本文に記載がなく不明",
+          "会見要旨の掲載時期は「後日」とのみ記載され具体的な日付は不明",
+          "対象者・対象機関は記載がない"
+        ],
+        "model": "claude-sonnet-5-5",
+        "processed_at": "2026-10-11T21:41:44+09:00"
+      },
+      "csv": {
+        "source_type": "news",
+        "hash": "e5c88f129796ae437e544e0bdb52786bc896b00e83dca72f307550c63b570180",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text"
+      },
+      "tags": [],
+      "removed_tags": [],
+      "tag_override_reason": null
+    },
+    {
+      "id": "a_47f720992795e868",
+      "source_id": "cfa-news",
+      "source_name": "こども家庭庁（新着・更新）",
+      "title": "入札公告　令和8年度",
+      "url": "https://www.cfa.go.jp/kinugawa/nyuusatu-r8",
+      "published": {
+        "value": "2026-10-08",
+        "precision": "day",
+        "basis": {
+          "method": "listing_text",
+          "evidence": "2026年10月8日"
+        }
+      },
+      "updated": {
+        "value": null,
+        "precision": "unknown",
+        "basis": null
+      },
+      "first_seen_at": "2026-10-11T21:33:02+09:00",
+      "last_seen_at": "2026-10-11T21:33:02+09:00",
+      "status": "active",
+      "content_status": "ok",
+      "content_error": null,
+      "latest_version": 1,
+      "versions": [
+        {
+          "version": 1,
+          "fetched_at": "2026-10-11T21:33:02+09:00",
+          "change_type": "new",
+          "extraction_status": "ok"
+        }
+      ],
+      "attachments": [
+        {
+          "title": "国立きぬ川学院公用車の交換購入一式（公告日：令和8年10月8日）（PDF／162KB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/f63c278c-c5da-4736-9eba-c24dcbaf825c/76eb7da3/20261005_kinugawa_nyuusatu-r8_02.pdf",
+          "status": "ok",
+          "note": null,
+          "pages": 3
+        },
+        {
+          "title": "国立きぬ川学院西公務員宿舎改修工事（公告日：令和8年7月29日）（PDF／123KB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/f63c278c-c5da-4736-9eba-c24dcbaf825c/2734119c/20260727_kinugawa_nyuusatu-r8_01.pdf",
+          "status": "ok",
+          "note": null,
+          "pages": 4
+        }
+      ],
+      "summary": {
+        "status": "success",
+        "error": null,
+        "version": 1,
+        "outdated": false,
+        "text": "国立きぬ川学院が令和8年度に公告した一般競争入札2件。公用車の交換購入一式(総合評価落札方式、公告日2026-10-08、入札書提出期限2026-11-06)と、西公務員宿舎改修工事(公告日2026-07-29、入札書提出期限2026-09-07)。競争参加資格や手続を定めている。",
+        "key_points": [
+          "公用車の交換購入一式は総合評価落札方式で、価格と環境性能を総合評価して落札者を決定する",
+          "公用車の納入期限は令和9年3月19日まで、入札書は電子入札システムで提出(紙入札は持参または書留郵送)",
+          "西公務員宿舎改修工事は最低価格落札方式で、工期は契約締結日の翌日から令和9年3月12日まで",
+          "両件とも予算決算及び会計令第70条・71条に該当しないこと、内閣府の指名停止中でないこと等の競争参加資格がある",
+          "入札保証金は免除。契約保証金は公用車は免除、改修工事は免除だが公共工事履行保証証券の付保が必要"
+        ],
+        "targets": [
+          "公用車の交換購入に参加を希望する事業者(全省庁統一資格の「車両類」A・B・C等級、関東・甲信越地域)",
+          "西公務員宿舎改修工事に参加を希望する建設事業者(内閣府競争参加資格「建築一式」B又はC等級、栃木県内に本店・支店・営業所を有する者)"
+        ],
+        "dates": [
+          {
+            "label": "公用車交換購入 公告日",
+            "value": "2026-10-08",
+            "evidence": "国立きぬ川学院公用車の交換購入一式(公告日:令和8年10月8日)"
+          },
+          {
+            "label": "公用車交換購入 納入期限",
+            "value": "2027-03-19",
+            "evidence": "(3)納入期限 令和9年3月19日まで"
+          },
+          {
+            "label": "公用車交換購入 入札説明書交付・証明書等提出期間の終了日",
+            "value": "2026-10-28",
+            "evidence": "令和8年10月9日(金)~令和8年10月28日(水)"
+          },
+          {
+            "label": "公用車交換購入 入札書提出期限",
+            "value": "2026-11-06",
+            "evidence": "期限:令和 8年11月6日(金)13時30分まで"
+          },
+          {
+            "label": "公用車交換購入 開札日",
+            "value": "2026-11-06",
+            "evidence": "令和8年11月6日(金)14時30分"
+          },
+          {
+            "label": "宿舎改修工事 公告日",
+            "value": "2026-07-29",
+            "evidence": "国立きぬ川学院西公務員宿舎改修工事(公告日:令和8年7月29日)"
+          },
+          {
+            "label": "宿舎改修工事 工期終了",
+            "value": "2027-03-12",
+            "evidence": "契約締結日の翌日から令和9年3月12日(金)まで"
+          },
+          {
+            "label": "宿舎改修工事 自己申告書提出期限",
+            "value": "2026-08-18",
+            "evidence": "「自己申告書」を令和8年8月18日(火)までに提出すること。"
+          },
+          {
+            "label": "宿舎改修工事 入札書提出期限",
+            "value": "2026-09-07",
+            "evidence": "入札書の提出期限 令和8年9月7日(月)午後1時30分"
+          },
+          {
+            "label": "宿舎改修工事 開札日",
+            "value": "2026-09-07",
+            "evidence": "令和8年9月7日(月)午後2時30分、国立きぬ川学院会議室"
+          }
+        ],
+        "uncertainties": [
+          "公用車の仕様、納入場所、総合評価の方法は入札説明書によるとされ、本文では確認できない",
+          "公用車の落札価格の説明で「1/10分の100」と読める記載があり、原文の表記が不明瞭",
+          "公開日は2026-10-08とされるが、宿舎改修工事の公告日は2026-07-29であり、ページ全体の更新経緯は不明"
+        ],
+        "model": "claude-sonnet-5-5",
+        "processed_at": "2026-10-11T21:41:44+09:00"
+      },
+      "csv": {
+        "source_type": "news",
+        "hash": "6c54bfbe4007923d082e5da04b88fa0b1f0833db8a4c978dd33dd8a482d50a2b",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text+attachments"
+      },
+      "tags": [],
+      "removed_tags": [],
+      "tag_override_reason": null
+    },
+    {
+      "id": "a_8cf456fce76013ff",
+      "source_id": "mchh-prtimes",
+      "source_name": "母子モ株式会社（プレスリリース、PR TIMES）",
+      "title": "兵庫県姫路市で『子育てDX』「乳幼児健診サービス」の対象範囲を拡大！",
+      "url": "https://prtimes.jp/main/html/rd/p/000000582.000099909.html",
+      "published": {
+        "value": "2026-10-07T15:00:01+09:00",
+        "precision": "datetime",
+        "basis": {
+          "method": "rss_pubdate",
+          "evidence": "2026-10-07T15:00:01+09:00"
+        }
+      },
+      "updated": {
+        "value": null,
+        "precision": "unknown",
+        "basis": null
+      },
+      "first_seen_at": "2026-10-11T21:33:02+09:00",
+      "last_seen_at": "2026-10-11T21:33:02+09:00",
+      "status": "active",
+      "content_status": "ok",
+      "content_error": null,
+      "latest_version": 1,
+      "versions": [
+        {
+          "version": 1,
+          "fetched_at": "2026-10-11T21:33:02+09:00",
+          "change_type": "new",
+          "extraction_status": "ok"
+        }
+      ],
+      "attachments": [
+        {
+          "title": "PR TIMESのご利用について 資料をダウンロード",
+          "url": "https://prtimes.jp/common/file/service_guide.pdf",
+          "status": "ok",
+          "note": null,
+          "pages": 14
+        }
+      ],
+      "summary": {
+        "status": "success",
+        "error": null,
+        "version": 1,
+        "outdated": false,
+        "text": "母子モ株式会社の『子育てDX』「乳幼児健診サービス」が、兵庫県姫路市で2026年10月から始まる5歳児健診モデル事業に活用されている。問診票の回答や一部の健診結果の確認がアプリ『ひめっこ手帳』でできる。同サービスの5歳児健診への活用は姫路市が初という。",
+        "key_points": [
+          "姫路市は2024年2月から4か月・10か月・1歳6か月・3歳児健診の問診票回答と結果確認をアプリ上でデジタル化している",
+          "本年10月開始の5歳児健診モデル事業に「乳幼児健診サービス」を活用し、問診票回答や一部結果確認がアプリで可能になる",
+          "令和8年度中に5歳になる年中児から無作為に500名を抽出し、アプリ上のアンケート結果をもとに最終的な健診対象者を選定する",
+          "保護者が同意した場合、園所が子どもの様子のアンケートにシステム上で回答でき、自治体は保護者・園所双方の回答を確認できる",
+          "5歳児健診への活用は姫路市が初で、母子モ株式会社の2026年9月時点の契約状況調査に基づく"
+        ],
+        "targets": [
+          "姫路市の5歳児健診の対象となる子どもの保護者",
+          "姫路市内の園所",
+          "姫路市(自治体)"
+        ],
+        "dates": [
+          {
+            "label": "姫路市での乳幼児健診サービス導入",
+            "value": "2024-02",
+            "evidence": "姫路市では、2024年2月より「乳幼児健診サービス」を通じて4か月児健診"
+          },
+          {
+            "label": "5歳児健診モデル事業のアンケート開始",
+            "value": "2026-10-01",
+            "evidence": "10月1日(木)より『ひめっこ手帳』上で実施されるアンケート結果をもとに"
+          },
+          {
+            "label": "プレスリリース公開日",
+            "value": "2026-10-07",
+            "evidence": "2026年10月7日 15時00分"
+          },
+          {
+            "label": "母子モ契約状況の調査時期",
+            "value": "2026-09",
+            "evidence": "調査年月:2026年9月"
+          }
+        ],
+        "uncertainties": [
+          "5歳児健診モデル事業の具体的な実施期間や終了時期は記載がない",
+          "アプリ上で確認できる「一部結果」の具体的範囲は記載がない",
+          "本文は民間企業のプレスリリースで、姫路市の公式発表は確認できない",
+          "10月の5歳児健診開始日は「本年10月」とのみ記載され、具体的な日付はない"
+        ],
+        "model": "claude-sonnet-5-5",
+        "processed_at": "2026-10-11T21:41:44+09:00"
+      },
+      "csv": {
+        "source_type": "press_release",
+        "hash": "194bf0e841e23f7b10e49ef162eba7ed8e7cc50fb845addec74dbd44d24cbccb",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text+attachments"
+      },
+      "tags": [
+        {
+          "id": "maternal-child-health",
+          "name": "母子保健",
+          "origin": "ai",
+          "reason": "乳幼児健診・5歳児健診の問診票回答や結果確認に関する内容のため",
+          "retired": false
+        },
+        {
+          "id": "childcare-support",
+          "name": "子育て支援",
+          "origin": "ai",
+          "reason": "子育て世帯の手続き負担軽減を図る子育て関連事業のデジタル化を扱っているため",
+          "retired": false
+        },
+        {
+          "id": "municipal-dx-standardization",
+          "name": "自治体DX・標準化",
+          "origin": "ai",
+          "reason": "自治体の健診手続きのデジタル化と、保護者・園所・自治体間のデータ確認の仕組みを扱っているため",
+          "retired": false
+        },
+        {
+          "id": "vendor-trend",
+          "name": "ベンダ動向",
+          "origin": "source",
+          "reason": "情報源の設定：母子モ株式会社（プレスリリース、PR TIMES）の記事すべてに付けています",
+          "retired": false
+        }
+      ],
+      "removed_tags": [],
+      "tag_override_reason": null
+    },
+    {
+      "id": "a_940bcb40dac46ca0",
+      "source_id": "mchh-prtimes",
+      "source_name": "母子モ株式会社（プレスリリース、PR TIMES）",
+      "title": "母子手帳アプリ『母子モ』が北海道札幌市で提供を開始！",
+      "url": "https://prtimes.jp/main/html/rd/p/000000581.000099909.html",
+      "published": {
+        "value": "2026-10-07T14:00:01+09:00",
+        "precision": "datetime",
+        "basis": {
+          "method": "rss_pubdate",
+          "evidence": "2026-10-07T14:00:01+09:00"
+        }
+      },
+      "updated": {
+        "value": null,
+        "precision": "unknown",
+        "basis": null
+      },
+      "first_seen_at": "2026-10-11T21:33:02+09:00",
+      "last_seen_at": "2026-10-11T21:33:02+09:00",
+      "status": "active",
+      "content_status": "ok",
+      "content_error": null,
+      "latest_version": 1,
+      "versions": [
+        {
+          "version": 1,
+          "fetched_at": "2026-10-11T21:33:02+09:00",
+          "change_type": "new",
+          "extraction_status": "ok"
+        }
+      ],
+      "attachments": [
+        {
+          "title": "PR TIMESのご利用について 資料をダウンロード",
+          "url": "https://prtimes.jp/common/file/service_guide.pdf",
+          "status": "ok",
+          "note": null,
+          "pages": 14
+        }
+      ],
+      "summary": {
+        "status": "success",
+        "error": null,
+        "version": 1,
+        "outdated": false,
+        "text": "母子モ株式会社の母子手帳アプリ『母子モ』が札幌市に導入され、『さっぽろ子育てアプリ』として2026年10月26日から無料で提供開始される。予防接種管理、健診記録、自治体情報の配信、育児日記などの機能を備える。",
+        "key_points": [
+          "札幌市が『母子モ』を採用し、『さっぽろ子育てアプリ』として10月26日(月)から提供を開始する",
+          "札幌市は2017年4月から子育てアプリを運用しており、今回刷新される",
+          "主な機能は妊娠・育児の記録管理、予防接種スケジュール管理、健診情報の記録、自治体からの制度・サービス案内、家族との共有",
+          "育児日記『できたよ記念日』はこども家庭庁の母子健康手帳様式例などを元に作成されている",
+          "利用料金は無料。対応OSはAndroid 8.0以上、iOS 15.0以上で、Webブラウザからも利用できる"
+        ],
+        "targets": [
+          "札幌市の妊産婦・子育て世帯(保護者)",
+          "札幌市",
+          "利用を希望する他自治体居住者"
+        ],
+        "dates": [
+          {
+            "label": "提供開始日",
+            "value": "2026-10-26",
+            "evidence": "『さっぽろ子育てアプリ』として10月26日(月)より提供を開始します。"
+          },
+          {
+            "label": "プレスリリース公開日",
+            "value": "2026-10-07",
+            "evidence": "2026年10月7日 14時00分"
+          },
+          {
+            "label": "旧アプリ導入時期",
+            "value": "2017-04",
+            "evidence": "『さっぽろ子育てアプリ』を2017年4月より導入・運用してきました"
+          }
+        ],
+        "uncertainties": [
+          "旧アプリから『母子モ』への移行方法やデータ引き継ぎの扱いは記載がない",
+          "札幌市側の公式発表や導入費用は確認できない",
+          "文書の後半はPR TIMESのサービス案内で、札幌市の件とは関係がない"
+        ],
+        "model": "claude-sonnet-5-5",
+        "processed_at": "2026-10-11T21:41:44+09:00"
+      },
+      "csv": {
+        "source_type": "press_release",
+        "hash": "d1013c2b0d8177ae439daaf41fcf283d20b60823c61719bf100ba4d1595a3bcc",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text+attachments"
+      },
+      "tags": [
+        {
+          "id": "maternal-child-health",
+          "name": "母子保健",
+          "origin": "ai",
+          "reason": "母子健康手帳のデジタル記録、予防接種・健診情報の管理など母子保健に関する機能を扱っている",
+          "retired": false
+        },
+        {
+          "id": "childcare-support",
+          "name": "子育て支援",
+          "origin": "ai",
+          "reason": "札幌市の子育て支援アプリの提供開始と、子育て世帯向けの情報提供・制度案内を扱っている",
+          "retired": false
+        },
+        {
+          "id": "municipal-dx-standardization",
+          "name": "自治体DX・標準化",
+          "origin": "ai",
+          "reason": "自治体の子育て情報発信のデジタル化やアプリ導入、母子保健情報の連携を扱っている",
+          "retired": false
+        },
+        {
+          "id": "vendor-trend",
+          "name": "ベンダ動向",
+          "origin": "source",
+          "reason": "情報源の設定：母子モ株式会社（プレスリリース、PR TIMES）の記事すべてに付けています",
+          "retired": false
+        }
+      ],
+      "removed_tags": [],
+      "tag_override_reason": null
+    },
+    {
       "id": "a_2b04e6bc3f4187da",
       "source_id": "cfa-news",
       "source_name": "こども家庭庁（新着・更新）",
@@ -21,7 +481,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-07T11:50:38+09:00",
-      "last_seen_at": "2026-10-07T11:50:38+09:00",
+      "last_seen_at": "2026-10-11T21:33:02+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -172,7 +632,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-07T11:50:38+09:00",
-      "last_seen_at": "2026-10-07T11:50:38+09:00",
+      "last_seen_at": "2026-10-11T21:33:02+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -346,7 +806,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-07T11:50:38+09:00",
-      "last_seen_at": "2026-10-07T11:50:38+09:00",
+      "last_seen_at": "2026-10-11T21:33:02+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -417,7 +877,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-07T11:50:38+09:00",
-      "last_seen_at": "2026-10-07T11:50:38+09:00",
+      "last_seen_at": "2026-10-11T21:33:02+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -615,7 +1075,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-02T17:07:01+09:00",
-      "last_seen_at": "2026-10-07T11:50:38+09:00",
+      "last_seen_at": "2026-10-11T21:33:02+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -685,7 +1145,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-05T14:38:18+09:00",
-      "last_seen_at": "2026-10-07T11:50:38+09:00",
+      "last_seen_at": "2026-10-11T21:33:02+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -806,7 +1266,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-05T14:38:18+09:00",
-      "last_seen_at": "2026-10-07T11:50:38+09:00",
+      "last_seen_at": "2026-10-11T21:33:02+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -924,7 +1384,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-05T14:38:18+09:00",
-      "last_seen_at": "2026-10-07T11:50:38+09:00",
+      "last_seen_at": "2026-10-11T21:33:02+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -1052,7 +1512,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-05T14:38:18+09:00",
-      "last_seen_at": "2026-10-07T11:50:38+09:00",
+      "last_seen_at": "2026-10-11T21:33:02+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -1175,7 +1635,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-05T14:38:18+09:00",
-      "last_seen_at": "2026-10-07T11:50:38+09:00",
+      "last_seen_at": "2026-10-11T21:33:02+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -1297,7 +1757,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-05T14:24:29+09:00",
-      "last_seen_at": "2026-10-07T11:50:38+09:00",
+      "last_seen_at": "2026-10-11T21:33:02+09:00",
       "status": "unsupported",
       "content_status": "unsupported",
       "content_error": "会員限定（ログインが必要）のページのため、本文は取得していません。一覧の題名・日付と出典リンクだけを記録しています",
@@ -1354,7 +1814,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-05T14:38:18+09:00",
-      "last_seen_at": "2026-10-07T11:50:38+09:00",
+      "last_seen_at": "2026-10-11T21:33:02+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -1484,7 +1944,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-05T14:38:18+09:00",
-      "last_seen_at": "2026-10-07T11:50:38+09:00",
+      "last_seen_at": "2026-10-11T21:33:02+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -1613,7 +2073,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-05T10:14:31+09:00",
-      "last_seen_at": "2026-10-07T11:50:38+09:00",
+      "last_seen_at": "2026-10-11T21:33:02+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -1717,7 +2177,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-05T10:14:31+09:00",
-      "last_seen_at": "2026-10-07T11:50:38+09:00",
+      "last_seen_at": "2026-10-11T21:33:02+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -1849,7 +2309,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-02T17:07:01+09:00",
-      "last_seen_at": "2026-10-07T11:50:38+09:00",
+      "last_seen_at": "2026-10-11T21:33:02+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -1960,7 +2420,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-02T17:07:01+09:00",
-      "last_seen_at": "2026-10-07T11:50:38+09:00",
+      "last_seen_at": "2026-10-11T21:33:02+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -2099,7 +2559,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-02T17:07:01+09:00",
-      "last_seen_at": "2026-10-07T11:50:38+09:00",
+      "last_seen_at": "2026-10-11T21:33:02+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -2285,7 +2745,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-02T17:07:01+09:00",
-      "last_seen_at": "2026-10-07T11:50:38+09:00",
+      "last_seen_at": "2026-10-11T21:33:02+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -2401,7 +2861,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-05T10:14:31+09:00",
-      "last_seen_at": "2026-10-07T11:50:38+09:00",
+      "last_seen_at": "2026-10-11T21:33:02+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -2522,7 +2982,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-05T10:14:31+09:00",
-      "last_seen_at": "2026-10-07T11:50:38+09:00",
+      "last_seen_at": "2026-10-11T21:33:02+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -2592,7 +3052,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-05T10:14:31+09:00",
-      "last_seen_at": "2026-10-07T11:50:38+09:00",
+      "last_seen_at": "2026-10-11T21:33:02+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -2693,7 +3153,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-05T10:14:31+09:00",
-      "last_seen_at": "2026-10-07T11:50:38+09:00",
+      "last_seen_at": "2026-10-11T21:33:02+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -2833,7 +3293,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-05T10:14:31+09:00",
-      "last_seen_at": "2026-10-07T11:50:38+09:00",
+      "last_seen_at": "2026-10-11T21:33:02+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -2919,7 +3379,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-05T10:14:31+09:00",
-      "last_seen_at": "2026-10-07T11:50:38+09:00",
+      "last_seen_at": "2026-10-11T21:33:02+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -2989,7 +3449,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-05T14:53:03+09:00",
-      "last_seen_at": "2026-10-07T11:50:38+09:00",
+      "last_seen_at": "2026-10-11T21:33:02+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -5389,20 +5849,33 @@
         "basis": null
       },
       "first_seen_at": "2026-10-05T10:14:31+09:00",
-      "last_seen_at": "2026-10-05T10:14:31+09:00",
+      "last_seen_at": "2026-10-11T21:33:02+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
-      "latest_version": 1,
+      "latest_version": 2,
       "versions": [
         {
           "version": 1,
           "fetched_at": "2026-10-05T10:14:31+09:00",
           "change_type": "new",
           "extraction_status": "ok"
+        },
+        {
+          "version": 2,
+          "fetched_at": "2026-10-11T21:33:02+09:00",
+          "change_type": "content_changed",
+          "extraction_status": "ok"
         }
       ],
       "attachments": [
+        {
+          "title": "長官官房総務課（人事担当）期間業務職員（一般事務補助）（PDF／291KB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/1c31fc42-55b2-4d2b-8d1e-b02dc2008b2a/a44402a3/20261002_recruitment_kikan_51.pdf",
+          "status": "ok",
+          "note": null,
+          "pages": 3
+        },
         {
           "title": "（支援局虐待防止対策課）期間業務職員（一般事務補助）（PDF／177KB）",
           "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/1c31fc42-55b2-4d2b-8d1e-b02dc2008b2a/b839a933/20260915_recruitment_kikan_50.pdf",
@@ -5421,52 +5894,52 @@
       "summary": {
         "status": "success",
         "error": null,
-        "version": 1,
+        "version": 2,
         "outdated": false,
-        "text": "こども家庭庁支援局虐待防止対策課が、一般事務補助の期間業務職員(非常勤、1名)を募集している。雇用期間は令和8年11月1日から令和9年3月31日まで。応募は郵送またはメールで、令和8年10月7日必着(メールは17時受信分まで)。",
+        "text": "こども家庭庁が一般事務補助の期間業務職員（非常勤）を募集。長官官房総務課(人事担当)は令和8年10月23日必着、支援局虐待防止対策課は令和8年10月7日必着。雇用期間は令和8年11月1日から令和9年3月31日まで。勤務地は東京都千代田区。",
         "key_points": [
-          "職種は一般事務補助(非常勤)、採用人数は1名",
-          "雇用期間は令和8年11月1日〜令和9年3月31日で、採用後1か月は条件付採用期間。勤務成績等により再採用もあり得る",
-          "資格は高校卒以上でWord・Excel等が扱える方。国籍や国家公務員法第38条等の欠格事項あり",
-          "仕事内容は補助金・委託費の執行業務補助、旅費・諸謝金支給業務補助、各種調査依頼への対応補助、電話応対や文書作成などの補助業務",
-          "選考は書類審査と面接で、応募書類の提出に応じ募集期限前でも随時面接を行う。問い合わせはメールのみ"
+          "長官官房総務課(人事担当)：社会保険（共済組合等）関連業務の一般事務補助、採用人数は若干名",
+          "支援局虐待防止対策課：補助金・委託費の執行業務補助等の一般事務補助、採用人数は1名",
+          "雇用期間は令和8年11月1日から令和9年3月31日まで、非常勤、日給月給制（日額11,190円～14,390円）",
+          "応募は履歴書と職務経歴書を郵送またはメールで提出、選考は書類審査と面接",
+          "問い合わせはメールのみ対応"
         ],
         "targets": [
-          "期間業務職員(一般事務補助)への応募希望者"
+          "高校卒業以上でWord・Excel等のパソコン操作が可能な方（期間業務職員応募者）"
         ],
         "dates": [
           {
-            "label": "募集期限(郵送)",
+            "label": "応募期限（長官官房総務課(人事担当)・郵送）",
+            "value": "2026-10-23",
+            "evidence": "郵 送:令和8年 10 月23 日(金)必着"
+          },
+          {
+            "label": "応募期限（支援局虐待防止対策課・郵送）",
             "value": "2026-10-07",
             "evidence": "郵 送:令和8年10月7日必着【厳守】"
           },
           {
-            "label": "募集期限(メール)",
-            "value": "2026-10-07",
-            "evidence": "メール:令和8年10月7日17時受信分まで【厳守】"
-          },
-          {
-            "label": "雇用開始日",
+            "label": "雇用期間開始",
             "value": "2026-11-01",
             "evidence": "雇用期間 令和8年11月1日から令和9年3月31日まで"
           },
           {
-            "label": "雇用終了日",
+            "label": "雇用期間終了",
             "value": "2027-03-31",
             "evidence": "雇用期間 令和8年11月1日から令和9年3月31日まで"
           }
         ],
         "uncertainties": [
-          "添付の履歴書PDFは文字化けしており、記載内容の詳細は確認できない",
-          "面接の日時・場所は文書に記載がなく、対象者のみに連絡される",
-          "給与は給与法改正に伴い変更となる可能性があると記載されているが、具体的な内容は不明"
+          "長官官房総務課の日給下限が「1 1,190円」と表記されており、11,190円か原文の表記ゆれか確認できない",
+          "履歴書様式PDFは文字化けしており、内容を確認できない",
+          "公開日は2026-09-16と記載されているが、本文中に公開日の記載はない"
         ],
         "model": "claude-sonnet-5-5",
-        "processed_at": "2026-10-05T10:29:20+09:00"
+        "processed_at": "2026-10-11T21:41:44+09:00"
       },
       "csv": {
         "source_type": "news",
-        "hash": "9349c57eaaaced88aebd1d3e26c2b0e553af09347aa794dd512d72ccfb82d4b5",
+        "hash": "a063f6598eb63c5d19dc856403c9527ce88b18351a4888d256885e35f86ad3ea",
         "hash_status": "ok",
         "hash_scope": "title+main_text+attachments"
       },
@@ -9713,7 +10186,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-05T14:24:29+09:00",
-      "last_seen_at": "2026-10-07T11:50:38+09:00",
+      "last_seen_at": "2026-10-11T21:33:02+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,

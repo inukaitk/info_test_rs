@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_8cf456fce76013ff",
+    "source_id": "mchh-prtimes",
+    "canonical_url": "https://prtimes.jp/main/html/rd/p/000000582.000099909.html",
+    "title": "兵庫県姫路市で『子育てDX』「乳幼児健診サービス」の対象範囲を拡大！",
+    "published_at": "2026-10-07T15:00:01+09:00",
+    "updated_at": null,
+    "date_basis": {
+      "published": {
+        "method": "rss_pubdate",
+        "evidence": "<dc:date>2026-10-07T15:00:01+09:00</dc:date>"
+      },
+      "updated": null
+    },
+    "date_precision": {
+      "published": "datetime",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-10-11T21:33:02+09:00",
+    "last_seen_at": "2026-10-11T21:33:02+09:00",
+    "latest_version": 1,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "extraction_profile": "html+pdf(3files,30pages)",
+      "attachments": [
+        {
+          "url": "https://prtimes.jp/common/file/service_guide.pdf",
+          "title": "PR TIMESのご利用について 資料をダウンロード",
+          "status": "ok",
+          "error": null,
+          "text_length": 7357,
+          "pages": 14,
+          "pages_read": 14
+        }
+      ],
+      "article_id": "a_8cf456fce76013ff",
+      "version": 1,
+      "content_hash": "sha256:e1733de9711175ecaa7a82a3f459ae8fc2e99e863a919d0bbaf97345b360f9e4",
+      "fetched_at": "2026-10-11T21:33:02+09:00",
+      "content_type": "html",
+      "text_length": 10585,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "new",
+      "export_hash": "194bf0e841e23f7b10e49ef162eba7ed8e7cc50fb845addec74dbd44d24cbccb",
+      "export_hash_status": "ok",
+      "export_hash_scope": "title+main_text+attachments"
+    }
+  ]
+}

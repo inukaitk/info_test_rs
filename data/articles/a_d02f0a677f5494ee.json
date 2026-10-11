@@ -19,8 +19,8 @@
       "updated": "unknown"
     },
     "first_seen_at": "2026-10-05T10:14:31+09:00",
-    "last_seen_at": "2026-10-05T10:14:31+09:00",
-    "latest_version": 1,
+    "last_seen_at": "2026-10-11T21:33:02+09:00",
+    "latest_version": 2,
     "status": "active"
   },
   "versions": [
@@ -56,6 +56,50 @@
       "extraction_error": null,
       "change_type": "new",
       "export_hash": "9349c57eaaaced88aebd1d3e26c2b0e553af09347aa794dd512d72ccfb82d4b5",
+      "export_hash_status": "ok",
+      "export_hash_scope": "title+main_text+attachments"
+    },
+    {
+      "extraction_profile": "html+pdf(3files,30pages,exclude:座席|席次)",
+      "attachments": [
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/1c31fc42-55b2-4d2b-8d1e-b02dc2008b2a/a44402a3/20261002_recruitment_kikan_51.pdf",
+          "title": "長官官房総務課（人事担当）期間業務職員（一般事務補助）（PDF／291KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 1785,
+          "pages": 3,
+          "pages_read": 3
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/1c31fc42-55b2-4d2b-8d1e-b02dc2008b2a/b839a933/20260915_recruitment_kikan_50.pdf",
+          "title": "（支援局虐待防止対策課）期間業務職員（一般事務補助）（PDF／177KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 1957,
+          "pages": 3,
+          "pages_read": 3
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/1c31fc42-55b2-4d2b-8d1e-b02dc2008b2a/b7c5f665/20251225_recruitment_kikan_32.pdf",
+          "title": "（様式）履歴書（PDF／70KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 438,
+          "pages": 2,
+          "pages_read": 2
+        }
+      ],
+      "article_id": "a_d02f0a677f5494ee",
+      "version": 2,
+      "content_hash": "sha256:88bae4277c168f3722e9fcd7960955da248ae6f9217126fc4fdcc69d8d57ba0b",
+      "fetched_at": "2026-10-11T21:33:02+09:00",
+      "content_type": "html",
+      "text_length": 4483,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "content_changed",
+      "export_hash": "a063f6598eb63c5d19dc856403c9527ce88b18351a4888d256885e35f86ad3ea",
       "export_hash_status": "ok",
       "export_hash_scope": "title+main_text+attachments"
     }

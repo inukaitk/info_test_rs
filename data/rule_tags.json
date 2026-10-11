@@ -135,6 +135,12 @@
       "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
       "tags": []
     },
+    "a_47f720992795e868": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
     "a_48b9e379c6bc0e65": {
       "article_version": 1,
       "scope": "body",
@@ -271,6 +277,19 @@
         }
       ]
     },
+    "a_8cf456fce76013ff": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": [
+        {
+          "tag_id": "vendor-trend",
+          "label": "母子モ",
+          "matched": "母子モ",
+          "in": "body"
+        }
+      ]
+    },
     "a_8d006531e4717bb2": {
       "article_version": 1,
       "scope": "body",
@@ -282,6 +301,19 @@
       "scope": "body",
       "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
       "tags": []
+    },
+    "a_940bcb40dac46ca0": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": [
+        {
+          "tag_id": "vendor-trend",
+          "label": "母子モ",
+          "matched": "母子モ",
+          "in": "title"
+        }
+      ]
     },
     "a_9457bbab21bd409d": {
       "article_version": 1,
@@ -432,7 +464,7 @@
       "tags": []
     },
     "a_d02f0a677f5494ee": {
-      "article_version": 1,
+      "article_version": 2,
       "scope": "body",
       "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
       "tags": []
@@ -505,6 +537,12 @@
       "tags": []
     },
     "a_ee8065db1df28b06": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
+    "a_eeee4b09421f751c": {
       "article_version": 1,
       "scope": "body",
       "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",

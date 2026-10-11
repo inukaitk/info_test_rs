@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "article_id": "a_eeee4b09421f751c",
+  "summaries": [
+    {
+      "article_id": "a_eeee4b09421f751c",
+      "article_version": 1,
+      "analysis_status": "success",
+      "error": null,
+      "summary": "令和8年10月9日に中司大臣が記者会見を行ったとの告知。会見要旨は後日掲載される予定とされており、会見の具体的な内容は本文からは確認できない。",
+      "key_points": [
+        "中司大臣が令和8年10月9日に記者会見を行った",
+        "会見要旨は後日掲載予定である"
+      ],
+      "targets": [],
+      "dates": [
+        {
+          "label": "記者会見の開催日",
+          "value": "2026-10-09",
+          "evidence": "令和8年10月9日、中司大臣が記者会見を行いました。"
+        }
+      ],
+      "ai_tags": [],
+      "uncertainties": [
+        "会見で扱われた議題・発言内容は本文に記載がなく不明",
+        "会見要旨の掲載時期は「後日」とのみ記載され具体的な日付は不明",
+        "対象者・対象機関は記載がない"
+      ],
+      "provider": "anthropic",
+      "model": "claude-sonnet-5-5",
+      "prompt_version": "p1-2026-10-02",
+      "tags_version": "sha256:bde74cf4ea967ef07307b37972c605277d95999c697068f6c5e9d5a6af8a7951",
+      "usage": {
+        "input_tokens": 2249,
+        "output_tokens": 290,
+        "retries": 0,
+        "estimated_cost_usd": 0.007398
+      },
+      "processed_at": "2026-10-11T21:41:44+09:00",
+      "content_hash": "sha256:bdecee394c5442ef016c93626920fd11e2bd6902768b951b18d6d378c884d8e3"
+    }
+  ]
+}

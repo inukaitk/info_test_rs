@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_47f720992795e868",
+    "source_id": "cfa-news",
+    "canonical_url": "https://www.cfa.go.jp/kinugawa/nyuusatu-r8",
+    "title": "入札公告　令和8年度",
+    "published_at": "2026-10-08",
+    "updated_at": null,
+    "date_basis": {
+      "published": {
+        "method": "listing_text",
+        "evidence": "<time datetime=\"2026-10-08\">2026年10月8日</time>"
+      },
+      "updated": null
+    },
+    "date_precision": {
+      "published": "day",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-10-11T21:33:02+09:00",
+    "last_seen_at": "2026-10-11T21:33:02+09:00",
+    "latest_version": 1,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "extraction_profile": "html+pdf(3files,30pages,exclude:座席|席次)",
+      "attachments": [
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/f63c278c-c5da-4736-9eba-c24dcbaf825c/76eb7da3/20261005_kinugawa_nyuusatu-r8_02.pdf",
+          "title": "国立きぬ川学院公用車の交換購入一式（公告日：令和8年10月8日）（PDF／162KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 2346,
+          "pages": 3,
+          "pages_read": 3
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/f63c278c-c5da-4736-9eba-c24dcbaf825c/2734119c/20260727_kinugawa_nyuusatu-r8_01.pdf",
+          "title": "国立きぬ川学院西公務員宿舎改修工事（公告日：令和8年7月29日）（PDF／123KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 4036,
+          "pages": 4,
+          "pages_read": 4
+        }
+      ],
+      "article_id": "a_47f720992795e868",
+      "version": 1,
+      "content_hash": "sha256:dab205d8e8c695590aa76a36e4fab841028476855f5fe69a068e011c20028540",
+      "fetched_at": "2026-10-11T21:33:02+09:00",
+      "content_type": "html",
+      "text_length": 6584,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "new",
+      "export_hash": "6c54bfbe4007923d082e5da04b88fa0b1f0833db8a4c978dd33dd8a482d50a2b",
+      "export_hash_status": "ok",
+      "export_hash_scope": "title+main_text+attachments"
+    }
+  ]
+}

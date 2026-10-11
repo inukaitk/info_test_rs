@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_940bcb40dac46ca0",
+    "source_id": "mchh-prtimes",
+    "canonical_url": "https://prtimes.jp/main/html/rd/p/000000581.000099909.html",
+    "title": "母子手帳アプリ『母子モ』が北海道札幌市で提供を開始！",
+    "published_at": "2026-10-07T14:00:01+09:00",
+    "updated_at": null,
+    "date_basis": {
+      "published": {
+        "method": "rss_pubdate",
+        "evidence": "<dc:date>2026-10-07T14:00:01+09:00</dc:date>"
+      },
+      "updated": null
+    },
+    "date_precision": {
+      "published": "datetime",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-10-11T21:33:02+09:00",
+    "last_seen_at": "2026-10-11T21:33:02+09:00",
+    "latest_version": 1,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "extraction_profile": "html+pdf(3files,30pages)",
+      "attachments": [
+        {
+          "url": "https://prtimes.jp/common/file/service_guide.pdf",
+          "title": "PR TIMESのご利用について 資料をダウンロード",
+          "status": "ok",
+          "error": null,
+          "text_length": 7357,
+          "pages": 14,
+          "pages_read": 14
+        }
+      ],
+      "article_id": "a_940bcb40dac46ca0",
+      "version": 1,
+      "content_hash": "sha256:daa3aae92716772cba0e06c725850b6b41746b81cb884305275d1552139d3dbd",
+      "fetched_at": "2026-10-11T21:33:02+09:00",
+      "content_type": "html",
+      "text_length": 10260,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "new",
+      "export_hash": "d1013c2b0d8177ae439daaf41fcf283d20b60823c61719bf100ba4d1595a3bcc",
+      "export_hash_status": "ok",
+      "export_hash_scope": "title+main_text+attachments"
+    }
+  ]
+}
