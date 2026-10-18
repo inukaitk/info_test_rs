@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_e7479a69948bc980",
+    "source_id": "cfa-news",
+    "canonical_url": "https://www.cfa.go.jp/policies/kodomo_sodachi/nationaltournament-symposium",
+    "title": "『はじめの100か月の育ちビジョン』全国大会・国際シンポジウム",
+    "published_at": "2026-10-16",
+    "updated_at": null,
+    "date_basis": {
+      "published": {
+        "method": "listing_text",
+        "evidence": "<time datetime=\"2026-10-16\">2026年10月16日</time>"
+      },
+      "updated": null
+    },
+    "date_precision": {
+      "published": "day",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-10-18T19:48:06+09:00",
+    "last_seen_at": "2026-10-18T19:48:06+09:00",
+    "latest_version": 1,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "extraction_profile": "html+pdf(3files,30pages,exclude:座席|席次)",
+      "article_id": "a_e7479a69948bc980",
+      "version": 1,
+      "content_hash": "sha256:8a2100f1c6c4fccd77ecf04310be49ff6b18d917a7682a21a4fe14cc873d580a",
+      "fetched_at": "2026-10-18T19:48:06+09:00",
+      "content_type": "html",
+      "text_length": 370,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "new",
+      "export_hash": "2d7a7d667ea29697d723b9e8dc92495d24223437520309f47694cb5579476e32",
+      "export_hash_status": "ok",
+      "export_hash_scope": "title+main_text"
+    }
+  ]
+}

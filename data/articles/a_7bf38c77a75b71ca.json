@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_7bf38c77a75b71ca",
+    "source_id": "cfa-news",
+    "canonical_url": "https://www.cfa.go.jp/press/6914ca83-1b2c-42c9-9bf5-452019407b00",
+    "title": "第2回乳幼児の健康診査等のあり方に関する検討会について",
+    "published_at": "2026-10-15",
+    "updated_at": null,
+    "date_basis": {
+      "published": {
+        "method": "html_text",
+        "evidence": "公開日:令和8年10月15日"
+      },
+      "updated": null
+    },
+    "date_precision": {
+      "published": "day",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-10-18T19:48:06+09:00",
+    "last_seen_at": "2026-10-18T19:48:06+09:00",
+    "latest_version": 1,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "extraction_profile": "html+pdf(3files,30pages,exclude:座席|席次)",
+      "attachments": [
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/6914ca83-1b2c-42c9-9bf5-452019407b00/4bfad0c6/20261014_press_6914ca83-1b2c-42c9-9bf5-452019407b00_01.pdf",
+          "title": "第2回乳幼児の健康診査等のあり方に関する検討会について（PDF／366KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 1726,
+          "pages": 2,
+          "pages_read": 2
+        }
+      ],
+      "article_id": "a_7bf38c77a75b71ca",
+      "version": 1,
+      "content_hash": "sha256:fefc2f5d1d36494f3124112e7952ea094dbbd61d29f961e2e0485c200f478d28",
+      "fetched_at": "2026-10-18T19:48:06+09:00",
+      "content_type": "html",
+      "text_length": 1891,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "new",
+      "export_hash": "53fa8b233e6f35f89df41406ef222120691140698d65ce5b2f4a3fc83ad1fb14",
+      "export_hash_status": "ok",
+      "export_hash_scope": "title+main_text+attachments"
+    }
+  ]
+}

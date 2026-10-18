@@ -92,6 +92,12 @@
       "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
       "tags": []
     },
+    "a_3a633754d972321b": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
     "a_3b333de840b1ce13": {
       "article_version": 1,
       "scope": "body",
@@ -99,6 +105,12 @@
       "tags": []
     },
     "a_3b7d00298c0b051e": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
+    "a_3ba6565f65ea02f1": {
       "article_version": 1,
       "scope": "body",
       "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
@@ -252,6 +264,12 @@
         }
       ]
     },
+    "a_7bf38c77a75b71ca": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
     "a_80f10594f52f9edf": {
       "article_version": 1,
       "scope": "body",
@@ -263,6 +281,19 @@
       "scope": "body",
       "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
       "tags": []
+    },
+    "a_898ea21be21106e2": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": [
+        {
+          "tag_id": "vendor-trend",
+          "label": "母子モ",
+          "matched": "母子モ",
+          "in": "title"
+        }
+      ]
     },
     "a_89ef9d926a1241cf": {
       "article_version": 1,
@@ -413,6 +444,12 @@
         }
       ]
     },
+    "a_bacb7946126d03b1": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
     "a_bbc8f15415b0b677": {
       "article_version": 1,
       "scope": "body",
@@ -464,7 +501,7 @@
       "tags": []
     },
     "a_d02f0a677f5494ee": {
-      "article_version": 2,
+      "article_version": 3,
       "scope": "body",
       "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
       "tags": []
@@ -476,6 +513,12 @@
       "tags": []
     },
     "a_d7f316409f1803f8": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
+    "a_dac26c85ed7d8859": {
       "article_version": 1,
       "scope": "body",
       "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
@@ -530,6 +573,18 @@
       "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
       "tags": []
     },
+    "a_e7479a69948bc980": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
+    "a_e9a7ed45f3dc3a64": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
     "a_ec97cf33454016d2": {
       "article_version": 1,
       "scope": "body",
@@ -579,6 +634,12 @@
           "in": "title"
         }
       ]
+    },
+    "a_feeb6c5955c4bb23": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
     },
     "a_ff44d6651fc1323f": {
       "article_version": 1,
