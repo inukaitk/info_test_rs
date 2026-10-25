@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_e0db1d09213492c8",
+    "source_id": "milabo-news",
+    "canonical_url": "https://mi-labo.co.jp/posts/20261021-php-security-old3/",
+    "title": "【重要】PHPの脆弱性に関する当社サービスの対応状況について（第3報）",
+    "published_at": "2026-10-22",
+    "updated_at": null,
+    "date_basis": {
+      "published": {
+        "method": "listing_text",
+        "evidence": "2026年10月22日"
+      },
+      "updated": null
+    },
+    "date_precision": {
+      "published": "day",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-10-25T20:08:12+09:00",
+    "last_seen_at": "2026-10-25T20:08:12+09:00",
+    "latest_version": 1,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "extraction_profile": "html+pdf(3files,30pages)",
+      "article_id": "a_e0db1d09213492c8",
+      "version": 1,
+      "content_hash": "sha256:4e80fae3f06337205baef81aae5c9ac1e759ca0b85425581d18f19b24b3506e7",
+      "fetched_at": "2026-10-25T20:08:12+09:00",
+      "content_type": "html",
+      "text_length": 1396,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "new",
+      "export_hash": "5a1de03fdafd19498fc82ee18307cbd3cbb5cf4e94a482b99dceed48caa415a8",
+      "export_hash_status": "ok",
+      "export_hash_scope": "title+main_text"
+    }
+  ]
+}

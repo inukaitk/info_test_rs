@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "article_id": "a_a5449d666c68d694",
+  "summaries": [
+    {
+      "article_id": "a_a5449d666c68d694",
+      "article_version": 1,
+      "analysis_status": "success",
+      "error": null,
+      "summary": "CMIC Trust株式会社が、2026年10月21日に公表されたPHPの重大な脆弱性への対応状況を告知。「Famimo」「my FAMIMO」を一時停止中で、パッチ適用は完了し、ベンダーが詳細調査中。不正アクセス等は現時点で未確認。再開は調査結果を踏まえて判断する。",
+      "key_points": [
+        "2026年10月21日に利用中ソフトウェアPHPの重大な脆弱性が公表された",
+        "「Famimo」および「my FAMIMO」のサービスを一時停止している",
+        "セキュリティパッチの適用は完了している",
+        "開発・運用ベンダーが詳細調査を実施中",
+        "不正アクセス、情報漏えい、データ改ざん等の事実は現時点で確認されていない"
+      ],
+      "targets": [
+        "「Famimo」「my FAMIMO」のサービス利用者（お客様）",
+        "関係者"
+      ],
+      "dates": [
+        {
+          "label": "脆弱性の公表日",
+          "value": "2026-10-21",
+          "evidence": "2026年10月21日、当社サービスで利用しているソフトウェア(PHP)において、重大なセキュリティ脆弱性が公表されました。"
+        }
+      ],
+      "ai_tags": [],
+      "uncertainties": [
+        "サービス再開の時期は記載がない",
+        "脆弱性の具体的な識別情報（CVE番号など）やPHPのバージョンは記載がない",
+        "サービスの具体的な内容や利用者の範囲は本文からは確認できない",
+        "一時停止を開始した日時は記載がない"
+      ],
+      "provider": "anthropic",
+      "model": "claude-sonnet-5-5",
+      "prompt_version": "p1-2026-10-02",
+      "tags_version": "sha256:bde74cf4ea967ef07307b37972c605277d95999c697068f6c5e9d5a6af8a7951",
+      "usage": {
+        "input_tokens": 2621,
+        "output_tokens": 593,
+        "retries": 0,
+        "estimated_cost_usd": 0.011172
+      },
+      "processed_at": "2026-10-25T20:18:19+09:00",
+      "content_hash": "sha256:140e94cfa3c7006cb7118c609d377d83c28c65a730fbfb1e86c28647c86d3565"
+    }
+  ]
+}

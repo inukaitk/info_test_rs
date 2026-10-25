@@ -2,6 +2,2566 @@
   "schema_version": 1,
   "articles": [
     {
+      "id": "a_2b5e827e26c82d1f",
+      "source_id": "cfa-news",
+      "source_name": "こども家庭庁（新着・更新）",
+      "title": "はじめの100か月の育ちビジョン全国大会・国際シンポジウムの開催について",
+      "url": "https://www.cfa.go.jp/press/764bd6b4-ffdc-4727-b16f-aaeb48087882",
+      "published": {
+        "value": "2026-10-23",
+        "precision": "day",
+        "basis": {
+          "method": "html_text",
+          "evidence": "公開日:令和8年10月23日"
+        }
+      },
+      "updated": {
+        "value": null,
+        "precision": "unknown",
+        "basis": null
+      },
+      "first_seen_at": "2026-10-25T20:08:12+09:00",
+      "last_seen_at": "2026-10-25T20:08:12+09:00",
+      "status": "active",
+      "content_status": "ok",
+      "content_error": null,
+      "latest_version": 1,
+      "versions": [
+        {
+          "version": 1,
+          "fetched_at": "2026-10-25T20:08:12+09:00",
+          "change_type": "new",
+          "extraction_status": "ok"
+        }
+      ],
+      "attachments": [
+        {
+          "title": "はじめの100か月の育ちビジョン全国大会・国際シンポジウムの開催について（PDF／5.7MB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/764bd6b4-ffdc-4727-b16f-aaeb48087882/fc43b01e/20261023_press_764bd6b4-ffdc-4727-b16f-aaeb48087882_01.pdf",
+          "status": "ok",
+          "note": null,
+          "pages": 4
+        }
+      ],
+      "summary": {
+        "status": "success",
+        "error": null,
+        "version": 1,
+        "outdated": false,
+        "text": "こども家庭庁は「はじめの100か月の育ちビジョン」全国大会・国際シンポジウムを2026年11月22日・23日に都市センターホテル（東京都千代田区）で初開催する。オンライン参加可、参加費無料。一般申込みは2026年11月13日まで。",
+        "key_points": [
+          "全国大会は2026年11月22日10時~17時と11月23日9時~12時、国際シンポジウムは11月23日13時~18時30分に開催",
+          "会場は都市センターホテル、オンライン参加も可能で、国際シンポジウムは日英同時通訳を予定",
+          "全国大会では記念講演、パネルディスカッション、分科会、PR動画コンテストの授賞式（22日）を実施",
+          "国際シンポジウムでは日本と諸外国の政策・取組や科学的知見を共有し、OECD職員や海外政府関係者の登壇も予定",
+          "報道機関は開会から閉会まで取材可能で、11月16日15時までに事前登録が必要"
+        ],
+        "targets": [
+          "子育て中の保護者",
+          "幼児教育・保育や子育て支援の関係者",
+          "自治体職員",
+          "医療・保健・福祉関係者",
+          "大学・研究機関の関係者",
+          "報道機関"
+        ],
+        "dates": [
+          {
+            "label": "全国大会開催日",
+            "value": "2026-11-22",
+            "evidence": "2026年11月22日(日)10時00分~17時00分、11月23日(月・祝)9時00分~12時00分"
+          },
+          {
+            "label": "全国大会開催日（2日目）",
+            "value": "2026-11-23",
+            "evidence": "11月23日(月・祝)9時00分~12時00分"
+          },
+          {
+            "label": "国際シンポジウム開催日",
+            "value": "2026-11-23",
+            "evidence": "2026年11月23日(月・祝)13時00分~18時30分"
+          },
+          {
+            "label": "一般申込み締切",
+            "value": "2026-11-13",
+            "evidence": "2026年11月13日(金)まで"
+          },
+          {
+            "label": "取材登録締切",
+            "value": "2026-11-16",
+            "evidence": "11月16日(月)15時までに以下のフォームにて登録してください。"
+          },
+          {
+            "label": "ビジョン閣議決定",
+            "value": "2023-12",
+            "evidence": "令和5年12月に閣議決定された「幼児期までのこどもの育ちに係る基本的なビ"
+          },
+          {
+            "label": "公開日",
+            "value": "2026-10-23",
+            "evidence": "令和8年10月23日"
+          }
+        ],
+        "uncertainties": [
+          "登壇者やプログラムの詳細は調整中で、一部変更の可能性があると記載されている",
+          "オンライン参加の具体的な申込み方法は本文から確認できない",
+          "「他」の登壇者の氏名は記載されていない"
+        ],
+        "model": "claude-sonnet-5-5",
+        "processed_at": "2026-10-25T20:18:19+09:00"
+      },
+      "csv": {
+        "source_type": "news",
+        "hash": "a1bd322b8e159030ddb16ad09ea663ac1f22f4359977e0123c68f60b88387adc",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text+attachments"
+      },
+      "tags": [
+        {
+          "id": "childcare-support",
+          "name": "子育て支援",
+          "origin": "ai",
+          "reason": "こどもの育ちを社会全体で支える取組を共有する大会で、子育て支援関係者が対象に含まれるため",
+          "retired": false
+        }
+      ],
+      "removed_tags": [],
+      "tag_override_reason": null
+    },
+    {
+      "id": "a_35828acaa1daba17",
+      "source_id": "cfa-news",
+      "source_name": "こども家庭庁（新着・更新）",
+      "title": "医療的ケア児等とその家族に対する支援施策",
+      "url": "https://www.cfa.go.jp/policies/shougaijishien/care-ji-shien",
+      "published": {
+        "value": "2026-10-23",
+        "precision": "day",
+        "basis": {
+          "method": "listing_text",
+          "evidence": "2026年10月23日"
+        }
+      },
+      "updated": {
+        "value": "2022-03-28",
+        "precision": "day",
+        "basis": {
+          "method": "html_text",
+          "evidence": "改訂令和4年3月28日"
+        }
+      },
+      "first_seen_at": "2026-10-25T20:08:12+09:00",
+      "last_seen_at": "2026-10-25T20:08:12+09:00",
+      "status": "active",
+      "content_status": "ok",
+      "content_error": null,
+      "latest_version": 1,
+      "versions": [
+        {
+          "version": 1,
+          "fetched_at": "2026-10-25T20:08:12+09:00",
+          "change_type": "new",
+          "extraction_status": "ok"
+        }
+      ],
+      "attachments": [
+        {
+          "title": "法律の概要（改正法）（PDF／457KB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/5218c3a3-610e-4925-8596-a9116889756f/6a555317/20260817_policies_shougaijishien_care-ji-shien_39.pdf",
+          "status": "ok",
+          "note": null,
+          "pages": 2
+        },
+        {
+          "title": "医療的ケア児及びその家族に対する支援に関する法律の一部を改正する法律（新旧対照表）（PDF／351KB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/5218c3a3-610e-4925-8596-a9116889756f/36367297/20260812_policies_shougaijishien_care-ji-shien_38.pdf",
+          "status": "ok",
+          "note": null,
+          "pages": 20
+        },
+        {
+          "title": "医療的ケア児及びその家族に対する支援に関する法律の一部を改正する法律の公布について（PDF／232KB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/5218c3a3-610e-4925-8596-a9116889756f/873fe5cd/20260804_policies_shougaijishien_care-ji-shien_36.pdf",
+          "status": "ok",
+          "note": null,
+          "pages": 6
+        },
+        {
+          "title": "医療的ケア児及びその家族に対する支援に関する法律の一部を改正する法律案に対する附帯決議　令和8年7月22日こども・子育て・若者活躍に関する特別委員会（参議院ホームページ）",
+          "url": "https://www.sangiin.go.jp/japanese/gianjoho/ketsugi/current/f440_072201.pdf",
+          "status": "skipped",
+          "note": "1記事あたりの上限（3件）を超えたため取得していません",
+          "pages": null
+        },
+        {
+          "title": "医療的ケア児等及び重症心身障害者並びにそれらの家族に対する支援に関する法律第十四条第一項の政令で定める市を定める政令（PDF／31KB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/5218c3a3-610e-4925-8596-a9116889756f/4496b336/20261023_policies_shougaijishien_care-ji-shien_42.pdf",
+          "status": "skipped",
+          "note": "1記事あたりの上限（3件）を超えたため取得していません",
+          "pages": null
+        },
+        {
+          "title": "【公布通知】医療的ケア児等及び重症心身障害者並びにそれらの家族に対する支援に関する法律第十四条第一項の政令で定める市を定める政令の公布について（令和8年10月23日障発1023第１号、こ支障第285号）（PDF／120KB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/5218c3a3-610e-4925-8596-a9116889756f/0696c72f/20261023_policies_shougaijishien_care-ji-shien_43.pdf",
+          "status": "skipped",
+          "note": "1記事あたりの上限（3件）を超えたため取得していません",
+          "pages": null
+        },
+        {
+          "title": "法律の概要（PDF／596KB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/5218c3a3-610e-4925-8596-a9116889756f/03ac0201/20231013-policies-shougaijishien-care-ji-shien-000801674.pdf",
+          "status": "skipped",
+          "note": "1記事あたりの上限（3件）を超えたため取得していません",
+          "pages": null
+        },
+        {
+          "title": "医療的ケア児及びその家族に対する支援に関する法律（令和3年法律第81号）（PDF／192KB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/5218c3a3-610e-4925-8596-a9116889756f/61fecd25/20231013-policies-shougaijishien-care-ji-shien-000801675.pdf",
+          "status": "skipped",
+          "note": "1記事あたりの上限（3件）を超えたため取得していません",
+          "pages": null
+        },
+        {
+          "title": "医療的ケア児及びその家族に対する支援に関する法律の公布について（令和3年6月18日府子本第742号、3文科初第499号、医発0618第1号、子発0618第1号、障発0618第1号）（PDF／223KB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/5218c3a3-610e-4925-8596-a9116889756f/55d6932e/20231013-policies-shougaijishien-care-ji-shien-000801676.pdf",
+          "status": "skipped",
+          "note": "1記事あたりの上限（3件）を超えたため取得していません",
+          "pages": null
+        },
+        {
+          "title": "医療的ケア児及びその家族に対する支援に関する法律案に対する附帯決議　令和3年6月10日　参議院厚生労働委員会（参議院ホームページ）",
+          "url": "https://www.sangiin.go.jp/japanese/gianjoho/ketsugi/204/f069_061024_02.pdf",
+          "status": "skipped",
+          "note": "1記事あたりの上限（3件）を超えたため取得していません",
+          "pages": null
+        },
+        {
+          "title": "医療的ケア児及びその家族に対する支援に関する法律の施行に係る医療的ケア児支援センター等の業務等について（令和3年8月31日, 一部改訂令和4年3月28日）（PDF／780KB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/5218c3a3-610e-4925-8596-a9116889756f/9f2bd53d/20231013-policies-shougaijishien-care-ji-shien-000928614.pdf",
+          "status": "skipped",
+          "note": "1記事あたりの上限（3件）を超えたため取得していません",
+          "pages": null
+        },
+        {
+          "title": "こちら（PDF／143KB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/5218c3a3-610e-4925-8596-a9116889756f/b536f355/20260617_policies_shougaijishien_care-ji-shien_21.pdf",
+          "status": "skipped",
+          "note": "1記事あたりの上限（3件）を超えたため取得していません",
+          "pages": null
+        },
+        {
+          "title": "医療的ケア児の現状について（令和8年8月時点）（PDF／810KB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/5218c3a3-610e-4925-8596-a9116889756f/934621f1/20260817_policies_shougaijishien_care-ji-shien_40.pdf",
+          "status": "skipped",
+          "note": "1記事あたりの上限（3件）を超えたため取得していません",
+          "pages": null
+        },
+        {
+          "title": "在宅の医療的ケア児とその家族に向けた主な取組（令和8年5月15日時点）（PDF／5.6MB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/5218c3a3-610e-4925-8596-a9116889756f/ea9330db/20260617_policies_shougaijishien_care-ji-shien_22.pdf",
+          "status": "skipped",
+          "note": "1記事あたりの上限（3件）を超えたため取得していません",
+          "pages": null
+        },
+        {
+          "title": "こども家庭庁支援局障害児支援課（PDF／2.6MB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/5218c3a3-610e-4925-8596-a9116889756f/52db71b0/20260617_policies_shougaijishien_care-ji-shien_23.pdf",
+          "status": "skipped",
+          "note": "1記事あたりの上限（3件）を超えたため取得していません",
+          "pages": null
+        },
+        {
+          "title": "保育政策課（PDF／628KB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/5218c3a3-610e-4925-8596-a9116889756f/06979505/20260617_policies_shougaijishien_care-ji-shien_24.pdf",
+          "status": "skipped",
+          "note": "1記事あたりの上限（3件）を超えたため取得していません",
+          "pages": null
+        },
+        {
+          "title": "文部科学省（PDF／3.3MB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/5218c3a3-610e-4925-8596-a9116889756f/103a1354/20260617_policies_shougaijishien_care-ji-shien_25.pdf",
+          "status": "skipped",
+          "note": "1記事あたりの上限（3件）を超えたため取得していません",
+          "pages": null
+        },
+        {
+          "title": "厚生労働省（PDF／1.3MB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/5218c3a3-610e-4925-8596-a9116889756f/6d948d23/20260617_policies_shougaijishien_care-ji-shien_26.pdf",
+          "status": "skipped",
+          "note": "1記事あたりの上限（3件）を超えたため取得していません",
+          "pages": null
+        },
+        {
+          "title": "内閣府（PDF／3.7MB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/5218c3a3-610e-4925-8596-a9116889756f/3f4103ef/20260617_policies_shougaijishien_care-ji-shien_27.pdf",
+          "status": "skipped",
+          "note": "1記事あたりの上限（3件）を超えたため取得していません",
+          "pages": null
+        },
+        {
+          "title": "栃木県医療的ケア児等支援センター（PDF／14.1MB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/5218c3a3-610e-4925-8596-a9116889756f/b0d9fa91/20260617_policies_shougaijishien_care-ji-shien_28.pdf",
+          "status": "skipped",
+          "note": "1記事あたりの上限（3件）を超えたため取得していません",
+          "pages": null
+        }
+      ],
+      "summary": {
+        "status": "success",
+        "error": null,
+        "version": 1,
+        "outdated": false,
+        "text": "こども家庭庁が、医療的ケア児等とその家族への支援に関する法律・施策・予算・研修・報酬改定・調査研究の情報を掲載したページ。令和8年法律第77号による改正法は令和9年4月1日に施行され、支援対象に重症心身障害者を追加し、センターの強化などを定める。自治体向け。",
+        "key_points": [
+          "医療的ケア児支援法の改正法(令和8年法律第77号)が令和8年7月31日に公布、令和9年4月1日に施行され、題名も改められる",
+          "支援対象に医療的ケア児等と重症心身障害者を追加し、レスパイト・就労支援・住居確保・ピアサポート等の施策を充実",
+          "医療的ケア児等支援センターは指定都市、中核市、政令で定める市、特別区の長も設置可能とし、災害時対応を追加。地域協議会を新設",
+          "政令で定める市を定める政令の公布通知(令和8年10月23日)や、施策・予算、担当者会議資料、養成研修の手引き、令和3年度・令和6年度の報酬改定を掲載",
+          "令和7年度の調査研究(障害児通所支援事業所における受入れ)の報告書・事例集・手引を掲載"
+        ],
+        "targets": [
+          "地方自治体(都道府県、指定都市、中核市、特別区等)",
+          "医療的ケア児支援センター",
+          "保育所・学校の設置者等",
+          "医療的ケア児等及び重症心身障害者とその家族",
+          "障害児通所支援事業所"
+        ],
+        "dates": [
+          {
+            "label": "改正法の施行日",
+            "value": "2027-04-01",
+            "evidence": "令和8年7月31日公布、令和9年4月1日施行"
+          },
+          {
+            "label": "改正法の公布日",
+            "value": "2026-07-31",
+            "evidence": "令和8年7月31日公布、令和9年4月1日施行"
+          },
+          {
+            "label": "政令公布通知の発出日",
+            "value": "2026-10-23",
+            "evidence": "令和8年10月23日障発1023第1号、こ支障第285号"
+          },
+          {
+            "label": "衆議院附帯決議",
+            "value": "2026-07-10",
+            "evidence": "令和8年7月10日地域・こども・デジタル委員会(衆議院ホームページ)"
+          },
+          {
+            "label": "参議院附帯決議",
+            "value": "2026-07-22",
+            "evidence": "令和8年7月22日こども・子育て・若者活躍に関する特別委員会(参議院ホームページ)"
+          }
+        ],
+        "uncertainties": [
+          "本文は先頭部分のみで、新旧対照表の後半や他の添付資料の内容は確認できない",
+          "政令で定める市の具体的な名称は本文から確認できない",
+          "公開日(2026-10-23)以降の更新履歴は確認できない",
+          "本文が長いため、先頭20000文字だけで作成しました"
+        ],
+        "model": "claude-sonnet-5-5",
+        "processed_at": "2026-10-25T20:18:19+09:00"
+      },
+      "csv": {
+        "source_type": "news",
+        "hash": "ea5e708912e78c467584c9d79743b1ab2343b50bf225a81d2eb24e148e8e147b",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text+attachments"
+      },
+      "tags": [
+        {
+          "id": "system-revision",
+          "name": "制度改正",
+          "origin": "ai",
+          "reason": "医療的ケア児支援法の改正と施行日、政令の公布を掲載しているため",
+          "retired": false
+        },
+        {
+          "id": "childcare-support",
+          "name": "子育て支援",
+          "origin": "ai",
+          "reason": "医療的ケア児とその家族への支援、保育体制の拡充、相談体制などを扱うため",
+          "retired": false
+        },
+        {
+          "id": "notice-admin-communication",
+          "name": "通知・事務連絡",
+          "origin": "ai",
+          "reason": "公布通知や、センター業務に関する通知を掲載しているため",
+          "retired": false
+        },
+        {
+          "id": "survey-statistics",
+          "name": "調査・統計",
+          "origin": "ai",
+          "reason": "医療的ケア児の現状資料や受入れに関する調査研究を掲載しているため",
+          "retired": false
+        },
+        {
+          "id": "council-committee",
+          "name": "審議会・検討会",
+          "origin": "ai",
+          "reason": "衆参の委員会の附帯決議や、担当者合同会議の資料を掲載しているため",
+          "retired": false
+        }
+      ],
+      "removed_tags": [],
+      "tag_override_reason": null
+    },
+    {
+      "id": "a_b18e27d0c779dea6",
+      "source_id": "cfa-news",
+      "source_name": "こども家庭庁（新着・更新）",
+      "title": "中司大臣記者会見（令和8年10月23日）",
+      "url": "https://www.cfa.go.jp/speech/f40f49cc",
+      "published": {
+        "value": "2026-10-23",
+        "precision": "day",
+        "basis": {
+          "method": "listing_text",
+          "evidence": "2026年10月23日"
+        }
+      },
+      "updated": {
+        "value": null,
+        "precision": "unknown",
+        "basis": null
+      },
+      "first_seen_at": "2026-10-25T20:08:12+09:00",
+      "last_seen_at": "2026-10-25T20:08:12+09:00",
+      "status": "active",
+      "content_status": "ok",
+      "content_error": null,
+      "latest_version": 1,
+      "versions": [
+        {
+          "version": 1,
+          "fetched_at": "2026-10-25T20:08:12+09:00",
+          "change_type": "new",
+          "extraction_status": "ok"
+        }
+      ],
+      "attachments": [],
+      "summary": {
+        "status": "success",
+        "error": null,
+        "version": 1,
+        "outdated": false,
+        "text": "令和8年（2026年）10月23日に中司大臣が記者会見を行ったとの告知。会見要旨は後日掲載予定とされており、会見の具体的な内容は本文に記載がない。",
+        "key_points": [
+          "中司大臣が令和8年10月23日に記者会見を行った",
+          "会見要旨は後日掲載される予定",
+          "本文には会見の議題や発言内容の記載がない"
+        ],
+        "targets": [],
+        "dates": [
+          {
+            "label": "記者会見の開催日",
+            "value": "2026-10-23",
+            "evidence": "令和8年10月23日、中司大臣が記者会見を行いました。"
+          }
+        ],
+        "uncertainties": [
+          "会見で扱われた議題や発言内容が本文にない",
+          "会見要旨の掲載時期が「後日」とのみ記載されており具体的な日付は不明",
+          "対象者や対象機関は記載がない"
+        ],
+        "model": "claude-sonnet-5-5",
+        "processed_at": "2026-10-25T20:18:19+09:00"
+      },
+      "csv": {
+        "source_type": "news",
+        "hash": "d61078befd68794c2d802b2dfa6a16d4ebcc8bd65edafd031f57ba822f5a74ca",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text"
+      },
+      "tags": [],
+      "removed_tags": [],
+      "tag_override_reason": null
+    },
+    {
+      "id": "a_d14d8a45bb7823bc",
+      "source_id": "cfa-news",
+      "source_name": "こども家庭庁（新着・更新）",
+      "title": "第16回　子ども・子育て支援等分科会の開催について",
+      "url": "https://www.cfa.go.jp/press/57551703-bf00-4a79-94df-628dc8f2ae25",
+      "published": {
+        "value": "2026-10-23",
+        "precision": "day",
+        "basis": {
+          "method": "html_text",
+          "evidence": "公開日:令和8年10月23日"
+        }
+      },
+      "updated": {
+        "value": null,
+        "precision": "unknown",
+        "basis": null
+      },
+      "first_seen_at": "2026-10-25T20:08:12+09:00",
+      "last_seen_at": "2026-10-25T20:08:12+09:00",
+      "status": "active",
+      "content_status": "ok",
+      "content_error": null,
+      "latest_version": 1,
+      "versions": [
+        {
+          "version": 1,
+          "fetched_at": "2026-10-25T20:08:12+09:00",
+          "change_type": "new",
+          "extraction_status": "ok"
+        }
+      ],
+      "attachments": [
+        {
+          "title": "第16回　子ども・子育て支援等分科会の開催について（PDF／253KB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/57551703-bf00-4a79-94df-628dc8f2ae25/0a23eb33/20261022_press_57551703-bf00-4a79-94df-628dc8f2ae25_01.pdf",
+          "status": "ok",
+          "note": null,
+          "pages": 1
+        }
+      ],
+      "summary": {
+        "status": "success",
+        "error": null,
+        "version": 1,
+        "outdated": false,
+        "text": "こども家庭庁が、第16回子ども・子育て支援等分科会を令和8年10月26日(月)に持ち回り開催すると10月23日に公表した。議事は保育政策の動向などの予定。資料と議事概要は開催後にホームページへ掲載予定で、傍聴や対面の記者ブリーフィングはない。",
+        "key_points": [
+          "第16回子ども・子育て支援等分科会を2026年10月26日(月)に開催する",
+          "開催方式は持ち回り開催",
+          "議事(予定)は(1)保育政策の動向について、(2)その他",
+          "資料・議事概要は開催後にこども家庭庁ホームページへ掲載予定",
+          "頭撮り、会場での傍聴、対面の記者ブリーフィングはない"
+        ],
+        "targets": [
+          "報道関係者",
+          "一般(資料・議事概要の閲覧者)"
+        ],
+        "dates": [
+          {
+            "label": "開催日",
+            "value": "2026-10-26",
+            "evidence": "1. 日 時: 令和8年10月26日(月)"
+          },
+          {
+            "label": "公開日",
+            "value": "2026-10-23",
+            "evidence": "公開日:令和8年10月23日"
+          }
+        ],
+        "uncertainties": [
+          "持ち回り開催のため、実際の議論内容や結果は文書から確認できない",
+          "委員の構成や配布資料の内容は記載がない",
+          "資料・議事概要の掲載時期は「開催後」とあるのみで具体的な日付は不明"
+        ],
+        "model": "claude-sonnet-5-5",
+        "processed_at": "2026-10-25T20:18:19+09:00"
+      },
+      "csv": {
+        "source_type": "news",
+        "hash": "be7d01980a80efe7e22f519a0bfc2951336f019cb24d3cb08b470cbc5deab04a",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text+attachments"
+      },
+      "tags": [
+        {
+          "id": "council-committee",
+          "name": "審議会・検討会",
+          "origin": "ai",
+          "reason": "分科会の開催案内であり、議事や資料・議事概要の掲載予定が記載されているため",
+          "retired": false
+        },
+        {
+          "id": "childcare-support",
+          "name": "子育て支援",
+          "origin": "ai",
+          "reason": "子ども・子育て支援等分科会で、議事に保育政策の動向が含まれるため",
+          "retired": false
+        }
+      ],
+      "removed_tags": [],
+      "tag_override_reason": null
+    },
+    {
+      "id": "a_d84abe6630f97041",
+      "source_id": "cfa-news",
+      "source_name": "こども家庭庁（新着・更新）",
+      "title": "第20回補償金・優生手術等一時金認定審査部会の審査結果について",
+      "url": "https://www.cfa.go.jp/press/e7dfb273-df70-4294-ae60-d4cb7acbe922",
+      "published": {
+        "value": "2026-10-23",
+        "precision": "day",
+        "basis": {
+          "method": "html_text",
+          "evidence": "公開日:令和8年10月23日"
+        }
+      },
+      "updated": {
+        "value": null,
+        "precision": "unknown",
+        "basis": null
+      },
+      "first_seen_at": "2026-10-25T20:08:12+09:00",
+      "last_seen_at": "2026-10-25T20:08:12+09:00",
+      "status": "active",
+      "content_status": "ok",
+      "content_error": null,
+      "latest_version": 1,
+      "versions": [
+        {
+          "version": 1,
+          "fetched_at": "2026-10-25T20:08:12+09:00",
+          "change_type": "new",
+          "extraction_status": "ok"
+        }
+      ],
+      "attachments": [
+        {
+          "title": "第20回補償金・優生手術等一時金認定審査部会の審査結果について（PDF／439KB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/e7dfb273-df70-4294-ae60-d4cb7acbe922/6f140a7d/20261023_press_e7dfb273-df70-4294-ae60-d4cb7acbe922_01.pdf",
+          "status": "ok",
+          "note": null,
+          "pages": 3
+        }
+      ],
+      "summary": {
+        "status": "success",
+        "error": null,
+        "version": 1,
+        "outdated": false,
+        "text": "こども家庭庁が、令和8年10月22日開催の第20回補償金・優生手術等一時金認定審査部会の審査結果を公表。審査49件で、認定・否認・保留の件数と、性別・年齢階級別・都道府県別の認定内訳が示されている。",
+        "key_points": [
+          "審査件数は計49件",
+          "補償金は認定8（本人）・3（特定配偶者）・2（本人の遺族）・1（特定配偶者の遺族）、優生手術等一時金は認定9",
+          "否認は補償金5・3・5・0、一時金5。保留は補償金2・1・2・0、一時金3",
+          "認定の内訳として優生手術を受けた本人の性別、年齢階級別、都道府県別の件数を掲載",
+          "照会先はこども家庭庁成育局母子保健課 補償金審査係"
+        ],
+        "targets": [
+          "補償金・優生手術等一時金の認定審査の関係者",
+          "一般（公表情報）"
+        ],
+        "dates": [
+          {
+            "label": "部会開催日",
+            "value": "2026-10-22",
+            "evidence": "令和8年10月22日に開催された第20回「補償金・優生手術等一時金認定審査部会」の審査結果は"
+          },
+          {
+            "label": "公開日",
+            "value": "2026-10-23",
+            "evidence": "公開日:令和8年10月23日"
+          }
+        ],
+        "uncertainties": [
+          "表の列見出しが崩れており、一部の数値と区分の対応は原文の表で確認が必要",
+          "認定・否認・保留の判断理由や、補償金と一時金の制度の詳細は文書に記載がない"
+        ],
+        "model": "claude-sonnet-5-5",
+        "processed_at": "2026-10-25T20:18:19+09:00"
+      },
+      "csv": {
+        "source_type": "news",
+        "hash": "ba462272b4390a5bfdcf5841c4e6101e7d90f6d2e27bcddb230b71b7838ff9d0",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text+attachments"
+      },
+      "tags": [
+        {
+          "id": "council-committee",
+          "name": "審議会・検討会",
+          "origin": "ai",
+          "reason": "認定審査部会の開催結果に関する公表資料であるため",
+          "retired": false
+        },
+        {
+          "id": "survey-statistics",
+          "name": "調査・統計",
+          "origin": "ai",
+          "reason": "審査件数や認定の内訳を集計した数値が公表されているため",
+          "retired": false
+        }
+      ],
+      "removed_tags": [],
+      "tag_override_reason": null
+    },
+    {
+      "id": "a_dc4fc8adf153cea9",
+      "source_id": "cfa-news",
+      "source_name": "こども家庭庁（新着・更新）",
+      "title": "補償金・優生手術等一時金認定審査部会（第20回）",
+      "url": "https://www.cfa.go.jp/councils/hoshokin-yuseishujutsu/fadbc2c9",
+      "published": {
+        "value": "2026-10-23",
+        "precision": "day",
+        "basis": {
+          "method": "listing_text",
+          "evidence": "2026年10月23日"
+        }
+      },
+      "updated": {
+        "value": null,
+        "precision": "unknown",
+        "basis": null
+      },
+      "first_seen_at": "2026-10-25T20:08:12+09:00",
+      "last_seen_at": "2026-10-25T20:08:12+09:00",
+      "status": "active",
+      "content_status": "ok",
+      "content_error": null,
+      "latest_version": 1,
+      "versions": [
+        {
+          "version": 1,
+          "fetched_at": "2026-10-25T20:08:12+09:00",
+          "change_type": "new",
+          "extraction_status": "ok"
+        }
+      ],
+      "attachments": [
+        {
+          "title": "議事要旨（PDF／276KB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/fadbc2c9-d4d7-4026-be14-25e3a659c8ac/9472668d/20261023_councils_hoshokin-yuseishujutsu_fadbc2c9_05.pdf",
+          "status": "ok",
+          "note": null,
+          "pages": 3
+        },
+        {
+          "title": "議事次第（PDF／46KB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/fadbc2c9-d4d7-4026-be14-25e3a659c8ac/7998852e/20261015_councils_hoshokin-yuseishujutsu_fadbc2c9_01.pdf",
+          "status": "ok",
+          "note": null,
+          "pages": 1
+        },
+        {
+          "title": "参考資料1：補償金・優生手術等一時金認定審査部会審査方針（PDF／79KB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/fadbc2c9-d4d7-4026-be14-25e3a659c8ac/546d68c2/20261015_councils_hoshokin-yuseishujutsu_fadbc2c9_02.pdf",
+          "status": "ok",
+          "note": null,
+          "pages": 1
+        },
+        {
+          "title": "参考資料2：旧優生保護法補償金等認定審査会運営規程（PDF／96KB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/fadbc2c9-d4d7-4026-be14-25e3a659c8ac/4d270873/20261015_councils_hoshokin-yuseishujutsu_fadbc2c9_03.pdf",
+          "status": "skipped",
+          "note": "1記事あたりの上限（3件）を超えたため取得していません",
+          "pages": null
+        },
+        {
+          "title": "参考資料3：補償金・優生手術等一時金認定審査部会　委員名簿（PDF／81KB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/fadbc2c9-d4d7-4026-be14-25e3a659c8ac/bb79035f/20261015_councils_hoshokin-yuseishujutsu_fadbc2c9_04.pdf",
+          "status": "skipped",
+          "note": "1記事あたりの上限（3件）を超えたため取得していません",
+          "pages": null
+        }
+      ],
+      "summary": {
+        "status": "success",
+        "error": null,
+        "version": 1,
+        "outdated": false,
+        "text": "こども家庭庁成育局母子保健課が、令和8年10月22日開催の第20回補償金・優生手術等一時金認定審査部会の審査結果を10月23日に公表。審査件数は計49件で、認定・否認・保留の件数と、性別・年齢階級・都道府県別の認定内訳が示されている。",
+        "key_points": [
+          "第20回部会は2026年10月22日15時から19時まで、対面・オンライン併用で開催され、議題は請求事案の審査(非公開)",
+          "審査件数は計49件で、補償金(本人・特定配偶者・本人の遺族)と優生手術等一時金(本人・特定配偶者・本人の遺族の各区分)ごとに認定・否認・保留の件数を掲載",
+          "認定の内訳として、優生手術を受けた本人の性別、年齢階級別、都道府県別の件数を掲載",
+          "参考資料として審査方針(令和7年3月6日付)を添付。請求者等の陳述を十分に汲み取り、「明らかに不合理ではなく、一応確からしいこと」を基準とするとしている",
+          "審査案件表・審査案件資料は非公表。照会先はこども家庭庁成育局母子保健課 補償金審査係"
+        ],
+        "targets": [
+          "補償金・優生手術等一時金の請求者",
+          "旧優生保護法に基づく優生手術等を受けた者・その配偶者・遺族",
+          "関係者(部会の審査結果の閲覧者)"
+        ],
+        "dates": [
+          {
+            "label": "部会開催日",
+            "value": "2026-10-22",
+            "evidence": "日時:令和8年10月22日(木)15時00分から19時00分"
+          },
+          {
+            "label": "審査結果の公表日(資料作成日)",
+            "value": "2026-10-23",
+            "evidence": "令和8年 10 月 23 日"
+          },
+          {
+            "label": "審査方針の決定日",
+            "value": "2025-03-06",
+            "evidence": "令和7年3月6日"
+          }
+        ],
+        "uncertainties": [
+          "認定・否認・保留の表で、各列の見出し(補償金の区分と優生手術等一時金)と数値の対応は、表の体裁が崩れていて完全には確認できない",
+          "議事要旨の具体的な審議内容は本文から確認できない",
+          "審査件数49件と表中の各区分の合計との整合性は確認していない"
+        ],
+        "model": "claude-sonnet-5-5",
+        "processed_at": "2026-10-25T20:18:19+09:00"
+      },
+      "csv": {
+        "source_type": "news",
+        "hash": "354968cbd6079403e291692c43b741f9ffa532135afdd4e11a4987c219dadeec",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text+attachments"
+      },
+      "tags": [
+        {
+          "id": "council-committee",
+          "name": "審議会・検討会",
+          "origin": "ai",
+          "reason": "認定審査部会の開催情報、議事次第、議事要旨、資料を掲載している",
+          "retired": false
+        },
+        {
+          "id": "survey-statistics",
+          "name": "調査・統計",
+          "origin": "ai",
+          "reason": "審査結果として認定・否認・保留の件数や性別・年齢階級別・都道府県別の集計を公表している",
+          "retired": false
+        }
+      ],
+      "removed_tags": [],
+      "tag_override_reason": null
+    },
+    {
+      "id": "a_a5449d666c68d694",
+      "source_id": "cmic-trust-news",
+      "source_name": "CMIC Trust 株式会社（NEWS）",
+      "title": "PHPの脆弱性に関する当社サービスの対応状況について",
+      "url": "https://www.cmic-trust.jp/news/PHP",
+      "published": {
+        "value": "2026-10-22T19:38:44+09:00",
+        "precision": "datetime",
+        "basis": {
+          "method": "page_data",
+          "evidence": "publishedAt: \"2026-10-22T10:38:44.000Z\""
+        }
+      },
+      "updated": {
+        "value": null,
+        "precision": "unknown",
+        "basis": null
+      },
+      "first_seen_at": "2026-10-25T20:08:12+09:00",
+      "last_seen_at": "2026-10-25T20:08:12+09:00",
+      "status": "active",
+      "content_status": "ok",
+      "content_error": null,
+      "latest_version": 1,
+      "versions": [
+        {
+          "version": 1,
+          "fetched_at": "2026-10-25T20:08:12+09:00",
+          "change_type": "new",
+          "extraction_status": "ok"
+        }
+      ],
+      "attachments": [],
+      "summary": {
+        "status": "success",
+        "error": null,
+        "version": 1,
+        "outdated": false,
+        "text": "CMIC Trust株式会社が、2026年10月21日に公表されたPHPの重大な脆弱性への対応状況を告知。「Famimo」「my FAMIMO」を一時停止中で、パッチ適用は完了し、ベンダーが詳細調査中。不正アクセス等は現時点で未確認。再開は調査結果を踏まえて判断する。",
+        "key_points": [
+          "2026年10月21日に利用中ソフトウェアPHPの重大な脆弱性が公表された",
+          "「Famimo」および「my FAMIMO」のサービスを一時停止している",
+          "セキュリティパッチの適用は完了している",
+          "開発・運用ベンダーが詳細調査を実施中",
+          "不正アクセス、情報漏えい、データ改ざん等の事実は現時点で確認されていない"
+        ],
+        "targets": [
+          "「Famimo」「my FAMIMO」のサービス利用者（お客様）",
+          "関係者"
+        ],
+        "dates": [
+          {
+            "label": "脆弱性の公表日",
+            "value": "2026-10-21",
+            "evidence": "2026年10月21日、当社サービスで利用しているソフトウェア(PHP)において、重大なセキュリティ脆弱性が公表されました。"
+          }
+        ],
+        "uncertainties": [
+          "サービス再開の時期は記載がない",
+          "脆弱性の具体的な識別情報（CVE番号など）やPHPのバージョンは記載がない",
+          "サービスの具体的な内容や利用者の範囲は本文からは確認できない",
+          "一時停止を開始した日時は記載がない"
+        ],
+        "model": "claude-sonnet-5-5",
+        "processed_at": "2026-10-25T20:18:19+09:00"
+      },
+      "csv": {
+        "source_type": "news",
+        "hash": "a293550e0bd9fff8d17474de1dd9d8beb5a18f5d78bdd35e52246aef19389774",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text"
+      },
+      "tags": [
+        {
+          "id": "vendor-trend",
+          "name": "ベンダ動向",
+          "origin": "source",
+          "reason": "情報源の設定：CMIC Trust 株式会社（NEWS）の記事すべてに付けています",
+          "retired": false
+        }
+      ],
+      "removed_tags": [],
+      "tag_override_reason": null
+    },
+    {
+      "id": "a_37fb670c72f8c251",
+      "source_id": "cfa-news",
+      "source_name": "こども家庭庁（新着・更新）",
+      "title": "みて かんじて つながる劇体験 ～優良児童劇等公演事業～  令和8年11月29日（日）三重県松坂市にて開催",
+      "url": "https://www.cfa.go.jp/press/2af7bcf9-bc05-4b75-be9a-155a2ad88045",
+      "published": {
+        "value": "2026-10-22",
+        "precision": "day",
+        "basis": {
+          "method": "html_text",
+          "evidence": "公開日:令和8年10月22日"
+        }
+      },
+      "updated": {
+        "value": null,
+        "precision": "unknown",
+        "basis": null
+      },
+      "first_seen_at": "2026-10-25T20:08:12+09:00",
+      "last_seen_at": "2026-10-25T20:08:12+09:00",
+      "status": "active",
+      "content_status": "ok",
+      "content_error": null,
+      "latest_version": 1,
+      "versions": [
+        {
+          "version": 1,
+          "fetched_at": "2026-10-25T20:08:12+09:00",
+          "change_type": "new",
+          "extraction_status": "ok"
+        }
+      ],
+      "attachments": [
+        {
+          "title": "みて かんじて つながる劇体験 ～優良児童劇等公演事業～ 令和8年11月29日（日）三重県松坂市にて開催（PDF／431KB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/2af7bcf9-bc05-4b75-be9a-155a2ad88045/a9b6fcae/20261021_press_2af7bcf9-bc05-4b75-be9a-155a2ad88045_01.pdf",
+          "status": "ok",
+          "note": null,
+          "pages": 2
+        }
+      ],
+      "summary": {
+        "status": "success",
+        "error": null,
+        "version": 1,
+        "outdated": false,
+        "text": "こども家庭庁は、児童劇等に触れる機会の少ない地方のこどもとその家族を対象に、優良児童劇等公演事業として「火よう日のごちそうはひきがえる」を令和8年11月29日に三重県立みえこどもの城で上演する。事前応募は11月18日まで受付中。",
+        "key_points": [
+          "こども家庭審議会が推薦した舞台芸術作品を、地方のこどもとその家族に体験してもらう公演事業",
+          "三重県松坂市公演は令和8年11月29日、会場は三重県立みえこどもの城、劇団は人形劇団京芸",
+          "開演13時15分(上演時間約65分)、14時35分から観劇後のワークショップ(30~45分程度)",
+          "主催はこども家庭庁、受託団体は一般財団法人児童健全育成推進財団、協賛は朝日生命保険相互会社",
+          "令和8年度は全国17か所で実施予定"
+        ],
+        "targets": [
+          "児童劇等に触れる機会の少ない地方のこどもとその家族"
+        ],
+        "dates": [
+          {
+            "label": "公演日",
+            "value": "2026-11-29",
+            "evidence": "公演日時: 令和8年11月29日(日) (開場13時00分予定)"
+          },
+          {
+            "label": "事前応募締切",
+            "value": "2026-11-18",
+            "evidence": "11月18日(水)まで事前応募受付中"
+          },
+          {
+            "label": "公開日",
+            "value": "2026-10-22",
+            "evidence": "公開日:令和8年10月22日"
+          }
+        ],
+        "uncertainties": [
+          "事前応募の対象人数や参加費の有無は文書から確認できない",
+          "全国17か所の開催地や日程は記載がない",
+          "国庫補助事業の具体的な内容や補助額は記載がない"
+        ],
+        "model": "claude-sonnet-5-5",
+        "processed_at": "2026-10-25T20:18:19+09:00"
+      },
+      "csv": {
+        "source_type": "news",
+        "hash": "ab7f0b123572833fdfd1de6556ede14f04f59a86042dfbce95d8c9be914a6809",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text+attachments"
+      },
+      "tags": [
+        {
+          "id": "childcare-support",
+          "name": "子育て支援",
+          "origin": "ai",
+          "reason": "こどもとその家族に舞台芸術を体験する機会を提供する、こども家庭庁の事業の案内であるため",
+          "retired": false
+        }
+      ],
+      "removed_tags": [],
+      "tag_override_reason": null
+    },
+    {
+      "id": "a_7fd3a7403a477613",
+      "source_id": "milabo-news",
+      "source_name": "株式会社ミラボ（お知らせ）",
+      "title": "【重要】子育てモバイル サービス再開のお知らせ（PHPの脆弱性への対応・第4報）",
+      "url": "https://mi-labo.co.jp/posts/20261021-php-security/",
+      "published": {
+        "value": "2026-10-22",
+        "precision": "day",
+        "basis": {
+          "method": "listing_text",
+          "evidence": "2026年10月22日"
+        }
+      },
+      "updated": {
+        "value": null,
+        "precision": "unknown",
+        "basis": null
+      },
+      "first_seen_at": "2026-10-25T20:08:12+09:00",
+      "last_seen_at": "2026-10-25T20:08:12+09:00",
+      "status": "active",
+      "content_status": "ok",
+      "content_error": null,
+      "latest_version": 1,
+      "versions": [
+        {
+          "version": 1,
+          "fetched_at": "2026-10-25T20:08:12+09:00",
+          "change_type": "new",
+          "extraction_status": "ok"
+        }
+      ],
+      "attachments": [],
+      "summary": {
+        "status": "success",
+        "error": null,
+        "version": 1,
+        "outdated": false,
+        "text": "株式会社ミラボは、PHPの脆弱性対応のため2026年10月21日から予防的に停止していた「子育てモバイル」の住民向けアプリと管理画面を、10月22日23時40分に再開したと告知。不正アクセスや情報漏えいは現時点で確認されず、利用者側の更新やパスワード変更は不要。",
+        "key_points": [
+          "PHPの脆弱性2件(CVE-2026-109618、CVE-2026-109619)を受け、障害ではなく予防措置として停止した",
+          "修正プログラム適用、動作確認、アクセス記録の確認、再開後の監視強化を実施した",
+          "現時点で本件に起因する不正アクセス・情報漏えいは確認されておらず、登録情報は保持されている",
+          "自治体担当者には、停止期間中に期限を迎えたお知らせ等について期限延長の検討を促している",
+          "mila-eシリーズ等はPHP不使用で影響なし。hugmoは一部機能(サービスサイト、写真・商品購入、午睡マット設定)を一時停止中"
+        ],
+        "targets": [
+          "子育てモバイルの住民(利用者)",
+          "自治体ご担当者",
+          "hugmo関連の利用者"
+        ],
+        "dates": [
+          {
+            "label": "サービス停止期間",
+            "value": "2026-10-21",
+            "evidence": "サービス停止期間:10月21日(水) 23:13~ 10月22日(木)23:40"
+          },
+          {
+            "label": "サービス再開",
+            "value": "2026-10-22",
+            "evidence": "10月22日(木) 23時40分に、住民向けアプリおよび管理画面のサービスを再開"
+          },
+          {
+            "label": "脆弱性の公表",
+            "value": "2026-10-21",
+            "evidence": "10月21日、子育てモバイルで使用しているプログラム言語「PHP」に、深刻度の高い脆弱性"
+          }
+        ],
+        "uncertainties": [
+          "使用しているPHPのバージョンや具体的な対策内容は、セキュリティ上の理由で非公開",
+          "hugmoの一部機能の再開時期は記載がない",
+          "文書は民間事業者の発表であり、国の通知や事務連絡ではない"
+        ],
+        "model": "claude-sonnet-5-5",
+        "processed_at": "2026-10-25T20:18:19+09:00"
+      },
+      "csv": {
+        "source_type": "news",
+        "hash": "d89922508512f3c769c74c8954f0c9fb16b61a9852f90e6f7c497be96642f2a5",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text"
+      },
+      "tags": [
+        {
+          "id": "childcare-support",
+          "name": "子育て支援",
+          "origin": "ai",
+          "reason": "子育て世帯向けアプリ「子育てモバイル」のサービス再開に関する案内であるため",
+          "retired": false
+        },
+        {
+          "id": "notice-admin-communication",
+          "name": "通知・事務連絡",
+          "origin": "ai",
+          "reason": "事業者から自治体担当者・住民へのお知らせで、自治体担当者向けの対応案内を含むため",
+          "retired": false
+        },
+        {
+          "id": "vendor-trend",
+          "name": "ベンダ動向",
+          "origin": "source",
+          "reason": "情報源の設定：株式会社ミラボ（お知らせ）の記事すべてに付けています",
+          "retired": false
+        }
+      ],
+      "removed_tags": [],
+      "tag_override_reason": null
+    },
+    {
+      "id": "a_e0db1d09213492c8",
+      "source_id": "milabo-news",
+      "source_name": "株式会社ミラボ（お知らせ）",
+      "title": "【重要】PHPの脆弱性に関する当社サービスの対応状況について（第3報）",
+      "url": "https://mi-labo.co.jp/posts/20261021-php-security-old3/",
+      "published": {
+        "value": "2026-10-22",
+        "precision": "day",
+        "basis": {
+          "method": "listing_text",
+          "evidence": "2026年10月22日"
+        }
+      },
+      "updated": {
+        "value": null,
+        "precision": "unknown",
+        "basis": null
+      },
+      "first_seen_at": "2026-10-25T20:08:12+09:00",
+      "last_seen_at": "2026-10-25T20:08:12+09:00",
+      "status": "active",
+      "content_status": "ok",
+      "content_error": null,
+      "latest_version": 1,
+      "versions": [
+        {
+          "version": 1,
+          "fetched_at": "2026-10-25T20:08:12+09:00",
+          "change_type": "new",
+          "extraction_status": "ok"
+        }
+      ],
+      "attachments": [],
+      "summary": {
+        "status": "success",
+        "error": null,
+        "version": 1,
+        "outdated": false,
+        "text": "ミラボ社は、PHPの深刻な脆弱性2件(CVE-2026-109618、CVE-2026-109619)を受け、「子育てモバイル」の住民向けアプリと管理画面を2026年10月21日23時過ぎから停止中。被害は確認されておらず、修正適用後に安全確認のうえ再開する予定だが、再開時期は未定。",
+        "key_points": [
+          "PHPの脆弱性2件の公表を受け、子育てモバイルは影響を受ける可能性があるためサービスを停止した",
+          "現時点で脆弱性を悪用した被害は確認されておらず、停止は予防措置である",
+          "修正プログラムの適用を進めており、安全確認後に再開する。再開時期は未定",
+          "hugmoもPHPを使用しているため影響を受け、停止して対応中である。mila-eおやこ手帳、mila-e予約などはPHP不使用で影響なし",
+          "予約配信設定済みの通知は予定どおり配信されるが、停止中はアプリ上で内容を確認できない"
+        ],
+        "targets": [
+          "子育てモバイルを利用する自治体・管理画面の利用者",
+          "子育てモバイルの住民向けアプリ利用者(住民)",
+          "hugmoの利用者"
+        ],
+        "dates": [
+          {
+            "label": "脆弱性の公表日",
+            "value": "2026-10-21",
+            "evidence": "2026年10月21日(日本時間)、プログラム言語「PHP」の開発元から、深刻度の高い脆弱性2件"
+          },
+          {
+            "label": "サービス停止開始(23時過ぎ)",
+            "value": "2026-10-21",
+            "evidence": "10月21日23時過ぎから、住民向けアプリおよび管理画面の提供を一時停止しております。"
+          },
+          {
+            "label": "本お知らせの掲載日",
+            "value": "2026-10-22",
+            "evidence": "2026年10月22日"
+          }
+        ],
+        "uncertainties": [
+          "サービスの再開時期は未定と記載されている",
+          "停止対象の自治体名や利用自治体数は記載がない",
+          "修正プログラムの適用完了予定日は記載がない",
+          "hugmoの今後の対応は別途連絡とされ、詳細は記載がない",
+          "第一報・第二報の内容は本文中に詳細がない"
+        ],
+        "model": "claude-sonnet-5-5",
+        "processed_at": "2026-10-25T20:18:19+09:00"
+      },
+      "csv": {
+        "source_type": "news",
+        "hash": "5a1de03fdafd19498fc82ee18307cbd3cbb5cf4e94a482b99dceed48caa415a8",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text"
+      },
+      "tags": [
+        {
+          "id": "notice-admin-communication",
+          "name": "通知・事務連絡",
+          "origin": "ai",
+          "reason": "事業者から自治体など利用者向けに出された対応状況の通知・お知らせであるため",
+          "retired": false
+        },
+        {
+          "id": "childcare-support",
+          "name": "子育て支援",
+          "origin": "ai",
+          "reason": "子育て支援アプリ「子育てモバイル」のサービス停止に関する内容であるため",
+          "retired": false
+        },
+        {
+          "id": "vendor-trend",
+          "name": "ベンダ動向",
+          "origin": "source",
+          "reason": "情報源の設定：株式会社ミラボ（お知らせ）の記事すべてに付けています",
+          "retired": false
+        }
+      ],
+      "removed_tags": [],
+      "tag_override_reason": null
+    },
+    {
+      "id": "a_52b7c3e7b6d97e64",
+      "source_id": "cfa-news",
+      "source_name": "こども家庭庁（新着・更新）",
+      "title": "11月は「乳幼児突然死症候群（SIDS）」の対策強化月間です",
+      "url": "https://www.cfa.go.jp/press/e64cf5c5-1de9-4983-af20-e9f5cfc3f4bc",
+      "published": {
+        "value": "2026-10-21",
+        "precision": "day",
+        "basis": {
+          "method": "html_text",
+          "evidence": "公開日:令和8年10月21日"
+        }
+      },
+      "updated": {
+        "value": null,
+        "precision": "unknown",
+        "basis": null
+      },
+      "first_seen_at": "2026-10-25T20:08:12+09:00",
+      "last_seen_at": "2026-10-25T20:08:12+09:00",
+      "status": "active",
+      "content_status": "ok",
+      "content_error": null,
+      "latest_version": 1,
+      "versions": [
+        {
+          "version": 1,
+          "fetched_at": "2026-10-25T20:08:12+09:00",
+          "change_type": "new",
+          "extraction_status": "ok"
+        }
+      ],
+      "attachments": [
+        {
+          "title": "11月は「乳幼児突然死症候群(SIDS)」の対策強化月間です（PDF／3.4MB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/e64cf5c5-1de9-4983-af20-e9f5cfc3f4bc/6b9c2287/20261020_press_e64cf5c5-1de9-4983-af20-e9f5cfc3f4bc_02.pdf",
+          "status": "ok",
+          "note": null,
+          "pages": 11
+        }
+      ],
+      "summary": {
+        "status": "success",
+        "error": null,
+        "version": 1,
+        "outdated": false,
+        "text": "こども家庭庁は、令和8年11月1日から11月30日までを乳幼児突然死症候群（SIDS）の対策強化月間とし、ポスターやリーフレットで発症率を低くするポイントを全国的に周知する。関係団体への協力依頼や、医療機関等への診断ガイドライン参考の依頼も行う。",
+        "key_points": [
+          "11月は毎年SIDS対策強化月間で、平成11年度から実施している",
+          "発症率を低くするポイントは、あおむけ寝、無理のない範囲での母乳育児、保護者等の禁煙、あたためすぎへの注意",
+          "ポスター・リーフレットによる全国的な啓発活動と、「SIDS診断ガイドライン（第2版）」の周知・普及を行う",
+          "健やか親子21推進本部参加団体に周知・普及への協力を依頼する",
+          "医療機関等に対し、乳幼児の死体検案時にSIDSと虐待または窒息事故とを鑑別する的確な対応と、必要に応じた解剖の勧めを依頼する"
+        ],
+        "targets": [
+          "乳幼児（1歳未満）を育てる保護者等",
+          "妊婦および乳幼児に関わるすべての大人",
+          "関係行政機関",
+          "関係団体",
+          "健やか親子21推進本部参加団体",
+          "医療機関等"
+        ],
+        "dates": [
+          {
+            "label": "対策強化月間の期間",
+            "value": "2026-11-01",
+            "evidence": "【期日】令和8年11月1日(日)から11月30日(月)まで"
+          },
+          {
+            "label": "対策強化月間の終了日",
+            "value": "2026-11-30",
+            "evidence": "【期日】令和8年11月1日(日)から11月30日(月)まで"
+          },
+          {
+            "label": "公開日",
+            "value": "2026-10-21",
+            "evidence": "公開日:令和8年10月21日"
+          },
+          {
+            "label": "SIDS診断ガイドライン（第2版）の公表",
+            "value": "2012-10",
+            "evidence": "「乳幼児突然死症候群(SIDS)診断ガイドライン(第2版)」(平成24年10月公表)"
+          },
+          {
+            "label": "参加団体一覧の時点",
+            "value": "2026-10-15",
+            "evidence": "健やか親子 21 推進本部参加団体一覧(令和8年 10 月 15 日時点)"
+          }
+        ],
+        "uncertainties": [
+          "別紙1・3・4の内容は本文から確認できない",
+          "ガイドライン第2版の本文は含まれていない",
+          "グラフの数値と年次の対応は、抽出テキストからは確認できない"
+        ],
+        "model": "claude-sonnet-5-5",
+        "processed_at": "2026-10-25T20:18:19+09:00"
+      },
+      "csv": {
+        "source_type": "news",
+        "hash": "832f0ad7f3a55247d7a114c5c5f0c1e358e3f4bc2775105496c47e5e2c469fa1",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text+attachments"
+      },
+      "tags": [
+        {
+          "id": "maternal-child-health",
+          "name": "母子保健",
+          "origin": "ai",
+          "reason": "乳幼児の突然死予防に関する普及啓発であり、母子保健課が担当する母子保健の情報である",
+          "retired": false
+        },
+        {
+          "id": "survey-statistics",
+          "name": "調査・統計",
+          "origin": "ai",
+          "reason": "人口動態統計に基づくSIDS死亡者数の推移やSIDSによる死亡者数（令和7年62名）が示されている",
+          "retired": false
+        }
+      ],
+      "removed_tags": [],
+      "tag_override_reason": null
+    },
+    {
+      "id": "a_77e6b55c602b1f73",
+      "source_id": "cfa-news",
+      "source_name": "こども家庭庁（新着・更新）",
+      "title": "第22回 こども家庭審議会障害児支援部会の開催について",
+      "url": "https://www.cfa.go.jp/press/ce59fc80-1b14-4aa3-9f61-3f8ca050f345",
+      "published": {
+        "value": "2026-10-21",
+        "precision": "day",
+        "basis": {
+          "method": "html_text",
+          "evidence": "公開日:令和8年10月21日"
+        }
+      },
+      "updated": {
+        "value": null,
+        "precision": "unknown",
+        "basis": null
+      },
+      "first_seen_at": "2026-10-25T20:08:12+09:00",
+      "last_seen_at": "2026-10-25T20:08:12+09:00",
+      "status": "active",
+      "content_status": "ok",
+      "content_error": null,
+      "latest_version": 1,
+      "versions": [
+        {
+          "version": 1,
+          "fetched_at": "2026-10-25T20:08:12+09:00",
+          "change_type": "new",
+          "extraction_status": "ok"
+        }
+      ],
+      "attachments": [
+        {
+          "title": "第22回 こども家庭審議会障害児支援部会の開催について（PDF／360KB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/ce59fc80-1b14-4aa3-9f61-3f8ca050f345/6efcf8e0/20261020_press_ce59fc80-1b14-4aa3-9f61-3f8ca050f345_01.pdf",
+          "status": "ok",
+          "note": null,
+          "pages": 2
+        }
+      ],
+      "summary": {
+        "status": "success",
+        "error": null,
+        "version": 1,
+        "outdated": false,
+        "text": "こども家庭庁は、第22回こども家庭審議会障害児支援部会を令和8年10月28日(水)15時から17時にベルサール飯田橋駅前で開催する。議事は障害福祉報酬改定検討チームの議論状況(障害児支援関係)の報告。取材・傍聴は事前登録制で、会議の配信も予定されている。",
+        "key_points": [
+          "障害児支援部会は障害児支援に関する調査審議を行う",
+          "議事は第65回障害福祉報酬改定検討チームまでの議論状況等の報告(障害児支援関係)",
+          "取材希望者は10月27日17時までにフォーム登録し、14時50分までに会場前に集合",
+          "部会資料は10月27日17時までに当庁HPに掲載し、会場での資料配布はない",
+          "会議は配信予定で、傍聴席は受付先着順、顔写真付き身分証明書の持参が必要"
+        ],
+        "targets": [
+          "取材希望者",
+          "傍聴希望者",
+          "報道関係者",
+          "車いす利用者・介助者など支援が必要な傍聴希望者"
+        ],
+        "dates": [
+          {
+            "label": "開催日時",
+            "value": "2026-10-28",
+            "evidence": "1. 日時 令和8年10月28日(水)15時から17時まで"
+          },
+          {
+            "label": "取材登録締切",
+            "value": "2026-10-27",
+            "evidence": "10月27日(火)17時までに以下のフォームにて登録の上"
+          },
+          {
+            "label": "部会資料掲載期限",
+            "value": "2026-10-27",
+            "evidence": "部会資料につきましては、10月27日(火)17時までに当庁のホームページ"
+          },
+          {
+            "label": "公開日",
+            "value": "2026-10-21",
+            "evidence": "公開日:令和8年10月21日"
+          }
+        ],
+        "uncertainties": [
+          "部会資料の具体的な内容は本文からは確認できない",
+          "障害福祉報酬改定検討チームでの議論内容の詳細は記載がない"
+        ],
+        "model": "claude-sonnet-5-5",
+        "processed_at": "2026-10-25T20:18:19+09:00"
+      },
+      "csv": {
+        "source_type": "news",
+        "hash": "990a55499bed361e9b99273f01900c010e924ec387119eeb43094ffe540c63fd",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text+attachments"
+      },
+      "tags": [
+        {
+          "id": "council-committee",
+          "name": "審議会・検討会",
+          "origin": "ai",
+          "reason": "こども家庭審議会障害児支援部会の開催案内であるため",
+          "retired": false
+        }
+      ],
+      "removed_tags": [],
+      "tag_override_reason": null
+    },
+    {
+      "id": "a_82f203863f0ec219",
+      "source_id": "milabo-news",
+      "source_name": "株式会社ミラボ（お知らせ）",
+      "title": "【重要】PHPの脆弱性に関する当社サービスの対応状況について（第2報）",
+      "url": "https://mi-labo.co.jp/posts/20261021-php-security-old2/",
+      "published": {
+        "value": "2026-10-21",
+        "precision": "day",
+        "basis": {
+          "method": "listing_text",
+          "evidence": "2026年10月21日"
+        }
+      },
+      "updated": {
+        "value": null,
+        "precision": "unknown",
+        "basis": null
+      },
+      "first_seen_at": "2026-10-25T20:08:12+09:00",
+      "last_seen_at": "2026-10-25T20:08:12+09:00",
+      "status": "active",
+      "content_status": "ok",
+      "content_error": null,
+      "latest_version": 1,
+      "versions": [
+        {
+          "version": 1,
+          "fetched_at": "2026-10-25T20:08:12+09:00",
+          "change_type": "new",
+          "extraction_status": "ok"
+        }
+      ],
+      "attachments": [],
+      "summary": {
+        "status": "success",
+        "error": null,
+        "version": 1,
+        "outdated": false,
+        "text": "株式会社ミラボは、PHP開発元が2026年10月21日に公表した深刻度の高い脆弱性2件の影響を受ける可能性があるとして、同社の「子育てモバイル」を停止した。アプリ・ブラウザともに利用できない。被害は未確認で、復旧の目処が立ち次第、同ページで知らせる。",
+        "key_points": [
+          "PHP開発元が深刻度の高い脆弱性2件を公表した",
+          "同社の子育てモバイルは影響を受ける可能性がある",
+          "悪用リスクを抑えるためサービスを停止し、アプリ・ブラウザからアクセスできない",
+          "現時点で脆弱性を悪用した被害は確認されていない",
+          "恒久的な対策を進めており、復旧の目処が立ち次第お知らせする"
+        ],
+        "targets": [
+          "子育てモバイルの利用者"
+        ],
+        "dates": [
+          {
+            "label": "脆弱性の公表日",
+            "value": "2026-10-21",
+            "evidence": "2026年10月21日(日本時間)、プログラム言語「PHP」の開発元から、深刻度の高い脆弱性2件に関する情報が公表されました。"
+          },
+          {
+            "label": "本文書の公開日",
+            "value": "2026-10-21",
+            "evidence": "2026年10月21日"
+          }
+        ],
+        "uncertainties": [
+          "サービス停止の開始時刻が記載されていない",
+          "復旧の見込み時期が記載されていない",
+          "脆弱性の具体的な識別番号や内容が記載されていない",
+          "第一報の詳細は本文に含まれていない"
+        ],
+        "model": "claude-sonnet-5-5",
+        "processed_at": "2026-10-25T20:18:19+09:00"
+      },
+      "csv": {
+        "source_type": "news",
+        "hash": "22367b6c68a171a768b4704623259952921b36a48fb21fc93a02e27e03ccfd57",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text"
+      },
+      "tags": [
+        {
+          "id": "vendor-trend",
+          "name": "ベンダ動向",
+          "origin": "source",
+          "reason": "情報源の設定：株式会社ミラボ（お知らせ）の記事すべてに付けています",
+          "retired": false
+        }
+      ],
+      "removed_tags": [],
+      "tag_override_reason": null
+    },
+    {
+      "id": "a_8c07bc1adef392a5",
+      "source_id": "cfa-news",
+      "source_name": "こども家庭庁（新着・更新）",
+      "title": "障害児支援部会（第22回）",
+      "url": "https://www.cfa.go.jp/councils/shingikai/shougaiji_shien/779b0299",
+      "published": {
+        "value": "2026-10-21",
+        "precision": "day",
+        "basis": {
+          "method": "listing_text",
+          "evidence": "2026年10月21日"
+        }
+      },
+      "updated": {
+        "value": null,
+        "precision": "unknown",
+        "basis": null
+      },
+      "first_seen_at": "2026-10-25T20:08:12+09:00",
+      "last_seen_at": "2026-10-25T20:08:12+09:00",
+      "status": "active",
+      "content_status": "ok",
+      "content_error": null,
+      "latest_version": 1,
+      "versions": [
+        {
+          "version": 1,
+          "fetched_at": "2026-10-25T20:08:12+09:00",
+          "change_type": "new",
+          "extraction_status": "ok"
+        }
+      ],
+      "attachments": [],
+      "summary": {
+        "status": "success",
+        "error": null,
+        "version": 1,
+        "outdated": false,
+        "text": "障害児支援部会（第22回）が令和8年10月28日(水)15時から17時に、ベルサール飯田橋駅前で開催される。オンライン配信もあり、議事は障害福祉報酬改定検討チームの議論の状況（障害児支援関係）。",
+        "key_points": [
+          "第22回障害児支援部会の開催案内",
+          "日時は2026年10月28日15:00〜17:00",
+          "会場はベルサール飯田橋駅前（東京都千代田区飯田橋）",
+          "オンライン配信あり、URLは10月27日を目途に掲載予定",
+          "議事は障害福祉報酬改定検討チームの議論状況（障害児支援関係）"
+        ],
+        "targets": [
+          "障害児支援部会の委員・関係者",
+          "オンライン配信の視聴者"
+        ],
+        "dates": [
+          {
+            "label": "開催日",
+            "value": "2026-10-28",
+            "evidence": "日時:令和8年10月28日(水)15時00分から17時00分"
+          },
+          {
+            "label": "オンライン配信URL掲載予定日",
+            "value": "2026-10-27",
+            "evidence": "URLは10月27日(火)を目途に掲載予定"
+          }
+        ],
+        "uncertainties": [
+          "議論の具体的な内容や資料は記載されていない",
+          "報酬改定の内容や施行時期は記載されていない",
+          "「10月27日」の年は本文に明記されていない（令和8年と推定される開催日の前日）"
+        ],
+        "model": "claude-sonnet-5-5",
+        "processed_at": "2026-10-25T20:18:19+09:00"
+      },
+      "csv": {
+        "source_type": "news",
+        "hash": "d39eee26bf024872e31387285db847ec15b83077ae4adff3fb3ad483fad57ed8",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text"
+      },
+      "tags": [
+        {
+          "id": "council-committee",
+          "name": "審議会・検討会",
+          "origin": "ai",
+          "reason": "部会の開催案内と議事を示す文書であるため",
+          "retired": false
+        }
+      ],
+      "removed_tags": [],
+      "tag_override_reason": null
+    },
+    {
+      "id": "a_fe897dbf9050c0ad",
+      "source_id": "milabo-news",
+      "source_name": "株式会社ミラボ（お知らせ）",
+      "title": "【重要】PHPの脆弱性に関する当社サービスの対応状況について（第1報）",
+      "url": "https://mi-labo.co.jp/posts/20261021-php-security-old1/",
+      "published": {
+        "value": "2026-10-21",
+        "precision": "day",
+        "basis": {
+          "method": "listing_text",
+          "evidence": "2026年10月21日"
+        }
+      },
+      "updated": {
+        "value": null,
+        "precision": "unknown",
+        "basis": null
+      },
+      "first_seen_at": "2026-10-25T20:08:12+09:00",
+      "last_seen_at": "2026-10-25T20:08:12+09:00",
+      "status": "active",
+      "content_status": "ok",
+      "content_error": null,
+      "latest_version": 1,
+      "versions": [
+        {
+          "version": 1,
+          "fetched_at": "2026-10-25T20:08:12+09:00",
+          "change_type": "new",
+          "extraction_status": "ok"
+        }
+      ],
+      "attachments": [],
+      "summary": {
+        "status": "success",
+        "error": null,
+        "version": 1,
+        "outdated": false,
+        "text": "2026年10月21日、PHPの深刻度の高い脆弱性2件の公表を受け、ミラボ社は「子育てモバイル」が影響を受ける可能性があるとして、サーバー設定変更と通信制限を実施した。当面ファイルのアップロードができない。後継の「おやこ手帳」は影響なし。続報は同ページで案内する。",
+        "key_points": [
+          "PHP開発元が2026年10月21日(日本時間)に深刻度の高い脆弱性2件を公表した。",
+          "子育てモバイルは影響を受ける可能性があり、サーバー設定変更と通信制限を行った。対策の詳細は非公開。",
+          "現時点で脆弱性を悪用した被害は確認されていない。",
+          "当面ファイルのアップロード不可。住民は写真添付など、自治体担当者は管理画面でのCSV取込や画像・PDF登録ができない。その他の機能は利用可能。",
+          "調査結果によってはサービスを一時停止する場合があり、本ページと導入自治体を通じて通知する。後継のおやこ手帳は影響なし。"
+        ],
+        "targets": [
+          "子育てモバイルを利用する住民",
+          "子育てモバイル導入自治体の担当者"
+        ],
+        "dates": [
+          {
+            "label": "PHP脆弱性の公表日",
+            "value": "2026-10-21",
+            "evidence": "2026年10月21日(日本時間)、プログラム言語「PHP」の開発元から、深刻度の高い脆弱性2件に関する情報が公表されました。"
+          },
+          {
+            "label": "本お知らせの掲載日",
+            "value": "2026-10-21",
+            "evidence": "2026年10月21日"
+          }
+        ],
+        "uncertainties": [
+          "脆弱性の具体的な識別番号(CVE等)や対象PHPバージョンの記載がない。",
+          "ファイルアップロード停止の解除時期が不明。",
+          "サービス停止の判断時期や条件が不明。",
+          "実施した対策の詳細は非公開で確認できない。",
+          "影響範囲の特定は調査中で、第2報以降の内容は不明。"
+        ],
+        "model": "claude-sonnet-5-5",
+        "processed_at": "2026-10-25T20:18:19+09:00"
+      },
+      "csv": {
+        "source_type": "news",
+        "hash": "07b5e17b9c188473380d4dc7e6f052637de869900af8cef30217dded7ebe5c6a",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text"
+      },
+      "tags": [
+        {
+          "id": "notice-admin-communication",
+          "name": "通知・事務連絡",
+          "origin": "ai",
+          "reason": "事業者から導入自治体や利用者へ向けた対応状況の通知であり、自治体担当者への影響も記載されているため。",
+          "retired": false
+        },
+        {
+          "id": "vendor-trend",
+          "name": "ベンダ動向",
+          "origin": "source",
+          "reason": "情報源の設定：株式会社ミラボ（お知らせ）の記事すべてに付けています",
+          "retired": false
+        }
+      ],
+      "removed_tags": [],
+      "tag_override_reason": null
+    },
+    {
+      "id": "a_1e28c42d68bb1183",
+      "source_id": "cfa-news",
+      "source_name": "こども家庭庁（新着・更新）",
+      "title": "中司大臣記者会見（令和8年10月20日）",
+      "url": "https://www.cfa.go.jp/speech/390f47b2",
+      "published": {
+        "value": "2026-10-20",
+        "precision": "day",
+        "basis": {
+          "method": "listing_text",
+          "evidence": "2026年10月20日"
+        }
+      },
+      "updated": {
+        "value": null,
+        "precision": "unknown",
+        "basis": null
+      },
+      "first_seen_at": "2026-10-25T20:08:12+09:00",
+      "last_seen_at": "2026-10-25T20:08:12+09:00",
+      "status": "active",
+      "content_status": "ok",
+      "content_error": null,
+      "latest_version": 1,
+      "versions": [
+        {
+          "version": 1,
+          "fetched_at": "2026-10-25T20:08:12+09:00",
+          "change_type": "new",
+          "extraction_status": "ok"
+        }
+      ],
+      "attachments": [],
+      "summary": {
+        "status": "success",
+        "error": null,
+        "version": 1,
+        "outdated": false,
+        "text": "令和8年10月20日に中司大臣が記者会見を行ったことのみが記載されている。会見要旨は後日掲載される予定で、会見の内容は本文からは確認できない。",
+        "key_points": [
+          "令和8年10月20日に中司大臣が記者会見を行った",
+          "会見要旨は後日、同ページに掲載される予定"
+        ],
+        "targets": [],
+        "dates": [
+          {
+            "label": "記者会見の開催日",
+            "value": "2026-10-20",
+            "evidence": "令和8年10月20日、中司大臣が記者会見を行いました。"
+          }
+        ],
+        "uncertainties": [
+          "会見で扱われた議題・発言内容は本文に記載がない",
+          "会見要旨の掲載日は「後日」とされ、具体的な日付が不明",
+          "対象者・対象機関は記載がない"
+        ],
+        "model": "claude-sonnet-5-5",
+        "processed_at": "2026-10-25T20:18:19+09:00"
+      },
+      "csv": {
+        "source_type": "news",
+        "hash": "f5b99e9cc6c6adbffcb39471e3ea1eebcb69833c8be8b58b981e9c882a05cf12",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text"
+      },
+      "tags": [],
+      "removed_tags": [],
+      "tag_override_reason": null
+    },
+    {
+      "id": "a_3810cf6f1934879a",
+      "source_id": "cfa-news",
+      "source_name": "こども家庭庁（新着・更新）",
+      "title": "みて かんじて つながる劇体験 ～優良児童劇等公演事業～令和8年11月28日（土）和歌山県新宮市にて開催",
+      "url": "https://www.cfa.go.jp/press/9e7f7908-8f5a-4730-befe-d61c6d61c3ec",
+      "published": {
+        "value": "2026-10-20",
+        "precision": "day",
+        "basis": {
+          "method": "html_text",
+          "evidence": "公開日:令和8年10月20日"
+        }
+      },
+      "updated": {
+        "value": null,
+        "precision": "unknown",
+        "basis": null
+      },
+      "first_seen_at": "2026-10-25T20:08:12+09:00",
+      "last_seen_at": "2026-10-25T20:08:12+09:00",
+      "status": "active",
+      "content_status": "ok",
+      "content_error": null,
+      "latest_version": 1,
+      "versions": [
+        {
+          "version": 1,
+          "fetched_at": "2026-10-25T20:08:12+09:00",
+          "change_type": "new",
+          "extraction_status": "ok"
+        }
+      ],
+      "attachments": [
+        {
+          "title": "みて かんじて つながる劇体験 ～優良児童劇等公演事業～令和8年11月28日（土）和歌山県新宮市にて開催（PDF／431KB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/9e7f7908-8f5a-4730-befe-d61c6d61c3ec/e46d198d/20261019_press_9e7f7908-8f5a-4730-befe-d61c6d61c3ec_01.pdf",
+          "status": "ok",
+          "note": null,
+          "pages": 2
+        }
+      ],
+      "summary": {
+        "status": "success",
+        "error": null,
+        "version": 1,
+        "outdated": false,
+        "text": "こども家庭庁は「優良児童劇等公演事業」の一環として、令和8年11月28日(土)に和歌山県新宮市の新宮市中央児童館で人形劇団京芸「火よう日のごちそうはひきがえる」を上演する。観劇後にワークショップも行い、事前応募は11月17日(火)まで受け付ける。",
+        "key_points": [
+          "こども家庭審議会が推薦した舞台芸術作品を、児童劇等に触れる機会の少ない地方のこどもとその家族に体験してもらう事業",
+          "新宮市公演は開場13時、開演13時15分(上演約65分)、ワークショップは14時35分開始(30~45分程度)",
+          "会場は新宮市中央児童館、演目は「火よう日のごちそうはひきがえる」、劇団は人形劇団京芸",
+          "主催はこども家庭庁、受託団体は一般財団法人児童健全育成推進財団、協賛は朝日生命保険相互会社",
+          "令和8年度は全国17か所で実施し、事前応募は専用サイトで受け付ける"
+        ],
+        "targets": [
+          "和歌山県新宮市および児童劇等に触れる機会の少ない地方のこどもとその家族"
+        ],
+        "dates": [
+          {
+            "label": "公演日",
+            "value": "2026-11-28",
+            "evidence": "公演日時: 令和8年11月28日(土) (開場13時00分予定)"
+          },
+          {
+            "label": "事前応募締切",
+            "value": "2026-11-17",
+            "evidence": "11月17日(火)まで事前応募受付中"
+          },
+          {
+            "label": "公開日",
+            "value": "2026-10-20",
+            "evidence": "公開日:令和8年10月20日"
+          }
+        ],
+        "uncertainties": [
+          "事前応募の定員や応募方法の詳細は本文では確認できない(応募サイトを参照)",
+          "国庫補助事業の内容や補助額は記載がない",
+          "公演の参加費の有無は記載がない"
+        ],
+        "model": "claude-sonnet-5-5",
+        "processed_at": "2026-10-25T20:18:19+09:00"
+      },
+      "csv": {
+        "source_type": "news",
+        "hash": "22d294f94ee70c22043e0f47f1797d3d8fc7dab250ffdfbf5483add5c9263bb7",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text+attachments"
+      },
+      "tags": [
+        {
+          "id": "childcare-support",
+          "name": "子育て支援",
+          "origin": "ai",
+          "reason": "こどもと家族に舞台芸術を体験してもらう機会を提供する、こども家庭庁の事業の案内であるため",
+          "retired": false
+        }
+      ],
+      "removed_tags": [],
+      "tag_override_reason": null
+    },
+    {
+      "id": "a_44a83c3df35f5219",
+      "source_id": "cfa-news",
+      "source_name": "こども家庭庁（新着・更新）",
+      "title": "乳幼児の健康診査等のあり方に関する検討会 （第1回）",
+      "url": "https://www.cfa.go.jp/councils/nyuyojinokenkoushinsatou-kentokai/a7bdb140",
+      "published": {
+        "value": "2026-10-20",
+        "precision": "day",
+        "basis": {
+          "method": "listing_text",
+          "evidence": "2026年10月20日"
+        }
+      },
+      "updated": {
+        "value": null,
+        "precision": "unknown",
+        "basis": null
+      },
+      "first_seen_at": "2026-10-25T20:08:12+09:00",
+      "last_seen_at": "2026-10-25T20:08:12+09:00",
+      "status": "active",
+      "content_status": "ok",
+      "content_error": null,
+      "latest_version": 1,
+      "versions": [
+        {
+          "version": 1,
+          "fetched_at": "2026-10-25T20:08:12+09:00",
+          "change_type": "new",
+          "extraction_status": "ok"
+        }
+      ],
+      "attachments": [
+        {
+          "title": "議事次第（PDF／74KB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/a7bdb140-3fdb-4b08-b851-bb3cb88bb3d0/82524c01/20260812_councils_nyuyojinokenkoushinsatou-kentokai_a7bdb140_01.pdf",
+          "status": "ok",
+          "note": null,
+          "pages": 1
+        },
+        {
+          "title": "資料1　開催要綱・構成員名簿（PDF／281KB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/a7bdb140-3fdb-4b08-b851-bb3cb88bb3d0/62f026f0/20260824_councils_nyuyojinokenkoushinsatou-kentokai_a7bdb140_05.pdf",
+          "status": "ok",
+          "note": null,
+          "pages": 2
+        },
+        {
+          "title": "資料2　乳幼児の健康診査等のあり方に関する検討会の進め方について（案）（PDF／288KB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/a7bdb140-3fdb-4b08-b851-bb3cb88bb3d0/0f14dc14/20260812_councils_nyuyojinokenkoushinsatou-kentokai_a7bdb140_03.pdf",
+          "status": "ok",
+          "note": null,
+          "pages": 2
+        },
+        {
+          "title": "資料3　乳幼児の健康診査等について（PDF／2.75MB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/a7bdb140-3fdb-4b08-b851-bb3cb88bb3d0/8b6f4a87/20260812_councils_nyuyojinokenkoushinsatou-kentokai_a7bdb140_04.pdf",
+          "status": "skipped",
+          "note": "1記事あたりの上限（3件）を超えたため取得していません",
+          "pages": null
+        },
+        {
+          "title": "議事録（PDF／683KB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/a7bdb140-3fdb-4b08-b851-bb3cb88bb3d0/8496c611/20261020_councils_nyuyojinokenkoushinsatou-kentokai_a7bdb140_06.pdf",
+          "status": "skipped",
+          "note": "1記事あたりの上限（3件）を超えたため取得していません",
+          "pages": null
+        }
+      ],
+      "summary": {
+        "status": "success",
+        "error": null,
+        "version": 1,
+        "outdated": false,
+        "text": "こども家庭庁成育局母子保健課が、乳幼児の健康診査等のあり方を検討する検討会の第1回を令和8年8月19日に開催した。進め方と乳幼児健診の現状を議題とし、令和9年春頃の議論とりまとめを予定する進め方案が示された。",
+        "key_points": [
+          "「こどもまんなか実行計画2026」を踏まえ、身体面・精神面・社会面の観点を含む乳幼児健診等のあり方を検討することが目的",
+          "構成員は自治体職員、大学教授、日本産婦人科医会・日本小児科医会・日本看護協会・日本医師会の関係者など",
+          "第2回以降の論点は、実施体制(持続可能性と質の担保)、他の子育て支援施策等との連携、母子保健DXを踏まえた情報の利活用、国・都道府県・市町村の役割など",
+          "進め方案では月1回程度開催し、令和9年春頃に議論をとりまとめる",
+          "検討会・資料・議事録は原則公開で、庶務は成育局母子保健課が担当"
+        ],
+        "targets": [
+          "検討会構成員",
+          "こども家庭庁成育局母子保健課",
+          "国・都道府県・市町村(今後の検討で期待される役割の対象)",
+          "乳幼児等"
+        ],
+        "dates": [
+          {
+            "label": "第1回検討会開催日",
+            "value": "2026-08-19",
+            "evidence": "日時:令和8年8月19日(水)14時00分から16時00分"
+          },
+          {
+            "label": "こどもまんなか実行計画2026の決定日",
+            "value": "2026-06-09",
+            "evidence": "(令和8年6月9日こども政策推進会議決定)"
+          },
+          {
+            "label": "議論のとりまとめ予定",
+            "value": "2027",
+            "evidence": "令和9年春頃 ・議論のとりまとめ"
+          }
+        ],
+        "uncertainties": [
+          "第1回の議論内容や議事録の本文は、提示された文書からは確認できない",
+          "資料3(乳幼児の健康診査等について)の内容は本文に含まれていない",
+          "第2回以降の具体的な開催日は示されていない",
+          "「令和9年春頃」の具体的な月日は示されていない"
+        ],
+        "model": "claude-sonnet-5-5",
+        "processed_at": "2026-10-25T20:18:19+09:00"
+      },
+      "csv": {
+        "source_type": "news",
+        "hash": "8e817ddc25f90aa4a694328c04e2e807d11c808a3a468fac95672544fdd8fed2",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text+attachments"
+      },
+      "tags": [
+        {
+          "id": "council-committee",
+          "name": "審議会・検討会",
+          "origin": "ai",
+          "reason": "検討会の開催概要、要綱、構成員名簿、進め方案、議事録を掲載した文書であるため",
+          "retired": false
+        },
+        {
+          "id": "maternal-child-health",
+          "name": "母子保健",
+          "origin": "ai",
+          "reason": "乳幼児の健康診査等のあり方を検討する内容で、担当は母子保健課であるため",
+          "retired": false
+        },
+        {
+          "id": "municipal-dx-standardization",
+          "name": "自治体DX・標準化",
+          "origin": "ai",
+          "reason": "今後の論点に母子保健DXを踏まえた情報の利活用が含まれるため",
+          "retired": false
+        }
+      ],
+      "removed_tags": [],
+      "tag_override_reason": null
+    },
+    {
+      "id": "a_522abfdcaf2e1357",
+      "source_id": "cfa-news",
+      "source_name": "こども家庭庁（新着・更新）",
+      "title": "第20回 人工妊娠中絶一時金認定審査部会の開催について",
+      "url": "https://www.cfa.go.jp/press/45a80ccf-630d-493a-9143-a5258a7acc94",
+      "published": {
+        "value": "2026-10-20",
+        "precision": "day",
+        "basis": {
+          "method": "html_text",
+          "evidence": "公開日:令和8年10月20日"
+        }
+      },
+      "updated": {
+        "value": null,
+        "precision": "unknown",
+        "basis": null
+      },
+      "first_seen_at": "2026-10-25T20:08:12+09:00",
+      "last_seen_at": "2026-10-25T20:08:12+09:00",
+      "status": "active",
+      "content_status": "ok",
+      "content_error": null,
+      "latest_version": 1,
+      "versions": [
+        {
+          "version": 1,
+          "fetched_at": "2026-10-25T20:08:12+09:00",
+          "change_type": "new",
+          "extraction_status": "ok"
+        }
+      ],
+      "attachments": [
+        {
+          "title": "第20回 人工妊娠中絶一時金認定審査部会の開催について（PDF／261KB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/45a80ccf-630d-493a-9143-a5258a7acc94/deb4111b/20261019_press_45a80ccf-630d-493a-9143-a5258a7acc94_01.pdf",
+          "status": "ok",
+          "note": null,
+          "pages": 1
+        }
+      ],
+      "summary": {
+        "status": "success",
+        "error": null,
+        "version": 1,
+        "outdated": false,
+        "text": "こども家庭庁が、第20回人工妊娠中絶一時金認定審査部会を令和8年(2026年)10月27日11時から13時までオンラインで非公開開催することを2026年10月20日に知らせた。議題は請求事案の審査。",
+        "key_points": [
+          "第20回人工妊娠中絶一時金認定審査部会の開催案内",
+          "日時は令和8年10月27日(火)11:00~13:00",
+          "オンライン開催で非公開、頭撮り不可",
+          "議題は請求事案の審査",
+          "非公開の理由は当事者や第三者の権利・利益、公共の利益を害するおそれがあるため"
+        ],
+        "targets": [
+          "報道関係者(開催案内の対象と思われるが明記なし)"
+        ],
+        "dates": [
+          {
+            "label": "開催日",
+            "value": "2026-10-27",
+            "evidence": "1. 日 時: 令和8年10月27日(火) 11時00分~13時00分"
+          },
+          {
+            "label": "公開日・発出日",
+            "value": "2026-10-20",
+            "evidence": "公開日:令和8年10月20日"
+          }
+        ],
+        "uncertainties": [
+          "案内の具体的な対象者(報道関係者かどうか)は文書に明記されていない",
+          "人工妊娠中絶一時金の制度内容や審査の詳細は記載がない",
+          "部会の委員構成は記載がない"
+        ],
+        "model": "claude-sonnet-5-5",
+        "processed_at": "2026-10-25T20:18:19+09:00"
+      },
+      "csv": {
+        "source_type": "news",
+        "hash": "f1c41a06f4d71cb8510d390f1036ca0df8c1a7ce33b6d617e19d881bf32645c2",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text+attachments"
+      },
+      "tags": [
+        {
+          "id": "council-committee",
+          "name": "審議会・検討会",
+          "origin": "ai",
+          "reason": "審議会の部会の開催案内であるため",
+          "retired": false
+        },
+        {
+          "id": "maternal-child-health",
+          "name": "母子保健",
+          "origin": "ai",
+          "reason": "人工妊娠中絶一時金に関する部会で、担当は成育局母子保健課であるため",
+          "retired": false
+        }
+      ],
+      "removed_tags": [],
+      "tag_override_reason": null
+    },
+    {
+      "id": "a_8c2cf9cb95fcc8a4",
+      "source_id": "cfa-news",
+      "source_name": "こども家庭庁（新着・更新）",
+      "title": "第7回特別養子縁組に関する支援の在り方に関する専門委員会の開催について",
+      "url": "https://www.cfa.go.jp/press/0d4a17b6-ace6-46b2-9828-d758b0b2db3b",
+      "published": {
+        "value": "2026-10-20",
+        "precision": "day",
+        "basis": {
+          "method": "html_text",
+          "evidence": "公開日:令和8年10月20日"
+        }
+      },
+      "updated": {
+        "value": null,
+        "precision": "unknown",
+        "basis": null
+      },
+      "first_seen_at": "2026-10-25T20:08:12+09:00",
+      "last_seen_at": "2026-10-25T20:08:12+09:00",
+      "status": "active",
+      "content_status": "ok",
+      "content_error": null,
+      "latest_version": 1,
+      "versions": [
+        {
+          "version": 1,
+          "fetched_at": "2026-10-25T20:08:12+09:00",
+          "change_type": "new",
+          "extraction_status": "ok"
+        }
+      ],
+      "attachments": [
+        {
+          "title": "第7回特別養子縁組に関する支援の在り方に関する専門委員会の開催について（PDF／238KB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/0d4a17b6-ace6-46b2-9828-d758b0b2db3b/1afd62ad/20261019_press_0d4a17b6-ace6-46b2-9828-d758b0b2db3b_01.pdf",
+          "status": "ok",
+          "note": null,
+          "pages": 1
+        }
+      ],
+      "summary": {
+        "status": "success",
+        "error": null,
+        "version": 1,
+        "outdated": false,
+        "text": "こども家庭庁が、第7回特別養子縁組に関する支援の在り方に関する専門委員会を令和8年（2026年）10月21日10時から12時まで霞が関ビルディング22階の庁議室で開催すると案内した。議事は実親・児童相談所からのヒアリング等で、個人情報保護の観点から非公開。",
+        "key_points": [
+          "第7回特別養子縁組に関する支援の在り方に関する専門委員会の開催案内",
+          "日時は令和8年10月21日（水）10時00分～12時00分",
+          "場所は霞が関ビルディング22階 こども家庭庁 庁議室",
+          "議事は実親（生みの父母）・児童相談所からのヒアリングとその他で、非公開",
+          "政務の出席および記者ブリーフィングはない"
+        ],
+        "targets": [
+          "専門委員会の関係者"
+        ],
+        "dates": [
+          {
+            "label": "開催日",
+            "value": "2026-10-21",
+            "evidence": "令和8年10月21日(水) 10時00分~12時00分"
+          },
+          {
+            "label": "公開日",
+            "value": "2026-10-20",
+            "evidence": "公開日:令和8年10月20日"
+          }
+        ],
+        "uncertainties": [
+          "ヒアリングの具体的な内容や配布資料は記載されていない",
+          "委員の構成や出席者は記載されていない",
+          "非公開のため議事録等の公開予定は不明"
+        ],
+        "model": "claude-sonnet-5-5",
+        "processed_at": "2026-10-25T20:18:19+09:00"
+      },
+      "csv": {
+        "source_type": "news",
+        "hash": "7fd0a5b08f8dd4e4334a75e2c696e83b28ef0fa4e49f26882aeeb24dcd68af4c",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text+attachments"
+      },
+      "tags": [
+        {
+          "id": "council-committee",
+          "name": "審議会・検討会",
+          "origin": "ai",
+          "reason": "専門委員会の開催案内であるため",
+          "retired": false
+        }
+      ],
+      "removed_tags": [],
+      "tag_override_reason": null
+    },
+    {
+      "id": "a_af959ef793600609",
+      "source_id": "cfa-news",
+      "source_name": "こども家庭庁（新着・更新）",
+      "title": "特別養子縁組に関する支援の在り方に関する専門委員会（第7回）",
+      "url": "https://www.cfa.go.jp/councils/shingikai/shakai_katei/tokubetsu-yoshi/2664f41f",
+      "published": {
+        "value": "2026-10-20",
+        "precision": "day",
+        "basis": {
+          "method": "listing_text",
+          "evidence": "2026年10月20日"
+        }
+      },
+      "updated": {
+        "value": null,
+        "precision": "unknown",
+        "basis": null
+      },
+      "first_seen_at": "2026-10-25T20:08:12+09:00",
+      "last_seen_at": "2026-10-25T20:08:12+09:00",
+      "status": "active",
+      "content_status": "ok",
+      "content_error": null,
+      "latest_version": 1,
+      "versions": [
+        {
+          "version": 1,
+          "fetched_at": "2026-10-25T20:08:12+09:00",
+          "change_type": "new",
+          "extraction_status": "ok"
+        }
+      ],
+      "attachments": [
+        {
+          "title": "議事次第（PDF／242KB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/2664f41f-0943-4a08-b926-b0da477b2e35/87515210/20261016_councils_shingikai_shakai_katei_tokubetsu-yoshi_2664f41f_01.pdf",
+          "status": "ok",
+          "note": null,
+          "pages": 1
+        }
+      ],
+      "summary": {
+        "status": "success",
+        "error": null,
+        "version": 1,
+        "outdated": false,
+        "text": "こども家庭庁の「特別養子縁組に関する支援の在り方に関する専門委員会(第7回)」が令和8年(2026年)10月21日10時から12時に同庁22階庁議室で開催される。議事は実親・児童相談所からのヒアリングとその他で、個人情報保護のため非公開。",
+        "key_points": [
+          "第7回専門委員会は2026年10月21日(水)10:00〜12:00にこども家庭庁22階庁議室で開催",
+          "議題は実親(生みの父母)・児童相談所からのヒアリングとその他",
+          "個人情報の一部が開示され、特定の者に不当な利益・不利益を与えるおそれがあるため非公開",
+          "資料は議事次第と、非公開の「ヒアリング対象者アンケート回答」",
+          "こども家庭審議会社会的養育・家庭支援部会の下に置かれた専門委員会"
+        ],
+        "targets": [
+          "こども家庭審議会社会的養育・家庭支援部会 特別養子縁組に関する支援の在り方に関する専門委員会の委員",
+          "ヒアリング対象の実親(生みの父母)",
+          "児童相談所"
+        ],
+        "dates": [
+          {
+            "label": "開催日",
+            "value": "2026-10-21",
+            "evidence": "日時:令和8年10月21日(水) 10時00分から12時00分"
+          }
+        ],
+        "uncertainties": [
+          "ヒアリングの具体的な内容やアンケート回答の中身は非公開のため確認できない",
+          "委員の氏名や人数は記載がない",
+          "公開日(2026-10-20)と開催日の関係以外に、傍聴や配信の有無は記載がない"
+        ],
+        "model": "claude-sonnet-5-5",
+        "processed_at": "2026-10-25T20:18:19+09:00"
+      },
+      "csv": {
+        "source_type": "news",
+        "hash": "a2c0dd61fbd9092f56b46de75bb77b9a59285b67f2761f6a88899368b1a7830d",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text+attachments"
+      },
+      "tags": [
+        {
+          "id": "council-committee",
+          "name": "審議会・検討会",
+          "origin": "ai",
+          "reason": "専門委員会の開催案内、議事次第、資料の情報であるため",
+          "retired": false
+        }
+      ],
+      "removed_tags": [],
+      "tag_override_reason": null
+    },
+    {
+      "id": "a_dfa5c322758be0d5",
+      "source_id": "cmic-trust-news",
+      "source_name": "CMIC Trust 株式会社（NEWS）",
+      "title": "外部委託先サービスへの不正アクセスに伴う当社ホームページお問い合わせフォーム利用者情報の外部閲覧または漏えいの可能性について",
+      "url": "https://www.cmic-trust.jp/news/YcywYraY",
+      "published": {
+        "value": "2026-10-19T17:11:48+09:00",
+        "precision": "datetime",
+        "basis": {
+          "method": "page_data",
+          "evidence": "publishedAt: \"2026-10-19T08:11:48.000Z\""
+        }
+      },
+      "updated": {
+        "value": null,
+        "precision": "unknown",
+        "basis": null
+      },
+      "first_seen_at": "2026-10-25T20:08:12+09:00",
+      "last_seen_at": "2026-10-25T20:08:12+09:00",
+      "status": "active",
+      "content_status": "ok",
+      "content_error": null,
+      "latest_version": 1,
+      "versions": [
+        {
+          "version": 1,
+          "fetched_at": "2026-10-25T20:08:12+09:00",
+          "change_type": "new",
+          "extraction_status": "ok"
+        }
+      ],
+      "attachments": [],
+      "summary": {
+        "status": "success",
+        "error": null,
+        "version": 1,
+        "outdated": false,
+        "text": "CMIC Trust株式会社は、ホームページ制作サービス「Studio」への第三者の不正アクセスにより、同社お問い合わせフォームの入力情報(会社名・氏名・連絡先等)が外部閲覧または取得された可能性を公表した。実際の取得は未確認で、フォームは一時停止中。不審な連絡への注意を呼びかけている。",
+        "key_points": [
+          "Studio株式会社から2026年10月16日に、2026年9月30日〜10月1日の不正アクセスで入力情報が閲覧・取得された可能性があるとの連絡を受けた",
+          "可能性のある情報は会社名、部署名、氏名、メールアドレス、電話番号、お問い合わせ内容",
+          "第三者による実際の取得や二次被害、不正利用は現時点で確認されていない",
+          "当社やStudio社を装った不審なメール、SMS、電話等への注意を要請している",
+          "お問い合わせフォームを一時停止し、対象者へ個別連絡、委託先管理体制の見直しを進める"
+        ],
+        "targets": [
+          "CMIC Trustホームページのお問い合わせフォーム利用者",
+          "関係者"
+        ],
+        "dates": [
+          {
+            "label": "Studio社からの連絡受領",
+            "value": "2026-10-16",
+            "evidence": "2026年10月16日、ウェブサイト制作サービス「Studio」を提供するStudio株式会社から"
+          },
+          {
+            "label": "不正アクセスの発生期間(開始)",
+            "value": "2026-09-30",
+            "evidence": "2026年9月30日から10月1日の間、第三者が同社のクラウド環境に不正にアクセスし"
+          },
+          {
+            "label": "不正アクセスの発生期間(終了)",
+            "value": "2026-10-01",
+            "evidence": "2026年9月30日から10月1日の間、第三者が同社のクラウド環境に不正にアクセスし"
+          },
+          {
+            "label": "Studio社による不正アクセス検知",
+            "value": "2026-10-13",
+            "evidence": "同社は10月13日に不正アクセスを検知し"
+          },
+          {
+            "label": "脆弱性修正・経路遮断の完了",
+            "value": "2026-10-14",
+            "evidence": "10月14日までに脆弱性の修正および不正アクセスに利用された経路の遮断を完了した"
+          },
+          {
+            "label": "可能性のある個人情報の確認時点",
+            "value": "2026-10-19",
+            "evidence": "外部閲覧または漏えいした可能性のある個人情報(2026年10月19日時点)"
+          }
+        ],
+        "uncertainties": [
+          "対象となる利用者の人数や件数は記載されていない",
+          "Studio社による原因調査・影響範囲の特定は継続中で、最終結果は不明",
+          "フォームの利用再開時期は記載されていない",
+          "漏えいの有無は確定しておらず、可能性を否定できない段階"
+        ],
+        "model": "claude-sonnet-5-5",
+        "processed_at": "2026-10-25T20:18:19+09:00"
+      },
+      "csv": {
+        "source_type": "news",
+        "hash": "c57c45ca573001f38f2a743b0bcb2672a69edf027caad7e6ee8b5959f52857f8",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text"
+      },
+      "tags": [
+        {
+          "id": "vendor-trend",
+          "name": "ベンダ動向",
+          "origin": "source",
+          "reason": "情報源の設定：CMIC Trust 株式会社（NEWS）の記事すべてに付けています",
+          "retired": false
+        }
+      ],
+      "removed_tags": [],
+      "tag_override_reason": null
+    },
+    {
+      "id": "a_4436ad7a13ebbb0a",
+      "source_id": "cfa-news",
+      "source_name": "こども家庭庁（新着・更新）",
+      "title": "こども家庭審議会 幼児期までのこどもの育ち部会（第16回）について",
+      "url": "https://www.cfa.go.jp/press/f19217c3-341d-4451-812e-16127aac5216",
+      "published": {
+        "value": "2026-10-19",
+        "precision": "day",
+        "basis": {
+          "method": "html_text",
+          "evidence": "公開日:令和8年10月19日"
+        }
+      },
+      "updated": {
+        "value": null,
+        "precision": "unknown",
+        "basis": null
+      },
+      "first_seen_at": "2026-10-25T20:08:12+09:00",
+      "last_seen_at": "2026-10-25T20:08:12+09:00",
+      "status": "active",
+      "content_status": "ok",
+      "content_error": null,
+      "latest_version": 1,
+      "versions": [
+        {
+          "version": 1,
+          "fetched_at": "2026-10-25T20:08:12+09:00",
+          "change_type": "new",
+          "extraction_status": "ok"
+        }
+      ],
+      "attachments": [
+        {
+          "title": "こども家庭審議会 幼児期までのこどもの育ち部会（第16回）について（PDF／304KB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/f19217c3-341d-4451-812e-16127aac5216/2cc67b73/20261015_press_f19217c3-341d-4451-812e-16127aac5216_01.pdf",
+          "status": "ok",
+          "note": null,
+          "pages": 1
+        }
+      ],
+      "summary": {
+        "status": "success",
+        "error": null,
+        "version": 1,
+        "outdated": false,
+        "text": "こども家庭庁は、こども家庭審議会 幼児期までのこどもの育ち部会(第16回)を令和8年(2026年)10月23日17時から19時まで、庁内会議室とオンライン(Zoom)で開催すると発表した。議事は保育所保育指針等に関する関係団体ヒアリング等で、YouTube Liveで配信する。",
+        "key_points": [
+          "第16回部会を2026年10月23日17:00~19:00に開催",
+          "場所はこども家庭庁14階共用中会議室とオンライン(Zoom)",
+          "議事(予定)は保育所保育指針等に関する関係団体ヒアリングとその他",
+          "報道関係者・一般向けにYouTube Liveで配信し、配信URLは部会ホームページに掲載",
+          "録画・録音希望者は登録が必要で、無断撮影・録画・録音・転載は控えるよう案内。会議資料は開始時間にホームページへ掲載"
+        ],
+        "targets": [
+          "報道関係者",
+          "一般の傍聴希望者",
+          "会議の録画・録音を希望する者"
+        ],
+        "dates": [
+          {
+            "label": "公開日",
+            "value": "2026-10-19",
+            "evidence": "公開日:令和8年10月19日"
+          },
+          {
+            "label": "開催日",
+            "value": "2026-10-23",
+            "evidence": "日 時:令和8年10月23日(金)17時00分~19時00分"
+          }
+        ],
+        "uncertainties": [
+          "ヒアリング対象の関係団体名は記載がない",
+          "保育所保育指針等の具体的な見直し内容は記載がない",
+          "会議資料の内容は本文からは確認できない"
+        ],
+        "model": "claude-sonnet-5-5",
+        "processed_at": "2026-10-25T20:18:19+09:00"
+      },
+      "csv": {
+        "source_type": "news",
+        "hash": "c40d5c68de9bff9da2f74c678b1a0a991a7afba35c0df7aa8f326e5572087999",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text+attachments"
+      },
+      "tags": [
+        {
+          "id": "council-committee",
+          "name": "審議会・検討会",
+          "origin": "ai",
+          "reason": "こども家庭審議会の部会の開催案内であるため",
+          "retired": false
+        },
+        {
+          "id": "childcare-support",
+          "name": "子育て支援",
+          "origin": "ai",
+          "reason": "議事に保育所保育指針等に関する関係団体ヒアリングが含まれるため",
+          "retired": false
+        }
+      ],
+      "removed_tags": [],
+      "tag_override_reason": null
+    },
+    {
       "id": "a_3ba6565f65ea02f1",
       "source_id": "cfa-news",
       "source_name": "こども家庭庁（新着・更新）",
@@ -21,7 +2581,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-18T19:48:06+09:00",
-      "last_seen_at": "2026-10-18T19:48:06+09:00",
+      "last_seen_at": "2026-10-25T20:08:12+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -92,7 +2652,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-18T19:48:06+09:00",
-      "last_seen_at": "2026-10-18T19:48:06+09:00",
+      "last_seen_at": "2026-10-25T20:08:12+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -185,16 +2745,22 @@
         "basis": null
       },
       "first_seen_at": "2026-10-18T19:48:06+09:00",
-      "last_seen_at": "2026-10-18T19:48:06+09:00",
+      "last_seen_at": "2026-10-25T20:08:12+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
-      "latest_version": 1,
+      "latest_version": 2,
       "versions": [
         {
           "version": 1,
           "fetched_at": "2026-10-18T19:48:06+09:00",
           "change_type": "new",
+          "extraction_status": "ok"
+        },
+        {
+          "version": 2,
+          "fetched_at": "2026-10-25T20:08:12+09:00",
+          "change_type": "content_changed",
           "extraction_status": "ok"
         }
       ],
@@ -202,48 +2768,47 @@
       "summary": {
         "status": "success",
         "error": null,
-        "version": 1,
+        "version": 2,
         "outdated": false,
-        "text": "こども家庭庁関連の「はじめの100か月の育ちビジョン」全国大会と国際シンポジウムの開催案内。全国大会は2026年11月22日・23日、国際シンポジウムは11月23日に、東京の都市センターホテルとオンラインのハイブリッドで開催。両方参加する場合はそれぞれ別に申込みが必要。",
+        "text": "『はじめの100か月の育ちビジョン』の全国大会（2026年11月22日・23日午前）と国際シンポジウム（11月23日午後）の開催案内。会場は東京の都市センターホテルで、オンラインとのハイブリッド開催。両者は別々の申込みが必要。",
         "key_points": [
           "全国大会は2026年11月22日(日)10時〜17時、23日(月・祝)9時〜12時に開催",
-          "国際シンポジウムは2026年23日(月・祝)13時〜18時30分に開催",
-          "会場は東京都千代田区平河町の都市センターホテルで、オンラインとのハイブリッド同時開催",
-          "全国大会と国際シンポジウムは別々の申込みが必要",
-          "両日参加する場合もそれぞれ申込みが必要"
+          "国際シンポジウムは2026年11月23日(月・祝)13時〜18時30分に開催",
+          "会場は都市センターホテル（東京都千代田区平河町2丁目4−1）",
+          "いずれもオンラインとのハイブリッド同時開催",
+          "全国大会と国際シンポジウムは別々の申込みが必要で、両日参加する場合もそれぞれ申込む"
         ],
         "targets": [
           "全国大会・国際シンポジウムへの参加希望者"
         ],
         "dates": [
           {
-            "label": "全国大会 開催日(1日目)",
+            "label": "全国大会 1日目",
             "value": "2026-11-22",
             "evidence": "開催日時:2026年11月22日(日)10時00分から17時00分"
           },
           {
-            "label": "全国大会 開催日(2日目)",
+            "label": "全国大会 2日目",
             "value": "2026-11-23",
             "evidence": "23日(月・祝)9時00分から12時00分"
           },
           {
-            "label": "国際シンポジウム 開催日",
+            "label": "国際シンポジウム",
             "value": "2026-11-23",
-            "evidence": "開催日時:2026年23日(月・祝)13時00分から18時30分"
+            "evidence": "開催日時:2026年11月23日(月・祝)13時00分から18時30分"
           }
         ],
         "uncertainties": [
-          "国際シンポジウムの開催日は「2026年23日」と記載されており月の記載がない(全国大会の日程から11月23日と推測されるが原文では明記なし)",
-          "主催者・対象者・参加費・申込締切は本文に記載がない",
-          "プログラム内容や登壇者は記載がない",
-          "申込フォームのURLは本文に含まれていない"
+          "大会・シンポジウムの具体的なプログラム、登壇者、内容は記載がない",
+          "参加対象者の範囲、定員、申込締切は記載がない",
+          "参加費の有無は記載がない"
         ],
         "model": "claude-sonnet-5-5",
-        "processed_at": "2026-10-18T19:57:46+09:00"
+        "processed_at": "2026-10-25T20:18:19+09:00"
       },
       "csv": {
         "source_type": "news",
-        "hash": "2d7a7d667ea29697d723b9e8dc92495d24223437520309f47694cb5579476e32",
+        "hash": "e986b456f189f95c280675e448cc822b158b7bcb1466871c64329836e6f67bd2",
         "hash_status": "ok",
         "hash_scope": "title+main_text"
       },
@@ -271,7 +2836,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-18T19:48:06+09:00",
-      "last_seen_at": "2026-10-18T19:48:06+09:00",
+      "last_seen_at": "2026-10-25T20:08:12+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -367,7 +2932,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-18T19:48:06+09:00",
-      "last_seen_at": "2026-10-18T19:48:06+09:00",
+      "last_seen_at": "2026-10-25T20:08:12+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -486,7 +3051,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-18T19:48:06+09:00",
-      "last_seen_at": "2026-10-18T19:48:06+09:00",
+      "last_seen_at": "2026-10-25T20:08:12+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -588,7 +3153,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-18T19:48:06+09:00",
-      "last_seen_at": "2026-10-18T19:48:06+09:00",
+      "last_seen_at": "2026-10-25T20:08:12+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -684,7 +3249,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-18T19:48:06+09:00",
-      "last_seen_at": "2026-10-18T19:48:06+09:00",
+      "last_seen_at": "2026-10-25T20:08:12+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -810,7 +3375,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-18T19:48:06+09:00",
-      "last_seen_at": "2026-10-18T19:48:06+09:00",
+      "last_seen_at": "2026-10-25T20:08:12+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -880,7 +3445,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-11T21:33:02+09:00",
-      "last_seen_at": "2026-10-18T19:48:06+09:00",
+      "last_seen_at": "2026-10-25T20:08:12+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -950,7 +3515,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-11T21:33:02+09:00",
-      "last_seen_at": "2026-10-18T19:48:06+09:00",
+      "last_seen_at": "2026-10-25T20:08:12+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -1086,7 +3651,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-11T21:33:02+09:00",
-      "last_seen_at": "2026-10-18T19:48:06+09:00",
+      "last_seen_at": "2026-10-25T20:08:12+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -1216,7 +3781,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-11T21:33:02+09:00",
-      "last_seen_at": "2026-10-18T19:48:06+09:00",
+      "last_seen_at": "2026-10-25T20:08:12+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -1340,7 +3905,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-07T11:50:38+09:00",
-      "last_seen_at": "2026-10-18T19:48:06+09:00",
+      "last_seen_at": "2026-10-25T20:08:12+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -1491,7 +4056,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-07T11:50:38+09:00",
-      "last_seen_at": "2026-10-18T19:48:06+09:00",
+      "last_seen_at": "2026-10-25T20:08:12+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -1665,7 +4230,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-07T11:50:38+09:00",
-      "last_seen_at": "2026-10-18T19:48:06+09:00",
+      "last_seen_at": "2026-10-25T20:08:12+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -1736,7 +4301,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-07T11:50:38+09:00",
-      "last_seen_at": "2026-10-18T19:48:06+09:00",
+      "last_seen_at": "2026-10-25T20:08:12+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -2600,7 +5165,7 @@
       "id": "a_27d76fdb5aea7c15",
       "source_id": "kokasen-news",
       "source_name": "こども家庭センターポータルサイト（新着情報）",
-      "title": "全国オンライン情報交換会（人口５～10万人）の開催案内を掲載しました",
+      "title": "こども家庭ソーシャルワーカーPRセッション（オンラインセミナー）の開催案内を掲載しました",
       "url": "https://kokasen.cfa.go.jp/login/briefing",
       "published": {
         "value": "2026-09-30T12:34:34+09:00",
@@ -2616,7 +5181,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-05T14:24:29+09:00",
-      "last_seen_at": "2026-10-18T19:48:06+09:00",
+      "last_seen_at": "2026-10-25T20:08:12+09:00",
       "status": "unsupported",
       "content_status": "unsupported",
       "content_error": "会員限定（ログインが必要）のページのため、本文は取得していません。一覧の題名・日付と出典リンクだけを記録しています",
@@ -4308,7 +6873,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-05T14:53:03+09:00",
-      "last_seen_at": "2026-10-18T19:48:06+09:00",
+      "last_seen_at": "2026-10-25T20:08:12+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -4393,16 +6958,22 @@
         "basis": null
       },
       "first_seen_at": "2026-10-05T10:14:31+09:00",
-      "last_seen_at": "2026-10-05T10:14:31+09:00",
+      "last_seen_at": "2026-10-25T20:08:12+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
-      "latest_version": 1,
+      "latest_version": 2,
       "versions": [
         {
           "version": 1,
           "fetched_at": "2026-10-05T10:14:31+09:00",
           "change_type": "new",
+          "extraction_status": "ok"
+        },
+        {
+          "version": 2,
+          "fetched_at": "2026-10-25T20:08:12+09:00",
+          "change_type": "content_changed",
           "extraction_status": "ok"
         }
       ],
@@ -4551,43 +7122,43 @@
       "summary": {
         "status": "success",
         "error": null,
-        "version": 1,
+        "version": 2,
         "outdated": false,
-        "text": "こども家庭庁による旧優生保護法補償金等の特設ページ。令和7年1月17日施行の補償金等支給法の概要、請求受付、弁護士による無料請求サポート、認定審査会の結果、都道府県説明会資料、各都道府県の相談窓口を案内している。",
+        "text": "こども家庭庁の旧優生保護法補償金等に関する特設ページ。補償金等支給法は令和7年1月17日に施行され、同日に請求受付が始まった。被害を受けた本人や遺族が対象で、請求手続の案内、弁護士による無料の請求サポート、都道府県窓口一覧、審査会結果、都道府県説明会資料を掲載する。",
         "key_points": [
-          "令和6年7月3日の最高裁判決を受け、補償金等の支給法が議員立法で成立し、令和7年1月17日に施行された",
+          "令和6年7月3日の最高裁大法廷判決を受け、補償金等の支給等に関する法律が議員立法で成立し、令和7年1月17日に施行された",
           "請求受付開始日は法律の施行日である令和7年1月17日",
-          "希望者には請求手続きを弁護士が無料でサポートし、窓口は各都道府県が担う",
-          "都道府県説明会（令和7年9月19日、令和8年5月26日、令和8年9月11日開催）の資料や認定審査会の審査結果を掲載している",
-          "リーフレット2点のFAX番号の誤記について令和7年12月10日付でお詫びと訂正があり、正しい番号は03-3595-2753"
+          "ポスター・リーフレットによると、請求期限は令和12年1月16日",
+          "弁護士が請求手続きを無料でサポートし、窓口は都道府県が担う",
+          "リーフレット2のFAX番号の誤記について、令和7年12月10日付でお詫びと訂正（正しい番号は03-3595-2753）が出された"
         ],
         "targets": [
-          "旧優生保護法に基づく優生手術等や人工妊娠中絶等を受けた本人",
-          "本人の配偶者・遺族",
+          "優生手術等を受けた本人（生存者）",
+          "人工妊娠中絶等を受けた本人（生存者）",
+          "優生手術等を受けた本人の配偶者・遺族",
           "都道府県・指定都市等の関係者",
-          "弁護士会・弁護士",
-          "関係府省庁"
+          "弁護士会・弁護士"
         ],
         "dates": [
-          {
-            "label": "法律の施行日・請求受付開始日",
-            "value": "2025-01-17",
-            "evidence": "令和7年1月17日(法律の施行日)"
-          },
           {
             "label": "最高裁大法廷判決",
             "value": "2024-07-03",
             "evidence": "令和6年7月3日に、最高裁において、旧優生保護法の規定を憲法違反とした上で"
           },
           {
-            "label": "補償金等支給法の成立",
+            "label": "法律の成立",
             "value": "2024-10-08",
-            "evidence": "同年10月8日には、旧優生保護法に基づく優生手術等や人工妊娠中絶等を受けることを強いられて被害を受けた方々"
+            "evidence": "同年10月8日には、旧優生保護法に基づく優生手術等や人工妊娠中絶等を受けることを強いられて被害を受けた方々に対する補償金等の支給に関し必要な事項等を定める"
           },
           {
-            "label": "補償金等支給法の公布",
+            "label": "法律の公布",
             "value": "2024-10-17",
             "evidence": "10月17日に公布され、令和7年1月17日に施行された"
+          },
+          {
+            "label": "施行日・請求受付開始日",
+            "value": "2025-01-17",
+            "evidence": "令和7年1月17日(法律の施行日)"
           },
           {
             "label": "リーフレット誤記のお詫びと訂正の文書日付",
@@ -4595,44 +7166,43 @@
             "evidence": "令和 7 年 12 月 10 日"
           },
           {
-            "label": "請求期限（リーフレット記載）",
+            "label": "請求期限",
             "value": "2030-01-16",
             "evidence": "【請 求 期 限 】令 和12 年 1 月 16日"
           },
           {
-            "label": "都道府県説明会（第1回）開催日",
+            "label": "第1回都道府県説明会",
             "value": "2025-09-19",
             "evidence": "旧優生保護法補償金等支給法に関する都道府県説明会(令和7年9月19日開催)"
           },
           {
-            "label": "第2回都道府県説明会開催日",
+            "label": "第2回都道府県説明会",
             "value": "2026-05-26",
             "evidence": "第2回 旧優生保護法補償金等支給法に関する都道府県説明会(令和8年5月26日開催)"
           },
           {
-            "label": "第3回都道府県説明会開催日",
+            "label": "第3回都道府県説明会",
             "value": "2026-09-11",
             "evidence": "第3回 旧優生保護法補償金等支給法に関する都道府県説明会(令和8年9月11日開催)"
           },
           {
-            "label": "請求・相談件数等の状況の基準時点",
-            "value": "2026-08",
-            "evidence": "※令和8年8月末現在"
+            "label": "請求・相談件数等の状況の基準日",
+            "value": "2026-09",
+            "evidence": "※令和8年9月末現在"
           }
         ],
         "uncertainties": [
-          "請求手続の具体的な内容は「補償金等の請求について」の見出しのみで、本文からは確認できない",
-          "請求・相談件数や支給認定件数の具体的な数値は掲載されていない",
-          "第3回説明会の資料2は非公表と記載され、内容は不明",
-          "公開日（2026-09-18）と本文中の最終更新情報との関係は不明",
-          "請求期限はリーフレット1の記載で、特設ページ本文には明記がない"
+          "「補償金等の請求について」「関係法令・通知」「全面解決に向けた協議」の各項目は、リンク先の中身が本文にない",
+          "本文に記載の補償金額は、PDF抽出文が一部不完全で対象別の対応関係を完全には確認できない",
+          "最高裁判決の対象者ごとの請求期限の詳細は確認できない",
+          "三原大臣のメッセージの内容は本文にない"
         ],
         "model": "claude-sonnet-5-5",
-        "processed_at": "2026-10-05T10:29:20+09:00"
+        "processed_at": "2026-10-25T20:18:19+09:00"
       },
       "csv": {
         "source_type": "news",
-        "hash": "bc30a02f941b0e05995bdffb139b3d4a30681bfd0101c85546a73219b790f673",
+        "hash": "68e9f1cb49a70e36f43f37e907696ddeaac4770f02f4e8d696c4310b5ade18cd",
         "hash_status": "ok",
         "hash_scope": "title+main_text+attachments"
       },
@@ -4641,28 +7211,28 @@
           "id": "system-revision",
           "name": "制度改正",
           "origin": "ai",
-          "reason": "補償金等支給法の成立・公布・施行と法律の概要を掲載している",
+          "reason": "補償金等の支給等に関する法律の成立・施行と、その概要を扱っている",
           "retired": false
         },
         {
           "id": "council-committee",
           "name": "審議会・検討会",
           "origin": "ai",
-          "reason": "認定審査会の審査結果や都道府県説明会の議事次第・資料を掲載している",
-          "retired": false
-        },
-        {
-          "id": "survey-statistics",
-          "name": "調査・統計",
-          "origin": "ai",
-          "reason": "請求・相談件数、支給認定件数、サポート弁護士登録数の状況および個別通知の実施状況調査を掲載している",
+          "reason": "補償金等認定審査会の部会審査結果や都道府県説明会の資料を掲載している",
           "retired": false
         },
         {
           "id": "notice-admin-communication",
           "name": "通知・事務連絡",
           "origin": "ai",
-          "reason": "都道府県等関係者向けにリーフレットの誤記訂正のお知らせ文書を添付している",
+          "reason": "リーフレットの誤記についてのお詫びと訂正を、都道府県等の関係者向けに通知している",
+          "retired": false
+        },
+        {
+          "id": "survey-statistics",
+          "name": "調査・統計",
+          "origin": "ai",
+          "reason": "請求・相談件数、支給認定件数、サポート弁護士登録数の状況を公表している",
           "retired": false
         }
       ],
@@ -6708,7 +9278,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-05T10:14:31+09:00",
-      "last_seen_at": "2026-10-18T19:48:06+09:00",
+      "last_seen_at": "2026-10-25T20:08:12+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -11044,7 +13614,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-05T14:24:29+09:00",
-      "last_seen_at": "2026-10-18T19:48:06+09:00",
+      "last_seen_at": "2026-10-25T20:08:12+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,

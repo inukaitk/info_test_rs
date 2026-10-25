@@ -1,0 +1,228 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_35828acaa1daba17",
+    "source_id": "cfa-news",
+    "canonical_url": "https://www.cfa.go.jp/policies/shougaijishien/care-ji-shien",
+    "title": "医療的ケア児等とその家族に対する支援施策",
+    "published_at": "2026-10-23",
+    "updated_at": "2022-03-28",
+    "date_basis": {
+      "published": {
+        "method": "listing_text",
+        "evidence": "<time datetime=\"2026-10-23\">2026年10月23日</time>"
+      },
+      "updated": {
+        "method": "html_text",
+        "evidence": "改訂令和4年3月28日"
+      }
+    },
+    "date_precision": {
+      "published": "day",
+      "updated": "day"
+    },
+    "first_seen_at": "2026-10-25T20:08:12+09:00",
+    "last_seen_at": "2026-10-25T20:08:12+09:00",
+    "latest_version": 1,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "extraction_profile": "html+pdf(3files,30pages,exclude:座席|席次)",
+      "attachments": [
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/5218c3a3-610e-4925-8596-a9116889756f/6a555317/20260817_policies_shougaijishien_care-ji-shien_39.pdf",
+          "title": "法律の概要（改正法）（PDF／457KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 2622,
+          "pages": 2,
+          "pages_read": 2
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/5218c3a3-610e-4925-8596-a9116889756f/36367297/20260812_policies_shougaijishien_care-ji-shien_38.pdf",
+          "title": "医療的ケア児及びその家族に対する支援に関する法律の一部を改正する法律（新旧対照表）（PDF／351KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 28411,
+          "pages": 20,
+          "pages_read": 20
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/5218c3a3-610e-4925-8596-a9116889756f/873fe5cd/20260804_policies_shougaijishien_care-ji-shien_36.pdf",
+          "title": "医療的ケア児及びその家族に対する支援に関する法律の一部を改正する法律の公布について（PDF／232KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 5777,
+          "pages": 6,
+          "pages_read": 6
+        },
+        {
+          "url": "https://www.sangiin.go.jp/japanese/gianjoho/ketsugi/current/f440_072201.pdf",
+          "title": "医療的ケア児及びその家族に対する支援に関する法律の一部を改正する法律案に対する附帯決議　令和8年7月22日こども・子育て・若者活躍に関する特別委員会（参議院ホームページ）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/5218c3a3-610e-4925-8596-a9116889756f/4496b336/20261023_policies_shougaijishien_care-ji-shien_42.pdf",
+          "title": "医療的ケア児等及び重症心身障害者並びにそれらの家族に対する支援に関する法律第十四条第一項の政令で定める市を定める政令（PDF／31KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/5218c3a3-610e-4925-8596-a9116889756f/0696c72f/20261023_policies_shougaijishien_care-ji-shien_43.pdf",
+          "title": "【公布通知】医療的ケア児等及び重症心身障害者並びにそれらの家族に対する支援に関する法律第十四条第一項の政令で定める市を定める政令の公布について（令和8年10月23日障発1023第１号、こ支障第285号）（PDF／120KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/5218c3a3-610e-4925-8596-a9116889756f/03ac0201/20231013-policies-shougaijishien-care-ji-shien-000801674.pdf",
+          "title": "法律の概要（PDF／596KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/5218c3a3-610e-4925-8596-a9116889756f/61fecd25/20231013-policies-shougaijishien-care-ji-shien-000801675.pdf",
+          "title": "医療的ケア児及びその家族に対する支援に関する法律（令和3年法律第81号）（PDF／192KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/5218c3a3-610e-4925-8596-a9116889756f/55d6932e/20231013-policies-shougaijishien-care-ji-shien-000801676.pdf",
+          "title": "医療的ケア児及びその家族に対する支援に関する法律の公布について（令和3年6月18日府子本第742号、3文科初第499号、医発0618第1号、子発0618第1号、障発0618第1号）（PDF／223KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.sangiin.go.jp/japanese/gianjoho/ketsugi/204/f069_061024_02.pdf",
+          "title": "医療的ケア児及びその家族に対する支援に関する法律案に対する附帯決議　令和3年6月10日　参議院厚生労働委員会（参議院ホームページ）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/5218c3a3-610e-4925-8596-a9116889756f/9f2bd53d/20231013-policies-shougaijishien-care-ji-shien-000928614.pdf",
+          "title": "医療的ケア児及びその家族に対する支援に関する法律の施行に係る医療的ケア児支援センター等の業務等について（令和3年8月31日, 一部改訂令和4年3月28日）（PDF／780KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/5218c3a3-610e-4925-8596-a9116889756f/b536f355/20260617_policies_shougaijishien_care-ji-shien_21.pdf",
+          "title": "こちら（PDF／143KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/5218c3a3-610e-4925-8596-a9116889756f/934621f1/20260817_policies_shougaijishien_care-ji-shien_40.pdf",
+          "title": "医療的ケア児の現状について（令和8年8月時点）（PDF／810KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/5218c3a3-610e-4925-8596-a9116889756f/ea9330db/20260617_policies_shougaijishien_care-ji-shien_22.pdf",
+          "title": "在宅の医療的ケア児とその家族に向けた主な取組（令和8年5月15日時点）（PDF／5.6MB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/5218c3a3-610e-4925-8596-a9116889756f/52db71b0/20260617_policies_shougaijishien_care-ji-shien_23.pdf",
+          "title": "こども家庭庁支援局障害児支援課（PDF／2.6MB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/5218c3a3-610e-4925-8596-a9116889756f/06979505/20260617_policies_shougaijishien_care-ji-shien_24.pdf",
+          "title": "保育政策課（PDF／628KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/5218c3a3-610e-4925-8596-a9116889756f/103a1354/20260617_policies_shougaijishien_care-ji-shien_25.pdf",
+          "title": "文部科学省（PDF／3.3MB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/5218c3a3-610e-4925-8596-a9116889756f/6d948d23/20260617_policies_shougaijishien_care-ji-shien_26.pdf",
+          "title": "厚生労働省（PDF／1.3MB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/5218c3a3-610e-4925-8596-a9116889756f/3f4103ef/20260617_policies_shougaijishien_care-ji-shien_27.pdf",
+          "title": "内閣府（PDF／3.7MB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/5218c3a3-610e-4925-8596-a9116889756f/b0d9fa91/20260617_policies_shougaijishien_care-ji-shien_28.pdf",
+          "title": "栃木県医療的ケア児等支援センター（PDF／14.1MB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        }
+      ],
+      "article_id": "a_35828acaa1daba17",
+      "version": 1,
+      "content_hash": "sha256:6915cdd2c6a32bc7485d693236ed79b746c15eda29d4b26d2b27e62dd709b0c5",
+      "fetched_at": "2026-10-25T20:08:12+09:00",
+      "content_type": "html",
+      "text_length": 40215,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "new",
+      "export_hash": "ea5e708912e78c467584c9d79743b1ab2343b50bf225a81d2eb24e148e8e147b",
+      "export_hash_status": "ok",
+      "export_hash_scope": "title+main_text+attachments"
+    }
+  ]
+}

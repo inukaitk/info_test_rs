@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_7fd3a7403a477613",
+    "source_id": "milabo-news",
+    "canonical_url": "https://mi-labo.co.jp/posts/20261021-php-security/",
+    "title": "【重要】子育てモバイル サービス再開のお知らせ（PHPの脆弱性への対応・第4報）",
+    "published_at": "2026-10-22",
+    "updated_at": null,
+    "date_basis": {
+      "published": {
+        "method": "listing_text",
+        "evidence": "2026年10月22日"
+      },
+      "updated": null
+    },
+    "date_precision": {
+      "published": "day",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-10-25T20:08:12+09:00",
+    "last_seen_at": "2026-10-25T20:08:12+09:00",
+    "latest_version": 1,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "extraction_profile": "html+pdf(3files,30pages)",
+      "article_id": "a_7fd3a7403a477613",
+      "version": 1,
+      "content_hash": "sha256:bef1e8a5a76cf51d56f47412d3ba7ce7a1a3defc1c8afe34d1df8bb4e37a0f6b",
+      "fetched_at": "2026-10-25T20:08:12+09:00",
+      "content_type": "html",
+      "text_length": 2583,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "new",
+      "export_hash": "d89922508512f3c769c74c8954f0c9fb16b61a9852f90e6f7c497be96642f2a5",
+      "export_hash_status": "ok",
+      "export_hash_scope": "title+main_text"
+    }
+  ]
+}

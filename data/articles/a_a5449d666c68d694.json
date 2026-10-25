@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_a5449d666c68d694",
+    "source_id": "cmic-trust-news",
+    "canonical_url": "https://www.cmic-trust.jp/news/PHP",
+    "title": "PHPの脆弱性に関する当社サービスの対応状況について",
+    "published_at": "2026-10-22T19:38:44+09:00",
+    "updated_at": null,
+    "date_basis": {
+      "published": {
+        "method": "page_data",
+        "evidence": "publishedAt: \"2026-10-22T10:38:44.000Z\""
+      },
+      "updated": null
+    },
+    "date_precision": {
+      "published": "datetime",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-10-25T20:08:12+09:00",
+    "last_seen_at": "2026-10-25T20:08:12+09:00",
+    "latest_version": 1,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "extraction_profile": "html+pdf(3files,30pages)",
+      "article_id": "a_a5449d666c68d694",
+      "version": 1,
+      "content_hash": "sha256:140e94cfa3c7006cb7118c609d377d83c28c65a730fbfb1e86c28647c86d3565",
+      "fetched_at": "2026-10-25T20:08:12+09:00",
+      "content_type": "html",
+      "text_length": 486,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "new",
+      "export_hash": "a293550e0bd9fff8d17474de1dd9d8beb5a18f5d78bdd35e52246aef19389774",
+      "export_hash_status": "ok",
+      "export_hash_scope": "title+main_text"
+    }
+  ]
+}

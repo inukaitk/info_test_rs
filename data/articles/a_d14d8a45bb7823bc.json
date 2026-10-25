@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_d14d8a45bb7823bc",
+    "source_id": "cfa-news",
+    "canonical_url": "https://www.cfa.go.jp/press/57551703-bf00-4a79-94df-628dc8f2ae25",
+    "title": "第16回　子ども・子育て支援等分科会の開催について",
+    "published_at": "2026-10-23",
+    "updated_at": null,
+    "date_basis": {
+      "published": {
+        "method": "html_text",
+        "evidence": "公開日:令和8年10月23日"
+      },
+      "updated": null
+    },
+    "date_precision": {
+      "published": "day",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-10-25T20:08:12+09:00",
+    "last_seen_at": "2026-10-25T20:08:12+09:00",
+    "latest_version": 1,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "extraction_profile": "html+pdf(3files,30pages,exclude:座席|席次)",
+      "attachments": [
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/57551703-bf00-4a79-94df-628dc8f2ae25/0a23eb33/20261022_press_57551703-bf00-4a79-94df-628dc8f2ae25_01.pdf",
+          "title": "第16回　子ども・子育て支援等分科会の開催について（PDF／253KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 321,
+          "pages": 1,
+          "pages_read": 1
+        }
+      ],
+      "article_id": "a_d14d8a45bb7823bc",
+      "version": 1,
+      "content_hash": "sha256:ca713bd6e5c29dcda8f14bce5f1fd785cf6fc3e6a4c966ba2b45cab1a9e9f05f",
+      "fetched_at": "2026-10-25T20:08:12+09:00",
+      "content_type": "html",
+      "text_length": 478,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "new",
+      "export_hash": "be7d01980a80efe7e22f519a0bfc2951336f019cb24d3cb08b470cbc5deab04a",
+      "export_hash_status": "ok",
+      "export_hash_scope": "title+main_text+attachments"
+    }
+  ]
+}

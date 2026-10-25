@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_dfa5c322758be0d5",
+    "source_id": "cmic-trust-news",
+    "canonical_url": "https://www.cmic-trust.jp/news/YcywYraY",
+    "title": "外部委託先サービスへの不正アクセスに伴う当社ホームページお問い合わせフォーム利用者情報の外部閲覧または漏えいの可能性について",
+    "published_at": "2026-10-19T17:11:48+09:00",
+    "updated_at": null,
+    "date_basis": {
+      "published": {
+        "method": "page_data",
+        "evidence": "publishedAt: \"2026-10-19T08:11:48.000Z\""
+      },
+      "updated": null
+    },
+    "date_precision": {
+      "published": "datetime",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-10-25T20:08:12+09:00",
+    "last_seen_at": "2026-10-25T20:08:12+09:00",
+    "latest_version": 1,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "extraction_profile": "html+pdf(3files,30pages)",
+      "article_id": "a_dfa5c322758be0d5",
+      "version": 1,
+      "content_hash": "sha256:752538d2f3aaa8ef8810b7fa6d54dd7c08ef45b86d3822646b7ae827820ff5a4",
+      "fetched_at": "2026-10-25T20:08:12+09:00",
+      "content_type": "html",
+      "text_length": 1603,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "new",
+      "export_hash": "c57c45ca573001f38f2a743b0bcb2672a69edf027caad7e6ee8b5959f52857f8",
+      "export_hash_status": "ok",
+      "export_hash_scope": "title+main_text"
+    }
+  ]
+}

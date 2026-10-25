@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_dc4fc8adf153cea9",
+    "source_id": "cfa-news",
+    "canonical_url": "https://www.cfa.go.jp/councils/hoshokin-yuseishujutsu/fadbc2c9",
+    "title": "補償金・優生手術等一時金認定審査部会（第20回）",
+    "published_at": "2026-10-23",
+    "updated_at": null,
+    "date_basis": {
+      "published": {
+        "method": "listing_text",
+        "evidence": "<time datetime=\"2026-10-23\">2026年10月23日</time>"
+      },
+      "updated": null
+    },
+    "date_precision": {
+      "published": "day",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-10-25T20:08:12+09:00",
+    "last_seen_at": "2026-10-25T20:08:12+09:00",
+    "latest_version": 1,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "extraction_profile": "html+pdf(3files,30pages,exclude:座席|席次)",
+      "attachments": [
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/fadbc2c9-d4d7-4026-be14-25e3a659c8ac/9472668d/20261023_councils_hoshokin-yuseishujutsu_fadbc2c9_05.pdf",
+          "title": "議事要旨（PDF／276KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 1217,
+          "pages": 3,
+          "pages_read": 3
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/fadbc2c9-d4d7-4026-be14-25e3a659c8ac/7998852e/20261015_councils_hoshokin-yuseishujutsu_fadbc2c9_01.pdf",
+          "title": "議事次第（PDF／46KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 220,
+          "pages": 1,
+          "pages_read": 1
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/fadbc2c9-d4d7-4026-be14-25e3a659c8ac/546d68c2/20261015_councils_hoshokin-yuseishujutsu_fadbc2c9_02.pdf",
+          "title": "参考資料1：補償金・優生手術等一時金認定審査部会審査方針（PDF／79KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 469,
+          "pages": 1,
+          "pages_read": 1
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/fadbc2c9-d4d7-4026-be14-25e3a659c8ac/4d270873/20261015_councils_hoshokin-yuseishujutsu_fadbc2c9_03.pdf",
+          "title": "参考資料2：旧優生保護法補償金等認定審査会運営規程（PDF／96KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/fadbc2c9-d4d7-4026-be14-25e3a659c8ac/bb79035f/20261015_councils_hoshokin-yuseishujutsu_fadbc2c9_04.pdf",
+          "title": "参考資料3：補償金・優生手術等一時金認定審査部会　委員名簿（PDF／81KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        }
+      ],
+      "article_id": "a_dc4fc8adf153cea9",
+      "version": 1,
+      "content_hash": "sha256:c7fbb38d62ceb9a83b1ed1e2295816691457e1d3139d638a3237158d9af3289c",
+      "fetched_at": "2026-10-25T20:08:12+09:00",
+      "content_type": "html",
+      "text_length": 2283,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "new",
+      "export_hash": "354968cbd6079403e291692c43b741f9ffa532135afdd4e11a4987c219dadeec",
+      "export_hash_status": "ok",
+      "export_hash_scope": "title+main_text+attachments"
+    }
+  ]
+}

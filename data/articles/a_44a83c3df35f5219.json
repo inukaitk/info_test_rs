@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_44a83c3df35f5219",
+    "source_id": "cfa-news",
+    "canonical_url": "https://www.cfa.go.jp/councils/nyuyojinokenkoushinsatou-kentokai/a7bdb140",
+    "title": "乳幼児の健康診査等のあり方に関する検討会 （第1回）",
+    "published_at": "2026-10-20",
+    "updated_at": null,
+    "date_basis": {
+      "published": {
+        "method": "listing_text",
+        "evidence": "<time datetime=\"2026-10-20\">2026年10月20日</time>"
+      },
+      "updated": null
+    },
+    "date_precision": {
+      "published": "day",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-10-25T20:08:12+09:00",
+    "last_seen_at": "2026-10-25T20:08:12+09:00",
+    "latest_version": 1,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "extraction_profile": "html+pdf(3files,30pages,exclude:座席|席次)",
+      "attachments": [
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/a7bdb140-3fdb-4b08-b851-bb3cb88bb3d0/82524c01/20260812_councils_nyuyojinokenkoushinsatou-kentokai_a7bdb140_01.pdf",
+          "title": "議事次第（PDF／74KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 227,
+          "pages": 1,
+          "pages_read": 1
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/a7bdb140-3fdb-4b08-b851-bb3cb88bb3d0/62f026f0/20260824_councils_nyuyojinokenkoushinsatou-kentokai_a7bdb140_05.pdf",
+          "title": "資料1　開催要綱・構成員名簿（PDF／281KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 1538,
+          "pages": 2,
+          "pages_read": 2
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/a7bdb140-3fdb-4b08-b851-bb3cb88bb3d0/0f14dc14/20260812_councils_nyuyojinokenkoushinsatou-kentokai_a7bdb140_03.pdf",
+          "title": "資料2　乳幼児の健康診査等のあり方に関する検討会の進め方について（案）（PDF／288KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 358,
+          "pages": 2,
+          "pages_read": 2
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/a7bdb140-3fdb-4b08-b851-bb3cb88bb3d0/8b6f4a87/20260812_councils_nyuyojinokenkoushinsatou-kentokai_a7bdb140_04.pdf",
+          "title": "資料3　乳幼児の健康診査等について（PDF／2.75MB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/a7bdb140-3fdb-4b08-b851-bb3cb88bb3d0/8496c611/20261020_councils_nyuyojinokenkoushinsatou-kentokai_a7bdb140_06.pdf",
+          "title": "議事録（PDF／683KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        }
+      ],
+      "article_id": "a_44a83c3df35f5219",
+      "version": 1,
+      "content_hash": "sha256:7f25d38d61995313bceed1c237208943bcaac746f3eb451299b4389c0dc75b81",
+      "fetched_at": "2026-10-25T20:08:12+09:00",
+      "content_type": "html",
+      "text_length": 2497,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "new",
+      "export_hash": "8e817ddc25f90aa4a694328c04e2e807d11c808a3a468fac95672544fdd8fed2",
+      "export_hash_status": "ok",
+      "export_hash_scope": "title+main_text+attachments"
+    }
+  ]
+}

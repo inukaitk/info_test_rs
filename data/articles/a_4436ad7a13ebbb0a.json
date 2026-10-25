@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_4436ad7a13ebbb0a",
+    "source_id": "cfa-news",
+    "canonical_url": "https://www.cfa.go.jp/press/f19217c3-341d-4451-812e-16127aac5216",
+    "title": "こども家庭審議会 幼児期までのこどもの育ち部会（第16回）について",
+    "published_at": "2026-10-19",
+    "updated_at": null,
+    "date_basis": {
+      "published": {
+        "method": "html_text",
+        "evidence": "公開日:令和8年10月19日"
+      },
+      "updated": null
+    },
+    "date_precision": {
+      "published": "day",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-10-25T20:08:12+09:00",
+    "last_seen_at": "2026-10-25T20:08:12+09:00",
+    "latest_version": 1,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "extraction_profile": "html+pdf(3files,30pages,exclude:座席|席次)",
+      "attachments": [
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/f19217c3-341d-4451-812e-16127aac5216/2cc67b73/20261015_press_f19217c3-341d-4451-812e-16127aac5216_01.pdf",
+          "title": "こども家庭審議会 幼児期までのこどもの育ち部会（第16回）について（PDF／304KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 700,
+          "pages": 1,
+          "pages_read": 1
+        }
+      ],
+      "article_id": "a_4436ad7a13ebbb0a",
+      "version": 1,
+      "content_hash": "sha256:1ff2944235a20c1c35d581781d3c905906b6c105511eaa72835cc0add5cbada0",
+      "fetched_at": "2026-10-25T20:08:12+09:00",
+      "content_type": "html",
+      "text_length": 889,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "new",
+      "export_hash": "c40d5c68de9bff9da2f74c678b1a0a991a7afba35c0df7aa8f326e5572087999",
+      "export_hash_status": "ok",
+      "export_hash_scope": "title+main_text+attachments"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_77e6b55c602b1f73",
+    "source_id": "cfa-news",
+    "canonical_url": "https://www.cfa.go.jp/press/ce59fc80-1b14-4aa3-9f61-3f8ca050f345",
+    "title": "第22回 こども家庭審議会障害児支援部会の開催について",
+    "published_at": "2026-10-21",
+    "updated_at": null,
+    "date_basis": {
+      "published": {
+        "method": "html_text",
+        "evidence": "公開日:令和8年10月21日"
+      },
+      "updated": null
+    },
+    "date_precision": {
+      "published": "day",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-10-25T20:08:12+09:00",
+    "last_seen_at": "2026-10-25T20:08:12+09:00",
+    "latest_version": 1,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "extraction_profile": "html+pdf(3files,30pages,exclude:座席|席次)",
+      "attachments": [
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/ce59fc80-1b14-4aa3-9f61-3f8ca050f345/6efcf8e0/20261020_press_ce59fc80-1b14-4aa3-9f61-3f8ca050f345_01.pdf",
+          "title": "第22回 こども家庭審議会障害児支援部会の開催について（PDF／360KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 1545,
+          "pages": 2,
+          "pages_read": 2
+        }
+      ],
+      "article_id": "a_77e6b55c602b1f73",
+      "version": 1,
+      "content_hash": "sha256:c5db22687645ce5b491e0256859eee7c8bd4b18266b985e3bbcece4d0d35b37f",
+      "fetched_at": "2026-10-25T20:08:12+09:00",
+      "content_type": "html",
+      "text_length": 1710,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "new",
+      "export_hash": "990a55499bed361e9b99273f01900c010e924ec387119eeb43094ffe540c63fd",
+      "export_hash_status": "ok",
+      "export_hash_scope": "title+main_text+attachments"
+    }
+  ]
+}

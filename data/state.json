@@ -3,12 +3,12 @@
   "sources": {
     "cfa-news": {
       "source_id": "cfa-news",
-      "last_success_at": "2026-10-18T19:48:06+09:00",
-      "last_attempt_at": "2026-10-18T19:48:06+09:00",
+      "last_success_at": "2026-10-25T20:08:12+09:00",
+      "last_attempt_at": "2026-10-25T20:08:12+09:00",
       "last_attempt_status": "success",
       "explored_range": {
-        "oldest": "2026-09-04",
-        "newest": "2026-10-16",
+        "oldest": "2026-09-17",
+        "newest": "2026-10-23",
         "pages": 7
       },
       "retry_queue": [],
@@ -16,12 +16,12 @@
     },
     "kokasen-news": {
       "source_id": "kokasen-news",
-      "last_success_at": "2026-10-18T19:48:06+09:00",
-      "last_attempt_at": "2026-10-18T19:48:06+09:00",
+      "last_success_at": "2026-10-25T20:08:12+09:00",
+      "last_attempt_at": "2026-10-25T20:08:12+09:00",
       "last_attempt_status": "success",
       "explored_range": {
         "oldest": "2025-09-11",
-        "newest": "2026-09-30",
+        "newest": "2026-10-21",
         "pages": 1
       },
       "retry_queue": [],
@@ -29,8 +29,8 @@
     },
     "gosaiji-topics": {
       "source_id": "gosaiji-topics",
-      "last_success_at": "2026-10-18T19:48:06+09:00",
-      "last_attempt_at": "2026-10-18T19:48:06+09:00",
+      "last_success_at": "2026-10-25T20:08:12+09:00",
+      "last_attempt_at": "2026-10-25T20:08:12+09:00",
       "last_attempt_status": "success",
       "explored_range": {
         "oldest": "2024-12-10",
@@ -55,8 +55,8 @@
     },
     "mchh-prtimes": {
       "source_id": "mchh-prtimes",
-      "last_success_at": "2026-10-18T19:48:06+09:00",
-      "last_attempt_at": "2026-10-18T19:48:06+09:00",
+      "last_success_at": "2026-10-25T20:08:12+09:00",
+      "last_attempt_at": "2026-10-25T20:08:12+09:00",
       "last_attempt_status": "success",
       "explored_range": {
         "oldest": "2025-04-02",
@@ -68,12 +68,12 @@
     },
     "milabo-news": {
       "source_id": "milabo-news",
-      "last_success_at": "2026-10-18T19:48:06+09:00",
-      "last_attempt_at": "2026-10-18T19:48:06+09:00",
+      "last_success_at": "2026-10-25T20:08:12+09:00",
+      "last_attempt_at": "2026-10-25T20:08:12+09:00",
       "last_attempt_status": "success",
       "explored_range": {
-        "oldest": "2026-06-15",
-        "newest": "2026-07-08",
+        "oldest": "2026-06-22",
+        "newest": "2026-10-22",
         "pages": 1
       },
       "retry_queue": [],
@@ -81,8 +81,8 @@
     },
     "ryobi-neuvola-karte": {
       "source_id": "ryobi-neuvola-karte",
-      "last_success_at": "2026-10-18T19:48:06+09:00",
-      "last_attempt_at": "2026-10-18T19:48:06+09:00",
+      "last_success_at": "2026-10-25T20:08:12+09:00",
+      "last_attempt_at": "2026-10-25T20:08:12+09:00",
       "last_attempt_status": "success",
       "explored_range": {
         "oldest": "2022-03-17",
@@ -94,8 +94,8 @@
     },
     "cmic-trust-news": {
       "source_id": "cmic-trust-news",
-      "last_success_at": "2026-10-18T19:48:06+09:00",
-      "last_attempt_at": "2026-10-18T19:48:06+09:00",
+      "last_success_at": "2026-10-25T20:08:12+09:00",
+      "last_attempt_at": "2026-10-25T20:08:12+09:00",
       "last_attempt_status": "success",
       "explored_range": {
         "oldest": null,

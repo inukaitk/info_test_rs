@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_d84abe6630f97041",
+    "source_id": "cfa-news",
+    "canonical_url": "https://www.cfa.go.jp/press/e7dfb273-df70-4294-ae60-d4cb7acbe922",
+    "title": "第20回補償金・優生手術等一時金認定審査部会の審査結果について",
+    "published_at": "2026-10-23",
+    "updated_at": null,
+    "date_basis": {
+      "published": {
+        "method": "html_text",
+        "evidence": "公開日:令和8年10月23日"
+      },
+      "updated": null
+    },
+    "date_precision": {
+      "published": "day",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-10-25T20:08:12+09:00",
+    "last_seen_at": "2026-10-25T20:08:12+09:00",
+    "latest_version": 1,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "extraction_profile": "html+pdf(3files,30pages,exclude:座席|席次)",
+      "attachments": [
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/e7dfb273-df70-4294-ae60-d4cb7acbe922/6f140a7d/20261023_press_e7dfb273-df70-4294-ae60-d4cb7acbe922_01.pdf",
+          "title": "第20回補償金・優生手術等一時金認定審査部会の審査結果について（PDF／439KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 1205,
+          "pages": 3,
+          "pages_read": 3
+        }
+      ],
+      "article_id": "a_d84abe6630f97041",
+      "version": 1,
+      "content_hash": "sha256:bca29d55798146ed3124c25738d5509bc223a4e3ca94a8af64576f2fdf805707",
+      "fetched_at": "2026-10-25T20:08:12+09:00",
+      "content_type": "html",
+      "text_length": 1386,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "new",
+      "export_hash": "ba462272b4390a5bfdcf5841c4e6101e7d90f6d2e27bcddb230b71b7838ff9d0",
+      "export_hash_status": "ok",
+      "export_hash_scope": "title+main_text+attachments"
+    }
+  ]
+}

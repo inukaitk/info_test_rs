@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_3810cf6f1934879a",
+    "source_id": "cfa-news",
+    "canonical_url": "https://www.cfa.go.jp/press/9e7f7908-8f5a-4730-befe-d61c6d61c3ec",
+    "title": "みて かんじて つながる劇体験 ～優良児童劇等公演事業～令和8年11月28日（土）和歌山県新宮市にて開催",
+    "published_at": "2026-10-20",
+    "updated_at": null,
+    "date_basis": {
+      "published": {
+        "method": "html_text",
+        "evidence": "公開日:令和8年10月20日"
+      },
+      "updated": null
+    },
+    "date_precision": {
+      "published": "day",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-10-25T20:08:12+09:00",
+    "last_seen_at": "2026-10-25T20:08:12+09:00",
+    "latest_version": 1,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "extraction_profile": "html+pdf(3files,30pages,exclude:座席|席次)",
+      "attachments": [
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/9e7f7908-8f5a-4730-befe-d61c6d61c3ec/e46d198d/20261019_press_9e7f7908-8f5a-4730-befe-d61c6d61c3ec_01.pdf",
+          "title": "みて かんじて つながる劇体験 ～優良児童劇等公演事業～令和8年11月28日（土）和歌山県新宮市にて開催（PDF／431KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 1248,
+          "pages": 2,
+          "pages_read": 2
+        }
+      ],
+      "article_id": "a_3810cf6f1934879a",
+      "version": 1,
+      "content_hash": "sha256:19c1fba1476bdb67b21a04da3f04b0575e806a06d6ffc742dda540418d79cc22",
+      "fetched_at": "2026-10-25T20:08:12+09:00",
+      "content_type": "html",
+      "text_length": 1517,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "new",
+      "export_hash": "22d294f94ee70c22043e0f47f1797d3d8fc7dab250ffdfbf5483add5c9263bb7",
+      "export_hash_status": "ok",
+      "export_hash_scope": "title+main_text+attachments"
+    }
+  ]
+}

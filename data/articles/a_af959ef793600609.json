@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_af959ef793600609",
+    "source_id": "cfa-news",
+    "canonical_url": "https://www.cfa.go.jp/councils/shingikai/shakai_katei/tokubetsu-yoshi/2664f41f",
+    "title": "特別養子縁組に関する支援の在り方に関する専門委員会（第7回）",
+    "published_at": "2026-10-20",
+    "updated_at": null,
+    "date_basis": {
+      "published": {
+        "method": "listing_text",
+        "evidence": "<time datetime=\"2026-10-20\">2026年10月20日</time>"
+      },
+      "updated": null
+    },
+    "date_precision": {
+      "published": "day",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-10-25T20:08:12+09:00",
+    "last_seen_at": "2026-10-25T20:08:12+09:00",
+    "latest_version": 1,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "extraction_profile": "html+pdf(3files,30pages,exclude:座席|席次)",
+      "attachments": [
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/2664f41f-0943-4a08-b926-b0da477b2e35/87515210/20261016_councils_shingikai_shakai_katei_tokubetsu-yoshi_2664f41f_01.pdf",
+          "title": "議事次第（PDF／242KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 183,
+          "pages": 1,
+          "pages_read": 1
+        }
+      ],
+      "article_id": "a_af959ef793600609",
+      "version": 1,
+      "content_hash": "sha256:3270bf14d4c99eed6c6f6aae80ab90095ecb45dca17e414140c9413b32300da9",
+      "fetched_at": "2026-10-25T20:08:12+09:00",
+      "content_type": "html",
+      "text_length": 433,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "new",
+      "export_hash": "a2c0dd61fbd9092f56b46de75bb77b9a59285b67f2761f6a88899368b1a7830d",
+      "export_hash_status": "ok",
+      "export_hash_scope": "title+main_text+attachments"
+    }
+  ]
+}
