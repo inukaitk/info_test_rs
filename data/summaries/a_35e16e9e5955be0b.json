@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "article_id": "a_35e16e9e5955be0b",
+  "summaries": [
+    {
+      "article_id": "a_35e16e9e5955be0b",
+      "article_version": 1,
+      "analysis_status": "success",
+      "error": null,
+      "summary": "こども家庭庁が、保育士養成課程等検討会(第6回)を2026年11月5日18時から20時まで対面とオンライン(Zoom)で開催する旨の案内。議題は自治体からのヒアリングと保育士等キャリアアップ研修等に関する検討課題。YouTube Liveで配信される。",
+      "key_points": [
+        "第6回検討会は令和8年11月5日(木)18時00分~20時00分に開催",
+        "開催形式は対面とオンライン(Zoom)",
+        "議題(予定)は(1)自治体からのヒアリング、(2)保育士等キャリアアップ研修等に関する検討課題",
+        "報道関係者・一般向けにYouTube Liveで配信し、配信URLは当日ホームページに掲載",
+        "会議資料は開始時間にホームページに掲載、録画・録音希望者は事前登録が必要、議題・進行順序は変更の可能性あり"
+      ],
+      "targets": [
+        "報道関係者",
+        "一般の方(傍聴希望者)",
+        "会議の録画・録音を希望する方"
+      ],
+      "dates": [
+        {
+          "label": "検討会(第6回)開催日",
+          "value": "2026-11-05",
+          "evidence": "保育士養成課程等検討会(第6回)を令和8年11月5日(木)に開催します"
+        },
+        {
+          "label": "公開日",
+          "value": "2026-10-29",
+          "evidence": "公開日:令和8年10月29日"
+        }
+      ],
+      "ai_tags": [
+        {
+          "tag_id": "council-committee",
+          "reason": "保育士養成課程等検討会(第6回)の開催案内であるため"
+        },
+        {
+          "tag_id": "childcare-support",
+          "reason": "保育士の養成や保育の質の向上に関する検討会であるため"
+        }
+      ],
+      "uncertainties": [
+        "議題の詳細な内容や配布資料は本文に記載がない",
+        "議題・進行順序は変更される可能性があると記載されている"
+      ],
+      "provider": "anthropic",
+      "model": "claude-sonnet-5-5",
+      "prompt_version": "p1-2026-10-02",
+      "tags_version": "sha256:bde74cf4ea967ef07307b37972c605277d95999c697068f6c5e9d5a6af8a7951",
+      "usage": {
+        "input_tokens": 3214,
+        "output_tokens": 685,
+        "retries": 0,
+        "estimated_cost_usd": 0.013278
+      },
+      "processed_at": "2026-11-01T22:15:07+09:00",
+      "content_hash": "sha256:742773c60fb5f53305ea51156d62c8a4b287d8e716dada59698d6b1535e55d61"
+    }
+  ]
+}

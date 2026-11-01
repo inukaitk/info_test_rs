@@ -19,8 +19,8 @@
       "updated": "unknown"
     },
     "first_seen_at": "2026-10-18T19:48:06+09:00",
-    "last_seen_at": "2026-10-25T20:08:12+09:00",
-    "latest_version": 1,
+    "last_seen_at": "2026-11-01T22:03:45+09:00",
+    "latest_version": 2,
     "status": "active"
   },
   "versions": [
@@ -56,6 +56,41 @@
       "extraction_error": null,
       "change_type": "new",
       "export_hash": "66371cb00d3bfa87735294900fef7bc79157d404426710a2af8afcebe37ba879",
+      "export_hash_status": "ok",
+      "export_hash_scope": "title+main_text+attachments"
+    },
+    {
+      "extraction_profile": "html+pdf(3files,30pages)",
+      "attachments": [
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/6cfab22c-d2bf-4dd1-81ea-49308519ac3a/cf0aacb9/20250630_councils_kodomo_seisaku_DX_6cfab22c_06.pdf",
+          "title": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/6cfab22c-d2bf-4dd1-81ea-49308519ac3a/cf0aacb9/20250630_councils_kodomo_seisaku_DX_6cfab22c_06.pdf?utm_source=chatgpt.com",
+          "status": "skipped",
+          "error": "取得対象外：許可ホスト以外です: www.cfa.go.jp",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://prtimes.jp/common/file/service_guide.pdf",
+          "title": "PR TIMESのご利用について 資料をダウンロード",
+          "status": "ok",
+          "error": null,
+          "text_length": 7354,
+          "pages": 14,
+          "pages_read": 14
+        }
+      ],
+      "article_id": "a_898ea21be21106e2",
+      "version": 2,
+      "content_hash": "sha256:2960712345af46d1ade6629c9ba016de7dac66ea2621785ade905d333a48cea2",
+      "fetched_at": "2026-11-01T22:03:45+09:00",
+      "content_type": "html",
+      "text_length": 11184,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "content_changed",
+      "export_hash": "fb8695d8ce07d2db01f4b6c2aa5b47d796f257c47cccd9f6f04a9a5b80908ca9",
       "export_hash_status": "ok",
       "export_hash_scope": "title+main_text+attachments"
     }

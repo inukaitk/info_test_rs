@@ -19,8 +19,8 @@
       "updated": "unknown"
     },
     "first_seen_at": "2026-10-25T20:08:12+09:00",
-    "last_seen_at": "2026-10-25T20:08:12+09:00",
-    "latest_version": 1,
+    "last_seen_at": "2026-11-01T22:03:45+09:00",
+    "latest_version": 2,
     "status": "active"
   },
   "versions": [
@@ -38,6 +38,104 @@
       "export_hash": "d39eee26bf024872e31387285db847ec15b83077ae4adff3fb3ad483fad57ed8",
       "export_hash_status": "ok",
       "export_hash_scope": "title+main_text"
+    },
+    {
+      "extraction_profile": "html+pdf(3files,30pages,exclude:座席|席次)",
+      "attachments": [
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/779b0299-d455-4572-8ccc-8ecbaadc4185/e9cf6541/20261026_councils_shingikai_shougaiji_shien_779b0299_00.pdf",
+          "title": "議事次第（PDF／106KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 410,
+          "pages": 1,
+          "pages_read": 1
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/779b0299-d455-4572-8ccc-8ecbaadc4185/b0d27d5a/20261026_councils_shingikai_shougaiji_shien_779b0299_10.pdf",
+          "title": "資料1 令和9年度障害福祉報酬改定の議論の状況について（PDF／1.1MB）",
+          "status": "ok",
+          "error": "先頭30ページだけを読み取りました（全64ページ）",
+          "text_length": 21554,
+          "pages": 64,
+          "pages_read": 30
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/779b0299-d455-4572-8ccc-8ecbaadc4185/7fe1b49d/20261026_councils_shingikai_shougaiji_shien_779b0299_02.pdf",
+          "title": "資料2 障害福祉分野における特定地域（中山間・人口減少地域）の考え方について（PDF／1.5MB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 15382,
+          "pages": 25,
+          "pages_read": 25
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/779b0299-d455-4572-8ccc-8ecbaadc4185/0364bc4e/20261026_councils_shingikai_shougaiji_shien_779b0299_03.pdf",
+          "title": "資料3 障害福祉分野における人材確保・生産性向上に関する検討会の設置について（報告）（PDF／272KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/779b0299-d455-4572-8ccc-8ecbaadc4185/a20968bb/20261026_councils_shingikai_shougaiji_shien_779b0299_04.pdf",
+          "title": "参考資料1 障害児支援部会委員等名簿（PDF／94KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/779b0299-d455-4572-8ccc-8ecbaadc4185/e320ad30/20261026_councils_shingikai_shougaiji_shien_779b0299_09.pdf",
+          "title": "参考資料2 令和9年度障害福祉報酬改定の議論の状況について（児者共管関係）（PDF／755KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/779b0299-d455-4572-8ccc-8ecbaadc4185/7c67e5b5/20261026_councils_shingikai_shougaiji_shien_779b0299_06.pdf",
+          "title": "参考資料3 令和9年度障害福祉報酬改定に関する主な意見（PDF／1.4MB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/779b0299-d455-4572-8ccc-8ecbaadc4185/0955621a/20261026_councils_shingikai_shougaiji_shien_779b0299_07.pdf",
+          "title": "参考資料4 インクルージョン推進に向けた関係者懇談会について（PDF／126KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/779b0299-d455-4572-8ccc-8ecbaadc4185/0121232c/20261026_councils_shingikai_shougaiji_shien_779b0299_08.pdf",
+          "title": "参考資料5 令和9年度こども家庭庁支援局障害児支援課予算概算要求の概要（PDF／3.5MB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        }
+      ],
+      "article_id": "a_8c07bc1adef392a5",
+      "version": 2,
+      "content_hash": "sha256:0786137867cb7e847f24765bfb08d4c43fce70282fc0ecba10427851a7980126",
+      "fetched_at": "2026-11-01T22:03:45+09:00",
+      "content_type": "html",
+      "text_length": 38017,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "content_changed",
+      "export_hash": "cc1c067f86863fd2a1f9489424636d615b81ff5087113be979b41a8604a94763",
+      "export_hash_status": "ok",
+      "export_hash_scope": "title+main_text+attachments"
     }
   ]
 }

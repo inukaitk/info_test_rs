@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_c844058cff2b4a62",
+    "source_id": "cmic-trust-news",
+    "canonical_url": "https://www.cmic-trust.jp/news/CLINICM",
+    "title": "アルフレッサグループとシミックグループの協業による予防接種事務デジタル化の取り組みが『CLINIC magazine』に掲載されました",
+    "published_at": "2026-10-30T09:18:24+09:00",
+    "updated_at": null,
+    "date_basis": {
+      "published": {
+        "method": "page_data",
+        "evidence": "publishedAt: \"2026-10-30T00:18:24.000Z\""
+      },
+      "updated": null
+    },
+    "date_precision": {
+      "published": "datetime",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-11-01T22:03:45+09:00",
+    "last_seen_at": "2026-11-01T22:03:45+09:00",
+    "latest_version": 1,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "extraction_profile": "html+pdf(3files,30pages)",
+      "attachments": [
+        {
+          "url": "https://storage.googleapis.com/studio-design-asset-files/projects/moWvg00AO6/s-1x1_4ac41108-4fbd-48fc-865f-ba79e8d3315a.pdf",
+          "title": "CLINIC magazine 10月号（PDF）",
+          "status": "skipped",
+          "error": "取得対象外：許可ホスト以外です: storage.googleapis.com",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        }
+      ],
+      "article_id": "a_c844058cff2b4a62",
+      "version": 1,
+      "content_hash": "sha256:d4cda71facdf67fa4897c6f7027d11c6085e8165f9f862fb73983ed1192a5a9c",
+      "fetched_at": "2026-11-01T22:03:45+09:00",
+      "content_type": "html",
+      "text_length": 608,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "new",
+      "export_hash": "2f393734f40401b816cdb5a6e1b6c6848e8311aaa0c8f0a717a9f340fa4780d1",
+      "export_hash_status": "ok",
+      "export_hash_scope": "title+main_text"
+    }
+  ]
+}

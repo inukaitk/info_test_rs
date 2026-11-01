@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "article_id": "a_c844058cff2b4a62",
+  "summaries": [
+    {
+      "article_id": "a_c844058cff2b4a62",
+      "article_version": 1,
+      "analysis_status": "success",
+      "error": null,
+      "summary": "アルフレッサグループとシミックグループが協業し、「ワクチンぷらっと」と「harmoワクチンケア」を連携させて予防接種事務のデジタル化・業務効率化を図る取り組みが、「CLINIC magazine 2026年10月号」に掲載された。",
+      "key_points": [
+        "予防接種事務のデジタル化に関する協業の取り組みが「CLINIC magazine 2026年10月号」で紹介された",
+        "医療機関の課題として予約管理、接種記録管理、在庫管理、問い合わせ対応が挙げられている",
+        "アルフレッサ株式会社の「ワクチンぷらっと」とシミックグループの医療機関アプリ「harmoワクチンケア」を連携させる",
+        "接種予約から接種記録管理までを一体的に支援し、業務負担軽減、接種ミス防止、効率化を目指す",
+        "記事名は「新たな支援モデルで実現する医療機関の予防接種業務効率化」"
+      ],
+      "targets": [
+        "医療機関"
+      ],
+      "dates": [
+        {
+          "label": "掲載誌の発行号",
+          "value": "2026-10",
+          "evidence": "「CLINIC magazine 2026年10月号」で紹介されました"
+        }
+      ],
+      "ai_tags": [
+        {
+          "tag_id": "municipal-dx-standardization",
+          "reason": "予防接種事務のデジタル化と、サービス間のデータ連携の取り組みを扱っているため"
+        }
+      ],
+      "uncertainties": [
+        "記事本文(PDF)の詳細内容は文書に含まれていない",
+        "連携サービスの開始時期や提供開始日は記載がない",
+        "対象が自治体の事務かどうかは確認できない(医療機関向けの記述のみ)"
+      ],
+      "provider": "anthropic",
+      "model": "claude-sonnet-5-5",
+      "prompt_version": "p1-2026-10-02",
+      "tags_version": "sha256:bde74cf4ea967ef07307b37972c605277d95999c697068f6c5e9d5a6af8a7951",
+      "usage": {
+        "input_tokens": 2754,
+        "output_tokens": 624,
+        "retries": 0,
+        "estimated_cost_usd": 0.011748
+      },
+      "processed_at": "2026-11-01T22:15:07+09:00",
+      "content_hash": "sha256:d4cda71facdf67fa4897c6f7027d11c6085e8165f9f862fb73983ed1192a5a9c"
+    }
+  ]
+}

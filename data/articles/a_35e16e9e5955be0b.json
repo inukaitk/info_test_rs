@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_35e16e9e5955be0b",
+    "source_id": "cfa-news",
+    "canonical_url": "https://www.cfa.go.jp/press/995f00fa-de6e-4d25-bf16-2449e3c6c6c3",
+    "title": "保育士養成課程等検討会（第6回）について",
+    "published_at": "2026-10-29",
+    "updated_at": null,
+    "date_basis": {
+      "published": {
+        "method": "html_text",
+        "evidence": "公開日:令和8年10月29日"
+      },
+      "updated": null
+    },
+    "date_precision": {
+      "published": "day",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-11-01T22:03:45+09:00",
+    "last_seen_at": "2026-11-01T22:03:45+09:00",
+    "latest_version": 1,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "extraction_profile": "html+pdf(3files,30pages,exclude:座席|席次)",
+      "attachments": [
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/995f00fa-de6e-4d25-bf16-2449e3c6c6c3/bea04e83/20261028_press_995f00fa-de6e-4d25-bf16-2449e3c6c6c3_01.pdf",
+          "title": "保育士養成課程等検討会（第6回）について（PDF／275KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 1015,
+          "pages": 1,
+          "pages_read": 1
+        }
+      ],
+      "article_id": "a_35e16e9e5955be0b",
+      "version": 1,
+      "content_hash": "sha256:742773c60fb5f53305ea51156d62c8a4b287d8e716dada59698d6b1535e55d61",
+      "fetched_at": "2026-11-01T22:03:45+09:00",
+      "content_type": "html",
+      "text_length": 1152,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "new",
+      "export_hash": "220c70c68dace7812985e0f81282166af56eb38de2c6342024727939bdd7b53d",
+      "export_hash_status": "ok",
+      "export_hash_scope": "title+main_text+attachments"
+    }
+  ]
+}

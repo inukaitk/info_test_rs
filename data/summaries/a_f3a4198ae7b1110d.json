@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "article_id": "a_f3a4198ae7b1110d",
+  "summaries": [
+    {
+      "article_id": "a_f3a4198ae7b1110d",
+      "article_version": 1,
+      "analysis_status": "success",
+      "error": null,
+      "summary": "健診アプリ「Famimo」「myFAMIMO」は、PHPの脆弱性（2026年10月21日公表）対応のため一時停止していたが、セキュリティ対策と安全性確認が完了しサービスを再開した。不正アクセス等は確認されておらず、利用者のパスワード変更や再設定は不要とされている。",
+      "key_points": [
+        "PHPの脆弱性(CVE-2026-109618、CVE-2026-109619)への対応のため一時停止していたサービスを再開した",
+        "実施対応はセキュリティパッチ適用、影響調査、動作確認、アクセスログ等の確認、外部専門機関によるフォレンジック調査",
+        "現時点で不正アクセス、情報漏えい、データ改ざん等は確認されていない",
+        "利用者にパスワード変更やアプリの再設定は不要で、登録情報も従来どおり利用できる",
+        "停止は予防的措置であり、導入自治体へは個別に報告している"
+      ],
+      "targets": [
+        "健診アプリ「Famimo」「myFAMIMO」の利用者",
+        "導入自治体"
+      ],
+      "dates": [
+        {
+          "label": "脆弱性の公表日",
+          "value": "2026-10-21",
+          "evidence": "2026年10月21日に公表されたPHPの脆弱性(CVE-2026-109618、CVE-2026-109619)"
+        }
+      ],
+      "ai_tags": [],
+      "uncertainties": [
+        "サービス再開の具体的な日時は記載されていない",
+        "サービス停止の開始日時・期間は記載されていない",
+        "公表主体は民間企業（CMIC Trust株式会社）であり、国から自治体への通知ではない",
+        "導入自治体への個別報告の内容は不明"
+      ],
+      "provider": "anthropic",
+      "model": "claude-sonnet-5-5",
+      "prompt_version": "p1-2026-10-02",
+      "tags_version": "sha256:bde74cf4ea967ef07307b37972c605277d95999c697068f6c5e9d5a6af8a7951",
+      "usage": {
+        "input_tokens": 2909,
+        "output_tokens": 574,
+        "retries": 0,
+        "estimated_cost_usd": 0.011558
+      },
+      "processed_at": "2026-11-01T22:15:07+09:00",
+      "content_hash": "sha256:db99397ab36ff990e571353349068c4a5b256775bb32cea44f062dce9af1a2a0"
+    }
+  ]
+}

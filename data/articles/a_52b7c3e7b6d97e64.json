@@ -19,8 +19,8 @@
       "updated": "unknown"
     },
     "first_seen_at": "2026-10-25T20:08:12+09:00",
-    "last_seen_at": "2026-10-25T20:08:12+09:00",
-    "latest_version": 1,
+    "last_seen_at": "2026-11-01T22:03:45+09:00",
+    "latest_version": 2,
     "status": "active"
   },
   "versions": [
@@ -47,6 +47,32 @@
       "extraction_error": null,
       "change_type": "new",
       "export_hash": "832f0ad7f3a55247d7a114c5c5f0c1e358e3f4bc2775105496c47e5e2c469fa1",
+      "export_hash_status": "ok",
+      "export_hash_scope": "title+main_text+attachments"
+    },
+    {
+      "extraction_profile": "html+pdf(3files,30pages,exclude:座席|席次)",
+      "attachments": [
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/e64cf5c5-1de9-4983-af20-e9f5cfc3f4bc/858cd431/20261029_press_e64cf5c5-1de9-4983-af20-e9f5cfc3f4bc_03.pdf",
+          "title": "11月は「乳幼児突然死症候群(SIDS)」の対策強化月間です（PDF／3.4MB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 4195,
+          "pages": 11,
+          "pages_read": 11
+        }
+      ],
+      "article_id": "a_52b7c3e7b6d97e64",
+      "version": 2,
+      "content_hash": "sha256:588f5a76e5ac3ac620e5753b450578ac4c1061ecc690bace1be2893784072b9f",
+      "fetched_at": "2026-11-01T22:03:45+09:00",
+      "content_type": "html",
+      "text_length": 4372,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "content_changed",
+      "export_hash": "8adf0d68bec14e252b205bc6f66f78c336887fdd84d1d25e6bae9a9616dcba89",
       "export_hash_status": "ok",
       "export_hash_scope": "title+main_text+attachments"
     }

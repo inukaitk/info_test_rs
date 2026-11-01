@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_2e0864e06cf4b491",
+    "source_id": "cfa-news",
+    "canonical_url": "https://www.cfa.go.jp/councils/shingikai/kodomo_ibasho/jidoukan/5d5ae75e",
+    "title": "児童厚生施設及び放課後児童クラブに関する専門委員会（第8回）",
+    "published_at": "2026-10-28",
+    "updated_at": null,
+    "date_basis": {
+      "published": {
+        "method": "listing_text",
+        "evidence": "<time datetime=\"2026-10-28\">2026年10月28日</time>"
+      },
+      "updated": null
+    },
+    "date_precision": {
+      "published": "day",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-11-01T22:03:45+09:00",
+    "last_seen_at": "2026-11-01T22:03:45+09:00",
+    "latest_version": 1,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "extraction_profile": "html+pdf(3files,30pages,exclude:座席|席次)",
+      "article_id": "a_2e0864e06cf4b491",
+      "version": 1,
+      "content_hash": "sha256:5c1cdd30acaa9e91d198b64108107e46ec4748e29e72de1376129528ba493737",
+      "fetched_at": "2026-11-01T22:03:45+09:00",
+      "content_type": "html",
+      "text_length": 250,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "new",
+      "export_hash": "df8bc3dc262a31b55a6854006825d753e757ef0f29d8169dfec449a719077e57",
+      "export_hash_status": "ok",
+      "export_hash_scope": "title+main_text"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_f3a4198ae7b1110d",
+    "source_id": "cmic-trust-news",
+    "canonical_url": "https://www.cmic-trust.jp/news/V0lURHAo",
+    "title": "システムメンテナンス終了およびサービス再開のお知らせ",
+    "published_at": "2026-10-28T11:58:29+09:00",
+    "updated_at": null,
+    "date_basis": {
+      "published": {
+        "method": "page_data",
+        "evidence": "publishedAt: \"2026-10-28T02:58:29.000Z\""
+      },
+      "updated": null
+    },
+    "date_precision": {
+      "published": "datetime",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-11-01T22:03:45+09:00",
+    "last_seen_at": "2026-11-01T22:03:45+09:00",
+    "latest_version": 1,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "extraction_profile": "html+pdf(3files,30pages)",
+      "article_id": "a_f3a4198ae7b1110d",
+      "version": 1,
+      "content_hash": "sha256:db99397ab36ff990e571353349068c4a5b256775bb32cea44f062dce9af1a2a0",
+      "fetched_at": "2026-11-01T22:03:45+09:00",
+      "content_type": "html",
+      "text_length": 830,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "new",
+      "export_hash": "d9373ea11a7095cad19809dd23a4930c9506e6539e2961819fb59a6467746d9e",
+      "export_hash_status": "ok",
+      "export_hash_scope": "title+main_text"
+    }
+  ]
+}

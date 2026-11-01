@@ -1,0 +1,126 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_b47f27f29e54630c",
+    "source_id": "cfa-news",
+    "canonical_url": "https://www.cfa.go.jp/procurement",
+    "title": "調達情報",
+    "published_at": "2026-10-28",
+    "updated_at": null,
+    "date_basis": {
+      "published": {
+        "method": "listing_text",
+        "evidence": "<time datetime=\"2026-10-28\">2026年10月28日</time>"
+      },
+      "updated": null
+    },
+    "date_precision": {
+      "published": "day",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-11-01T22:03:45+09:00",
+    "last_seen_at": "2026-11-01T22:03:45+09:00",
+    "latest_version": 1,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "extraction_profile": "html+pdf(3files,30pages,exclude:座席|席次)",
+      "attachments": [
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/f4b2b38e-5502-4d06-9e63-f9d3a8d78295/18dbc8f9/20261027_procurement_22.pdf",
+          "title": "保育業務施設管理プラットフォームの運用・保守等業務（令和9年度～令和13年度）一式（PDF／113KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 1064,
+          "pages": 3,
+          "pages_read": 3
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/f4b2b38e-5502-4d06-9e63-f9d3a8d78295/4e741ce9/20260615_procurement_21.pdf",
+          "title": "保育業務施設管理プラットフォームの改修業務一式（令和8年度）（PDF／114KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 1062,
+          "pages": 3,
+          "pages_read": 3
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/f4b2b38e-5502-4d06-9e63-f9d3a8d78295/ff0eb226/20251028_procurement_15.pdf",
+          "title": "保活情報連携基盤の運用・保守（PDF／118KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 991,
+          "pages": 3,
+          "pages_read": 3
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/f4b2b38e-5502-4d06-9e63-f9d3a8d78295/fee123a3/20261028_procurement_23.pdf",
+          "title": "こども性暴力防止法に関する情報システムの設計開発に係る基盤検証支援等業務一式（PDF／104KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/f4b2b38e-5502-4d06-9e63-f9d3a8d78295/d8a62f10/20261028_procurement_24.pdf",
+          "title": "こども性暴力防止法に関する情報システム（法務省設置機器）に係る運用支援等業務（PDF／103KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/f4b2b38e-5502-4d06-9e63-f9d3a8d78295/b32dc21d/20250123_procurement_07.pdf",
+          "title": "令和7年度 一般乗用旅客自動車（タクシー）の供給について（PDF／150KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/f4b2b38e-5502-4d06-9e63-f9d3a8d78295/3c88ed09/20260612_procurement_20.pdf",
+          "title": "令和7年度における温室効果ガス等の排出の削減に配慮した契約締結実績の概要（PDF／83KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/f4b2b38e-5502-4d06-9e63-f9d3a8d78295/7afe5326/20250819_procurement_14.pdf",
+          "title": "令和6年度における温室効果ガス等の排出の削減に配慮した契約締結実績の概要（PDF／194KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/f4b2b38e-5502-4d06-9e63-f9d3a8d78295/54d76ca2/20240702_procurement_05.pdf",
+          "title": "令和5年度における温室効果ガス等の排出の削減に配慮した契約締結実績の概要（PDF／196KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        }
+      ],
+      "article_id": "a_b47f27f29e54630c",
+      "version": 1,
+      "content_hash": "sha256:44139503c622ee29c342e3d35c059b84ef124a5e2dbb72765f6fcd8f354e47fc",
+      "fetched_at": "2026-11-01T22:03:45+09:00",
+      "content_type": "html",
+      "text_length": 7349,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "new",
+      "export_hash": "c251d4e7a729876094f340f527a478e3493914f3ebdc4c5ddf9125b7502487ae",
+      "export_hash_status": "ok",
+      "export_hash_scope": "title+main_text+attachments"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_58d64bb9761bb6a1",
+    "source_id": "cfa-news",
+    "canonical_url": "https://www.cfa.go.jp/press/1a661ea3-dac7-4c0e-b3b6-d3ef735cfc45",
+    "title": "児童厚生施設及び放課後児童クラブに関する専門委員会（第8回）について",
+    "published_at": "2026-10-28",
+    "updated_at": null,
+    "date_basis": {
+      "published": {
+        "method": "html_text",
+        "evidence": "公開日:令和8年10月28日"
+      },
+      "updated": null
+    },
+    "date_precision": {
+      "published": "day",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-11-01T22:03:45+09:00",
+    "last_seen_at": "2026-11-01T22:03:45+09:00",
+    "latest_version": 1,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "extraction_profile": "html+pdf(3files,30pages,exclude:座席|席次)",
+      "attachments": [
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/1a661ea3-dac7-4c0e-b3b6-d3ef735cfc45/21a7f17a/20261027_press_1a661ea3-dac7-4c0e-b3b6-d3ef735cfc45_01.pdf",
+          "title": "児童厚生施設及び放課後児童クラブに関する専門委員会（第8回）について（PDF／315KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 1052,
+          "pages": 2,
+          "pages_read": 2
+        }
+      ],
+      "article_id": "a_58d64bb9761bb6a1",
+      "version": 1,
+      "content_hash": "sha256:3eca587ba0e8ef9b1ff4d9c845a60c1189d46e8bb5db4f89d69e4ad2e876cb5b",
+      "fetched_at": "2026-11-01T22:03:45+09:00",
+      "content_type": "html",
+      "text_length": 1245,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "new",
+      "export_hash": "a51ff3e9731928a1928b8daf439674be8f10eae71cc58358ae3950ae34057041",
+      "export_hash_status": "ok",
+      "export_hash_scope": "title+main_text+attachments"
+    }
+  ]
+}

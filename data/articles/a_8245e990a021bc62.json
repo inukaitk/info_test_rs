@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_8245e990a021bc62",
+    "source_id": "cfa-news",
+    "canonical_url": "https://www.cfa.go.jp/councils/shingikai/kodomo_kosodate/e6188e50",
+    "title": "第16回 子ども・子育て支援等分科会",
+    "published_at": "2026-10-26",
+    "updated_at": null,
+    "date_basis": {
+      "published": {
+        "method": "listing_text",
+        "evidence": "<time datetime=\"2026-10-26\">2026年10月26日</time>"
+      },
+      "updated": null
+    },
+    "date_precision": {
+      "published": "day",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-11-01T22:03:45+09:00",
+    "last_seen_at": "2026-11-01T22:03:45+09:00",
+    "latest_version": 1,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "extraction_profile": "html+pdf(3files,30pages,exclude:座席|席次)",
+      "attachments": [
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/e6188e50-cfa8-4a07-95ab-b943af799144/b9373409/20261023_councils_shingikai_kodomo_kosodate_e6188e50_00.pdf",
+          "title": "議事次第（PDF／181KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 328,
+          "pages": 1,
+          "pages_read": 1
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/e6188e50-cfa8-4a07-95ab-b943af799144/1a4de2a5/20261023_councils_shingikai_kodomo_kosodate_e6188e50_01.pdf",
+          "title": "資料1　公定価格について（PDF／1.2MB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 4815,
+          "pages": 7,
+          "pages_read": 7
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/e6188e50-cfa8-4a07-95ab-b943af799144/20c2ec35/20261029_councils_shingikai_kodomo_kosodate_e6188e50_10.pdf",
+          "title": "資料2　保育所等における業務継続計画（BCP）の策定等について（PDF／930KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 5655,
+          "pages": 6,
+          "pages_read": 6
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/e6188e50-cfa8-4a07-95ab-b943af799144/f3e1025b/20261023_councils_shingikai_kodomo_kosodate_e6188e50_03.pdf",
+          "title": "資料3　保育所等における虐待防止の強化について（PDF／1.1MB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/e6188e50-cfa8-4a07-95ab-b943af799144/03d0eb36/20261023_councils_shingikai_kodomo_kosodate_e6188e50_04.pdf",
+          "title": "資料4　令和9年度予算概算要求について（PDF／41.4MB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/e6188e50-cfa8-4a07-95ab-b943af799144/a90ad399/20261023_councils_shingikai_kodomo_kosodate_e6188e50_05.pdf",
+          "title": "資料5　安全で質の高いベビーシッターの利用促進について（PDF／1.5MB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/e6188e50-cfa8-4a07-95ab-b943af799144/53e29ad2/20261023_councils_shingikai_kodomo_kosodate_e6188e50_06.pdf",
+          "title": "参考資料1　子ども・子育て支援等分科会委員名簿（PDF／214KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/e6188e50-cfa8-4a07-95ab-b943af799144/0c5ba6b4/20261023_councils_shingikai_kodomo_kosodate_e6188e50_07.pdf",
+          "title": "参考資料2　保育所等関連状況取りまとめ（令和8年4月1日）（PDF／3.1MB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/e6188e50-cfa8-4a07-95ab-b943af799144/aef0682c/20261023_councils_shingikai_kodomo_kosodate_e6188e50_08.pdf",
+          "title": "参考資料3　こども誰でも通園制度の実施状況等について（PDF／2.4MB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/e6188e50-cfa8-4a07-95ab-b943af799144/42f7357e/20261026_councils_shingikai_kodomo_kosodate_e6188e50_09.pdf",
+          "title": "参考資料4　こども性暴力防止法の施行に向けた取組について（PDF／9.6MB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        }
+      ],
+      "article_id": "a_8245e990a021bc62",
+      "version": 1,
+      "content_hash": "sha256:b46f52a9f1881ae9637085a32941e87b0e84c90b5a7f3b69129a306cbd480a23",
+      "fetched_at": "2026-11-01T22:03:45+09:00",
+      "content_type": "html",
+      "text_length": 11326,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "new",
+      "export_hash": "24076ce3b6447a58b16cdfe9d1aaf1c5679628f628fc5635326927132728bd49",
+      "export_hash_status": "ok",
+      "export_hash_scope": "title+main_text+attachments"
+    }
+  ]
+}

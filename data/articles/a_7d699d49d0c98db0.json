@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_7d699d49d0c98db0",
+    "source_id": "cfa-news",
+    "canonical_url": "https://www.cfa.go.jp/press/9531350c-b313-4403-98d1-bac77d7677ca",
+    "title": "第9回　社会的養育・家庭支援部会の開催について",
+    "published_at": "2026-10-30",
+    "updated_at": null,
+    "date_basis": {
+      "published": {
+        "method": "html_text",
+        "evidence": "公開日:令和8年10月30日"
+      },
+      "updated": null
+    },
+    "date_precision": {
+      "published": "day",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-11-01T22:03:45+09:00",
+    "last_seen_at": "2026-11-01T22:03:45+09:00",
+    "latest_version": 1,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "extraction_profile": "html+pdf(3files,30pages,exclude:座席|席次)",
+      "attachments": [
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/9531350c-b313-4403-98d1-bac77d7677ca/a91df56c/20261029_press_9531350c-b313-4403-98d1-bac77d7677ca_01.pdf",
+          "title": "第9回　社会的養育・家庭支援部会の開催について（PDF／280KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 457,
+          "pages": 1,
+          "pages_read": 1
+        }
+      ],
+      "article_id": "a_7d699d49d0c98db0",
+      "version": 1,
+      "content_hash": "sha256:987b7201b2678cc977071ce9cf75a5db30c1dc513bfd8ea141b1c787824e0c43",
+      "fetched_at": "2026-11-01T22:03:45+09:00",
+      "content_type": "html",
+      "text_length": 606,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "new",
+      "export_hash": "457e2d9332e05c59b22cc5a999f373a627f415d5c8e42beff15b934c54da1d75",
+      "export_hash_status": "ok",
+      "export_hash_scope": "title+main_text+attachments"
+    }
+  ]
+}
