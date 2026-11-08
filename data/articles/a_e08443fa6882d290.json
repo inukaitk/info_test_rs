@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_e08443fa6882d290",
+    "source_id": "cfa-news",
+    "canonical_url": "https://www.cfa.go.jp/councils/shingikai/shakai_katei/jidobaishunhogo/b00f2e82",
+    "title": "第5回　児童買春・児童ポルノ被害児童の保護施策に関する検証・評価専門委員会",
+    "published_at": "2026-11-05",
+    "updated_at": null,
+    "date_basis": {
+      "published": {
+        "method": "listing_text",
+        "evidence": "<time datetime=\"2026-11-05\">2026年11月5日</time>"
+      },
+      "updated": null
+    },
+    "date_precision": {
+      "published": "day",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-11-08T22:08:08+09:00",
+    "last_seen_at": "2026-11-08T22:08:08+09:00",
+    "latest_version": 1,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "extraction_profile": "html+pdf(3files,30pages,exclude:座席|席次)",
+      "article_id": "a_e08443fa6882d290",
+      "version": 1,
+      "content_hash": "sha256:977b30f429eca76c62d7fb8b593c5700b15f70fb938b4465da1a8494352069b8",
+      "fetched_at": "2026-11-08T22:08:08+09:00",
+      "content_type": "html",
+      "text_length": 227,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "new",
+      "export_hash": "fdc1243e26be9e17f5aaf6d4727c5fc2185ea1557245898c84e76caa23e62751",
+      "export_hash_status": "ok",
+      "export_hash_scope": "title+main_text"
+    }
+  ]
+}

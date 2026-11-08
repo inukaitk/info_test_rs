@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_ac3cc11871c8516d",
+    "source_id": "mchh-prtimes",
+    "canonical_url": "https://prtimes.jp/main/html/rd/p/000000584.000099909.html",
+    "title": "母子手帳アプリ『母子モ』が埼玉県新座市で提供を開始！",
+    "published_at": "2026-11-02T10:00:02+09:00",
+    "updated_at": null,
+    "date_basis": {
+      "published": {
+        "method": "rss_pubdate",
+        "evidence": "<dc:date>2026-11-02T10:00:02+09:00</dc:date>"
+      },
+      "updated": null
+    },
+    "date_precision": {
+      "published": "datetime",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-11-08T22:08:08+09:00",
+    "last_seen_at": "2026-11-08T22:08:08+09:00",
+    "latest_version": 1,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "extraction_profile": "html+pdf(3files,30pages)",
+      "attachments": [
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/6cfab22c-d2bf-4dd1-81ea-49308519ac3a/6f948f38/20250630_councils_kodomo_seisaku_DX_6cfab22c_08.pdf",
+          "title": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/6cfab22c-d2bf-4dd1-81ea-49308519ac3a/6f948f38/20250630_councils_kodomo_seisaku_DX_6cfab22c_08.pdf",
+          "status": "skipped",
+          "error": "取得対象外：許可ホスト以外です: www.cfa.go.jp",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://prtimes.jp/common/file/service_guide.pdf",
+          "title": "PR TIMESのご利用について 資料をダウンロード",
+          "status": "ok",
+          "error": null,
+          "text_length": 7354,
+          "pages": 14,
+          "pages_read": 14
+        }
+      ],
+      "article_id": "a_ac3cc11871c8516d",
+      "version": 1,
+      "content_hash": "sha256:53ab560f79160a92992c58c7dca2f9a94bd4e7744753d0d6cb6c144419e653f8",
+      "fetched_at": "2026-11-08T22:08:08+09:00",
+      "content_type": "html",
+      "text_length": 10969,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "new",
+      "export_hash": "1ccad45d8d952e01c13d41d764bf3c32198073f0fbded97f0f585c361c7b6993",
+      "export_hash_status": "ok",
+      "export_hash_scope": "title+main_text+attachments"
+    }
+  ]
+}

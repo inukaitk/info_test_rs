@@ -19,8 +19,8 @@
       "updated": "unknown"
     },
     "first_seen_at": "2026-11-01T22:03:45+09:00",
-    "last_seen_at": "2026-11-01T22:03:45+09:00",
-    "latest_version": 1,
+    "last_seen_at": "2026-11-08T22:08:08+09:00",
+    "latest_version": 2,
     "status": "active"
   },
   "versions": [
@@ -38,6 +38,113 @@
       "export_hash": "df8bc3dc262a31b55a6854006825d753e757ef0f29d8169dfec449a719077e57",
       "export_hash_status": "ok",
       "export_hash_scope": "title+main_text"
+    },
+    {
+      "extraction_profile": "html+pdf(3files,30pages,exclude:座席|席次)",
+      "attachments": [
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/5d5ae75e-90a6-45d6-a144-279e33bae31f/6dd48ddc/20261102_councils_shingikai_kodomo_ibashojidoukan_5d5ae75e_12.pdf",
+          "title": "第8回議事次第（PDF／135KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 772,
+          "pages": 2,
+          "pages_read": 2
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/5d5ae75e-90a6-45d6-a144-279e33bae31f/b4b5e60b/20261102_councils_shingikai_kodomo_ibashojidoukan_5d5ae75e_01.pdf",
+          "title": "資料1　学齢期以降のこどもの遊びについて（PDF／200KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 14804,
+          "pages": 9,
+          "pages_read": 9
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/5d5ae75e-90a6-45d6-a144-279e33bae31f/2f5d8794/20261102_councils_shingikai_kodomo_ibashojidoukan_5d5ae75e_02.pdf",
+          "title": "資料2　こどもアンケート結果（フィードバック資料）（PDF／273KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 5396,
+          "pages": 8,
+          "pages_read": 8
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/5d5ae75e-90a6-45d6-a144-279e33bae31f/e9e80c3b/20261102_councils_shingikai_kodomo_ibashojidoukan_5d5ae75e_03.pdf",
+          "title": "資料3　放課後児童支援員等資質向上研修事業について（PDF／201KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/5d5ae75e-90a6-45d6-a144-279e33bae31f/def8fba4/20261102_councils_shingikai_kodomo_ibashojidoukan_5d5ae75e_04.pdf",
+          "title": "資料4　児童館・放課後児童クラブの運営について（PDF／119KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/5d5ae75e-90a6-45d6-a144-279e33bae31f/0dc1a0a6/20261102_councils_shingikai_kodomo_ibashojidoukan_5d5ae75e_11.pdf",
+          "title": "参考資料1　「児童福祉施設の設備及び運営に関する基準及び放課後児童健全育成事業の設備及び運営に関する基準の一部を改正する内閣府令の施行について」（令和8年10月1日こ成環第461号こども家庭庁成育局長通知）（PDF／143KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/5d5ae75e-90a6-45d6-a144-279e33bae31f/9195bac6/20261102_councils_shingikai_kodomo_ibashojidoukan_5d5ae75e_06.pdf",
+          "title": "参考資料2　「児童館の設置運営について」（令和8年10月29日こ成環第478号こども家庭庁成育局長通知）（PDF／36KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/5d5ae75e-90a6-45d6-a144-279e33bae31f/1b60c1a8/20261102_councils_shingikai_kodomo_ibashojidoukan_5d5ae75e_07.pdf",
+          "title": "参考資料3　「児童館設置運営要綱について」（令和8年10月29日こ成環第504号こども家庭庁成育局成育環境課長通知）（PDF／28KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/5d5ae75e-90a6-45d6-a144-279e33bae31f/428ff1ad/20261102_councils_shingikai_kodomo_ibashojidoukan_5d5ae75e_08.pdf",
+          "title": "参考資料4　保育所や幼稚園等における虐待対応状況等調査（PDF／18KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/5d5ae75e-90a6-45d6-a144-279e33bae31f/69d8a45c/20261102_councils_shingikai_kodomo_ibashojidoukan_5d5ae75e_09.pdf",
+          "title": "参考資料5　（藤本委員ご意見）学齢期以降のこどもの遊び（PDF／10KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        }
+      ],
+      "article_id": "a_2e0864e06cf4b491",
+      "version": 2,
+      "content_hash": "sha256:09696adeb6b38fd8f80d9f77f08f2dc7f1b0cd3da70384b53dbb54e16c6d9dea",
+      "fetched_at": "2026-11-08T22:08:08+09:00",
+      "content_type": "html",
+      "text_length": 21811,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "content_changed",
+      "export_hash": "c1493c5ee08de93c7fbcd36c7afa350f9672604130016454bf88b12e84d63e35",
+      "export_hash_status": "ok",
+      "export_hash_scope": "title+main_text+attachments"
     }
   ]
 }

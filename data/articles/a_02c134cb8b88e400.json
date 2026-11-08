@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_02c134cb8b88e400",
+    "source_id": "cfa-news",
+    "canonical_url": "https://www.cfa.go.jp/councils/internet-kaigi/d83aacab",
+    "title": "青少年インターネット環境の整備等に関する検討会　第71回会合　青少年インターネット環境整備法の在り方等に関する検討ワーキンググループ　第11回会合　合同会議",
+    "published_at": "2026-11-05",
+    "updated_at": null,
+    "date_basis": {
+      "published": {
+        "method": "listing_text",
+        "evidence": "<time datetime=\"2026-11-05\">2026年11月5日</time>"
+      },
+      "updated": null
+    },
+    "date_precision": {
+      "published": "day",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-11-08T22:08:08+09:00",
+    "last_seen_at": "2026-11-08T22:08:08+09:00",
+    "latest_version": 1,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "extraction_profile": "html+pdf(3files,30pages,exclude:座席|席次)",
+      "attachments": [
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/d83aacab-197b-47fb-8815-6a5abb7afb07/1c6a23f1/20261030_councils_internet-kaigi_d83aacab_01.pdf",
+          "title": "開催案内（PDF／280KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 836,
+          "pages": 2,
+          "pages_read": 2
+        }
+      ],
+      "article_id": "a_02c134cb8b88e400",
+      "version": 1,
+      "content_hash": "sha256:e54b8950822b12175219cce5cd0173bd5728c758bb953541ebc12cabcbd6e6e6",
+      "fetched_at": "2026-11-08T22:08:08+09:00",
+      "content_type": "html",
+      "text_length": 988,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "new",
+      "export_hash": "2de22b4cfd0722b379060a940e6c4c8aacefc274cff1fca41e2d5a4b05bb1a45",
+      "export_hash_status": "ok",
+      "export_hash_scope": "title+main_text+attachments"
+    }
+  ]
+}

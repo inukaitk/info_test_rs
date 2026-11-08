@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_d2b1e3f6779c8a64",
+    "source_id": "cfa-news",
+    "canonical_url": "https://www.cfa.go.jp/press/e6c80e6c-f7e7-4205-9dd7-215023b7577f",
+    "title": "第26回健やか親子21推進本部総会の開催について",
+    "published_at": "2026-11-04",
+    "updated_at": null,
+    "date_basis": {
+      "published": {
+        "method": "html_text",
+        "evidence": "公開日:令和8年11月4日"
+      },
+      "updated": null
+    },
+    "date_precision": {
+      "published": "day",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-11-08T22:08:08+09:00",
+    "last_seen_at": "2026-11-08T22:08:08+09:00",
+    "latest_version": 1,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "extraction_profile": "html+pdf(3files,30pages,exclude:座席|席次)",
+      "attachments": [
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/e6c80e6c-f7e7-4205-9dd7-215023b7577f/0fa749b6/20261104_press_e6c80e6c-f7e7-4205-9dd7-215023b7577f_01.pdf",
+          "title": "第26回健やか親子21推進本部総会の開催について（PDF／267KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 1060,
+          "pages": 1,
+          "pages_read": 1
+        }
+      ],
+      "article_id": "a_d2b1e3f6779c8a64",
+      "version": 1,
+      "content_hash": "sha256:3ff41842d11fcabe351404ecc3f0436778debecabef3206624f89c4460fb14da",
+      "fetched_at": "2026-11-08T22:08:08+09:00",
+      "content_type": "html",
+      "text_length": 1212,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "new",
+      "export_hash": "2b705c03587fc2963ccc49f5fdb5fc784dde064f9037df8c0e376ebb135d1a98",
+      "export_hash_status": "ok",
+      "export_hash_scope": "title+main_text+attachments"
+    }
+  ]
+}

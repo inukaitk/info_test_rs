@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_93e3ed3df993ed1f",
+    "source_id": "cfa-news",
+    "canonical_url": "https://www.cfa.go.jp/speech/ecb00d3b",
+    "title": "中司大臣記者会見（令和8年11月2日）",
+    "published_at": "2026-11-02",
+    "updated_at": null,
+    "date_basis": {
+      "published": {
+        "method": "listing_text",
+        "evidence": "<time datetime=\"2026-11-02\">2026年11月2日</time>"
+      },
+      "updated": null
+    },
+    "date_precision": {
+      "published": "day",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-11-08T22:08:08+09:00",
+    "last_seen_at": "2026-11-08T22:08:08+09:00",
+    "latest_version": 1,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "extraction_profile": "html+pdf(3files,30pages,exclude:座席|席次)",
+      "article_id": "a_93e3ed3df993ed1f",
+      "version": 1,
+      "content_hash": "sha256:0b631b952f7476c5debc2496e0c2de0e9453c04f8a2914b3d38fd950124df944",
+      "fetched_at": "2026-11-08T22:08:08+09:00",
+      "content_type": "html",
+      "text_length": 66,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "new",
+      "export_hash": "7217a33ff0b969b2aa58b74a0020a2aadff9def1a1ba2d51f6bff6c5d4c4c960",
+      "export_hash_status": "ok",
+      "export_hash_scope": "title+main_text"
+    }
+  ]
+}

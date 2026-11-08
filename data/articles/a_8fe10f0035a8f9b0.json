@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_8fe10f0035a8f9b0",
+    "source_id": "cfa-news",
+    "canonical_url": "https://www.cfa.go.jp/press/1eb99558-05d6-4be2-89ab-e7632c518668",
+    "title": "第60回「ねむの木賞」「高木賞」の贈呈式が行われます",
+    "published_at": "2026-11-06",
+    "updated_at": null,
+    "date_basis": {
+      "published": {
+        "method": "html_text",
+        "evidence": "公開日:令和8年11月6日"
+      },
+      "updated": null
+    },
+    "date_precision": {
+      "published": "day",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-11-08T22:08:08+09:00",
+    "last_seen_at": "2026-11-08T22:08:08+09:00",
+    "latest_version": 1,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "extraction_profile": "html+pdf(3files,30pages,exclude:座席|席次)",
+      "attachments": [
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/1eb99558-05d6-4be2-89ab-e7632c518668/a04d78b2/20261106_press_1eb99558-05d6-4be2-89ab-e7632c518668_03.pdf",
+          "title": "第60回「ねむの木賞」「高木賞」の贈呈式が行われます（PDF／644KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 4606,
+          "pages": 7,
+          "pages_read": 7
+        }
+      ],
+      "article_id": "a_8fe10f0035a8f9b0",
+      "version": 1,
+      "content_hash": "sha256:de5361a803be8a88b6e1ab53eb47213de7a0996683bd48ddd9b4ff0c01d88f59",
+      "fetched_at": "2026-11-08T22:08:08+09:00",
+      "content_type": "html",
+      "text_length": 4764,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "new",
+      "export_hash": "cad962815b24d927c12aee24b10b81cf6ab3f70a537a6230cd2d4aeb33689d5d",
+      "export_hash_status": "ok",
+      "export_hash_scope": "title+main_text+attachments"
+    }
+  ]
+}

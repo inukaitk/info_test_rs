@@ -19,8 +19,8 @@
       "updated": "unknown"
     },
     "first_seen_at": "2026-11-01T22:03:45+09:00",
-    "last_seen_at": "2026-11-01T22:03:45+09:00",
-    "latest_version": 1,
+    "last_seen_at": "2026-11-08T22:08:08+09:00",
+    "latest_version": 2,
     "status": "active"
   },
   "versions": [
@@ -65,6 +65,59 @@
       "extraction_error": null,
       "change_type": "new",
       "export_hash": "8af40c6a83dcc0fe39232f1b432bfe76e378bc51017dc5a1c1b0f0d9d220d956",
+      "export_hash_status": "ok",
+      "export_hash_scope": "title+main_text+attachments"
+    },
+    {
+      "extraction_profile": "html+pdf(3files,30pages,exclude:座席|席次)",
+      "attachments": [
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/010b1828-1c74-445c-bb04-d2f21280a025/729131a2/20261027_councils_internet-kaigi01_0b1828_00.pdf",
+          "title": "資料1　事業者に求める措置について（PDF／1.7MB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 30276,
+          "pages": 30,
+          "pages_read": 30
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/010b1828-1c74-445c-bb04-d2f21280a025/5d88fae8/20261027_councils_internet-kaigi01_0b1828_01.pdf",
+          "title": "参考資料1　第9回ワーキンググループにおける構成員からの御意見（PDF／576KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 1251,
+          "pages": 3,
+          "pages_read": 3
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/010b1828-1c74-445c-bb04-d2f21280a025/afb891f6/20261027_councils_internet-kaigi01_0b1828_03.pdf",
+          "title": "参考資料2　第9回ワーキンググループ御議論のまとめ（PDF／529KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 3759,
+          "pages": 5,
+          "pages_read": 5
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/010b1828-1c74-445c-bb04-d2f21280a025/ab0f5397/20261104_councils_internet-kaigi01_0b1828_05.pdf",
+          "title": "議事要旨（PDF／152KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        }
+      ],
+      "article_id": "a_609e625fdad18401",
+      "version": 2,
+      "content_hash": "sha256:ba7058470a7ae9a49165ee24ac7e1884f5e04744a8b9876d9183ad938bb1808b",
+      "fetched_at": "2026-11-08T22:08:08+09:00",
+      "content_type": "html",
+      "text_length": 35697,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "content_changed",
+      "export_hash": "50de37f026bd97c9081ce013d82da31fd53a44b58b4fae52884ef3ce597eab05",
       "export_hash_status": "ok",
       "export_hash_scope": "title+main_text+attachments"
     }

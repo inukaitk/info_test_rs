@@ -19,8 +19,8 @@
       "updated": "unknown"
     },
     "first_seen_at": "2026-10-05T10:14:31+09:00",
-    "last_seen_at": "2026-11-01T22:03:45+09:00",
-    "latest_version": 4,
+    "last_seen_at": "2026-11-08T22:08:08+09:00",
+    "latest_version": 5,
     "status": "active"
   },
   "versions": [
@@ -179,6 +179,41 @@
       "extraction_error": null,
       "change_type": "content_changed",
       "export_hash": "afbaf77bc148e34e57f27e9c637495a0c3dae41293b790b2298fed1595a7174a",
+      "export_hash_status": "ok",
+      "export_hash_scope": "title+main_text+attachments"
+    },
+    {
+      "extraction_profile": "html+pdf(3files,30pages,exclude:座席|席次)",
+      "attachments": [
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/1c31fc42-55b2-4d2b-8d1e-b02dc2008b2a/5479ede8/20261030_recruitment_kikan_52.pdf",
+          "title": "期間業務職員（秘書業務及び一般事務補助）（PDF／369KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 1831,
+          "pages": 3,
+          "pages_read": 3
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/1c31fc42-55b2-4d2b-8d1e-b02dc2008b2a/b7c5f665/20251225_recruitment_kikan_32.pdf",
+          "title": "（様式）履歴書（PDF／70KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 438,
+          "pages": 2,
+          "pages_read": 2
+        }
+      ],
+      "article_id": "a_d02f0a677f5494ee",
+      "version": 5,
+      "content_hash": "sha256:b89ed5e621499a7acd5b776fecfda2b0d7770fde8a6e9dd016b076c9d0efdd3e",
+      "fetched_at": "2026-11-08T22:08:08+09:00",
+      "content_type": "html",
+      "text_length": 2445,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "content_changed",
+      "export_hash": "3f9acd789791dcd5de9222a807406b6cff85ea51b974585cee17f93c9f85c940",
       "export_hash_status": "ok",
       "export_hash_scope": "title+main_text+attachments"
     }

@@ -2,6 +2,1101 @@
   "schema_version": 1,
   "articles": [
     {
+      "id": "a_8fe10f0035a8f9b0",
+      "source_id": "cfa-news",
+      "source_name": "こども家庭庁（新着・更新）",
+      "title": "第60回「ねむの木賞」「高木賞」の贈呈式が行われます",
+      "url": "https://www.cfa.go.jp/press/1eb99558-05d6-4be2-89ab-e7632c518668",
+      "published": {
+        "value": "2026-11-06",
+        "precision": "day",
+        "basis": {
+          "method": "html_text",
+          "evidence": "公開日:令和8年11月6日"
+        }
+      },
+      "updated": {
+        "value": null,
+        "precision": "unknown",
+        "basis": null
+      },
+      "first_seen_at": "2026-11-08T22:08:08+09:00",
+      "last_seen_at": "2026-11-08T22:08:08+09:00",
+      "status": "active",
+      "content_status": "ok",
+      "content_error": null,
+      "latest_version": 1,
+      "versions": [
+        {
+          "version": 1,
+          "fetched_at": "2026-11-08T22:08:08+09:00",
+          "change_type": "new",
+          "extraction_status": "ok"
+        }
+      ],
+      "attachments": [
+        {
+          "title": "第60回「ねむの木賞」「高木賞」の贈呈式が行われます（PDF／644KB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/1eb99558-05d6-4be2-89ab-e7632c518668/a04d78b2/20261106_press_1eb99558-05d6-4be2-89ab-e7632c518668_03.pdf",
+          "status": "ok",
+          "note": null,
+          "pages": 7
+        }
+      ],
+      "summary": {
+        "status": "not_processed",
+        "error": null,
+        "version": null,
+        "outdated": false,
+        "text": null,
+        "key_points": null,
+        "targets": null,
+        "dates": null,
+        "uncertainties": null,
+        "model": null,
+        "processed_at": null
+      },
+      "csv": {
+        "source_type": "news",
+        "hash": "cad962815b24d927c12aee24b10b81cf6ab3f70a537a6230cd2d4aeb33689d5d",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text+attachments"
+      },
+      "tags": [],
+      "removed_tags": [],
+      "tag_override_reason": null
+    },
+    {
+      "id": "a_a5f1d0d0c70b892b",
+      "source_id": "cfa-news",
+      "source_name": "こども家庭庁（新着・更新）",
+      "title": "中司大臣記者会見（令和8年11月6日）",
+      "url": "https://www.cfa.go.jp/speech/be331d70",
+      "published": {
+        "value": "2026-11-06",
+        "precision": "day",
+        "basis": {
+          "method": "listing_text",
+          "evidence": "2026年11月6日"
+        }
+      },
+      "updated": {
+        "value": null,
+        "precision": "unknown",
+        "basis": null
+      },
+      "first_seen_at": "2026-11-08T22:08:08+09:00",
+      "last_seen_at": "2026-11-08T22:08:08+09:00",
+      "status": "active",
+      "content_status": "ok",
+      "content_error": null,
+      "latest_version": 1,
+      "versions": [
+        {
+          "version": 1,
+          "fetched_at": "2026-11-08T22:08:08+09:00",
+          "change_type": "new",
+          "extraction_status": "ok"
+        }
+      ],
+      "attachments": [],
+      "summary": {
+        "status": "not_processed",
+        "error": null,
+        "version": null,
+        "outdated": false,
+        "text": null,
+        "key_points": null,
+        "targets": null,
+        "dates": null,
+        "uncertainties": null,
+        "model": null,
+        "processed_at": null
+      },
+      "csv": {
+        "source_type": "news",
+        "hash": "ba67c294f746accf4f9a5518c3b487b97af932a70c80c7472fb26ff43bbab205",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text"
+      },
+      "tags": [],
+      "removed_tags": [],
+      "tag_override_reason": null
+    },
+    {
+      "id": "a_02c134cb8b88e400",
+      "source_id": "cfa-news",
+      "source_name": "こども家庭庁（新着・更新）",
+      "title": "青少年インターネット環境の整備等に関する検討会　第71回会合　青少年インターネット環境整備法の在り方等に関する検討ワーキンググループ　第11回会合　合同会議",
+      "url": "https://www.cfa.go.jp/councils/internet-kaigi/d83aacab",
+      "published": {
+        "value": "2026-11-05",
+        "precision": "day",
+        "basis": {
+          "method": "listing_text",
+          "evidence": "2026年11月5日"
+        }
+      },
+      "updated": {
+        "value": null,
+        "precision": "unknown",
+        "basis": null
+      },
+      "first_seen_at": "2026-11-08T22:08:08+09:00",
+      "last_seen_at": "2026-11-08T22:08:08+09:00",
+      "status": "active",
+      "content_status": "ok",
+      "content_error": null,
+      "latest_version": 1,
+      "versions": [
+        {
+          "version": 1,
+          "fetched_at": "2026-11-08T22:08:08+09:00",
+          "change_type": "new",
+          "extraction_status": "ok"
+        }
+      ],
+      "attachments": [
+        {
+          "title": "開催案内（PDF／280KB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/d83aacab-197b-47fb-8815-6a5abb7afb07/1c6a23f1/20261030_councils_internet-kaigi_d83aacab_01.pdf",
+          "status": "ok",
+          "note": null,
+          "pages": 2
+        }
+      ],
+      "summary": {
+        "status": "not_processed",
+        "error": null,
+        "version": null,
+        "outdated": false,
+        "text": null,
+        "key_points": null,
+        "targets": null,
+        "dates": null,
+        "uncertainties": null,
+        "model": null,
+        "processed_at": null
+      },
+      "csv": {
+        "source_type": "news",
+        "hash": "2de22b4cfd0722b379060a940e6c4c8aacefc274cff1fca41e2d5a4b05bb1a45",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text+attachments"
+      },
+      "tags": [],
+      "removed_tags": [],
+      "tag_override_reason": null
+    },
+    {
+      "id": "a_38707da60a5c614a",
+      "source_id": "cfa-news",
+      "source_name": "こども家庭庁（新着・更新）",
+      "title": "第21回 補償金・優生手術等一時金認定審査部会の開催について",
+      "url": "https://www.cfa.go.jp/press/fdcfed06-0a19-4b1b-ad04-a1b7a4bf7e92",
+      "published": {
+        "value": "2026-11-05",
+        "precision": "day",
+        "basis": {
+          "method": "html_text",
+          "evidence": "公開日:令和8年11月5日"
+        }
+      },
+      "updated": {
+        "value": null,
+        "precision": "unknown",
+        "basis": null
+      },
+      "first_seen_at": "2026-11-08T22:08:08+09:00",
+      "last_seen_at": "2026-11-08T22:08:08+09:00",
+      "status": "active",
+      "content_status": "ok",
+      "content_error": null,
+      "latest_version": 1,
+      "versions": [
+        {
+          "version": 1,
+          "fetched_at": "2026-11-08T22:08:08+09:00",
+          "change_type": "new",
+          "extraction_status": "ok"
+        }
+      ],
+      "attachments": [
+        {
+          "title": "第21回 補償金・優生手術等一時金認定審査部会の開催について（PDF／288KB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/fdcfed06-0a19-4b1b-ad04-a1b7a4bf7e92/b3595827/20261104_press_fdcfed06-0a19-4b1b-ad04-a1b7a4bf7e92_01.pdf",
+          "status": "ok",
+          "note": null,
+          "pages": 1
+        }
+      ],
+      "summary": {
+        "status": "not_processed",
+        "error": null,
+        "version": null,
+        "outdated": false,
+        "text": null,
+        "key_points": null,
+        "targets": null,
+        "dates": null,
+        "uncertainties": null,
+        "model": null,
+        "processed_at": null
+      },
+      "csv": {
+        "source_type": "news",
+        "hash": "7cf4b407ffa4d916e25576457db308fc122a672a774552f1f42580cc89c1c407",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text+attachments"
+      },
+      "tags": [],
+      "removed_tags": [],
+      "tag_override_reason": null
+    },
+    {
+      "id": "a_71bec17925483502",
+      "source_id": "cfa-news",
+      "source_name": "こども家庭庁（新着・更新）",
+      "title": "第5回 児童買春・児童ポルノ被害児童の保護施策に関する検証・評価専門委員会について",
+      "url": "https://www.cfa.go.jp/press/dd847759-44c6-4bd2-858d-81038a60a74f",
+      "published": {
+        "value": "2026-11-05",
+        "precision": "day",
+        "basis": {
+          "method": "html_text",
+          "evidence": "公開日:令和8年11月5日"
+        }
+      },
+      "updated": {
+        "value": null,
+        "precision": "unknown",
+        "basis": null
+      },
+      "first_seen_at": "2026-11-08T22:08:08+09:00",
+      "last_seen_at": "2026-11-08T22:08:08+09:00",
+      "status": "active",
+      "content_status": "ok",
+      "content_error": null,
+      "latest_version": 1,
+      "versions": [
+        {
+          "version": 1,
+          "fetched_at": "2026-11-08T22:08:08+09:00",
+          "change_type": "new",
+          "extraction_status": "ok"
+        }
+      ],
+      "attachments": [
+        {
+          "title": "第5回 児童買春・児童ポルノ被害児童の保護施策に関する検証・評価専門委員会について（PDF／264KB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/dd847759-44c6-4bd2-858d-81038a60a74f/10e8763d/20261105_press_dd847759-44c6-4bd2-858d-81038a60a74f_01.pdf",
+          "status": "ok",
+          "note": null,
+          "pages": 1
+        }
+      ],
+      "summary": {
+        "status": "not_processed",
+        "error": null,
+        "version": null,
+        "outdated": false,
+        "text": null,
+        "key_points": null,
+        "targets": null,
+        "dates": null,
+        "uncertainties": null,
+        "model": null,
+        "processed_at": null
+      },
+      "csv": {
+        "source_type": "news",
+        "hash": "617699883fa1dd354822f19f4323398c0bf86e6e6984ab96e4d8b1f77fb4fd95",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text+attachments"
+      },
+      "tags": [],
+      "removed_tags": [],
+      "tag_override_reason": null
+    },
+    {
+      "id": "a_7fbd232d4f7f3d44",
+      "source_id": "cfa-news",
+      "source_name": "こども家庭庁（新着・更新）",
+      "title": "第14回　こども性暴力防止法施行準備検討会の開催について",
+      "url": "https://www.cfa.go.jp/press/2927c1e9-00cb-4c1e-86fc-84dcd9811e5e",
+      "published": {
+        "value": "2026-11-05",
+        "precision": "day",
+        "basis": {
+          "method": "html_text",
+          "evidence": "公開日:令和8年11月5日"
+        }
+      },
+      "updated": {
+        "value": null,
+        "precision": "unknown",
+        "basis": null
+      },
+      "first_seen_at": "2026-11-08T22:08:08+09:00",
+      "last_seen_at": "2026-11-08T22:08:08+09:00",
+      "status": "active",
+      "content_status": "ok",
+      "content_error": null,
+      "latest_version": 1,
+      "versions": [
+        {
+          "version": 1,
+          "fetched_at": "2026-11-08T22:08:08+09:00",
+          "change_type": "new",
+          "extraction_status": "ok"
+        }
+      ],
+      "attachments": [
+        {
+          "title": "第14回　こども性暴力防止法施行準備検討会の開催について（PDF／308KB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/2927c1e9-00cb-4c1e-86fc-84dcd9811e5e/c73c1405/20261104_press_2927c1e9-00cb-4c1e-86fc-84dcd9811e5e_01.pdf",
+          "status": "ok",
+          "note": null,
+          "pages": 1
+        }
+      ],
+      "summary": {
+        "status": "not_processed",
+        "error": null,
+        "version": null,
+        "outdated": false,
+        "text": null,
+        "key_points": null,
+        "targets": null,
+        "dates": null,
+        "uncertainties": null,
+        "model": null,
+        "processed_at": null
+      },
+      "csv": {
+        "source_type": "news",
+        "hash": "9c54ddb977925dc5e11ee89257d0cdf11cf10e6cdf05d81bd93706ab6ac5ec5c",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text+attachments"
+      },
+      "tags": [],
+      "removed_tags": [],
+      "tag_override_reason": null
+    },
+    {
+      "id": "a_9368d9324aecf6d9",
+      "source_id": "cfa-news",
+      "source_name": "こども家庭庁（新着・更新）",
+      "title": "こども性暴力防止法特設サイト「こまもろうナビ」を開設",
+      "url": "https://www.cfa.go.jp/press/e1ea6b93-4d9d-4f53-a217-19caa509ef0a",
+      "published": {
+        "value": "2026-11-05",
+        "precision": "day",
+        "basis": {
+          "method": "html_text",
+          "evidence": "公開日:令和8年11月5日"
+        }
+      },
+      "updated": {
+        "value": null,
+        "precision": "unknown",
+        "basis": null
+      },
+      "first_seen_at": "2026-11-08T22:08:08+09:00",
+      "last_seen_at": "2026-11-08T22:08:08+09:00",
+      "status": "active",
+      "content_status": "ok",
+      "content_error": null,
+      "latest_version": 1,
+      "versions": [
+        {
+          "version": 1,
+          "fetched_at": "2026-11-08T22:08:08+09:00",
+          "change_type": "new",
+          "extraction_status": "ok"
+        }
+      ],
+      "attachments": [
+        {
+          "title": "こども性暴力防止法特設サイト「こまもろうナビ」を開設（PDF／589KB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/e1ea6b93-4d9d-4f53-a217-19caa509ef0a/8163b183/20261105_press_e1ea6b93-4d9d-4f53-a217-19caa509ef0a_01.pdf",
+          "status": "ok",
+          "note": null,
+          "pages": 2
+        }
+      ],
+      "summary": {
+        "status": "not_processed",
+        "error": null,
+        "version": null,
+        "outdated": false,
+        "text": null,
+        "key_points": null,
+        "targets": null,
+        "dates": null,
+        "uncertainties": null,
+        "model": null,
+        "processed_at": null
+      },
+      "csv": {
+        "source_type": "news",
+        "hash": "aecbac8f512de0bb35c18c7d061c4c821307ae80c63c8bee2cfd67739977c65d",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text+attachments"
+      },
+      "tags": [],
+      "removed_tags": [],
+      "tag_override_reason": null
+    },
+    {
+      "id": "a_e08443fa6882d290",
+      "source_id": "cfa-news",
+      "source_name": "こども家庭庁（新着・更新）",
+      "title": "第5回　児童買春・児童ポルノ被害児童の保護施策に関する検証・評価専門委員会",
+      "url": "https://www.cfa.go.jp/councils/shingikai/shakai_katei/jidobaishunhogo/b00f2e82",
+      "published": {
+        "value": "2026-11-05",
+        "precision": "day",
+        "basis": {
+          "method": "listing_text",
+          "evidence": "2026年11月5日"
+        }
+      },
+      "updated": {
+        "value": null,
+        "precision": "unknown",
+        "basis": null
+      },
+      "first_seen_at": "2026-11-08T22:08:08+09:00",
+      "last_seen_at": "2026-11-08T22:08:08+09:00",
+      "status": "active",
+      "content_status": "ok",
+      "content_error": null,
+      "latest_version": 1,
+      "versions": [
+        {
+          "version": 1,
+          "fetched_at": "2026-11-08T22:08:08+09:00",
+          "change_type": "new",
+          "extraction_status": "ok"
+        }
+      ],
+      "attachments": [],
+      "summary": {
+        "status": "not_processed",
+        "error": null,
+        "version": null,
+        "outdated": false,
+        "text": null,
+        "key_points": null,
+        "targets": null,
+        "dates": null,
+        "uncertainties": null,
+        "model": null,
+        "processed_at": null
+      },
+      "csv": {
+        "source_type": "news",
+        "hash": "fdc1243e26be9e17f5aaf6d4727c5fc2185ea1557245898c84e76caa23e62751",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text"
+      },
+      "tags": [],
+      "removed_tags": [],
+      "tag_override_reason": null
+    },
+    {
+      "id": "a_e4fc17acaeb22f46",
+      "source_id": "cfa-news",
+      "source_name": "こども家庭庁（新着・更新）",
+      "title": "こども性暴力防止法施行準備検討会（第14回）",
+      "url": "https://www.cfa.go.jp/councils/koseibo-jumbi/232a9d87",
+      "published": {
+        "value": "2026-11-05",
+        "precision": "day",
+        "basis": {
+          "method": "listing_text",
+          "evidence": "2026年11月5日"
+        }
+      },
+      "updated": {
+        "value": null,
+        "precision": "unknown",
+        "basis": null
+      },
+      "first_seen_at": "2026-11-08T22:08:08+09:00",
+      "last_seen_at": "2026-11-08T22:08:08+09:00",
+      "status": "active",
+      "content_status": "ok",
+      "content_error": null,
+      "latest_version": 1,
+      "versions": [
+        {
+          "version": 1,
+          "fetched_at": "2026-11-08T22:08:08+09:00",
+          "change_type": "new",
+          "extraction_status": "ok"
+        }
+      ],
+      "attachments": [],
+      "summary": {
+        "status": "not_processed",
+        "error": null,
+        "version": null,
+        "outdated": false,
+        "text": null,
+        "key_points": null,
+        "targets": null,
+        "dates": null,
+        "uncertainties": null,
+        "model": null,
+        "processed_at": null
+      },
+      "csv": {
+        "source_type": "news",
+        "hash": "55f4586177b494a3e702e9ae70b26972ec3ab906d56bc5fa1031ff5e307be989",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text"
+      },
+      "tags": [],
+      "removed_tags": [],
+      "tag_override_reason": null
+    },
+    {
+      "id": "a_fcb136c283f3c3d7",
+      "source_id": "milabo-news",
+      "source_name": "株式会社ミラボ（お知らせ）",
+      "title": "ビル電気工事に伴う電話・FAX不通のお知らせ",
+      "url": "https://mi-labo.co.jp/posts/20261105-milabo-news/",
+      "published": {
+        "value": "2026-11-05",
+        "precision": "day",
+        "basis": {
+          "method": "listing_text",
+          "evidence": "2026年11月5日"
+        }
+      },
+      "updated": {
+        "value": null,
+        "precision": "unknown",
+        "basis": null
+      },
+      "first_seen_at": "2026-11-08T22:08:08+09:00",
+      "last_seen_at": "2026-11-08T22:08:08+09:00",
+      "status": "active",
+      "content_status": "ok",
+      "content_error": null,
+      "latest_version": 1,
+      "versions": [
+        {
+          "version": 1,
+          "fetched_at": "2026-11-08T22:08:08+09:00",
+          "change_type": "new",
+          "extraction_status": "ok"
+        }
+      ],
+      "attachments": [],
+      "summary": {
+        "status": "not_processed",
+        "error": null,
+        "version": null,
+        "outdated": false,
+        "text": null,
+        "key_points": null,
+        "targets": null,
+        "dates": null,
+        "uncertainties": null,
+        "model": null,
+        "processed_at": null
+      },
+      "csv": {
+        "source_type": "news",
+        "hash": "8b55edbff296d244afbfb414ce89163e5a91454beb1c8c3fab044aefa1cf44c9",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text"
+      },
+      "tags": [
+        {
+          "id": "vendor-trend",
+          "name": "ベンダ動向",
+          "origin": "source",
+          "reason": "情報源の設定：株式会社ミラボ（お知らせ）の記事すべてに付けています",
+          "retired": false
+        }
+      ],
+      "removed_tags": [],
+      "tag_override_reason": null
+    },
+    {
+      "id": "a_1bc6ff6affcb9325",
+      "source_id": "cfa-news",
+      "source_name": "こども家庭庁（新着・更新）",
+      "title": "こども家庭審議会幼児期までのこどもの育ち部会こどもの預かりサービスの在り方に関する専門委員会(第3回)について",
+      "url": "https://www.cfa.go.jp/press/aec42643-7ded-4738-96b4-1570aaea9a37",
+      "published": {
+        "value": "2026-11-04",
+        "precision": "day",
+        "basis": {
+          "method": "html_text",
+          "evidence": "公開日:令和8年11月4日"
+        }
+      },
+      "updated": {
+        "value": null,
+        "precision": "unknown",
+        "basis": null
+      },
+      "first_seen_at": "2026-11-08T22:08:08+09:00",
+      "last_seen_at": "2026-11-08T22:08:08+09:00",
+      "status": "active",
+      "content_status": "ok",
+      "content_error": null,
+      "latest_version": 1,
+      "versions": [
+        {
+          "version": 1,
+          "fetched_at": "2026-11-08T22:08:08+09:00",
+          "change_type": "new",
+          "extraction_status": "ok"
+        }
+      ],
+      "attachments": [
+        {
+          "title": "こども家庭審議会幼児期までのこどもの育ち部会こどもの預かりサービスの在り方に関する専門委員会(第3回)について（PDF／293KB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/aec42643-7ded-4738-96b4-1570aaea9a37/819b648c/20261104_press_aec42643-7ded-4738-96b4-1570aaea9a37_01.pdf",
+          "status": "ok",
+          "note": null,
+          "pages": 1
+        }
+      ],
+      "summary": {
+        "status": "not_processed",
+        "error": null,
+        "version": null,
+        "outdated": false,
+        "text": null,
+        "key_points": null,
+        "targets": null,
+        "dates": null,
+        "uncertainties": null,
+        "model": null,
+        "processed_at": null
+      },
+      "csv": {
+        "source_type": "news",
+        "hash": "1a171193f59f0cf34605551a33c11279e943555480b9b7c9854015cd7047959c",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text+attachments"
+      },
+      "tags": [],
+      "removed_tags": [],
+      "tag_override_reason": null
+    },
+    {
+      "id": "a_bca54c35f0209585",
+      "source_id": "cfa-news",
+      "source_name": "こども家庭庁（新着・更新）",
+      "title": "選考採用（経験者採用）",
+      "url": "https://www.cfa.go.jp/recruitment/senkou",
+      "published": {
+        "value": "2026-11-04",
+        "precision": "day",
+        "basis": {
+          "method": "listing_text",
+          "evidence": "2026年11月4日"
+        }
+      },
+      "updated": {
+        "value": null,
+        "precision": "unknown",
+        "basis": null
+      },
+      "first_seen_at": "2026-11-08T22:08:08+09:00",
+      "last_seen_at": "2026-11-08T22:08:08+09:00",
+      "status": "active",
+      "content_status": "ok",
+      "content_error": null,
+      "latest_version": 1,
+      "versions": [
+        {
+          "version": 1,
+          "fetched_at": "2026-11-08T22:08:08+09:00",
+          "change_type": "new",
+          "extraction_status": "ok"
+        }
+      ],
+      "attachments": [
+        {
+          "title": "課長補佐級・係長級（総合職相当）（PDF／590KB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/aa129670-feea-448d-ba41-5a055afeb7b0/45bf8ed5/20261102_recruitment_senkou_29.pdf",
+          "status": "ok",
+          "note": null,
+          "pages": 5
+        },
+        {
+          "title": "課長補佐級・係長級（一般職相当）（PDF／332KB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/aa129670-feea-448d-ba41-5a055afeb7b0/822cd270/20261102_recruitment_senkou_35.pdf",
+          "status": "ok",
+          "note": null,
+          "pages": 5
+        }
+      ],
+      "summary": {
+        "status": "not_processed",
+        "error": null,
+        "version": null,
+        "outdated": false,
+        "text": null,
+        "key_points": null,
+        "targets": null,
+        "dates": null,
+        "uncertainties": null,
+        "model": null,
+        "processed_at": null
+      },
+      "csv": {
+        "source_type": "news",
+        "hash": "635492e51552fc31867c34232a78ddc7612d7849982fa9e65ddf8e8fce7e3cca",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text+attachments"
+      },
+      "tags": [],
+      "removed_tags": [],
+      "tag_override_reason": null
+    },
+    {
+      "id": "a_d2b1e3f6779c8a64",
+      "source_id": "cfa-news",
+      "source_name": "こども家庭庁（新着・更新）",
+      "title": "第26回健やか親子21推進本部総会の開催について",
+      "url": "https://www.cfa.go.jp/press/e6c80e6c-f7e7-4205-9dd7-215023b7577f",
+      "published": {
+        "value": "2026-11-04",
+        "precision": "day",
+        "basis": {
+          "method": "html_text",
+          "evidence": "公開日:令和8年11月4日"
+        }
+      },
+      "updated": {
+        "value": null,
+        "precision": "unknown",
+        "basis": null
+      },
+      "first_seen_at": "2026-11-08T22:08:08+09:00",
+      "last_seen_at": "2026-11-08T22:08:08+09:00",
+      "status": "active",
+      "content_status": "ok",
+      "content_error": null,
+      "latest_version": 1,
+      "versions": [
+        {
+          "version": 1,
+          "fetched_at": "2026-11-08T22:08:08+09:00",
+          "change_type": "new",
+          "extraction_status": "ok"
+        }
+      ],
+      "attachments": [
+        {
+          "title": "第26回健やか親子21推進本部総会の開催について（PDF／267KB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/e6c80e6c-f7e7-4205-9dd7-215023b7577f/0fa749b6/20261104_press_e6c80e6c-f7e7-4205-9dd7-215023b7577f_01.pdf",
+          "status": "ok",
+          "note": null,
+          "pages": 1
+        }
+      ],
+      "summary": {
+        "status": "not_processed",
+        "error": null,
+        "version": null,
+        "outdated": false,
+        "text": null,
+        "key_points": null,
+        "targets": null,
+        "dates": null,
+        "uncertainties": null,
+        "model": null,
+        "processed_at": null
+      },
+      "csv": {
+        "source_type": "news",
+        "hash": "2b705c03587fc2963ccc49f5fdb5fc784dde064f9037df8c0e376ebb135d1a98",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text+attachments"
+      },
+      "tags": [],
+      "removed_tags": [],
+      "tag_override_reason": null
+    },
+    {
+      "id": "a_1dd6e0cd1784858e",
+      "source_id": "cfa-news",
+      "source_name": "こども家庭庁（新着・更新）",
+      "title": "令和8年秋の叙勲受章者一覧について",
+      "url": "https://www.cfa.go.jp/press/d57d945a-34a1-4ce9-b5c6-9ecc7a53eb69",
+      "published": {
+        "value": "2026-11-03",
+        "precision": "day",
+        "basis": {
+          "method": "html_text",
+          "evidence": "公開日:令和8年11月3日"
+        }
+      },
+      "updated": {
+        "value": null,
+        "precision": "unknown",
+        "basis": null
+      },
+      "first_seen_at": "2026-11-08T22:08:08+09:00",
+      "last_seen_at": "2026-11-08T22:08:08+09:00",
+      "status": "active",
+      "content_status": "ok",
+      "content_error": null,
+      "latest_version": 1,
+      "versions": [
+        {
+          "version": 1,
+          "fetched_at": "2026-11-08T22:08:08+09:00",
+          "change_type": "new",
+          "extraction_status": "ok"
+        }
+      ],
+      "attachments": [
+        {
+          "title": "令和8年秋の叙勲受章者一覧（PDF／2.1MB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/d57d945a-34a1-4ce9-b5c6-9ecc7a53eb69/79e17e9c/20261027_press_d57d945a-34a1-4ce9-b5c6-9ecc7a53eb69_01.pdf",
+          "status": "unsupported",
+          "note": "画像PDFのためテキストを抽出できない（OCRは対象外）",
+          "pages": 31
+        }
+      ],
+      "summary": {
+        "status": "not_processed",
+        "error": null,
+        "version": null,
+        "outdated": false,
+        "text": null,
+        "key_points": null,
+        "targets": null,
+        "dates": null,
+        "uncertainties": null,
+        "model": null,
+        "processed_at": null
+      },
+      "csv": {
+        "source_type": "news",
+        "hash": "aca91a420627951fd41a15b3a7561119040483870965c88643d5dc6217f2a854",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text"
+      },
+      "tags": [],
+      "removed_tags": [],
+      "tag_override_reason": null
+    },
+    {
+      "id": "a_ac3cc11871c8516d",
+      "source_id": "mchh-prtimes",
+      "source_name": "母子モ株式会社（プレスリリース、PR TIMES）",
+      "title": "母子手帳アプリ『母子モ』が埼玉県新座市で提供を開始！",
+      "url": "https://prtimes.jp/main/html/rd/p/000000584.000099909.html",
+      "published": {
+        "value": "2026-11-02T10:00:02+09:00",
+        "precision": "datetime",
+        "basis": {
+          "method": "rss_pubdate",
+          "evidence": "2026-11-02T10:00:02+09:00"
+        }
+      },
+      "updated": {
+        "value": null,
+        "precision": "unknown",
+        "basis": null
+      },
+      "first_seen_at": "2026-11-08T22:08:08+09:00",
+      "last_seen_at": "2026-11-08T22:08:08+09:00",
+      "status": "active",
+      "content_status": "ok",
+      "content_error": null,
+      "latest_version": 1,
+      "versions": [
+        {
+          "version": 1,
+          "fetched_at": "2026-11-08T22:08:08+09:00",
+          "change_type": "new",
+          "extraction_status": "ok"
+        }
+      ],
+      "attachments": [
+        {
+          "title": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/6cfab22c-d2bf-4dd1-81ea-49308519ac3a/6f948f38/20250630_councils_kodomo_seisaku_DX_6cfab22c_08.pdf",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/6cfab22c-d2bf-4dd1-81ea-49308519ac3a/6f948f38/20250630_councils_kodomo_seisaku_DX_6cfab22c_08.pdf",
+          "status": "skipped",
+          "note": "取得対象外：許可ホスト以外です: www.cfa.go.jp",
+          "pages": null
+        },
+        {
+          "title": "PR TIMESのご利用について 資料をダウンロード",
+          "url": "https://prtimes.jp/common/file/service_guide.pdf",
+          "status": "ok",
+          "note": null,
+          "pages": 14
+        }
+      ],
+      "summary": {
+        "status": "not_processed",
+        "error": null,
+        "version": null,
+        "outdated": false,
+        "text": null,
+        "key_points": null,
+        "targets": null,
+        "dates": null,
+        "uncertainties": null,
+        "model": null,
+        "processed_at": null
+      },
+      "csv": {
+        "source_type": "press_release",
+        "hash": "1ccad45d8d952e01c13d41d764bf3c32198073f0fbded97f0f585c361c7b6993",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text+attachments"
+      },
+      "tags": [
+        {
+          "id": "vendor-trend",
+          "name": "ベンダ動向",
+          "origin": "source",
+          "reason": "情報源の設定：母子モ株式会社（プレスリリース、PR TIMES）の記事すべてに付けています",
+          "retired": false
+        }
+      ],
+      "removed_tags": [],
+      "tag_override_reason": null
+    },
+    {
+      "id": "a_51410bd89ed1eaba",
+      "source_id": "cfa-news",
+      "source_name": "こども家庭庁（新着・更新）",
+      "title": "令和8年秋の褒章受章者一覧について",
+      "url": "https://www.cfa.go.jp/press/8b5ac1c0-7d11-4b5b-ae36-2919c1a88ab5",
+      "published": {
+        "value": "2026-11-02",
+        "precision": "day",
+        "basis": {
+          "method": "html_text",
+          "evidence": "公開日:令和8年11月2日"
+        }
+      },
+      "updated": {
+        "value": null,
+        "precision": "unknown",
+        "basis": null
+      },
+      "first_seen_at": "2026-11-08T22:08:08+09:00",
+      "last_seen_at": "2026-11-08T22:08:08+09:00",
+      "status": "active",
+      "content_status": "ok",
+      "content_error": null,
+      "latest_version": 1,
+      "versions": [
+        {
+          "version": 1,
+          "fetched_at": "2026-11-08T22:08:08+09:00",
+          "change_type": "new",
+          "extraction_status": "ok"
+        }
+      ],
+      "attachments": [
+        {
+          "title": "令和8年秋の褒章受章者一覧（PDF／211KB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/8b5ac1c0-7d11-4b5b-ae36-2919c1a88ab5/3c6438bf/20261027_press_8b5ac1c0-7d11-4b5b-ae36-2919c1a88ab5_01.pdf",
+          "status": "unsupported",
+          "note": "画像PDFのためテキストを抽出できない（OCRは対象外）",
+          "pages": 5
+        }
+      ],
+      "summary": {
+        "status": "not_processed",
+        "error": null,
+        "version": null,
+        "outdated": false,
+        "text": null,
+        "key_points": null,
+        "targets": null,
+        "dates": null,
+        "uncertainties": null,
+        "model": null,
+        "processed_at": null
+      },
+      "csv": {
+        "source_type": "news",
+        "hash": "c75803b58730c75e62c745bf6d0369f4e3379a1725318ce16fba199b8b7bea02",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text"
+      },
+      "tags": [],
+      "removed_tags": [],
+      "tag_override_reason": null
+    },
+    {
+      "id": "a_93e3ed3df993ed1f",
+      "source_id": "cfa-news",
+      "source_name": "こども家庭庁（新着・更新）",
+      "title": "中司大臣記者会見（令和8年11月2日）",
+      "url": "https://www.cfa.go.jp/speech/ecb00d3b",
+      "published": {
+        "value": "2026-11-02",
+        "precision": "day",
+        "basis": {
+          "method": "listing_text",
+          "evidence": "2026年11月2日"
+        }
+      },
+      "updated": {
+        "value": null,
+        "precision": "unknown",
+        "basis": null
+      },
+      "first_seen_at": "2026-11-08T22:08:08+09:00",
+      "last_seen_at": "2026-11-08T22:08:08+09:00",
+      "status": "active",
+      "content_status": "ok",
+      "content_error": null,
+      "latest_version": 1,
+      "versions": [
+        {
+          "version": 1,
+          "fetched_at": "2026-11-08T22:08:08+09:00",
+          "change_type": "new",
+          "extraction_status": "ok"
+        }
+      ],
+      "attachments": [],
+      "summary": {
+        "status": "not_processed",
+        "error": null,
+        "version": null,
+        "outdated": false,
+        "text": null,
+        "key_points": null,
+        "targets": null,
+        "dates": null,
+        "uncertainties": null,
+        "model": null,
+        "processed_at": null
+      },
+      "csv": {
+        "source_type": "news",
+        "hash": "7217a33ff0b969b2aa58b74a0020a2aadff9def1a1ba2d51f6bff6c5d4c4c960",
+        "hash_status": "ok",
+        "hash_scope": "title+main_text"
+      },
+      "tags": [],
+      "removed_tags": [],
+      "tag_override_reason": null
+    },
+    {
       "id": "a_c844058cff2b4a62",
       "source_id": "cmic-trust-news",
       "source_name": "CMIC Trust 株式会社（NEWS）",
@@ -21,7 +1116,7 @@
         "basis": null
       },
       "first_seen_at": "2026-11-01T22:03:45+09:00",
-      "last_seen_at": "2026-11-01T22:03:45+09:00",
+      "last_seen_at": "2026-11-08T22:08:08+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -119,7 +1214,7 @@
         "basis": null
       },
       "first_seen_at": "2026-11-01T22:03:45+09:00",
-      "last_seen_at": "2026-11-01T22:03:45+09:00",
+      "last_seen_at": "2026-11-08T22:08:08+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -190,7 +1285,7 @@
         "basis": null
       },
       "first_seen_at": "2026-11-01T22:03:45+09:00",
-      "last_seen_at": "2026-11-01T22:03:45+09:00",
+      "last_seen_at": "2026-11-08T22:08:08+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -294,7 +1389,7 @@
         "basis": null
       },
       "first_seen_at": "2026-11-01T22:03:45+09:00",
-      "last_seen_at": "2026-11-01T22:03:45+09:00",
+      "last_seen_at": "2026-11-08T22:08:08+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -398,7 +1493,7 @@
         "basis": null
       },
       "first_seen_at": "2026-11-01T22:03:45+09:00",
-      "last_seen_at": "2026-11-01T22:03:45+09:00",
+      "last_seen_at": "2026-11-08T22:08:08+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -483,7 +1578,7 @@
         "basis": null
       },
       "first_seen_at": "2026-11-01T22:03:45+09:00",
-      "last_seen_at": "2026-11-01T22:03:45+09:00",
+      "last_seen_at": "2026-11-08T22:08:08+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -584,7 +1679,7 @@
         "basis": null
       },
       "first_seen_at": "2026-11-01T22:03:45+09:00",
-      "last_seen_at": "2026-11-01T22:03:45+09:00",
+      "last_seen_at": "2026-11-08T22:08:08+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -688,25 +1783,102 @@
         "basis": null
       },
       "first_seen_at": "2026-11-01T22:03:45+09:00",
-      "last_seen_at": "2026-11-01T22:03:45+09:00",
+      "last_seen_at": "2026-11-08T22:08:08+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
-      "latest_version": 1,
+      "latest_version": 2,
       "versions": [
         {
           "version": 1,
           "fetched_at": "2026-11-01T22:03:45+09:00",
           "change_type": "new",
           "extraction_status": "ok"
+        },
+        {
+          "version": 2,
+          "fetched_at": "2026-11-08T22:08:08+09:00",
+          "change_type": "content_changed",
+          "extraction_status": "ok"
         }
       ],
-      "attachments": [],
+      "attachments": [
+        {
+          "title": "第8回議事次第（PDF／135KB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/5d5ae75e-90a6-45d6-a144-279e33bae31f/6dd48ddc/20261102_councils_shingikai_kodomo_ibashojidoukan_5d5ae75e_12.pdf",
+          "status": "ok",
+          "note": null,
+          "pages": 2
+        },
+        {
+          "title": "資料1　学齢期以降のこどもの遊びについて（PDF／200KB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/5d5ae75e-90a6-45d6-a144-279e33bae31f/b4b5e60b/20261102_councils_shingikai_kodomo_ibashojidoukan_5d5ae75e_01.pdf",
+          "status": "ok",
+          "note": null,
+          "pages": 9
+        },
+        {
+          "title": "資料2　こどもアンケート結果（フィードバック資料）（PDF／273KB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/5d5ae75e-90a6-45d6-a144-279e33bae31f/2f5d8794/20261102_councils_shingikai_kodomo_ibashojidoukan_5d5ae75e_02.pdf",
+          "status": "ok",
+          "note": null,
+          "pages": 8
+        },
+        {
+          "title": "資料3　放課後児童支援員等資質向上研修事業について（PDF／201KB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/5d5ae75e-90a6-45d6-a144-279e33bae31f/e9e80c3b/20261102_councils_shingikai_kodomo_ibashojidoukan_5d5ae75e_03.pdf",
+          "status": "skipped",
+          "note": "1記事あたりの上限（3件）を超えたため取得していません",
+          "pages": null
+        },
+        {
+          "title": "資料4　児童館・放課後児童クラブの運営について（PDF／119KB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/5d5ae75e-90a6-45d6-a144-279e33bae31f/def8fba4/20261102_councils_shingikai_kodomo_ibashojidoukan_5d5ae75e_04.pdf",
+          "status": "skipped",
+          "note": "1記事あたりの上限（3件）を超えたため取得していません",
+          "pages": null
+        },
+        {
+          "title": "参考資料1　「児童福祉施設の設備及び運営に関する基準及び放課後児童健全育成事業の設備及び運営に関する基準の一部を改正する内閣府令の施行について」（令和8年10月1日こ成環第461号こども家庭庁成育局長通知）（PDF／143KB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/5d5ae75e-90a6-45d6-a144-279e33bae31f/0dc1a0a6/20261102_councils_shingikai_kodomo_ibashojidoukan_5d5ae75e_11.pdf",
+          "status": "skipped",
+          "note": "1記事あたりの上限（3件）を超えたため取得していません",
+          "pages": null
+        },
+        {
+          "title": "参考資料2　「児童館の設置運営について」（令和8年10月29日こ成環第478号こども家庭庁成育局長通知）（PDF／36KB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/5d5ae75e-90a6-45d6-a144-279e33bae31f/9195bac6/20261102_councils_shingikai_kodomo_ibashojidoukan_5d5ae75e_06.pdf",
+          "status": "skipped",
+          "note": "1記事あたりの上限（3件）を超えたため取得していません",
+          "pages": null
+        },
+        {
+          "title": "参考資料3　「児童館設置運営要綱について」（令和8年10月29日こ成環第504号こども家庭庁成育局成育環境課長通知）（PDF／28KB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/5d5ae75e-90a6-45d6-a144-279e33bae31f/1b60c1a8/20261102_councils_shingikai_kodomo_ibashojidoukan_5d5ae75e_07.pdf",
+          "status": "skipped",
+          "note": "1記事あたりの上限（3件）を超えたため取得していません",
+          "pages": null
+        },
+        {
+          "title": "参考資料4　保育所や幼稚園等における虐待対応状況等調査（PDF／18KB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/5d5ae75e-90a6-45d6-a144-279e33bae31f/428ff1ad/20261102_councils_shingikai_kodomo_ibashojidoukan_5d5ae75e_08.pdf",
+          "status": "skipped",
+          "note": "1記事あたりの上限（3件）を超えたため取得していません",
+          "pages": null
+        },
+        {
+          "title": "参考資料5　（藤本委員ご意見）学齢期以降のこどもの遊び（PDF／10KB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/5d5ae75e-90a6-45d6-a144-279e33bae31f/69d8a45c/20261102_councils_shingikai_kodomo_ibashojidoukan_5d5ae75e_09.pdf",
+          "status": "skipped",
+          "note": "1記事あたりの上限（3件）を超えたため取得していません",
+          "pages": null
+        }
+      ],
       "summary": {
         "status": "success",
         "error": null,
         "version": 1,
-        "outdated": false,
+        "outdated": true,
         "text": "こども家庭庁が「児童厚生施設及び放課後児童クラブに関する専門委員会(第8回)」を令和8年11月4日16時から18時に、同庁21階会議室とオンライン併用で開催する案内。議事は学齢期以降の遊び、放課後児童支援員等資質向上研修事業、児童館・放課後児童クラブの運営など。",
         "key_points": [
           "第8回専門委員会の開催案内",
@@ -737,9 +1909,9 @@
       },
       "csv": {
         "source_type": "news",
-        "hash": "df8bc3dc262a31b55a6854006825d753e757ef0f29d8169dfec449a719077e57",
+        "hash": "c1493c5ee08de93c7fbcd36c7afa350f9672604130016454bf88b12e84d63e35",
         "hash_status": "ok",
-        "hash_scope": "title+main_text"
+        "hash_scope": "title+main_text+attachments"
       },
       "tags": [
         {
@@ -780,7 +1952,7 @@
         "basis": null
       },
       "first_seen_at": "2026-11-01T22:03:45+09:00",
-      "last_seen_at": "2026-11-01T22:03:45+09:00",
+      "last_seen_at": "2026-11-08T22:08:08+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -890,7 +2062,7 @@
         "basis": null
       },
       "first_seen_at": "2026-11-01T22:03:45+09:00",
-      "last_seen_at": "2026-11-01T22:03:45+09:00",
+      "last_seen_at": "2026-11-08T22:08:08+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -1022,7 +2194,7 @@
         "basis": null
       },
       "first_seen_at": "2026-11-01T22:03:45+09:00",
-      "last_seen_at": "2026-11-01T22:03:45+09:00",
+      "last_seen_at": "2026-11-08T22:08:08+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -1227,7 +2399,7 @@
         "basis": null
       },
       "first_seen_at": "2026-11-01T22:03:45+09:00",
-      "last_seen_at": "2026-11-01T22:03:45+09:00",
+      "last_seen_at": "2026-11-08T22:08:08+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -1297,7 +2469,7 @@
         "basis": null
       },
       "first_seen_at": "2026-11-01T22:03:45+09:00",
-      "last_seen_at": "2026-11-01T22:03:45+09:00",
+      "last_seen_at": "2026-11-08T22:08:08+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -1399,16 +2571,22 @@
         "basis": null
       },
       "first_seen_at": "2026-11-01T22:03:45+09:00",
-      "last_seen_at": "2026-11-01T22:03:45+09:00",
+      "last_seen_at": "2026-11-08T22:08:08+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
-      "latest_version": 1,
+      "latest_version": 2,
       "versions": [
         {
           "version": 1,
           "fetched_at": "2026-11-01T22:03:45+09:00",
           "change_type": "new",
+          "extraction_status": "ok"
+        },
+        {
+          "version": 2,
+          "fetched_at": "2026-11-08T22:08:08+09:00",
+          "change_type": "content_changed",
           "extraction_status": "ok"
         }
       ],
@@ -1433,13 +2611,20 @@
           "status": "ok",
           "note": null,
           "pages": 5
+        },
+        {
+          "title": "議事要旨（PDF／152KB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/010b1828-1c74-445c-bb04-d2f21280a025/ab0f5397/20261104_councils_internet-kaigi01_0b1828_05.pdf",
+          "status": "skipped",
+          "note": "1記事あたりの上限（3件）を超えたため取得していません",
+          "pages": null
         }
       ],
       "summary": {
         "status": "success",
         "error": null,
         "version": 1,
-        "outdated": false,
+        "outdated": true,
         "text": "こども家庭庁の青少年インターネット環境整備法の在り方等に関する検討WG第10回(2026年10月28日、オンライン開催)の資料。事務局が、対象事業者の範囲(基準)と、対象事業者に求める措置(リスク評価・保護措置・公表)について論点を示し、諸外国の事例を参考資料として提示している。",
         "key_points": [
           "対象事業者の基準として、「こどもがサービスを利用する蓋然性」「リスクとなり得る機能」「影響の程度」の3要素をすべて満たすサービスを提供する事業者とする案が示された。",
@@ -1472,7 +2657,7 @@
       },
       "csv": {
         "source_type": "news",
-        "hash": "8af40c6a83dcc0fe39232f1b432bfe76e378bc51017dc5a1c1b0f0d9d220d956",
+        "hash": "50de37f026bd97c9081ce013d82da31fd53a44b58b4fae52884ef3ce597eab05",
         "hash_status": "ok",
         "hash_scope": "title+main_text+attachments"
       },
@@ -1522,16 +2707,22 @@
         "basis": null
       },
       "first_seen_at": "2026-11-01T22:03:45+09:00",
-      "last_seen_at": "2026-11-01T22:03:45+09:00",
+      "last_seen_at": "2026-11-08T22:08:08+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
-      "latest_version": 1,
+      "latest_version": 2,
       "versions": [
         {
           "version": 1,
           "fetched_at": "2026-11-01T22:03:45+09:00",
           "change_type": "new",
+          "extraction_status": "ok"
+        },
+        {
+          "version": 2,
+          "fetched_at": "2026-11-08T22:08:08+09:00",
+          "change_type": "content_changed",
           "extraction_status": "ok"
         }
       ],
@@ -1605,13 +2796,20 @@
           "status": "skipped",
           "note": "1記事あたりの上限（3件）を超えたため取得していません",
           "pages": null
+        },
+        {
+          "title": "議事概要（PDF／4.7MB）",
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/e6188e50-cfa8-4a07-95ab-b943af799144/7be09acc/20261102_councils_shingikai_kodomo_kosodate_e6188e50_11.pdf",
+          "status": "skipped",
+          "note": "1記事あたりの上限（3件）を超えたため取得していません",
+          "pages": null
         }
       ],
       "summary": {
         "status": "success",
         "error": null,
         "version": 1,
-        "outdated": false,
+        "outdated": true,
         "text": "こども家庭審議会 子ども・子育て支援等分科会の第16回(令和8年10月26日、持ち回り開催)の資料。公定価格の検討事項、保育所等のBCP策定等の義務化案、保育所等の虐待防止強化、令和9年度予算概算要求などを扱う。",
         "key_points": [
           "議事は「保育政策の動向について」。公定価格、BCP、虐待防止の強化、令和9年度予算概算要求、ベビーシッター利用促進が資料として配布された。",
@@ -1669,7 +2867,7 @@
       },
       "csv": {
         "source_type": "news",
-        "hash": "24076ce3b6447a58b16cdfe9d1aaf1c5679628f628fc5635326927132728bd49",
+        "hash": "3c5c6c0d1ab53a9b7b65395cc493a9d8e9845b9da87832592e28150f38f67146",
         "hash_status": "ok",
         "hash_scope": "title+main_text+attachments"
       },
@@ -1726,7 +2924,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-25T20:08:12+09:00",
-      "last_seen_at": "2026-11-01T22:03:45+09:00",
+      "last_seen_at": "2026-11-08T22:08:08+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -1855,7 +3053,7 @@
         }
       },
       "first_seen_at": "2026-10-25T20:08:12+09:00",
-      "last_seen_at": "2026-11-01T22:03:45+09:00",
+      "last_seen_at": "2026-11-08T22:08:08+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -2132,7 +3330,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-25T20:08:12+09:00",
-      "last_seen_at": "2026-11-01T22:03:45+09:00",
+      "last_seen_at": "2026-11-08T22:08:08+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -2203,7 +3401,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-25T20:08:12+09:00",
-      "last_seen_at": "2026-11-01T22:03:45+09:00",
+      "last_seen_at": "2026-11-08T22:08:08+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -2307,7 +3505,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-25T20:08:12+09:00",
-      "last_seen_at": "2026-11-01T22:03:45+09:00",
+      "last_seen_at": "2026-11-08T22:08:08+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -2410,7 +3608,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-25T20:08:12+09:00",
-      "last_seen_at": "2026-11-01T22:03:45+09:00",
+      "last_seen_at": "2026-11-08T22:08:08+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -2548,7 +3746,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-25T20:08:12+09:00",
-      "last_seen_at": "2026-11-01T22:03:45+09:00",
+      "last_seen_at": "2026-11-08T22:08:08+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -2633,7 +3831,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-25T20:08:12+09:00",
-      "last_seen_at": "2026-11-01T22:03:45+09:00",
+      "last_seen_at": "2026-11-08T22:08:08+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -2734,7 +3932,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-25T20:08:12+09:00",
-      "last_seen_at": "2026-11-01T22:03:45+09:00",
+      "last_seen_at": "2026-11-08T22:08:08+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -2843,7 +4041,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-25T20:08:12+09:00",
-      "last_seen_at": "2026-11-01T22:03:45+09:00",
+      "last_seen_at": "2026-11-08T22:08:08+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -2954,7 +4152,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-25T20:08:12+09:00",
-      "last_seen_at": "2026-11-01T22:03:45+09:00",
+      "last_seen_at": "2026-11-08T22:08:08+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -3083,7 +4281,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-25T20:08:12+09:00",
-      "last_seen_at": "2026-11-01T22:03:45+09:00",
+      "last_seen_at": "2026-11-08T22:08:08+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -3191,7 +4389,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-25T20:08:12+09:00",
-      "last_seen_at": "2026-11-01T22:03:45+09:00",
+      "last_seen_at": "2026-11-08T22:08:08+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -3280,7 +4478,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-25T20:08:12+09:00",
-      "last_seen_at": "2026-11-01T22:03:45+09:00",
+      "last_seen_at": "2026-11-08T22:08:08+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -3468,7 +4666,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-25T20:08:12+09:00",
-      "last_seen_at": "2026-11-01T22:03:45+09:00",
+      "last_seen_at": "2026-11-08T22:08:08+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -3566,7 +4764,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-25T20:08:12+09:00",
-      "last_seen_at": "2026-11-01T22:03:45+09:00",
+      "last_seen_at": "2026-11-08T22:08:08+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -3636,7 +4834,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-25T20:08:12+09:00",
-      "last_seen_at": "2026-11-01T22:03:45+09:00",
+      "last_seen_at": "2026-11-08T22:08:08+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -3737,7 +4935,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-25T20:08:12+09:00",
-      "last_seen_at": "2026-11-01T22:03:45+09:00",
+      "last_seen_at": "2026-11-08T22:08:08+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -3884,7 +5082,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-25T20:08:12+09:00",
-      "last_seen_at": "2026-11-01T22:03:45+09:00",
+      "last_seen_at": "2026-11-08T22:08:08+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -3987,7 +5185,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-25T20:08:12+09:00",
-      "last_seen_at": "2026-11-01T22:03:45+09:00",
+      "last_seen_at": "2026-11-08T22:08:08+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -4083,7 +5281,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-25T20:08:12+09:00",
-      "last_seen_at": "2026-11-01T22:03:45+09:00",
+      "last_seen_at": "2026-11-08T22:08:08+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -4176,7 +5374,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-25T20:08:12+09:00",
-      "last_seen_at": "2026-11-01T22:03:45+09:00",
+      "last_seen_at": "2026-11-08T22:08:08+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -4286,7 +5484,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-25T20:08:12+09:00",
-      "last_seen_at": "2026-11-01T22:03:45+09:00",
+      "last_seen_at": "2026-11-08T22:08:08+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -6997,7 +8195,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-05T14:24:29+09:00",
-      "last_seen_at": "2026-11-01T22:03:45+09:00",
+      "last_seen_at": "2026-11-08T22:08:08+09:00",
       "status": "unsupported",
       "content_status": "unsupported",
       "content_error": "会員限定（ログインが必要）のページのため、本文は取得していません。一覧の題名・日付と出典リンクだけを記録しています",
@@ -8689,7 +9887,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-05T14:53:03+09:00",
-      "last_seen_at": "2026-11-01T22:03:45+09:00",
+      "last_seen_at": "2026-11-08T22:08:08+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -8774,7 +9972,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-05T10:14:31+09:00",
-      "last_seen_at": "2026-11-01T22:03:45+09:00",
+      "last_seen_at": "2026-11-08T22:08:08+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
@@ -11091,11 +12289,11 @@
         "basis": null
       },
       "first_seen_at": "2026-10-05T10:14:31+09:00",
-      "last_seen_at": "2026-11-01T22:03:45+09:00",
+      "last_seen_at": "2026-11-08T22:08:08+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,
-      "latest_version": 4,
+      "latest_version": 5,
       "versions": [
         {
           "version": 1,
@@ -11120,16 +12318,15 @@
           "fetched_at": "2026-11-01T22:03:45+09:00",
           "change_type": "content_changed",
           "extraction_status": "ok"
+        },
+        {
+          "version": 5,
+          "fetched_at": "2026-11-08T22:08:08+09:00",
+          "change_type": "content_changed",
+          "extraction_status": "ok"
         }
       ],
       "attachments": [
-        {
-          "title": "長官官房総務課（人事担当）期間業務職員（一般事務補助）（PDF／291KB）",
-          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/1c31fc42-55b2-4d2b-8d1e-b02dc2008b2a/a44402a3/20261002_recruitment_kikan_51.pdf",
-          "status": "ok",
-          "note": null,
-          "pages": 3
-        },
         {
           "title": "期間業務職員（秘書業務及び一般事務補助）（PDF／369KB）",
           "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/1c31fc42-55b2-4d2b-8d1e-b02dc2008b2a/5479ede8/20261030_recruitment_kikan_52.pdf",
@@ -11149,7 +12346,7 @@
         "status": "success",
         "error": null,
         "version": 4,
-        "outdated": false,
+        "outdated": true,
         "text": "こども家庭庁長官官房総務課が期間業務職員（非常勤）を募集。一般事務補助（社会保険・共済業務、応募期限2026年10月23日）と秘書業務及び一般事務補助（応募期限2026年11月30日）の2件で、書類審査と面接で選考する。勤務地は東京都千代田区。",
         "key_points": [
           "一般事務補助は長官官房総務課(人事担当)が募集し、雇用期間は令和8年11月1日から令和9年3月31日まで",
@@ -11197,7 +12394,7 @@
       },
       "csv": {
         "source_type": "news",
-        "hash": "afbaf77bc148e34e57f27e9c637495a0c3dae41293b790b2298fed1595a7174a",
+        "hash": "3f9acd789791dcd5de9222a807406b6cff85ea51b974585cee17f93c9f85c940",
         "hash_status": "ok",
         "hash_scope": "title+main_text+attachments"
       },
@@ -15444,7 +16641,7 @@
         "basis": null
       },
       "first_seen_at": "2026-10-05T14:24:29+09:00",
-      "last_seen_at": "2026-11-01T22:03:45+09:00",
+      "last_seen_at": "2026-11-08T22:08:08+09:00",
       "status": "active",
       "content_status": "ok",
       "content_error": null,

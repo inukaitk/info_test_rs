@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_71bec17925483502",
+    "source_id": "cfa-news",
+    "canonical_url": "https://www.cfa.go.jp/press/dd847759-44c6-4bd2-858d-81038a60a74f",
+    "title": "第5回 児童買春・児童ポルノ被害児童の保護施策に関する検証・評価専門委員会について",
+    "published_at": "2026-11-05",
+    "updated_at": null,
+    "date_basis": {
+      "published": {
+        "method": "html_text",
+        "evidence": "公開日:令和8年11月5日"
+      },
+      "updated": null
+    },
+    "date_precision": {
+      "published": "day",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-11-08T22:08:08+09:00",
+    "last_seen_at": "2026-11-08T22:08:08+09:00",
+    "latest_version": 1,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "extraction_profile": "html+pdf(3files,30pages,exclude:座席|席次)",
+      "attachments": [
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/dd847759-44c6-4bd2-858d-81038a60a74f/10e8763d/20261105_press_dd847759-44c6-4bd2-858d-81038a60a74f_01.pdf",
+          "title": "第5回 児童買春・児童ポルノ被害児童の保護施策に関する検証・評価専門委員会について（PDF／264KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 380,
+          "pages": 1,
+          "pages_read": 1
+        }
+      ],
+      "article_id": "a_71bec17925483502",
+      "version": 1,
+      "content_hash": "sha256:59a67fb6aaad6ea94c94d724f36d75af900af74499eaa71913c6febcc7ecf42d",
+      "fetched_at": "2026-11-08T22:08:08+09:00",
+      "content_type": "html",
+      "text_length": 600,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "new",
+      "export_hash": "617699883fa1dd354822f19f4323398c0bf86e6e6984ab96e4d8b1f77fb4fd95",
+      "export_hash_status": "ok",
+      "export_hash_scope": "title+main_text+attachments"
+    }
+  ]
+}

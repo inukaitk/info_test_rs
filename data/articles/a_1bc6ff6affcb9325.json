@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_1bc6ff6affcb9325",
+    "source_id": "cfa-news",
+    "canonical_url": "https://www.cfa.go.jp/press/aec42643-7ded-4738-96b4-1570aaea9a37",
+    "title": "こども家庭審議会幼児期までのこどもの育ち部会こどもの預かりサービスの在り方に関する専門委員会(第3回)について",
+    "published_at": "2026-11-04",
+    "updated_at": null,
+    "date_basis": {
+      "published": {
+        "method": "html_text",
+        "evidence": "公開日:令和8年11月4日"
+      },
+      "updated": null
+    },
+    "date_precision": {
+      "published": "day",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-11-08T22:08:08+09:00",
+    "last_seen_at": "2026-11-08T22:08:08+09:00",
+    "latest_version": 1,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "extraction_profile": "html+pdf(3files,30pages,exclude:座席|席次)",
+      "attachments": [
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/aec42643-7ded-4738-96b4-1570aaea9a37/819b648c/20261104_press_aec42643-7ded-4738-96b4-1570aaea9a37_01.pdf",
+          "title": "こども家庭審議会幼児期までのこどもの育ち部会こどもの預かりサービスの在り方に関する専門委員会(第3回)について（PDF／293KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 656,
+          "pages": 1,
+          "pages_read": 1
+        }
+      ],
+      "article_id": "a_1bc6ff6affcb9325",
+      "version": 1,
+      "content_hash": "sha256:86af9acf9252d9c406e9954deb33a6678bf2bb80f081785deddf692489419e80",
+      "fetched_at": "2026-11-08T22:08:08+09:00",
+      "content_type": "html",
+      "text_length": 932,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "new",
+      "export_hash": "1a171193f59f0cf34605551a33c11279e943555480b9b7c9854015cd7047959c",
+      "export_hash_status": "ok",
+      "export_hash_scope": "title+main_text+attachments"
+    }
+  ]
+}

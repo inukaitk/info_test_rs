@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_1dd6e0cd1784858e",
+    "source_id": "cfa-news",
+    "canonical_url": "https://www.cfa.go.jp/press/d57d945a-34a1-4ce9-b5c6-9ecc7a53eb69",
+    "title": "令和8年秋の叙勲受章者一覧について",
+    "published_at": "2026-11-03",
+    "updated_at": null,
+    "date_basis": {
+      "published": {
+        "method": "html_text",
+        "evidence": "公開日:令和8年11月3日"
+      },
+      "updated": null
+    },
+    "date_precision": {
+      "published": "day",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-11-08T22:08:08+09:00",
+    "last_seen_at": "2026-11-08T22:08:08+09:00",
+    "latest_version": 1,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "extraction_profile": "html+pdf(3files,30pages,exclude:座席|席次)",
+      "attachments": [
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/d57d945a-34a1-4ce9-b5c6-9ecc7a53eb69/79e17e9c/20261027_press_d57d945a-34a1-4ce9-b5c6-9ecc7a53eb69_01.pdf",
+          "title": "令和8年秋の叙勲受章者一覧（PDF／2.1MB）",
+          "status": "unsupported",
+          "error": "画像PDFのためテキストを抽出できない（OCRは対象外）",
+          "text_length": null,
+          "pages": 31,
+          "pages_read": 30
+        }
+      ],
+      "article_id": "a_1dd6e0cd1784858e",
+      "version": 1,
+      "content_hash": "sha256:89875534f2359a8600e9248a37765ee7c0d366219d8c54d4fff0577af69fe035",
+      "fetched_at": "2026-11-08T22:08:08+09:00",
+      "content_type": "html",
+      "text_length": 186,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "new",
+      "export_hash": "aca91a420627951fd41a15b3a7561119040483870965c88643d5dc6217f2a854",
+      "export_hash_status": "ok",
+      "export_hash_scope": "title+main_text"
+    }
+  ]
+}

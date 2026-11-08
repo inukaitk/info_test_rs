@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_7fbd232d4f7f3d44",
+    "source_id": "cfa-news",
+    "canonical_url": "https://www.cfa.go.jp/press/2927c1e9-00cb-4c1e-86fc-84dcd9811e5e",
+    "title": "第14回　こども性暴力防止法施行準備検討会の開催について",
+    "published_at": "2026-11-05",
+    "updated_at": null,
+    "date_basis": {
+      "published": {
+        "method": "html_text",
+        "evidence": "公開日:令和8年11月5日"
+      },
+      "updated": null
+    },
+    "date_precision": {
+      "published": "day",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-11-08T22:08:08+09:00",
+    "last_seen_at": "2026-11-08T22:08:08+09:00",
+    "latest_version": 1,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "extraction_profile": "html+pdf(3files,30pages,exclude:座席|席次)",
+      "attachments": [
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/2927c1e9-00cb-4c1e-86fc-84dcd9811e5e/c73c1405/20261104_press_2927c1e9-00cb-4c1e-86fc-84dcd9811e5e_01.pdf",
+          "title": "第14回　こども性暴力防止法施行準備検討会の開催について（PDF／308KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 704,
+          "pages": 1,
+          "pages_read": 1
+        }
+      ],
+      "article_id": "a_7fbd232d4f7f3d44",
+      "version": 1,
+      "content_hash": "sha256:6b7b56d78dffd0918532133e629632dc6f8a53e043fbd32ac971a6ed7e901635",
+      "fetched_at": "2026-11-08T22:08:08+09:00",
+      "content_type": "html",
+      "text_length": 872,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "new",
+      "export_hash": "9c54ddb977925dc5e11ee89257d0cdf11cf10e6cdf05d81bd93706ab6ac5ec5c",
+      "export_hash_status": "ok",
+      "export_hash_scope": "title+main_text+attachments"
+    }
+  ]
+}

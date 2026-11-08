@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_9368d9324aecf6d9",
+    "source_id": "cfa-news",
+    "canonical_url": "https://www.cfa.go.jp/press/e1ea6b93-4d9d-4f53-a217-19caa509ef0a",
+    "title": "こども性暴力防止法特設サイト「こまもろうナビ」を開設",
+    "published_at": "2026-11-05",
+    "updated_at": null,
+    "date_basis": {
+      "published": {
+        "method": "html_text",
+        "evidence": "公開日:令和8年11月5日"
+      },
+      "updated": null
+    },
+    "date_precision": {
+      "published": "day",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-11-08T22:08:08+09:00",
+    "last_seen_at": "2026-11-08T22:08:08+09:00",
+    "latest_version": 1,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "extraction_profile": "html+pdf(3files,30pages,exclude:座席|席次)",
+      "attachments": [
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/e1ea6b93-4d9d-4f53-a217-19caa509ef0a/8163b183/20261105_press_e1ea6b93-4d9d-4f53-a217-19caa509ef0a_01.pdf",
+          "title": "こども性暴力防止法特設サイト「こまもろうナビ」を開設（PDF／589KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 1128,
+          "pages": 2,
+          "pages_read": 2
+        }
+      ],
+      "article_id": "a_9368d9324aecf6d9",
+      "version": 1,
+      "content_hash": "sha256:42cf3894d9afeec8bb597dee48976e401cb216ae1a0713eeaf68fbac271a2beb",
+      "fetched_at": "2026-11-08T22:08:08+09:00",
+      "content_type": "html",
+      "text_length": 1294,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "new",
+      "export_hash": "aecbac8f512de0bb35c18c7d061c4c821307ae80c63c8bee2cfd67739977c65d",
+      "export_hash_status": "ok",
+      "export_hash_scope": "title+main_text+attachments"
+    }
+  ]
+}
