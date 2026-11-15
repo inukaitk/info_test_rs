@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_c5b5186d7b19dabb",
+    "source_id": "cfa-news",
+    "canonical_url": "https://www.cfa.go.jp/press/52bdd846-b58c-4edf-aa17-f81609a965de",
+    "title": "みて かんじて つながる劇体験～優良児童劇等公演事業～令和8年12月15日（火）鹿児島県日置市にて開催",
+    "published_at": "2026-11-10",
+    "updated_at": null,
+    "date_basis": {
+      "published": {
+        "method": "html_text",
+        "evidence": "公開日:令和8年11月10日"
+      },
+      "updated": null
+    },
+    "date_precision": {
+      "published": "day",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-11-15T22:47:49+09:00",
+    "last_seen_at": "2026-11-15T22:47:49+09:00",
+    "latest_version": 1,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "extraction_profile": "html+pdf(3files,30pages,exclude:座席|席次)",
+      "attachments": [
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/52bdd846-b58c-4edf-aa17-f81609a965de/94084c9d/20261110_press_52bdd846-b58c-4edf-aa17-f81609a965de_01.pdf",
+          "title": "みて かんじて つながる劇体験～優良児童劇等公演事業～令和8年12月15日（火）鹿児島県日置市にて開催（PDF／419KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 1221,
+          "pages": 2,
+          "pages_read": 2
+        }
+      ],
+      "article_id": "a_c5b5186d7b19dabb",
+      "version": 1,
+      "content_hash": "sha256:f97687fc73b68acaa31cc790db82af41165faafbd28bc98b30f9f45a3179a425",
+      "fetched_at": "2026-11-15T22:47:49+09:00",
+      "content_type": "html",
+      "text_length": 1486,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "new",
+      "export_hash": "c69c2c57192a68da2db4932c16004681621e60bdde13c0921f7a14c1d90796b3",
+      "export_hash_status": "ok",
+      "export_hash_scope": "title+main_text+attachments"
+    }
+  ]
+}

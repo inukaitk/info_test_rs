@@ -1,0 +1,144 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_0b8caf750fcfbb09",
+    "source_id": "cfa-news",
+    "canonical_url": "https://www.cfa.go.jp/councils/shingikai/shakai_katei/care-needs/d66b8a15",
+    "title": "こどものケアニーズに応じた支援の在り方に関する専門委員会（第8回）",
+    "published_at": "2026-11-09",
+    "updated_at": null,
+    "date_basis": {
+      "published": {
+        "method": "listing_text",
+        "evidence": "<time datetime=\"2026-11-09\">2026年11月9日</time>"
+      },
+      "updated": null
+    },
+    "date_precision": {
+      "published": "day",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-11-15T22:47:49+09:00",
+    "last_seen_at": "2026-11-15T22:47:49+09:00",
+    "latest_version": 1,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "extraction_profile": "html+pdf(3files,30pages,exclude:座席|席次)",
+      "attachments": [
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/d66b8a15-e87f-4d73-990e-9f30a1e40ac2/4f94befa/20261111_councils_shingikai_shakai_katei_care-needs_d66b8a15_00.pdf",
+          "title": "議事次第（PDF／67KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 417,
+          "pages": 1,
+          "pages_read": 1
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/d66b8a15-e87f-4d73-990e-9f30a1e40ac2/0187f20a/20261111_councils_shingikai_shakai_katei_care-needs_d66b8a15_01.pdf",
+          "title": "資料1：こどものケアニーズに応じた支援について（PDF／2.6MB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 21995,
+          "pages": 26,
+          "pages_read": 26
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/d66b8a15-e87f-4d73-990e-9f30a1e40ac2/bafb27e4/20261111_councils_shingikai_shakai_katei_care-needs_d66b8a15_02.pdf",
+          "title": "資料2：上鹿渡委員提出資料（PDF／756KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 5101,
+          "pages": 4,
+          "pages_read": 4
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/d66b8a15-e87f-4d73-990e-9f30a1e40ac2/f97576d7/20261111_councils_shingikai_shakai_katei_care-needs_d66b8a15_03.pdf",
+          "title": "資料3：古屋委員提出資料（PDF／6.4MB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/d66b8a15-e87f-4d73-990e-9f30a1e40ac2/06dc9c31/20261111_councils_shingikai_shakai_katei_care-needs_d66b8a15_04.pdf",
+          "title": "資料4：増沢委員提出資料（PDF／707KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/d66b8a15-e87f-4d73-990e-9f30a1e40ac2/d91c74c3/20261111_councils_shingikai_shakai_katei_care-needs_d66b8a15_05.pdf",
+          "title": "資料5：特別養子縁組に関する支援の在り方に関する専門委員会 藤林委員提出資料（PDF／504KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/d66b8a15-e87f-4d73-990e-9f30a1e40ac2/926d0367/20261111_councils_shingikai_shakai_katei_care-needs_d66b8a15_06.pdf",
+          "title": "参考資料1：委員等名簿（PDF／132KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/d66b8a15-e87f-4d73-990e-9f30a1e40ac2/80dac3a1/20261111_councils_shingikai_shakai_katei_care-needs_d66b8a15_07.pdf",
+          "title": "参考資料2：第9回社会的養育・家庭支援部会（抜粋） （PDF／1.1MB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/d66b8a15-e87f-4d73-990e-9f30a1e40ac2/8ec97674/20261111_councils_shingikai_shakai_katei_care-needs_d66b8a15_08.pdf",
+          "title": "参考資料3：社会的養護の現状 （PDF／752KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/d66b8a15-e87f-4d73-990e-9f30a1e40ac2/53571b1b/20261111_councils_shingikai_shakai_katei_care-needs_d66b8a15_09.pdf",
+          "title": "参考資料4：里親制度・各施設等の概要 （PDF／408KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/d66b8a15-e87f-4d73-990e-9f30a1e40ac2/78596e72/20261111_councils_shingikai_shakai_katei_care-needs_d66b8a15_10.pdf",
+          "title": "参考資料5： ガイドライン（抜粋）（PDF／8.9MB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        }
+      ],
+      "article_id": "a_0b8caf750fcfbb09",
+      "version": 1,
+      "content_hash": "sha256:1d2417cc7964a8ea60925417f145695111ed7187f7b6d02c62b6e8f31d5eec29",
+      "fetched_at": "2026-11-15T22:47:49+09:00",
+      "content_type": "html",
+      "text_length": 28130,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "new",
+      "export_hash": "ec9cfefd53a36543a918dde0dcd624c9bb0937aaf09bc78ebe32fd67c8a7dc04",
+      "export_hash_status": "ok",
+      "export_hash_scope": "title+main_text+attachments"
+    }
+  ]
+}

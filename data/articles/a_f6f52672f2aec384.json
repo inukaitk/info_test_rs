@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_f6f52672f2aec384",
+    "source_id": "cfa-news",
+    "canonical_url": "https://www.cfa.go.jp/policies/youth/ikusei-hikikomori/youkou-r8",
+    "title": "令和8年度「こども・若者育成支援研修～地域における多様なアプローチを学ぶ～」に係る研修生募集要項",
+    "published_at": "2026-11-10",
+    "updated_at": null,
+    "date_basis": {
+      "published": {
+        "method": "listing_text",
+        "evidence": "<time datetime=\"2026-11-10\">2026年11月10日</time>"
+      },
+      "updated": null
+    },
+    "date_precision": {
+      "published": "day",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-11-15T22:47:49+09:00",
+    "last_seen_at": "2026-11-15T22:47:49+09:00",
+    "latest_version": 1,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "extraction_profile": "html+pdf(3files,30pages,exclude:座席|席次)",
+      "attachments": [
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/e83c028c-2b26-4068-b1aa-827a05dbb507/7e258447/20261109_policies_youth_ikusei-hikikomori_youkou-r8_01.pdf",
+          "title": "「R8こども・若者育成支援研修 日程表」（PDF／126KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 1096,
+          "pages": 1,
+          "pages_read": 1
+        }
+      ],
+      "article_id": "a_f6f52672f2aec384",
+      "version": 1,
+      "content_hash": "sha256:b07295fc8e20e3c1ed31443220362e8d49ac778ce66ba99f8f96652066db0825",
+      "fetched_at": "2026-11-15T22:47:49+09:00",
+      "content_type": "html",
+      "text_length": 3497,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "new",
+      "export_hash": "e9987aacd73b71694712a9acc1bf7587884a96204df38cb033c134dc34a33533",
+      "export_hash_status": "ok",
+      "export_hash_scope": "title+main_text+attachments"
+    }
+  ]
+}

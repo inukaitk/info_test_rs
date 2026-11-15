@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_9cc24448a3d1bc0d",
+    "source_id": "cfa-news",
+    "canonical_url": "https://www.cfa.go.jp/press/dd446ba4-b3cb-40be-b893-ac3eb79b5edf",
+    "title": "第5回ひとり親家庭支援ワーキンググループの開催について",
+    "published_at": "2026-11-10",
+    "updated_at": null,
+    "date_basis": {
+      "published": {
+        "method": "html_text",
+        "evidence": "公開日:令和8年11月10日"
+      },
+      "updated": null
+    },
+    "date_precision": {
+      "published": "day",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-11-15T22:47:49+09:00",
+    "last_seen_at": "2026-11-15T22:47:49+09:00",
+    "latest_version": 1,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "extraction_profile": "html+pdf(3files,30pages,exclude:座席|席次)",
+      "attachments": [
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/dd446ba4-b3cb-40be-b893-ac3eb79b5edf/d88641bd/20261110_press_dd446ba4-b3cb-40be-b893-ac3eb79b5edf_01.pdf",
+          "title": "第5回ひとり親家庭支援ワーキンググループの開催について（PDF／265KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 512,
+          "pages": 1,
+          "pages_read": 1
+        }
+      ],
+      "article_id": "a_9cc24448a3d1bc0d",
+      "version": 1,
+      "content_hash": "sha256:14483f217e411d05439474484ad4de13194df4a6facdffa8d049f3f257dec438",
+      "fetched_at": "2026-11-15T22:47:49+09:00",
+      "content_type": "html",
+      "text_length": 677,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "new",
+      "export_hash": "be61da79465c8133004c92ff91db95d08c02e54825537384f15773bb0e4b3324",
+      "export_hash_status": "ok",
+      "export_hash_scope": "title+main_text+attachments"
+    }
+  ]
+}

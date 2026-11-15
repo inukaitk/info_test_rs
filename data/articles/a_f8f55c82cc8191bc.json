@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_f8f55c82cc8191bc",
+    "source_id": "cfa-news",
+    "canonical_url": "https://www.cfa.go.jp/policies/platform",
+    "title": "こどもまんなか社会実現プラットフォーム",
+    "published_at": "2026-11-09",
+    "updated_at": null,
+    "date_basis": {
+      "published": {
+        "method": "listing_text",
+        "evidence": "<time datetime=\"2026-11-09\">2026年11月9日</time>"
+      },
+      "updated": null
+    },
+    "date_precision": {
+      "published": "day",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-11-15T22:47:49+09:00",
+    "last_seen_at": "2026-11-15T22:47:49+09:00",
+    "latest_version": 1,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "extraction_profile": "html+pdf(3files,30pages,exclude:座席|席次)",
+      "attachments": [
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/4623ebd7-de93-4e0a-80c8-33ff74eef40d/a18b95b4/20251119_policies_platform_02.pdf",
+          "title": "設立趣意書（PDF／295KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 662,
+          "pages": 1,
+          "pages_read": 1
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/4623ebd7-de93-4e0a-80c8-33ff74eef40d/bac5747d/20260324_policies_platform_13.pdf",
+          "title": "こどもまんなか社会実現プラットフォーム規約（PDF／200KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 3836,
+          "pages": 5,
+          "pages_read": 5
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/4623ebd7-de93-4e0a-80c8-33ff74eef40d/83ee2441/20251119_policies_platform_04.pdf",
+          "title": "入会規程（PDF／129KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 1309,
+          "pages": 2,
+          "pages_read": 2
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/4623ebd7-de93-4e0a-80c8-33ff74eef40d/653749b8/20260512_policies_platform_14.pdf",
+          "title": "正会員（PDF／646KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/4623ebd7-de93-4e0a-80c8-33ff74eef40d/7ecaaa8d/20260512_policies_platform_15.pdf",
+          "title": "協力会員（PDF／215KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/4623ebd7-de93-4e0a-80c8-33ff74eef40d/11638b4e/20261105_policies_platform_19.pdf",
+          "title": "チーム活動の今後についてお知らせ（PDF／402KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/4623ebd7-de93-4e0a-80c8-33ff74eef40d/84c4ef8f/20261109_policies_platform_20.pdf",
+          "title": "詳細はこちら（PDFチラシ）（PDF／1.6MB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/4623ebd7-de93-4e0a-80c8-33ff74eef40d/716869ef/20261026_policies_platform_17.pdf",
+          "title": "詳細はこちら（PDFチラシ）（PDF／2.8MB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/4623ebd7-de93-4e0a-80c8-33ff74eef40d/be915062/20261026_policies_platform_18.pdf",
+          "title": "詳細はこちら（PDFチラシ）（PDF／587KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/4623ebd7-de93-4e0a-80c8-33ff74eef40d/e8dd7d3d/20260904_policies_platform_16.pdf",
+          "title": "詳細はこちら（PDFチラシ）（PDF／214KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        }
+      ],
+      "article_id": "a_f8f55c82cc8191bc",
+      "version": 1,
+      "content_hash": "sha256:a9fda2577d2b074183c25a8ac02c526e25bb6659de69ef322a53edaeb33499a5",
+      "fetched_at": "2026-11-15T22:47:49+09:00",
+      "content_type": "html",
+      "text_length": 8644,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "new",
+      "export_hash": "1e125d1c1ab50bb0719b72c803441fdbc9170cefec0ca7d94f041d9341f1ced9",
+      "export_hash_status": "ok",
+      "export_hash_scope": "title+main_text+attachments"
+    }
+  ]
+}

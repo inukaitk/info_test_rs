@@ -1,0 +1,153 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_6a183399784a8bac",
+    "source_id": "cfa-news",
+    "canonical_url": "https://www.cfa.go.jp/councils/shingikai/kodomo_sodachi/azukari_service/5d6b029e",
+    "title": "こどもの預かりサービスの在り方に関する専門委員会（第3回）",
+    "published_at": "2026-11-09",
+    "updated_at": null,
+    "date_basis": {
+      "published": {
+        "method": "listing_text",
+        "evidence": "<time datetime=\"2026-11-09\">2026年11月9日</time>"
+      },
+      "updated": null
+    },
+    "date_precision": {
+      "published": "day",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-11-15T22:47:49+09:00",
+    "last_seen_at": "2026-11-15T22:47:49+09:00",
+    "latest_version": 1,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "extraction_profile": "html+pdf(3files,30pages,exclude:座席|席次)",
+      "attachments": [
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/5d6b029e-2a06-4974-b1fa-df2c32f4d443/d07e73b9/20261105_councils_shingikai_kodomo_sodachi_azukari_service_5d6b029e_00.pdf",
+          "title": "議事次第（PDF／85KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 650,
+          "pages": 1,
+          "pages_read": 1
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/5d6b029e-2a06-4974-b1fa-df2c32f4d443/164d9bcb/20261105_councils_shingikai_kodomo_sodachi_azukari_service_5d6b029e_01.pdf",
+          "title": "資料1　認可外保育施設の現状について（PDF／1.5MB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 6847,
+          "pages": 10,
+          "pages_read": 10
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/5d6b029e-2a06-4974-b1fa-df2c32f4d443/c73663dc/20261105_councils_shingikai_kodomo_sodachi_azukari_service_5d6b029e_12.pdf",
+          "title": "資料2　こども性暴力防止法施行に向けた取組について（PDF／1.5MB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 3864,
+          "pages": 5,
+          "pages_read": 5
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/5d6b029e-2a06-4974-b1fa-df2c32f4d443/c0c5fe40/20261105_councils_shingikai_kodomo_sodachi_azukari_service_5d6b029e_03.pdf",
+          "title": "資料3　安全で質の高いベビーシッターの利用促進について（PDF／1.4MB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/5d6b029e-2a06-4974-b1fa-df2c32f4d443/025fa2a6/20261105_councils_shingikai_kodomo_sodachi_azukari_service_5d6b029e_04.pdf",
+          "title": "資料4　その他（PDF／540KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/5d6b029e-2a06-4974-b1fa-df2c32f4d443/7c39e705/20261105_councils_shingikai_kodomo_sodachi_azukari_service_5d6b029e_05.pdf",
+          "title": "参考資料1　令和6年度　認可外保育施設の現況取りまとめ（PDF／894KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/5d6b029e-2a06-4974-b1fa-df2c32f4d443/ef496916/20261105_councils_shingikai_kodomo_sodachi_azukari_service_5d6b029e_06.pdf",
+          "title": "参考資料2　認可外の居宅訪問型保育の基準適合促進に向けた対応について　　（令和6年3月29日事務連絡）（PDF／650KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/5d6b029e-2a06-4974-b1fa-df2c32f4d443/169207f6/20261105_councils_shingikai_kodomo_sodachi_azukari_service_5d6b029e_07.pdf",
+          "title": "参考資料3　認可外保育施設に対する指導監督の実施について （令和6年3月29日こ成保第206号　第2次改正令和8年4月2日こ成保第317号）（PDF／2.6MB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/5d6b029e-2a06-4974-b1fa-df2c32f4d443/f9ea3388/20261105_councils_shingikai_kodomo_sodachi_azukari_service_5d6b029e_08.pdf",
+          "title": "参考資料4　認可外保育施設指導監督基準を満たす旨の証明書の交付について （令和6年3月29日こ成保第218号　第1次改正令和6年4月10日こ成保第236号）（PDF／3.5MB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/5d6b029e-2a06-4974-b1fa-df2c32f4d443/bc3ea1cf/20261105_councils_shingikai_kodomo_sodachi_azukari_service_5d6b029e_09.pdf",
+          "title": "参考資料5　認可外の居宅訪問型保育（いわゆるベビーシッター）に関するガイドライン（冊子）（PDF／531KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/5d6b029e-2a06-4974-b1fa-df2c32f4d443/7e47eb73/20261105_councils_shingikai_kodomo_sodachi_azukari_service_5d6b029e_10.pdf",
+          "title": "参考資料6　認可外の居宅訪問型保育事業（いわゆるベビーシッター）に関する実態調査　利用者調査：調査結果（暫定版）（PDF／2.8MB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/5d6b029e-2a06-4974-b1fa-df2c32f4d443/29cdb17c/20261105_councils_shingikai_kodomo_sodachi_azukari_service_5d6b029e_11.pdf",
+          "title": "委員提出資料（PDF／1.2MB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        }
+      ],
+      "article_id": "a_6a183399784a8bac",
+      "version": 1,
+      "content_hash": "sha256:89b5fab23f9f9119165891f62124dba79b1e2a7599ec8b2bf922919e8d2ffdb0",
+      "fetched_at": "2026-11-15T22:47:49+09:00",
+      "content_type": "html",
+      "text_length": 12228,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "new",
+      "export_hash": "cf83677d3bcec7d9322d651668e3ae243867f7b9c2ac895c21c790d0b38093ee",
+      "export_hash_status": "ok",
+      "export_hash_scope": "title+main_text+attachments"
+    }
+  ]
+}

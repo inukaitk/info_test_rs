@@ -19,8 +19,8 @@
       "updated": "unknown"
     },
     "first_seen_at": "2026-11-08T22:08:08+09:00",
-    "last_seen_at": "2026-11-08T22:08:08+09:00",
-    "latest_version": 1,
+    "last_seen_at": "2026-11-15T22:47:49+09:00",
+    "latest_version": 2,
     "status": "active"
   },
   "versions": [
@@ -38,6 +38,140 @@
       "export_hash": "55f4586177b494a3e702e9ae70b26972ec3ab906d56bc5fa1031ff5e307be989",
       "export_hash_status": "ok",
       "export_hash_scope": "title+main_text"
+    },
+    {
+      "extraction_profile": "html+pdf(3files,30pages,exclude:座席|席次)",
+      "attachments": [
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/232a9d87-d9a7-4e1c-8d48-0ede371f7dbb/82935644/20261112_councils_koseibo-jumbi_232a9d87_12.pdf",
+          "title": "議事次第（PDF／95KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 684,
+          "pages": 2,
+          "pages_read": 2
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/232a9d87-d9a7-4e1c-8d48-0ede371f7dbb/1b9d89e2/20261112_councils_koseibo-jumbi_232a9d87_13.pdf",
+          "title": "【資料1】 犯罪事実確認を円滑に実施するための戸籍等の取得にかかる負担軽減について（PDF／913KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 8961,
+          "pages": 12,
+          "pages_read": 12
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/232a9d87-d9a7-4e1c-8d48-0ede371f7dbb/3159685a/20261109_councils_koseibo-jumbi_232a9d87_02.pdf",
+          "title": "【資料2】 事業者がこまもろうシステムで実施すべき手続～適切な犯罪事実確認の実施に向けて～（PDF／2.0MB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 9156,
+          "pages": 16,
+          "pages_read": 16
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/232a9d87-d9a7-4e1c-8d48-0ede371f7dbb/8be73a3d/20261109_councils_koseibo-jumbi_232a9d87_03.pdf",
+          "title": "【資料3】 こまもろうシステム簡単ガイド（素案）（PDF／5.1MB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/232a9d87-d9a7-4e1c-8d48-0ede371f7dbb/af1f3f41/20261109_councils_koseibo-jumbi_232a9d87_04.pdf",
+          "title": "【資料4】 窓口での戸籍（除籍）取得ガイド（素案）（PDF／3.6MB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/232a9d87-d9a7-4e1c-8d48-0ede371f7dbb/9de917ee/20261109_councils_koseibo-jumbi_232a9d87_05.pdf",
+          "title": "【資料5】 「こまもろうシステム簡単ガイド」（素案）・「窓口での戸籍（除籍）取得ガイド」（素案）の位置づけ（PDF／390KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/232a9d87-d9a7-4e1c-8d48-0ede371f7dbb/901c70a8/20261112_councils_koseibo-jumbi_232a9d87_14.pdf",
+          "title": "【参考資料1】 こども性暴力防止法施行（12月25日）に向けた義務事業者用準備ガイド Ver.1.2（PDF／6.4MB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/232a9d87-d9a7-4e1c-8d48-0ede371f7dbb/bfb9d59f/20261109_councils_koseibo-jumbi_232a9d87_07.pdf",
+          "title": "【参考資料2】 民間中小規模事業者向けの情報セキュリティの専門家（情報処理安全確保支援士）への相談窓口（リーフレット）（PDF／755KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/232a9d87-d9a7-4e1c-8d48-0ede371f7dbb/adca5c9d/20261109_councils_koseibo-jumbi_232a9d87_08.pdf",
+          "title": "【参考資料3】 こども性暴力防止法特設サイト開設について（PDF／426KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/232a9d87-d9a7-4e1c-8d48-0ede371f7dbb/35d31240/20261109_councils_koseibo-jumbi_232a9d87_09.pdf",
+          "title": "【参考資料4】 「こども性暴力防止法の施行に伴う戸籍関係事務について」（令和8年9月29日付けこども家庭庁支援局長通知）（PDF／241KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/232a9d87-d9a7-4e1c-8d48-0ede371f7dbb/594e3c2e/20261109_councils_koseibo-jumbi_232a9d87_10.pdf",
+          "title": "【参考資料5】 こども性暴力防止法に関するＱ＆Ａ（令和8年11月5日改訂）（PDF／2.1MB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/232a9d87-d9a7-4e1c-8d48-0ede371f7dbb/0b0d5bf7/20261109_councils_koseibo-jumbi_232a9d87_11.pdf",
+          "title": "【参考資料6】 法施行に向けた準備状況に関する調査の実施について（PDF／363KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/232a9d87-d9a7-4e1c-8d48-0ede371f7dbb/eb89044e/20261112_councils_koseibo-jumbi_232a9d87_15.pdf",
+          "title": "【参考資料7】 普光院構成員 追加意見（PDF／107KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        }
+      ],
+      "article_id": "a_e4fc17acaeb22f46",
+      "version": 2,
+      "content_hash": "sha256:5edc5cf746aef3d2de6f8e7cae17aeaef15b323153ab936f05e7594998f7d108",
+      "fetched_at": "2026-11-15T22:47:49+09:00",
+      "content_type": "html",
+      "text_length": 19880,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "content_changed",
+      "export_hash": "c41f7fbdd3579478bec82ba029ae58b6411483474967a663ad36bf0a343f0c6c",
+      "export_hash_status": "ok",
+      "export_hash_scope": "title+main_text+attachments"
     }
   ]
 }

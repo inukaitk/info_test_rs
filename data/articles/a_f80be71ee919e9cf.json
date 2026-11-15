@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_f80be71ee919e9cf",
+    "source_id": "cfa-news",
+    "canonical_url": "https://www.cfa.go.jp/press/442afcfc-3428-43f0-bb4e-de7159b79682",
+    "title": "みて かんじて つながる劇体験～優良児童劇等公演事業～令和8年12月19日（土）鳥取県琴浦町にて開催",
+    "published_at": "2026-11-12",
+    "updated_at": null,
+    "date_basis": {
+      "published": {
+        "method": "html_text",
+        "evidence": "公開日:令和8年11月12日"
+      },
+      "updated": null
+    },
+    "date_precision": {
+      "published": "day",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-11-15T22:47:49+09:00",
+    "last_seen_at": "2026-11-15T22:47:49+09:00",
+    "latest_version": 1,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "extraction_profile": "html+pdf(3files,30pages,exclude:座席|席次)",
+      "attachments": [
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/442afcfc-3428-43f0-bb4e-de7159b79682/2b9ceed8/20261112_press_442afcfc-3428-43f0-bb4e-de7159b79682_01.pdf",
+          "title": "みて かんじて つながる劇体験～優良児童劇等公演事業～令和8年12月19日（土）鳥取県琴浦町にて開催（PDF／425KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 1235,
+          "pages": 2,
+          "pages_read": 2
+        }
+      ],
+      "article_id": "a_f80be71ee919e9cf",
+      "version": 1,
+      "content_hash": "sha256:4e7e186d52143d73f1ccbb0c7838f39895f1c468cfb96b0e32f21eaa068b7252",
+      "fetched_at": "2026-11-15T22:47:49+09:00",
+      "content_type": "html",
+      "text_length": 1496,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "new",
+      "export_hash": "423f74baf30f61126467bfb85bd0df6f50ffd8e5302e16fb8b6624a63076917d",
+      "export_hash_status": "ok",
+      "export_hash_scope": "title+main_text+attachments"
+    }
+  ]
+}

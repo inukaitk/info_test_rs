@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_3cf423b89da90d6d",
+    "source_id": "cfa-news",
+    "canonical_url": "https://www.cfa.go.jp/councils/kyuyusei-hoshokin/19f315bc",
+    "title": "旧優生保護法補償金等認定審査会（第2回）",
+    "published_at": "2026-11-13",
+    "updated_at": null,
+    "date_basis": {
+      "published": {
+        "method": "listing_text",
+        "evidence": "<time datetime=\"2026-11-13\">2026年11月13日</time>"
+      },
+      "updated": null
+    },
+    "date_precision": {
+      "published": "day",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-11-15T22:47:49+09:00",
+    "last_seen_at": "2026-11-15T22:47:49+09:00",
+    "latest_version": 1,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "extraction_profile": "html+pdf(3files,30pages,exclude:座席|席次)",
+      "attachments": [
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/19f315bc-bddb-44ad-a8f4-87906177c2db/f1a8f805/20261030_councils_kyuyusei-hoshokin_19f315bc_00.pdf",
+          "title": "議事次第（PDF／97KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 174,
+          "pages": 1,
+          "pages_read": 1
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/19f315bc-bddb-44ad-a8f4-87906177c2db/df01f57e/20261030_councils_kyuyusei-hoshokin_19f315bc_01.pdf",
+          "title": "参考資料1：旧優生保護法補償金等認定審査会　委員名簿（PDF／169KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 629,
+          "pages": 1,
+          "pages_read": 1
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/19f315bc-bddb-44ad-a8f4-87906177c2db/dd3bf58e/20261030_councils_kyuyusei-hoshokin_19f315bc_02.pdf",
+          "title": "参考資料2：旧優生保護法補償金等認定審査会　運営規定（PDF／197KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 1061,
+          "pages": 2,
+          "pages_read": 2
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/19f315bc-bddb-44ad-a8f4-87906177c2db/ebf9030d/20261030_councils_kyuyusei-hoshokin_19f315bc_03.pdf",
+          "title": "参考資料3：関係法令・通知（PDF／1.8MB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        }
+      ],
+      "article_id": "a_3cf423b89da90d6d",
+      "version": 1,
+      "content_hash": "sha256:488b8a5e8abe6cd4a92d994d5bd4b9c56e8d98be272772de5b0e576d3504f868",
+      "fetched_at": "2026-11-15T22:47:49+09:00",
+      "content_type": "html",
+      "text_length": 2186,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "new",
+      "export_hash": "abb64dbc270f7ac48db1a66cacec0500f47221ba1f4d211edc8167370f3f6b0a",
+      "export_hash_status": "ok",
+      "export_hash_scope": "title+main_text+attachments"
+    }
+  ]
+}

@@ -19,8 +19,8 @@
       "updated": "unknown"
     },
     "first_seen_at": "2026-11-08T22:08:08+09:00",
-    "last_seen_at": "2026-11-08T22:08:08+09:00",
-    "latest_version": 1,
+    "last_seen_at": "2026-11-15T22:47:49+09:00",
+    "latest_version": 2,
     "status": "active"
   },
   "versions": [
@@ -47,6 +47,50 @@
       "extraction_error": null,
       "change_type": "new",
       "export_hash": "2de22b4cfd0722b379060a940e6c4c8aacefc274cff1fca41e2d5a4b05bb1a45",
+      "export_hash_status": "ok",
+      "export_hash_scope": "title+main_text+attachments"
+    },
+    {
+      "extraction_profile": "html+pdf(3files,30pages,exclude:座席|席次)",
+      "attachments": [
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/d83aacab-197b-47fb-8815-6a5abb7afb07/6f2e3f1e/20261109_councils_internet-kaigi_d83aacab_02.pdf",
+          "title": "資料1-1　「年齢と発達段階に応じたこどもの保護の在り方」に関する検討状況について（1）（PDF／1.9MB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 8508,
+          "pages": 11,
+          "pages_read": 11
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/d83aacab-197b-47fb-8815-6a5abb7afb07/d40414bd/20261109_councils_internet-kaigi_d83aacab_03.pdf",
+          "title": "資料1-2　「年齢と発達段階に応じたこどもの保護の在り方」に関する今後の検討に当たっての考慮事項（案）（PDF／503KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 16602,
+          "pages": 16,
+          "pages_read": 16
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/d83aacab-197b-47fb-8815-6a5abb7afb07/bba0862b/20261109_councils_internet-kaigi_d83aacab_04.pdf",
+          "title": "資料2　「年齢と発達段階に応じたこどもの保護の在り方」に関する検討状況について（2）（PDF／3.5MB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 23649,
+          "pages": 19,
+          "pages_read": 19
+        }
+      ],
+      "article_id": "a_02c134cb8b88e400",
+      "version": 2,
+      "content_hash": "sha256:42d231029d24535c723a53cd8defbdb32a84397afedda38afd7bff9b40899ef9",
+      "fetched_at": "2026-11-15T22:47:49+09:00",
+      "content_type": "html",
+      "text_length": 49302,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "content_changed",
+      "export_hash": "f07f733ea09e03dd6efad6d3fd6ca316ae294fdf8c2105a33e64999f49c4eada",
       "export_hash_status": "ok",
       "export_hash_scope": "title+main_text+attachments"
     }

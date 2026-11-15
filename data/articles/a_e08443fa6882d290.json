@@ -19,8 +19,8 @@
       "updated": "unknown"
     },
     "first_seen_at": "2026-11-08T22:08:08+09:00",
-    "last_seen_at": "2026-11-08T22:08:08+09:00",
-    "latest_version": 1,
+    "last_seen_at": "2026-11-15T22:47:49+09:00",
+    "latest_version": 2,
     "status": "active"
   },
   "versions": [
@@ -38,6 +38,86 @@
       "export_hash": "fdc1243e26be9e17f5aaf6d4727c5fc2185ea1557245898c84e76caa23e62751",
       "export_hash_status": "ok",
       "export_hash_scope": "title+main_text"
+    },
+    {
+      "extraction_profile": "html+pdf(3files,30pages,exclude:座席|席次)",
+      "attachments": [
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/b00f2e82-15ad-4215-9142-88b858059ec5/b9cf86fa/20261109_councils_shingikai_shakai_katei_jidobaishunhogo_b00f2e82_00.pdf",
+          "title": "議事次第（PDF／238KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 493,
+          "pages": 1,
+          "pages_read": 1
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/b00f2e82-15ad-4215-9142-88b858059ec5/9d7ee8ef/20261109_councils_shingikai_shakai_katei_jidobaishunhogo_b00f2e82_01.pdf",
+          "title": "資料1 令和８年度以降の児童買春・児童ポルノ被害児童の保護施策に関する検証・評価専門委員会における対応について（PDF／917KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 15729,
+          "pages": 21,
+          "pages_read": 21
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/b00f2e82-15ad-4215-9142-88b858059ec5/ddaacd54/20261109_councils_shingikai_shakai_katei_jidobaishunhogo_b00f2e82_03.pdf",
+          "title": "資料2 児童買春・児童ポルノ被害児童の保護施策に関する調査研究骨子（PDF／507KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 2026,
+          "pages": 2,
+          "pages_read": 2
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/b00f2e82-15ad-4215-9142-88b858059ec5/be84865c/20261109_councils_shingikai_shakai_katei_jidobaishunhogo_b00f2e82_04.pdf",
+          "title": "参考資料1 児童買春・児童ポルノ被害児童の保護施策に関する検証・評価専門委員会の設置について（PDF／365KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/b00f2e82-15ad-4215-9142-88b858059ec5/ec83118e/20261109_councils_shingikai_shakai_katei_jidobaishunhogo_b00f2e82_05.pdf",
+          "title": "参考資料2 委員名簿（PDF／324KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/b00f2e82-15ad-4215-9142-88b858059ec5/38f9b029/20261109_councils_shingikai_shakai_katei_jidobaishunhogo_b00f2e82_06.pdf",
+          "title": "参考資料3 児童自立支援施設における児童買春・児童ポルノ被害児童の保護施策に関する全国調査報告書について（概略版）（PDF／1.1MB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/b00f2e82-15ad-4215-9142-88b858059ec5/f6d31277/20261109_councils_shingikai_shakai_katei_jidobaishunhogo_b00f2e82_07.pdf",
+          "title": "参考資料4 児童買春、児童ポルノに係る行為等の規制及び処罰並びに児童の保護等に関する法律に基づく、児童買春・児童ポルノ事犯における被害児童の保護施策の実施状況に係る検証・評価について（PDF／441KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        }
+      ],
+      "article_id": "a_e08443fa6882d290",
+      "version": 2,
+      "content_hash": "sha256:87cab3cd143ef8c12f5848c444f1d76950706c6da9be7b685c9fe7415151eb39",
+      "fetched_at": "2026-11-15T22:47:49+09:00",
+      "content_type": "html",
+      "text_length": 18921,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "content_changed",
+      "export_hash": "c633321bbebff2c7655bad5dea94f297ddd3913e2d7b596756767ed30373eeb9",
+      "export_hash_status": "ok",
+      "export_hash_scope": "title+main_text+attachments"
     }
   ]
 }

@@ -14,12 +14,18 @@
       "tags": []
     },
     "a_02c134cb8b88e400": {
-      "article_version": 1,
+      "article_version": 2,
       "scope": "body",
       "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
       "tags": []
     },
     "a_03ed632b3923e8ae": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
+    "a_0b8caf750fcfbb09": {
       "article_version": 1,
       "scope": "body",
       "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
@@ -109,6 +115,12 @@
       "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
       "tags": []
     },
+    "a_2c0f05781ab21ce8": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
     "a_2c482fb7123f06ce": {
       "article_version": 1,
       "scope": "body",
@@ -135,6 +147,12 @@
       "tags": []
     },
     "a_2fcd392b45bde586": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
+    "a_34e852a5243b7143": {
       "article_version": 1,
       "scope": "body",
       "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
@@ -194,6 +212,12 @@
       "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
       "tags": []
     },
+    "a_3b658c7c79a58078": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
     "a_3b7d00298c0b051e": {
       "article_version": 1,
       "scope": "body",
@@ -201,6 +225,12 @@
       "tags": []
     },
     "a_3ba6565f65ea02f1": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
+    "a_3cf423b89da90d6d": {
       "article_version": 1,
       "scope": "body",
       "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
@@ -352,6 +382,24 @@
       "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
       "tags": []
     },
+    "a_6692b3d6f6071d1f": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
+    "a_6a183399784a8bac": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
+    "a_6a3a61ac7dcefd35": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
     "a_6b1f3a16bad6a43f": {
       "article_version": 1,
       "scope": "body",
@@ -421,6 +469,12 @@
       "tags": []
     },
     "a_7d699d49d0c98db0": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
+    "a_7e4a1fd5d1be64c5": {
       "article_version": 1,
       "scope": "body",
       "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
@@ -545,6 +599,12 @@
       "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
       "tags": []
     },
+    "a_92117a254a163d25": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
     "a_9368d9324aecf6d9": {
       "article_version": 1,
       "scope": "body",
@@ -582,7 +642,19 @@
       "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
       "tags": []
     },
+    "a_9cc24448a3d1bc0d": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
     "a_9e62ce9ac810478a": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
+    "a_a0221a970d8a077a": {
       "article_version": 1,
       "scope": "body",
       "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
@@ -614,6 +686,12 @@
       ]
     },
     "a_a5f1d0d0c70b892b": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
+    "a_a8b3f83afd78c684": {
       "article_version": 1,
       "scope": "body",
       "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
@@ -737,6 +815,25 @@
       "tags": []
     },
     "a_bca54c35f0209585": {
+      "article_version": 2,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
+    "a_bfb10242d12e0b57": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": [
+        {
+          "tag_id": "vendor-trend",
+          "label": "母子モ",
+          "matched": "母子モ",
+          "in": "title"
+        }
+      ]
+    },
+    "a_c5b5186d7b19dabb": {
       "article_version": 1,
       "scope": "body",
       "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
@@ -860,6 +957,12 @@
       "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
       "tags": []
     },
+    "a_ddb205c552d200ca": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
     "a_dfa1d70360c2f656": {
       "article_version": 1,
       "scope": "body",
@@ -892,7 +995,7 @@
       "tags": []
     },
     "a_e08443fa6882d290": {
-      "article_version": 1,
+      "article_version": 2,
       "scope": "body",
       "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
       "tags": []
@@ -929,7 +1032,7 @@
       "tags": []
     },
     "a_e4fc17acaeb22f46": {
-      "article_version": 1,
+      "article_version": 2,
       "scope": "body",
       "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
       "tags": []
@@ -983,6 +1086,12 @@
       "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
       "tags": []
     },
+    "a_f3353647cf6de0c8": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
     "a_f3a4198ae7b1110d": {
       "article_version": 1,
       "scope": "body",
@@ -1009,6 +1118,30 @@
         }
       ]
     },
+    "a_f6f52672f2aec384": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
+    "a_f777a3bc404ebab1": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
+    "a_f80be71ee919e9cf": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
+    "a_f8f55c82cc8191bc": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
+    },
     "a_fcb136c283f3c3d7": {
       "article_version": 1,
       "scope": "body",
@@ -1027,6 +1160,12 @@
           "in": "body"
         }
       ]
+    },
+    "a_feba1d26830c019d": {
+      "article_version": 1,
+      "scope": "body",
+      "rules_version": "sha256:f4e3c2d18569013298286b51bcb40b0e505455a81c4ecbdeb4be93380d9c5c49",
+      "tags": []
     },
     "a_feeb6c5955c4bb23": {
       "article_version": 1,

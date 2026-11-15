@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_6a3a61ac7dcefd35",
+    "source_id": "cfa-news",
+    "canonical_url": "https://www.cfa.go.jp/councils/shingikai/hinkon_hitorioya/db5ea08f",
+    "title": "第5回ひとり親家庭支援ワーキンググループ",
+    "published_at": "2026-11-10",
+    "updated_at": null,
+    "date_basis": {
+      "published": {
+        "method": "listing_text",
+        "evidence": "<time datetime=\"2026-11-10\">2026年11月10日</time>"
+      },
+      "updated": null
+    },
+    "date_precision": {
+      "published": "day",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-11-15T22:47:49+09:00",
+    "last_seen_at": "2026-11-15T22:47:49+09:00",
+    "latest_version": 1,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "extraction_profile": "html+pdf(3files,30pages,exclude:座席|席次)",
+      "attachments": [
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/db5ea08f-7b18-4994-8167-e278b957d567/d87146ba/20261113_councils_shingikai_hinkon_hitorioya_db5ea08f_00.pdf",
+          "title": "議事次第（PDF／114KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 269,
+          "pages": 1,
+          "pages_read": 1
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/db5ea08f-7b18-4994-8167-e278b957d567/bba74fa7/20261113_councils_shingikai_hinkon_hitorioya_db5ea08f_01.pdf",
+          "title": "資料1　こども家庭庁　説明資料（PDF／3MB）",
+          "status": "ok",
+          "error": "先頭30ページだけを読み取りました（全42ページ）",
+          "text_length": 24251,
+          "pages": 42,
+          "pages_read": 30
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/db5ea08f-7b18-4994-8167-e278b957d567/97ffa50c/20261113_councils_shingikai_hinkon_hitorioya_db5ea08f_02.pdf",
+          "title": "資料2　法務省　提出資料（PDF／8MB）",
+          "status": "ok",
+          "error": "先頭30ページだけを読み取りました（全33ページ）",
+          "text_length": 25919,
+          "pages": 33,
+          "pages_read": 30
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/db5ea08f-7b18-4994-8167-e278b957d567/7e341b3d/20261113_councils_shingikai_hinkon_hitorioya_db5ea08f_03.pdf",
+          "title": "資料3　白梅学園大学　福丸教授　提出資料（PDF／1.3MB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/db5ea08f-7b18-4994-8167-e278b957d567/b8b73fe6/20261113_councils_shingikai_hinkon_hitorioya_db5ea08f_04.pdf",
+          "title": "参考資料1　令和8年度全国ひとり親世帯等調査調査票（PDF／908KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        },
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/db5ea08f-7b18-4994-8167-e278b957d567/e5e71d49/20261113_councils_shingikai_hinkon_hitorioya_db5ea08f_05.pdf",
+          "title": "参考資料2　こどもの貧困対策推進ワーキンググループ及びひとり親家庭支援ワーキンググループの設置について（PDF／229KB）",
+          "status": "skipped",
+          "error": "1記事あたりの上限（3件）を超えたため取得していません",
+          "text_length": null,
+          "pages": null,
+          "pages_read": null
+        }
+      ],
+      "article_id": "a_6a3a61ac7dcefd35",
+      "version": 1,
+      "content_hash": "sha256:332bcad1c811959e55995b74701525de03ed21f86ed6693c0151647d2ffd6b9a",
+      "fetched_at": "2026-11-15T22:47:49+09:00",
+      "content_type": "html",
+      "text_length": 50943,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "new",
+      "export_hash": "cbbbda2f80637f35ac5e6b4000865d9daee30bf6a52ee96156f44a45d5e07733",
+      "export_hash_status": "ok",
+      "export_hash_scope": "title+main_text+attachments"
+    }
+  ]
+}

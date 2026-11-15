@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_7e4a1fd5d1be64c5",
+    "source_id": "cfa-news",
+    "canonical_url": "https://www.cfa.go.jp/press/9b95e378-b813-45ae-9716-dbee3e54db8f",
+    "title": "こどもとともに成長する企業構想 フラッグシップ企業を発表しました",
+    "published_at": "2026-11-10",
+    "updated_at": null,
+    "date_basis": {
+      "published": {
+        "method": "html_text",
+        "evidence": "公開日:令和8年11月10日"
+      },
+      "updated": null
+    },
+    "date_precision": {
+      "published": "day",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-11-15T22:47:49+09:00",
+    "last_seen_at": "2026-11-15T22:47:49+09:00",
+    "latest_version": 1,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "extraction_profile": "html+pdf(3files,30pages,exclude:座席|席次)",
+      "attachments": [
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/9b95e378-b813-45ae-9716-dbee3e54db8f/e5cd987d/20261110_press_9b95e378-b813-45ae-9716-dbee3e54db8f_01.pdf",
+          "title": "こどもとともに成長する企業構想 フラッグシップ企業を発表しました（PDF／1.3MB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 4731,
+          "pages": 6,
+          "pages_read": 6
+        }
+      ],
+      "article_id": "a_7e4a1fd5d1be64c5",
+      "version": 1,
+      "content_hash": "sha256:12d16f38ef6f805a0a4652b4555087de58b56197baecf34ce48c20e2c9ee3bd2",
+      "fetched_at": "2026-11-15T22:47:49+09:00",
+      "content_type": "html",
+      "text_length": 4918,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "new",
+      "export_hash": "09ee20974907a310c6c56a25df75432f74216c77b5dacdb6c88627e36e6431c9",
+      "export_hash_status": "ok",
+      "export_hash_scope": "title+main_text+attachments"
+    }
+  ]
+}

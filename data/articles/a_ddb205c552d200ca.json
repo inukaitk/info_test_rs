@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_ddb205c552d200ca",
+    "source_id": "cfa-news",
+    "canonical_url": "https://www.cfa.go.jp/press/d6e7bdab-eeb2-42e3-9aaa-661de2587e6e",
+    "title": "第21回 人工妊娠中絶一時金認定審査部会の開催について",
+    "published_at": "2026-11-09",
+    "updated_at": null,
+    "date_basis": {
+      "published": {
+        "method": "html_text",
+        "evidence": "公開日:令和8年11月9日"
+      },
+      "updated": null
+    },
+    "date_precision": {
+      "published": "day",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-11-15T22:47:49+09:00",
+    "last_seen_at": "2026-11-15T22:47:49+09:00",
+    "latest_version": 1,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "extraction_profile": "html+pdf(3files,30pages,exclude:座席|席次)",
+      "attachments": [
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/d6e7bdab-eeb2-42e3-9aaa-661de2587e6e/b4db6705/20261106_press_d6e7bdab-eeb2-42e3-9aaa-661de2587e6e_01.pdf",
+          "title": "第21回 人工妊娠中絶一時金認定審査部会の開催について（PDF／260KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 328,
+          "pages": 1,
+          "pages_read": 1
+        }
+      ],
+      "article_id": "a_ddb205c552d200ca",
+      "version": 1,
+      "content_hash": "sha256:619a7c704fbcbf7d3f53f75a41221c4ff9d0f4c1d006034a5493d14fc88c12ec",
+      "fetched_at": "2026-11-15T22:47:49+09:00",
+      "content_type": "html",
+      "text_length": 492,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "new",
+      "export_hash": "7de941d5bb66c5367449cefb58bc97d95e6a0f2591d31170bc21971b25434865",
+      "export_hash_status": "ok",
+      "export_hash_scope": "title+main_text+attachments"
+    }
+  ]
+}

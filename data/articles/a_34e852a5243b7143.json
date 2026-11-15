@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_34e852a5243b7143",
+    "source_id": "cfa-news",
+    "canonical_url": "https://www.cfa.go.jp/press/f0a50f99-2b3e-460f-aa78-8b48d5b45884",
+    "title": "地域限定保育士試験実施方法書の認定について",
+    "published_at": "2026-11-12",
+    "updated_at": null,
+    "date_basis": {
+      "published": {
+        "method": "html_text",
+        "evidence": "公開日:令和8年11月12日"
+      },
+      "updated": null
+    },
+    "date_precision": {
+      "published": "day",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-11-15T22:47:49+09:00",
+    "last_seen_at": "2026-11-15T22:47:49+09:00",
+    "latest_version": 1,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "extraction_profile": "html+pdf(3files,30pages,exclude:座席|席次)",
+      "attachments": [
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/f0a50f99-2b3e-460f-aa78-8b48d5b45884/0683586f/20261112_press_f0a50f99-2b3e-460f-aa78-8b48d5b45884_01.pdf",
+          "title": "地域限定保育士試験実施方法書の認定について（PDF／556KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 761,
+          "pages": 3,
+          "pages_read": 3
+        }
+      ],
+      "article_id": "a_34e852a5243b7143",
+      "version": 1,
+      "content_hash": "sha256:e677f76de8a5effbab1241a5e320a71b116f6986991e13c228f1e83e20d3ab5e",
+      "fetched_at": "2026-11-15T22:47:49+09:00",
+      "content_type": "html",
+      "text_length": 902,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "new",
+      "export_hash": "6190ed0d4e2c2fbb2ce5df5498e14c29a145acca4d4f2bb88f87afec377c0903",
+      "export_hash_status": "ok",
+      "export_hash_scope": "title+main_text+attachments"
+    }
+  ]
+}

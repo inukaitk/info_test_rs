@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "article": {
+    "article_id": "a_f3353647cf6de0c8",
+    "source_id": "cfa-news",
+    "canonical_url": "https://www.cfa.go.jp/press/0b36bf75-1067-4563-b2ff-aef24cd872a3",
+    "title": "第2回旧優生保護法補償金等認定審査会の開催について",
+    "published_at": "2026-11-09",
+    "updated_at": null,
+    "date_basis": {
+      "published": {
+        "method": "html_text",
+        "evidence": "公開日:令和8年11月9日"
+      },
+      "updated": null
+    },
+    "date_precision": {
+      "published": "day",
+      "updated": "unknown"
+    },
+    "first_seen_at": "2026-11-15T22:47:49+09:00",
+    "last_seen_at": "2026-11-15T22:47:49+09:00",
+    "latest_version": 1,
+    "status": "active"
+  },
+  "versions": [
+    {
+      "extraction_profile": "html+pdf(3files,30pages,exclude:座席|席次)",
+      "attachments": [
+        {
+          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/0b36bf75-1067-4563-b2ff-aef24cd872a3/b8123523/20261106_press_0b36bf75-1067-4563-b2ff-aef24cd872a3_01.pdf",
+          "title": "第2回旧優生保護法補償金等認定審査会の開催について（PDF／272KB）",
+          "status": "ok",
+          "error": null,
+          "text_length": 444,
+          "pages": 1,
+          "pages_read": 1
+        }
+      ],
+      "article_id": "a_f3353647cf6de0c8",
+      "version": 1,
+      "content_hash": "sha256:4af963770ee4a2b56bc88b63e2f70b329eb4a1c006591dcc4fdda8bc863f7729",
+      "fetched_at": "2026-11-15T22:47:49+09:00",
+      "content_type": "html",
+      "text_length": 600,
+      "extraction_status": "ok",
+      "extraction_error": null,
+      "change_type": "new",
+      "export_hash": "e9a2bad6cca28d3ba4b10272e4c3932f6f03fc52ec0fd58144e598631cf84e76",
+      "export_hash_status": "ok",
+      "export_hash_scope": "title+main_text+attachments"
+    }
+  ]
+}
